@@ -16,7 +16,7 @@ convective momentum flux and the wall-stress signal:
     eps_c     = eps(y_crit) = c_eps/y_crit   (DERIVED per geometry, not fitted).
 
 The L1 verification (critical_matching_height_apriori.py -> cmh_apriori_check.npz)
-established this on ONE geometry (Krank Re_H=10595).  The Judge's binding
+established this on ONE geometry (Krank Re_H=10595).  The review's binding
 concern #6 was: "the calibration is to one geometry -- eps_c could be wildly
 different on others."  THIS script answers it directly: it runs the SAME
 variance-balance construction, with a FIXED protocol (the production ODE wall

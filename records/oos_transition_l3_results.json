@@ -1,6 +1,6 @@
 {
   "level": "L3 results & analysis -- OOS cross-shape transition",
-  "builds_on": "oos_transition_test.py (L2 node_003, Judge YES 7/10)",
+  "builds_on": "oos_transition_test.py (L2)",
   "scope_honesty": "WITHIN-FAMILY out-of-sample: 29 Xiao periodic hills at a SINGLE Re_b=5600; NOT cross-class transfer to sharp ribs / cascades / cube arrays.  Cross-class evidence is the corpus rib LES (separate).",
   "regression_guard": {
     "all_29_catastrophic": true,

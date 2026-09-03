@@ -5,7 +5,7 @@ rib_pk_sweep_l3_results.py  --  L3 (node_004, attempt 1) Results & analysis.
 
 This is the RESULTS-AND-ANALYSIS node for the two-factor d-/k-type roughness
 bridge.  It builds on the L2 (node_003) instrument and the *completed*
-intermediate-p/k RANS sweep, and discharges the five L3 binds the L2 Judge set:
+intermediate-p/k RANS sweep, and discharges the five L3 binds the L2 review set:
 
   B-L3-1 (FATAL) >=3 intermediate p/k cases harvested + scored through the shared
                  instrument; the R^2=0 crossing BRACKETED by a CONSECUTIVE sign

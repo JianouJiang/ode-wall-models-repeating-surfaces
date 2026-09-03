@@ -263,7 +263,7 @@ for mode_key, mode_name in modes:
     rmse = np.sqrt(np.mean((p - t)**2))
     
     # Sign accuracy on separated profiles ONLY
-    # (Consistent with Judge's request for clean comparison)
+    # (Consistent with review's request for clean comparison)
     if s.sum() > 0:
         sa_sep = np.mean(np.sign(p[s]) == np.sign(t[s]))
     else:

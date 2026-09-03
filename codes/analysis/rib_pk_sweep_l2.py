@@ -3,7 +3,7 @@ r"""
 rib_pk_sweep_l2.py  --  L2 (node_002) implementation & experiments.
 ===================================================================
 
-Discharges the FOUR substantive L2 binds the node_001 Judge set (verdict 7/10),
+Discharges the FOUR substantive L2 binds the review set,
 BY COMPUTATION, written BEFORE the assertions:
 
   B-L2-1 (FATAL)  The intermediate-p/k RANS sweep {3,4,5,6,7} (run by

@@ -8,7 +8,7 @@ the EXACT same schema and extraction convention as
 ``periodic_hills_case_1p0_wall_profiles_corrected.npz`` (built by
 ``build_corrected_pehill_profiles.py``).
 
-WHY THIS EXISTS (L1 Judge issue #3, the single load-bearing L2 task)
+WHY THIS EXISTS (L1 review issue #3, the single load-bearing L2 task)
 --------------------------------------------------------------------
 The Task 27 cross-geometry collapse needs the a-priori critical matching
 height y_crit for ALL FIVE coupled cases.  Three are already on disk

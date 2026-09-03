@@ -6,7 +6,7 @@ rib_two_factor_methodology.py  --  L1 (node_001) core methodology.
 A SINGLE smooth-calibrated coverage threshold f(eps<eps*) >= tau* (the
 manuscript's geometry-readable rule) MIS-CLASSIFIES the sharp d-type rib as
 tolerated (coverage 0.125 < tau*=0.314) even though the converged LES FAILS
-(R^2 = -0.943 < 0).  This module formalises the FIX the Judge's node_000 binds
+(R^2 = -0.943 < 0).  This module formalises the FIX the review's requirements
 demand: a TWO-FACTOR discriminant that separates the cancellation
 
     DEPTH    --  how deep the near-wall force cancellation is        (set by eps)

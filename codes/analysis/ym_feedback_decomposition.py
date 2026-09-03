@@ -14,7 +14,7 @@ into two physically distinct contributions:
               v  instead of pristine DNS U_m at the same height     [feedback]
     Rung 2  (fully coupled WMLES)  R^2(C_f) = +0.762
 
-This answers the single most important question the L1 Judge raised: how much of
+This answers the single most important question the L1 review raised: how much of
 the +0.762-vs-(-47.7) gap is merely the finer coupled matching height (a protocol
 / geometric effect) and how much is genuine coupling feedback (the self-consistent
 operating-point shift)?  The HONESTY FLAG carried from L0 is explicit: do NOT

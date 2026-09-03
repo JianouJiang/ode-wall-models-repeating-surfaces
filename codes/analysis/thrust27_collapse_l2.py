@@ -4,7 +4,7 @@ thrust27_collapse_l2.py  --  Task 27, Level 2 (Implementation & experiments)
 ===============================================================================
 THE CROSS-GEOMETRY TRANSMISSION-COLLAPSE EXPERIMENT.
 
-This is the load-bearing L2 deliverable the L0/L1 Judge flagged: land the
+This is the load-bearing L2 deliverable the L0/L1 review flagged: land the
 five-point cross-geometry collapse that the L1 methodology only specified.  It
 
   (Stage A)  reproduces the three on-disk Task 17 y_crit anchors

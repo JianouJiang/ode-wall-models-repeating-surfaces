@@ -3,7 +3,7 @@ r"""
 rib_pk_sweep_l2att2.py  --  L2 (node_003, ATTEMPT 2) implementation & experiments.
 =================================================================================
 
-Attempt 1 (node_002) was REJECTED 5/10 by the L2 Judge for a single FATAL reason:
+Attempt 1 (node_002) was not accepted at the L2 review for a single FATAL reason:
 B-L2-1 was not discharged -- the intermediate-p/k RANS sweep was *in flight* with
 ZERO intermediate cases harvested, so the R^2=0 crossing was a 2-endpoint linear
 interpolation, not a measured bracket.  The root cause was structural, not timing:

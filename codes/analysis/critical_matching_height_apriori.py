@@ -11,7 +11,7 @@ multi-geometry driver (critical_matching_height.py).
 It demonstrates, with real numbers (no fabrication, no fit beyond a transparent
 power law), the three claims of the methodology subsection sec:critical:
 
-  (0) DEFINITIONAL baseline (honesty, Judge L0 binding condition #1):
+  (0) DEFINITIONAL baseline (honesty, L0 review condition #1):
       eps(y_m) = c_eps / y_m exactly  ==>  eps proportional 1/y_m is an identity,
       NOT a discovery.  We verify eps*y_m = const.
 

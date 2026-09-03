@@ -261,7 +261,7 @@ def main():
     tau_nodisp = visc_m - reyn_m                    # Reynolds-only (ODE structural)
     tau_w_mean = float(np.mean(tau_dns[np.isfinite(tau_dns)]))
 
-    # discriminant D (matches L1 / Judge-verified value)
+    # discriminant D (matches L1 / review-verified value)
     D_match = abs(disp_m) / (abs(disp_m) + abs(reyn_m))
     # mean vertical advection contribution (the OTHER dropped convective piece)
     meanadv = Vbar * dUdeta

@@ -271,7 +271,7 @@ def _t_two_sided_p(t, df):
 def _midrank(x):
     """Fractional (mid-)ranks: tied values share the average of the ranks they
     would occupy.  This is the correct ranking for Spearman when ties exist
-    (the L2 Judge flagged that argsort(argsort()) gives ordinal ranks, which is
+    (the L2 review flagged that argsort(argsort()) gives ordinal ranks, which is
     wrong for the coverage-fraction array f(eps<1) where several geometries tie
     at exactly 0.000 and at 1.000).  Matches scipy.stats.rankdata(method='average')
     and hence scipy.stats.spearmanr to machine precision -- verified in main()."""
@@ -367,7 +367,7 @@ def main():
           f"(p~{p_nohills:.4f}, n={n_nohills}) -> ordering survives the outlier removal")
 
     # robustness: drop the kth_3d_diffuser -- its failure is partly 3-D skewing
-    # (a DIFFERENT mechanism the 1-D ODE cannot represent), so the L2 Judge asked
+    # (a DIFFERENT mechanism the 1-D ODE cannot represent), so the L2 review asked
     # whether it carries the correlation.  Re-test eps_med AND the coverage frac
     # without it (n=16) to separate the 2-D cancellation mechanism from 3-D.
     keep3d = keys != "kth_3d_diffuser"
