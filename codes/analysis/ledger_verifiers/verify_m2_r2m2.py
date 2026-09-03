@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Independent verifier for the sign-changing wall-stress metric operator.
 
-Closes ledger rows M2 and R2-m2 only if the deposited table can be rebuilt
+Closes claim M2 and R2-m2 only if the deposited table can be rebuilt
 from its profile sources, the station distributions cover the entire declared
 multi-station corpus, and negative fixtures exercise singular and topological
 failure modes.  This verifier deliberately does not import the producer.

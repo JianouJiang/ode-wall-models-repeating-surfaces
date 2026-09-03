@@ -103,7 +103,7 @@ def main() -> int:
     ])
     # The former check required every component to resist the flow.  The
     # terminal staggered-cube WRLES falsifies that: its plan-mean floor viscous
-    # force is negative (a small thrust, reversed shear over most of the
+    # force is negative (a small task, reversed shear over most of the
     # inter-cube floor).  Enforce the invariant that was actually intended --
     # the TOTAL is a resistance along the drive -- and bound, rather than
     # forbid, any opposing term.
@@ -143,7 +143,7 @@ def main() -> int:
 
     source = (ROOT / "manuscript" / "main.tex").read_text(encoding="utf-8")
     # This gate used to require the producer's FILE NAME to appear in the paper.
-    # File names were removed from the body on the operator's register directive,
+    # File names were removed from the body on the author's register directive,
     # and proving content with a tool name is a defect in its own right: it
     # passes for a paper that names the script and says nothing, and fails for a
     # paper that describes the measurement completely.  It now tests the three
@@ -155,16 +155,16 @@ def main() -> int:
                    and "intrinsic period-mean velocity" in flat
                    and "plan-mean" in flat))
 
-    # Red fixtures: each resurrects one defect of the invalid resolved-rib test.
+    # Control cases: each resurrects one defect of the invalid resolved-rib test.
     local_target = copy.deepcopy(doc)
     local_target["reference"]["uses_local_viscous_shear"] = True
-    checks.append(("red fixture: local shear rejected", not contract_valid(local_target)))
+    checks.append(("control case: local shear rejected", not contract_valid(local_target)))
     fitted = copy.deepcopy(doc)
     fitted["roughness_calibration"]["independent_of_present_wrles"] = False
-    checks.append(("red fixture: fitted roughness rejected", not contract_valid(fitted)))
+    checks.append(("control case: fitted roughness rejected", not contract_valid(fitted)))
     inside = copy.deepcopy(doc)
     inside["matching_surface"]["planes_over_h"][0] = 1.5
-    checks.append(("red fixture: sublayer plane rejected", not contract_valid(inside)))
+    checks.append(("control case: sublayer plane rejected", not contract_valid(inside)))
     # A genuinely broken force decomposition -- an opposing term of the same
     # order as the resistance -- must still be rejected by the replacement of
     # the old all-same-sign guard.
@@ -172,7 +172,7 @@ def main() -> int:
     broken[2] = -0.30 * abs(total_force)
     broken_total = float(np.sum(broken))
     broken_opposing = broken[broken * broken_total < 0.0]
-    checks.append(("red fixture: large opposing force component rejected",
+    checks.append(("control case: large opposing force component rejected",
                    broken_opposing.size > 0
                    and float(np.max(np.abs(broken_opposing))) > 0.05 * abs(broken_total)))
 

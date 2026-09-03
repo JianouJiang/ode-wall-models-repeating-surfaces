@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent stable verifier for referee-ledger item M1."""
+"""Independent stable verifier for claim register item M1."""
 from __future__ import annotations
 
 import hashlib
@@ -485,7 +485,7 @@ def main() -> None:
             for entry in bad:
                 print("  stale row: " + entry)
 
-    # Red fixture: perturbing one printed digit must be detected.
+    # Control case: perturbing one printed digit must be detected.
     red_row = next(line for line in table.splitlines()
                    if r"$\Rtwo(\tau_w)$, canonical hill" in line)
     # The perturbed digit tracks whatever value is currently certified, so the
@@ -494,12 +494,12 @@ def main() -> None:
     _certified = f"{claims['canonical_hill_r2']['point']:.3f}"
     _perturbed = f"{claims['canonical_hill_r2']['point'] + 0.001:.3f}"
     if _certified not in red_row:
-        raise RuntimeError("red fixture cannot find the certified value in the table row")
+        raise RuntimeError("control case cannot find the certified value in the table row")
     red_numbers = [float(tok) for tok in
                    re.findall(r"-?\d*\.\d+", red_row.replace(_certified, _perturbed, 1))]
     canonical_expected = ([fmt(claims["canonical_hill_r2"]["point"])]
                           + [fmt(v) for v in claims["canonical_hill_r2"]["interval"]])
-    checks.append(("red fixture: a one-digit table perturbation is detected",
+    checks.append(("control case: a one-digit table perturbation is detected",
                    not close(red_numbers, canonical_expected, atol=1e-9)))
 
     for label, ok in checks:

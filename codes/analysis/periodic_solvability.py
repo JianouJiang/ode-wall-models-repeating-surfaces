@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 r"""
-periodic_solvability.py  --  L2 (Implementation & experiments), Thrust #15
+periodic_solvability.py  --  L2 (Implementation & experiments), Task 15
 ==========================================================================
 "Periodicity enforces the cancellation": the L2 station-level statistics that
 turn the L1 derivation into a falsifiable, multi-geometry experiment.
@@ -28,7 +28,7 @@ PRE-REGISTERED FALSIFIERS (from L0/L1)
   F3  the wide-pitch converging-diverging control must STAY eps ~ O(1) under the
       identical analysis (annihilation is NECESSARY but not SUFFICIENT; depth
       Psi/Phi is only small where Phi >> Psi over an O(1) wall fraction).  Guards
-      killer gate G7 (no "all repeating structures fail" over-claim).
+      acceptance criterion G7 (no "all repeating structures fail" over-claim).
 
 PLUS the control-volume (CV) BAND CLOSURE: on the wall-following matching band,
 the period mean of the streamwise advective contribution P[C_x] is annihilated
@@ -247,7 +247,7 @@ def f1_fixed_height(U2d, x):
 # DRIVER
 # ===========================================================================
 print("=" * 78)
-print("L2 / Thrust#15  --  periodicity-solvability station statistics (a priori)")
+print("L2 / Task#15  --  periodicity-solvability station statistics (a priori)")
 print("=" * 78)
 
 geoms = {}     # label -> dict of per-station arrays + meta
@@ -461,7 +461,7 @@ for label, g in geoms.items():
     save[f"{label}__eps_median"] = eps_summary[label][0]
     save[f"{label}__eps_frac_lt_0p1"] = eps_summary[label][1]
 save["note"] = np.array(
-    "L2 Thrust#15 periodicity-solvability station statistics. C_x=int U dU/dx dy, "
+    "L2 Task#15 periodicity-solvability station statistics. C_x=int U dU/dx dy, "
     "C_y=int V dU/dy dy on the wall-following matching band (Y_IDX=10). F2: "
     "Spearman(log|C|,log eps) + bootstrap CIs; gap=|rho_Cy|-|rho_Cx|; F2 pass iff "
     "gap CI excludes 0. F1: streamwise-flux annihilation R1 at fixed fluid rows. "

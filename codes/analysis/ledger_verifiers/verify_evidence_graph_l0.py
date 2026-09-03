@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify the corrected build at the level a referee reads it.
+"""Verify the corrected build at the level a reviewer reads it.
 
 Two things are checked, because the previous attempt failed on the gap between
 them:
@@ -20,7 +20,7 @@ came from, never that a comparison came out a particular way.  Gates that
 encode an outcome have repeatedly had to be repaired in this project, so this
 one records directions and intervals instead of demanding fixed sentences.
 
-Red fixtures at the end confirm each class of check can actually fail.
+Control cases at the end confirm each class of check can actually fail.
 
 Run:  python3 codes/analysis/ledger_verifiers/verify_evidence_graph_l0.py
 """
@@ -271,7 +271,7 @@ def check_inventory() -> None:
 
 
 # --------------------------------------------------------------------------
-# 4. red fixtures --- every class of check must be able to fail
+# 4. control cases --- every class of check must be able to fail
 # --------------------------------------------------------------------------
 def red_fixtures() -> None:
     fake_pdf = "the measured 8.364% wall-force residual scale"

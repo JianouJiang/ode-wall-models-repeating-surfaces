@@ -149,7 +149,7 @@ def main() -> int:
           "M5_V3_COMPILE_OK") == 3 and "org-v10" in portability
           and "com-v2512" in portability)
 
-    # Red fixture 1: remove adaptive resolution.  At least one 16--32 scan
+    # Control case 1: remove adaptive resolution.  At least one 16--32 scan
     # must then miss the nonzero branch, making the exact same fixture fail.
     with tempfile.TemporaryDirectory(prefix="m5_red_scan_") as name:
         temp = Path(name)
@@ -165,20 +165,20 @@ def main() -> int:
             "const int scanIntervals = TBLE_SCAN_INTERVALS;")
         header.write_text(altered)
         red = compile_fixture(temp, red_fixture)
-    check("red fixture rejects fixed-resolution wide bracket", red.returncode != 0
+    check("control case rejects fixed-resolution wide bracket", red.returncode != 0
           and "M5_BRANCH_POLICY_FIXTURE_FAIL" in red.stdout)
 
     fatal_text = fatal_paths[0].read_text(errors="replace")
-    check("red fixture rejects hidden ambiguity", fatal_valid(fatal_text)
+    check("control case rejects hidden ambiguity", fatal_valid(fatal_text)
           and not fatal_valid(fatal_text.replace("ambiguous=1", "ambiguous=0", 1)))
     if first_face:
         tampered = dict(first_face)
         tampered["nut"] = str(float(tampered["nut"])+1e-3)
-        check("red fixture rejects wrong applied projection",
+        check("control case rejects wrong applied projection",
               projection_error(first_face) < 5e-12
               and projection_error(tampered) > 1e-4)
     else:
-        check("red fixture rejects wrong applied projection", False)
+        check("control case rejects wrong applied projection", False)
 
     tex = active_tex()
     check("active manuscript states registered branch policy",

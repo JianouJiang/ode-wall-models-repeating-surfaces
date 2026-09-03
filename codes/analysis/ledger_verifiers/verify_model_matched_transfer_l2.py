@@ -29,7 +29,7 @@ G. the abort is described as one observed trajectory failure, not a located
    boundary and not a proof that no wall stress exists.
 
 Usage:  python3 verify_model_matched_transfer_l2.py [summary.json]
-Exit 0 only if every check passes AND every red fixture is rejected.
+Exit 0 only if every check passes AND every control case is rejected.
 """
 
 from __future__ import annotations
@@ -213,7 +213,7 @@ def run_checks(s: dict, *, reread_cases: bool) -> list[tuple[str, bool, str]]:
 
 # ---------------------------------------------------------------------------
 # H. the manuscript's PRINTED values must equal the measured ones.
-# The node_009 referee asked for exactly this: "extend the verifier so it checks
+# The node_009 reviewer asked for exactly this: "extend the verifier so it checks
 # the manuscript's printed intervals/ratios".  Raw grep would read the \iffalse
 # blocks, so the compiled PDF text is used.
 # ---------------------------------------------------------------------------
@@ -360,7 +360,7 @@ def main() -> int:
             print(f"  [FAIL] {name}   {note}")
     print(f"real summary: {n_ok}/{len(results)} checks passed")
 
-    print("\nred fixtures (each MUST be rejected):")
+    print("\ncontrol cases (each MUST be rejected):")
     fixture_ok = True
     for label, f in red_fixtures(s):
         r = run_checks(f, reread_cases=False)
@@ -372,7 +372,7 @@ def main() -> int:
 
     passed = (n_ok == len(results)) and fixture_ok
     print(f"\nVERDICT: {'PASS' if passed else 'FAIL'}  "
-          f"({n_ok}/{len(results)} checks, red fixtures {'all rejected' if fixture_ok else 'LEAKED'})")
+          f"({n_ok}/{len(results)} checks, control cases {'all rejected' if fixture_ok else 'LEAKED'})")
     return 0 if passed else 1
 
 

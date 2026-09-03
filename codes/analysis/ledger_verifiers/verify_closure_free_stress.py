@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent audit for referee-ledger row R1-STA-4b.
+"""Independent audit for claim R1-STA-4b.
 
 The audit reconstructs the wavelength-averaged total-stress profile directly
 from the documented Xiao DNS columns.  It deliberately does not import the

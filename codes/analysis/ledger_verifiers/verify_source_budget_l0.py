@@ -7,7 +7,7 @@ published reference artifact, refits the norm law from those re-scored numbers,
 re-derives every registered verdict, and re-runs the region split.  It then
 checks that what the manuscript prints agrees with what it recomputed.
 
-Six red fixtures follow.  Each perturbs the deposited evidence in one specific
+Six control cases follow.  Each perturbs the deposited evidence in one specific
 way and requires the corresponding check to FAIL; a checker that cannot be made
 to fail is not measuring anything.
 """
@@ -222,7 +222,7 @@ def main() -> int:
     check("no withdrawn a-priori ladder claim is printed",
           not any(f in tex.lower() for f in forbidden))
     # The displacement experiment was moved to the thesis chapter in the
-    # operator-sanctioned paper/thesis split of 2026-08-25, so the statement is
+    # author-sanctioned paper/thesis split of 2026-08-25, so the statement is
     # required in the corpus (paper OR that chapter) rather than in the paper
     # alone -- and the framing it exists to prevent is forbidden in both.
     chapter = (ROOT.parent / "wall_modelling_thesis_book" / "manuscript" /
@@ -234,7 +234,7 @@ def main() -> int:
           "no difference (paper or thesis chapter)",
           stated and "shift makes no difference" not in corpus)
 
-    # ---- red fixtures ------------------------------------------------------
+    # ---- control cases ------------------------------------------------------
     print("\nRED FIXTURES (each must be caught)")
     surface = SURFACES[0]
     j = json.loads((RESULTS / f"source_budget_tournament_l0_{surface}_{STAMP}.json").read_text())

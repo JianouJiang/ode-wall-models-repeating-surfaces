@@ -141,7 +141,7 @@ def main() -> int:
         y_ref = np.asarray(ladder["ladder_L1_y_m"], float)
         check("comparison uses the mesh-recorded physical surface",
               surface_matches(phase, y_m, phase_ref, y_ref))
-        check("red fixture rejects fixed/phase-mismatched heights",
+        check("control case rejects fixed/phase-mismatched heights",
               not surface_matches(phase, np.full_like(y_m, np.median(y_m)),
                                   phase_ref, y_ref)
               and not surface_matches(np.roll(phase, 1), y_m, phase_ref, y_ref))

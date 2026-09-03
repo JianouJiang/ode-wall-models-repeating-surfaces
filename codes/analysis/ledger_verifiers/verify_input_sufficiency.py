@@ -3,16 +3,16 @@
 
 Checks, in order:
   A. the deposited summary exists, carries the registered protocol, and claims
-     nothing coupled (killer gate G4);
+     nothing coupled (acceptance criterion G4);
   B. the certified Lipschitz floor is arithmetically a valid lower bound, on
      synthetic sets whose answer is known in closed form;
   C. the empirical transfer is recomputed independently for one held-out case
      and agrees with the deposited value;
   D. the deployed-model baseline is recomputed independently at the same
      stations and agrees with the deposited value;
-  E. red fixtures that MUST fail: label shuffling, input duplication, and a
+  E. control cases that MUST fail: label shuffling, input duplication, and a
      leakage protocol that does not actually hold the test case out;
-  F. anti-regression on the manuscript: the operator-mandated pair of
+  F. anti-regression on the manuscript: the author-mandated pair of
      matching-height transfer relations is printed and the withdrawn
      "artefact / superseded" reading has not returned.
 
@@ -172,7 +172,7 @@ def main() -> int:
           f"{sum(h['n_model_failures'] for h in fam.values())} failures")
 
     # ---------------------------------------------------------------- E
-    print("E. red fixtures (each MUST fail to reproduce the claim)")
+    print("E. control cases (each MUST fail to reproduce the claim)")
     shuffle_rng = np.random.default_rng(11)
     pred_s, _, _ = isb.knn_transfer(train, canon, use_b=True, shuffle_rng=shuffle_rng)
     r2_s = isb.r2_score(pred_s, canon["tau"])

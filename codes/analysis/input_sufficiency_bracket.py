@@ -43,7 +43,7 @@ If it does not, the input set is insufficient and no model in the class can be
 repaired without new inputs.  Both outcomes are reported as measured.
 
 All evaluations are A PRIORI on mean reference fields: no coupled simulation is
-run or claimed here (killer gate G4), and no geometry outside those with real
+run or claimed here (acceptance criterion G4), and no geometry outside those with real
 reference data is evaluated (G1).
 
 Outputs
@@ -223,7 +223,7 @@ def knn_transfer(train: list[dict], test: dict, use_b: bool,
                  k: int = K_NEIGHBOURS, shuffle_rng=None):
     Xtr = np.vstack([features(c, use_b) for c in train])
     ytr = np.concatenate([slog(c["t"]) for c in train])
-    if shuffle_rng is not None:                      # red fixture
+    if shuffle_rng is not None:                      # control case
         ytr = ytr[shuffle_rng.permutation(len(ytr))]
     mu, sd = Xtr.mean(0), Xtr.std(0) + 1e-30
     A = (Xtr - mu) / sd

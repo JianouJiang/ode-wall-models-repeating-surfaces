@@ -3,7 +3,7 @@
 
 Re-derives every reported number from the deposited run output rather than
 trusting the harvest, checks that the perturbation was actually active in the
-solver logs, and carries red fixtures that must fail.
+solver logs, and carries control cases that must fail.
 
     python3 codes/analysis/ledger_verifiers/verify_coupling_gain.py
 """
@@ -282,12 +282,12 @@ def main():
               len(below) == len(common),
               "%d of %d heights" % (len(below), len(common)))
 
-    # ---- 6. red fixtures ----------------------------------------------------
-    print("  -- red fixtures (each must FAIL its check) --")
+    # ---- 6. control cases ----------------------------------------------------
+    print("  -- control cases (each must FAIL its check) --")
     t = np.linspace(405.0, 450.0, 400)
     rigid = np.ones_like(t)                      # T == 1 everywhere
     plat = (t >= 405 + plateau[0]) & (t <= 405 + plateau[1])
-    check("red fixture: a rigid coupling (T = 1) is not reported as suppression",
+    check("control case: a rigid coupling (T = 1) is not reported as suppression",
           not (rigid[plat].mean() < 1.0),
           "rigid plateau mean = %.3f" % rigid[plat].mean())
 
@@ -298,7 +298,7 @@ def main():
         if key in npz.files:
             T = npz[key]
             rolled = np.roll(T, len(T) // 2)
-            check("red fixture: a time-shifted pairing breaks the T(t0) = 1 "
+            check("control case: a time-shifted pairing breaks the T(t0) = 1 "
                   "instrument check", abs(rolled[0] - 1.0) > 1e-6,
                   "shifted T(t0) = %.4f" % rolled[0])
 
@@ -306,7 +306,7 @@ def main():
                             2.0 * pairs[0]["gain"], plateau, t0,
                             pairs[0]["average_start"]) if pairs else None
     if bad_gain is not None:
-        check("red fixture: reducing with the wrong gain breaks T(t0) = 1",
+        check("control case: reducing with the wrong gain breaks T(t0) = 1",
               abs(bad_gain["T0"] - 1.0) > 1e-3,
               "wrong-gain T(t0) = %.4f" % bad_gain["T0"])
 

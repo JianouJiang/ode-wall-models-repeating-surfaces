@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 r"""
-thrust27_collapse_l2.py  --  Thrust #27, Level 2 (Implementation & experiments)
+thrust27_collapse_l2.py  --  Task 27, Level 2 (Implementation & experiments)
 ===============================================================================
 THE CROSS-GEOMETRY TRANSMISSION-COLLAPSE EXPERIMENT.
 
 This is the load-bearing L2 deliverable the L0/L1 Judge flagged: land the
 five-point cross-geometry collapse that the L1 methodology only specified.  It
 
-  (Stage A)  reproduces the three on-disk Thrust #17 y_crit anchors
+  (Stage A)  reproduces the three on-disk Task 17 y_crit anchors
              (krank=15.93, periodic_hills_1p0=1.0, conv_div=207.9) by re-running
              the SAME variance-balance sweep (critical_matching_height.py
              functions, production ODE) -> a protocol-fidelity GATE;
@@ -57,7 +57,7 @@ OF = os.path.join(CODES, "openfoam")
 sys.path.insert(0, os.path.join(HERE))
 sys.path.insert(0, os.path.join(CODES, "vendor", "universal_wall_function",
                                 "codes", "analysis"))
-# reuse the EXACT Thrust #17 sweep + crossing (production ODE inside)
+# reuse the EXACT Task 17 sweep + crossing (production ODE inside)
 import critical_matching_height as cmh           # noqa: E402
 from dose_response_xiao import read_case, evaluate_case  # noqa: E402
 
@@ -127,7 +127,7 @@ def main():
     print("=" * 96)
 
     # ----- Stage A: reproduce the three #17 anchors (protocol-fidelity gate) ----
-    print("\n[Stage A] reproduce the on-disk Thrust #17 y_crit anchors "
+    print("\n[Stage A] reproduce the on-disk Task 17 y_crit anchors "
           "(variance-balance, production ODE)")
     m17 = np.load(os.path.join(RESULTS, "critical_matching_height_map.npz"),
                   allow_pickle=True)
@@ -265,7 +265,7 @@ def main():
         ycrit_alpha=np.array([0.75, 1.00, 1.25]),
         steepness_monotone=bool(mono),
         stageA_gate=bool(gateA), stageB_gate=bool(gateB),
-        note=("Thrust #27 cross-geometry transmission collapse. y_crit per "
+        note=("Task 27 cross-geometry transmission collapse. y_crit per "
               "geometry via #17 variance-balance sweep (production ODE). Xiao "
               "0.8/1.0/1.2 from 29-case DNS (alph075/alph10-9/alph125), the same "
               "reference as aposteriori_dose_response.npz eps. y_m+ = time-mean "

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-critical_matching_height_apriori.py  (Thrust #17, L1 methodology verification)
+critical_matching_height_apriori.py  (Task 17, L1 methodology verification)
 
 A-priori verification of the *critical matching height* derivation on the
 existing single-geometry matching-height sweep (Krank Re_H=10595 periodic hills,

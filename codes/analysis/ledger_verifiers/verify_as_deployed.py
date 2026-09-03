@@ -246,7 +246,7 @@ def main() -> int:
               "I/D " + " -> ".join(f"{h:.4f}:{r:.0f}"
                                    for h, r in zip(heights, ratios)))
 
-        # red fixture: the ordering check must be able to fail
+        # control case: the ordering check must be able to fail
         fake_i, fake_d = list(eq_i), list(eq_d)
         fake_i[0], fake_d[0] = fake_d[0], fake_i[0]
         check("R6 red: a record in which delivery exceeds input transfer is "

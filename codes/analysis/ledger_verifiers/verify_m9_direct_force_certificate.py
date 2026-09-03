@@ -273,20 +273,20 @@ with np.load(RESULT, allow_pickle=False) as data:
                                          direct_complete.size),
                    direct_complete) > 0)
 
-    # Red fixtures.  These are evaluated with the same acceptance functions as
+    # Control cases.  These are evaluated with the same acceptance functions as
     # the real record, so they detect the four invalid shortcuts encountered in
     # the preceding development attempt.
-    check("red fixture: dropping form pressure is rejected",
+    check("control case: dropping form pressure is rejected",
           not closure_accepts(parent, viscous[:, 0], scale))
-    check("red fixture: pressure-sign reversal is rejected",
+    check("control case: pressure-sign reversal is rejected",
           not closure_accepts(parent, viscous[:, 0] - pressure[:, 0], scale))
     bad_metadata = dict(summary["method"])
     bad_metadata["self_reconstruction_as_reference"] = True
-    check("red fixture: self-reconstructed reference is rejected",
+    check("control case: self-reconstructed reference is rejected",
           not (bad_metadata["self_reconstruction_as_reference"] is False))
     falsely_named_gap = summary["best_projection"]["signed_x_force"][
         str(nphase)]["best_direct_gap"]
-    check("red fixture: positive scalar representation-loss claim is rejected",
+    check("control case: positive scalar representation-loss claim is rejected",
           not (falsely_named_gap > 1e-14))
 
 # Recompute all 54 public-source comparisons without importing producer code.
@@ -325,7 +325,7 @@ with np.load(VF_RESULT, allow_pickle=False) as stored:
 
 ledger = LEDGER.read_text(encoding="utf-8")
 main = MAIN.read_text(encoding="utf-8")
-check("M9 ledger row binds this verifier and corrected substrate",
+check("M9 claim binds this verifier and corrected substrate",
       "**M9**" in ledger and "verify_m9_direct_force_certificate.py" in ledger and
       "r24_rib_dtype_p3_G1" in ledger)
 # M12 was deposit-gated while the staggered-cube WRLES was in flight; that

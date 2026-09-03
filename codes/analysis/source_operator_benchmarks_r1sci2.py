@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build executable source benchmarks for referee row R1-SCI-2.
+"""Build executable source benchmarks for claim R1-SCI-2.
 
 The earlier registry verified names and term masks but treated Yang's integral
 model as a supplied-traction rearrangement and Park--Moin as a residual only.

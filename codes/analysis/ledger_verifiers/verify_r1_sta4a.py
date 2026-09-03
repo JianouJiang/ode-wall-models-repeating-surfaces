@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stable-path verifier for exact-pressure referee row R1-STA-4a."""
+"""Stable-path verifier for exact-pressure claim R1-STA-4a."""
 from __future__ import annotations
 
 import hashlib

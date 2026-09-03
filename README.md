@@ -67,6 +67,10 @@ figures/                          the ten figures as they appear in the article
 SHA256SUMS.txt                    checksums of the records
 ```
 
+The programs here are the ones the article depends on: the verification programs, the figure
+generators, the modules they import, and the reduction programs named as producers in the
+records. Exploratory analyses that did not enter the article are not included.
+
 Every figure generator reads its values from a record in `records/`; none of them has a number
 typed into it. Where a scoring reference was withdrawn during the study, both the superseded and
 the corrected values are retained in the record rather than overwritten, so the provenance of

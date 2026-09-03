@@ -152,7 +152,7 @@ def reference_C(fields):
 def reference_B():
     """Peller & Manhart MGLET full-wall DNS traction (ERCOFTAC UFR3-30).
     The deposit's last two rows are plot-axis placeholders (0,0,0) and (9,0,0)
-    and are stripped, as required by the operator's correction."""
+    and are stripped, as required by the author's correction."""
     raw = np.loadtxt(MGLET)
     trailing = raw[-2:]
     if not (np.allclose(trailing[0], [0.0, 0.0, 0.0]) and
@@ -264,7 +264,7 @@ def main() -> int:
             "A_withdrawn_linear4": ("through-origin LINEAR fit of the first four archive points; "
                                     "withdrawn by the independent audit as under-resolved at the "
                                     "archive spacing (first point y+ 2.4-13). Retained ONLY as a "
-                                    "negative control and as a verifier red fixture."),
+                                    "negative control and as a verifier control case."),
             "B_mglet": ("Peller & Manhart MGLET full-wall DNS traction, ERCOFTAC UFR3-30, "
                         "column 1 = tau_w (normalisation settled from the deposit's own velocity "
                         "profiles); two trailing plot-axis placeholder rows stripped."),

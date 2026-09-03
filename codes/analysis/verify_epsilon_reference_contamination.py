@@ -254,7 +254,7 @@ def main() -> int:
             "corrected_cubic6_same_archive": four(tau_m_c, tauc, Phi),
             "corrected_mglet": four(tau_m_c, tau_mglet_b, Phi),
         },
-        "verdict": ("column 1 (|tau_m|/Phi = 0.735, the number the R2-1 ledger row quotes) contains "
+        "verdict": ("column 1 (|tau_m|/Phi = 0.735, the number the R2-1 claim quotes) contains "
                     "no tau_w and is unchanged.  Columns 2-4 all carry tau_w and all move."),
     }
 

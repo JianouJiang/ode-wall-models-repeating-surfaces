@@ -5,7 +5,7 @@ out-of-family test of epsilon as a PREDICTOR of ODE wall-model failure.
 ===========================================================================
 
 History.  The the earlier submission build claimed a geometry-readable failure criterion
-(hat-epsilon + classifier, AUC=1.00) and referee point R2-2 destroyed it:
+(hat-epsilon + classifier, AUC=1.00) and reviewer point R2-2 destroyed it:
 parameter drift across 15 locations, two contradictions, hard-assigned
 infinities, within-family-only evidence.  The JCP build deleted the claim.
 This module runs the experiment the deleted claim never had: ONE fixed

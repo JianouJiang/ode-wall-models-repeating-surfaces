@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stable-path coupled-metric verifier for referee row R2-m6."""
+"""Stable-path coupled-metric verifier for claim R2-m6."""
 from __future__ import annotations
 
 import json

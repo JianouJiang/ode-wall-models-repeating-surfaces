@@ -134,7 +134,7 @@ def main() -> int:
           and all(any(tok in line for tok in allowed) for line in contexts)
           and exclusion_stated)
 
-    # --- the sharp-geometry transfer claim, re-pointed (ledger row M8) -------
+    # --- the sharp-geometry transfer claim, re-pointed (claim M8) -------
     # The single-pitch d-type deposit this row originally protected has been
     # SUPERSEDED by the matched-numerics rib pair, whose verdict runs the
     # opposite way.  The row is therefore bound to the pair: its numbers are

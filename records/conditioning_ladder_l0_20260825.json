@@ -236,7 +236,7 @@
  "question": "re-adjudicate the eleven-rung a-priori wall-model ladder against a converged wall-traction truth, and test whether supplying exact omitted transport improves or degrades the wall-stress prediction",
  "reference_envelope_note": "All model errors in this study are normalised by the RMS of the reference they are scored against. To compare the model spread with the reference spread on one scale, the B-to-C distance is also reported in units of the PRIMARY truth's RMS.",
  "reference_notes": {
-  "A_withdrawn_linear4": "through-origin LINEAR fit of the first four archive points; withdrawn by the independent audit as under-resolved at the archive spacing (first point y+ 2.4-13). Retained ONLY as a negative control and as a verifier red fixture.",
+  "A_withdrawn_linear4": "through-origin LINEAR fit of the first four archive points; withdrawn by the independent audit as under-resolved at the archive spacing (first point y+ 2.4-13). Retained ONLY as a negative control and as a verifier control case.",
   "B_mglet": "Peller & Manhart MGLET full-wall DNS traction, ERCOFTAC UFR3-30, column 1 = tau_w (normalisation settled from the deposit's own velocity profiles); two trailing plot-axis placeholder rows stripped.",
   "C_xiao_repaired_cubic6": "through-origin degree-3 fit of the first 6 fluid points of the SAME archive columns as A; validated by the audit against MGLET at the Xiao spacing (relative RMS error 0.264, sign accuracy 0.90) but NOT validated at the windward traction peak, which carries 92% of the traction energy -- hence a bracket, not an answer.",
   "K_krank_stations": "Krank et al. Re=5600 deposited station traction, 10 stations; sparse independent cross-check, station metric only."

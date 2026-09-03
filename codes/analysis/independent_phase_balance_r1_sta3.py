@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent, conservative wall-following balance for ledger row R1-STA-3.
+"""Independent, conservative wall-following balance for claim R1-STA-3.
 
 The earlier wall-following calculation assessed closure against a wall force
 reconstructed from the same outer flux operator.  This producer breaks that

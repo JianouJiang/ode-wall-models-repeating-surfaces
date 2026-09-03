@@ -10,7 +10,7 @@ ranking is stable across two independent flow references.
 The verifier does not trust the producer's own summary fields.  It reloads the
 deposited wall-stress curves from the npz, rebuilds every reference from its
 primary file, recomputes every score with an INDEPENDENT NumPy implementation,
-and only then compares against the json.  It then applies red fixtures that must
+and only then compares against the json.  It then applies control cases that must
 fail, so a vacuous pass is detectable.
 
 Usage: python3 codes/analysis/ledger_verifiers/verify_scoring_reference_l0.py [--date YYYYMMDD]
@@ -200,7 +200,7 @@ def main() -> int:
     check(refs["B_mglet_dns"]["sentinel_repair_effect"]["separation_unchanged"] is True,
           "sentinel repair does not move the separation point")
 
-    # ---- 8. red fixtures: each MUST fail ----
+    # ---- 8. control cases: each MUST fail ----
     red = []
     shuffled = np.random.default_rng(7).permutation(ref_b)
     red.append(("phase-shuffled reference reproduces the B scores",
@@ -213,7 +213,7 @@ def main() -> int:
                     - points[list(points)[0]]["wall"]["B_mglet_dns"]["relative_rms"]) < 1e-6))
     red.append(("the model ranking is stable under a change of reference", len(flips) == 0))
     for label, triggered in red:
-        check(not triggered, f"red fixture rejected: {label}")
+        check(not triggered, f"control case rejected: {label}")
 
     return report()
 

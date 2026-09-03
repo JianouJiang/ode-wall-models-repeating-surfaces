@@ -14,7 +14,7 @@ agreement between
           codes/analysis/applied_traction/kernel_driver.cpp, and
     (iii) this independent implementation,
 
-on a random subsample of wall faces.  Red fixtures confirm the checks bite.
+on a random subsample of wall faces.  Control cases confirm the checks bite.
 
 Usage:
     python3 verify_applied_traction.py [--faces 60] [--seed 20260824]
@@ -310,7 +310,7 @@ def main() -> int:
           all(True for _ in [0]) and _sign_consistency(summary, blobs),
           "sign(applied) == sign(UMatch) on every replayed face")
 
-    # -- E. red fixtures: each corruption must be rejected -------------------
+    # -- E. control cases: each corruption must be rejected -------------------
     i0 = int(idx[0])
     tau0, _ = shoot_first_solve(float(um[i0]), float(dp[i0]), float(ym[i0]),
                                 nu, kappa, aplus)

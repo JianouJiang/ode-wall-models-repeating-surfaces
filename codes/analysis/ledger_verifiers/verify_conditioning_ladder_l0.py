@@ -9,7 +9,7 @@ are the wall-model predictions themselves (re-running the shooting solver is the
 producer's job, and its fidelity against the previously published ladder is
 checked separately below).
 
-Red fixtures are included: each is a deliberately corrupted input that MUST be
+Control cases are included: each is a deliberately corrupted input that MUST be
 rejected.  A verifier that cannot fail is not a check.
 
 Exit 0 if every check passes.
@@ -350,7 +350,7 @@ def main() -> int:
           "dean" not in txt and "c_f(re)" not in txt)
     check("no Reynolds-number verdict flip is claimed", "flip" not in txt)
 
-    # ---- 8. red fixtures --------------------------------------------------
+    # ---- 8. control cases --------------------------------------------------
     sname = "ladder_L1"
     ph = Z[f"{sname}_phase"]
     preds = {m: wrap(ph, Z[f"{sname}_pred_{m}"], dense) for m in ("M0_equilibrium",

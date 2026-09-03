@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """The three wall-traction references used to score the R2-m4 / R3-2 ladder.
 
-Written 2026-08-25 after the operator withdrew the deposited Xiao wall-gradient
+Written 2026-08-25 after the author withdrew the deposited Xiao wall-gradient
 reconstruction as a SCORING reference (independent audit:
 work_progress/archer2_campaign_20260823/TRUTH_REFERENCE_AUDIT_V/REPORT.md).
 

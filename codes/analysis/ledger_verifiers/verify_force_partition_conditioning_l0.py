@@ -14,7 +14,7 @@ Design rules observed (they are the recurring lessons of this project):
   * Nothing is proved by a file name or a tool name.
   * Load-bearing numbers are RE-DERIVED here from the raw archives by an
     independent implementation, not read back from the artifact under test.
-  * Six red fixtures perturb the artifact and require the corresponding check to
+  * Six control cases perturb the artifact and require the corresponding check to
     fail, so a check that cannot fail is itself a defect.
 
 Run:  python3 codes/analysis/ledger_verifiers/verify_force_partition_conditioning_l0.py
@@ -293,7 +293,7 @@ def static_checks():
 
 def red_fixtures(payload):
     """Each fixture perturbs the artifact and REQUIRES a check to fail."""
-    print("\n  red fixtures (each must trip the corresponding check):")
+    print("\n  control cases (each must trip the corresponding check):")
     fixtures = []
 
     def fixture(name, mutate):
@@ -318,8 +318,8 @@ def red_fixtures(payload):
             FAIL.clear()
             FAIL.extend(real_fail)
         ok = tripped
-        (PASS if ok else FAIL).append(f"red fixture: {name}")
-        print(f"    [{'PASS' if ok else 'FAIL'}] red fixture: {name}"
+        (PASS if ok else FAIL).append(f"control case: {name}")
+        print(f"    [{'PASS' if ok else 'FAIL'}] control case: {name}"
               f"  -- {'tripped ' + str(len(sink)) + ' check(s)' if ok else 'NOT DETECTED'}")
         fixtures.append((name, ok))
         _ = base_fail

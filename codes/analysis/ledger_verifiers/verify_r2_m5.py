@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stable guard for Referee-2 minor point 5 (exact-stress interpretation).
+"""Stable guard for Reviewer-2 minor point 5 (exact-stress interpretation).
 
 The DNS-stress substitution is an intentionally inconsistent intervention: the
 stress comes from the complete DNS balance but is inserted into an equation that

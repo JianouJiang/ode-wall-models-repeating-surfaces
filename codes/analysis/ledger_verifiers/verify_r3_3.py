@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Raw-rebuilding verifier for referee row R3-3 (thin-layer deletions)."""
+"""Raw-rebuilding verifier for claim R3-3 (thin-layer deletions)."""
 from __future__ import annotations
 
 import hashlib
@@ -184,7 +184,7 @@ check("parent method deletes no thin-layer term", contract["thin_layer_terms_del
 
 ledger = LEDGER.read_text()
 main = MAIN.read_text()
-check("ledger row R3-3 is closed by this command",
+check("claim R3-3 is closed by this command",
       "**R3-3**" in ledger and
       "verify_r3_3.py" in ledger and
       "**CLOSED 2026-08-21**" in ledger)

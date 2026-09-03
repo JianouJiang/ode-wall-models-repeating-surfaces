@@ -19,7 +19,7 @@ with, per matching height and model:
 * window/drive stationarity checks;
 and, across heights, the A-PRIORI -> A-POSTERIORI TRANSFER RELATION: the
 deposited a-priori sweeps (critical_matching_height_map.npz on the y+ axis
-1..300 -- the referee's "R^2 < 0 at every y_m+ in [1,300]" object -- and
+1..300 -- the reviewer's "R^2 < 0 at every y_m+ in [1,300]" object -- and
 epsilon_coupled_predictor.npz on the y/H axis) interpolated at the coupled
 heights, paired with the coupled errors, with rank statistics and the
 data-driven window verdict.
@@ -462,7 +462,7 @@ def main() -> int:
         "paper_ycrit_plus": YCRIT_PAPER,
         "per_model": stats,
         "note": ("coupled traction error vs matching height, with the a-priori sweep at the same heights; "
-                 "the referee's object (a-priori R^2<0 at every y_m+ in [1,300]) is the "
+                 "the reviewer's object (a-priori R^2<0 at every y_m+ in [1,300]) is the "
                  "critical_matching_height_map y+ sweep carried in transfer_relation.apriori_relrms_yplus_axis"),
     }
     # G1c->G2c invariance at the extremes

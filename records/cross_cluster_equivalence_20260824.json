@@ -15,7 +15,7 @@
   },
   "date": "20260824",
   "provenance": {
-    "arc_log": "/home/jianoujiang/Desktop/paper-factory-lean/projects/repeating_structure_wall_model/codes/results/rswm_arc_equivalence/rswm_arc_traj_r48_12896520/log.pimpleFoam",
+    "arc_log": "codes/results/rswm_arc_equivalence/rswm_arc_traj_r48_12896520/log.pimpleFoam",
     "arc_log_sha256": "a01d09c7c941732c4666291b1e278a86e2e9d5af9ff04fe140e0ab662eeb41b0",
     "archer2_case": "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g1_tble_307200_v2",
     "archer2_manifest_sha256": "9f6d4ab6691914a3e2a102d8eb9c7748fa62d6f1e54957f26f00735ea5fa1749",
@@ -199,8 +199,8 @@
           "p99_relative_difference": 6.13067453216668e-14
         }
       },
-      "log_a": "/home/jianoujiang/Desktop/paper-factory-lean/projects/repeating_structure_wall_model/codes/results/rswm_arc_equivalence/rswm_arc_kernelv4_devel_12896422/log.pimpleFoam",
-      "log_b": "/home/jianoujiang/Desktop/paper-factory-lean/projects/repeating_structure_wall_model/codes/results/rswm_arc_equivalence/rswm_arc_kernelv4_r24_12896477/log.pimpleFoam",
+      "log_a": "codes/results/rswm_arc_equivalence/rswm_arc_kernelv4_devel_12896422/log.pimpleFoam",
+      "log_b": "codes/results/rswm_arc_equivalence/rswm_arc_kernelv4_r24_12896477/log.pimpleFoam",
       "matched_faces": 9600,
       "outlier_face_fraction": 0.039375,
       "outlier_faces": 378,

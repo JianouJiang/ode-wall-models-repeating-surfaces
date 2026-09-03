@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 r"""L2 (Implementation and experiments) — the dispersive-stress thesis put to its
-three pre-registered tests (binds B-L1-1 / B-L1-2 / B-L1-3 from the L1 Judge).
+three pre-registered tests (binds B-L1-1 / B-L1-2 / B-L1-3 from the L1 review).
 
 THESIS (L0 node_001, L1 node_002).  A single-column ODE/TBLE wall model structurally
 omits the form-induced (dispersive) stress  -<u~v~>  of double-averaging theory.

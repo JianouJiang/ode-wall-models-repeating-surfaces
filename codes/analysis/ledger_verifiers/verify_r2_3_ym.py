@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stable verifier for the REAL resolution of referee row R2-3 / M6.
+"""Stable verifier for the REAL resolution of claim R2-3 / M6.
 
 The JCP row stays closed-by-deletion; this verifier covers the thesis-grade
 companion experiment: the coupled matching-height sweep on the Xiao alpha=1
@@ -18,7 +18,7 @@ B. rebuild: finest-point relative RMS re-derived from the stored curves and
    DNS truth (|diff| < 1e-9); intervals bracket the point values;
    reattachment re-derived from zero crossings;
 C. transfer relation: a-priori interpolants present at every height on both
-   axes (y/H sweep and the referee's y+ in [1,300] sweep), Spearman rank
+   axes (y/H sweep and the reviewer's y+ in [1,300] sweep), Spearman rank
    statistics reported and consistent with the stored table;
 D. grid invariance at the extremes: the failure verdict (relative RMS > 1)
    identical on G1c and G2c;
@@ -74,7 +74,7 @@ def verify_model_abort(key, record, checks):
     checks.append((f"{key}: abort is the registered job {ABORT_JOB}",
                    record["producer_job_id"] == ABORT_JOB))
     # The census state is retained as evidence, but its INTERPRETATION is
-    # superseded: the operator's census dump showed the tied candidates
+    # superseded: the author's census dump showed the tied candidates
     # separated by ~1e-11 at a zero-crossing face, i.e. numerical twins of one
     # root, not distinct branches (M13/MANIFEST.md, 2026-08-24 correction).
     # This check therefore certifies the recorded state only, and a companion
@@ -230,7 +230,7 @@ def main() -> int:
     checks.append((f"transfer relation rows: {len(tr)} == 12 (6 heights x 2 models on G1c)", len(tr) == 12))
     for r in tr:
         both_axes = (r.get("apriori_relrms_yplus_axis", {}).get("periodic_hills_1p0") is not None)
-        checks.append((f"transfer ym={r['ym_over_H']} {r['model']}: a-priori y+ interpolant present (referee's [1,300] sweep)", both_axes))
+        checks.append((f"transfer ym={r['ym_over_H']} {r['model']}: a-priori y+ interpolant present (reviewer's [1,300] sweep)", both_axes))
     wv = summary.get("window_verdict", {}).get("per_model", {})
     for m in MODELS:
         s = wv.get(m, {})

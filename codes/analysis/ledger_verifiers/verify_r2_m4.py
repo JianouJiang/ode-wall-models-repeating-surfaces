@@ -168,7 +168,7 @@ def main() -> int:
     exc = s["metrics"]["Xc_resolved_convection_linear"]["relative_rms_interval"]
     ap_verdict = side_verdict(exc, dxc)
     check(f"[superseded reference A] a-priori verdict re-derived = {ap_verdict}", ap.get("apriori_verdict_ladder_L1") == ap_verdict)
-    # red fixture: swapping Xc for a copy of M1 must not be SUPPORTED
+    # control case: swapping Xc for a copy of M1 must not be SUPPORTED
     fixture = side_verdict(s["metrics"]["M1_pressure_gradient_ode"]["relative_rms_interval"],
                            {"low": 0.0, "high": 0.0})
     check("fixture: unchanged-M1 substitute cannot be SUPPORTED", fixture != "SUPPORTED")

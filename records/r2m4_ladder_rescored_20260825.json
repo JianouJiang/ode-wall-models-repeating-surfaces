@@ -2191,7 +2191,7 @@
   "supersedes": {
     "apriori": "codes/results/r2m4_apriori_ladder_20260823.json",
     "coupled": "codes/results/r2m4_ladder_coupled_20260823.json",
-    "note": "both retained verbatim; their scores are reference A, which the operator withdrew as a scoring reference on 2026-08-25"
+    "note": "both retained verbatim; their scores are reference A, which the author withdrew as a scoring reference on 2026-08-25"
   },
   "verdicts": {
     "A_xiao_linear4_deposited": {

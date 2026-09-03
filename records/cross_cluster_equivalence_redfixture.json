@@ -15,7 +15,7 @@
   },
   "date": "redfixture",
   "provenance": {
-    "arc_log": "/home/jianoujiang/Desktop/paper-factory-lean/projects/repeating_structure_wall_model/codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g1_equilibrium_307200_v2/log.pimpleFoam",
+    "arc_log": "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g1_equilibrium_307200_v2/log.pimpleFoam",
     "arc_log_sha256": "d46ba55fddd5f1fb79aed33bcf9030b6c50a91ac336fba5ff8e9c1360de8090f",
     "archer2_case": "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g1_tble_307200_v2",
     "archer2_manifest_sha256": "9f6d4ab6691914a3e2a102d8eb9c7748fa62d6f1e54957f26f00735ea5fa1749",
@@ -5016,7 +5016,7 @@
     },
     "machines": {
       "arc": {
-        "case": "/home/jianoujiang/Desktop/paper-factory-lean/projects/repeating_structure_wall_model/codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g1_equilibrium_307200_v2",
+        "case": "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g1_equilibrium_307200_v2",
         "case_id": "rswm_m13_re5600_g1_equilibrium_307200_v2",
         "checkpoints": [
           "315",
@@ -5155,7 +5155,7 @@
         }
       },
       "archer2": {
-        "case": "/home/jianoujiang/Desktop/paper-factory-lean/projects/repeating_structure_wall_model/codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g1_tble_307200_v2",
+        "case": "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g1_tble_307200_v2",
         "case_id": "rswm_m13_re5600_g1_tble_307200_v2",
         "checkpoints": [
           "315",

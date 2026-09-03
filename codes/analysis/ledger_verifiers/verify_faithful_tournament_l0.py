@@ -372,7 +372,7 @@ def main() -> int:
              "the modelled shape at the measured amplitude"),
         ]
         # The crossed shape x amplitude experiment was moved to the thesis
-        # chapter in the operator-sanctioned paper/thesis split of 2026-08-25.
+        # chapter in the author-sanctioned paper/thesis split of 2026-08-25.
         # The guarantee is unchanged -- a printed value must exist in the
         # artifacts -- but the document that must print it follows the split.
         chapter = (ROOT.parent / "wall_modelling_thesis_book" / "manuscript" /
@@ -383,7 +383,7 @@ def main() -> int:
             check(where is not None,
                   f"{what} is printed as {value} (found in: {where or 'NEITHER'})")
 
-    # ---- 15. red fixtures: each corruption must be rejected -----------------
+    # ---- 15. control cases: each corruption must be rejected -----------------
     red: list[tuple[str, bool]] = []
 
     yang = A[f"{PRIMARY}__pred__M3_yang_integral"].copy()
@@ -416,7 +416,7 @@ def main() -> int:
                 not (straddling["high"] < 0.0)))
 
     for message, rejected in red:
-        check(rejected, "red fixture: " + message)
+        check(rejected, "control case: " + message)
 
     print("-" * 62)
     print(f"{len(PASS)}/{len(PASS) + len(FAIL)} checks passed")

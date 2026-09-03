@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stable-path verifier for ledger row "M17 (real)" (thesis-grade resolution, section D).
+"""Stable-path verifier for claim "M17 (real)" (thesis-grade resolution, section D).
 
 The row's artifact is the verdict map rebuilt from real runs only:
   - generator: codes/figures/fig_verdict_map_real.py
@@ -17,7 +17,7 @@ Checks
   4. the old maps' unbacked geometries (rounded rib, Gaussian bump, BFS,
      conv-div channel, Krank hill) appear as explicit UNTESTED cells;
   5. the rendered figure files exist and hash-match the cert;
-  6. red fixtures: a fabricated verdict cell, a badge painted onto an UNTESTED
+  6. control cases: a fabricated verdict cell, a badge painted onto an UNTESTED
      cell, and a tampered metric value must each be rejected.
 
 Usage: python3 codes/analysis/ledger_verifiers/verify_m17_real.py [--cert PATH.json]
@@ -47,7 +47,7 @@ def digest(path: Path) -> str:
 
 
 def signature(cells):
-    """Material content of the map: cell_id -> everything a referee would check."""
+    """Material content of the map: cell_id -> everything a reviewer would check."""
     sig = {}
     for c in cells:
         if c["status"] == "TESTED":
@@ -139,26 +139,26 @@ def main() -> int:
             figs_ok = False
     check("rendered figure files exist and hash-match the cert", figs_ok)
 
-    # ---------------- red fixtures ----------------
+    # ---------------- control cases ----------------
     fab = copy.deepcopy(cert["cells"])
     fab.append(dict(cell_id="cube::aligned_FAKE", family="cube canopy (3-D) -- WRLES",
                     case_label="fabricated", status="TESTED", verdict="TOLERATED",
                     metric=dict(name="a-priori standard_ml R2", value=0.9, interval=[0.8, 1.0]),
                     provenance=dict(source="codes/results/DOES_NOT_EXIST.npz", sha256="0" * 64)))
-    check("red fixture: fabricated cell with a nonexistent dataset is rejected",
+    check("control case: fabricated cell with a nonexistent dataset is rejected",
           bool(structural_violations(fab)) and signature(fab) != signature(fresh))
     badge = copy.deepcopy(cert["cells"])
     for c in badge:
         if c["cell_id"] == "cube::aligned":
             c["verdict"] = "FAIL"          # a badge painted on an unrun cell
-    check("red fixture: verdict badge painted onto an UNTESTED cell is rejected",
+    check("control case: verdict badge painted onto an UNTESTED cell is rejected",
           bool(structural_violations(badge)))
     tamper = copy.deepcopy(cert["cells"])
     for c in tamper:
         if c["cell_id"] == "rib::ktype_p8":
             c["metric"]["value"] = +0.95   # flip the k-type failure into a pass
             c["verdict"] = "TOLERATED"
-    check("red fixture: tampered metric value / flipped verdict is rejected",
+    check("control case: tampered metric value / flipped verdict is rejected",
           signature(tamper) != signature(fresh))
 
     n_ok = sum(1 for _, ok in checks if ok)

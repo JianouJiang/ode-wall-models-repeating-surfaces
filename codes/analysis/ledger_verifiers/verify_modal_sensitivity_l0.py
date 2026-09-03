@@ -116,7 +116,7 @@ def main(art_path=ART, results_path=RESULTS, strict_pending=False):
         c.ok(t.get("identity_pass") is True,
              f"identity test {i}: null configuration reproduces the stock condition")
         c.ok(t.get("red_fixture_pass") is True,
-             f"identity test {i}: red fixture moved the solution")
+             f"identity test {i}: control case moved the solution")
         worst = max((v for v in (t.get("fields") or {}).values()
                      if v is not None), default=None)
         c.ok(worst is not None and worst <= t.get("tolerance", 1e-12),
@@ -226,7 +226,7 @@ def main(art_path=ART, results_path=RESULTS, strict_pending=False):
 
 
 # ---------------------------------------------------------------------------
-# Red fixtures: the checker must FAIL on corrupted inputs.
+# Control cases: the checker must FAIL on corrupted inputs.
 # ---------------------------------------------------------------------------
 def red_fixtures():
     import copy
@@ -234,7 +234,7 @@ def red_fixtures():
 
     art = load(ART)
     if not art:
-        print("red fixtures skipped: no artifact yet")
+        print("control cases skipped: no artifact yet")
         return 0
 
     fails = []
@@ -259,7 +259,7 @@ def red_fixtures():
     def r2(a):
         for t in a.get("identity_tests", []):
             t["red_fixture_pass"] = False
-    run_mutated(r2, "R2 dead red fixture must be caught")
+    run_mutated(r2, "R2 dead control case must be caught")
 
     def r3(a):
         for r in a.get("runs", []):
@@ -284,7 +284,7 @@ def red_fixtures():
 
     for f in fails:
         print(f"  [RED-FIXTURE FAIL] {f}")
-    print(f"{6 - len(fails)}/6 red fixtures behaved correctly")
+    print(f"{6 - len(fails)}/6 control cases behaved correctly")
     return 0 if not fails else 1
 
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent stable verifier for referee-ledger row M4 (WM-SGS interaction).
+"""Independent stable verifier for claim M4 (WM-SGS interaction).
 
 Reads the newest ``codes/results/m4_sgs_sensitivity_<date>.{json,npz}``
 certificate produced by ``codes/analysis/harvest_m4_sgs.py`` and checks,
@@ -179,7 +179,7 @@ def main() -> int:
     # Outcome-neutral status check.  This verifier certifies that the M4 MEASUREMENT is
     # complete, reproducible and correctly labelled - not that the answer came out one
     # way.  A certificate that claims invariance it does not have fails here; a
-    # certificate that honestly reports non-invariance passes and the operator reads the
+    # certificate that honestly reports non-invariance passes and the author reads the
     # measured verdict off the summary line.
     table_preview = cert["table"]
     measured_all_invariant = all(r["verdict_invariant"] for r in table_preview.values())
@@ -376,14 +376,14 @@ def main() -> int:
 
     # red/green fixtures on the criterion code, in both verdict directions
     flipped = criterion(1.4, 1.2, 1.6, 0.004, 0.6, 0.4, 0.8, 0.9)
-    check("red fixture: an SGS that flips the side of the threshold is not invariant",
+    check("control case: an SGS that flips the side of the threshold is not invariant",
           not flipped["A1_point_estimate_same_side_as_wale"]
           and not flipped["A1_interval_classification_matches_wale"]
           and not flipped["A1_exact_test_conclusion_matches_wale"])
     far = criterion(6.0, 5.0, 7.0, 0.004, 3.0, 2.0, 4.0, 0.004)
-    check("red fixture: doubled error leaves the magnitude class", not far["A2_ratio_within_class"])
+    check("control case: doubled error leaves the magnitude class", not far["A2_ratio_within_class"])
     decisive = criterion(0.95, 0.7, 1.1, 0.5, 0.6, 0.4, 0.8, 0.9)
-    check("red fixture: an SGS change larger than half the threshold margin is not invariant",
+    check("control case: an SGS change larger than half the threshold margin is not invariant",
           not decisive["A2_change_below_half_threshold_margin"])
     below = criterion(0.62, 0.45, 0.80, 0.9, 0.60, 0.43, 0.78, 0.9)
     check("green fixture: matched pair below the threshold is invariant", all(below.values()))

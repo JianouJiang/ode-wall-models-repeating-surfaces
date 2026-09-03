@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stable-path verifier for referee row R1-STA-2 (wavy-wall WRLES, second failure geometry).
+"""Stable-path verifier for claim R1-STA-2 (wavy-wall WRLES, second failure geometry).
 
 Checks that the deposited artifact codes/results/r1_sta2_wavy_wrles_<date>.{json,npz}
 (i)   exists, is complete (3 converged grids of the ladder) and hash-bound to the
@@ -11,7 +11,7 @@ Checks that the deposited artifact codes/results/r1_sta2_wavy_wrles_<date>.{json
       (the verdict itself is NOT a pass condition: a validated 'not a failure'
       would also close the row honestly);
 (iv)  re-derives the headline numbers from the npz arrays (no trust in the json),
-      and rejects red fixtures (sign-flipped traction, shuffled phase).
+      and rejects control cases (sign-flipped traction, shuffled phase).
 
 Usage:  python3 codes/analysis/ledger_verifiers/verify_r1_sta2.py [--artifact PATH.json]
 """
@@ -187,13 +187,13 @@ def main() -> int:
         lc_re = conv.get("x_re", {}).get("last_change", float("nan"))
         checks.append(("grid convergence: separation/reattachment change on last refinement <= %.2f lambda" % tol["x_sep"],
                        abs(lc_sep) <= tol["x_sep"] and abs(lc_re) <= tol["x_re"]))
-        # ---- red fixtures
+        # ---- control cases
         fs, fr = crossings(-tau)
-        checks.append(("red fixture: sign-flipped traction swaps separation/reattachment",
+        checks.append(("control case: sign-flipped traction swaps separation/reattachment",
                        fs.size == 2 and abs(fs.mean() - w["x_re"]) < 1e-9))
         rng = np.random.default_rng(0)
         shuffled = r2(pred[rng.permutation(len(pred))], truth)
-        checks.append(("red fixture: phase-shuffled prediction is not the deposited R2", abs(shuffled - od["standard_ml"]) > 1e-6))
+        checks.append(("control case: phase-shuffled prediction is not the deposited R2", abs(shuffled - od["standard_ml"]) > 1e-6))
         checks.append(("status flag consistent", art["status"] == "R1_STA2_WAVY_WRLES_OK"))
         print("verdict (finest grid %s, %d cells): second_failure_instance=%s ; R2(standard ODE) by eta_m = %s ; eps_med by eta_m = %s"
               % (order[-1], fg["cells"], fg["verdict"]["second_failure_instance"],

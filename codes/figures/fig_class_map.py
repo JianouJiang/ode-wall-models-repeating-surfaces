@@ -37,7 +37,7 @@ Two design decisions the results force:
   * THERE IS NO ROUNDED-RIB ROW, and it must not come back either.  It drew a
     wall we never scored and labelled it "NOT SIMULATED: the untested bridge
     between the two families".  That label was not true: a fillet ladder WAS
-    run, in steady RANS, and ledger row M8 deleted it from the active evidence
+    run, in steady RANS, and claim M8 deleted it from the active evidence
     because its windowed-mean statistics were unsound.  "Not simulated" and
     "simulated, then withdrawn" are different statements and the figure was
     making the wrong one, in a panel the body never referred to.  The gap is
@@ -78,7 +78,7 @@ matplotlib.rcParams.update({
 
 # ── the badge values, READ from the artifacts that own them ───────────────
 # These used to be typed into SMOOTH/SHARP as literals.  That is precisely the
-# defect ledger row M17 was opened for -- "unrun verdict badges were a
+# defect claim M17 was opened for -- "unrun verdict badges were a
 # hard-coded literal table" -- and by 2026-08-27 the transcription had drifted
 # twice: the Gaussian bump was printed +0.98 against the archive's 0.9747, and
 # the steep sinusoid +0.81 against its finest grid's 0.798.  Nothing is typed
@@ -166,7 +166,7 @@ def geometry(ax, kind, verdict, faint=False):
         # cube_tile, not cube_array: the latter recedes a full pitch per row, so
         # at pitch = 2h each row cleared the top of the one in front and the
         # array read as three stacked tiers -- the class of physically wrong
-        # schematic Referee 3 named in figures 1-2.  The tile is 0.85 wide so
+        # schematic Reviewer 3 named in figures 1-2.  The tile is 0.85 wide so
         # its total extent matches the extruder's 1 + DX, which is what keeps
         # this cell on the same scale as its neighbours.
         g3.cube_tile(ax, crest_colour=col, pitch=2 * H, h=H, side=0.85,

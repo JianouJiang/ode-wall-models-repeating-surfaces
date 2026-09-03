@@ -4,7 +4,7 @@
 The verifier does not import the registry producer.  It independently rebuilds
 M0 and Meneveau M5 from the deposited rib profiles, checks all source hashes and
 manufactured thresholds, audits the input/term masks, and exercises two red
-fixtures that reproduce the referee's taxonomy and pressure-direction failures.
+fixtures that reproduce the reviewer's taxonomy and pressure-direction failures.
 """
 from __future__ import annotations
 
@@ -239,9 +239,9 @@ def main() -> int:
 
     red_models = json.loads(json.dumps(registry["models"]))
     red_models[2]["retained_terms"].remove("modelled convection")
-    check("red fixture rejects M2 relabelled as a second M1",
+    check("control case rejects M2 relabelled as a second M1",
           not taxonomy_ok(red_models, registry["pressure_direction"]))
-    check("red fixture rejects the referee-caught wall-normal pressure label",
+    check("control case rejects the reviewer-caught wall-normal pressure label",
           not taxonomy_ok(registry["models"], "wall-normal pressure gradient"))
 
     source = active_tex(TEX.read_text(encoding="utf-8"))

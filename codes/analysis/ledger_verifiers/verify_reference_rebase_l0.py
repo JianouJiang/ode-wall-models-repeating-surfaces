@@ -7,7 +7,7 @@ analytic surface module, the references, the metrics, the rank statistics and
 the null contest are all re-implemented here, and the manuscript is checked as
 text.
 
-Red fixtures are included so that a verifier that has quietly stopped testing
+Control cases are included so that a verifier that has quietly stopped testing
 anything fails loudly.
 
 Run:  python3 codes/analysis/ledger_verifiers/verify_reference_rebase_l0.py
@@ -371,7 +371,7 @@ check(("least affected" in A_flow and "correction" in A_flow)
       "the paper states that the one validated member is the least affected one")
 
 # --------------------------------------------------------------------------- #
-# red fixtures
+# control cases
 # --------------------------------------------------------------------------- #
 rng = np.random.default_rng(7)
 shuf = rng.permutation(preds["pg_ode_mixing_length"])

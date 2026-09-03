@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent stable guard for ledger row R2-4 / M20.
+"""Independent stable guard for claim R2-4 / M20.
 
 Row: "3-D claims rest on steady RANS the paper itself calls erratic; the
 d-/k-type rib pair is LES vs RANS, not a control."  Closes when (a) the d- and

@@ -16,7 +16,7 @@ coupled ladder with the a-priori ladder evaluated on the same surface
 Cases that have not landed are reported as pending; the status is
 R2M4_LADDER_HARVEST_OK only when the minimum set (five L1 models and the two
 W1 ceiling cases, the latter taken from Agent B's corrected Re=5,600 G1c
-matrix after the operator's rebase order) is complete,
+matrix after the author's rebase order) is complete,
 R2M4_LADDER_HARVEST_PARTIAL otherwise.
 """
 from __future__ import annotations

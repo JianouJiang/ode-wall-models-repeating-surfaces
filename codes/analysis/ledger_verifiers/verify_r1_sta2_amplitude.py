@@ -186,7 +186,7 @@ def main() -> int:
     checks.append(("steep wall traction reverses somewhere (flow is separated)",
                    float(np.mean(tau < 0)) > 0.05))
     rng = np.random.default_rng(0)
-    checks.append(("red fixture: phase-shuffled prediction is not the deposited R2",
+    checks.append(("control case: phase-shuffled prediction is not the deposited R2",
                    abs(r2(pred[rng.permutation(len(pred))], truth) -
                        steep[sg]["verdict"]["standard_ml_r2_by_eta"]["0.1"]) > 1e-6))
 

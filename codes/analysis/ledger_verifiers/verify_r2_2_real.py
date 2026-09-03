@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stable-path verifier for ledger row "R2-2 (real)" (thesis-grade resolution, section D).
+"""Stable-path verifier for claim "R2-2 (real)" (thesis-grade resolution, section D).
 
 The row's artifact is the pre-registered out-of-family epsilon-predictor test:
   - preregistration: work_progress/archer2_campaign_20260823/R2-2_real/
@@ -17,13 +17,13 @@ Checks
      the headline verdict must match the deposited cert bit-for-bit in substance;
   4. the preregistered scoring rules are re-applied independently here (not via
      the evaluator) to the recomputed anchors and must give the same headline;
-  5. red fixtures: a fabricated anchor, a flipped measured bin, and a tampered
+  5. control cases: a fabricated anchor, a flipped measured bin, and a tampered
      preregistration hash must each be rejected by the comparison logic;
   6. anchors marked blind must be documented as blind in the preregistration,
      and no anchor outside the preregistered roster may appear.
 
 A PARTIAL cert (pending anchors) passes if it says so honestly; the verifier
-prints the pending roster so the operator can see what a full close still needs.
+prints the pending roster so the author can see what a full close still needs.
 
 Usage: python3 codes/analysis/ledger_verifiers/verify_r2_2_real.py [--cert PATH.json]
 """
@@ -206,7 +206,7 @@ def main() -> int:
                           f"({an['superseded_by_amendment'][0]['value']:+.3f}) -> "
                           f"{an['measured']['bin']}({an['measured']['value']:+.3f})"
                           for an in corrected))
-    check("red fixture: an anchor scored against a withdrawn reference is detected",
+    check("control case: an anchor scored against a withdrawn reference is detected",
           bool({"codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz"}
                & withdrawn_files))
 
@@ -217,7 +217,7 @@ def main() -> int:
           all("xiao" not in aid for aid, *_ in
               cert["scoreboard"]["p1"]["all_out_of_family"]["anchors"]))
 
-    # ---------------- red fixtures ----------------
+    # ---------------- control cases ----------------
     fab = copy.deepcopy(cert["anchors"])
     fab.append(dict(id="cube_aligned", status="EVALUATED", blind=True, in_family=False,
                     p1_forecast="FAIL", p2_forecast="FAIL", p0_forecast="FAIL",
@@ -225,16 +225,16 @@ def main() -> int:
                     scores=dict(p1=1.0, p2=1.0, p0=1.0),
                     provenance=dict(source="codes/results/DOES_NOT_EXIST.npz",
                                     sha256="0" * 64)))
-    check("red fixture: fabricated cube anchor is rejected by recomputation",
+    check("control case: fabricated cube anchor is rejected by recomputation",
           anchor_signature(fab) != anchor_signature(fresh))
     flip = copy.deepcopy(cert["anchors"])
     for an in flip:
         if an["id"] == "wavy_wrles_G0":
             an["measured"]["bin"] = "FAIL"
             an["scores"]["p1"] = 1.0
-    check("red fixture: flipped wavy verdict is rejected by recomputation",
+    check("control case: flipped wavy verdict is rejected by recomputation",
           anchor_signature(flip) != anchor_signature(fresh))
-    check("red fixture: tampered preregistration hash is rejected",
+    check("control case: tampered preregistration hash is rejected",
           not ("deadbeef" * 8 == digest(PREREG)))
 
     n_ok = sum(1 for _, ok in checks if ok)

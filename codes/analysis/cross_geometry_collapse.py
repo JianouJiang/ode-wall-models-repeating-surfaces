@@ -6,7 +6,7 @@ Cross-geometry collapse test  (Level-2 implementation experiment)
 WHY THIS SCRIPT EXISTS
 ----------------------
 Both the Level-0 and Level-1 Judges flagged the deepest weakness of the
-"calibrated predictor" thrust: the 30-point error-vs-epsilon curve was built by
+"calibrated predictor" task: the 30-point error-vs-epsilon curve was built by
 sweeping the *matching height* y_m on a SINGLE geometry (periodic hills).  Since
 the cancellation parameter epsilon-bar = |tau_w| / (|dp/dx| y_m) is, by
 construction, ~ C / y_m, and the a-priori relRMS is also monotone in y_m, the
@@ -61,7 +61,7 @@ from ode_wall_model import predict_tau_w  # noqa: E402
 Y_IDX = 10  # matching index, y+ ~ 50, identical to the rest of the paper
 
 # ----------------------------------------------------------------------------
-# CURATION RULE (pre-registered, to pre-empt a "cherry-picked" referee question)
+# CURATION RULE (pre-registered, to pre-empt a "cherry-picked" reviewer question)
 # ----------------------------------------------------------------------------
 # Selection: ONE canonical multi-station high-fidelity dataset per DISTINCT
 # wall-geometry family.  A "family" is a geometry shape; Reynolds-number and

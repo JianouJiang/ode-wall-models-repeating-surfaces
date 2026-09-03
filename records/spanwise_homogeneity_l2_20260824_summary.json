@@ -7,7 +7,7 @@
     "amplitude": "area-weighted spanwise dispersion of tau_s per streamwise station",
     "persistence": "Pearson correlation of the spanwise-deviation field between the DISJOINT windows (315,360] and (360,405], recovered exactly from the cumulative Mean fields using the accumulated averaging times",
     "null_control": "the same correlation after shuffling faces within each station",
-    "why_not_flux": "the archived bundles retain logs and samples only; the 3-D mean fields were purged at packaging, so the full-span crest flux the node_009 referee preferred cannot be integrated without re-running the CFD, which is owned by the operator campaign"
+    "why_not_flux": "the archived bundles retain logs and samples only; the 3-D mean fields were purged at packaging, so the full-span crest flux the node_009 reviewer preferred cannot be integrated without re-running the CFD, which is owned by the author's campaign"
   },
   "points": {
     "0145:G1c:equilibrium": {
@@ -549,7 +549,7 @@
       "persistence_grows_with_matching_height": "SUPPORTED",
       "structure_present_at_every_height": "REFUTED",
       "amplitude_grows_with_matching_height": "NOT SUPPORTED",
-      "statement": "the spanwise-deviation field of the wall traction is uncorrelated between disjoint averaging windows at the two smallest matching surfaces -- there the single-slice departure is finite-window sampling noise, as the node_009 referee suspected -- and becomes strongly correlated at the larger surfaces. The AMPLITUDE of the spanwise dispersion does not grow with matching height. So the amendment's causal wording is right about where a persistent structure exists and wrong to imply it exists everywhere or that it grows in magnitude."
+      "statement": "the spanwise-deviation field of the wall traction is uncorrelated between disjoint averaging windows at the two smallest matching surfaces -- there the single-slice departure is finite-window sampling noise, as the node_009 reviewer suspected -- and becomes strongly correlated at the larger surfaces. The AMPLITUDE of the spanwise dispersion does not grow with matching height. So the amendment's causal wording is right about where a persistent structure exists and wrong to imply it exists everywhere or that it grows in magnitude."
     },
     "reading": "the overlapping-window statistic is inflated by shared samples and is reported only to show why it cannot be used; the disjoint-window correlation is the measurement, and the within-station shuffle confirms the statistic is zero when no structure is present"
   },

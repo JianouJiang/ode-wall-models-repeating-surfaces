@@ -248,16 +248,16 @@ check("no modelled or thin-layer reference quantity",
       not summary["uses_pressure_height_proxy"] and
       not summary["uses_same_operator_wall_reference"])
 
-# Red fixtures use the same full-leg closure measure as the real record.
+# Control cases use the same full-leg closure measure as the real record.
 def closure(candidate_parent: np.ndarray) -> float:
     return float(np.linalg.norm(candidate_parent - direct) /
                  np.linalg.norm(full_legs))
 
-check("red fixture: omitting mean transport is rejected",
+check("control case: omitting mean transport is rejected",
       closure(parent - blocked["mean"]) > EPSILON_REFERENCE)
-check("red fixture: pressure sign reversal is rejected",
+check("control case: pressure sign reversal is rejected",
       closure(parent - 2.0 * blocked["pressure"]) > EPSILON_REFERENCE)
-check("red fixture: same-operator wall reference is forbidden",
+check("control case: same-operator wall reference is forbidden",
       summary["uses_same_operator_wall_reference"] is False)
 
 main_tex = ROOT / "manuscript" / "main.tex"

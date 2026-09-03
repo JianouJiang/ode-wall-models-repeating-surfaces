@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 r"""
-build_corrected_xiao_profiles.py  --  Thrust #27, Level 2 (the load-bearing step)
+build_corrected_xiao_profiles.py  --  Task 27, Level 2 (the load-bearing step)
 =================================================================================
 Generate *hill-surface-aware* wall-profile files for the Xiao et al. (2020)
 parameterised periodic-hill family at h/L_x = 0.8, 1.0, 1.2 (Re_b = 5600), with
@@ -10,7 +10,7 @@ the EXACT same schema and extraction convention as
 
 WHY THIS EXISTS (L1 Judge issue #3, the single load-bearing L2 task)
 --------------------------------------------------------------------
-The Thrust #27 cross-geometry collapse needs the a-priori critical matching
+The Task 27 cross-geometry collapse needs the a-priori critical matching
 height y_crit for ALL FIVE coupled cases.  Three are already on disk
 (critical_matching_height_map.npz: krank, periodic_hills_1p0, conv_div).  The
 two MISSING ones are the Xiao alpha=0.8 and alpha=1.2 coupled cases: their

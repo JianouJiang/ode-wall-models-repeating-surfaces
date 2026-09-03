@@ -193,7 +193,7 @@ def main() -> int:
         check(f"handoff heading:{heading}", heading in handoff)
     check("no current-level open work", "# CURRENT-LEVEL REQUIRED — OPEN\n\nNONE" in handoff)
     check("no live remote work", "# LIVE REMOTE JOBS\n\nNONE" in handoff)
-    check("ledger row passes", "[PASS] R1-SCI-3 / M3: 2685/2685 checks passed" in LEDGER_CHECK.read_text())
+    check("claim passes", "[PASS] R1-SCI-3 / M3: 2685/2685 checks passed" in LEDGER_CHECK.read_text())
     check("node verifier recorded", "RSWM_GRID_RESULTS_L3_VERIFIED checks=" in LEDGER_CHECK.read_text())
 
     check("PDF signature", FIGURE_PDF.read_bytes().startswith(b"%PDF"))

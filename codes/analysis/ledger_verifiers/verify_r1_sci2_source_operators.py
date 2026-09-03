@@ -172,7 +172,7 @@ def main() -> int:
               hickel["closure_coefficient_a_plus"] == 17.0
               and abs(rebuilt_h17 - hickel["tau_computed"]) < 2.0e-11
               and abs(rebuilt_h17 - hickel["tau_exact"]) < 2.0e-10)
-        check("coefficient red fixture rejects inherited A+=26",
+        check("coefficient control case rejects inherited A+=26",
               abs(rebuilt_h26 - rebuilt_h17) > 1.0e-5
               and abs(rebuilt_h26 - hickel["wrong_a_plus_tau"]) < 2.0e-11)
 
@@ -212,7 +212,7 @@ def main() -> int:
               and park_velocity_error < 2.0e-12
               and np.max(np.abs(arrays["park_velocity"]
                                 - arrays["park_exact_velocity"])) < 2.0e-12)
-        check("Park retained-term red fixtures move the output",
+        check("Park retained-term control cases move the output",
               abs(park["drop_convection_tau"] - park["tau_computed"]) > 1.0e-2
               and abs(park["wrong_pressure_sign_tau"]
                       - park["tau_computed"]) > 1.0e-2)
@@ -247,12 +247,12 @@ def main() -> int:
           and "backward Euler" in compact_pdf
           and PDF.stat().st_mtime_ns >= TEX.stat().st_mtime_ns)
 
-    # Explicit red fixtures for the verifier itself.
+    # Explicit control cases for the verifier itself.
     red_args = list(yang_args) + ["tau_matching"]
-    check("red fixture rejects a Yang supplied-traction shortcut",
+    check("control case rejects a Yang supplied-traction shortcut",
           not ("tau_matching" not in red_args and "moment_rate" in red_args))
     red_source = source.replace("A^+=17", "A^+=26", 1)
-    check("red fixture rejects the wrong Hickel coefficient in Methods",
+    check("control case rejects the wrong Hickel coefficient in Methods",
           not ("A^+=17" in re.sub(r"\s+", " ", red_source)))
 
     failed = [name for name, passed in checks if not passed]

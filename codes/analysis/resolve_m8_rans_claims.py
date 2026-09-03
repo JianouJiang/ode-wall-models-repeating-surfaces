@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Record the removal of load-bearing steady-RANS claims for ledger row M8."""
+"""Record the removal of load-bearing steady-RANS claims for claim M8."""
 
 from __future__ import annotations
 

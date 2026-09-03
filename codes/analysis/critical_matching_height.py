@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 r"""
-critical_matching_height.py  --  Thrust #17, Level-2 (implementation & experiments)
+critical_matching_height.py  --  Task 17, Level-2 (implementation & experiments)
 
 MULTI-GEOMETRY a-priori map of the critical matching height y_crit.
 
@@ -226,7 +226,7 @@ def crossing(ymp, relrms, epsmed, deployed_max=60.0):
 
 def main():
     print("=" * 96)
-    print("Critical matching height -- MULTI-GEOMETRY a-priori map (Thrust #17 L2)")
+    print("Critical matching height -- MULTI-GEOMETRY a-priori map (Task 17 L2)")
     print("Variance-balance crossing gamma=sigma_tau (R2=0); protocol fixed (production ODE).")
     print("=" * 96)
     DEPLOYED_MAX = 60.0   # typical WMLES first-cell upper bound (y_m+)

@@ -5,7 +5,7 @@ fig_verdict_map_real.py -- M17 (real): the verdict map rebuilt from real runs ON
 
 The deleted Figs 5-6 class maps carried 18 of 28 verdict badges from a
 hard-coded literal table (stage_classmaps_3d.py:197-201) rendered to look like
-simulation output; referee point M17 called this the paper's second most
+simulation output; reviewer point M17 called this the paper's second most
 AI-suspicious artefact.  This generator rebuilds the map with the opposite
 contract:
 

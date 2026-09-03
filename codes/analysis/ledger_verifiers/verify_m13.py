@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Stable verifier for referee row M13 / R2-m3 (higher-Re coupled WMLES).
+"""Stable verifier for claim M13 / R2-m3 (higher-Re coupled WMLES).
 
 Reads the latest ``codes/results/m13_highre_coupled_<date>_summary.json`` and
 its ``.npz`` (or the file named by ``M13_SUMMARY``), re-derives the headline
 numbers independently from the stored phase curves and reference arrays, and
-applies the acceptance criteria that let the operator set the row CLOSED:
+applies the acceptance criteria that let the author set the row CLOSED:
 
 A. completeness and provenance: campaigns at Re_H = 5600 / 10595 / 19000 /
    37000 with the registered grids; completed cases are terminal and their

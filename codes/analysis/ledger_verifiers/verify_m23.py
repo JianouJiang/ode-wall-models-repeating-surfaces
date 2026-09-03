@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stable verifier for ledger row M23: figure asset drift.
+"""Stable verifier for claim M23: figure asset drift.
 
 Ledger: "Every figure's .pdf/.png regenerated from its script."  For every
 figure included by the ACTIVE build this verifier binds the asset to its
@@ -68,7 +68,7 @@ REGISTRY: dict[str, dict] = {
     # Bound to the archive 2026-08-27: seventeen of the eighteen cases are read
     # straight out of the frozen error-operator output and reproduce every
     # printed digit.  The periodic hill's corrected score comes from the
-    # reference-rebase output, because the operator file scores that one row
+    # reference-rebase output, because the author file scores that one row
     # against the WITHDRAWN estimator; its station-error columns remain stated
     # literals, and that gap is recorded in work_progress.
     "fig_error_hierarchy": {
