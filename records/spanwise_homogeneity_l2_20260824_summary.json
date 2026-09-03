@@ -1,0 +1,693 @@
+{
+  "schema": "spanwise-homogeneity-l2-v1",
+  "date": "20260824",
+  "node": "development/nodes/node_010",
+  "question": "does the wall sample support the crest-bulk amendment's claim of a window-persistent spanwise structure that grows with matching height?",
+  "method": {
+    "amplitude": "area-weighted spanwise dispersion of tau_s per streamwise station",
+    "persistence": "Pearson correlation of the spanwise-deviation field between the DISJOINT windows (315,360] and (360,405], recovered exactly from the cumulative Mean fields using the accumulated averaging times",
+    "null_control": "the same correlation after shuffling faces within each station",
+    "why_not_flux": "the archived bundles retain logs and samples only; the 3-D mean fields were purged at packaging, so the full-span crest flux the node_009 referee preferred cannot be integrated without re-running the CFD, which is owned by the operator campaign"
+  },
+  "points": {
+    "0145:G1c:equilibrium": {
+      "case_id": "rswm_m13_re5600_g1_equilibrium_307200_v2",
+      "ym_over_H": 0.014515746,
+      "model": "equilibrium",
+      "n_faces": 4800,
+      "n_stations": 120,
+      "n_span_per_station": 40,
+      "accumulated_times": [
+        180.01633,
+        225.01633,
+        270.01633
+      ],
+      "disjoint_windows": [
+        [
+          135.0,
+          315.0
+        ],
+        [
+          315.0,
+          360.0
+        ],
+        [
+          360.0,
+          405.0
+        ]
+      ],
+      "spanwise_dispersion_over_streamwise_rms": {
+        "median": 0.057119482716115506,
+        "max": 0.25319852873415183,
+        "p90": 0.08315864299337851
+      },
+      "persistence_disjoint_w2_vs_w3": 0.01504898634727905,
+      "persistence_disjoint_w1_vs_w3": 0.017436606480732954,
+      "persistence_overlapping_cumulative_315_vs_405": 0.905730906183274,
+      "null_within_station_shuffle_w2_vs_w3": -0.01968565164617329
+    },
+    "0145:G1c:total_gradient_tble": {
+      "case_id": "rswm_m13_re5600_g1_tble_307200_v2",
+      "ym_over_H": 0.014515746,
+      "model": "total_gradient_tble",
+      "n_faces": 4800,
+      "n_stations": 120,
+      "n_span_per_station": 40,
+      "accumulated_times": [
+        180.01849,
+        225.01849,
+        270.01849
+      ],
+      "disjoint_windows": [
+        [
+          135.0,
+          315.0
+        ],
+        [
+          315.0,
+          360.0
+        ],
+        [
+          360.0,
+          405.0
+        ]
+      ],
+      "spanwise_dispersion_over_streamwise_rms": {
+        "median": 0.04350461652676553,
+        "max": 0.1171251144122978,
+        "p90": 0.06609064504868421
+      },
+      "persistence_disjoint_w2_vs_w3": 0.08266925744185573,
+      "persistence_disjoint_w1_vs_w3": -0.2108125878422115,
+      "persistence_overlapping_cumulative_315_vs_405": 0.7449292346598191,
+      "null_within_station_shuffle_w2_vs_w3": 0.007509571710066902
+    },
+    "0300:G1c:equilibrium": {
+      "case_id": "rswm_r23m6_ym0300_g1_equilibrium_307200_v1",
+      "ym_over_H": 0.03,
+      "model": "equilibrium",
+      "n_faces": 4800,
+      "n_stations": 120,
+      "n_span_per_station": 40,
+      "accumulated_times": [
+        180.00965,
+        225.00965,
+        270.00965
+      ],
+      "disjoint_windows": [
+        [
+          135.0,
+          585.0
+        ],
+        [
+          585.0,
+          630.0
+        ],
+        [
+          630.0,
+          675.0
+        ]
+      ],
+      "spanwise_dispersion_over_streamwise_rms": {
+        "median": 0.04717720553946672,
+        "max": 0.21185731677525876,
+        "p90": 0.07677903935595001
+      },
+      "persistence_disjoint_w2_vs_w3": -0.015558317848414934,
+      "persistence_disjoint_w1_vs_w3": -0.09191743764159527,
+      "persistence_overlapping_cumulative_315_vs_405": 0.9280255181589199,
+      "null_within_station_shuffle_w2_vs_w3": 3.622487236169807e-05
+    },
+    "0300:G1c:total_gradient_tble": {
+      "case_id": "rswm_r23m6_ym0300_g1_tble_307200_v1",
+      "ym_over_H": 0.03,
+      "model": "total_gradient_tble",
+      "n_faces": 4800,
+      "n_stations": 120,
+      "n_span_per_station": 40,
+      "accumulated_times": [
+        180.01901,
+        225.01901,
+        270.01901
+      ],
+      "disjoint_windows": [
+        [
+          135.0,
+          315.0
+        ],
+        [
+          315.0,
+          360.0
+        ],
+        [
+          360.0,
+          405.0
+        ]
+      ],
+      "spanwise_dispersion_over_streamwise_rms": {
+        "median": 0.034687604760577556,
+        "max": 0.2382228250550504,
+        "p90": 0.06207179117193287
+      },
+      "persistence_disjoint_w2_vs_w3": 0.12164728994204654,
+      "persistence_disjoint_w1_vs_w3": 0.12720507992221533,
+      "persistence_overlapping_cumulative_315_vs_405": 0.8220534214212533,
+      "null_within_station_shuffle_w2_vs_w3": 0.03517051915090076
+    },
+    "0600:G1c:equilibrium": {
+      "case_id": "rswm_r23m6_ym0600_g1_equilibrium_307200_v1",
+      "ym_over_H": 0.06,
+      "model": "equilibrium",
+      "n_faces": 4800,
+      "n_stations": 120,
+      "n_span_per_station": 40,
+      "accumulated_times": [
+        180.01538,
+        225.01538,
+        270.01538
+      ],
+      "disjoint_windows": [
+        [
+          135.0,
+          315.0
+        ],
+        [
+          315.0,
+          360.0
+        ],
+        [
+          360.0,
+          405.0
+        ]
+      ],
+      "spanwise_dispersion_over_streamwise_rms": {
+        "median": 0.04023105425452539,
+        "max": 0.31960484227060404,
+        "p90": 0.08279429563662602
+      },
+      "persistence_disjoint_w2_vs_w3": 0.206727027918506,
+      "persistence_disjoint_w1_vs_w3": 0.41905693941724187,
+      "persistence_overlapping_cumulative_315_vs_405": 0.9386876481770943,
+      "null_within_station_shuffle_w2_vs_w3": -0.06675855243774675
+    },
+    "0600:G1c:total_gradient_tble": {
+      "case_id": "rswm_r23m6_ym0600_g1_tble_307200_v1",
+      "ym_over_H": 0.06,
+      "model": "total_gradient_tble",
+      "n_faces": 4800,
+      "n_stations": 120,
+      "n_span_per_station": 40,
+      "accumulated_times": [
+        180.01999,
+        225.01999,
+        270.01999
+      ],
+      "disjoint_windows": [
+        [
+          135.0,
+          315.0
+        ],
+        [
+          315.0,
+          360.0
+        ],
+        [
+          360.0,
+          405.0
+        ]
+      ],
+      "spanwise_dispersion_over_streamwise_rms": {
+        "median": 0.03779002702817463,
+        "max": 0.4133825174023198,
+        "p90": 0.07380852459001941
+      },
+      "persistence_disjoint_w2_vs_w3": 0.3273896432486692,
+      "persistence_disjoint_w1_vs_w3": 0.4241681274803529,
+      "persistence_overlapping_cumulative_315_vs_405": 0.9102060480169875,
+      "null_within_station_shuffle_w2_vs_w3": -0.031059935962333203
+    },
+    "0935:G1c:equilibrium": {
+      "case_id": "rswm_r23m6_ym0935_g1_equilibrium_307200_v1",
+      "ym_over_H": 0.0935,
+      "model": "equilibrium",
+      "n_faces": 4800,
+      "n_stations": 120,
+      "n_span_per_station": 40,
+      "accumulated_times": [
+        180.01568,
+        225.01568,
+        270.01568
+      ],
+      "disjoint_windows": [
+        [
+          135.0,
+          315.0
+        ],
+        [
+          315.0,
+          360.0
+        ],
+        [
+          360.0,
+          405.0
+        ]
+      ],
+      "spanwise_dispersion_over_streamwise_rms": {
+        "median": 0.06166269279276158,
+        "max": 0.3773146972760327,
+        "p90": 0.13473992311052035
+      },
+      "persistence_disjoint_w2_vs_w3": 0.5402652862649963,
+      "persistence_disjoint_w1_vs_w3": 0.4971098166328443,
+      "persistence_overlapping_cumulative_315_vs_405": 0.9496697430779226,
+      "null_within_station_shuffle_w2_vs_w3": -0.04155487095605563
+    },
+    "0935:G1c:total_gradient_tble": {
+      "case_id": "rswm_r23m6_ym0935_g1_tble_307200_v1",
+      "ym_over_H": 0.0935,
+      "model": "total_gradient_tble",
+      "n_faces": 4800,
+      "n_stations": 120,
+      "n_span_per_station": 40,
+      "accumulated_times": [
+        180.01979,
+        225.01979,
+        270.01979
+      ],
+      "disjoint_windows": [
+        [
+          135.0,
+          315.0
+        ],
+        [
+          315.0,
+          360.0
+        ],
+        [
+          360.0,
+          405.0
+        ]
+      ],
+      "spanwise_dispersion_over_streamwise_rms": {
+        "median": 0.03386834845825869,
+        "max": 0.2929714628517565,
+        "p90": 0.060237065077441795
+      },
+      "persistence_disjoint_w2_vs_w3": 0.3149434037400603,
+      "persistence_disjoint_w1_vs_w3": -0.6506445115430568,
+      "persistence_overlapping_cumulative_315_vs_405": 0.6839387217843443,
+      "null_within_station_shuffle_w2_vs_w3": 0.02039867279405775
+    },
+    "1500:G1c:equilibrium": {
+      "case_id": "rswm_r23m6_ym1500_g1_equilibrium_307200_v1",
+      "ym_over_H": 0.15,
+      "model": "equilibrium",
+      "n_faces": 4800,
+      "n_stations": 120,
+      "n_span_per_station": 40,
+      "accumulated_times": [
+        180.01702,
+        225.01702,
+        270.01702
+      ],
+      "disjoint_windows": [
+        [
+          135.0,
+          315.0
+        ],
+        [
+          315.0,
+          360.0
+        ],
+        [
+          360.0,
+          405.0
+        ]
+      ],
+      "spanwise_dispersion_over_streamwise_rms": {
+        "median": 0.07841972793903826,
+        "max": 0.5288665831226795,
+        "p90": 0.18286953319277113
+      },
+      "persistence_disjoint_w2_vs_w3": 0.8115130902524854,
+      "persistence_disjoint_w1_vs_w3": 0.49535933014002137,
+      "persistence_overlapping_cumulative_315_vs_405": 0.9380247530098427,
+      "null_within_station_shuffle_w2_vs_w3": 0.051384094115844374
+    },
+    "1500:G1c:total_gradient_tble": {
+      "case_id": "rswm_r23m6_ym1500_g1_tble_307200_v1",
+      "ym_over_H": 0.15,
+      "model": "total_gradient_tble",
+      "n_faces": 4800,
+      "n_stations": 120,
+      "n_span_per_station": 40,
+      "accumulated_times": [
+        180.01608,
+        225.01608,
+        270.01608
+      ],
+      "disjoint_windows": [
+        [
+          135.0,
+          315.0
+        ],
+        [
+          315.0,
+          360.0
+        ],
+        [
+          360.0,
+          405.0
+        ]
+      ],
+      "spanwise_dispersion_over_streamwise_rms": {
+        "median": 0.05258204568784654,
+        "max": 0.46785650945884466,
+        "p90": 0.09291294248206852
+      },
+      "persistence_disjoint_w2_vs_w3": 0.5893936704655579,
+      "persistence_disjoint_w1_vs_w3": 0.279096679443922,
+      "persistence_overlapping_cumulative_315_vs_405": 0.9063578937061523,
+      "null_within_station_shuffle_w2_vs_w3": 0.004516874326915645
+    },
+    "2500:G1c:equilibrium": {
+      "case_id": "rswm_r23m6_ym2500_g1_equilibrium_307200_v1",
+      "ym_over_H": 0.25,
+      "model": "equilibrium",
+      "n_faces": 4800,
+      "n_stations": 120,
+      "n_span_per_station": 40,
+      "accumulated_times": [
+        180.01145,
+        225.01145,
+        270.01145
+      ],
+      "disjoint_windows": [
+        [
+          135.0,
+          315.0
+        ],
+        [
+          315.0,
+          360.0
+        ],
+        [
+          360.0,
+          405.0
+        ]
+      ],
+      "spanwise_dispersion_over_streamwise_rms": {
+        "median": 0.04459241459542747,
+        "max": 0.22753300072015023,
+        "p90": 0.09331054636955312
+      },
+      "persistence_disjoint_w2_vs_w3": 0.8120587196267943,
+      "persistence_disjoint_w1_vs_w3": -0.2060116393851545,
+      "persistence_overlapping_cumulative_315_vs_405": 0.5608998270442622,
+      "null_within_station_shuffle_w2_vs_w3": -0.006285715387027129
+    },
+    "2500:G1c:total_gradient_tble": {
+      "case_id": "rswm_r23m6_ym2500_g1_tble_307200_v1",
+      "ym_over_H": 0.25,
+      "model": "total_gradient_tble",
+      "n_faces": 4800,
+      "n_stations": 120,
+      "n_span_per_station": 40,
+      "accumulated_times": [
+        180.01268,
+        225.01268,
+        270.01268
+      ],
+      "disjoint_windows": [
+        [
+          135.0,
+          315.0
+        ],
+        [
+          315.0,
+          360.0
+        ],
+        [
+          360.0,
+          405.0
+        ]
+      ],
+      "spanwise_dispersion_over_streamwise_rms": {
+        "median": 0.06504364655537034,
+        "max": 0.5730702920039659,
+        "p90": 0.13866511403490367
+      },
+      "persistence_disjoint_w2_vs_w3": 0.5184828783071626,
+      "persistence_disjoint_w1_vs_w3": 0.37253869062933814,
+      "persistence_overlapping_cumulative_315_vs_405": 0.9472156031617275,
+      "null_within_station_shuffle_w2_vs_w3": 0.004846435981943288
+    }
+  },
+  "amplitude_vs_matching_height": {
+    "equilibrium": {
+      "ym_over_H": [
+        0.014515746,
+        0.03,
+        0.06,
+        0.0935,
+        0.15,
+        0.25
+      ],
+      "spanwise_dispersion_median": [
+        0.057119482716115506,
+        0.04717720553946672,
+        0.04023105425452539,
+        0.06166269279276158,
+        0.07841972793903826,
+        0.04459241459542747
+      ],
+      "spearman_amplitude_vs_ym": 0.08571428571428573,
+      "amplitude_permutation_p": 0.9194444444444444,
+      "persistence_disjoint": [
+        0.01504898634727905,
+        -0.015558317848414934,
+        0.206727027918506,
+        0.5402652862649963,
+        0.8115130902524854,
+        0.8120587196267943
+      ],
+      "spearman_persistence_vs_ym": 0.942857142857143,
+      "persistence_permutation_p": 0.016666666666666666,
+      "min_persistence_disjoint": -0.015558317848414934,
+      "max_abs_null": 0.06675855243774675,
+      "structure_detected": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "heights_without_detectable_structure": [
+        0.014515746,
+        0.03
+      ]
+    },
+    "total_gradient_tble": {
+      "ym_over_H": [
+        0.014515746,
+        0.03,
+        0.06,
+        0.0935,
+        0.15,
+        0.25
+      ],
+      "spanwise_dispersion_median": [
+        0.04350461652676553,
+        0.034687604760577556,
+        0.03779002702817463,
+        0.03386834845825869,
+        0.05258204568784654,
+        0.06504364655537034
+      ],
+      "spearman_amplitude_vs_ym": 0.48571428571428577,
+      "amplitude_permutation_p": 0.35555555555555557,
+      "persistence_disjoint": [
+        0.08266925744185573,
+        0.12164728994204654,
+        0.3273896432486692,
+        0.3149434037400603,
+        0.5893936704655579,
+        0.5184828783071626
+      ],
+      "spearman_persistence_vs_ym": 0.8857142857142858,
+      "persistence_permutation_p": 0.03333333333333333,
+      "min_persistence_disjoint": 0.08266925744185573,
+      "max_abs_null": 0.03517051915090076,
+      "structure_detected": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "heights_without_detectable_structure": [
+        0.014515746
+      ]
+    }
+  },
+  "conclusion": {
+    "persistence_disjoint_range": [
+      -0.015558317848414934,
+      0.8120587196267943
+    ],
+    "null_max_abs": 0.06675855243774675,
+    "overlapping_statistic_range": [
+      0.5608998270442622,
+      0.9496697430779226
+    ],
+    "null_is_near_zero": true,
+    "structure_is_persistent_at_every_height": false,
+    "amendment_claim": "a window-persistent spanwise structure of the outer mean flow that grows with matching height",
+    "verdict_on_the_amendment": {
+      "persistence_grows_with_matching_height": "SUPPORTED",
+      "structure_present_at_every_height": "REFUTED",
+      "amplitude_grows_with_matching_height": "NOT SUPPORTED",
+      "statement": "the spanwise-deviation field of the wall traction is uncorrelated between disjoint averaging windows at the two smallest matching surfaces -- there the single-slice departure is finite-window sampling noise, as the node_009 referee suspected -- and becomes strongly correlated at the larger surfaces. The AMPLITUDE of the spanwise dispersion does not grow with matching height. So the amendment's causal wording is right about where a persistent structure exists and wrong to imply it exists everywhere or that it grows in magnitude."
+    },
+    "reading": "the overlapping-window statistic is inflated by shared samples and is reported only to show why it cannot be used; the disjoint-window correlation is the measurement, and the within-station shuffle confirms the statistic is zero when no structure is present"
+  },
+  "self_checks": {
+    "passed": 26,
+    "total": 26,
+    "detail": [
+      {
+        "name": "0145:G1c:equilibrium: accumulated averaging times increase",
+        "ok": true,
+        "note": "[180.016, 225.016, 270.016]"
+      },
+      {
+        "name": "0145:G1c:equilibrium: disjoint-window decomposition is exact",
+        "ok": true,
+        "note": "max|err|=1.73e-18"
+      },
+      {
+        "name": "0145:G1c:total_gradient_tble: accumulated averaging times increase",
+        "ok": true,
+        "note": "[180.018, 225.018, 270.018]"
+      },
+      {
+        "name": "0145:G1c:total_gradient_tble: disjoint-window decomposition is exact",
+        "ok": true,
+        "note": "max|err|=1.73e-18"
+      },
+      {
+        "name": "0300:G1c:equilibrium: accumulated averaging times increase",
+        "ok": true,
+        "note": "[180.01, 225.01, 270.01]"
+      },
+      {
+        "name": "0300:G1c:equilibrium: disjoint-window decomposition is exact",
+        "ok": true,
+        "note": "max|err|=8.67e-19"
+      },
+      {
+        "name": "0300:G1c:total_gradient_tble: accumulated averaging times increase",
+        "ok": true,
+        "note": "[180.019, 225.019, 270.019]"
+      },
+      {
+        "name": "0300:G1c:total_gradient_tble: disjoint-window decomposition is exact",
+        "ok": true,
+        "note": "max|err|=1.73e-18"
+      },
+      {
+        "name": "0600:G1c:equilibrium: accumulated averaging times increase",
+        "ok": true,
+        "note": "[180.015, 225.015, 270.015]"
+      },
+      {
+        "name": "0600:G1c:equilibrium: disjoint-window decomposition is exact",
+        "ok": true,
+        "note": "max|err|=8.67e-19"
+      },
+      {
+        "name": "0600:G1c:total_gradient_tble: accumulated averaging times increase",
+        "ok": true,
+        "note": "[180.02, 225.02, 270.02]"
+      },
+      {
+        "name": "0600:G1c:total_gradient_tble: disjoint-window decomposition is exact",
+        "ok": true,
+        "note": "max|err|=1.73e-18"
+      },
+      {
+        "name": "0935:G1c:equilibrium: accumulated averaging times increase",
+        "ok": true,
+        "note": "[180.016, 225.016, 270.016]"
+      },
+      {
+        "name": "0935:G1c:equilibrium: disjoint-window decomposition is exact",
+        "ok": true,
+        "note": "max|err|=8.67e-19"
+      },
+      {
+        "name": "0935:G1c:total_gradient_tble: accumulated averaging times increase",
+        "ok": true,
+        "note": "[180.02, 225.02, 270.02]"
+      },
+      {
+        "name": "0935:G1c:total_gradient_tble: disjoint-window decomposition is exact",
+        "ok": true,
+        "note": "max|err|=1.73e-18"
+      },
+      {
+        "name": "1500:G1c:equilibrium: accumulated averaging times increase",
+        "ok": true,
+        "note": "[180.017, 225.017, 270.017]"
+      },
+      {
+        "name": "1500:G1c:equilibrium: disjoint-window decomposition is exact",
+        "ok": true,
+        "note": "max|err|=4.34e-19"
+      },
+      {
+        "name": "1500:G1c:total_gradient_tble: accumulated averaging times increase",
+        "ok": true,
+        "note": "[180.016, 225.016, 270.016]"
+      },
+      {
+        "name": "1500:G1c:total_gradient_tble: disjoint-window decomposition is exact",
+        "ok": true,
+        "note": "max|err|=1.73e-18"
+      },
+      {
+        "name": "2500:G1c:equilibrium: accumulated averaging times increase",
+        "ok": true,
+        "note": "[180.011, 225.011, 270.011]"
+      },
+      {
+        "name": "2500:G1c:equilibrium: disjoint-window decomposition is exact",
+        "ok": true,
+        "note": "max|err|=4.34e-19"
+      },
+      {
+        "name": "2500:G1c:total_gradient_tble: accumulated averaging times increase",
+        "ok": true,
+        "note": "[180.013, 225.013, 270.013]"
+      },
+      {
+        "name": "2500:G1c:total_gradient_tble: disjoint-window decomposition is exact",
+        "ok": true,
+        "note": "max|err|=1.73e-18"
+      },
+      {
+        "name": "the within-station shuffled null is near zero",
+        "ok": true,
+        "note": "max|null| = 0.0668"
+      },
+      {
+        "name": "at least one disjoint-window persistence value was computed",
+        "ok": true,
+        "note": ""
+      }
+    ]
+  },
+  "status": "SPANWISE_HOMOGENEITY_L2_OK"
+}

@@ -1,0 +1,20 @@
+{
+  "excluded_quarantine": "codes/results/_superseded_wall_pinned",
+  "files_scanned": 387,
+  "legacy_values": {
+    "R2_wall_pinned": -4740061.847403673,
+    "epsilon_wall_pinned": 0.0007757019124642808
+  },
+  "pass": true,
+  "red_test_detected": true,
+  "red_test_evidence": [
+    "unlabelled legacy scalar: codes/results/wp0_guard_red_jvtdgjb4/vendor_result_leak.npz:periodic_hills_case_1p0_yidx10_r2_tau"
+  ],
+  "scan_roots": [
+    "codes/results",
+    "codes/vendor",
+    "manuscript/figures"
+  ],
+  "schema": "wp0-legacy-headline-guard-v2-recursive",
+  "violations": []
+}

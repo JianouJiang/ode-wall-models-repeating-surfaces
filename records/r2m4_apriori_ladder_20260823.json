@@ -1,0 +1,780 @@
+{
+  "acceptance_rule": "SUPPORTED iff interval(E(Xc_lin)-E(M1)).high<0 and interval(E(Xc_lin)).high<1; REFUTED iff interval(E(Xc_lin)-E(M1)).low>0 or interval(E(Xc_lin)).low>=1",
+  "apriori_verdict_ladder_L1": "REFUTED",
+  "bootstrap": {
+    "block_points": 512,
+    "dense_points": 4096,
+    "draws": 20000,
+    "seed": 20260823
+  },
+  "convection": "mean-field (U.grad)U . t_s from the 512x257 archive, derivatives in (x, eta), sampled on the wall-normal line",
+  "dns_sha256": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85",
+  "dns_source": "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz",
+  "driving_acceleration": 0.011035961313934037,
+  "effective_gradient": "(dp_wall/dx - g) t_x, g from wall_following_budget_l1",
+  "extended_members_note": "Xp/Xcp/Xcpr/Xall add the exact pressure-gradient profile, streamwise normal-stress gradient and streamwise viscous term; Xfull is the closure-free balance tau(y_m) - impulses.  Their pointwise normal-line balance closes only on the flat floor (flat_floor_metrics); the conservative wavelength balance is R1-STA-3.",
+  "ladder": [
+    "M0_equilibrium",
+    "M1_pressure_gradient_ode",
+    "M2_hickel_modelled_convection",
+    "Xc_resolved_convection_linear",
+    "Xc_resolved_convection_constant",
+    "Xc_exact_convection_profile",
+    "Xp_exact_pressure_profile",
+    "Xcp_convection_plus_pressure_profile",
+    "Xcpr_plus_streamwise_normal_stress",
+    "Xall_all_omitted_transport",
+    "Xfull_all_transport_plus_exact_shear_stress"
+  ],
+  "root_policy": "audited all-bracket census; root closest to the Spalding value",
+  "row": "R2-m4 / R3-2",
+  "schema": "r2m4-apriori-ladder-v1",
+  "status": "R2M4_APRIORI_LADDER_OK",
+  "surfaces": {
+    "archive_index10": {
+      "convection_impulse_over_pressure_impulse_median": 0.1333849924255614,
+      "epsilon_median": 0.12723878910009462,
+      "flat_floor_metrics": {
+        "M0_equilibrium": {
+          "r2": 0.7357702375448525,
+          "relative_rms": 0.4999992591497637,
+          "sign_accuracy": 0.9365942028985508
+        },
+        "M1_pressure_gradient_ode": {
+          "r2": -4.198250573403688,
+          "relative_rms": 2.217721969412673,
+          "sign_accuracy": 0.4995471014492754
+        },
+        "M2_hickel_modelled_convection": {
+          "r2": 0.2405432306643428,
+          "relative_rms": 0.8476762637802394,
+          "sign_accuracy": 0.4995471014492754
+        },
+        "Xall_all_omitted_transport": {
+          "r2": -3.8766578131117706,
+          "relative_rms": 2.1480265011787383,
+          "sign_accuracy": 0.4995471014492754
+        },
+        "Xc_exact_convection_profile": {
+          "r2": -3.7818435583293866,
+          "relative_rms": 2.127042539207507,
+          "sign_accuracy": 0.4995471014492754
+        },
+        "Xc_resolved_convection_constant": {
+          "r2": -2.866009186826696,
+          "relative_rms": 1.9125373908346848,
+          "sign_accuracy": 0.4995471014492754
+        },
+        "Xc_resolved_convection_linear": {
+          "r2": -3.857183884387485,
+          "relative_rms": 2.1437333602036284,
+          "sign_accuracy": 0.4995471014492754
+        },
+        "Xcp_convection_plus_pressure_profile": {
+          "r2": -3.782633754348973,
+          "relative_rms": 2.12721827803044,
+          "sign_accuracy": 0.4995471014492754
+        },
+        "Xcpr_plus_streamwise_normal_stress": {
+          "r2": -3.8775142508130376,
+          "relative_rms": 2.1482151108973957,
+          "sign_accuracy": 0.4995471014492754
+        },
+        "Xfull_all_transport_plus_exact_shear_stress": {
+          "r2": -0.13633398793692475,
+          "relative_rms": 1.0368871491945164,
+          "sign_accuracy": 0.8917572463768116
+        },
+        "Xp_exact_pressure_profile": {
+          "r2": -4.200774923322851,
+          "relative_rms": 2.218260383895043,
+          "sign_accuracy": 0.4995471014492754
+        }
+      },
+      "metrics": {
+        "M0_equilibrium": {
+          "correlation": 0.8790389061545265,
+          "r2": 0.6842136979665834,
+          "relative_rms": 0.5464470064037737,
+          "relative_rms_interval": {
+            "high": 0.9939157106014577,
+            "low": 0.26722310834544993,
+            "median": 0.5293129529732974
+          },
+          "reversed_fraction": 0.407958984375,
+          "sign_accuracy": 0.953125,
+          "signed_force_ratio": 1.7539350964765976,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "M1_pressure_gradient_ode": {
+          "correlation": 0.6123827593546604,
+          "r2": -18.522293218323323,
+          "relative_rms": 4.296519854744194,
+          "relative_rms_interval": {
+            "high": 4.868062712581946,
+            "low": 1.916594564618023,
+            "median": 4.259960487116011
+          },
+          "reversed_fraction": 0.84814453125,
+          "sign_accuracy": 0.520263671875,
+          "signed_force_ratio": 0.40148666510577635,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "M2_hickel_modelled_convection": {
+          "correlation": 0.7777241243702632,
+          "r2": -0.39305594372953023,
+          "relative_rms": 1.1477193035977982,
+          "relative_rms_interval": {
+            "high": 1.2671412078116844,
+            "low": 0.6897253191273394,
+            "median": 1.1391925501576652
+          },
+          "reversed_fraction": 0.8134765625,
+          "sign_accuracy": 0.594482421875,
+          "signed_force_ratio": 0.33643593999728966,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xall_all_omitted_transport": {
+          "correlation": 0.38682579276944223,
+          "r2": -20.74808096016238,
+          "relative_rms": 4.534839051325508,
+          "relative_rms_interval": {
+            "high": 8.498872237997013,
+            "low": 3.0397825593838057,
+            "median": 4.526795040767679
+          },
+          "reversed_fraction": 0.73095703125,
+          "sign_accuracy": 0.557861328125,
+          "signed_force_ratio": 2.126564708587998,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xc_exact_convection_profile": {
+          "correlation": 0.7583933110315367,
+          "r2": -14.017676301679433,
+          "relative_rms": 3.768363398300849,
+          "relative_rms_interval": {
+            "high": 4.19287332416901,
+            "low": 1.831857914068112,
+            "median": 3.7403059288143776
+          },
+          "reversed_fraction": 0.82666015625,
+          "sign_accuracy": 0.580810546875,
+          "signed_force_ratio": 1.2539659478144516,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xc_resolved_convection_constant": {
+          "correlation": 0.41936125993071327,
+          "r2": -12.424186110678948,
+          "relative_rms": 3.5628323713560373,
+          "relative_rms_interval": {
+            "high": 4.122403115647654,
+            "low": 1.7666841919814125,
+            "median": 3.5237239637166065
+          },
+          "reversed_fraction": 0.8544921875,
+          "sign_accuracy": 0.550048828125,
+          "signed_force_ratio": -1.1285614896536347,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xc_resolved_convection_linear": {
+          "correlation": 0.591326473656143,
+          "r2": -16.66940178100471,
+          "relative_rms": 4.087542962965174,
+          "relative_rms_interval": {
+            "high": 4.6310822759741,
+            "low": 1.847232138551309,
+            "median": 4.051355864708174
+          },
+          "reversed_fraction": 0.851318359375,
+          "sign_accuracy": 0.5302734375,
+          "signed_force_ratio": 0.07079643181839722,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xcp_convection_plus_pressure_profile": {
+          "correlation": 0.36780760315687255,
+          "r2": -20.536714909740237,
+          "relative_rms": 4.512748566405951,
+          "relative_rms_interval": {
+            "high": 8.452300050131038,
+            "low": 3.041078103859545,
+            "median": 4.505039667303505
+          },
+          "reversed_fraction": 0.73486328125,
+          "sign_accuracy": 0.559814453125,
+          "signed_force_ratio": 2.031924588319803,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xcpr_plus_streamwise_normal_stress": {
+          "correlation": 0.3724814644802182,
+          "r2": -20.59305124505338,
+          "relative_rms": 4.518646997944582,
+          "relative_rms_interval": {
+            "high": 8.499081929246143,
+            "low": 3.0344901377065523,
+            "median": 4.509074469168988
+          },
+          "reversed_fraction": 0.73486328125,
+          "sign_accuracy": 0.559814453125,
+          "signed_force_ratio": 2.0109734318157297,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xfull_all_transport_plus_exact_shear_stress": {
+          "correlation": -0.19761212659819952,
+          "r2": -397.5147898566615,
+          "relative_rms": 19.412149585090454,
+          "relative_rms_interval": {
+            "high": 27.123265789185286,
+            "low": 11.859907046893895,
+            "median": 19.358654693136195
+          },
+          "reversed_fraction": 0.552490234375,
+          "sign_accuracy": 0.6728515625,
+          "signed_force_ratio": 5.54156198812803,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xp_exact_pressure_profile": {
+          "correlation": 0.3626381835039791,
+          "r2": -8.185243571084973,
+          "relative_rms": 2.947112713759364,
+          "relative_rms_interval": {
+            "high": 8.381064119276296,
+            "low": 0.8833582617686769,
+            "median": 2.9864237159971223
+          },
+          "reversed_fraction": 0.636474609375,
+          "sign_accuracy": 0.5830078125,
+          "signed_force_ratio": 1.0454002323902851,
+          "truth_reversed_fraction": 0.454833984375
+        }
+      },
+      "multi_root_M1_stations": 2,
+      "note": "paper a-priori surface: archive wall index 10 (vertical offset x t_x)",
+      "paired_relative_rms_differences": {
+        "M1_pressure_gradient_ode-minus-M0_equilibrium": {
+          "high": 4.480426458342659,
+          "low": 1.1772178863841207,
+          "median": 3.7081721299989097
+        },
+        "M2_hickel_modelled_convection-minus-M1_pressure_gradient_ode": {
+          "high": -1.1574526334704371,
+          "low": -3.612409314908687,
+          "median": -3.1230555186357973
+        },
+        "Xc_exact_convection_profile-minus-M1_pressure_gradient_ode": {
+          "high": 0.18841832693307456,
+          "low": -0.8310534052807975,
+          "median": -0.5159425120848473
+        },
+        "Xc_resolved_convection_linear-minus-M1_pressure_gradient_ode": {
+          "high": -0.029909421019259134,
+          "low": -0.25398141568241295,
+          "median": -0.20652960358489025
+        }
+      },
+      "phase_count": 512,
+      "y_m_over_H": {
+        "max": 0.13885706999999992,
+        "median": 0.0935321823,
+        "min": 0.08030867600500097
+      },
+      "y_m_plus_median": 12.370494412686156
+    },
+    "common_W1": {
+      "convection_impulse_over_pressure_impulse_median": 0.019937089063625592,
+      "epsilon_median": 0.9262337375485714,
+      "flat_floor_metrics": {
+        "M0_equilibrium": {
+          "r2": 0.8573430366208609,
+          "relative_rms": 0.3673880122657017,
+          "sign_accuracy": 0.9759963768115942
+        },
+        "M1_pressure_gradient_ode": {
+          "r2": 0.15368236880682562,
+          "relative_rms": 0.8948395854676294,
+          "sign_accuracy": 0.8922101449275363
+        },
+        "M2_hickel_modelled_convection": {
+          "r2": 0.3029689373745128,
+          "relative_rms": 0.8120907428578327,
+          "sign_accuracy": 0.8990036231884058
+        },
+        "Xall_all_omitted_transport": {
+          "r2": 0.15315686315960253,
+          "relative_rms": 0.8951173595937866,
+          "sign_accuracy": 0.8940217391304348
+        },
+        "Xc_exact_convection_profile": {
+          "r2": 0.15775609868328588,
+          "relative_rms": 0.8926833430049687,
+          "sign_accuracy": 0.8922101449275363
+        },
+        "Xc_resolved_convection_constant": {
+          "r2": 0.1808730157633518,
+          "relative_rms": 0.8803474491299174,
+          "sign_accuracy": 0.8917572463768116
+        },
+        "Xc_resolved_convection_linear": {
+          "r2": 0.16289776355150287,
+          "relative_rms": 0.889954379920263,
+          "sign_accuracy": 0.8917572463768116
+        },
+        "Xcp_convection_plus_pressure_profile": {
+          "r2": 0.15764946157353676,
+          "relative_rms": 0.8927398528583153,
+          "sign_accuracy": 0.8917572463768116
+        },
+        "Xcpr_plus_streamwise_normal_stress": {
+          "r2": 0.15309151296735046,
+          "relative_rms": 0.8951518966647697,
+          "sign_accuracy": 0.8940217391304348
+        },
+        "Xfull_all_transport_plus_exact_shear_stress": {
+          "r2": 0.10503381554435764,
+          "relative_rms": 0.9201991054989578,
+          "sign_accuracy": 0.9057971014492754
+        },
+        "Xp_exact_pressure_profile": {
+          "r2": 0.153575101825825,
+          "relative_rms": 0.8948962921318858,
+          "sign_accuracy": 0.8922101449275363
+        }
+      },
+      "metrics": {
+        "M0_equilibrium": {
+          "correlation": 0.9250727276585686,
+          "r2": 0.7184290279997526,
+          "relative_rms": 0.5159948265792245,
+          "relative_rms_interval": {
+            "high": 0.5958773415860927,
+            "low": 0.25302736355322725,
+            "median": 0.5091807295602896
+          },
+          "reversed_fraction": 0.489013671875,
+          "sign_accuracy": 0.9658203125,
+          "signed_force_ratio": 0.7692934241710795,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "M1_pressure_gradient_ode": {
+          "correlation": 0.8458517092308966,
+          "r2": -0.4227180751965105,
+          "relative_rms": 1.1598740496819102,
+          "relative_rms_interval": {
+            "high": 1.2662670157282487,
+            "low": 0.6761407179243624,
+            "median": 1.14870556588382
+          },
+          "reversed_fraction": 0.626220703125,
+          "sign_accuracy": 0.82861328125,
+          "signed_force_ratio": 0.47154662065789166,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "M2_hickel_modelled_convection": {
+          "correlation": 0.861457886127492,
+          "r2": -0.07174572300046878,
+          "relative_rms": 1.0066935519004683,
+          "relative_rms_interval": {
+            "high": 1.103110086773959,
+            "low": 0.6052868493662659,
+            "median": 0.9973232371241036
+          },
+          "reversed_fraction": 0.612060546875,
+          "sign_accuracy": 0.8427734375,
+          "signed_force_ratio": 0.4511673727947085,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xall_all_omitted_transport": {
+          "correlation": 0.4215168063487894,
+          "r2": -5.25838899183131,
+          "relative_rms": 2.432667113096111,
+          "relative_rms_interval": {
+            "high": 6.901566777363617,
+            "low": 0.6051010674428449,
+            "median": 2.449014826821692
+          },
+          "reversed_fraction": 0.53125,
+          "sign_accuracy": 0.888427734375,
+          "signed_force_ratio": 1.896394524966461,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xc_exact_convection_profile": {
+          "correlation": 0.8534380990045454,
+          "r2": -0.39142024828549205,
+          "relative_rms": 1.1470452923907033,
+          "relative_rms_interval": {
+            "high": 1.2432387739035498,
+            "low": 0.6804943199581414,
+            "median": 1.1369072050071825
+          },
+          "reversed_fraction": 0.626953125,
+          "sign_accuracy": 0.827880859375,
+          "signed_force_ratio": 0.5021305935557173,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xc_resolved_convection_constant": {
+          "correlation": 0.8531701000304875,
+          "r2": -0.4223529724339836,
+          "relative_rms": 1.1597252147163335,
+          "relative_rms_interval": {
+            "high": 1.2714129681857906,
+            "low": 0.664455099082446,
+            "median": 1.1479790853498528
+          },
+          "reversed_fraction": 0.630126953125,
+          "sign_accuracy": 0.82470703125,
+          "signed_force_ratio": 0.5100964522314275,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xc_resolved_convection_linear": {
+          "correlation": 0.8595113143808047,
+          "r2": -0.329476127773241,
+          "relative_rms": 1.1212221766620984,
+          "relative_rms_interval": {
+            "high": 1.221334876412951,
+            "low": 0.6701540178774815,
+            "median": 1.1109889792641767
+          },
+          "reversed_fraction": 0.626953125,
+          "sign_accuracy": 0.827880859375,
+          "signed_force_ratio": 0.4852252457526163,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xcp_convection_plus_pressure_profile": {
+          "correlation": 0.419043073154461,
+          "r2": -5.275879605494162,
+          "relative_rms": 2.43606408585214,
+          "relative_rms_interval": {
+            "high": 6.9153264723639225,
+            "low": 0.6054967029354996,
+            "median": 2.45339071604071
+          },
+          "reversed_fraction": 0.533447265625,
+          "sign_accuracy": 0.88623046875,
+          "signed_force_ratio": 1.8928931434492786,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xcpr_plus_streamwise_normal_stress": {
+          "correlation": 0.4201870522079716,
+          "r2": -5.261281228775357,
+          "relative_rms": 2.4332291616529624,
+          "relative_rms_interval": {
+            "high": 6.902559887666881,
+            "low": 0.6057168419591593,
+            "median": 2.44963440400773
+          },
+          "reversed_fraction": 0.531494140625,
+          "sign_accuracy": 0.88818359375,
+          "signed_force_ratio": 1.8906349051673867,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xfull_all_transport_plus_exact_shear_stress": {
+          "correlation": 0.19584348697473788,
+          "r2": -27.8230247632445,
+          "relative_rms": 5.220609204767306,
+          "relative_rms_interval": {
+            "high": 15.256481568256559,
+            "low": 0.7458238146894879,
+            "median": 5.240499651232135
+          },
+          "reversed_fraction": 0.52001953125,
+          "sign_accuracy": 0.899169921875,
+          "signed_force_ratio": 3.956988986792265,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xp_exact_pressure_profile": {
+          "correlation": 0.41506942511692274,
+          "r2": -5.255770061349948,
+          "relative_rms": 2.4321580641448977,
+          "relative_rms_interval": {
+            "high": 6.911944153066055,
+            "low": 0.5913629589940745,
+            "median": 2.448977996166884
+          },
+          "reversed_fraction": 0.533203125,
+          "sign_accuracy": 0.886474609375,
+          "signed_force_ratio": 1.8628882838383045,
+          "truth_reversed_fraction": 0.454833984375
+        }
+      },
+      "multi_root_M1_stations": 0,
+      "note": "deposited common surface (y_m/H=0.0145 flat floor), wall-resolved ceiling grid",
+      "paired_relative_rms_differences": {
+        "M1_pressure_gradient_ode-minus-M0_equilibrium": {
+          "high": 0.7060844362873525,
+          "low": 0.3951021268452492,
+          "median": 0.6401885542867369
+        },
+        "M2_hickel_modelled_convection-minus-M1_pressure_gradient_ode": {
+          "high": -0.06450633080075342,
+          "low": -0.17335565214813942,
+          "median": -0.15191682295649322
+        },
+        "Xc_exact_convection_profile-minus-M1_pressure_gradient_ode": {
+          "high": 0.03507935562067421,
+          "low": -0.035650977908351436,
+          "median": -0.011961583348726879
+        },
+        "Xc_resolved_convection_linear-minus-M1_pressure_gradient_ode": {
+          "high": 0.001832235179889649,
+          "low": -0.05673702397421139,
+          "median": -0.037491370932697055
+        }
+      },
+      "phase_count": 120,
+      "y_m_over_H": {
+        "max": 0.014515746000000001,
+        "median": 0.014515745999999998,
+        "min": 0.008147054106317386
+      },
+      "y_m_plus_median": 1.8719939253170446
+    },
+    "ladder_L1": {
+      "convection_impulse_over_pressure_impulse_median": 0.13012757768103303,
+      "epsilon_median": 0.14372126975025212,
+      "flat_floor_metrics": {
+        "M0_equilibrium": {
+          "r2": 0.7355418168959974,
+          "relative_rms": 0.5002153314835174,
+          "sign_accuracy": 0.9375
+        },
+        "M1_pressure_gradient_ode": {
+          "r2": -4.197171630038828,
+          "relative_rms": 2.217491803461199,
+          "sign_accuracy": 0.4995471014492754
+        },
+        "M2_hickel_modelled_convection": {
+          "r2": 0.2405130180568409,
+          "relative_rms": 0.84769312468436,
+          "sign_accuracy": 0.4995471014492754
+        },
+        "Xall_all_omitted_transport": {
+          "r2": -3.874291834187334,
+          "relative_rms": 2.1475053653723446,
+          "sign_accuracy": 0.4995471014492754
+        },
+        "Xc_exact_convection_profile": {
+          "r2": -3.780686664176315,
+          "relative_rms": 2.126785220884463,
+          "sign_accuracy": 0.4995471014492754
+        },
+        "Xc_resolved_convection_constant": {
+          "r2": -2.8654708411528445,
+          "relative_rms": 1.912404224819474,
+          "sign_accuracy": 0.4995471014492754
+        },
+        "Xc_resolved_convection_linear": {
+          "r2": -3.856525986693101,
+          "relative_rms": 2.1435881726804142,
+          "sign_accuracy": 0.4995471014492754
+        },
+        "Xcp_convection_plus_pressure_profile": {
+          "r2": -3.781521486677269,
+          "relative_rms": 2.126970906621458,
+          "sign_accuracy": 0.4995471014492754
+        },
+        "Xcpr_plus_streamwise_normal_stress": {
+          "r2": -3.8750123361499638,
+          "relative_rms": 2.1476640781360476,
+          "sign_accuracy": 0.4995471014492754
+        },
+        "Xfull_all_transport_plus_exact_shear_stress": {
+          "r2": -0.13465792739292737,
+          "relative_rms": 1.036122177379935,
+          "sign_accuracy": 0.8922101449275363
+        },
+        "Xp_exact_pressure_profile": {
+          "r2": -4.199808963164005,
+          "relative_rms": 2.218054371263368,
+          "sign_accuracy": 0.4995471014492754
+        }
+      },
+      "metrics": {
+        "M0_equilibrium": {
+          "correlation": 0.9258293900715742,
+          "r2": 0.6968131560810784,
+          "relative_rms": 0.5354347866421663,
+          "relative_rms_interval": {
+            "high": 0.7654157828326323,
+            "low": 0.26268019322686437,
+            "median": 0.5239518285627467
+          },
+          "reversed_fraction": 0.419189453125,
+          "sign_accuracy": 0.96435546875,
+          "signed_force_ratio": 1.8576095100008434,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "M1_pressure_gradient_ode": {
+          "correlation": 0.7714247078536445,
+          "r2": -7.544727270415409,
+          "relative_rms": 2.8425002404586563,
+          "relative_rms_interval": {
+            "high": 3.082484842656541,
+            "low": 1.856281687457423,
+            "median": 2.821344219852412
+          },
+          "reversed_fraction": 0.870361328125,
+          "sign_accuracy": 0.5673828125,
+          "signed_force_ratio": -0.05296530266099091,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "M2_hickel_modelled_convection": {
+          "correlation": 0.8749283305377213,
+          "r2": -0.13521598456153217,
+          "relative_rms": 1.0360737156799646,
+          "relative_rms_interval": {
+            "high": 1.1440361522675588,
+            "low": 0.6968073607271825,
+            "median": 1.0336759137616673
+          },
+          "reversed_fraction": 0.82470703125,
+          "sign_accuracy": 0.624755859375,
+          "signed_force_ratio": 0.47361525273850225,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xall_all_omitted_transport": {
+          "correlation": 0.23730442387761824,
+          "r2": -18.985003904459706,
+          "relative_rms": 4.347138990583919,
+          "relative_rms_interval": {
+            "high": 11.34588635996452,
+            "low": 2.107539781509344,
+            "median": 4.347442938482388
+          },
+          "reversed_fraction": 0.7509765625,
+          "sign_accuracy": 0.566650390625,
+          "signed_force_ratio": 1.8390440561914203,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xc_exact_convection_profile": {
+          "correlation": 0.7750835805423049,
+          "r2": -5.320687515932557,
+          "relative_rms": 2.4447450044825985,
+          "relative_rms_interval": {
+            "high": 2.719416199722385,
+            "low": 1.7085855734668478,
+            "median": 2.4292503030320205
+          },
+          "reversed_fraction": 0.875,
+          "sign_accuracy": 0.569580078125,
+          "signed_force_ratio": -0.7999297603351937,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xc_resolved_convection_constant": {
+          "correlation": 0.7283515821081517,
+          "r2": -5.446843959557043,
+          "relative_rms": 2.4690221532169234,
+          "relative_rms_interval": {
+            "high": 3.088465776741903,
+            "low": 1.7795969309738242,
+            "median": 2.4542384714201133
+          },
+          "reversed_fraction": 0.852783203125,
+          "sign_accuracy": 0.58984375,
+          "signed_force_ratio": -0.46233992831825294,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xc_resolved_convection_linear": {
+          "correlation": 0.7895191930593567,
+          "r2": -6.38950109548518,
+          "relative_rms": 2.6433761441035086,
+          "relative_rms_interval": {
+            "high": 2.8694215176287483,
+            "low": 1.803774350369828,
+            "median": 2.6285890313408258
+          },
+          "reversed_fraction": 0.8505859375,
+          "sign_accuracy": 0.591552734375,
+          "signed_force_ratio": -0.1427975562398914,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xcp_convection_plus_pressure_profile": {
+          "correlation": 0.2303379770704516,
+          "r2": -18.883952810667388,
+          "relative_rms": 4.3361347432945525,
+          "relative_rms_interval": {
+            "high": 11.293505027325313,
+            "low": 2.0932848438949145,
+            "median": 4.345140100442976
+          },
+          "reversed_fraction": 0.749267578125,
+          "sign_accuracy": 0.5654296875,
+          "signed_force_ratio": 1.8412552223359875,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xcpr_plus_streamwise_normal_stress": {
+          "correlation": 0.23534923531192203,
+          "r2": -18.94700771577047,
+          "relative_rms": 4.343004558140436,
+          "relative_rms_interval": {
+            "high": 11.35184734357773,
+            "low": 2.0961111607599814,
+            "median": 4.343989828773126
+          },
+          "reversed_fraction": 0.74951171875,
+          "sign_accuracy": 0.565673828125,
+          "signed_force_ratio": 1.8252271178594992,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xfull_all_transport_plus_exact_shear_stress": {
+          "correlation": -0.2868608995676638,
+          "r2": -170.41557163370464,
+          "relative_rms": 12.731411134082805,
+          "relative_rms_interval": {
+            "high": 27.46988601429096,
+            "low": 8.436616332181831,
+            "median": 12.65343974842419
+          },
+          "reversed_fraction": 0.567138671875,
+          "sign_accuracy": 0.68603515625,
+          "signed_force_ratio": 4.950687703901605,
+          "truth_reversed_fraction": 0.454833984375
+        },
+        "Xp_exact_pressure_profile": {
+          "correlation": 0.2923139204750093,
+          "r2": -15.335081842469126,
+          "relative_rms": 3.930176592243597,
+          "relative_rms_interval": {
+            "high": 11.30624661512645,
+            "low": 0.8753962315300239,
+            "median": 3.9627313172854777
+          },
+          "reversed_fraction": 0.691162109375,
+          "sign_accuracy": 0.6494140625,
+          "signed_force_ratio": 2.449056217482932,
+          "truth_reversed_fraction": 0.454833984375
+        }
+      },
+      "multi_root_M1_stations": 0,
+      "note": "first cell centre of the ladder mesh (y_m/H=0.0935 flat floor)",
+      "paired_relative_rms_differences": {
+        "M1_pressure_gradient_ode-minus-M0_equilibrium": {
+          "high": 2.7178587185785865,
+          "low": 1.2633997452441568,
+          "median": 2.283275917149929
+        },
+        "M2_hickel_modelled_convection-minus-M1_pressure_gradient_ode": {
+          "high": -1.103827040308826,
+          "low": -1.9673148678844459,
+          "median": -1.792099813692832
+        },
+        "Xc_exact_convection_profile-minus-M1_pressure_gradient_ode": {
+          "high": -0.0055066723679360425,
+          "low": -0.7058335329238373,
+          "median": -0.38664599689671597
+        },
+        "Xc_resolved_convection_linear-minus-M1_pressure_gradient_ode": {
+          "high": 0.016331570914947545,
+          "low": -0.24702558308496508,
+          "median": -0.19676190506781466
+        }
+      },
+      "phase_count": 120,
+      "y_m_over_H": {
+        "max": 0.093532182,
+        "median": 0.093532182,
+        "min": 0.05255533205912904
+      },
+      "y_m_plus_median": 12.053333830221266
+    }
+  },
+  "truth": "nu dU_t/dn, first four archive points, analytic Xiao tangent (deposit protocol)"
+}

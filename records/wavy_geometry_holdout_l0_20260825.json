@@ -1,0 +1,2405 @@
+{
+ "bootstrap": {
+  "block_points": 512,
+  "dense_points": 4096,
+  "draws": 20000,
+  "seed": 20260823
+ },
+ "calibrated_on": "ladder_L1",
+ "case": {
+  "box_waves": 2,
+  "delta": 1.0,
+  "fidelity": "OpenFOAM-10 pimpleFoam wall-resolved LES (WALE), NOT DNS; numerics = deposited rib_les_dtype",
+  "geometry": "sinusoidal channel, 2a/lambda = 0.10, lambda = mean height",
+  "lambda": 2.0,
+  "nu": 0.00028901734104046245,
+  "reference": "the simulation's own resolved wall traction; no wall-gradient estimator is involved"
+ },
+ "frozen_constant": {
+  "NLWH": 2e-05,
+  "NLWM": 2e-05
+ },
+ "grids": {
+  "G0": {
+   "cells": 786432,
+   "driving_acceleration": 0.007739671705612403,
+   "matching_heights": {
+    "0.10": {
+     "best_published_family": "M2_hickel",
+     "best_published_relative_rms": 0.35980039608264236,
+     "candidate_relative_rms": 0.6555662090707274,
+     "candidate_uniform_rescale_relative_rms": 0.7378724509687464,
+     "contrasts": [
+      {
+       "delta": {
+        "high": -0.060063391076781124,
+        "low": -0.1157543086023754,
+        "median": -0.07203924168918752
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M0_equilibrium",
+       "verdict": "CANDIDATE_BETTER"
+      },
+      {
+       "delta": {
+        "high": 0.2165654630616968,
+        "low": -0.0044073277420306175,
+        "median": 0.12825019174868862
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M1_pressure_gradient",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.3672061838343361,
+        "low": 0.23798381738120955,
+        "median": 0.297945226645677
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M2_hickel",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": -0.15920488696403884,
+        "low": -2.921703810621458,
+        "median": -1.0270216435982484
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M3_yang_integral",
+       "verdict": "CANDIDATE_BETTER"
+      },
+      {
+       "delta": {
+        "high": 0.3739608575477501,
+        "low": -0.16050248210663215,
+        "median": 0.17199401153725893
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M4_park_moin",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.3384696184740401,
+        "low": -0.025515635383572488,
+        "median": 0.20052875956282734
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "Xall",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.21229001289857552,
+        "low": 0.0420157016028399,
+        "median": 0.10628533103341553
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "CTL_exact_at_modelled_norm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.22773989447631607,
+        "low": 0.10764123472248183,
+        "median": 0.15538506014717723
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "FAC_exactshape_modelnorm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.32823078270772466,
+        "low": -0.21730436773925402,
+        "median": 0.14630416008378955
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "FAC_modelshape_exactnorm",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.016155683484179253,
+        "low": -0.010365938786971438,
+        "median": 0.01055320663130005
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M0_equilibrium",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.3043784363398996,
+        "low": 0.08708560044282929,
+        "median": 0.21133583742416168
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M1_pressure_gradient",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.46605560233503834,
+        "low": 0.31880232880778714,
+        "median": 0.38073723393140635
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M2_hickel",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": -0.08047936685606266,
+        "low": -2.8182653601460204,
+        "median": -0.9442217229090122
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M3_yang_integral",
+       "verdict": "CANDIDATE_BETTER"
+      },
+      {
+       "delta": {
+        "high": 0.45443127696430974,
+        "low": -0.061266988550231424,
+        "median": 0.2550352684541315
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M4_park_moin",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.41831634237165993,
+        "low": 0.07418542402383148,
+        "median": 0.2838702506921188
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "Xall",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.30701245170082,
+        "low": 0.13017265862855026,
+        "median": 0.1885387517452783
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "CTL_exact_at_modelled_norm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.3243953004417564,
+        "low": 0.19463575709787764,
+        "median": 0.23762379387632754
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "FAC_exactshape_modelnorm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.40960207724276315,
+        "low": -0.119115083640094,
+        "median": 0.2286271941209415
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "FAC_modelshape_exactnorm",
+       "verdict": "UNRESOLVED"
+      }
+     ],
+     "exact_source_norm_rms": 0.006304672281815133,
+     "limiter_active_fraction": 1.0,
+     "matched_norm_scale": 0.410943206397337,
+     "modelled_source_norm_rms": 0.002590862242773526,
+     "park_moin": {
+      "all_converged": false,
+      "converged_stations": 120,
+      "median_iterations": 53.0,
+      "stations": 128
+     },
+     "scores": {
+      "CTL_exact_at_modelled_norm": {
+       "absolute_rms": 0.0035562075812516406,
+       "interval": {
+        "high": 0.7155808346898651,
+        "low": 0.48380154917031465,
+        "median": 0.5520813215668241
+       },
+       "r2": 0.6183152184956979,
+       "relative_rms": 0.5503043567917937,
+       "sign_accuracy": 0.7587890625
+      },
+      "FAC_exactshape_modelnorm": {
+       "absolute_rms": 0.0032379448863535205,
+       "interval": {
+        "high": 0.6707539450414624,
+        "low": 0.4488961603154021,
+        "median": 0.5031199019761776
+       },
+       "r2": 0.683575908564271,
+       "relative_rms": 0.5010548842553535,
+       "sign_accuracy": 0.783203125
+      },
+      "FAC_modelshape_exactnorm": {
+       "absolute_rms": 0.003278086736120122,
+       "interval": {
+        "high": 1.0506717028617207,
+        "low": 0.3076027756585472,
+        "median": 0.5116309755571173
+       },
+       "r2": 0.6756816526395548,
+       "relative_rms": 0.5072666236748132,
+       "sign_accuracy": 0.720703125
+      },
+      "M0_equilibrium": {
+       "absolute_rms": 0.004699686076639825,
+       "interval": {
+        "high": 0.9667559515473568,
+        "low": 0.673436119712509,
+        "median": 0.7289313843264378
+       },
+       "r2": 0.3333953540598601,
+       "relative_rms": 0.7272516197207953,
+       "sign_accuracy": 0.4970703125
+      },
+      "M1_pressure_gradient": {
+       "absolute_rms": 0.003403216223038907,
+       "interval": {
+        "high": 0.8115287323234108,
+        "low": 0.4398103347194806,
+        "median": 0.5297701030791468
+       },
+       "r2": 0.6504496648399996,
+       "relative_rms": 0.5266297514566548,
+       "sign_accuracy": 0.810546875
+      },
+      "M2_hickel": {
+       "absolute_rms": 0.002325122235531457,
+       "interval": {
+        "high": 0.5432400867785445,
+        "low": 0.3075181431370425,
+        "median": 0.35957301159912225
+       },
+       "r2": 0.8368367993234899,
+       "relative_rms": 0.35980039608264236,
+       "sign_accuracy": 0.78076171875
+      },
+      "M3_yang_integral": {
+       "absolute_rms": 0.010862985588265603,
+       "interval": {
+        "high": 3.7644745177954135,
+        "low": 0.7877435003117954,
+        "median": 1.6829291068803927
+       },
+       "r2": -2.561467978753646,
+       "relative_rms": 1.68098969489431,
+       "sign_accuracy": 0.6220703125
+      },
+      "M4_park_moin": {
+       "absolute_rms": 0.0031491224776633605,
+       "interval": {
+        "high": 0.9699474156308917,
+        "low": 0.26933128062127365,
+        "median": 0.48892218168533974
+       },
+       "r2": 0.7006979159514708,
+       "relative_rms": 0.48731008523388225,
+       "sign_accuracy": 0.889404296875
+      },
+      "NLWH_M1_frozen": {
+       "absolute_rms": 0.004249957130051669,
+       "interval": {
+        "high": 0.852945991377823,
+        "low": 0.6157376558151508,
+        "median": 0.6587277793059357
+       },
+       "r2": 0.454870435971374,
+       "relative_rms": 0.6576584384938038,
+       "sign_accuracy": 0.4970703125
+      },
+      "NLWH_Xall_frozen": {
+       "absolute_rms": 0.0042364366081000734,
+       "interval": {
+        "high": 0.8527241752568642,
+        "low": 0.612673982495451,
+        "median": 0.6567273586213094
+       },
+       "r2": 0.4583333943550536,
+       "relative_rms": 0.6555662090707274,
+       "sign_accuracy": 0.4970703125
+      },
+      "NLWM_M1_frozen": {
+       "absolute_rms": 0.0047660716182749505,
+       "interval": {
+        "high": 0.9569756259991166,
+        "low": 0.6884080733304827,
+        "median": 0.7390695137197572
+       },
+       "r2": 0.31443006251188077,
+       "relative_rms": 0.7375244319667369,
+       "sign_accuracy": 0.4970703125
+      },
+      "NLWM_Xall_frozen": {
+       "absolute_rms": 0.0047683206061270205,
+       "interval": {
+        "high": 0.9575263559199236,
+        "low": 0.6885994205012571,
+        "median": 0.7394353299605385
+       },
+       "r2": 0.3137829038613902,
+       "relative_rms": 0.7378724509687464,
+       "sign_accuracy": 0.4970703125
+      },
+      "ORACLE_closure_free": {
+       "absolute_rms": 0.0004860727756529547,
+       "interval": {
+        "high": 0.11764742730879829,
+        "low": 0.056222396203932566,
+        "median": 0.07571413336598751
+       },
+       "r2": 0.9928692824850639,
+       "relative_rms": 0.07521719698532225,
+       "sign_accuracy": 0.99462890625
+      },
+      "Xall": {
+       "absolute_rms": 0.0029554179519805162,
+       "interval": {
+        "high": 0.8391008430450047,
+        "low": 0.30152057390043957,
+        "median": 0.46103137062945054
+       },
+       "r2": 0.7363860120111525,
+       "relative_rms": 0.45733533207955723,
+       "sign_accuracy": 0.762939453125
+      }
+     },
+     "shape_amplitude_factorial_relative_rms": {
+      "FAC_exactshape_modelnorm": 0.5010548842553535,
+      "FAC_modelshape_exactnorm": 0.5072666236748132,
+      "M2_hickel": 0.35980039608264236,
+      "Xall": 0.45733533207955723
+     },
+     "source_norm": {
+      "CTL_exact_at_modelled_norm": 0.0025908622427735254,
+      "FAC_exactshape_modelnorm": 0.0025908622427735254,
+      "FAC_modelshape_exactnorm": 0.006304672281815134,
+      "M0_equilibrium": 0.0,
+      "M1_pressure_gradient": 0.008785311416099844,
+      "M2_hickel": 0.002590862242773526,
+      "M3_yang_integral": null,
+      "M4_park_moin": 0.006014518062068383,
+      "NLWH_M1_frozen": 0.0005026020845452918,
+      "NLWH_Xall_frozen": 0.0005039395569839673,
+      "NLWM_M1_frozen": 1.0909890993488626e-05,
+      "NLWM_Xall_frozen": 1.0909890993488626e-05,
+      "ORACLE_closure_free": 0.006304672281815133,
+      "Xall": 0.006304672281815133
+     },
+     "yang_integral": {
+      "converged": false,
+      "iterations": 0,
+      "residual": 1.1731087324871097e-15,
+      "status": "solution_branch_lost_at_load_0.000"
+     }
+    }
+   },
+   "stations": 128,
+   "streamwise_spacing_nonuniformity_cells": 0.06567774466869025,
+   "traction_reconstruction_relative_rms": 0.03641599298685537,
+   "wall_origin_key": "G0_y_wall_mesh"
+  },
+  "G1": {
+   "cells": 2359296,
+   "driving_acceleration": 0.0082819433139492,
+   "matching_heights": {
+    "0.10": {
+     "best_published_family": "M2_hickel",
+     "best_published_relative_rms": 0.3707484377788111,
+     "candidate_relative_rms": 0.6618957450895184,
+     "candidate_uniform_rescale_relative_rms": 0.74239226664817,
+     "contrasts": [
+      {
+       "delta": {
+        "high": -0.05814103127798173,
+        "low": -0.11470808717827108,
+        "median": -0.07018552244930815
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M0_equilibrium",
+       "verdict": "CANDIDATE_BETTER"
+      },
+      {
+       "delta": {
+        "high": 0.23170503370531834,
+        "low": -0.022059962864738825,
+        "median": 0.13622818697432604
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M1_pressure_gradient",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.35773632402360267,
+        "low": 0.23263482965880075,
+        "median": 0.29320415322075044
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M2_hickel",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": -0.3061078527668424,
+        "low": -3.5389008972309193,
+        "median": -1.242637793880073
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M3_yang_integral",
+       "verdict": "CANDIDATE_BETTER"
+      },
+      {
+       "delta": {
+        "high": 0.343531559437879,
+        "low": -0.23037511354432857,
+        "median": 0.13572811752837854
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M4_park_moin",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.3353241049366593,
+        "low": -0.05296429374909585,
+        "median": 0.1923969871819558
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "Xall",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.19587539228945783,
+        "low": 0.031323320558922924,
+        "median": 0.10030493603005686
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "CTL_exact_at_modelled_norm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.2173348056747985,
+        "low": 0.09419323946430705,
+        "median": 0.14937535881319194
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "FAC_exactshape_modelnorm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.3329248047336901,
+        "low": -0.24606076691651615,
+        "median": 0.14319113733811117
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "FAC_modelshape_exactnorm",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.016107094434755886,
+        "low": -0.010038906658222407,
+        "median": 0.010623352179722212
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M0_equilibrium",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.3171228368340934,
+        "low": 0.07101972870118795,
+        "median": 0.21733808650938352
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M1_pressure_gradient",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.45480481295616504,
+        "low": 0.3127070303234229,
+        "median": 0.37416284232662567
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M2_hickel",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": -0.2291945343817661,
+        "low": -3.4325216847525026,
+        "median": -1.1621924850929635
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M3_yang_integral",
+       "verdict": "CANDIDATE_BETTER"
+      },
+      {
+       "delta": {
+        "high": 0.42285093121268075,
+        "low": -0.13286734501659136,
+        "median": 0.21689454293301752
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M4_park_moin",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.41382471994981834,
+        "low": 0.04551388693210907,
+        "median": 0.27374526037430535
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "Xall",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.2917575568929683,
+        "low": 0.11771497406441492,
+        "median": 0.18077310236682287
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "CTL_exact_at_modelled_norm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.31341031284745685,
+        "low": 0.17970926423517344,
+        "median": 0.22972426572897772
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "FAC_exactshape_modelnorm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.4125336455606483,
+        "low": -0.14694197662577305,
+        "median": 0.22396799846279222
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "FAC_modelshape_exactnorm",
+       "verdict": "UNRESOLVED"
+      }
+     ],
+     "exact_source_norm_rms": 0.006734954819118183,
+     "limiter_active_fraction": 1.0,
+     "matched_norm_scale": 0.4067985158505052,
+     "modelled_source_norm_rms": 0.0027397696247374844,
+     "park_moin": {
+      "all_converged": false,
+      "converged_stations": 178,
+      "median_iterations": 54.0,
+      "stations": 192
+     },
+     "scores": {
+      "CTL_exact_at_modelled_norm": {
+       "absolute_rms": 0.0038992311844655097,
+       "interval": {
+        "high": 0.7341323446315102,
+        "low": 0.4945259132454673,
+        "median": 0.564681721545608
+       },
+       "r2": 0.5926982016773324,
+       "relative_rms": 0.5628708043135522,
+       "sign_accuracy": 0.752197265625
+      },
+      "FAC_exactshape_modelnorm": {
+       "absolute_rms": 0.0035587457365130926,
+       "interval": {
+        "high": 0.685970397832933,
+        "low": 0.4592372754866245,
+        "median": 0.5156705317939547
+       },
+       "r2": 0.6607246736045003,
+       "relative_rms": 0.5137202644046681,
+       "sign_accuracy": 0.776611328125
+      },
+      "FAC_modelshape_exactnorm": {
+       "absolute_rms": 0.00358133260252821,
+       "interval": {
+        "high": 1.0755365041772755,
+        "low": 0.31164292630843315,
+        "median": 0.5206989743252209
+       },
+       "r2": 0.6564043397362781,
+       "relative_rms": 0.5169807757309783,
+       "sign_accuracy": 0.726806640625
+      },
+      "M0_equilibrium": {
+       "absolute_rms": 0.005068863449393545,
+       "interval": {
+        "high": 0.960978870952889,
+        "low": 0.6790501673558512,
+        "median": 0.7332995848774096
+       },
+       "r2": 0.3116971924516624,
+       "relative_rms": 0.7317122560166445,
+       "sign_accuracy": 0.51171875
+      },
+      "M1_pressure_gradient": {
+       "absolute_rms": 0.003634788091358843,
+       "interval": {
+        "high": 0.8292585567607597,
+        "low": 0.4304630855709646,
+        "median": 0.5278036501816514
+       },
+       "r2": 0.6460706730062662,
+       "relative_rms": 0.5246973056235749,
+       "sign_accuracy": 0.813232421875
+      },
+      "M2_hickel": {
+       "absolute_rms": 0.002568322711180642,
+       "interval": {
+        "high": 0.5502668547952356,
+        "low": 0.32042251927519966,
+        "median": 0.37055782585677366
+       },
+       "r2": 0.8232914588083643,
+       "relative_rms": 0.3707484377788111,
+       "sign_accuracy": 0.791259765625
+      },
+      "M3_yang_integral": {
+       "absolute_rms": 0.01313489543253588,
+       "interval": {
+        "high": 4.394920213783903,
+        "low": 0.933322424977546,
+        "median": 1.9057029313783047
+       },
+       "r2": -3.621804772061484,
+       "relative_rms": 1.896078690112166,
+       "sign_accuracy": 0.51171875
+      },
+      "M4_park_moin": {
+       "absolute_rms": 0.0036673854138539776,
+       "interval": {
+        "high": 1.0379490972312926,
+        "low": 0.30406055312660707,
+        "median": 0.5310868047109776
+       },
+       "r2": 0.6396940251487875,
+       "relative_rms": 0.5294028694291791,
+       "sign_accuracy": 0.86962890625
+      },
+      "NLWH_M1_frozen": {
+       "absolute_rms": 0.0045979784424999785,
+       "interval": {
+        "high": 0.8486003746887667,
+        "low": 0.6229739925968477,
+        "median": 0.6647588607657706
+       },
+       "r2": 0.4336404620446538,
+       "relative_rms": 0.6637379785166799,
+       "sign_accuracy": 0.51171875
+      },
+      "NLWH_Xall_frozen": {
+       "absolute_rms": 0.004585216554739584,
+       "interval": {
+        "high": 0.8486003514074567,
+        "low": 0.6203242532180464,
+        "median": 0.6629938566256777
+       },
+       "r2": 0.43678000973359854,
+       "relative_rms": 0.6618957450895184,
+       "sign_accuracy": 0.51171875
+      },
+      "NLWM_M1_frozen": {
+       "absolute_rms": 0.005140483265028663,
+       "interval": {
+        "high": 0.952121541357065,
+        "low": 0.6937716992633214,
+        "median": 0.7434980755694433
+       },
+       "r2": 0.292109218902606,
+       "relative_rms": 0.7420508846652695,
+       "sign_accuracy": 0.51171875
+      },
+      "NLWM_Xall_frozen": {
+       "absolute_rms": 0.0051428481545616415,
+       "interval": {
+        "high": 0.9526496199861808,
+        "low": 0.6939936183041513,
+        "median": 0.7438666013136683
+       },
+       "r2": 0.2914577359602064,
+       "relative_rms": 0.74239226664817,
+       "sign_accuracy": 0.51171875
+      },
+      "ORACLE_closure_free": {
+       "absolute_rms": 0.0005036334169528865,
+       "interval": {
+        "high": 0.12065104267448959,
+        "low": 0.05772610682256862,
+        "median": 0.07332614289882614
+       },
+       "r2": 0.9932050317088057,
+       "relative_rms": 0.07270165144576113,
+       "sign_accuracy": 0.988525390625
+      },
+      "Xall": {
+       "absolute_rms": 0.003266506528396231,
+       "interval": {
+        "high": 0.8651966578166619,
+        "low": 0.3101068521792461,
+        "median": 0.47519354327945884
+       },
+       "r2": 0.714158410466655,
+       "relative_rms": 0.4715342768746055,
+       "sign_accuracy": 0.759765625
+      }
+     },
+     "shape_amplitude_factorial_relative_rms": {
+      "FAC_exactshape_modelnorm": 0.5137202644046681,
+      "FAC_modelshape_exactnorm": 0.5169807757309783,
+      "M2_hickel": 0.3707484377788111,
+      "Xall": 0.4715342768746055
+     },
+     "source_norm": {
+      "CTL_exact_at_modelled_norm": 0.0027397696247374844,
+      "FAC_exactshape_modelnorm": 0.0027397696247374844,
+      "FAC_modelshape_exactnorm": 0.006734954819118183,
+      "M0_equilibrium": 0.0,
+      "M1_pressure_gradient": 0.009397985812691502,
+      "M2_hickel": 0.0027397696247374844,
+      "M3_yang_integral": null,
+      "M4_park_moin": 0.006467877766443787,
+      "NLWH_M1_frozen": 0.0005297816838014535,
+      "NLWH_Xall_frozen": 0.000530965465423602,
+      "NLWM_M1_frozen": 1.1334679358653837e-05,
+      "NLWM_Xall_frozen": 1.1334679358653837e-05,
+      "ORACLE_closure_free": 0.006734954819118183,
+      "Xall": 0.006734954819118183
+     },
+     "yang_integral": {
+      "converged": true,
+      "iterations": 0,
+      "residual": 9.558461018160469e-10,
+      "status": "converged_by_continuation"
+     }
+    }
+   },
+   "stations": 192,
+   "streamwise_spacing_nonuniformity_cells": 0.09570697875104983,
+   "traction_reconstruction_relative_rms": 0.03875068139649048,
+   "wall_origin_key": "G1_y_wall_mesh"
+  },
+  "G2": {
+   "cells": 7299072,
+   "driving_acceleration": 0.008060362790366019,
+   "matching_heights": {
+    "0.05": {
+     "best_published_family": "M2_hickel",
+     "best_published_relative_rms": 0.23565057088122512,
+     "candidate_relative_rms": 0.5486856638688222,
+     "candidate_uniform_rescale_relative_rms": 0.6062221680433554,
+     "contrasts": [
+      {
+       "delta": {
+        "high": -0.04359299794926264,
+        "low": -0.06323714026059833,
+        "median": -0.048811080188607414
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M0_equilibrium",
+       "verdict": "CANDIDATE_BETTER"
+      },
+      {
+       "delta": {
+        "high": 0.34083473312774426,
+        "low": 0.12164121815566425,
+        "median": 0.2522460004516616
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M1_pressure_gradient",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.4052066372744202,
+        "low": 0.27965029613366793,
+        "median": 0.3142045381233365
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M2_hickel",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.15737587016240198,
+        "low": -1.7000836880994115,
+        "median": -0.44932711473693954
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M3_yang_integral",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.34347424015243044,
+        "low": 0.03279607349651849,
+        "median": 0.2329390902914661
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M4_park_moin",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.34255699871596695,
+        "low": 0.11369478707639671,
+        "median": 0.2564462740318987
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "Xall",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.2826989180913136,
+        "low": 0.14410714040513498,
+        "median": 0.1939877434367824
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "CTL_exact_at_modelled_norm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.3198375437866329,
+        "low": 0.19837384780441183,
+        "median": 0.22970991817141417
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "FAC_exactshape_modelnorm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.3660447667682505,
+        "low": 0.13354362418765459,
+        "median": 0.28539533281474694
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "FAC_modelshape_exactnorm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.011217754487428141,
+        "low": -0.0004551724134410377,
+        "median": 0.00865569405142913
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M0_equilibrium",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.40017222680367737,
+        "low": 0.1791126571493683,
+        "median": 0.3099934700919992
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M1_pressure_gradient",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.4637719268247451,
+        "low": 0.33598831583753225,
+        "median": 0.37187782098983213
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M2_hickel",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.21459464110158963,
+        "low": -1.637702330382305,
+        "median": -0.39196923065816247
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M3_yang_integral",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.402209546035966,
+        "low": 0.09112293670599043,
+        "median": 0.29070374798887166
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M4_park_moin",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.40033169429169274,
+        "low": 0.17229360315457395,
+        "median": 0.3142622208203804
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "Xall",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.3400658423753618,
+        "low": 0.20393828673840353,
+        "median": 0.2517051420944892
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "CTL_exact_at_modelled_norm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.37767456883494704,
+        "low": 0.25607758691797616,
+        "median": 0.28737715503825056
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "FAC_exactshape_modelnorm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.4253476058928482,
+        "low": 0.1899754174215438,
+        "median": 0.3432984945712772
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "FAC_modelshape_exactnorm",
+       "verdict": "CANDIDATE_WORSE"
+      }
+     ],
+     "exact_source_norm_rms": 0.0040349848370018595,
+     "limiter_active_fraction": 1.0,
+     "matched_norm_scale": 0.5997187832327086,
+     "modelled_source_norm_rms": 0.002419856196809184,
+     "park_moin": {
+      "all_converged": true,
+      "converged_stations": 288,
+      "median_iterations": 55.0,
+      "stations": 288
+     },
+     "scores": {
+      "CTL_exact_at_modelled_norm": {
+       "absolute_rms": 0.002373414960839883,
+       "interval": {
+        "high": 0.4705153916575412,
+        "low": 0.2953786084316938,
+        "median": 0.35655404427795384
+       },
+       "r2": 0.8361881702171776,
+       "relative_rms": 0.35590463614247264,
+       "sign_accuracy": 0.863037109375
+      },
+      "FAC_exactshape_modelnorm": {
+       "absolute_rms": 0.00212768663515602,
+       "interval": {
+        "high": 0.38975343099736265,
+        "low": 0.29055704129875504,
+        "median": 0.3195264313170562
+       },
+       "r2": 0.8683523104829225,
+       "relative_rms": 0.3190565283377312,
+       "sign_accuracy": 0.89599609375
+      },
+      "FAC_modelshape_exactnorm": {
+       "absolute_rms": 0.001759634877914778,
+       "interval": {
+        "high": 0.5330217897989641,
+        "low": 0.1670619986021299,
+        "median": 0.2652180700633715
+       },
+       "r2": 0.9099584352972596,
+       "relative_rms": 0.2638654518071493,
+       "sign_accuracy": 0.899658203125
+      },
+      "M0_equilibrium": {
+       "absolute_rms": 0.003984295262598733,
+       "interval": {
+        "high": 0.7463663490541217,
+        "low": 0.5564653412563559,
+        "median": 0.5991628748046287
+       },
+       "r2": 0.5383626489978712,
+       "relative_rms": 0.5974636458925751,
+       "sign_accuracy": 0.740966796875
+      },
+      "M1_pressure_gradient": {
+       "absolute_rms": 0.001973512657108432,
+       "interval": {
+        "high": 0.5266550293311102,
+        "low": 0.2135509779498338,
+        "median": 0.2985690797421638
+       },
+       "r2": 0.8867396909429335,
+       "relative_rms": 0.2959374217065642,
+       "sign_accuracy": 0.87060546875
+      },
+      "M2_hickel": {
+       "absolute_rms": 0.0015714787998323972,
+       "interval": {
+        "high": 0.28919384788023844,
+        "low": 0.22275570170539055,
+        "median": 0.2360379080502555
+       },
+       "r2": 0.9281850333369218,
+       "relative_rms": 0.23565057088122512,
+       "sign_accuracy": 0.90283203125
+      },
+      "M3_yang_integral": {
+       "absolute_rms": 0.006703662192108008,
+       "interval": {
+        "high": 2.371180250468031,
+        "low": 0.3787420521601336,
+        "median": 0.9988414064475379
+       },
+       "r2": -0.30683919967044937,
+       "relative_rms": 1.0052453922595832,
+       "sign_accuracy": 0.720458984375
+      },
+      "M4_park_moin": {
+       "absolute_rms": 0.0021168283763077747,
+       "interval": {
+        "high": 0.6307827244650159,
+        "low": 0.18492799384656167,
+        "median": 0.3178271267535763
+       },
+       "r2": 0.869692561589869,
+       "relative_rms": 0.31742828181182325,
+       "sign_accuracy": 0.924072265625
+      },
+      "NLWH_M1_frozen": {
+       "absolute_rms": 0.0036659438484758474,
+       "interval": {
+        "high": 0.6847323091614927,
+        "low": 0.5128147711376143,
+        "median": 0.5512528195597965
+       },
+       "r2": 0.6091865269720769,
+       "relative_rms": 0.5497253674716989,
+       "sign_accuracy": 0.761474609375
+      },
+      "NLWH_Xall_frozen": {
+       "absolute_rms": 0.0036590103954232188,
+       "interval": {
+        "high": 0.6848685418637982,
+        "low": 0.5108460946148842,
+        "median": 0.5502554447096117
+       },
+       "r2": 0.6106634314443364,
+       "relative_rms": 0.5486856638688222,
+       "sign_accuracy": 0.76123046875
+      },
+      "NLWM_M1_frozen": {
+       "absolute_rms": 0.004042199158941026,
+       "interval": {
+        "high": 0.7447882351523173,
+        "low": 0.5665897142202864,
+        "median": 0.6077943164888946
+       },
+       "r2": 0.5248471648747326,
+       "relative_rms": 0.6061466050459304,
+       "sign_accuracy": 0.740966796875
+      },
+      "NLWM_Xall_frozen": {
+       "absolute_rms": 0.004042703064567314,
+       "interval": {
+        "high": 0.7451145276206106,
+        "low": 0.5665746377902099,
+        "median": 0.6078767779588636
+       },
+       "r2": 0.5247286911917152,
+       "relative_rms": 0.6062221680433554,
+       "sign_accuracy": 0.740966796875
+      },
+      "ORACLE_closure_free": {
+       "absolute_rms": 0.00038150014285376506,
+       "interval": {
+        "high": 0.07734379818468337,
+        "low": 0.048779485135833286,
+        "median": 0.05742137991031075
+       },
+       "r2": 0.99576759401328,
+       "relative_rms": 0.05720772463767685,
+       "sign_accuracy": 0.9951171875
+      },
+      "Xall": {
+       "absolute_rms": 0.0019624983138253962,
+       "interval": {
+        "high": 0.5499839354720094,
+        "low": 0.18480980276453282,
+        "median": 0.2958739890995947
+       },
+       "r2": 0.8880003940362777,
+       "relative_rms": 0.2942857695921316,
+       "sign_accuracy": 0.875732421875
+      }
+     },
+     "shape_amplitude_factorial_relative_rms": {
+      "FAC_exactshape_modelnorm": 0.3190565283377312,
+      "FAC_modelshape_exactnorm": 0.2638654518071493,
+      "M2_hickel": 0.23565057088122512,
+      "Xall": 0.2942857695921316
+     },
+     "source_norm": {
+      "CTL_exact_at_modelled_norm": 0.002419856196809184,
+      "FAC_exactshape_modelnorm": 0.002419856196809184,
+      "FAC_modelshape_exactnorm": 0.0040349848370018595,
+      "M0_equilibrium": 0.0,
+      "M1_pressure_gradient": 0.005248658195311166,
+      "M2_hickel": 0.002419856196809184,
+      "M3_yang_integral": null,
+      "M4_park_moin": 0.003922384179247516,
+      "NLWH_M1_frozen": 0.00037496858360477995,
+      "NLWH_Xall_frozen": 0.00037656768739627663,
+      "NLWM_M1_frozen": 9.100225538506802e-06,
+      "NLWM_Xall_frozen": 9.100225538506802e-06,
+      "ORACLE_closure_free": 0.0040349848370018595,
+      "Xall": 0.0040349848370018595
+     },
+     "yang_integral": {
+      "converged": true,
+      "iterations": 0,
+      "residual": 8.936729042002832e-10,
+      "status": "converged_by_continuation"
+     }
+    },
+    "0.10": {
+     "best_published_family": "M2_hickel",
+     "best_published_relative_rms": 0.3690419711164402,
+     "candidate_relative_rms": 0.6593886783275055,
+     "candidate_uniform_rescale_relative_rms": 0.7405214076867705,
+     "contrasts": [
+      {
+       "delta": {
+        "high": -0.058881486165411445,
+        "low": -0.11497738015142704,
+        "median": -0.07078222122548294
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M0_equilibrium",
+       "verdict": "CANDIDATE_BETTER"
+      },
+      {
+       "delta": {
+        "high": 0.23156798282103694,
+        "low": -0.031330432233615015,
+        "median": 0.1348774740263034
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M1_pressure_gradient",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.3567490438609135,
+        "low": 0.23234674180085754,
+        "median": 0.2924181167295484
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M2_hickel",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.13664680407492552,
+        "low": -1.467288423532828,
+        "median": -0.3550291273068907
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M3_yang_integral",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.3292552109540576,
+        "low": -0.2984628572911586,
+        "median": 0.10169258474802123
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M4_park_moin",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.3269446678290563,
+        "low": -0.06860755482397164,
+        "median": 0.18550143658272664
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "Xall",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.1903831180951238,
+        "low": 0.028309690976549673,
+        "median": 0.0982703190319748
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "CTL_exact_at_modelled_norm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.21294833766032253,
+        "low": 0.09141288401266465,
+        "median": 0.14726651266347224
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "FAC_exactshape_modelnorm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.3283343803397942,
+        "low": -0.26497880371952504,
+        "median": 0.13580363404672674
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "FAC_modelshape_exactnorm",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.015971758575998682,
+        "low": -0.00969455844182431,
+        "median": 0.010669831178192979
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M0_equilibrium",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.31676687844709095,
+        "low": 0.061673682924692164,
+        "median": 0.21642565084611798
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M1_pressure_gradient",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.4542609508256359,
+        "low": 0.3126661775191643,
+        "median": 0.3739585771405855
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M2_hickel",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.21405527332085356,
+        "low": -1.3618685030804287,
+        "median": -0.2731921023145258
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M3_yang_integral",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.40805217936961596,
+        "low": -0.19827254220711407,
+        "median": 0.18359811044046004
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M4_park_moin",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.40544249490861384,
+        "low": 0.028738498522562588,
+        "median": 0.26728717532535573
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "Xall",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.2851345616111829,
+        "low": 0.11563805613036,
+        "median": 0.179377292223812
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "CTL_exact_at_modelled_norm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.3080706241348991,
+        "low": 0.1775511868424331,
+        "median": 0.22830197427078125
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "FAC_exactshape_modelnorm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.4082600465466723,
+        "low": -0.16604461029329914,
+        "median": 0.21756844826669786
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "FAC_modelshape_exactnorm",
+       "verdict": "UNRESOLVED"
+      }
+     ],
+     "exact_source_norm_rms": 0.006451771754067277,
+     "limiter_active_fraction": 1.0,
+     "matched_norm_scale": 0.4095369404025758,
+     "modelled_source_norm_rms": 0.0026422388643364725,
+     "park_moin": {
+      "all_converged": false,
+      "converged_stations": 267,
+      "median_iterations": 54.0,
+      "stations": 288
+     },
+     "scores": {
+      "CTL_exact_at_modelled_norm": {
+       "absolute_rms": 0.0037507753913393173,
+       "interval": {
+        "high": 0.7352556491916216,
+        "low": 0.4937537090147387,
+        "median": 0.5642074942421855
+       },
+       "r2": 0.5908900650974555,
+       "relative_rms": 0.5624462527338124,
+       "sign_accuracy": 0.755126953125
+      },
+      "FAC_exactshape_modelnorm": {
+       "absolute_rms": 0.003423367588843613,
+       "interval": {
+        "high": 0.6846443729541289,
+        "low": 0.4589004402196532,
+        "median": 0.5152953527900515
+       },
+       "r2": 0.6591957677148365,
+       "relative_rms": 0.5133499266635474,
+       "sign_accuracy": 0.779541015625
+      },
+      "FAC_modelshape_exactnorm": {
+       "absolute_rms": 0.0034787202377906724,
+       "interval": {
+        "high": 1.0858530291168373,
+        "low": 0.31606223575645126,
+        "median": 0.5252043106000144
+       },
+       "r2": 0.6480856975765585,
+       "relative_rms": 0.5216503143783252,
+       "sign_accuracy": 0.740234375
+      },
+      "M0_equilibrium": {
+       "absolute_rms": 0.004866770745254659,
+       "interval": {
+        "high": 0.95585979294677,
+        "low": 0.6783679763374433,
+        "median": 0.7313283488649382
+       },
+       "r2": 0.31122133270233465,
+       "relative_rms": 0.7297949578381976,
+       "sign_accuracy": 0.51318359375
+      },
+      "M1_pressure_gradient": {
+       "absolute_rms": 0.003490658827144533,
+       "interval": {
+        "high": 0.8355504464063451,
+        "low": 0.42818925837146055,
+        "median": 0.5266820907131133
+       },
+       "r2": 0.645666089581382,
+       "relative_rms": 0.5234405614990969,
+       "sign_accuracy": 0.833251953125
+      },
+      "M2_hickel": {
+       "absolute_rms": 0.0024610236745412064,
+       "interval": {
+        "high": 0.5449039027196444,
+        "low": 0.3204046249672134,
+        "median": 0.3689570899522235
+       },
+       "r2": 0.8238715580551582,
+       "relative_rms": 0.3690419711164402,
+       "sign_accuracy": 0.792236328125
+      },
+      "M3_yang_integral": {
+       "absolute_rms": 0.006750236060792639,
+       "interval": {
+        "high": 2.2907673304293787,
+        "low": 0.49474408237081335,
+        "median": 1.0159344480368309
+       },
+       "r2": -0.32506087748778034,
+       "relative_rms": 1.012229360955089,
+       "sign_accuracy": 0.544189453125
+      },
+      "M4_park_moin": {
+       "absolute_rms": 0.0037384286991100496,
+       "interval": {
+        "high": 1.1029395778528084,
+        "low": 0.3167578245881358,
+        "median": 0.5628476621096021
+       },
+       "r2": 0.5935790242097025,
+       "relative_rms": 0.5605948086846582,
+       "sign_accuracy": 0.84326171875
+      },
+      "NLWH_M1_frozen": {
+       "absolute_rms": 0.004406461830101428,
+       "interval": {
+        "high": 0.8414968850430301,
+        "low": 0.6212985347989751,
+        "median": 0.661702555893025
+       },
+       "r2": 0.43535181666607925,
+       "relative_rms": 0.6607694904573173,
+       "sign_accuracy": 0.51318359375
+      },
+      "NLWH_Xall_frozen": {
+       "absolute_rms": 0.004397253632640093,
+       "interval": {
+        "high": 0.8413426468683283,
+        "low": 0.6189694635505535,
+        "median": 0.6604171456931155
+       },
+       "r2": 0.4377092451769906,
+       "relative_rms": 0.6593886783275055,
+       "sign_accuracy": 0.51318359375
+      },
+      "NLWM_M1_frozen": {
+       "absolute_rms": 0.004935952364522872,
+       "interval": {
+        "high": 0.9457973715510273,
+        "low": 0.6929743494332364,
+        "median": 0.7415277664155299
+       },
+       "r2": 0.2915000404626227,
+       "relative_rms": 0.7401690641110795,
+       "sign_accuracy": 0.51318359375
+      },
+      "NLWM_Xall_frozen": {
+       "absolute_rms": 0.004938302031902778,
+       "interval": {
+        "high": 0.9467444698688465,
+        "low": 0.6931831981145146,
+        "median": 0.7418532326135752
+       },
+       "r2": 0.29082534372548363,
+       "relative_rms": 0.7405214076867705,
+       "sign_accuracy": 0.51318359375
+      },
+      "ORACLE_closure_free": {
+       "absolute_rms": 0.0005592870918228344,
+       "interval": {
+        "high": 0.14840618597968167,
+        "low": 0.06370106698189103,
+        "median": 0.08461562893607016
+       },
+       "r2": 0.9909036428791769,
+       "relative_rms": 0.0838677063213373,
+       "sign_accuracy": 0.90625
+      },
+      "Xall": {
+       "absolute_rms": 0.0031710364953925845,
+       "interval": {
+        "high": 0.8795052095322786,
+        "low": 0.314615159887806,
+        "median": 0.4794459470851141
+       },
+       "r2": 0.7075844990319218,
+       "relative_rms": 0.47551170305584717,
+       "sign_accuracy": 0.7626953125
+      }
+     },
+     "shape_amplitude_factorial_relative_rms": {
+      "FAC_exactshape_modelnorm": 0.5133499266635474,
+      "FAC_modelshape_exactnorm": 0.5216503143783252,
+      "M2_hickel": 0.3690419711164402,
+      "Xall": 0.47551170305584717
+     },
+     "source_norm": {
+      "CTL_exact_at_modelled_norm": 0.0026422388643364725,
+      "FAC_exactshape_modelnorm": 0.0026422388643364725,
+      "FAC_modelshape_exactnorm": 0.006451771754067278,
+      "M0_equilibrium": 0.0,
+      "M1_pressure_gradient": 0.008960510922156646,
+      "M2_hickel": 0.0026422388643364725,
+      "M3_yang_integral": null,
+      "M4_park_moin": 0.0061593823298430345,
+      "NLWH_M1_frozen": 0.0005145559281744256,
+      "NLWH_Xall_frozen": 0.000514182594298948,
+      "NLWM_M1_frozen": 1.1037962110693064e-05,
+      "NLWM_Xall_frozen": 1.1037962110693065e-05,
+      "ORACLE_closure_free": 0.006451771754067277,
+      "Xall": 0.006451771754067277
+     },
+     "yang_integral": {
+      "converged": false,
+      "iterations": 0,
+      "residual": 8.42004003171452e-10,
+      "status": "solution_branch_lost_at_load_0.175"
+     }
+    },
+    "0.20": {
+     "best_published_family": "M2_hickel",
+     "best_published_relative_rms": 0.4707745103518042,
+     "candidate_relative_rms": 0.7092866125756563,
+     "candidate_uniform_rescale_relative_rms": 0.8195079591222224,
+     "contrasts": [
+      {
+       "delta": {
+        "high": -0.07971648040188486,
+        "low": -0.20330597108202286,
+        "median": -0.10622381998694586
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M0_equilibrium",
+       "verdict": "CANDIDATE_BETTER"
+      },
+      {
+       "delta": {
+        "high": 0.06936753589035109,
+        "low": -0.18521990533542176,
+        "median": -0.07328190073538232
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M1_pressure_gradient",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.31248536791409454,
+        "low": 0.1413007503284201,
+        "median": 0.2400232529556418
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M2_hickel",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": -0.3328808614754549,
+        "low": -3.1369289885031453,
+        "median": -1.1262406120599495
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M3_yang_integral",
+       "verdict": "CANDIDATE_BETTER"
+      },
+      {
+       "delta": {
+        "high": 0.26812226658038674,
+        "low": -0.33776410013097646,
+        "median": 0.04477601239943341
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M4_park_moin",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.3293919435577246,
+        "low": -0.10415396948017838,
+        "median": 0.14094724533825037
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "Xall",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.17971847143415912,
+        "low": -0.03176093016229994,
+        "median": 0.04859772772399973
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "CTL_exact_at_modelled_norm",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.17315259228295096,
+        "low": 0.00978872671132569,
+        "median": 0.08027959014085495
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "FAC_exactshape_modelnorm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.34505055722235894,
+        "low": -0.2372266546326982,
+        "median": 0.13605083867364148
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "FAC_modelshape_exactnorm",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.01448212465477343,
+        "low": -0.03069927988257143,
+        "median": 0.004507775419996141
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M0_equilibrium",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.21997859619643392,
+        "low": -0.06932207605000557,
+        "median": 0.03696434488991884
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M1_pressure_gradient",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.45383816570527713,
+        "low": 0.2574598989410643,
+        "median": 0.3526106836415672
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M2_hickel",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": -0.23729846791061412,
+        "low": -2.966705412495178,
+        "median": -1.016224442405015
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M3_yang_integral",
+       "verdict": "CANDIDATE_BETTER"
+      },
+      {
+       "delta": {
+        "high": 0.3743729106619214,
+        "low": -0.18780492529539172,
+        "median": 0.15628704527799797
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M4_park_moin",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.44554593607105014,
+        "low": 0.03525412849596914,
+        "median": 0.2527875455391961
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "Xall",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.33974662917316134,
+        "low": 0.0824218539369304,
+        "median": 0.15829079310352395
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "CTL_exact_at_modelled_norm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.33277222355094943,
+        "low": 0.12573251252735207,
+        "median": 0.18959277474811798
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "FAC_exactshape_modelnorm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.4542050067689305,
+        "low": -0.08797954616863114,
+        "median": 0.24698514283404438
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "FAC_modelshape_exactnorm",
+       "verdict": "UNRESOLVED"
+      }
+     ],
+     "exact_source_norm_rms": 0.008031211183419176,
+     "limiter_active_fraction": 1.0,
+     "matched_norm_scale": 0.3373687135204335,
+     "modelled_source_norm_rms": 0.0027094793849610456,
+     "park_moin": {
+      "all_converged": false,
+      "converged_stations": 211,
+      "median_iterations": 54.0,
+      "stations": 288
+     },
+     "scores": {
+      "CTL_exact_at_modelled_norm": {
+       "absolute_rms": 0.004412521505958846,
+       "interval": {
+        "high": 0.8837729455337705,
+        "low": 0.5918198417745302,
+        "median": 0.6641086847552534
+       },
+       "r2": 0.43379776366700507,
+       "relative_rms": 0.6616781670969945,
+       "sign_accuracy": 0.6796875
+      },
+      "FAC_exactshape_modelnorm": {
+       "absolute_rms": 0.004201676876726867,
+       "interval": {
+        "high": 0.8795429047733739,
+        "low": 0.5616422406499375,
+        "median": 0.6322739932121435
+       },
+       "r2": 0.48661495735242377,
+       "relative_rms": 0.6300610321721993,
+       "sign_accuracy": 0.697998046875
+      },
+      "FAC_modelshape_exactnorm": {
+       "absolute_rms": 0.0038288600316294724,
+       "interval": {
+        "high": 1.16999566593833,
+        "low": 0.3507973820283872,
+        "median": 0.5787107107919768
+       },
+       "r2": 0.5736788377656181,
+       "relative_rms": 0.5741554085069559,
+       "sign_accuracy": 0.79052734375
+      },
+      "M0_equilibrium": {
+       "absolute_rms": 0.005434043306666194,
+       "interval": {
+        "high": 1.1931094663975281,
+        "low": 0.7275107279100248,
+        "median": 0.8156273738224684
+       },
+       "r2": 0.14129478461046452,
+       "relative_rms": 0.8148601225455677,
+       "sign_accuracy": 0.51318359375
+      },
+      "M1_pressure_gradient": {
+       "absolute_rms": 0.0052111864739645,
+       "interval": {
+        "high": 1.051942754250168,
+        "low": 0.7082896697109304,
+        "median": 0.7841452943998921
+       },
+       "r2": 0.21028363441676756,
+       "relative_rms": 0.7814417017202044,
+       "sign_accuracy": 0.773681640625
+      },
+      "M2_hickel": {
+       "absolute_rms": 0.003139445662078302,
+       "interval": {
+        "high": 0.8086433842122729,
+        "low": 0.36781246875629175,
+        "median": 0.4718621725430908
+       },
+       "r2": 0.7133817424392128,
+       "relative_rms": 0.4707745103518042,
+       "sign_accuracy": 0.65234375
+      },
+      "M3_yang_integral": {
+       "absolute_rms": 0.012141967442688716,
+       "interval": {
+        "high": 4.146243938747038,
+        "low": 0.9845331929747598,
+        "median": 1.8366640967895627
+       },
+       "r2": -3.287222647723997,
+       "relative_rms": 1.820744613160551,
+       "sign_accuracy": 0.51318359375
+      },
+      "M4_park_moin": {
+       "absolute_rms": 0.004452799203130454,
+       "interval": {
+        "high": 1.2594216452746458,
+        "low": 0.43553693837592095,
+        "median": 0.671294784862046
+       },
+       "r2": 0.42341394743330873,
+       "relative_rms": 0.6677179955269311,
+       "sign_accuracy": 0.656005859375
+      },
+      "NLWH_M1_frozen": {
+       "absolute_rms": 0.004745979111113357,
+       "interval": {
+        "high": 0.9963537229945281,
+        "low": 0.6481858504578072,
+        "median": 0.7120824181106022
+       },
+       "r2": 0.3449875497771021,
+       "relative_rms": 0.7116816892747849,
+       "sign_accuracy": 0.51318359375
+      },
+      "NLWH_Xall_frozen": {
+       "absolute_rms": 0.004730007105433175,
+       "interval": {
+        "high": 0.9923413981846001,
+        "low": 0.6459997977692534,
+        "median": 0.7096701314527957
+       },
+       "r2": 0.3493888580335357,
+       "relative_rms": 0.7092866125756563,
+       "sign_accuracy": 0.51318359375
+      },
+      "NLWM_M1_frozen": {
+       "absolute_rms": 0.005460448387362944,
+       "interval": {
+        "high": 1.1605066863821238,
+        "low": 0.7410522221619261,
+        "median": 0.8193854845397719
+       },
+       "r2": 0.13292927540624644,
+       "relative_rms": 0.8188196874732128,
+       "sign_accuracy": 0.51318359375
+      },
+      "NLWM_Xall_frozen": {
+       "absolute_rms": 0.005465038252352024,
+       "interval": {
+        "high": 1.162211430023244,
+        "low": 0.7415640501454366,
+        "median": 0.8201232128490841
+       },
+       "r2": 0.13147100315655436,
+       "relative_rms": 0.8195079591222224,
+       "sign_accuracy": 0.51318359375
+      },
+      "ORACLE_closure_free": {
+       "absolute_rms": 0.0008941835113938423,
+       "interval": {
+        "high": 0.26184972172507853,
+        "low": 0.09348260336232687,
+        "median": 0.13524018437839833
+       },
+       "r2": 0.9767484866453431,
+       "relative_rms": 0.13408698542736355,
+       "sign_accuracy": 0.836669921875
+      },
+      "Xall": {
+       "absolute_rms": 0.003819292363946253,
+       "interval": {
+        "high": 0.9960387457775881,
+        "low": 0.3957381451780175,
+        "median": 0.5762673346947045
+       },
+       "r2": 0.5758067833872799,
+       "relative_rms": 0.5727206921418398,
+       "sign_accuracy": 0.704345703125
+      }
+     },
+     "shape_amplitude_factorial_relative_rms": {
+      "FAC_exactshape_modelnorm": 0.6300610321721993,
+      "FAC_modelshape_exactnorm": 0.5741554085069559,
+      "M2_hickel": 0.4707745103518042,
+      "Xall": 0.5727206921418398
+     },
+     "source_norm": {
+      "CTL_exact_at_modelled_norm": 0.0027094793849610456,
+      "FAC_exactshape_modelnorm": 0.0027094793849610456,
+      "FAC_modelshape_exactnorm": 0.008031211183419176,
+      "M0_equilibrium": 0.0,
+      "M1_pressure_gradient": 0.013224480188313981,
+      "M2_hickel": 0.0027094793849610456,
+      "M3_yang_integral": null,
+      "M4_park_moin": 0.007869696847208658,
+      "NLWH_M1_frozen": 0.0006691583331202732,
+      "NLWH_Xall_frozen": 0.000669318001755317,
+      "NLWM_M1_frozen": 1.437080169010544e-05,
+      "NLWM_Xall_frozen": 1.4370801690105441e-05,
+      "ORACLE_closure_free": 0.008031211183419176,
+      "Xall": 0.008031211183419176
+     },
+     "yang_integral": {
+      "converged": true,
+      "iterations": 0,
+      "residual": 7.809944663239307e-10,
+      "status": "converged_by_continuation"
+     }
+    },
+    "0.30": {
+     "best_published_family": "M2_hickel",
+     "best_published_relative_rms": 0.4861107390666138,
+     "candidate_relative_rms": 0.7200747628803683,
+     "candidate_uniform_rescale_relative_rms": 0.845366889795647,
+     "contrasts": [
+      {
+       "delta": {
+        "high": -0.09266207200685053,
+        "low": -0.2391145671323428,
+        "median": -0.12517608895471394
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M0_equilibrium",
+       "verdict": "CANDIDATE_BETTER"
+      },
+      {
+       "delta": {
+        "high": -0.031102969278364843,
+        "low": -0.4116356316202244,
+        "median": -0.287310892826672
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M1_pressure_gradient",
+       "verdict": "CANDIDATE_BETTER"
+      },
+      {
+       "delta": {
+        "high": 0.32207447896528735,
+        "low": 0.14021705546837307,
+        "median": 0.2366158662066504
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M2_hickel",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": -0.07635275696847098,
+        "low": -1.8553837871406935,
+        "median": -0.5836222852344688
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M3_yang_integral",
+       "verdict": "CANDIDATE_BETTER"
+      },
+      {
+       "delta": {
+        "high": 0.3001869622002154,
+        "low": -0.251522656010458,
+        "median": 0.066492255018408
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "M4_park_moin",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.37182649320143724,
+        "low": -0.08024953277022512,
+        "median": 0.13875354218166536
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "Xall",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.22691421217392957,
+        "low": -0.03466262048053413,
+        "median": 0.04670024797409256
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "CTL_exact_at_modelled_norm",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.21327402106252713,
+        "low": 0.01751457680272229,
+        "median": 0.07841372036632671
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "FAC_exactshape_modelnorm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.3342162854210771,
+        "low": -0.1901747811090262,
+        "median": 0.1297642144470324
+       },
+       "first": "NLWH_Xall_frozen",
+       "second": "FAC_modelshape_exactnorm",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.011903052770379507,
+        "low": -0.03706181521957057,
+        "median": 0.0005267672310126925
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M0_equilibrium",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.15037473727150757,
+        "low": -0.2861046957828563,
+        "median": -0.16252155362666598
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M1_pressure_gradient",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.49838917927562043,
+        "low": 0.26201011039424266,
+        "median": 0.3640799905020444
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M2_hickel",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.03174733704239214,
+        "low": -1.6563093635285655,
+        "median": -0.45819363778987726
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M3_yang_integral",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.428406861632991,
+        "low": -0.08281217450526646,
+        "median": 0.1937028064440185
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "M4_park_moin",
+       "verdict": "UNRESOLVED"
+      },
+      {
+       "delta": {
+        "high": 0.5260890207593643,
+        "low": 0.06399995259392548,
+        "median": 0.26501975186009497
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "Xall",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.4198018877020397,
+        "low": 0.0876295190685896,
+        "median": 0.17120047475651573
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "CTL_exact_at_modelled_norm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.40575850228590093,
+        "low": 0.1380726560177903,
+        "median": 0.20273713054935444
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "FAC_exactshape_modelnorm",
+       "verdict": "CANDIDATE_WORSE"
+      },
+      {
+       "delta": {
+        "high": 0.46539701523116395,
+        "low": -0.017644675319164405,
+        "median": 0.2561970342559509
+       },
+       "first": "NLWM_Xall_frozen",
+       "second": "FAC_modelshape_exactnorm",
+       "verdict": "UNRESOLVED"
+      }
+     ],
+     "exact_source_norm_rms": 0.008691901461373209,
+     "limiter_active_fraction": 1.0,
+     "matched_norm_scale": 0.31319351586139305,
+     "modelled_source_norm_rms": 0.0027222471782082556,
+     "park_moin": {
+      "all_converged": false,
+      "converged_stations": 162,
+      "median_iterations": 71.0,
+      "stations": 288
+     },
+     "scores": {
+      "CTL_exact_at_modelled_norm": {
+       "absolute_rms": 0.004493103497970234,
+       "interval": {
+        "high": 0.9018586134240713,
+        "low": 0.6086507347592838,
+        "median": 0.6761121766940016
+       },
+       "r2": 0.41292882737408265,
+       "relative_rms": 0.673761812401185,
+       "sign_accuracy": 0.666015625
+      },
+      "FAC_exactshape_modelnorm": {
+       "absolute_rms": 0.004277680462339346,
+       "interval": {
+        "high": 0.9054617079181733,
+        "low": 0.5772480678797005,
+        "median": 0.6428465225660134
+       },
+       "r2": 0.4678738637648453,
+       "relative_rms": 0.6414581240963863,
+       "sign_accuracy": 0.71044921875
+      },
+      "FAC_modelshape_exactnorm": {
+       "absolute_rms": 0.003953292169295234,
+       "interval": {
+        "high": 1.1663046339007535,
+        "low": 0.37903901794115297,
+        "median": 0.5977897334004788
+       },
+       "r2": 0.5455189971329761,
+       "relative_rms": 0.5928145875426739,
+       "sign_accuracy": 0.809814453125
+      },
+      "M0_equilibrium": {
+       "absolute_rms": 0.00563263855468607,
+       "interval": {
+        "high": 1.3086085572697226,
+        "low": 0.7329052285442685,
+        "median": 0.8455182376045667
+       },
+       "r2": 0.07738252268628354,
+       "relative_rms": 0.8446404056618106,
+       "sign_accuracy": 0.51318359375
+      },
+      "M1_pressure_gradient": {
+       "absolute_rms": 0.006713965561824931,
+       "interval": {
+        "high": 1.2291671495952579,
+        "low": 0.9278480590965819,
+        "median": 1.008614882785674
+       },
+       "r2": -0.31085944849090286,
+       "relative_rms": 1.0067904305738462,
+       "sign_accuracy": 0.81298828125
+      },
+      "M2_hickel": {
+       "absolute_rms": 0.003241718099630985,
+       "interval": {
+        "high": 0.8563248992725895,
+        "low": 0.3684400314943706,
+        "median": 0.4881838941074472
+       },
+       "r2": 0.6944034817717022,
+       "relative_rms": 0.4861107390666138,
+       "sign_accuracy": 0.6181640625
+      },
+      "M3_yang_integral": {
+       "absolute_rms": 0.008630734500261557,
+       "interval": {
+        "high": 2.9268260226906007,
+        "low": 0.7190543843148708,
+        "median": 1.3039883859157417
+       },
+       "r2": -1.1661744258265299,
+       "relative_rms": 1.2942188671764683,
+       "sign_accuracy": 0.51318359375
+      },
+      "M4_park_moin": {
+       "absolute_rms": 0.004390712920543333,
+       "interval": {
+        "high": 1.2101070713959814,
+        "low": 0.42908122508906876,
+        "median": 0.6625589581365112
+       },
+       "r2": 0.4393807642584139,
+       "relative_rms": 0.6584078680615728,
+       "sign_accuracy": 0.679443359375
+      },
+      "NLWH_M1_frozen": {
+       "absolute_rms": 0.004824929267216504,
+       "interval": {
+        "high": 1.0742025775231134,
+        "low": 0.6408894719706771,
+        "median": 0.7240483032170946
+       },
+       "r2": 0.32301380570327975,
+       "relative_rms": 0.7235206331783568,
+       "sign_accuracy": 0.51318359375
+      },
+      "NLWH_Xall_frozen": {
+       "absolute_rms": 0.004801949852823358,
+       "interval": {
+        "high": 1.0706151873940803,
+        "low": 0.637603617300183,
+        "median": 0.7206165129731545
+       },
+       "r2": 0.3294469365639334,
+       "relative_rms": 0.7200747628803683,
+       "sign_accuracy": 0.51318359375
+      },
+      "NLWM_M1_frozen": {
+       "absolute_rms": 0.005631967782190694,
+       "interval": {
+        "high": 1.2709594773047435,
+        "low": 0.7437874592674748,
+        "median": 0.8452782325905103
+       },
+       "r2": 0.07760225259514908,
+       "relative_rms": 0.84453982019958,
+       "sign_accuracy": 0.51318359375
+      },
+      "NLWM_Xall_frozen": {
+       "absolute_rms": 0.005637483246597782,
+       "interval": {
+        "high": 1.2721352236398984,
+        "low": 0.7445090650402761,
+        "median": 0.8460694129418256
+       },
+       "r2": 0.07579473406944981,
+       "relative_rms": 0.845366889795647,
+       "sign_accuracy": 0.51318359375
+      },
+      "ORACLE_closure_free": {
+       "absolute_rms": 0.0010012244684050157,
+       "interval": {
+        "high": 0.29442239803388753,
+        "low": 0.10369214486303364,
+        "median": 0.1512986244344739
+       },
+       "r2": 0.9708485058473351,
+       "relative_rms": 0.15013827586160036,
+       "sign_accuracy": 0.824462890625
+      },
+      "Xall": {
+       "absolute_rms": 0.0039109313604763375,
+       "interval": {
+        "high": 0.9680869812663797,
+        "low": 0.41204682274286697,
+        "median": 0.5894700719890336
+       },
+       "r2": 0.5552066373881812,
+       "relative_rms": 0.5864623868115995,
+       "sign_accuracy": 0.700439453125
+      }
+     },
+     "shape_amplitude_factorial_relative_rms": {
+      "FAC_exactshape_modelnorm": 0.6414581240963863,
+      "FAC_modelshape_exactnorm": 0.5928145875426739,
+      "M2_hickel": 0.4861107390666138,
+      "Xall": 0.5864623868115995
+     },
+     "source_norm": {
+      "CTL_exact_at_modelled_norm": 0.0027222471782082556,
+      "FAC_exactshape_modelnorm": 0.0027222471782082556,
+      "FAC_modelshape_exactnorm": 0.008691901461373207,
+      "M0_equilibrium": 0.0,
+      "M1_pressure_gradient": 0.016331201204446262,
+      "M2_hickel": 0.0027222471782082556,
+      "M3_yang_integral": null,
+      "M4_park_moin": 0.008642426637272096,
+      "NLWH_M1_frozen": 0.000743057221194832,
+      "NLWH_Xall_frozen": 0.0007443274052070253,
+      "NLWM_M1_frozen": 1.6543263620147874e-05,
+      "NLWM_Xall_frozen": 1.6543263620147874e-05,
+      "ORACLE_closure_free": 0.008691901461373209,
+      "Xall": 0.008691901461373209
+     },
+     "yang_integral": {
+      "converged": true,
+      "iterations": 0,
+      "residual": 8.601302561346723e-10,
+      "status": "converged_by_continuation"
+     }
+    }
+   },
+   "stations": 288,
+   "streamwise_spacing_nonuniformity_cells": 0.1404627321959424,
+   "traction_reconstruction_relative_rms": 0.0370419763215122,
+   "wall_origin_key": "G2_y_wall_mesh"
+  }
+ },
+ "holdout_verdict": {
+  "0.05": {
+   "best_published": 0.23565057088122512,
+   "best_published_family": "M2_hickel",
+   "candidate": 0.5486856638688222,
+   "delta": {
+    "high": 0.4052066372744202,
+    "low": 0.27965029613366793,
+    "median": 0.3142045381233365
+   },
+   "verdict": "CANDIDATE_WORSE"
+  },
+  "0.10": {
+   "best_published": 0.3690419711164402,
+   "best_published_family": "M2_hickel",
+   "candidate": 0.6593886783275055,
+   "delta": {
+    "high": 0.3567490438609135,
+    "low": 0.23234674180085754,
+    "median": 0.2924181167295484
+   },
+   "verdict": "CANDIDATE_WORSE"
+  },
+  "0.20": {
+   "best_published": 0.4707745103518042,
+   "best_published_family": "M2_hickel",
+   "candidate": 0.7092866125756563,
+   "delta": {
+    "high": 0.31248536791409454,
+    "low": 0.1413007503284201,
+    "median": 0.2400232529556418
+   },
+   "verdict": "CANDIDATE_WORSE"
+  },
+  "0.30": {
+   "best_published": 0.4861107390666138,
+   "best_published_family": "M2_hickel",
+   "candidate": 0.7200747628803683,
+   "delta": {
+    "high": 0.32207447896528735,
+    "low": 0.14021705546837307,
+    "median": 0.2366158662066504
+   },
+   "verdict": "CANDIDATE_WORSE"
+  }
+ },
+ "inputs": {
+  "faithful_models": {
+   "path": "codes/models/faithful_wall_models_l0.py",
+   "sha256": "7043e7d8ed16c700c99381d0f00adeb6a7684337c931c56fc5421fde0b0e50e8"
+  },
+  "wavy_wrles": {
+   "path": "codes/results/r1_sta2_wavy_wrles_20260824.npz",
+   "sha256": "999fd95b6455eecd75c830b95a68c78fca4fc5e7696b0e6f741ca158ab996c5a"
+  }
+ },
+ "question": "does the norm-limited wall model, with its constant frozen on the periodic hill, still beat the best faithful published family on a different repeating wall?",
+ "runtime_seconds": 8193.15654873848,
+ "schema": "wavy_geometry_holdout_l0/1"
+}

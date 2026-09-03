@@ -1,0 +1,40 @@
+{
+  "generated_by": "codes/analysis/corrected_family_sweep_l0.py",
+  "reference_book": "repaired (curvature-aware cubic, six fluid points)",
+  "superseded_book": "legacy (through-origin linear fit, four fluid points)",
+  "n_members": 29,
+  "eps_range_repaired": [
+    0.09429303489783938,
+    0.5446411202370304
+  ],
+  "eps_range_legacy": [
+    0.08394008859971455,
+    0.40976622749443525
+  ],
+  "r2_max_repaired": -3.346796042869867,
+  "r2_min_repaired": -17.58156146525824,
+  "every_member_fails_repaired": true,
+  "spearman_Lsep_over_delta": {
+    "eps_median": -0.49507389162561577,
+    "r2": -0.5118226600985222,
+    "r2_ci95": [
+      -0.7594669665615713,
+      -0.14264062458499896
+    ]
+  },
+  "limitation_independent_reference": {
+    "n_with_independent_wall_traction": 1,
+    "members": [
+      "alph10-9-3036"
+    ],
+    "statement": "only one of the 29 members has an independently published wall traction, and it is among the least affected by the correction, so the validation does not cover the strongly affected end of the family"
+  },
+  "estimator_bias_correlates_with_reported_variables": {
+    "rho(alpha, repaired_over_legacy_eps)": -0.5805219418219775,
+    "rho(L_sep_over_delta_legacy, repaired_over_legacy_eps)": 0.6068965517241379,
+    "statement": "the correction is largest for the longest-bubble, shallowest members, the direction that manufactures the reported trend, so part of the previously published correlation was a property of the estimator and not of the flow"
+  },
+  "inputs": {
+    "work_progress/archer2_campaign_20260823/TRUTH_REFERENCE_AUDIT_V/xiao29_epsilon_sweep.json": "fea69635cce8274ffff155f2ddc17c48fc4d9f96d561d80065498c2551e1b6c5"
+  }
+}

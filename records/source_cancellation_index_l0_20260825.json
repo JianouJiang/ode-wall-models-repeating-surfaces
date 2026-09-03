@@ -1,0 +1,169 @@
+{
+ "definition": "K = N/|W| with N the assembled source norm and W its net traction-equivalent work; K = 1 for a source of one sign and grows as the source becomes an assembly of cancelling contributions. Neither N nor W uses a wall-stress reference.",
+ "inputs": {
+  "dns_archive": {
+   "path": "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz",
+   "sha256": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85"
+  }
+ },
+ "question": "is the source that a one-dimensional wall model is asked to integrate itself a near-cancelling assembly, and does that distinguish the sources that work from those that do not?",
+ "schema": "source_cancellation_index_l0/1",
+ "surfaces": {
+  "archive_index10": {
+   "arms": {
+    "M1_pressure_gradient": {
+     "cancellation_index_max": 1.0,
+     "cancellation_index_median": 1.0,
+     "cancellation_index_p90": 1.0,
+     "fraction_of_stations_above_2": 0.0,
+     "fraction_of_stations_with_a_sign_change": 0.0,
+     "sign_changes_median": 0.0
+    },
+    "M2_hickel": {
+     "cancellation_index_max": 1.0,
+     "cancellation_index_median": 1.0,
+     "cancellation_index_p90": 1.0,
+     "fraction_of_stations_above_2": 0.0,
+     "fraction_of_stations_with_a_sign_change": 0.0,
+     "sign_changes_median": 0.0
+    },
+    "Xall": {
+     "cancellation_index_max": 3364.412858572346,
+     "cancellation_index_median": 1.0,
+     "cancellation_index_p90": 1.9453980876376638,
+     "fraction_of_stations_above_2": 0.099609375,
+     "fraction_of_stations_with_a_sign_change": 0.369140625,
+     "sign_changes_median": 0.0
+    },
+    "Xc_exact_convection": {
+     "cancellation_index_max": 55.56693278414256,
+     "cancellation_index_median": 1.0,
+     "cancellation_index_p90": 2.144248996718113,
+     "fraction_of_stations_above_2": 0.115234375,
+     "fraction_of_stations_with_a_sign_change": 0.248046875,
+     "sign_changes_median": 0.0
+    },
+    "Xcp_pressure_plus_convection": {
+     "cancellation_index_max": 266.80392673092564,
+     "cancellation_index_median": 1.0,
+     "cancellation_index_p90": 2.0670701744432445,
+     "fraction_of_stations_above_2": 0.103515625,
+     "fraction_of_stations_with_a_sign_change": 0.361328125,
+     "sign_changes_median": 0.0
+    },
+    "term_conv": {
+     "cancellation_index_max": 23897.791140773505,
+     "cancellation_index_median": 1.0023362742371296,
+     "cancellation_index_p90": 2.681898990695325,
+     "fraction_of_stations_above_2": 0.126953125,
+     "fraction_of_stations_with_a_sign_change": 0.53125,
+     "sign_changes_median": 1.0
+    },
+    "term_dRtt": {
+     "cancellation_index_max": 258.69629484882915,
+     "cancellation_index_median": 1.0,
+     "cancellation_index_p90": 1.2824919440950724,
+     "fraction_of_stations_above_2": 0.044921875,
+     "fraction_of_stations_with_a_sign_change": 0.216796875,
+     "sign_changes_median": 0.0
+    },
+    "term_dpds": {
+     "cancellation_index_max": 2.0308420433390233,
+     "cancellation_index_median": 1.0,
+     "cancellation_index_p90": 1.0,
+     "fraction_of_stations_above_2": 0.001953125,
+     "fraction_of_stations_with_a_sign_change": 0.078125,
+     "sign_changes_median": 0.0
+    },
+    "term_visc": {
+     "cancellation_index_max": 60.72616457498743,
+     "cancellation_index_median": 1.0390063496621993,
+     "cancellation_index_p90": 3.215402074686136,
+     "fraction_of_stations_above_2": 0.16796875,
+     "fraction_of_stations_with_a_sign_change": 0.66015625,
+     "sign_changes_median": 1.0
+    }
+   },
+   "note": "the paper's a-priori surface: archive wall index 10",
+   "stations": 512
+  },
+  "ladder_L1": {
+   "arms": {
+    "M1_pressure_gradient": {
+     "cancellation_index_max": 1.0,
+     "cancellation_index_median": 1.0,
+     "cancellation_index_p90": 1.0,
+     "fraction_of_stations_above_2": 0.0,
+     "fraction_of_stations_with_a_sign_change": 0.0,
+     "sign_changes_median": 0.0
+    },
+    "M2_hickel": {
+     "cancellation_index_max": 1.0,
+     "cancellation_index_median": 1.0,
+     "cancellation_index_p90": 1.0,
+     "fraction_of_stations_above_2": 0.0,
+     "fraction_of_stations_with_a_sign_change": 0.0,
+     "sign_changes_median": 0.0
+    },
+    "Xall": {
+     "cancellation_index_max": 22.91265414299028,
+     "cancellation_index_median": 1.0,
+     "cancellation_index_p90": 2.1991890559350464,
+     "fraction_of_stations_above_2": 0.10833333333333334,
+     "fraction_of_stations_with_a_sign_change": 0.35833333333333334,
+     "sign_changes_median": 0.0
+    },
+    "Xc_exact_convection": {
+     "cancellation_index_max": 35.31976754561727,
+     "cancellation_index_median": 1.0,
+     "cancellation_index_p90": 2.1703534745412685,
+     "fraction_of_stations_above_2": 0.125,
+     "fraction_of_stations_with_a_sign_change": 0.225,
+     "sign_changes_median": 0.0
+    },
+    "Xcp_pressure_plus_convection": {
+     "cancellation_index_max": 24.154857267572023,
+     "cancellation_index_median": 1.0,
+     "cancellation_index_p90": 2.3991848898283306,
+     "fraction_of_stations_above_2": 0.11666666666666667,
+     "fraction_of_stations_with_a_sign_change": 0.35,
+     "sign_changes_median": 0.0
+    },
+    "term_conv": {
+     "cancellation_index_max": 9.728567211870219,
+     "cancellation_index_median": 1.0027559629379468,
+     "cancellation_index_p90": 1.5781242301913154,
+     "fraction_of_stations_above_2": 0.09166666666666666,
+     "fraction_of_stations_with_a_sign_change": 0.5333333333333333,
+     "sign_changes_median": 1.0
+    },
+    "term_dRtt": {
+     "cancellation_index_max": 4.956584314770944,
+     "cancellation_index_median": 1.0,
+     "cancellation_index_p90": 1.2866155429836659,
+     "fraction_of_stations_above_2": 0.041666666666666664,
+     "fraction_of_stations_with_a_sign_change": 0.2,
+     "sign_changes_median": 0.0
+    },
+    "term_dpds": {
+     "cancellation_index_max": 2.9054247814115164,
+     "cancellation_index_median": 1.0,
+     "cancellation_index_p90": 1.0,
+     "fraction_of_stations_above_2": 0.008333333333333333,
+     "fraction_of_stations_with_a_sign_change": 0.05,
+     "sign_changes_median": 0.0
+    },
+    "term_visc": {
+     "cancellation_index_max": 153.86793503675577,
+     "cancellation_index_median": 1.0074876096767098,
+     "cancellation_index_p90": 2.827248486433137,
+     "fraction_of_stations_above_2": 0.175,
+     "fraction_of_stations_with_a_sign_change": 0.625,
+     "sign_changes_median": 1.0
+    }
+   },
+   "note": "first cell centre of the coupled ladder mesh, y_m/H = 0.0935 on the flat floor",
+   "stations": 120
+  }
+ }
+}

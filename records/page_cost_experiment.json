@@ -1,0 +1,115 @@
+{
+ "baseline": {
+  "tag": "as submitted",
+  "total": 28,
+  "body": 24
+ },
+ "trials": [
+  {
+   "tag": "drop float tab:datasets",
+   "total": 27,
+   "body": 24,
+   "buys_total": 1,
+   "buys_body": 0
+  },
+  {
+   "tag": "drop float tab:physical_metrics",
+   "total": 27,
+   "body": 24,
+   "buys_total": 1,
+   "buys_body": 0
+  },
+  {
+   "tag": "drop float tab:three_term_uq",
+   "total": 27,
+   "body": 24,
+   "buys_total": 1,
+   "buys_body": 0
+  },
+  {
+   "tag": "drop float tab:headline_uncertainty",
+   "total": 27,
+   "body": 24,
+   "buys_total": 1,
+   "buys_body": 0
+  },
+  {
+   "tag": "drop float fig:velocity_profiles",
+   "total": 27,
+   "body": 24,
+   "buys_total": 1,
+   "buys_body": 0
+  },
+  {
+   "tag": "drop float tab:wavy_amplitude",
+   "total": 27,
+   "body": 24,
+   "buys_total": 1,
+   "buys_body": 0
+  },
+  {
+   "tag": "drop float fig:amplitude_pitch_sweep",
+   "total": 27,
+   "body": 24,
+   "buys_total": 1,
+   "buys_body": 0
+  },
+  {
+   "tag": "drop float fig:cancellation",
+   "total": 27,
+   "body": 24,
+   "buys_total": 1,
+   "buys_body": 0
+  },
+  {
+   "tag": "drop float tab:reference_ladder",
+   "total": 27,
+   "body": 24,
+   "buys_total": 1,
+   "buys_body": 0
+  },
+  {
+   "tag": "drop float tab:rib_pair",
+   "total": 27,
+   "body": 24,
+   "buys_total": 1,
+   "buys_body": 0
+  },
+  {
+   "tag": "drop float tab:corrected_grid_results",
+   "total": 27,
+   "body": 24,
+   "buys_total": 1,
+   "buys_body": 0
+  },
+  {
+   "tag": "drop float tab:coupled_ladder",
+   "total": 27,
+   "body": 24,
+   "buys_total": 1,
+   "buys_body": 0
+  },
+  {
+   "tag": "drop float tab:ym_sweep",
+   "total": 27,
+   "body": 24,
+   "buys_total": 1,
+   "buys_body": 0
+  },
+  {
+   "tag": "drop the end matter",
+   "total": 27,
+   "body": 24,
+   "buys_total": 1,
+   "buys_body": 0
+  },
+  {
+   "tag": "drop S5.7 (wall model as deployed)",
+   "total": 27,
+   "body": 23,
+   "buys_total": 1,
+   "buys_body": 1
+  }
+ ],
+ "note": "Control builds only; manuscript/main.tex is unmodified."
+}

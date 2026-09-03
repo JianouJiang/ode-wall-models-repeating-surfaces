@@ -1,0 +1,25 @@
+Declaration of interests
+========================
+
+Manuscript: "Wall-modelled large-eddy simulation over repeating structures:
+conditioning, not missing physics, limits reduced wall models"
+
+Authors: Jianou Jiang, Budimir Rosic
+Department of Engineering Science, University of Oxford, Oxford OX1 3PJ, UK
+
+
+[X] The authors declare that they have no known competing financial interests
+    or personal relationships that could have appeared to influence the work
+    reported in this paper.
+
+[ ] The authors declare the following financial interests / personal
+    relationships which may be considered as potential competing interests:
+
+
+This work received no specific grant from any funding agency in the public,
+commercial or not-for-profit sectors.
+
+Jianou Jiang (corresponding author), ORCID 0009-0004-6581-0319
+Budimir Rosic
+
+Date: 31 August 2026

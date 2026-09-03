@@ -1,0 +1,112 @@
+{
+  "schema": "hausmann-vfwmles-source-reproduction-l1-v1",
+  "source": {
+    "authors": "Max Hausmann and Berend van Wachem",
+    "paper": "Physical Review Fluids 10, 044604 (2025)",
+    "paper_doi": "10.1103/PhysRevFluids.10.044604",
+    "zenodo_record": 15094241,
+    "zenodo_doi": "10.5281/zenodo.15094241",
+    "zenodo_actualdata_zip_md5": "4aeba3f2e0be214b6188f17e0380b2c8",
+    "license": "CC-BY-4.0",
+    "deposited_plot_script_sha256": "324f323cb95a772bcdd735ca8626f19d528b7ba38ae8b05ddaf87b78ae18c35f",
+    "deposited_readme_sha256": "26e3208129b2e5ce594bf3a659d9501cfa526d66c1a0dc693925759ba049d06f"
+  },
+  "protocol": {
+    "filter_widths_sigma_over_H": [
+      0.035,
+      0.07
+    ],
+    "phase_stations_x_over_H": [
+      0.05,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0
+    ],
+    "subfilter_models": [
+      "LESVRE",
+      "LESNL",
+      "LESNLVRE"
+    ],
+    "bulk_velocity_from_deposited_plot_script": 1.0595,
+    "comparison": "LES grid; linearly interpolated explicitly filtered DNS",
+    "metric": "profile-integrated relative L2 on common y support"
+  },
+  "n_profile_comparisons": 54,
+  "summaries": {
+    "0035": {
+      "LESVRE": {
+        "sigma_over_H": 0.035,
+        "n_phase_stations": 9,
+        "median_relative_l2_u": 0.04646145546654093,
+        "max_relative_l2_u": 0.060658428015581245,
+        "median_relative_l2_v": 0.23759941120882286,
+        "max_relative_l2_v": 0.4481423551666608,
+        "rms_wall_u_error": 0.05576185382146508,
+        "rms_wall_v_error": 0.0232651882124875
+      },
+      "LESNL": {
+        "sigma_over_H": 0.035,
+        "n_phase_stations": 9,
+        "median_relative_l2_u": 0.05943092531080176,
+        "max_relative_l2_u": 0.08686419909347849,
+        "median_relative_l2_v": 0.2600845191828796,
+        "max_relative_l2_v": 0.9142998839104914,
+        "rms_wall_u_error": 0.05084282454786708,
+        "rms_wall_v_error": 0.02352977818534367
+      },
+      "LESNLVRE": {
+        "sigma_over_H": 0.035,
+        "n_phase_stations": 9,
+        "median_relative_l2_u": 0.05928497991730918,
+        "max_relative_l2_u": 0.09882146981103525,
+        "median_relative_l2_v": 0.3661332483951323,
+        "max_relative_l2_v": 0.8319710139561589,
+        "rms_wall_u_error": 0.05210382488042283,
+        "rms_wall_v_error": 0.02032118554461396
+      }
+    },
+    "0070": {
+      "LESVRE": {
+        "sigma_over_H": 0.07,
+        "n_phase_stations": 9,
+        "median_relative_l2_u": 0.058308217761977484,
+        "max_relative_l2_u": 0.10531705614696311,
+        "median_relative_l2_v": 0.30824105648724015,
+        "max_relative_l2_v": 0.8339988527920092,
+        "rms_wall_u_error": 0.10475703554909335,
+        "rms_wall_v_error": 0.05143453132718089
+      },
+      "LESNL": {
+        "sigma_over_H": 0.07,
+        "n_phase_stations": 9,
+        "median_relative_l2_u": 0.10936463460334198,
+        "max_relative_l2_u": 0.14231554519402345,
+        "median_relative_l2_v": 0.5184362763488629,
+        "max_relative_l2_v": 1.1229229309570563,
+        "rms_wall_u_error": 0.11394678247988452,
+        "rms_wall_v_error": 0.055015964882446
+      },
+      "LESNLVRE": {
+        "sigma_over_H": 0.07,
+        "n_phase_stations": 9,
+        "median_relative_l2_u": 0.10708519013481099,
+        "max_relative_l2_u": 0.14558977590406255,
+        "median_relative_l2_v": 0.4973605027236583,
+        "max_relative_l2_v": 1.0751043398539866,
+        "rms_wall_u_error": 0.10469187021174625,
+        "rms_wall_v_error": 0.053222076077394875
+      }
+    }
+  },
+  "source_claim_checks": {
+    "fine_vreman_median_u_rel_l2_below_0p05": true,
+    "coarse_vreman_u_error_exceeds_fine": true,
+    "vreman_lowest_median_u_error_both_filters": true
+  },
+  "status": "PASS"
+}

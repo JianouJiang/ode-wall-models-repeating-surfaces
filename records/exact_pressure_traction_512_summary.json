@@ -1,0 +1,25 @@
+{
+  "ledger_row": "R1-STA-4a",
+  "source": "codes/raw_data/geometry_driven/xiao_pehill_parameterized/pehill-5-cases-DNS/case_1p0/dns-data/mean_files.dat",
+  "source_sha256": "aa81c64e28bb305686dc2a29ca80c3870e21c94820efee8c73920fbe7e1e44dd",
+  "source_grid": [
+    512,
+    257
+  ],
+  "station_count": 512,
+  "matching_height_over_H": 0.1,
+  "definition": "d_s integral(p,deta) - h_prime*(p_m-p_w)",
+  "approximation": "eta_m*(partial_x p)_wall",
+  "relative_rms_error": 1.343152524616852,
+  "correlation": 0.8212626582391097,
+  "max_absolute_deviation": 0.3041620235061005,
+  "max_absolute_deviation_over_exact_rms": 12.12616262073693,
+  "p95_absolute_deviation_over_exact_rms": 2.275704674126147,
+  "identity_vs_direct_relative_rms": 0.0012612299753788398,
+  "exact_operator_ensemble_count": 18,
+  "exact_station_uncertainty_rms": 0.005884449941749546,
+  "approximation_station_uncertainty_rms": 0.041519825618430005,
+  "uses_modelled_eddy_viscosity": false,
+  "uses_wall_stress": false,
+  "status": "PASS"
+}

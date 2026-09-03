@@ -1,0 +1,77 @@
+{
+ "inputs": {
+  "dns_archive": {
+   "path": "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz",
+   "sha256": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85"
+  },
+  "mglet_wall": {
+   "path": "codes/raw_data/periodic_hill_ufr3_30/ercoftac_ufr3_30/UFR3-30_data-NP-Re5600-DNS2-11.dat",
+   "sha256": "b9fe7b1c03424cd515ac07d407079423c1f9140b163f425f21de3294b29afdb4"
+  }
+ },
+ "method": "the residual of the vertically integrated momentum equation is evaluated at the REFERENCE wall traction with the assumed profile matched to the measured velocity -- no iteration, no solver, no initial guess",
+ "mglet_trailing_rows_stripped": [
+  [
+   0.0,
+   0.0,
+   0.0
+  ],
+  [
+   9.0,
+   0.0,
+   0.0
+  ]
+ ],
+ "question": "can the integral wall model's assumed profile satisfy its own matching and momentum equations simultaneously over a repeating curved wall?",
+ "schema": "integral_model_consistency_l0/1",
+ "surfaces": {
+  "archive_index10": {
+   "note": "the paper's a-priori surface: archive wall index 10",
+   "references": {
+    "B_mglet": {
+     "assumed_profile_residual_median_over_traction_rms": 0.2750250656819097,
+     "assumed_profile_residual_rms_over_traction_rms": 15.822431493899527,
+     "first_moment_relative_error_median": 0.1481664721212037,
+     "matching_error_rms_over_velocity_rms": 1.0991886459748737e-16,
+     "second_moment_relative_error_median": 0.25813968101254225,
+     "true_profile_residual_rms_over_traction_rms": 6.910326108807581,
+     "wall_traction_rms": 0.003659734175252442
+    },
+    "C_xiao_repaired_cubic6": {
+     "assumed_profile_residual_median_over_traction_rms": 0.2754877797874307,
+     "assumed_profile_residual_rms_over_traction_rms": 21.00412888251912,
+     "first_moment_relative_error_median": 0.09163952636780155,
+     "matching_error_rms_over_velocity_rms": 8.188589155901064e-17,
+     "second_moment_relative_error_median": 0.16109131569922647,
+     "true_profile_residual_rms_over_traction_rms": 10.482760566632566,
+     "wall_traction_rms": 0.0023297529919045607
+    }
+   },
+   "stations": 512
+  },
+  "ladder_L1": {
+   "note": "first cell centre of the coupled ladder mesh, y_m/H = 0.0935 on the flat floor",
+   "references": {
+    "B_mglet": {
+     "assumed_profile_residual_median_over_traction_rms": 0.24770188320389563,
+     "assumed_profile_residual_rms_over_traction_rms": 5.4552284746153425,
+     "first_moment_relative_error_median": 0.1360950004069999,
+     "matching_error_rms_over_velocity_rms": 8.230650404552546e-17,
+     "second_moment_relative_error_median": 0.20823149607920696,
+     "true_profile_residual_rms_over_traction_rms": 4.32490671279236,
+     "wall_traction_rms": 0.003810875884274126
+    },
+    "C_xiao_repaired_cubic6": {
+     "assumed_profile_residual_median_over_traction_rms": 0.2616715963829789,
+     "assumed_profile_residual_rms_over_traction_rms": 6.347506248134962,
+     "first_moment_relative_error_median": 0.07515679261456853,
+     "matching_error_rms_over_velocity_rms": 1.177088522346217e-16,
+     "second_moment_relative_error_median": 0.128683715639554,
+     "true_profile_residual_rms_over_traction_rms": 6.555054133114734,
+     "wall_traction_rms": 0.0024148354548953997
+    }
+   },
+   "stations": 120
+  }
+ }
+}

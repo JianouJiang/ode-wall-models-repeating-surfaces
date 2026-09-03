@@ -1,0 +1,208 @@
+{
+  "node": "node_008",
+  "level": "L3 results & analysis",
+  "metric_relRMSE": "RMS(pred-true)/mean(|true|), denominator-robust",
+  "geometries": [
+    {
+      "tag": "periodic_hill_1p0",
+      "role": "failure",
+      "fidelity": "DNS",
+      "shape": "smooth hill",
+      "n": 512,
+      "cv_tau": 1.3798,
+      "eps_med": 0.0836,
+      "beta": 0.06278,
+      "r2": [
+        -84.84,
+        -47.69
+      ],
+      "relRMSE": [
+        9.628,
+        12.784
+      ]
+    },
+    {
+      "tag": "sharp_rib_dtype",
+      "role": "failure",
+      "fidelity": "WRLES",
+      "shape": "sharp rib",
+      "n": 48,
+      "cv_tau": 1.2928,
+      "eps_med": 0.5211,
+      "beta": 0.01785,
+      "r2": [
+        -1.89,
+        -0.94
+      ],
+      "relRMSE": [
+        1.802,
+        2.196
+      ]
+    },
+    {
+      "tag": "wavy_a10",
+      "role": "failure",
+      "fidelity": "RANS",
+      "shape": "wavy wall",
+      "n": 120,
+      "cv_tau": 0.8725,
+      "eps_med": 0.2906,
+      "beta": 0.06363,
+      "r2": [
+        -1.19,
+        -0.34
+      ],
+      "relRMSE": [
+        1.012,
+        1.291
+      ]
+    },
+    {
+      "tag": "bfs_Re13700",
+      "role": "control",
+      "fidelity": "LES",
+      "shape": "backward step (zero-freq)",
+      "n": 46,
+      "cv_tau": 0.8032,
+      "eps_med": 5.5345,
+      "beta": 0.04028,
+      "r2": [
+        0.59,
+        0.89
+      ],
+      "relRMSE": [
+        0.268,
+        0.513
+      ]
+    },
+    {
+      "tag": "conv_div_Re12600",
+      "role": "control",
+      "fidelity": "DNS",
+      "shape": "conv-div (wide pitch)",
+      "n": 64,
+      "cv_tau": 0.9463,
+      "eps_med": 10.6466,
+      "beta": 0.00041,
+      "r2": [
+        0.99,
+        0.99
+      ],
+      "relRMSE": [
+        0.071,
+        0.103
+      ]
+    },
+    {
+      "tag": "nasa_hump",
+      "role": "control",
+      "fidelity": "LES",
+      "shape": "single hump (localised sep)",
+      "n": 51,
+      "cv_tau": 0.6509,
+      "eps_med": 5009.0482,
+      "beta": NaN,
+      "r2": [
+        0.56,
+        0.99
+      ],
+      "relRMSE": [
+        0.072,
+        0.432
+      ]
+    },
+    {
+      "tag": "sep_bubble_caseB",
+      "role": "control",
+      "fidelity": "DNS",
+      "shape": "pressure bubble (localised sep)",
+      "n": 57,
+      "cv_tau": 0.5992,
+      "eps_med": 23.1548,
+      "beta": 6e-05,
+      "r2": [
+        0.98,
+        1.0
+      ],
+      "relRMSE": [
+        0.01,
+        0.082
+      ]
+    },
+    {
+      "tag": "wavy_flat",
+      "role": "transition",
+      "fidelity": "RANS",
+      "shape": "near-flat (a->0)",
+      "n": 120,
+      "cv_tau": 0.0063,
+      "eps_med": 29.2014,
+      "beta": NaN,
+      "r2": [
+        -3951.24,
+        -250.35
+      ],
+      "relRMSE": [
+        0.099,
+        0.394
+      ]
+    }
+  ],
+  "within_geometry_floor": {
+    "periodic_hill_1p0": {
+      "spearman_kappa_inv_eps": 0.893,
+      "p": 4.022193190695928e-179,
+      "n": 512
+    },
+    "sharp_rib_dtype": {
+      "spearman_kappa_inv_eps": 0.321,
+      "p": 0.026006514754041383,
+      "n": 48
+    },
+    "wavy_a10": {
+      "spearman_kappa_inv_eps": 0.618,
+      "p": 5.566591385134491e-14,
+      "n": 120
+    }
+  },
+  "depth_trend_high_fidelity": {
+    "n": 2,
+    "pairs": [
+      [
+        "periodic_hill_1p0",
+        0.0836,
+        0.06278
+      ],
+      [
+        "sharp_rib_dtype",
+        0.5211,
+        0.01785
+      ]
+    ],
+    "status": "SUGGESTIVE (n=2 high-fidelity); RANS wavy does not order monotonically"
+  },
+  "severity_consolidation": {
+    "conditioning_beta": [
+      0.0178,
+      0.0636
+    ],
+    "severity_beta_emp": 0.0091,
+    "severity_beta_p5": 0.1094,
+    "same_floor": true
+  },
+  "binds": {
+    "B_L3_1": {
+      "resolved": true,
+      "how": "relRMSE reveals the near-flat anchor is tolerated (control-grade); R2=-3951 is a cv(tau)->0 denominator artefact"
+    },
+    "B_L3_2": {
+      "within_decisive": true,
+      "cross_depth": "reported n=2 high-fidelity, suggestive not demonstrated"
+    },
+    "B_L3_3": "lead with 2 high-fidelity failures + 4 controls",
+    "B_L3_4": "foreground, npz+json+figure before asserts; 0-diff on protected data",
+    "B_L3_5": {
+      "same_floor": true
+    }
+  }
+}

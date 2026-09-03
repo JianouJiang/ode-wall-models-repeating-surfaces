@@ -1,0 +1,640 @@
+{
+  "approach": "Physical-tangent, phase-block uncertainty analysis of the completed three-grid by two-model Xiao coupled-WMLES matrix.",
+  "base_metrics": {
+    "G0:equilibrium": {
+      "cf_error_rms": 0.004561747256133988,
+      "profile_u_rms_max": 0.05730883471977999,
+      "profile_u_rms_mean": 0.0411614219838333,
+      "r2": -2.1206397439022706,
+      "reattachment_x_over_H": 4.411318455925764,
+      "relative_rms": 1.7178024851599052,
+      "reversed_fraction": 0.53662109375,
+      "separation_x_over_H": 8.937399357081961,
+      "sign_accuracy": 0.904541015625,
+      "signed_tangent_force_error_over_abs_truth": 0.45055479358378314,
+      "signed_tangent_force_per_span": 0.007450392019060567,
+      "truth_reattachment_x_over_H": 4.473418642856745,
+      "truth_reversed_fraction": 0.454833984375,
+      "truth_separation_x_over_H": 0.3786520086310376,
+      "truth_signed_tangent_force_per_span": 0.0033660898101660324
+    },
+    "G0:total_gradient_tble": {
+      "cf_error_rms": 0.004894711346277898,
+      "profile_u_rms_max": 0.054785623941601136,
+      "profile_u_rms_mean": 0.03616922765127856,
+      "r2": -2.5928192350035073,
+      "reattachment_x_over_H": 4.757540134416286,
+      "relative_rms": 1.8431857011522241,
+      "reversed_fraction": 0.583740234375,
+      "separation_x_over_H": 8.917114533506428,
+      "sign_accuracy": 0.87109375,
+      "signed_tangent_force_error_over_abs_truth": 0.321934788185002,
+      "signed_tangent_force_per_span": 0.00628444510286028,
+      "truth_reattachment_x_over_H": 4.473418642856745,
+      "truth_reversed_fraction": 0.454833984375,
+      "truth_separation_x_over_H": 0.3786520086310376,
+      "truth_signed_tangent_force_per_span": 0.0033660898101660324
+    },
+    "G1c:equilibrium": {
+      "cf_error_rms": 0.004144562460318578,
+      "profile_u_rms_max": 0.05133673181329262,
+      "profile_u_rms_mean": 0.038809914858007756,
+      "r2": -1.5759567935750036,
+      "reattachment_x_over_H": 4.398599773305699,
+      "relative_rms": 1.5607045490436502,
+      "reversed_fraction": 0.51171875,
+      "separation_x_over_H": 0.04504020786080411,
+      "sign_accuracy": 0.926513671875,
+      "signed_tangent_force_error_over_abs_truth": 0.4032671418524789,
+      "signed_tangent_force_per_span": 0.007012179306071265,
+      "truth_reattachment_x_over_H": 4.473418642856745,
+      "truth_reversed_fraction": 0.454833984375,
+      "truth_separation_x_over_H": 0.3786520086310376,
+      "truth_signed_tangent_force_per_span": 0.003357554171059538
+    },
+    "G1c:total_gradient_tble": {
+      "cf_error_rms": 0.004818537870301833,
+      "profile_u_rms_max": 0.05005189861661283,
+      "profile_u_rms_mean": 0.032338869621258676,
+      "r2": -2.4818635645597737,
+      "reattachment_x_over_H": 4.174895057851873,
+      "relative_rms": 1.8145013004198065,
+      "reversed_fraction": 0.49951171875,
+      "separation_x_over_H": 8.937942618570416,
+      "sign_accuracy": 0.889404296875,
+      "signed_tangent_force_error_over_abs_truth": 0.5008101049184351,
+      "signed_tangent_force_per_span": 0.00789616643908388,
+      "truth_reattachment_x_over_H": 4.473418642856745,
+      "truth_reversed_fraction": 0.454833984375,
+      "truth_separation_x_over_H": 0.3786520086310376,
+      "truth_signed_tangent_force_per_span": 0.003357554171059538
+    },
+    "G2c:equilibrium": {
+      "cf_error_rms": 0.004161050659302143,
+      "profile_u_rms_max": 0.055541223883262825,
+      "profile_u_rms_mean": 0.02884028041091525,
+      "r2": -1.5964932786467823,
+      "reattachment_x_over_H": 4.153274607697916,
+      "relative_rms": 1.5669134570781087,
+      "reversed_fraction": 0.4697265625,
+      "separation_x_over_H": 0.09873711591836663,
+      "sign_accuracy": 0.914306640625,
+      "signed_tangent_force_error_over_abs_truth": 0.46320944995969165,
+      "signed_tangent_force_per_span": 0.0075245114349170505,
+      "truth_reattachment_x_over_H": 4.473418642856745,
+      "truth_reversed_fraction": 0.454833984375,
+      "truth_separation_x_over_H": 0.3786520086310376,
+      "truth_signed_tangent_force_per_span": 0.0033386932403078728
+    },
+    "G2c:total_gradient_tble": {
+      "cf_error_rms": 0.0045174833853649865,
+      "profile_u_rms_max": 0.04805807954664221,
+      "profile_u_rms_mean": 0.024063850550922822,
+      "r2": -2.060372735468027,
+      "reattachment_x_over_H": 4.458385421024365,
+      "relative_rms": 1.7011341817795407,
+      "reversed_fraction": 0.504638671875,
+      "separation_x_over_H": 8.96286131970474,
+      "sign_accuracy": 0.947265625,
+      "signed_tangent_force_error_over_abs_truth": 0.371383489716381,
+      "signed_tangent_force_per_span": 0.006694720990967006,
+      "truth_reattachment_x_over_H": 4.473418642856745,
+      "truth_reversed_fraction": 0.454833984375,
+      "truth_separation_x_over_H": 0.3786520086310376,
+      "truth_signed_tangent_force_per_span": 0.0033386932403078728
+    },
+    "truth_events": {
+      "reattachment_x_over_H": 4.473418642856745,
+      "reversed_fraction": 0.454833984375,
+      "separation_x_over_H": 0.3786520086310376
+    }
+  },
+  "bootstrap_protocol": {
+    "circular": 1,
+    "confidence_level": 0.95,
+    "dense_phase_points": 4096,
+    "draws": 20000,
+    "estimand": "phase-averaged RMS-normalised physical-tangent wall-traction error",
+    "note": "Intervals quantify dependence on sampled streamwise phase. Nested averaging-window and grid changes are reported as deterministic envelopes.",
+    "paired": 1,
+    "primary_block_fraction_of_period": 0.125,
+    "primary_block_length_over_H": 1.125,
+    "primary_block_points": 512,
+    "seed": 20260822,
+    "sensitivity_block_points": [
+      256,
+      512,
+      1024
+    ]
+  },
+  "conclusion": "Both finest-grid point estimates and their favorable one-observed-grid envelopes remain above the unit-error threshold, but both primary phase-block intervals cross that threshold and the Holm-adjusted one-sided tests are not resolved at alpha=0.05. The corrected matrix therefore establishes a grid-persistent elevated-error point estimate, not an interval-separated shared-failure verdict. TBLE force and reattachment paths are nonmonotone.",
+  "cost": {
+    "G2c_equilibrium_elapsed_seconds": 6215,
+    "G2c_tble_elapsed_seconds": 10322,
+    "G2c_tble_to_equilibrium_clock_per_bottom_face_step": 1.7408016419974424
+  },
+  "failure_significance_tests": {
+    "equilibrium": {
+      "block_values": [
+        3.94591964635045e-07,
+        1.3454252765594439e-08,
+        -4.435134223739154e-07,
+        -1.1662582152043488e-07,
+        4.4671059616440733e-08,
+        -2.1401711349855244e-07,
+        -9.139551873435249e-08,
+        2.093740020309478e-05
+      ],
+      "observed": 2.5655707004980758e-06,
+      "p_one_sided": 0.3671875,
+      "p_one_sided_holm_two_models": 0.3984375,
+      "p_two_sided": 0.734375,
+      "permutations": 256
+    },
+    "total_gradient_tble": {
+      "block_values": [
+        7.111938083003202e-07,
+        -3.994473525278626e-08,
+        1.510890726362154e-07,
+        -3.1860458130563044e-08,
+        -1.1811996329406538e-08,
+        -2.5001060111717246e-07,
+        -1.0587447851324138e-07,
+        2.6288412087931056e-05
+      ],
+      "observed": 3.3388990874405525e-06,
+      "p_one_sided": 0.19921875,
+      "p_one_sided_holm_two_models": 0.3984375,
+      "p_two_sided": 0.3984375,
+      "permutations": 256
+    }
+  },
+  "finalizer_job": "14889058",
+  "finest_grid_physical_metrics": {
+    "equilibrium": {
+      "profile_u_rms_max": 0.055541223883262825,
+      "profile_u_rms_mean": 0.02884028041091525,
+      "r2": -1.5964932786467823,
+      "reattachment_bias_over_H": -0.3201440351588296,
+      "reattachment_relative_bias": -0.07156585616462317,
+      "relative_rms": 1.5669134570781087,
+      "reversed_fraction_error": 0.014892578125,
+      "separation_bias_over_H": -0.27991489271267095,
+      "separation_relative_bias": -0.7392404802622423,
+      "signed_tangent_force_error_over_abs_truth_local_force": 0.46320944995969165,
+      "signed_tangent_force_net_ratio": 2.2537294963412657
+    },
+    "total_gradient_tble": {
+      "profile_u_rms_max": 0.04805807954664221,
+      "profile_u_rms_mean": 0.024063850550922822,
+      "r2": -2.060372735468027,
+      "reattachment_bias_over_H": -0.015033221832379873,
+      "reattachment_relative_bias": -0.0033605667237036393,
+      "relative_rms": 1.7011341817795407,
+      "reversed_fraction_error": 0.0498046875,
+      "separation_bias_over_H": 8.584209311073701,
+      "separation_relative_bias": 22.670444406484698,
+      "signed_tangent_force_error_over_abs_truth_local_force": 0.371383489716381,
+      "signed_tangent_force_net_ratio": 2.0051920045070273
+    }
+  },
+  "grid_robustness": {
+    "equilibrium": {
+      "favorable_one_observed_envelope_r2": -1.0518103283195153,
+      "favorable_one_observed_envelope_relative_rms": 1.4098155209618537,
+      "fine_error_over_abs_middle_to_fine_change": 252.36538347515778,
+      "fine_failure_margin_over_abs_middle_to_fine_change": 91.30646708436079,
+      "middle_to_fine_change": 0.006208908034458505,
+      "r2_envelope": 0.544682950327267,
+      "r2_path": [
+        -2.1206397439022706,
+        -1.5759567935750036,
+        -1.5964932786467823
+      ],
+      "relative_rms_envelope": 0.157097936116255,
+      "relative_rms_path": [
+        1.7178024851599052,
+        1.5607045490436502,
+        1.5669134570781087
+      ],
+      "terminal_window_change": 0.05541703853983493
+    },
+    "total_gradient_tble": {
+      "favorable_one_observed_envelope_r2": -1.5279262359325467,
+      "favorable_one_observed_envelope_relative_rms": 1.5590826624068572,
+      "fine_error_over_abs_middle_to_fine_change": 15.005534251757284,
+      "fine_failure_margin_over_abs_middle_to_fine_change": 6.1846344000711975,
+      "middle_to_fine_change": -0.11336711864026583,
+      "r2_envelope": 0.5324464995354803,
+      "r2_path": [
+        -2.5928192350035073,
+        -2.4818635645597737,
+        -2.060372735468027
+      ],
+      "relative_rms_envelope": 0.14205151937268345,
+      "relative_rms_path": [
+        1.8431857011522241,
+        1.8145013004198065,
+        1.7011341817795407
+      ],
+      "terminal_window_change": 0.026438452564433446
+    }
+  },
+  "model_comparison": {
+    "finest_profile_u_rms_fractional_change": -0.1656166234148223,
+    "finest_profile_u_rms_tble_minus_equilibrium": -0.004776429859992427,
+    "finest_reattachment_abs_error_change_over_H": -0.30511081332644974,
+    "finest_relative_rms_fractional_increase": 0.08565930945013336,
+    "finest_relative_rms_tble_minus_equilibrium": 0.13422072470143198,
+    "interpretation": "The TBLE point estimate is worse on all three grids, but the paired two-sided phase-block test and bootstrap interval do not establish a model-ranking difference at alpha=0.05.",
+    "model_rank_resolved_at_0p05": 0,
+    "paired_exact_block_test": {
+      "block_values": [
+        3.1660184366527527e-07,
+        -5.3398988018380685e-08,
+        5.946024950101308e-07,
+        8.476536338987185e-08,
+        -5.648305594584727e-08,
+        -3.5993487618620034e-08,
+        -1.4478959778888895e-08,
+        5.351011884836275e-06
+      ],
+      "observed": 7.73328386942477e-07,
+      "p_one_sided": 0.09375,
+      "p_two_sided": 0.1875,
+      "permutations": 256
+    },
+    "primary_bootstrap_delta_interval": {
+      "high": 0.2332465337584432,
+      "low": -0.05301225501193084,
+      "median": 0.13439822655279332
+    },
+    "primary_bootstrap_probability_tble_worse": 0.93845
+  },
+  "phase_bootstrap_block_sensitivity": {
+    "1024": {
+      "block_fraction_of_period": 0.25,
+      "block_length_over_H": 2.25,
+      "finest_tble_minus_equilibrium_interval": {
+        "high": 0.23439447514785058,
+        "low": -0.037372857133193445,
+        "median": 0.13587202713961
+      },
+      "probability_tble_error_exceeds_equilibrium": 0.955,
+      "relative_rms_intervals": {
+        "G0:equilibrium": {
+          "high": 1.8545665219586434,
+          "low": 0.9085966378366751,
+          "median": 1.7116333233307661
+        },
+        "G0:total_gradient_tble": {
+          "high": 1.99369937837377,
+          "low": 0.9669343752709135,
+          "median": 1.8362695550313601
+        },
+        "G1c:equilibrium": {
+          "high": 1.6965877561248608,
+          "low": 0.7975364643538793,
+          "median": 1.5546000405462206
+        },
+        "G1c:total_gradient_tble": {
+          "high": 1.9846028178514117,
+          "low": 0.8956338108525324,
+          "median": 1.806658816108642
+        },
+        "G2c:equilibrium": {
+          "high": 1.7099978073064876,
+          "low": 0.7444337138706306,
+          "median": 1.559822623124861
+        },
+        "G2c:total_gradient_tble": {
+          "high": 1.8575181776380978,
+          "low": 0.8635622524744612,
+          "median": 1.6941981339015442
+        }
+      }
+    },
+    "256": {
+      "block_fraction_of_period": 0.0625,
+      "block_length_over_H": 0.5625,
+      "finest_tble_minus_equilibrium_interval": {
+        "high": 0.2430893196104088,
+        "low": -0.05596532899160637,
+        "median": 0.13033063122192956
+      },
+      "probability_tble_error_exceeds_equilibrium": 0.92735,
+      "relative_rms_intervals": {
+        "G0:equilibrium": {
+          "high": 1.9161979990238873,
+          "low": 1.0095034382322965,
+          "median": 1.6990359534378485
+        },
+        "G0:total_gradient_tble": {
+          "high": 2.0797160910433097,
+          "low": 1.0832688800899744,
+          "median": 1.8207331888212246
+        },
+        "G1c:equilibrium": {
+          "high": 1.7671569405720167,
+          "low": 0.8737472414817037,
+          "median": 1.543070343841438
+        },
+        "G1c:total_gradient_tble": {
+          "high": 2.072613503863154,
+          "low": 0.981956447137716,
+          "median": 1.790416909733417
+        },
+        "G2c:equilibrium": {
+          "high": 1.7812514554551857,
+          "low": 0.8503615773641717,
+          "median": 1.5481256932273708
+        },
+        "G2c:total_gradient_tble": {
+          "high": 1.953148074804588,
+          "low": 0.9512270317464182,
+          "median": 1.6797844277004539
+        }
+      }
+    },
+    "512": {
+      "block_fraction_of_period": 0.125,
+      "block_length_over_H": 1.125,
+      "finest_tble_minus_equilibrium_interval": {
+        "high": 0.2332465337584432,
+        "low": -0.05301225501193084,
+        "median": 0.13439822655279332
+      },
+      "probability_tble_error_exceeds_equilibrium": 0.93845,
+      "relative_rms_intervals": {
+        "G0:equilibrium": {
+          "high": 1.8681692609153577,
+          "low": 0.9178585026914202,
+          "median": 1.7064747016218025
+        },
+        "G0:total_gradient_tble": {
+          "high": 2.013084159710949,
+          "low": 0.9474920490939421,
+          "median": 1.8308437327538458
+        },
+        "G1c:equilibrium": {
+          "high": 1.7145623112360264,
+          "low": 0.8058994281324977,
+          "median": 1.5500221905828981
+        },
+        "G1c:total_gradient_tble": {
+          "high": 2.0011019672745634,
+          "low": 0.8995348296745209,
+          "median": 1.8011572887559506
+        },
+        "G2c:equilibrium": {
+          "high": 1.727899028852557,
+          "low": 0.7758248421954851,
+          "median": 1.5555040015125547
+        },
+        "G2c:total_gradient_tble": {
+          "high": 1.87908650157619,
+          "low": 0.8884327581957479,
+          "median": 1.6901772160526103
+        }
+      }
+    }
+  },
+  "phase_bootstrap_primary_intervals": {
+    "G0:equilibrium": {
+      "high": 1.8681692609153577,
+      "low": 0.9178585026914202,
+      "median": 1.7064747016218025
+    },
+    "G0:total_gradient_tble": {
+      "high": 2.013084159710949,
+      "low": 0.9474920490939421,
+      "median": 1.8308437327538458
+    },
+    "G1c:equilibrium": {
+      "high": 1.7145623112360264,
+      "low": 0.8058994281324977,
+      "median": 1.5500221905828981
+    },
+    "G1c:total_gradient_tble": {
+      "high": 2.0011019672745634,
+      "low": 0.8995348296745209,
+      "median": 1.8011572887559506
+    },
+    "G2c:equilibrium": {
+      "high": 1.727899028852557,
+      "low": 0.7758248421954851,
+      "median": 1.5555040015125547
+    },
+    "G2c:total_gradient_tble": {
+      "high": 1.87908650157619,
+      "low": 0.8884327581957479,
+      "median": 1.6901772160526103
+    }
+  },
+  "producer_jobs": {
+    "G0:equilibrium": "14889015",
+    "G0:total_gradient_tble": "14889013",
+    "G1c:equilibrium": "14889022",
+    "G1c:total_gradient_tble": "14889021",
+    "G2c:equilibrium": "14889026",
+    "G2c:total_gradient_tble": "14889025"
+  },
+  "registered_verdicts": {
+    "both_favorable_grid_envelopes_above_unit": 1,
+    "both_finest_phase_intervals_above_unit": 0,
+    "both_finest_point_estimates_above_unit": 1,
+    "both_one_sided_holm_tests_resolved_at_0p05": 0,
+    "model_rank_resolved_at_0p05": 0
+  },
+  "scope": "One Xiao alpha=1, Re_H=5600 periodic-hill geometry; coupled Foundation-10 WMLES; no blade, urban, heat-exchanger, cube, rib or wavy-wall result is inferred.",
+  "source_hashes": {
+    "codes/analysis/rswm_common_surface_grid_l2.py": "74f8106d4156f0c49a5ad26ce9e21fc6aa0ba1d19e71c3726ea98eb5fc9b6573",
+    "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85",
+    "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/CAMPAIGN_MANIFEST.json": "7dbfe62445c915325a045d5221faea8be4678c9f76aed89278650c8cd337071a",
+    "development/nodes/node_007/corrected_re5600_native/rswm_common_surface_grid_l2.npz": "da456a9ec9c75b096b17257aa9075ae708b1c9c9720404c2350dda57bc019106",
+    "development/nodes/node_007/corrected_re5600_native/rswm_common_surface_grid_l2_summary.json": "71fa0f714340f80dfb2ec4bf2160a16b6611b1395499485f5e1f4e02fc282dda"
+  },
+  "status": "RSWM_GRID_RESULTS_L3_OK",
+  "temporal_sensitivity": {
+    "G0:equilibrium": {
+      "reattachment_envelope_over_H": 0.038400881089638794,
+      "reattachment_last_change_over_H": 0.010386957258441853,
+      "records": [
+        {
+          "averaging_length": 180,
+          "checkpoint": "315",
+          "r2": -1.8822197715844284,
+          "reattachment_x_over_H": 4.3729175748361255,
+          "relative_rms": 1.6508779069647697
+        },
+        {
+          "averaging_length": 225,
+          "checkpoint": "360",
+          "r2": -2.0503617911377834,
+          "reattachment_x_over_H": 4.4009314986673225,
+          "relative_rms": 1.6983495684681913
+        },
+        {
+          "averaging_length": 270,
+          "checkpoint": "405",
+          "r2": -2.1206397439022706,
+          "reattachment_x_over_H": 4.411318455925764,
+          "relative_rms": 1.7178024851599052
+        }
+      ],
+      "relative_rms_envelope": 0.06692457819513553,
+      "relative_rms_last_change": 0.019452916691713895,
+      "relative_rms_last_change_fraction_of_terminal": 0.011324303498084111
+    },
+    "G0:total_gradient_tble": {
+      "reattachment_envelope_over_H": 0.08483211051908857,
+      "reattachment_last_change_over_H": 0.0431306549821624,
+      "records": [
+        {
+          "averaging_length": 180,
+          "checkpoint": "315",
+          "r2": -2.435466602556342,
+          "reattachment_x_over_H": 4.799241589953212,
+          "relative_rms": 1.8023713466537103
+        },
+        {
+          "averaging_length": 225,
+          "checkpoint": "360",
+          "r2": -2.5241212941627276,
+          "reattachment_x_over_H": 4.714409479434123,
+          "relative_rms": 1.8254789647981535
+        },
+        {
+          "averaging_length": 270,
+          "checkpoint": "405",
+          "r2": -2.5928192350035073,
+          "reattachment_x_over_H": 4.757540134416286,
+          "relative_rms": 1.8431857011522241
+        }
+      ],
+      "relative_rms_envelope": 0.04081435449851378,
+      "relative_rms_last_change": 0.017706736354070607,
+      "relative_rms_last_change_fraction_of_terminal": 0.00960659381363563
+    },
+    "G1c:equilibrium": {
+      "reattachment_envelope_over_H": 0.02427602524802097,
+      "reattachment_last_change_over_H": 0.02427602524802097,
+      "records": [
+        {
+          "averaging_length": 180,
+          "checkpoint": "315",
+          "r2": -1.5117976179281594,
+          "reattachment_x_over_H": 4.380829960693255,
+          "relative_rms": 1.5411458145983337
+        },
+        {
+          "averaging_length": 225,
+          "checkpoint": "360",
+          "r2": -1.536971353691937,
+          "reattachment_x_over_H": 4.374323748057678,
+          "relative_rms": 1.5488493960910528
+        },
+        {
+          "averaging_length": 270,
+          "checkpoint": "405",
+          "r2": -1.5759567935750036,
+          "reattachment_x_over_H": 4.398599773305699,
+          "relative_rms": 1.5607045490436502
+        }
+      ],
+      "relative_rms_envelope": 0.019558734445316528,
+      "relative_rms_last_change": 0.011855152952597425,
+      "relative_rms_last_change_fraction_of_terminal": 0.007596026397092188
+    },
+    "G1c:total_gradient_tble": {
+      "reattachment_envelope_over_H": 0.07586171564855171,
+      "reattachment_last_change_over_H": 0.019808827244826688,
+      "records": [
+        {
+          "averaging_length": 180,
+          "checkpoint": "315",
+          "r2": -2.5211806605334135,
+          "reattachment_x_over_H": 4.118842169448148,
+          "relative_rms": 1.8247171883620192
+        },
+        {
+          "averaging_length": 225,
+          "checkpoint": "360",
+          "r2": -2.4827412102488613,
+          "reattachment_x_over_H": 4.1947038850967,
+          "relative_rms": 1.8147299694752919
+        },
+        {
+          "averaging_length": 270,
+          "checkpoint": "405",
+          "r2": -2.4818635645597737,
+          "reattachment_x_over_H": 4.174895057851873,
+          "relative_rms": 1.8145013004198065
+        }
+      ],
+      "relative_rms_envelope": 0.010215887942212731,
+      "relative_rms_last_change": -0.0002286690554853532,
+      "relative_rms_last_change_fraction_of_terminal": 0.00012602308713278293
+    },
+    "G2c:equilibrium": {
+      "reattachment_envelope_over_H": 0.11997256244166277,
+      "reattachment_last_change_over_H": 0.11730521456073184,
+      "records": [
+        {
+          "averaging_length": 180,
+          "checkpoint": "315",
+          "r2": -1.3696357209696282,
+          "reattachment_x_over_H": 4.273247170139578,
+          "relative_rms": 1.496897982492834
+        },
+        {
+          "averaging_length": 225,
+          "checkpoint": "360",
+          "r2": -1.4160806480335473,
+          "reattachment_x_over_H": 4.2705798222586475,
+          "relative_rms": 1.5114964185382738
+        },
+        {
+          "averaging_length": 270,
+          "checkpoint": "405",
+          "r2": -1.5964932786467823,
+          "reattachment_x_over_H": 4.153274607697916,
+          "relative_rms": 1.5669134570781087
+        }
+      ],
+      "relative_rms_envelope": 0.0700154745852748,
+      "relative_rms_last_change": 0.05541703853983493,
+      "relative_rms_last_change_fraction_of_terminal": 0.03536700657557277
+    },
+    "G2c:total_gradient_tble": {
+      "reattachment_envelope_over_H": 0.023973676723948678,
+      "reattachment_last_change_over_H": 0.023973676723948678,
+      "records": [
+        {
+          "averaging_length": 180,
+          "checkpoint": "315",
+          "r2": -1.8685422962817761,
+          "reattachment_x_over_H": 4.4588272893697205,
+          "relative_rms": 1.6469561564897408
+        },
+        {
+          "averaging_length": 225,
+          "checkpoint": "360",
+          "r2": -1.9659853902361024,
+          "reattachment_x_over_H": 4.482359097748314,
+          "relative_rms": 1.6746957292151072
+        },
+        {
+          "averaging_length": 270,
+          "checkpoint": "405",
+          "r2": -2.060372735468027,
+          "reattachment_x_over_H": 4.458385421024365,
+          "relative_rms": 1.7011341817795407
+        }
+      ],
+      "relative_rms_envelope": 0.05417802528979987,
+      "relative_rms_last_change": 0.026438452564433446,
+      "relative_rms_last_change_fraction_of_terminal": 0.015541662055591892
+    }
+  }
+}

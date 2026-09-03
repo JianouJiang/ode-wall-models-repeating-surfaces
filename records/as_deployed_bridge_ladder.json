@@ -1,0 +1,2614 @@
+{
+ "generated_from": {
+  "as_deployed": "as_deployed_evaluation_20260824.npz",
+  "model_matched": "model_matched_transfer_l2_20260824.npz",
+  "model_matched_sha256": "e28daa0fc02d1643a071ef69064fd389537a2ed3123abdca2f62428a6743f69f"
+ },
+ "n_rows": 42,
+ "rows": [
+  {
+   "case": "rswm_r23m6_ym0300_g1_equilibrium_307200_v1",
+   "deposit": "ym0300",
+   "rung": "ym0300",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 405.0,
+   "ym_median": 0.03,
+   "averaging_window": [
+    134.98003999999997,
+    405.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.7773586442762185,
+     "relative_rms": 0.45883266455120203,
+     "sign_accuracy": 0.98876953125,
+     "interval_relative_rms": {
+      "median": 0.4533497265735815,
+      "lo": 0.03998811875616077,
+      "hi": 0.5227202667711821
+     }
+    },
+    "request_les_input": {
+     "r2": -0.5118386511843271,
+     "relative_rms": 1.1956501733444307,
+     "sign_accuracy": 0.96630859375,
+     "interval_relative_rms": {
+      "median": 1.1750847319476265,
+      "lo": 0.4243482788912701,
+      "hi": 1.4268735254344094
+     }
+    },
+    "delivered": {
+     "r2": -0.5163782144667488,
+     "relative_rms": 1.1974439035474123,
+     "sign_accuracy": 0.96630859375,
+     "interval_relative_rms": {
+      "median": 1.1768666484188697,
+      "lo": 0.42465115932897873,
+      "hi": 1.4288903012599357
+     }
+    },
+    "measured": {
+     "r2": -0.5848201325039954,
+     "relative_rms": 1.2241690600488453,
+     "sign_accuracy": 0.96337890625,
+     "interval_relative_rms": {
+      "median": 1.203731752762013,
+      "lo": 0.5234542402274738,
+      "hi": 1.4593265869469048
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.4808269822116097,
+    "D_delivery_deficiency": 0.0009160329462584696,
+    "N_residual": 0.027281533899302865,
+    "total_apriori_to_measured": 0.4954627234455481
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0300_g1_equilibrium_307200_v1",
+   "deposit": "ym0300",
+   "rung": "ym0300",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 360.0,
+   "ym_median": 0.03,
+   "averaging_window": [
+    134.98004,
+    360.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.7773586442762185,
+     "relative_rms": 0.45883266455120203,
+     "sign_accuracy": 0.98876953125,
+     "interval_relative_rms": {
+      "median": 0.4533497265735815,
+      "lo": 0.03998811875616077,
+      "hi": 0.5227202667711821
+     }
+    },
+    "request_les_input": {
+     "r2": -0.5429909758257738,
+     "relative_rms": 1.2079058986975417,
+     "sign_accuracy": 0.963134765625,
+     "interval_relative_rms": {
+      "median": 1.1872605843085817,
+      "lo": 0.42402718991201216,
+      "hi": 1.4403831694053513
+     }
+    },
+    "delivered": {
+     "r2": -0.5479114337806037,
+     "relative_rms": 1.2098303167726747,
+     "sign_accuracy": 0.963134765625,
+     "interval_relative_rms": {
+      "median": 1.1891538207659291,
+      "lo": 0.4246907490277617,
+      "hi": 1.442522173657486
+     }
+    },
+    "measured": {
+     "r2": -0.6166510740860092,
+     "relative_rms": 1.2364015949462897,
+     "sign_accuracy": 0.9599609375,
+     "interval_relative_rms": {
+      "median": 1.215465232996685,
+      "lo": 0.5242681007405959,
+      "hi": 1.471975447496049
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.48309416882122136,
+    "D_delivery_deficiency": 0.0009722566325165947,
+    "N_residual": 0.027330506755864546,
+    "total_apriori_to_measured": 0.49768708478293583
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0300_g1_equilibrium_307200_v1",
+   "deposit": "ym0300",
+   "rung": "ym0300",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 315.0,
+   "ym_median": 0.03,
+   "averaging_window": [
+    134.98004,
+    315.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.7773586442762185,
+     "relative_rms": 0.45883266455120203,
+     "sign_accuracy": 0.98876953125,
+     "interval_relative_rms": {
+      "median": 0.4533497265735815,
+      "lo": 0.03998811875616077,
+      "hi": 0.5227202667711821
+     }
+    },
+    "request_les_input": {
+     "r2": -0.5559144259385052,
+     "relative_rms": 1.2129538094339194,
+     "sign_accuracy": 0.970947265625,
+     "interval_relative_rms": {
+      "median": 1.1925942551169773,
+      "lo": 0.4057590817611325,
+      "hi": 1.4448535553351571
+     }
+    },
+    "delivered": {
+     "r2": -0.5614403447888345,
+     "relative_rms": 1.2151058376919446,
+     "sign_accuracy": 0.970947265625,
+     "interval_relative_rms": {
+      "median": 1.194747443385996,
+      "lo": 0.4064525384221585,
+      "hi": 1.4473000394657678
+     }
+    },
+    "measured": {
+     "r2": -0.6307698619560027,
+     "relative_rms": 1.2417888254412077,
+     "sign_accuracy": 0.968017578125,
+     "interval_relative_rms": {
+      "median": 1.221327417329726,
+      "lo": 0.5092402415373067,
+      "hi": 1.4770273959578013
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.48323514100690923,
+    "D_delivery_deficiency": 0.0010698526380562025,
+    "N_residual": 0.02725349323926811,
+    "total_apriori_to_measured": 0.4978960070453539
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0300_g1_tble_307200_v1",
+   "deposit": "ym0300",
+   "rung": "ym0300",
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "time": 405.0,
+   "ym_median": 0.03,
+   "averaging_window": [
+    134.98099000000002,
+    405.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -2.2861689807588377,
+     "relative_rms": 1.7627728583519355,
+     "sign_accuracy": 0.758544921875,
+     "interval_relative_rms": {
+      "median": 1.74924504880167,
+      "lo": 0.9858867692047972,
+      "hi": 1.914893443349822
+     }
+    },
+    "request_les_input": {
+     "r2": -3.3915630197753766,
+     "relative_rms": 2.0377972354707525,
+     "sign_accuracy": 0.82568359375,
+     "interval_relative_rms": {
+      "median": 2.0200245809345985,
+      "lo": 1.029477615350452,
+      "hi": 2.262237818942117
+     }
+    },
+    "delivered": {
+     "r2": -3.397338085188049,
+     "relative_rms": 2.0391366840735263,
+     "sign_accuracy": 0.9921875,
+     "interval_relative_rms": {
+      "median": 2.022528320192504,
+      "lo": 0.9386931392948692,
+      "hi": 2.260874960118193
+     }
+    },
+    "measured": {
+     "r2": -2.6896757624028886,
+     "relative_rms": 1.8678651133265396,
+     "sign_accuracy": 0.97900390625,
+     "interval_relative_rms": {
+      "median": 1.855485726986689,
+      "lo": 0.904741968642816,
+      "hi": 2.0724152668299114
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.4026661712839167,
+    "D_delivery_deficiency": 0.2505783240214702,
+    "N_residual": 0.08691464190473432,
+    "total_apriori_to_measured": 0.47280135152205205
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0300_g1_tble_307200_v1",
+   "deposit": "ym0300",
+   "rung": "ym0300",
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "time": 360.0,
+   "ym_median": 0.03,
+   "averaging_window": [
+    134.98099,
+    360.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -2.2861689807588377,
+     "relative_rms": 1.7627728583519355,
+     "sign_accuracy": 0.758544921875,
+     "interval_relative_rms": {
+      "median": 1.74924504880167,
+      "lo": 0.9858867692047972,
+      "hi": 1.914893443349822
+     }
+    },
+    "request_les_input": {
+     "r2": -3.3227697304815447,
+     "relative_rms": 2.021773314283271,
+     "sign_accuracy": 0.822021484375,
+     "interval_relative_rms": {
+      "median": 2.0041934204603074,
+      "lo": 1.025249042140492,
+      "hi": 2.244400428432754
+     }
+    },
+    "delivered": {
+     "r2": -3.3266653511019415,
+     "relative_rms": 2.022684106281608,
+     "sign_accuracy": 0.991455078125,
+     "interval_relative_rms": {
+      "median": 2.0066067221044834,
+      "lo": 0.9269172761467274,
+      "hi": 2.2436694183691186
+     }
+    },
+    "measured": {
+     "r2": -2.6357536513062785,
+     "relative_rms": 1.8541660871470937,
+     "sign_accuracy": 0.979248046875,
+     "interval_relative_rms": {
+      "median": 1.8417720461438374,
+      "lo": 0.8966415630467931,
+      "hi": 2.0583171149904738
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.4017977703298242,
+    "D_delivery_deficiency": 0.24972253039840145,
+    "N_residual": 0.08618484231880921,
+    "total_apriori_to_measured": 0.4733473956810977
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0300_g1_tble_307200_v1",
+   "deposit": "ym0300",
+   "rung": "ym0300",
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "time": 315.0,
+   "ym_median": 0.03,
+   "averaging_window": [
+    134.98099,
+    315.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -2.2861689807588377,
+     "relative_rms": 1.7627728583519355,
+     "sign_accuracy": 0.758544921875,
+     "interval_relative_rms": {
+      "median": 1.74924504880167,
+      "lo": 0.9858867692047972,
+      "hi": 1.914893443349822
+     }
+    },
+    "request_les_input": {
+     "r2": -3.276606325710495,
+     "relative_rms": 2.0109489515444494,
+     "sign_accuracy": 0.82470703125,
+     "interval_relative_rms": {
+      "median": 1.993374480499734,
+      "lo": 1.0106540478896986,
+      "hi": 2.232524413310546
+     }
+    },
+    "delivered": {
+     "r2": -3.2291232036262176,
+     "relative_rms": 1.9997540163091092,
+     "sign_accuracy": 0.986328125,
+     "interval_relative_rms": {
+      "median": 1.9839219649811177,
+      "lo": 0.8812067831955118,
+      "hi": 2.220397993257814
+     }
+    },
+    "measured": {
+     "r2": -2.599519297036167,
+     "relative_rms": 1.8449035313051205,
+     "sign_accuracy": 0.974365234375,
+     "interval_relative_rms": {
+      "median": 1.8326934662047298,
+      "lo": 0.8821694079871284,
+      "hi": 2.0467443505639795
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.40167857820192754,
+    "D_delivery_deficiency": 0.24938025237639413,
+    "N_residual": 0.07871794755130507,
+    "total_apriori_to_measured": 0.47340560001854587
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0300_g2_equilibrium_819200_v1",
+   "deposit": "ym0300",
+   "rung": "ym0300",
+   "grid": "G2c",
+   "model": "equilibrium",
+   "time": 405.0,
+   "ym_median": 0.03,
+   "averaging_window": [
+    134.98570999999998,
+    405.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.7525120208053561,
+     "relative_rms": 0.4837583383273307,
+     "sign_accuracy": 0.989013671875,
+     "interval_relative_rms": {
+      "median": 0.478876063502255,
+      "lo": 0.03805790468814929,
+      "hi": 0.5529041591290252
+     }
+    },
+    "request_les_input": {
+     "r2": -0.3718425814902593,
+     "relative_rms": 1.1389470881084285,
+     "sign_accuracy": 0.96826171875,
+     "interval_relative_rms": {
+      "median": 1.116777846489538,
+      "lo": 0.2912469591696381,
+      "hi": 1.3781752950077193
+     }
+    },
+    "delivered": {
+     "r2": -0.37579181046078847,
+     "relative_rms": 1.1405852973279094,
+     "sign_accuracy": 0.96826171875,
+     "interval_relative_rms": {
+      "median": 1.118360177276313,
+      "lo": 0.29172682012887946,
+      "hi": 1.3800961564567256
+     }
+    },
+    "measured": {
+     "r2": -0.44091219798170367,
+     "relative_rms": 1.1672668933273531,
+     "sign_accuracy": 0.964599609375,
+     "interval_relative_rms": {
+      "median": 1.1452595337636826,
+      "lo": 0.37444357121312993,
+      "hi": 1.4128098639612432
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.46353591813635714,
+    "D_delivery_deficiency": 0.000896505956633534,
+    "N_residual": 0.025733277703334032,
+    "total_apriori_to_measured": 0.47848275466564516
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0300_g2_equilibrium_819200_v1",
+   "deposit": "ym0300",
+   "rung": "ym0300",
+   "grid": "G2c",
+   "model": "equilibrium",
+   "time": 360.0,
+   "ym_median": 0.03,
+   "averaging_window": [
+    134.98571,
+    360.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.7525120208053561,
+     "relative_rms": 0.4837583383273307,
+     "sign_accuracy": 0.989013671875,
+     "interval_relative_rms": {
+      "median": 0.478876063502255,
+      "lo": 0.03805790468814929,
+      "hi": 0.5529041591290252
+     }
+    },
+    "request_les_input": {
+     "r2": -0.36232600636596746,
+     "relative_rms": 1.1349897322570135,
+     "sign_accuracy": 0.968017578125,
+     "interval_relative_rms": {
+      "median": 1.1129749866178835,
+      "lo": 0.2870757960855852,
+      "hi": 1.3733642724559694
+     }
+    },
+    "delivered": {
+     "r2": -0.3663021266541213,
+     "relative_rms": 1.1366448308318333,
+     "sign_accuracy": 0.968017578125,
+     "interval_relative_rms": {
+      "median": 1.1145611159596012,
+      "lo": 0.287652071927094,
+      "hi": 1.3754140945174467
+     }
+    },
+    "measured": {
+     "r2": -0.4305476106951245,
+     "relative_rms": 1.1630611984555486,
+     "sign_accuracy": 0.96484375,
+     "interval_relative_rms": {
+      "median": 1.1411248766538065,
+      "lo": 0.36881397268054056,
+      "hi": 1.4078299529998815
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.4629121657206227,
+    "D_delivery_deficiency": 0.0009096045165580603,
+    "N_residual": 0.02562900593881606,
+    "total_apriori_to_measured": 0.4777505614577882
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0300_g2_equilibrium_819200_v1",
+   "deposit": "ym0300",
+   "rung": "ym0300",
+   "grid": "G2c",
+   "model": "equilibrium",
+   "time": 315.0,
+   "ym_median": 0.03,
+   "averaging_window": [
+    134.98571,
+    315.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.7525120208053561,
+     "relative_rms": 0.4837583383273307,
+     "sign_accuracy": 0.989013671875,
+     "interval_relative_rms": {
+      "median": 0.478876063502255,
+      "lo": 0.03805790468814929,
+      "hi": 0.5529041591290252
+     }
+    },
+    "request_les_input": {
+     "r2": -0.37698340733757596,
+     "relative_rms": 1.1410791306630932,
+     "sign_accuracy": 0.96044921875,
+     "interval_relative_rms": {
+      "median": 1.1193851844894462,
+      "lo": 0.3180685301646859,
+      "hi": 1.3741183513355224
+     }
+    },
+    "delivered": {
+     "r2": -0.38158167220513106,
+     "relative_rms": 1.1429827886649477,
+     "sign_accuracy": 0.96044921875,
+     "interval_relative_rms": {
+      "median": 1.121307888500925,
+      "lo": 0.31875764752194213,
+      "hi": 1.3763186760177732
+     }
+    },
+    "measured": {
+     "r2": -0.44493391079849864,
+     "relative_rms": 1.1688947305980577,
+     "sign_accuracy": 0.95703125,
+     "interval_relative_rms": {
+      "median": 1.1471248793834774,
+      "lo": 0.393637716224969,
+      "hi": 1.408015912177646
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.46305218482797544,
+    "D_delivery_deficiency": 0.0010335173656699954,
+    "N_residual": 0.025637947633406863,
+    "total_apriori_to_measured": 0.4778755345709919
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0300_g2_tble_819200_v1",
+   "deposit": "ym0300",
+   "rung": "ym0300",
+   "grid": "G2c",
+   "model": "total_gradient_tble",
+   "time": 405.0,
+   "ym_median": 0.03,
+   "averaging_window": [
+    134.98456,
+    405.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -3.4813101516510185,
+     "relative_rms": 2.058514404380877,
+     "sign_accuracy": 0.76025390625,
+     "interval_relative_rms": {
+      "median": 2.0416601332768236,
+      "lo": 0.9848022295687765,
+      "hi": 2.3026261231076472
+     }
+    },
+    "request_les_input": {
+     "r2": -2.577666189321299,
+     "relative_rms": 1.8392946915056583,
+     "sign_accuracy": 0.833984375,
+     "interval_relative_rms": {
+      "median": 1.8221794083499778,
+      "lo": 0.8595262254554233,
+      "hi": 2.0570777425631337
+     }
+    },
+    "delivered": {
+     "r2": -2.562587267795875,
+     "relative_rms": 1.835414527163468,
+     "sign_accuracy": 0.990966796875,
+     "interval_relative_rms": {
+      "median": 1.8212887323904674,
+      "lo": 0.7302945931594853,
+      "hi": 2.0548526031084804
+     }
+    },
+    "measured": {
+     "r2": -2.0264591589160337,
+     "relative_rms": 1.6916823488619719,
+     "sign_accuracy": 0.978515625,
+     "interval_relative_rms": {
+      "median": 1.6800600479850085,
+      "lo": 0.7261386015600714,
+      "hi": 1.8940147722568452
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.37378700683833316,
+    "D_delivery_deficiency": 0.24914645478652145,
+    "N_residual": 0.08209896853854881,
+    "total_apriori_to_measured": 0.4866070817587895
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0300_g2_tble_819200_v1",
+   "deposit": "ym0300",
+   "rung": "ym0300",
+   "grid": "G2c",
+   "model": "total_gradient_tble",
+   "time": 360.0,
+   "ym_median": 0.03,
+   "averaging_window": [
+    134.98456,
+    360.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -3.4813101516510185,
+     "relative_rms": 2.058514404380877,
+     "sign_accuracy": 0.76025390625,
+     "interval_relative_rms": {
+      "median": 2.0416601332768236,
+      "lo": 0.9848022295687765,
+      "hi": 2.3026261231076472
+     }
+    },
+    "request_les_input": {
+     "r2": -2.5908428749105163,
+     "relative_rms": 1.8426786759546665,
+     "sign_accuracy": 0.8369140625,
+     "interval_relative_rms": {
+      "median": 1.8257418827544163,
+      "lo": 0.8615303219552831,
+      "hi": 2.060446054547582
+     }
+    },
+    "delivered": {
+     "r2": -2.579155706753343,
+     "relative_rms": 1.839677535553137,
+     "sign_accuracy": 0.991943359375,
+     "interval_relative_rms": {
+      "median": 1.8256203013033268,
+      "lo": 0.7340049545576368,
+      "hi": 2.0592936145626255
+     }
+    },
+    "measured": {
+     "r2": -2.036459381596823,
+     "relative_rms": 1.694474927188518,
+     "sign_accuracy": 0.978515625,
+     "interval_relative_rms": {
+      "median": 1.682728841235787,
+      "lo": 0.7274344540534425,
+      "hi": 1.8971930250114295
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.37383825758202155,
+    "D_delivery_deficiency": 0.24948421034807566,
+    "N_residual": 0.08288840484650335,
+    "total_apriori_to_measured": 0.4862782916214349
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0300_g2_tble_819200_v1",
+   "deposit": "ym0300",
+   "rung": "ym0300",
+   "grid": "G2c",
+   "model": "total_gradient_tble",
+   "time": 315.0,
+   "ym_median": 0.03,
+   "averaging_window": [
+    134.98456,
+    315.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -3.4813101516510185,
+     "relative_rms": 2.058514404380877,
+     "sign_accuracy": 0.76025390625,
+     "interval_relative_rms": {
+      "median": 2.0416601332768236,
+      "lo": 0.9848022295687765,
+      "hi": 2.3026261231076472
+     }
+    },
+    "request_les_input": {
+     "r2": -2.6614094586404,
+     "relative_rms": 1.8606965767273849,
+     "sign_accuracy": 0.834716796875,
+     "interval_relative_rms": {
+      "median": 1.84378922514564,
+      "lo": 0.862215818065449,
+      "hi": 2.0812253546449164
+     }
+    },
+    "delivered": {
+     "r2": -2.648745624744523,
+     "relative_rms": 1.8574759641518457,
+     "sign_accuracy": 0.993896484375,
+     "interval_relative_rms": {
+      "median": 1.8433460730697893,
+      "lo": 0.7212480808915915,
+      "hi": 2.0806513544997425
+     }
+    },
+    "measured": {
+     "r2": -2.1053270513750735,
+     "relative_rms": 1.7135827528452066,
+     "sign_accuracy": 0.98046875,
+     "interval_relative_rms": {
+      "median": 1.7019510620801657,
+      "lo": 0.7410217860101208,
+      "hi": 1.9186419552850893
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.3714984064202926,
+    "D_delivery_deficiency": 0.2506637249128018,
+    "N_residual": 0.08189248485063924,
+    "total_apriori_to_measured": 0.4833655261758792
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0300_g1_equilibrium_307200_v1",
+   "deposit": "ym0300_cont",
+   "rung": "ym0300",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 675.0,
+   "ym_median": 0.03,
+   "averaging_window": [
+    404.99035,
+    675.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.7773586442762185,
+     "relative_rms": 0.45883266455120203,
+     "sign_accuracy": 0.98876953125,
+     "interval_relative_rms": {
+      "median": 0.4533497265735815,
+      "lo": 0.03998811875616077,
+      "hi": 0.5227202667711821
+     }
+    },
+    "request_les_input": {
+     "r2": -0.7027660045181723,
+     "relative_rms": 1.2689043743285426,
+     "sign_accuracy": 0.9580078125,
+     "interval_relative_rms": {
+      "median": 1.2493044402785751,
+      "lo": 0.4519134891413649,
+      "hi": 1.4974669837233179
+     }
+    },
+    "delivered": {
+     "r2": -0.7098370823007742,
+     "relative_rms": 1.2715363348409248,
+     "sign_accuracy": 0.9580078125,
+     "interval_relative_rms": {
+      "median": 1.2519782870557665,
+      "lo": 0.45288470333553943,
+      "hi": 1.5005647130994373
+     }
+    },
+    "measured": {
+     "r2": -0.7972045951369708,
+     "relative_rms": 1.303617462017536,
+     "sign_accuracy": 0.95458984375,
+     "interval_relative_rms": {
+      "median": 1.283257098110635,
+      "lo": 0.5618581609417133,
+      "hi": 1.5365279619836538
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.4905198635270918,
+    "D_delivery_deficiency": 0.0012498205994221398,
+    "N_residual": 0.029170755723370984,
+    "total_apriori_to_measured": 0.5075281829401929
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0300_g1_equilibrium_307200_v1",
+   "deposit": "ym0300_cont",
+   "rung": "ym0300",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 630.0,
+   "ym_median": 0.03,
+   "averaging_window": [
+    404.99035000000003,
+    630.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.7773586442762185,
+     "relative_rms": 0.45883266455120203,
+     "sign_accuracy": 0.98876953125,
+     "interval_relative_rms": {
+      "median": 0.4533497265735815,
+      "lo": 0.03998811875616077,
+      "hi": 0.5227202667711821
+     }
+    },
+    "request_les_input": {
+     "r2": -0.6908387848274817,
+     "relative_rms": 1.2644524715816117,
+     "sign_accuracy": 0.96240234375,
+     "interval_relative_rms": {
+      "median": 1.2443496538840821,
+      "lo": 0.41432069346033473,
+      "hi": 1.497893272597343
+     }
+    },
+    "delivered": {
+     "r2": -0.6991596798077464,
+     "relative_rms": 1.2675599421803376,
+     "sign_accuracy": 0.96240234375,
+     "interval_relative_rms": {
+      "median": 1.2474645927712669,
+      "lo": 0.41558959611294144,
+      "hi": 1.5012231543126864
+     }
+    },
+    "measured": {
+     "r2": -0.7806239288739223,
+     "relative_rms": 1.2975900650684689,
+     "sign_accuracy": 0.95849609375,
+     "interval_relative_rms": {
+      "median": 1.276707133570938,
+      "lo": 0.5188661314307877,
+      "hi": 1.5350055357222303
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.49125708118796557,
+    "D_delivery_deficiency": 0.0014728179854852426,
+    "N_residual": 0.028186141506583034,
+    "total_apriori_to_measured": 0.5075358650575648
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0300_g1_equilibrium_307200_v1",
+   "deposit": "ym0300_cont",
+   "rung": "ym0300",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 585.0,
+   "ym_median": 0.03,
+   "averaging_window": [
+    404.99035000000003,
+    585.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.7773586442762185,
+     "relative_rms": 0.45883266455120203,
+     "sign_accuracy": 0.98876953125,
+     "interval_relative_rms": {
+      "median": 0.4533497265735815,
+      "lo": 0.03998811875616077,
+      "hi": 0.5227202667711821
+     }
+    },
+    "request_les_input": {
+     "r2": -0.7681501812507263,
+     "relative_rms": 1.293037094355002,
+     "sign_accuracy": 0.962646484375,
+     "interval_relative_rms": {
+      "median": 1.2731186903709646,
+      "lo": 0.4579274168448012,
+      "hi": 1.5239467321340536
+     }
+    },
+    "delivered": {
+     "r2": -0.7768840980857747,
+     "relative_rms": 1.2962266895870342,
+     "sign_accuracy": 0.962646484375,
+     "interval_relative_rms": {
+      "median": 1.2762611303341056,
+      "lo": 0.45891209144807804,
+      "hi": 1.5274583948341558
+     }
+    },
+    "measured": {
+     "r2": -0.8653641512572792,
+     "relative_rms": 1.3281074783850715,
+     "sign_accuracy": 0.95849609375,
+     "interval_relative_rms": {
+      "median": 1.3077680591448817,
+      "lo": 0.5654288393068255,
+      "hi": 1.562608289279707
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.4948688939898591,
+    "D_delivery_deficiency": 0.0014861759643579554,
+    "N_residual": 0.028569445662124212,
+    "total_apriori_to_measured": 0.5117910301529671
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0600_g1_equilibrium_307200_v1",
+   "deposit": "ym0600",
+   "rung": "ym0600",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 405.0,
+   "ym_median": 0.06,
+   "averaging_window": [
+    134.98462,
+    405.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.7987800520550604,
+     "relative_rms": 0.4362012695201728,
+     "sign_accuracy": 0.977294921875,
+     "interval_relative_rms": {
+      "median": 0.42972368254852383,
+      "lo": 0.19351861085230496,
+      "hi": 0.5285319025728303
+     }
+    },
+    "request_les_input": {
+     "r2": -0.06141972502871429,
+     "relative_rms": 1.0018321996336188,
+     "sign_accuracy": 0.8779296875,
+     "interval_relative_rms": {
+      "median": 0.9750064720038807,
+      "lo": 0.4670517236799066,
+      "hi": 1.3961475978862914
+     }
+    },
+    "delivered": {
+     "r2": -0.08404509489099188,
+     "relative_rms": 1.0124534938057468,
+     "sign_accuracy": 0.8779296875,
+     "interval_relative_rms": {
+      "median": 0.9855277981476096,
+      "lo": 0.4731291415956156,
+      "hi": 1.410317826826667
+     }
+    },
+    "measured": {
+     "r2": -0.164521010937432,
+     "relative_rms": 1.0493613721481747,
+     "sign_accuracy": 0.872314453125,
+     "interval_relative_rms": {
+      "median": 1.0251359769711623,
+      "lo": 0.5542161339265954,
+      "hi": 1.494374378772424
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.36825979799406533,
+    "D_delivery_deficiency": 0.006822557858377811,
+    "N_residual": 0.05485468479285723,
+    "total_apriori_to_measured": 0.4048816802801782
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0600_g1_equilibrium_307200_v1",
+   "deposit": "ym0600",
+   "rung": "ym0600",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 360.0,
+   "ym_median": 0.06,
+   "averaging_window": [
+    134.98462,
+    360.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.7987800520550604,
+     "relative_rms": 0.4362012695201728,
+     "sign_accuracy": 0.977294921875,
+     "interval_relative_rms": {
+      "median": 0.42972368254852383,
+      "lo": 0.19351861085230496,
+      "hi": 0.5285319025728303
+     }
+    },
+    "request_les_input": {
+     "r2": -0.07862650128755044,
+     "relative_rms": 1.0099199521816522,
+     "sign_accuracy": 0.8740234375,
+     "interval_relative_rms": {
+      "median": 0.9834745307142497,
+      "lo": 0.481536850006861,
+      "hi": 1.4071717419860736
+     }
+    },
+    "delivered": {
+     "r2": -0.10171160361798703,
+     "relative_rms": 1.020670049077189,
+     "sign_accuracy": 0.8740234375,
+     "interval_relative_rms": {
+      "median": 0.9940030989419848,
+      "lo": 0.4872392279880875,
+      "hi": 1.4213856156435827
+     }
+    },
+    "measured": {
+     "r2": -0.18677836054450858,
+     "relative_rms": 1.0593420665783377,
+     "sign_accuracy": 0.868408203125,
+     "interval_relative_rms": {
+      "median": 1.0361218729796693,
+      "lo": 0.571959053733867,
+      "hi": 1.5114205314422264
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.3706463865298716,
+    "D_delivery_deficiency": 0.0068590015428106645,
+    "N_residual": 0.05574871180319838,
+    "total_apriori_to_measured": 0.4081747639123114
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0600_g1_equilibrium_307200_v1",
+   "deposit": "ym0600",
+   "rung": "ym0600",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 315.0,
+   "ym_median": 0.06,
+   "averaging_window": [
+    134.98462,
+    315.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.7987800520550604,
+     "relative_rms": 0.4362012695201728,
+     "sign_accuracy": 0.977294921875,
+     "interval_relative_rms": {
+      "median": 0.42972368254852383,
+      "lo": 0.19351861085230496,
+      "hi": 0.5285319025728303
+     }
+    },
+    "request_les_input": {
+     "r2": -0.06317839392876512,
+     "relative_rms": 1.002661825216513,
+     "sign_accuracy": 0.884521484375,
+     "interval_relative_rms": {
+      "median": 0.9755238297612929,
+      "lo": 0.4607266019278951,
+      "hi": 1.3950741823864325
+     }
+    },
+    "delivered": {
+     "r2": -0.0891728214858083,
+     "relative_rms": 1.014845211607644,
+     "sign_accuracy": 0.884521484375,
+     "interval_relative_rms": {
+      "median": 0.987671273695211,
+      "lo": 0.4686777455212751,
+      "hi": 1.4107623820983337
+     }
+    },
+    "measured": {
+     "r2": -0.16287653266648516,
+     "relative_rms": 1.0486201825908281,
+     "sign_accuracy": 0.878662109375,
+     "interval_relative_rms": {
+      "median": 1.0241646994901088,
+      "lo": 0.5484641004792088,
+      "hi": 1.4906978680681244
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.36830041152053977,
+    "D_delivery_deficiency": 0.007863440378731015,
+    "N_residual": 0.054162599400743354,
+    "total_apriori_to_measured": 0.4040565256605284
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0600_g1_tble_307200_v1",
+   "deposit": "ym0600",
+   "rung": "ym0600",
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "time": 405.0,
+   "ym_median": 0.06,
+   "averaging_window": [
+    134.98001,
+    405.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -5.371422177900255,
+     "relative_rms": 2.4545370984088053,
+     "sign_accuracy": 0.580078125,
+     "interval_relative_rms": {
+      "median": 2.4368486098521345,
+      "lo": 1.5371701857959192,
+      "hi": 2.657202099160457
+     }
+    },
+    "request_les_input": {
+     "r2": -6.5057218837660145,
+     "relative_rms": 2.66408233664435,
+     "sign_accuracy": 0.602783203125,
+     "interval_relative_rms": {
+      "median": 2.644058459134573,
+      "lo": 1.4493885694666404,
+      "hi": 2.9442257364743485
+     }
+    },
+    "delivered": {
+     "r2": -5.806670847395914,
+     "relative_rms": 2.536990166911049,
+     "sign_accuracy": 0.91748046875,
+     "interval_relative_rms": {
+      "median": 2.5174489855085644,
+      "lo": 0.9428482089511222,
+      "hi": 2.864111264088277
+     }
+    },
+    "measured": {
+     "r2": -4.697690563790874,
+     "relative_rms": 2.3211373435545912,
+     "sign_accuracy": 0.94873046875,
+     "interval_relative_rms": {
+      "median": 2.2991004981441163,
+      "lo": 0.98619160235845,
+      "hi": 2.623000478520357
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.520403894192977,
+    "D_delivery_deficiency": 0.30118909700630236,
+    "N_residual": 0.13646193357413838,
+    "total_apriori_to_measured": 0.5896957065362819
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0600_g1_tble_307200_v1",
+   "deposit": "ym0600",
+   "rung": "ym0600",
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "time": 360.0,
+   "ym_median": 0.06,
+   "averaging_window": [
+    134.98001,
+    360.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -5.371422177900255,
+     "relative_rms": 2.4545370984088053,
+     "sign_accuracy": 0.580078125,
+     "interval_relative_rms": {
+      "median": 2.4368486098521345,
+      "lo": 1.5371701857959192,
+      "hi": 2.657202099160457
+     }
+    },
+    "request_les_input": {
+     "r2": -6.33944881190225,
+     "relative_rms": 2.6344085790629457,
+     "sign_accuracy": 0.597900390625,
+     "interval_relative_rms": {
+      "median": 2.614694831690425,
+      "lo": 1.4284348994886902,
+      "hi": 2.914607884250897
+     }
+    },
+    "delivered": {
+     "r2": -5.65638057494627,
+     "relative_rms": 2.508825650676194,
+     "sign_accuracy": 0.916015625,
+     "interval_relative_rms": {
+      "median": 2.4890922017834027,
+      "lo": 0.9099915961812114,
+      "hi": 2.836653981421582
+     }
+    },
+    "measured": {
+     "r2": -4.566131767387029,
+     "relative_rms": 2.294183493188791,
+     "sign_accuracy": 0.9541015625,
+     "interval_relative_rms": {
+      "median": 2.2722699398379103,
+      "lo": 0.9340292153272858,
+      "hi": 2.594548693899185
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.5208099308225519,
+    "D_delivery_deficiency": 0.3012287280476342,
+    "N_residual": 0.1325998865262942,
+    "total_apriori_to_measured": 0.5917020196335412
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0600_g1_tble_307200_v1",
+   "deposit": "ym0600",
+   "rung": "ym0600",
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "time": 315.0,
+   "ym_median": 0.06,
+   "averaging_window": [
+    134.98001,
+    315.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -5.371422177900255,
+     "relative_rms": 2.4545370984088053,
+     "sign_accuracy": 0.580078125,
+     "interval_relative_rms": {
+      "median": 2.4368486098521345,
+      "lo": 1.5371701857959192,
+      "hi": 2.657202099160457
+     }
+    },
+    "request_les_input": {
+     "r2": -6.625049402600059,
+     "relative_rms": 2.685175895781841,
+     "sign_accuracy": 0.59326171875,
+     "interval_relative_rms": {
+      "median": 2.665793956057472,
+      "lo": 1.4648393113119893,
+      "hi": 2.9703833812267164
+     }
+    },
+    "delivered": {
+     "r2": -5.909851502642921,
+     "relative_rms": 2.5561466489583147,
+     "sign_accuracy": 0.91259765625,
+     "interval_relative_rms": {
+      "median": 2.5373870069614286,
+      "lo": 0.9223141234648238,
+      "hi": 2.889475638565245
+     }
+    },
+    "measured": {
+     "r2": -4.7794610048803365,
+     "relative_rms": 2.3377339176364935,
+     "sign_accuracy": 0.950439453125,
+     "interval_relative_rms": {
+      "median": 2.3155719973051134,
+      "lo": 0.9395470889856464,
+      "hi": 2.644791261293977
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.5212296701336736,
+    "D_delivery_deficiency": 0.30361831549563106,
+    "N_residual": 0.13166992588364343,
+    "total_apriori_to_measured": 0.5885783568244953
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0935_g1_equilibrium_307200_v1",
+   "deposit": "ym0935",
+   "rung": "ym0935",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 405.0,
+   "ym_median": 0.0935,
+   "averaging_window": [
+    134.98432000000003,
+    405.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.7483504358008992,
+     "relative_rms": 0.48780865366344955,
+     "sign_accuracy": 0.96435546875,
+     "interval_relative_rms": {
+      "median": 0.48261126676204796,
+      "lo": 0.2697749811711116,
+      "hi": 0.695226993216406
+     }
+    },
+    "request_les_input": {
+     "r2": 0.418361466520596,
+     "relative_rms": 0.7416141276002047,
+     "sign_accuracy": 0.872802734375,
+     "interval_relative_rms": {
+      "median": 0.7236418782493701,
+      "lo": 0.35820901171904407,
+      "hi": 1.1744039356053924
+     }
+    },
+    "delivered": {
+     "r2": 0.4004671452031935,
+     "relative_rms": 0.7529357233530973,
+     "sign_accuracy": 0.87255859375,
+     "interval_relative_rms": {
+      "median": 0.7336497207837961,
+      "lo": 0.36229890749334814,
+      "hi": 1.193998456543648
+     }
+    },
+    "measured": {
+     "r2": 0.36756644309555087,
+     "relative_rms": 0.7733193225563517,
+     "sign_accuracy": 0.867919921875,
+     "interval_relative_rms": {
+      "median": 0.7597837928589839,
+      "lo": 0.40372159802069457,
+      "hi": 1.2657332455956591
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.23388645954242163,
+    "D_delivery_deficiency": 0.010964066053943315,
+    "N_residual": 0.0654299116104079,
+    "total_apriori_to_measured": 0.28116063740387903
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0935_g1_equilibrium_307200_v1",
+   "deposit": "ym0935",
+   "rung": "ym0935",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 360.0,
+   "ym_median": 0.0935,
+   "averaging_window": [
+    134.98432,
+    360.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.7483504358008992,
+     "relative_rms": 0.48780865366344955,
+     "sign_accuracy": 0.96435546875,
+     "interval_relative_rms": {
+      "median": 0.48261126676204796,
+      "lo": 0.2697749811711116,
+      "hi": 0.695226993216406
+     }
+    },
+    "request_les_input": {
+     "r2": 0.3981297231151768,
+     "relative_rms": 0.7544020454543775,
+     "sign_accuracy": 0.877685546875,
+     "interval_relative_rms": {
+      "median": 0.7338621916579512,
+      "lo": 0.3596803207663295,
+      "hi": 1.1879221890832252
+     }
+    },
+    "delivered": {
+     "r2": 0.37896577028609235,
+     "relative_rms": 0.7663182668751315,
+     "sign_accuracy": 0.877685546875,
+     "interval_relative_rms": {
+      "median": 0.7449309615237283,
+      "lo": 0.36544970152941453,
+      "hi": 1.2086665658107183
+     }
+    },
+    "measured": {
+     "r2": 0.34581807672485765,
+     "relative_rms": 0.7865035345785684,
+     "sign_accuracy": 0.87353515625,
+     "interval_relative_rms": {
+      "median": 0.7706496353815172,
+      "lo": 0.4090144317660865,
+      "hi": 1.280265835765036
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.23935049469449288,
+    "D_delivery_deficiency": 0.01125215691569279,
+    "N_residual": 0.06586556113419244,
+    "total_apriori_to_measured": 0.2865545555701735
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0935_g1_equilibrium_307200_v1",
+   "deposit": "ym0935",
+   "rung": "ym0935",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 315.0,
+   "ym_median": 0.0935,
+   "averaging_window": [
+    134.98432,
+    315.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.7483504358008992,
+     "relative_rms": 0.48780865366344955,
+     "sign_accuracy": 0.96435546875,
+     "interval_relative_rms": {
+      "median": 0.48261126676204796,
+      "lo": 0.2697749811711116,
+      "hi": 0.695226993216406
+     }
+    },
+    "request_les_input": {
+     "r2": 0.3882850793050189,
+     "relative_rms": 0.7605468044760055,
+     "sign_accuracy": 0.873291015625,
+     "interval_relative_rms": {
+      "median": 0.7407673661526852,
+      "lo": 0.3686977583351757,
+      "hi": 1.1994939268240208
+     }
+    },
+    "delivered": {
+     "r2": 0.3684811706235859,
+     "relative_rms": 0.7727598705552366,
+     "sign_accuracy": 0.873291015625,
+     "interval_relative_rms": {
+      "median": 0.7519663634403382,
+      "lo": 0.37480080417637174,
+      "hi": 1.219887220613865
+     }
+    },
+    "measured": {
+     "r2": 0.33167757652724406,
+     "relative_rms": 0.7949584415973545,
+     "sign_accuracy": 0.869384765625,
+     "interval_relative_rms": {
+      "median": 0.7811422864956712,
+      "lo": 0.4218765099143856,
+      "hi": 1.2976073556110193
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.2444272269261566,
+    "D_delivery_deficiency": 0.011407053347298628,
+    "N_residual": 0.06701876138355242,
+    "total_apriori_to_measured": 0.2931994399719812
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0935_g1_tble_307200_v1",
+   "deposit": "ym0935",
+   "rung": "ym0935",
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "time": 405.0,
+   "ym_median": 0.0935,
+   "averaging_window": [
+    134.98021,
+    405.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -7.542951134810092,
+     "relative_rms": 2.8422048105508897,
+     "sign_accuracy": 0.5673828125,
+     "interval_relative_rms": {
+      "median": 2.821451509561972,
+      "lo": 1.8605522153505272,
+      "hi": 3.085081242473816
+     }
+    },
+    "request_les_input": {
+     "r2": -7.841384995768221,
+     "relative_rms": 2.891422526287296,
+     "sign_accuracy": 0.564697265625,
+     "interval_relative_rms": {
+      "median": 2.867449293377314,
+      "lo": 1.8429821655305434,
+      "hi": 3.1738489743972784
+     }
+    },
+    "delivered": {
+     "r2": -6.847943408546187,
+     "relative_rms": 2.7241394804307983,
+     "sign_accuracy": 0.894287109375,
+     "interval_relative_rms": {
+      "median": 2.698243431204901,
+      "lo": 1.0269252411383003,
+      "hi": 3.0820222901783376
+     }
+    },
+    "measured": {
+     "r2": -5.346691962161454,
+     "relative_rms": 2.449768912693007,
+     "sign_accuracy": 0.953857421875,
+     "interval_relative_rms": {
+      "median": 2.4237575892281287,
+      "lo": 0.9508294645026358,
+      "hi": 2.780734501203232
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.5530618312494708,
+    "D_delivery_deficiency": 0.2988405490137563,
+    "N_residual": 0.15613134738492582,
+    "total_apriori_to_measured": 0.6229378046790341
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0935_g1_tble_307200_v1",
+   "deposit": "ym0935",
+   "rung": "ym0935",
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "time": 360.0,
+   "ym_median": 0.0935,
+   "averaging_window": [
+    134.98021,
+    360.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -7.542951134810092,
+     "relative_rms": 2.8422048105508897,
+     "sign_accuracy": 0.5673828125,
+     "interval_relative_rms": {
+      "median": 2.821451509561972,
+      "lo": 1.8605522153505272,
+      "hi": 3.085081242473816
+     }
+    },
+    "request_les_input": {
+     "r2": -7.515476188033192,
+     "relative_rms": 2.8376307288550824,
+     "sign_accuracy": 0.565673828125,
+     "interval_relative_rms": {
+      "median": 2.8148331263036463,
+      "lo": 1.8185623889581608,
+      "hi": 3.1144498435091004
+     }
+    },
+    "delivered": {
+     "r2": -6.487603142642815,
+     "relative_rms": 2.660864859040556,
+     "sign_accuracy": 0.88427734375,
+     "interval_relative_rms": {
+      "median": 2.6357361419209857,
+      "lo": 0.9967327611282311,
+      "hi": 3.0117157862993347
+     }
+    },
+    "measured": {
+     "r2": -5.1377193697576296,
+     "relative_rms": 2.409100528388162,
+     "sign_accuracy": 0.94580078125,
+     "interval_relative_rms": {
+      "median": 2.3833779504387707,
+      "lo": 0.9412313594566063,
+      "hi": 2.7336189273281835
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.5560403142521678,
+    "D_delivery_deficiency": 0.2960947479069165,
+    "N_residual": 0.14812765599860128,
+    "total_apriori_to_measured": 0.6306499545554798
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym0935_g1_tble_307200_v1",
+   "deposit": "ym0935",
+   "rung": "ym0935",
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "time": 315.0,
+   "ym_median": 0.0935,
+   "averaging_window": [
+    134.98021,
+    315.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -7.542951134810092,
+     "relative_rms": 2.8422048105508897,
+     "sign_accuracy": 0.5673828125,
+     "interval_relative_rms": {
+      "median": 2.821451509561972,
+      "lo": 1.8605522153505272,
+      "hi": 3.085081242473816
+     }
+    },
+    "request_les_input": {
+     "r2": -7.492889617566782,
+     "relative_rms": 2.8338649439876615,
+     "sign_accuracy": 0.564697265625,
+     "interval_relative_rms": {
+      "median": 2.8107539453923374,
+      "lo": 1.8033922756267948,
+      "hi": 3.1104830054285806
+     }
+    },
+    "delivered": {
+     "r2": -6.4220836531037975,
+     "relative_rms": 2.649197469323085,
+     "sign_accuracy": 0.89990234375,
+     "interval_relative_rms": {
+      "median": 2.624655353797131,
+      "lo": 0.99054089487476,
+      "hi": 2.9985625690867925
+     }
+    },
+    "measured": {
+     "r2": -5.115849917294703,
+     "relative_rms": 2.4048047369444507,
+     "sign_accuracy": 0.95458984375,
+     "interval_relative_rms": {
+      "median": 2.3797845888443168,
+      "lo": 0.9686921431119372,
+      "hi": 2.7276898542522394
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.5557937761103459,
+    "D_delivery_deficiency": 0.29451422899966273,
+    "N_residual": 0.1439239432508797,
+    "total_apriori_to_measured": 0.6261563719504084
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym1500_g1_equilibrium_307200_v1",
+   "deposit": "ym1500",
+   "rung": "ym1500",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 405.0,
+   "ym_median": 0.15,
+   "averaging_window": [
+    134.98298,
+    405.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.6813705481466259,
+     "relative_rms": 0.5489014364023568,
+     "sign_accuracy": 0.93798828125,
+     "interval_relative_rms": {
+      "median": 0.555555877813133,
+      "lo": 0.3265029918588405,
+      "hi": 0.9140754295793353
+     }
+    },
+    "request_les_input": {
+     "r2": 0.5474243549074511,
+     "relative_rms": 0.6541796025621675,
+     "sign_accuracy": 0.845703125,
+     "interval_relative_rms": {
+      "median": 0.6591652482144346,
+      "lo": 0.34020069978699735,
+      "hi": 1.1540724563921225
+     }
+    },
+    "delivered": {
+     "r2": 0.5282268688630758,
+     "relative_rms": 0.6679100995181597,
+     "sign_accuracy": 0.84521484375,
+     "interval_relative_rms": {
+      "median": 0.6705948812494139,
+      "lo": 0.340973826577325,
+      "hi": 1.1858471663583894
+     }
+    },
+    "measured": {
+     "r2": 0.5214717572177393,
+     "relative_rms": 0.6726748592636648,
+     "sign_accuracy": 0.84228515625,
+     "interval_relative_rms": {
+      "median": 0.6779334616718411,
+      "lo": 0.3558901102655022,
+      "hi": 1.2286587359994654
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.20434941067692408,
+    "D_delivery_deficiency": 0.01991586618232922,
+    "N_residual": 0.07790101744486093,
+    "total_apriori_to_measured": 0.2539255282231991
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym1500_g1_equilibrium_307200_v1",
+   "deposit": "ym1500",
+   "rung": "ym1500",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 360.0,
+   "ym_median": 0.15,
+   "averaging_window": [
+    134.98298,
+    360.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.6813705481466259,
+     "relative_rms": 0.5489014364023568,
+     "sign_accuracy": 0.93798828125,
+     "interval_relative_rms": {
+      "median": 0.555555877813133,
+      "lo": 0.3265029918588405,
+      "hi": 0.9140754295793353
+     }
+    },
+    "request_les_input": {
+     "r2": 0.5423120720753031,
+     "relative_rms": 0.6578640249672595,
+     "sign_accuracy": 0.843505859375,
+     "interval_relative_rms": {
+      "median": 0.6631898911307251,
+      "lo": 0.34160060074225557,
+      "hi": 1.1614478596310644
+     }
+    },
+    "delivered": {
+     "r2": 0.5229434184527774,
+     "relative_rms": 0.671639693814105,
+     "sign_accuracy": 0.843017578125,
+     "interval_relative_rms": {
+      "median": 0.6745671410528407,
+      "lo": 0.3431163779920073,
+      "hi": 1.1921857672818013
+     }
+    },
+    "measured": {
+     "r2": 0.5149160374746293,
+     "relative_rms": 0.6772669256404265,
+     "sign_accuracy": 0.839599609375,
+     "interval_relative_rms": {
+      "median": 0.6832310545685909,
+      "lo": 0.3595605391701226,
+      "hi": 1.2356013777734915
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.20500838114694397,
+    "D_delivery_deficiency": 0.019978636246923035,
+    "N_residual": 0.07735652475419877,
+    "total_apriori_to_measured": 0.2544694850768473
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym1500_g1_equilibrium_307200_v1",
+   "deposit": "ym1500",
+   "rung": "ym1500",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 315.0,
+   "ym_median": 0.15,
+   "averaging_window": [
+    134.98298,
+    315.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.6813705481466259,
+     "relative_rms": 0.5489014364023568,
+     "sign_accuracy": 0.93798828125,
+     "interval_relative_rms": {
+      "median": 0.555555877813133,
+      "lo": 0.3265029918588405,
+      "hi": 0.9140754295793353
+     }
+    },
+    "request_les_input": {
+     "r2": 0.5747734167089185,
+     "relative_rms": 0.6341056348842085,
+     "sign_accuracy": 0.8505859375,
+     "interval_relative_rms": {
+      "median": 0.6405029402429381,
+      "lo": 0.32901951234777105,
+      "hi": 1.1268492600516695
+     }
+    },
+    "delivered": {
+     "r2": 0.558106717169874,
+     "relative_rms": 0.6464130403234062,
+     "sign_accuracy": 0.850341796875,
+     "interval_relative_rms": {
+      "median": 0.6504435896240488,
+      "lo": 0.32844291165381334,
+      "hi": 1.1555461090706252
+     }
+    },
+    "measured": {
+     "r2": 0.5544237738041851,
+     "relative_rms": 0.6491012037390581,
+     "sign_accuracy": 0.84619140625,
+     "interval_relative_rms": {
+      "median": 0.6538731249768799,
+      "lo": 0.33900748599982716,
+      "hi": 1.1881120798523976
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.18967517892291372,
+    "D_delivery_deficiency": 0.01948539517170713,
+    "N_residual": 0.07591547538985129,
+    "total_apriori_to_measured": 0.23741102778424272
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym1500_g1_tble_307200_v1",
+   "deposit": "ym1500",
+   "rung": "ym1500",
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "time": 405.0,
+   "ym_median": 0.15,
+   "averaging_window": [
+    134.98392,
+    405.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -10.444258506497329,
+     "relative_rms": 3.2896162527592883,
+     "sign_accuracy": 0.559326171875,
+     "interval_relative_rms": {
+      "median": 3.2657063998631135,
+      "lo": 2.1624446653227345,
+      "hi": 3.5894293467298932
+     }
+    },
+    "request_les_input": {
+     "r2": -10.57879968335105,
+     "relative_rms": 3.308896472606814,
+     "sign_accuracy": 0.53466796875,
+     "interval_relative_rms": {
+      "median": 3.2897212738873254,
+      "lo": 2.3833223255523612,
+      "hi": 3.6530478040508787
+     }
+    },
+    "delivered": {
+     "r2": -9.03333941404992,
+     "relative_rms": 3.0801662726851213,
+     "sign_accuracy": 0.87255859375,
+     "interval_relative_rms": {
+      "median": 3.0413837595887383,
+      "lo": 1.387612442260096,
+      "hi": 3.4796238268570976
+     }
+    },
+    "measured": {
+     "r2": -6.942101720042582,
+     "relative_rms": 2.740432640264208,
+     "sign_accuracy": 0.940185546875,
+     "interval_relative_rms": {
+      "median": 2.70664369804041,
+      "lo": 1.2106727829148038,
+      "hi": 3.1123195991663803
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.5881938361996101,
+    "D_delivery_deficiency": 0.29637676883811315,
+    "N_residual": 0.17791218531140005,
+    "total_apriori_to_measured": 0.6422611943080894
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym1500_g1_tble_307200_v1",
+   "deposit": "ym1500",
+   "rung": "ym1500",
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "time": 360.0,
+   "ym_median": 0.15,
+   "averaging_window": [
+    134.98392,
+    360.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -10.444258506497329,
+     "relative_rms": 3.2896162527592883,
+     "sign_accuracy": 0.559326171875,
+     "interval_relative_rms": {
+      "median": 3.2657063998631135,
+      "lo": 2.1624446653227345,
+      "hi": 3.5894293467298932
+     }
+    },
+    "request_les_input": {
+     "r2": -10.77031009752527,
+     "relative_rms": 3.3361484045279868,
+     "sign_accuracy": 0.534423828125,
+     "interval_relative_rms": {
+      "median": 3.3164016498777515,
+      "lo": 2.398295767519598,
+      "hi": 3.6854072139857172
+     }
+    },
+    "delivered": {
+     "r2": -9.193964903816168,
+     "relative_rms": 3.10472383729345,
+     "sign_accuracy": 0.86572265625,
+     "interval_relative_rms": {
+      "median": 3.06520401882858,
+      "lo": 1.4162578856395904,
+      "hi": 3.5057256187365713
+     }
+    },
+    "measured": {
+     "r2": -7.068214535413029,
+     "relative_rms": 2.7621046429249505,
+     "sign_accuracy": 0.93896484375,
+     "interval_relative_rms": {
+      "median": 2.7279431022371146,
+      "lo": 1.226024655154688,
+      "hi": 3.137637181105587
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.5880710148681041,
+    "D_delivery_deficiency": 0.29674765442500406,
+    "N_residual": 0.18049514967717462,
+    "total_apriori_to_measured": 0.6400283847634368
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym1500_g1_tble_307200_v1",
+   "deposit": "ym1500",
+   "rung": "ym1500",
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "time": 315.0,
+   "ym_median": 0.15,
+   "averaging_window": [
+    134.98392,
+    315.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -10.444258506497329,
+     "relative_rms": 3.2896162527592883,
+     "sign_accuracy": 0.559326171875,
+     "interval_relative_rms": {
+      "median": 3.2657063998631135,
+      "lo": 2.1624446653227345,
+      "hi": 3.5894293467298932
+     }
+    },
+    "request_les_input": {
+     "r2": -10.351224396200587,
+     "relative_rms": 3.2762177853002994,
+     "sign_accuracy": 0.542236328125,
+     "interval_relative_rms": {
+      "median": 3.2568227582712996,
+      "lo": 2.354808311632852,
+      "hi": 3.6202804575526693
+     }
+    },
+    "delivered": {
+     "r2": -8.843388267145528,
+     "relative_rms": 3.0508701027971066,
+     "sign_accuracy": 0.87158203125,
+     "interval_relative_rms": {
+      "median": 3.013545228608458,
+      "lo": 1.3711866479741457,
+      "hi": 3.4438438294236087
+     }
+    },
+    "measured": {
+     "r2": -6.759439232698284,
+     "relative_rms": 2.7087353608904605,
+     "sign_accuracy": 0.944091796875,
+     "interval_relative_rms": {
+      "median": 2.6762675688392985,
+      "lo": 1.1785346533085737,
+      "hi": 3.0745068398884605
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.589275950768799,
+    "D_delivery_deficiency": 0.29790147109859444,
+    "N_residual": 0.17807426231582338,
+    "total_apriori_to_measured": 0.6443345131239234
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym2500_g1_equilibrium_307200_v1",
+   "deposit": "ym2500",
+   "rung": "ym2500",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 405.0,
+   "ym_median": 0.25,
+   "averaging_window": [
+    134.98854999999998,
+    405.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.6458521774788064,
+     "relative_rms": 0.5786869610906594,
+     "sign_accuracy": 0.890625,
+     "interval_relative_rms": {
+      "median": 0.5924319772430613,
+      "lo": 0.3841695744483344,
+      "hi": 1.0175915514303868
+     }
+    },
+    "request_les_input": {
+     "r2": 0.6051418823544682,
+     "relative_rms": 0.6110432408924178,
+     "sign_accuracy": 0.81640625,
+     "interval_relative_rms": {
+      "median": 0.6251822616286391,
+      "lo": 0.33987476221630375,
+      "hi": 1.1672122579628097
+     }
+    },
+    "delivered": {
+     "r2": 0.5881141563540513,
+     "relative_rms": 0.6240793921600148,
+     "sign_accuracy": 0.8154296875,
+     "interval_relative_rms": {
+      "median": 0.6375302750841723,
+      "lo": 0.3294911475375803,
+      "hi": 1.2132055121505818
+     }
+    },
+    "measured": {
+     "r2": 0.6100111992839279,
+     "relative_rms": 0.6072639174219698,
+     "sign_accuracy": 0.808837890625,
+     "interval_relative_rms": {
+      "median": 0.6239611692407159,
+      "lo": 0.3415458574700803,
+      "hi": 1.1780713479147642
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.18319076607636045,
+    "D_delivery_deficiency": 0.03236718293800673,
+    "N_residual": 0.0930885283338892,
+    "total_apriori_to_measured": 0.21785799658288946
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym2500_g1_equilibrium_307200_v1",
+   "deposit": "ym2500",
+   "rung": "ym2500",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 360.0,
+   "ym_median": 0.25,
+   "averaging_window": [
+    134.98855,
+    360.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.6458521774788064,
+     "relative_rms": 0.5786869610906594,
+     "sign_accuracy": 0.890625,
+     "interval_relative_rms": {
+      "median": 0.5924319772430613,
+      "lo": 0.3841695744483344,
+      "hi": 1.0175915514303868
+     }
+    },
+    "request_les_input": {
+     "r2": 0.6052584417582018,
+     "relative_rms": 0.6109530463522402,
+     "sign_accuracy": 0.825439453125,
+     "interval_relative_rms": {
+      "median": 0.6248769862942297,
+      "lo": 0.3395891227232427,
+      "hi": 1.1659759777238714
+     }
+    },
+    "delivered": {
+     "r2": 0.5883115537700588,
+     "relative_rms": 0.6239298283611864,
+     "sign_accuracy": 0.82421875,
+     "interval_relative_rms": {
+      "median": 0.6370052057147231,
+      "lo": 0.32795439926090064,
+      "hi": 1.212000327267372
+     }
+    },
+    "measured": {
+     "r2": 0.6125020351054131,
+     "relative_rms": 0.6053215312902067,
+     "sign_accuracy": 0.8193359375,
+     "interval_relative_rms": {
+      "median": 0.6210786726125963,
+      "lo": 0.33754222534164124,
+      "hi": 1.1700641924722437
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.18120856836045296,
+    "D_delivery_deficiency": 0.032460225866258414,
+    "N_residual": 0.09186115933510307,
+    "total_apriori_to_measured": 0.21274588132673286
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym2500_g1_equilibrium_307200_v1",
+   "deposit": "ym2500",
+   "rung": "ym2500",
+   "grid": "G1c",
+   "model": "equilibrium",
+   "time": 315.0,
+   "ym_median": 0.25,
+   "averaging_window": [
+    134.98855,
+    315.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.6458521774788064,
+     "relative_rms": 0.5786869610906594,
+     "sign_accuracy": 0.890625,
+     "interval_relative_rms": {
+      "median": 0.5924319772430613,
+      "lo": 0.3841695744483344,
+      "hi": 1.0175915514303868
+     }
+    },
+    "request_les_input": {
+     "r2": 0.6031714990275303,
+     "relative_rms": 0.6125659285209677,
+     "sign_accuracy": 0.82568359375,
+     "interval_relative_rms": {
+      "median": 0.6263068314968248,
+      "lo": 0.33840928436812057,
+      "hi": 1.1690271809077868
+     }
+    },
+    "delivered": {
+     "r2": 0.5857184444350835,
+     "relative_rms": 0.6258917228066555,
+     "sign_accuracy": 0.82421875,
+     "interval_relative_rms": {
+      "median": 0.6389935192714588,
+      "lo": 0.3273947098480626,
+      "hi": 1.2152229729069859
+     }
+    },
+    "measured": {
+     "r2": 0.6123116786514085,
+     "relative_rms": 0.6054701936355421,
+     "sign_accuracy": 0.8173828125,
+     "interval_relative_rms": {
+      "median": 0.6210898968134511,
+      "lo": 0.33684344216526374,
+      "hi": 1.1703349655137754
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.18471225278577638,
+    "D_delivery_deficiency": 0.032880698331562715,
+    "N_residual": 0.09069147506406428,
+    "total_apriori_to_measured": 0.21487995205524785
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym2500_g1_tble_307200_v1",
+   "deposit": "ym2500",
+   "rung": "ym2500",
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "time": 405.0,
+   "ym_median": 0.25,
+   "averaging_window": [
+    134.98732,
+    405.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -15.116645985794207,
+     "relative_rms": 3.903810629606114,
+     "sign_accuracy": 0.55126953125,
+     "interval_relative_rms": {
+      "median": 3.8716116549993718,
+      "lo": 2.4845474576702906,
+      "hi": 4.278150199536484
+     }
+    },
+    "request_les_input": {
+     "r2": -12.255920889861114,
+     "relative_rms": 3.54043284303044,
+     "sign_accuracy": 0.44775390625,
+     "interval_relative_rms": {
+      "median": 3.5375432673371274,
+      "lo": 2.6511015483930067,
+      "hi": 4.171300398567436
+     }
+    },
+    "delivered": {
+     "r2": -10.171708889361664,
+     "relative_rms": 3.2502084439565664,
+     "sign_accuracy": 0.856689453125,
+     "interval_relative_rms": {
+      "median": 3.206036603532333,
+      "lo": 1.5522116348056438,
+      "hi": 3.7072727659300786
+     }
+    },
+    "measured": {
+     "r2": -7.488346754821389,
+     "relative_rms": 2.8331069227438426,
+     "sign_accuracy": 0.91064453125,
+     "interval_relative_rms": {
+      "median": 2.7941148573007415,
+      "lo": 1.1113488512835665,
+      "hi": 3.251947730925548
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.6709288893306374,
+    "D_delivery_deficiency": 0.31468862278897863,
+    "N_residual": 0.1901586148639608,
+    "total_apriori_to_measured": 0.7162077226012502
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym2500_g1_tble_307200_v1",
+   "deposit": "ym2500",
+   "rung": "ym2500",
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "time": 360.0,
+   "ym_median": 0.25,
+   "averaging_window": [
+    134.98732,
+    360.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -15.116645985794207,
+     "relative_rms": 3.903810629606114,
+     "sign_accuracy": 0.55126953125,
+     "interval_relative_rms": {
+      "median": 3.8716116549993718,
+      "lo": 2.4845474576702906,
+      "hi": 4.278150199536484
+     }
+    },
+    "request_les_input": {
+     "r2": -11.858475925146514,
+     "relative_rms": 3.4869535094899864,
+     "sign_accuracy": 0.44775390625,
+     "interval_relative_rms": {
+      "median": 3.4840907677150526,
+      "lo": 2.617664739387445,
+      "hi": 4.116334442572436
+     }
+    },
+    "delivered": {
+     "r2": -9.7399819411816,
+     "relative_rms": 3.1867880842132865,
+     "sign_accuracy": 0.866943359375,
+     "interval_relative_rms": {
+      "median": 3.143068391212344,
+      "lo": 1.4840140798379426,
+      "hi": 3.635426457034464
+     }
+    },
+    "measured": {
+     "r2": -7.204057689128346,
+     "relative_rms": 2.785260126205588,
+     "sign_accuracy": 0.907470703125,
+     "interval_relative_rms": {
+      "median": 2.7466773742243165,
+      "lo": 1.096465209553857,
+      "hi": 3.193254897608137
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.6767173507596846,
+    "D_delivery_deficiency": 0.31110070039177495,
+    "N_residual": 0.1844023994032499,
+    "total_apriori_to_measured": 0.7259983700704998
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym2500_g1_tble_307200_v1",
+   "deposit": "ym2500",
+   "rung": "ym2500",
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "time": 315.0,
+   "ym_median": 0.25,
+   "averaging_window": [
+    134.98732,
+    315.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": -15.116645985794207,
+     "relative_rms": 3.903810629606114,
+     "sign_accuracy": 0.55126953125,
+     "interval_relative_rms": {
+      "median": 3.8716116549993718,
+      "lo": 2.4845474576702906,
+      "hi": 4.278150199536484
+     }
+    },
+    "request_les_input": {
+     "r2": -11.5607623718221,
+     "relative_rms": 3.44635022198186,
+     "sign_accuracy": 0.4501953125,
+     "interval_relative_rms": {
+      "median": 3.4437246118188884,
+      "lo": 2.5835572574578527,
+      "hi": 4.052632608588638
+     }
+    },
+    "delivered": {
+     "r2": -9.46530029947664,
+     "relative_rms": 3.145772101021306,
+     "sign_accuracy": 0.85693359375,
+     "interval_relative_rms": {
+      "median": 3.101748136934289,
+      "lo": 1.4004498700054027,
+      "hi": 3.594591015938341
+     }
+    },
+    "measured": {
+     "r2": -7.038212450265981,
+     "relative_rms": 2.7569643432967337,
+     "sign_accuracy": 0.913330078125,
+     "interval_relative_rms": {
+      "median": 2.7186273915157066,
+      "lo": 1.09925456091877,
+      "hi": 3.157498407740598
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.6780989548647112,
+    "D_delivery_deficiency": 0.3134589357968657,
+    "N_residual": 0.18173950089000587,
+    "total_apriori_to_measured": 0.7329444574584341
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym2500_g2_equilibrium_819200_v1",
+   "deposit": "ym2500",
+   "rung": "ym2500",
+   "grid": "G2c",
+   "model": "equilibrium",
+   "time": 405.0,
+   "ym_median": 0.25,
+   "averaging_window": [
+    134.99013000000002,
+    405.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.6419306001947458,
+     "relative_rms": 0.5818821210101139,
+     "sign_accuracy": 0.890869140625,
+     "interval_relative_rms": {
+      "median": 0.5957510311221516,
+      "lo": 0.38259202307589435,
+      "hi": 1.029113679812382
+     }
+    },
+    "request_les_input": {
+     "r2": 0.640869779173098,
+     "relative_rms": 0.5827434292890742,
+     "sign_accuracy": 0.818359375,
+     "interval_relative_rms": {
+      "median": 0.5973620380231395,
+      "lo": 0.339573862535271,
+      "hi": 1.1120979054547346
+     }
+    },
+    "delivered": {
+     "r2": 0.6279104092461221,
+     "relative_rms": 0.5931645248196903,
+     "sign_accuracy": 0.817138671875,
+     "interval_relative_rms": {
+      "median": 0.6079074948490573,
+      "lo": 0.32748160132805415,
+      "hi": 1.1539332860846212
+     }
+    },
+    "measured": {
+     "r2": 0.6574650198541389,
+     "relative_rms": 0.5691200335998557,
+     "sign_accuracy": 0.80517578125,
+     "interval_relative_rms": {
+      "median": 0.5842711632815913,
+      "lo": 0.33691320097590227,
+      "hi": 1.0891910595600756
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.15941395628774901,
+    "D_delivery_deficiency": 0.034796687530506146,
+    "N_residual": 0.08980023638249574,
+    "total_apriori_to_measured": 0.18400669384600263
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym2500_g2_equilibrium_819200_v1",
+   "deposit": "ym2500",
+   "rung": "ym2500",
+   "grid": "G2c",
+   "model": "equilibrium",
+   "time": 360.0,
+   "ym_median": 0.25,
+   "averaging_window": [
+    134.99013,
+    360.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.6419306001947458,
+     "relative_rms": 0.5818821210101139,
+     "sign_accuracy": 0.890869140625,
+     "interval_relative_rms": {
+      "median": 0.5957510311221516,
+      "lo": 0.38259202307589435,
+      "hi": 1.029113679812382
+     }
+    },
+    "request_les_input": {
+     "r2": 0.6460772899659292,
+     "relative_rms": 0.57850301195882,
+     "sign_accuracy": 0.81640625,
+     "interval_relative_rms": {
+      "median": 0.5928958200976977,
+      "lo": 0.34278415336818635,
+      "hi": 1.1020059440098955
+     }
+    },
+    "delivered": {
+     "r2": 0.634401023275346,
+     "relative_rms": 0.5879682768041674,
+     "sign_accuracy": 0.815185546875,
+     "interval_relative_rms": {
+      "median": 0.6028617436164625,
+      "lo": 0.32994773273932887,
+      "hi": 1.1415541693160236
+     }
+    },
+    "measured": {
+     "r2": 0.6632528460486282,
+     "relative_rms": 0.5642913278939776,
+     "sign_accuracy": 0.802490234375,
+     "interval_relative_rms": {
+      "median": 0.579682604602018,
+      "lo": 0.33954892970350353,
+      "hi": 1.077573225970859
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.1544012970211551,
+    "D_delivery_deficiency": 0.034409702814621516,
+    "N_residual": 0.08992669814239444,
+    "total_apriori_to_measured": 0.17827834360644929
+   }
+  },
+  {
+   "case": "rswm_r23m6_ym2500_g2_equilibrium_819200_v1",
+   "deposit": "ym2500",
+   "rung": "ym2500",
+   "grid": "G2c",
+   "model": "equilibrium",
+   "time": 315.0,
+   "ym_median": 0.25,
+   "averaging_window": [
+    134.99013,
+    315.0
+   ],
+   "scores": {
+    "apriori_dns_input": {
+     "r2": 0.6419306001947458,
+     "relative_rms": 0.5818821210101139,
+     "sign_accuracy": 0.890869140625,
+     "interval_relative_rms": {
+      "median": 0.5957510311221516,
+      "lo": 0.38259202307589435,
+      "hi": 1.029113679812382
+     }
+    },
+    "request_les_input": {
+     "r2": 0.6377562782080302,
+     "relative_rms": 0.5852640424633581,
+     "sign_accuracy": 0.817626953125,
+     "interval_relative_rms": {
+      "median": 0.5998504909636857,
+      "lo": 0.33958430280885343,
+      "hi": 1.1158140433176416
+     }
+    },
+    "delivered": {
+     "r2": 0.6244686738811541,
+     "relative_rms": 0.5959015217753165,
+     "sign_accuracy": 0.816650390625,
+     "interval_relative_rms": {
+      "median": 0.6100408833593818,
+      "lo": 0.3274807884422481,
+      "hi": 1.1581385734213974
+     }
+    },
+    "measured": {
+     "r2": 0.6541789763334601,
+     "relative_rms": 0.5718433895404059,
+     "sign_accuracy": 0.802490234375,
+     "interval_relative_rms": {
+      "median": 0.5870935523019316,
+      "lo": 0.33678777938574256,
+      "hi": 1.0944201447009279
+     }
+    }
+   },
+   "pinned_reducer_max_deviation_over_rms": 0.0,
+   "gaps_over_measured_rms": {
+    "I_input_transfer": 0.1621609233566381,
+    "D_delivery_deficiency": 0.03445148368102769,
+    "N_residual": 0.0897602577839601,
+    "total_apriori_to_measured": 0.1865368464607655
+   }
+  }
+ ]
+}

@@ -1,0 +1,232 @@
+{
+  "benchmark": {
+    "checksum": 0.832108043387657,
+    "initial_us": 80298.6588,
+    "local_us": 37.676261
+  },
+  "branch_cases": {
+    "job14888767": {
+      "continued_span": 6.591595506281939e-25,
+      "distinct_counts": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "homotopy_span": 8.673617379884035e-19,
+      "root_counts": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "job14888771": {
+      "continued_span": 1.5121895573235037e-24,
+      "distinct_counts": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "homotopy_span": 2.3418766925686896e-17,
+      "root_counts": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "job14888773": {
+      "continued_span": 2.261821987449685e-25,
+      "distinct_counts": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "homotopy_span": 6.938893903907228e-18,
+      "root_counts": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "job14888778": {
+      "continued_span": 5.816113682013476e-25,
+      "distinct_counts": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "homotopy_span": 1.2468324983583301e-17,
+      "root_counts": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    }
+  },
+  "checks": {
+    "all_branch_fixture_rows_pass": true,
+    "applied_projection_rebuild": true,
+    "continued_branch_invariant": true,
+    "default_v2_v3_bit_identity": true,
+    "fatal_records_are_complete_ambiguities": true,
+    "foundation_and_esi_compile": true,
+    "four_cases_five_scan_scales": true,
+    "four_live_fail_closed_jobs": true,
+    "homotopy_branch_invariant": true,
+    "live_census_and_realizability_telemetry": true,
+    "live_kernel_fixture_and_face_census": true,
+    "nonfinite_path_is_explicit_failure": true,
+    "scheduler_states_failed_nonzero": true,
+    "single_shared_v3_call_site": true,
+    "standalone_initial_and_local_cost_recorded": true,
+    "two_live_openfoam_pilots": true
+  },
+  "fatal_jobs": [
+    {
+      "ambiguous": 1,
+      "branch_loss": 0,
+      "case": "r2m4_L1_resolvedConvectionConstant_153600_v1",
+      "elapsed": "00:12:16",
+      "exit_code": "15:0",
+      "finite": 1,
+      "job": "14888773",
+      "job_name": "r2m4L1xk",
+      "model": "resolvedConvectionConstant",
+      "nodes": 1,
+      "path": "codes/results/m5_live_failure_evidence/r2m4_L1_resolvedConvectionConstant_153600_v1.log.pimpleFoam",
+      "roots": 3,
+      "sha256": "8ba8d90b719b3abf918a257f598b66199aaea4ecdfc673a1cc3f49a1dd6c0f63",
+      "state": "FAILED",
+      "truncated": 0
+    },
+    {
+      "ambiguous": 1,
+      "branch_loss": 0,
+      "case": "r2m4_L2_hickel_327680_v1",
+      "elapsed": "00:24:49",
+      "exit_code": "15:0",
+      "finite": 1,
+      "job": "14888778",
+      "job_name": "r2m4L2m2",
+      "model": "hickel",
+      "nodes": 2,
+      "path": "codes/results/m5_live_failure_evidence/r2m4_L2_hickel_327680_v1.log.pimpleFoam",
+      "roots": 3,
+      "sha256": "291414c2c495d42d3b3d71e515a45bd2ac32e9aba6527964f19f5c458d0de277",
+      "state": "FAILED",
+      "truncated": 0
+    },
+    {
+      "ambiguous": 1,
+      "branch_loss": 0,
+      "case": "r2m4_L1_hickel_153600_v1",
+      "elapsed": "00:56:32",
+      "exit_code": "15:0",
+      "finite": 1,
+      "job": "14888771",
+      "job_name": "r2m4L1m2",
+      "model": "hickel",
+      "nodes": 1,
+      "path": "codes/results/m5_live_failure_evidence/r2m4_L1_hickel_153600_v1.log.pimpleFoam",
+      "roots": 3,
+      "sha256": "5c9f08065888a15b47e895a8013f7df4e35f2e24300a8a7c871af277e9f95475",
+      "state": "FAILED",
+      "truncated": 0
+    },
+    {
+      "ambiguous": 1,
+      "branch_loss": 0,
+      "case": "r2m4_L1_totalGradient_153600_v1",
+      "elapsed": "01:12:48",
+      "exit_code": "15:0",
+      "finite": 1,
+      "job": "14888767",
+      "job_name": "r2m4L1m1",
+      "model": "totalGradient",
+      "nodes": 1,
+      "path": "codes/results/m5_live_failure_evidence/r2m4_L1_totalGradient_153600_v1.log.pimpleFoam",
+      "roots": 3,
+      "sha256": "58b91478e00f41a28b804dbcf53ecac6af2cb36519fbc9bd3d0c961e6a5bc755",
+      "state": "FAILED",
+      "truncated": 0
+    }
+  ],
+  "interpretation": "The v1 boundary condition failed closed on four finite three-root states. V3 merges duplicate representations of the zero-stress branch and preserves the production-width v2 result bit for bit, while an adaptive census makes pressure-homotopy and previous-time selection invariant to scan multipliers 2--32.",
+  "pilots": [
+    {
+      "census_audits": 2,
+      "census_max_roots": null,
+      "census_max_velocity_residual": null,
+      "census_records": 0,
+      "face_records": 9600,
+      "homotopy_steps_unique": [
+        33
+      ],
+      "kernel_fixture_ok": true,
+      "max_roots_first_solve": 3,
+      "path": "codes/results/r2m4_ladder_campaign/r2m4_pilot_hickel_L1_v2/log.pimpleFoam",
+      "projection_max_abs_error": {
+        "appliedTau": 0.0,
+        "appliedTractionMag": 0.0,
+        "nut": 0.0,
+        "rawNut": 0.0,
+        "upperNut": 0.0
+      },
+      "realizability_records": 4,
+      "sha256": "5cabdc26375500bb7f781cc4bf4c79d3d45e5c4e580551107c156470de784f4a"
+    },
+    {
+      "census_audits": 2,
+      "census_max_roots": null,
+      "census_max_velocity_residual": null,
+      "census_records": 0,
+      "face_records": 9600,
+      "homotopy_steps_unique": [
+        33
+      ],
+      "kernel_fixture_ok": true,
+      "max_roots_first_solve": 3,
+      "path": "codes/results/r2m4_ladder_campaign/r2m4_pilot_resolvedConvectionLinear_L1_v2/log.pimpleFoam",
+      "projection_max_abs_error": {
+        "appliedTau": 0.0,
+        "appliedTractionMag": 0.0,
+        "nut": 0.0,
+        "rawNut": 0.0,
+        "upperNut": 0.0
+      },
+      "realizability_records": 4,
+      "sha256": "314f315566f7587355bf2311294201c714fdbd133b8e82f011ec989b00d27c1d"
+    }
+  ],
+  "scales": [
+    2.0,
+    4.0,
+    8.0,
+    16.0,
+    32.0
+  ],
+  "schema": "wall-model-branch-policy-m5-v1",
+  "source_hashes": {
+    "codes/openfoam/ladderWallModels_v3/ladderTbleNutFvPatchScalarField.C": "8372cfecbe568130ec3dd2ea49857f7fe65d85c171ca37f1c64507bb2ec1c5cb",
+    "codes/openfoam/ladderWallModels_v3/ladderTbleShootScaleInvariant.H": "bdad64b1da815f8316080b708e19c1bc00839a8d8c9f0df6b3e6c23ffd761243",
+    "codes/openfoam/ladderWallModels_v3/registeredMeanVelocityForceCompat.C": "6ad3d582dc3f5160a8af84b3becabc5f27c940ec2c080f88d6ceda0333af1797",
+    "codes/openfoam/verify_wall_model_branch_policy_m5.cpp": "a8c1540fcb8b33b27aee9f7ad9d39430dc12095c94633101fcc71d86dfc6ef4a",
+    "codes/results/m5_portability_compile_20260823.txt": "764b150840c501ff91d11e5634acdde332ff5292a2627bb5d14900dcbf95c8ee"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,120 @@
+{
+ "generated": "2026-08-24T17:19:56",
+ "n_records": 1,
+ "records": [
+  {
+   "case": "rswm_r23m6_ym0300_g1_tble_307200_v1",
+   "model": "total_gradient_tble",
+   "time": 405.0,
+   "nu": 0.0001785714,
+   "drive_gradient": {
+    "mean": 0.012387359404757884,
+    "std": 0.0012050649292253603,
+    "n_steps": 28416,
+    "last": 0.013335678,
+    "mean_all_correctors": 0.012388768856552646,
+    "window": [
+     135.0,
+     405.0
+    ]
+   },
+   "patch": "bottomWall",
+   "n_faces": 4800,
+   "ym_median": 0.03,
+   "ym_min": 0.016841464273978663,
+   "ym_max": 0.03,
+   "regime_fraction": {
+    "faithful": 0.0,
+    "alignment_capped": 0.47708333333333336,
+    "sign_refused": 0.5229166666666667
+   },
+   "identity_faithful_fraction": 0.0,
+   "sign_disagreement_request_vs_deliver": 0.18125,
+   "rms_request": 0.003978568536748595,
+   "rms_deliver": 0.004072769822876606,
+   "rms_measured": 0.003845587518698657,
+   "delivery_attenuation": -0.02367718068896063,
+   "contraction_bound_violations": 0,
+   "reconstruction_residual_rms_over_measured": 0.08967215076076533,
+   "kernel": {
+    "converged": 1.0,
+    "finite": 1.0,
+    "multiroot": 0,
+    "max_driver_vs_python": 0.0
+   },
+   "spalding_iteration": null,
+   "metrics_request": {
+    "r2": -3.391562654266667,
+    "relative_rms": 2.0377971506680694,
+    "sign_accuracy": 0.82568359375,
+    "separation_x_over_H": 0.7887423666147236,
+    "reattachment_x_over_H": 5.21904919765227,
+    "interval_relative_rms": {
+     "median": 2.0230256685132266,
+     "lo": 1.0248209954512975,
+     "hi": 2.2616182467945394
+    }
+   },
+   "metrics_deliver": {
+    "r2": -3.3973381243355947,
+    "relative_rms": 2.03913669315029,
+    "sign_accuracy": 0.9921875,
+    "separation_x_over_H": 0.3362521848146937,
+    "reattachment_x_over_H": 4.500402835285472,
+    "interval_relative_rms": {
+     "median": 2.0253055424577786,
+     "lo": 0.9558931030452017,
+     "hi": 2.259729442069943
+    }
+   },
+   "metrics_measured": {
+    "r2": -2.6896757624028886,
+    "relative_rms": 1.8678651133265396,
+    "sign_accuracy": 0.97900390625,
+    "separation_x_over_H": 0.313488188446006,
+    "reattachment_x_over_H": 4.595329680738672,
+    "interval_relative_rms": {
+     "median": 1.860341487254905,
+     "lo": 0.9233026108928081,
+     "hi": 2.0724038045088875
+    }
+   },
+   "bridge": {
+    "delivery_deficiency_rms_over_measured": 0.2505781754499287,
+    "averaging_residual_rms_over_measured": 0.08691459592785483,
+    "total_request_to_measured_rms_over_measured": 0.26889374387555653,
+    "delivery_share_of_total": 0.9318854795145243
+   }
+  }
+ ],
+ "truth": {
+  "file": "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz",
+  "sha256": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85",
+  "audit": {
+   "derived_vs_legacy_x_relative_rms": 0.12117878531462528,
+   "legacy_definition": "nu*dU/dy, first four fluid points",
+   "tangent_definition": "nu*dU_t/dn from the same four points and independent analytic Xiao tangent",
+   "period_over_H": 9.0
+  }
+ },
+ "provenance": {
+  "tble_header_sha256": {
+   "rswm_r23m6_ym0300_g1_tble_307200_v1": "69edf4b532ca612fb8a735b338dc24d69de880dd97908fa8c3468848a5f1ff56"
+  },
+  "kernel_driver_sha256": "572319b0064d241cc89e1910c22f38ec5fc51564c0496acd2d02924093a9171d",
+  "spalding_source_sha256": "659e71adada3fa2e5c8dc57f1e2412ce3f482494f62cadfc3b717b5739ac283e",
+  "operator_module_sha256": "bbdb0e6cdbadaaf9f07ca5b71a87636070012f40001eb378334a7a82b5c37807",
+  "l2_reducer_sha256": "74f8106d4156f0c49a5ad26ce9e21fc6aa0ba1d19e71c3726ea98eb5fc9b6573",
+  "l3_analyser_sha256": "44640f3e7b4a4a378e8be1bb7fc9c6a14b06fde9aad4b0fa8b93778790c24738"
+ },
+ "protocol": {
+  "developed_state": "OpenFOAM fieldAverage over [135, t]; the wall model is evaluated on that mean field",
+  "kernel_branch": "first-solve branch (hasPrevious=false): homotopy from the zero-pressure-gradient root, i.e. the same cold evaluation the a-priori ladder uses",
+  "metric": "pinned rswm_common_surface_grid_l2.metrics",
+  "bootstrap": {
+   "block_points": 512,
+   "draws": 2000,
+   "seed": 20260824
+  }
+ }
+}

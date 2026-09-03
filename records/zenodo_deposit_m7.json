@@ -1,0 +1,15 @@
+{
+ "deposition_id": 22069527,
+ "reserved_doi": "10.5281/zenodo.22069527",
+ "bucket": "https://zenodo.org/api/files/8582b781-8c6e-4556-bf59-a8661c598908",
+ "html": "https://zenodo.org/deposit/22069527",
+ "created": "2026-08-23T14:26:07.947768+00:00",
+ "access_right": "open",
+ "embargo_date": null,
+ "state": "done",
+ "published": "2026-09-03",
+ "doi_url": "https://doi.org/10.5281/zenodo.22069527",
+ "conceptdoi": "10.5281/zenodo.22069526",
+ "record_html": "https://zenodo.org/record/22069527",
+ "license": "cc-by-4.0"
+}

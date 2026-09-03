@@ -1,0 +1,240 @@
+{
+  "all_pass": true,
+  "clear_stations": [
+    2.0,
+    4.05,
+    6.0
+  ],
+  "crest_height": 2.036,
+  "gate": 0.03,
+  "max_abs_deviation": 6.543694972005465e-05,
+  "max_station_spread": 9.117005020742308e-05,
+  "median_abs_deviation": 3.757913119428746e-05,
+  "method": "full-span section integral of the retained 3-D time-averaged velocity, by OpenFOAM surfaceFieldValue/areaIntegrate; u_b,crest = Q_x/(h_crest L_z), h_crest=2.036H, L_z=4.5H",
+  "n_cases": 13,
+  "n_pass": 13,
+  "records": [
+    {
+      "abs_deviation": 3.801935530811651e-05,
+      "case": "rswm_r23m6_ym0300_g1_equilibrium_307200_v1",
+      "crest_bulk_full_span": 0.9999619806446919,
+      "gate": 0.03,
+      "n_clear_stations": 3,
+      "n_stations": 5,
+      "outcome": "PASS",
+      "per_station": {
+        "0.05": 0.9996119406243177,
+        "2.00": 0.9999301135123335,
+        "4.05": 0.9999979043876882,
+        "6.00": 0.9999579240340537,
+        "8.00": 0.9935352106526959
+      },
+      "station_spread": 6.779087535468964e-05
+    },
+    {
+      "abs_deviation": 6.077639525592371e-05,
+      "case": "rswm_r23m6_ym0300_g1_tble_307200_v1",
+      "crest_bulk_full_span": 0.9999392236047441,
+      "gate": 0.03,
+      "n_clear_stations": 3,
+      "n_stations": 5,
+      "outcome": "PASS",
+      "per_station": {
+        "0.05": 0.9995696900240121,
+        "2.00": 0.9998983409735864,
+        "4.05": 0.9999483409735864,
+        "6.00": 0.9999709888670595,
+        "8.00": 0.9935250491159134
+      },
+      "station_spread": 7.264789347305456e-05
+    },
+    {
+      "abs_deviation": 1.200611220442127e-07,
+      "case": "rswm_r23m6_ym0300_g2_equilibrium_819200_v1",
+      "crest_bulk_full_span": 0.999999879938878,
+      "gate": 0.03,
+      "n_clear_stations": 3,
+      "n_stations": 5,
+      "outcome": "PASS",
+      "per_station": {
+        "0.05": 0.9997022375027286,
+        "2.00": 1.0000423270028376,
+        "4.05": 0.9999781488757913,
+        "6.00": 0.9999791639380047,
+        "8.00": 1.0041461907880374
+      },
+      "station_spread": 6.417812704628822e-05
+    },
+    {
+      "abs_deviation": 1.0696354506567474e-06,
+      "case": "rswm_r23m6_ym0300_g2_tble_819200_v1",
+      "crest_bulk_full_span": 1.0000010696354507,
+      "gate": 0.03,
+      "n_clear_stations": 3,
+      "n_stations": 5,
+      "outcome": "PASS",
+      "per_station": {
+        "0.05": 0.9996995634141016,
+        "2.00": 1.0000257476533507,
+        "4.05": 1.0000013534162846,
+        "6.00": 0.9999761078367169,
+        "8.00": 1.0042748853962016
+      },
+      "station_spread": 4.9639816633861855e-05
+    },
+    {
+      "abs_deviation": 2.875281961733922e-05,
+      "case": "rswm_r23m6_ym0600_g1_equilibrium_307200_v1",
+      "crest_bulk_full_span": 0.9999712471803827,
+      "gate": 0.03,
+      "n_clear_stations": 3,
+      "n_stations": 5,
+      "outcome": "PASS",
+      "per_station": {
+        "0.05": 0.9995814996725605,
+        "2.00": 0.9999556756166774,
+        "4.05": 1.0000024339663829,
+        "6.00": 0.9999556319580877,
+        "8.00": 0.9935685985592664
+      },
+      "station_spread": 4.680200829521031e-05
+    },
+    {
+      "abs_deviation": 4.752601324320427e-05,
+      "case": "rswm_r23m6_ym0600_g1_tble_307200_v1",
+      "crest_bulk_full_span": 0.9999524739867568,
+      "gate": 0.03,
+      "n_clear_stations": 3,
+      "n_stations": 5,
+      "outcome": "PASS",
+      "per_station": {
+        "0.05": 0.9995765444226151,
+        "2.00": 0.9999147238594192,
+        "4.05": 0.9999745688714253,
+        "6.00": 0.9999681292294259,
+        "8.00": 0.9935463981663393
+      },
+      "station_spread": 5.9845012006176646e-05
+    },
+    {
+      "abs_deviation": 2.639161755080277e-05,
+      "case": "rswm_r23m6_ym0935_g1_equilibrium_307200_v1",
+      "crest_bulk_full_span": 0.9999736083824492,
+      "gate": 0.03,
+      "n_clear_stations": 3,
+      "n_stations": 5,
+      "outcome": "PASS",
+      "per_station": {
+        "0.05": 0.9996146365422396,
+        "2.00": 0.9999748308229645,
+        "4.05": 0.9999762824710761,
+        "6.00": 0.9999697118533071,
+        "8.00": 0.9936486356690677
+      },
+      "station_spread": 6.570617768986153e-06
+    },
+    {
+      "abs_deviation": 3.6775085498153004e-05,
+      "case": "rswm_r23m6_ym0935_g1_tble_307200_v1",
+      "crest_bulk_full_span": 0.9999632249145018,
+      "gate": 0.03,
+      "n_clear_stations": 3,
+      "n_stations": 5,
+      "outcome": "PASS",
+      "per_station": {
+        "0.05": 0.9996206832569307,
+        "2.00": 0.9999600087317179,
+        "4.05": 0.9999737611875136,
+        "6.00": 0.999955904824274,
+        "8.00": 0.9936228443571272
+      },
+      "station_spread": 1.7856363239587836e-05
+    },
+    {
+      "abs_deviation": 3.757913119428746e-05,
+      "case": "rswm_r23m6_ym1500_g1_equilibrium_307200_v1",
+      "crest_bulk_full_span": 0.9999624208688057,
+      "gate": 0.03,
+      "n_clear_stations": 3,
+      "n_stations": 5,
+      "outcome": "PASS",
+      "per_station": {
+        "0.05": 0.9996420650512988,
+        "2.00": 0.9999312158917265,
+        "4.05": 0.999989969438987,
+        "6.00": 0.9999660772757039,
+        "8.00": 0.9938443352979699
+      },
+      "station_spread": 5.875354726048165e-05
+    },
+    {
+      "abs_deviation": 6.543694972005465e-05,
+      "case": "rswm_r23m6_ym1500_g1_tble_307200_v1",
+      "crest_bulk_full_span": 0.99993456305028,
+      "gate": 0.03,
+      "n_clear_stations": 3,
+      "n_stations": 5,
+      "outcome": "PASS",
+      "per_station": {
+        "0.05": 0.9996536236629556,
+        "2.00": 0.9998789129011132,
+        "4.05": 0.9999546932984062,
+        "6.00": 0.9999700829513206,
+        "8.00": 0.9938110019646365
+      },
+      "station_spread": 9.117005020742308e-05
+    },
+    {
+      "abs_deviation": 4.739139925791225e-05,
+      "case": "rswm_r23m6_ym2500_g1_equilibrium_307200_v1",
+      "crest_bulk_full_span": 0.9999526086007421,
+      "gate": 0.03,
+      "n_clear_stations": 3,
+      "n_stations": 5,
+      "outcome": "PASS",
+      "per_station": {
+        "0.05": 0.9997356472385941,
+        "2.00": 0.9999299497926216,
+        "4.05": 0.9999733900894999,
+        "6.00": 0.9999544859201047,
+        "8.00": 0.9942793167430691
+      },
+      "station_spread": 4.344029687830542e-05
+    },
+    {
+      "abs_deviation": 5.349632540208038e-05,
+      "case": "rswm_r23m6_ym2500_g1_tble_307200_v1",
+      "crest_bulk_full_span": 0.9999465036745979,
+      "gate": 0.03,
+      "n_clear_stations": 3,
+      "n_stations": 5,
+      "outcome": "PASS",
+      "per_station": {
+        "0.05": 0.9997570072036673,
+        "2.00": 0.9999454704213052,
+        "4.05": 0.9999353743724078,
+        "6.00": 0.9999586662300807,
+        "8.00": 0.9942307902204759
+      },
+      "station_spread": 2.329185767291353e-05
+    },
+    {
+      "abs_deviation": 1.5818962380897972e-05,
+      "case": "rswm_r23m6_ym2500_g2_equilibrium_819200_v1",
+      "crest_bulk_full_span": 0.9999841810376191,
+      "gate": 0.03,
+      "n_clear_stations": 3,
+      "n_stations": 5,
+      "outcome": "PASS",
+      "per_station": {
+        "0.05": 0.9996712617332459,
+        "2.00": 0.9999926871862037,
+        "4.05": 0.9999785418030996,
+        "6.00": 0.9999813141235537,
+        "8.00": 1.0042104998908534
+      },
+      "station_spread": 1.4145383104069431e-05
+    }
+  ],
+  "span": 4.5
+}

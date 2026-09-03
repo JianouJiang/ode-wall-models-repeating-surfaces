@@ -1,0 +1,468 @@
+{
+  "run_start_epoch": 1787360830.1,
+  "run_end_epoch": 1787361360.4,
+  "total_seconds": 530.3,
+  "clean": false,
+  "python": "3.10.12",
+  "omp_num_threads": "2",
+  "n_steps": 28,
+  "step_timings": [
+    {
+      "label": "manifest (single source of truth)",
+      "script": "codes/manifest.py",
+      "seconds": 0.06
+    },
+    {
+      "label": "corrected pehill wall profiles (G2)",
+      "script": "codes/analysis/build_corrected_pehill_profiles.py",
+      "seconds": 2.44
+    },
+    {
+      "label": "periodic-hills benchmark (corrected)",
+      "script": "codes/analysis/pehill_5case_corrected.py",
+      "seconds": 12.33
+    },
+    {
+      "label": "surface-aware core ODE results",
+      "script": "codes/analysis/build_surface_aware_core_ode_results.py",
+      "seconds": 30.14
+    },
+    {
+      "label": "wall-model numerical verification (M5)",
+      "script": "codes/analysis/wall_model_numerics_l1.py",
+      "seconds": 48.44
+    },
+    {
+      "label": "direct-force adequacy certificate (M9)",
+      "script": "codes/analysis/direct_force_adequacy_certificate_l1.py",
+      "seconds": 62.61
+    },
+    {
+      "label": "public VF-WMLES benchmark reproduction",
+      "script": "codes/analysis/hausmann_vfwmles_reproduction_l1.py",
+      "seconds": 0.31
+    },
+    {
+      "label": "momentum budget: periodic hills",
+      "script": "codes/analysis/momentum_budget_pehill.py",
+      "seconds": 0.95
+    },
+    {
+      "label": "wall-following conservation certificate (WP1)",
+      "script": "codes/analysis/da_budget.py",
+      "seconds": 18.81
+    },
+    {
+      "label": "momentum budget: core benchmark",
+      "script": "codes/analysis/momentum_budget_all_geometries.py",
+      "seconds": 0.9
+    },
+    {
+      "label": "validity criterion (was crashing)",
+      "script": "codes/analysis/criterion_evaluation.py",
+      "seconds": 0.94
+    },
+    {
+      "label": "repeating-structure geometry",
+      "script": "codes/analysis/repeating_structure_geometry.py",
+      "seconds": 0.16
+    },
+    {
+      "label": "cancellation parameter (extended)",
+      "script": "codes/figures/plot_cancellation_parameter_extended.py",
+      "seconds": 7.43
+    },
+    {
+      "label": "repeating-structure contrast",
+      "script": "codes/analysis/repeating_structure_contrast.py",
+      "seconds": 0.99
+    },
+    {
+      "label": "extended ODE evaluation",
+      "script": "codes/new_data_download/evaluate_new_datasets.py",
+      "seconds": 0.92
+    },
+    {
+      "label": "geometry-driven Table 2 (read-only)",
+      "script": "codes/analysis/evaluate_geometry_driven.py",
+      "seconds": 0.6
+    },
+    {
+      "label": "dose-response law (Xiao 29-case)",
+      "script": "codes/analysis/dose_response_xiao.py",
+      "seconds": 86.04
+    },
+    {
+      "label": "dose-response closure sensitivity",
+      "script": "codes/analysis/dose_response_closure_sensitivity.py",
+      "seconds": 222.16
+    },
+    {
+      "label": "dose-response figure",
+      "script": "codes/figures/plot_dose_response.py",
+      "seconds": 3.04
+    },
+    {
+      "label": "wall-extraction artifact (G2)",
+      "script": "codes/analysis/verify_wall_extraction.py",
+      "seconds": 1.22
+    },
+    {
+      "label": "cancellation parameter (corrected)",
+      "script": "codes/figures/plot_cancellation_parameter_corrected.py",
+      "seconds": 9.5
+    },
+    {
+      "label": "DNS-stress diagnostic (corrected, G3)",
+      "script": "codes/analysis/diagnostic_test_corrected.py",
+      "seconds": 3.63
+    },
+    {
+      "label": "headline-number reconciliation",
+      "script": "codes/analysis/reconcile_headline_numbers.py",
+      "seconds": 0.2
+    },
+    {
+      "label": "compiled manuscript build and page gate",
+      "script": "codes/analysis/build_manuscript_pipeline.py",
+      "seconds": 1.14
+    },
+    {
+      "label": "reference-fidelity/RANS-claim guard (M8)",
+      "script": "codes/analysis/resolve_m8_rans_claims.py",
+      "seconds": 0.63
+    },
+    {
+      "label": "active-manuscript number audit (M15)",
+      "script": "codes/analysis/reconcile_active_manuscript_numbers_m15.py",
+      "seconds": 0.61
+    },
+    {
+      "label": "headline uncertainty certificate (M1)",
+      "script": "codes/analysis/headline_uncertainty_m1.py",
+      "seconds": 9.56
+    },
+    {
+      "label": "legacy-headline leak guard",
+      "script": "codes/analysis/guard_no_legacy_headline.py",
+      "seconds": 4.41
+    }
+  ],
+  "n_artifacts": 39,
+  "all_artifacts_present": true,
+  "all_artifacts_written_in_run_window": true,
+  "artifacts": [
+    {
+      "artifact": "results/dataset_manifest.json",
+      "exists": true,
+      "size_bytes": 10375,
+      "mtime": 1787360830.2,
+      "sha256": "9a4beba13a8863a3a9b59a9e9d0cb28bd0dce1db0fd429cf7d9c39c8e2710a47",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/core_ode_results_surface_aware.npz",
+      "exists": true,
+      "size_bytes": 162200,
+      "mtime": 1787360875.1,
+      "sha256": "ad5f1ee6651dfef669536d1387cf0bd569d566b38745df1dc123a819c7c08f34",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/momentum_budget_pehill.npz",
+      "exists": true,
+      "size_bytes": 13072692,
+      "mtime": 1787360987.4,
+      "sha256": "12ff9aa25e55d771ccf9ac5db194a3837be5762b113f872f8ba0ae3f5c7b50c2",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/wall_following_budget_certificate_l1.npz",
+      "exists": true,
+      "size_bytes": 1137598,
+      "mtime": 1787361002.4,
+      "sha256": "570e72aeb0764b67ac13dd2a964712931bc8f2f7a86fb809c31c326270124c95",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/wavelength_integral_certificate_l1.npz",
+      "exists": true,
+      "size_bytes": 11868,
+      "mtime": 1787361002.4,
+      "sha256": "dd55caa75990b12390281b4c32e95be673cf3e45568121669a15ab78b4f622cb",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/pressure_impulse_approximation_l1.npz",
+      "exists": true,
+      "size_bytes": 413540,
+      "mtime": 1787361002.4,
+      "sha256": "e95a4d4d60106b67c549a4b4294f28c2c2335181f96bad7f51cd395b32373b4d",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/matching_plane_stress_l1.npz",
+      "exists": true,
+      "size_bytes": 2507532,
+      "mtime": 1787361002.4,
+      "sha256": "1d1aa99ce8362d6a791fd5f40f37e5c929c679785969548d261c08b6754d439c",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/legacy_stress_column_audit_l1.npz",
+      "exists": true,
+      "size_bytes": 10116,
+      "mtime": 1787361002.4,
+      "sha256": "9e56ce078fb5ee2d9b5527d64e1235a6fcbd60670e70cd7e7dbbcde4a30c70d3",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/term_dictionary_l1.json",
+      "exists": true,
+      "size_bytes": 819,
+      "mtime": 1787361002.4,
+      "sha256": "a92241fea991d756964b2c486cf514df5825dc0c3030c3096b29b44317ccdc9a",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/wall_following_budget_l1_summary.json",
+      "exists": true,
+      "size_bytes": 2052,
+      "mtime": 1787361002.4,
+      "sha256": "c66eb0323f34a42adaed1dc448d478cc0ccb2fcaad06b8fa66ca584d158cded4",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/wall_model_numerics_l1.npz",
+      "exists": true,
+      "size_bytes": 399452,
+      "mtime": 1787360921.2,
+      "sha256": "f3fe1e8ce7d737f9d66ff1fce3a1dcd4beed1513bc1f3fa2f5dd191b1a0bf15d",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/wall_model_numerics_l1_summary.json",
+      "exists": true,
+      "size_bytes": 6075,
+      "mtime": 1787360923.3,
+      "sha256": "a7ba3f1d8173f8651139f4d93a5ad0ebde7d3ecf201ca806e26ab2d9c6198744",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/fig_wall_model_numerics_l1.pdf",
+      "exists": true,
+      "size_bytes": 24429,
+      "mtime": 1787360922.7,
+      "sha256": "41ae36f66ff37888a551fa43c038a9d99bda62ffe67712bee8d18a163e9394aa",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/fig_wall_model_numerics_l1.png",
+      "exists": true,
+      "size_bytes": 147916,
+      "mtime": 1787360923.3,
+      "sha256": "c9de7b4ba401b29a052b601ce9233a49e88591fbb331bee3ba683098fd8349b0",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/direct_force_adequacy_certificate_l1.json",
+      "exists": true,
+      "size_bytes": 13401,
+      "mtime": 1787360986.1,
+      "sha256": "ea74f74203ea82d1c11147c1c3a2d13430c524516500acf383868e757f4e5a9e",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/direct_force_adequacy_certificate_l1.npz",
+      "exists": true,
+      "size_bytes": 18048,
+      "mtime": 1787360986.1,
+      "sha256": "07220522972d1abd3a5333be8b22bd42824c0af1b9ec4e9a27876d711f8bbce9",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/hausmann_vfwmles_reproduction_l1.json",
+      "exists": true,
+      "size_bytes": 3763,
+      "mtime": 1787360986.5,
+      "sha256": "4da96ca5fa36edcff99d072cb90029ed6b7e7e58655a75422f66358b1db3fbc9",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/hausmann_vfwmles_reproduction_l1.npz",
+      "exists": true,
+      "size_bytes": 36898,
+      "mtime": 1787360986.5,
+      "sha256": "4a5dc6b0a2904a4d0f9993a1b8182777312929cc687d5db8cd4596b79a4516ef",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/momentum_budget_all_geometries.npz",
+      "exists": true,
+      "size_bytes": 46209,
+      "mtime": 1787361007.1,
+      "sha256": "930babca1757227377260ad00b151336c786989b0fd4eb80d0cb1c397a7eae72",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/criterion_evaluation.npz",
+      "exists": true,
+      "size_bytes": 24828,
+      "mtime": 1787361008.0,
+      "sha256": "1ce09530878dbc22e3c281f114fae703df63237a915b5cde7252ac8b2984cd64",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/repeating_structure_geometry.npz",
+      "exists": true,
+      "size_bytes": 3802,
+      "mtime": 1787361008.2,
+      "sha256": "17c6d2b7a0cf054c98cc9b92d863e2881d5b4e94366d93ba1a55d656fd116cd5",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/repeating_structure_contrast.npz",
+      "exists": true,
+      "size_bytes": 8242,
+      "mtime": 1787361016.6,
+      "sha256": "a90ade92a8eb222dd6dccdbdfc2e7367a1172b0cdebc817d15b73054d96649da",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "new_data_download/new_dataset_ode_results.npz",
+      "exists": true,
+      "size_bytes": 16426,
+      "mtime": 1787361017.5,
+      "sha256": "c37959bcb51da6940c281f701d39fa8f8f8328a598b2ea02b2e40e04f3356e26",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/geometry_driven_table2.npz",
+      "exists": true,
+      "size_bytes": 13070,
+      "mtime": 1787361018.1,
+      "sha256": "ae81728170bdfcd8073cfcfca7eea284e9215ece15677c81c98a5f2be3163320",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/cancellation_parameter_extended.npz",
+      "exists": true,
+      "size_bytes": 21513,
+      "mtime": 1787361015.4,
+      "sha256": "a8cde1537e3008cc3097d6d076b852eb743ae8bb7850bb23b0f67c010bf46377",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/dose_response_xiao.npz",
+      "exists": true,
+      "size_bytes": 22139,
+      "mtime": 1787361104.2,
+      "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/dose_response_closure_sensitivity.npz",
+      "exists": true,
+      "size_bytes": 5992,
+      "mtime": 1787361326.3,
+      "sha256": "f0ee2a70cdd2589858e4f128e27c51e86edfbf9ea5bc9bdf0c88c8593cae37c1",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/wall_extraction_artifact.npz",
+      "exists": true,
+      "size_bytes": 3238,
+      "mtime": 1787361330.6,
+      "sha256": "865a6427fb586c37923ea3b172b3f828b079a9633988551c334dfee48889f1ab",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/cancellation_parameter_corrected.npz",
+      "exists": true,
+      "size_bytes": 22153,
+      "mtime": 1787361339.9,
+      "sha256": "6c25147e70cd2e855d840163e0f1c9991dd38df985945a40bbf5fa5670e85ccb",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "exists": true,
+      "size_bytes": 4239856,
+      "mtime": 1787360832.6,
+      "sha256": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/pehill_5case_corrected.npz",
+      "exists": true,
+      "size_bytes": 8952,
+      "mtime": 1787360844.9,
+      "sha256": "f6d9fed8a5f2b9fd8a5472cffef93e016df19993f672bd4caa3bb7c297a17534",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/diagnostic_test_corrected.npz",
+      "exists": true,
+      "size_bytes": 24554,
+      "mtime": 1787361343.7,
+      "sha256": "7a1cb8861005a9a1b6205b94868c8179bb46f7275f9ac419b9f6781c5fb80973",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/headline_number_reconciliation.json",
+      "exists": true,
+      "size_bytes": 1757,
+      "mtime": 1787361344.0,
+      "sha256": "4a2eeb4d47f77b0d926d5ee28a9a4b7829a9f2547dd87bc3307e407d0175db36",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "../manuscript/main.pdf",
+      "exists": true,
+      "size_bytes": 835365,
+      "mtime": 1787361344.8,
+      "sha256": "044cdbb238706ad18e2a103bb1258e4f32fd99b0695a2fb04b1f33a2123069ca",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/rans_claim_removal_m8.json",
+      "exists": true,
+      "size_bytes": 1582,
+      "mtime": 1787361345.7,
+      "sha256": "ca95a8da39d30ab8e22572b33e15256c96166a74f57a9e7b399a785de1b44e37",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/active_manuscript_number_reconciliation_m15.json",
+      "exists": true,
+      "size_bytes": 4464,
+      "mtime": 1787361346.4,
+      "sha256": "94642f4b4bfbf788d4363d5b1540932f8538dd82f38d80955dca8966db4ac656",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/headline_uncertainty_m1.json",
+      "exists": true,
+      "size_bytes": 7386,
+      "mtime": 1787361355.8,
+      "sha256": "bba62e067c391b6cba2516714b4c4958575dd90a825c05802ff9f3a915a09372",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/headline_uncertainty_m1.npz",
+      "exists": true,
+      "size_bytes": 304613,
+      "mtime": 1787361355.9,
+      "sha256": "bd1ef321c95e7dbef663f2f3f83b653446132421f6a46661dd2d422b1104ac91",
+      "written_in_run_window": true
+    },
+    {
+      "artifact": "results/legacy_headline_guard.json",
+      "exists": true,
+      "size_bytes": 578,
+      "mtime": 1787361360.3,
+      "sha256": "0f254a458e0ec7b75d8f6e73b69028284ad1042b07371dda90b5db304080f851",
+      "written_in_run_window": true
+    }
+  ]
+}

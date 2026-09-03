@@ -1,0 +1,34 @@
+{
+  "canonical": {
+    "case": "periodic_hills_case_1p0",
+    "extraction": "hill_surface_aware",
+    "matching_index": 10,
+    "metric": "R2_tau_w",
+    "source_artifact": "results/periodic_hills_case_1p0_wall_profiles_corrected.npz",
+    "source_sha256": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85",
+    "status": "canonical_for_JCP",
+    "value": -47.68617253416459
+  },
+  "independent_reproductions": {
+    "core_ode_results_surface_aware": -47.68617253416459,
+    "criterion_evaluation": -47.68617253416459,
+    "diagnostic_test_corrected": -47.68617253416459,
+    "pehill_5case_corrected": -47.68617253416459
+  },
+  "live_artifact_hashes": {
+    "results/core_ode_results_surface_aware.npz": "ad5f1ee6651dfef669536d1387cf0bd569d566b38745df1dc123a819c7c08f34",
+    "results/criterion_evaluation.npz": "1ce09530878dbc22e3c281f114fae703df63237a915b5cde7252ac8b2984cd64",
+    "results/diagnostic_test_corrected.npz": "7a1cb8861005a9a1b6205b94868c8179bb46f7275f9ac419b9f6781c5fb80973",
+    "results/pehill_5case_corrected.npz": "f6d9fed8a5f2b9fd8a5472cffef93e016df19993f672bd4caa3bb7c297a17534",
+    "results/periodic_hills_case_1p0_wall_profiles_corrected.npz": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85",
+    "results/wall_extraction_artifact.npz": "865a6427fb586c37923ea3b172b3f828b079a9633988551c334dfee48889f1ab"
+  },
+  "schema": "wp0-headline-number-reconciliation-v1",
+  "superseded": {
+    "documentation_sha256": "865a6427fb586c37923ea3b172b3f828b079a9633988551c334dfee48889f1ab",
+    "documented_by": "results/wall_extraction_artifact.npz",
+    "extraction": "global_y_zero_wall_pinning",
+    "status": "historical_artifact_only_not_for_manuscript_or_figures",
+    "value": -4740061.847403673
+  }
+}

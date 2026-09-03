@@ -1,0 +1,74 @@
+{
+  "schema": "source-operator-benchmarks-r1sci2-v1",
+  "status": "PASS",
+  "purpose": "Output-bearing source benchmarks; matched-operator causal instruments are excluded and remain in the R2-m4 ladder.",
+  "source_module": "codes/models/source_faithful_wall_models.py",
+  "source_module_sha256": "4b21ff7110c464de87ca95bf5ef01ef3f277a76c3b7f0384071b0f10b1a8a7c9",
+  "operators": {
+    "hickel_2013": {
+      "source": "Hickel et al. (2013), equations (3)--(4)",
+      "closure_coefficient_a_plus": 17.0,
+      "inputs": {
+        "u_m": 0.8756951500042462,
+        "y_m": 0.03,
+        "nu": 1e-05,
+        "dp_ds": 0.04
+      },
+      "tau_exact": 0.003,
+      "tau_computed": 0.0030000000000005443,
+      "velocity_residual": 8.926193117986259e-14,
+      "root_count": 1,
+      "wrong_a_plus_tau": 0.002427139322276958
+    },
+    "yang_2015": {
+      "source": "Yang et al. (2015), doi:10.1063/1.4908072, equations (20)--(22)",
+      "branch": "fully rough high-Re profile/moment solve",
+      "inputs": {
+        "u_les": 5.0,
+        "delta_y": 1.0,
+        "roughness_length": 0.01,
+        "moment_rate": 0.05
+      },
+      "equilibrium_tau": 0.18861169701161393,
+      "equilibrium_log_tau": 0.18861169701161387,
+      "tau_computed": 0.1783834877236448,
+      "u_tau": 0.4223546942128675,
+      "linear_coefficient": 0.3287530399115615,
+      "matching_residual": 0.0,
+      "momentum_residual": -2.8449465006019636e-16,
+      "positive_root_count": 2,
+      "forbidden_shortcut": "no supplied tau_matching input"
+    },
+    "park_moin_2014": {
+      "source": "Park and Moin (2014), doi:10.1063/1.4861069, equations (2), (5), (9)",
+      "numerics": "backward Euler; second-order wall-normal diffusion; no-slip molecular traction",
+      "dynamic_mu_star": 0.5,
+      "dynamic_mu": 0.3894230769230769,
+      "inputs": {
+        "nu": 0.1,
+        "dt": 0.4,
+        "convective_term": 0.3,
+        "pressure_gradient": 0.5,
+        "volume_force": 2.8
+      },
+      "tau_exact": 0.9999999999999999,
+      "tau_computed": 1.0000000000000766,
+      "linear_residual": 1.8252066524837574e-13,
+      "drop_convection_tau": 1.0590673525717376,
+      "wrong_pressure_sign_tau": 1.1968911752386988
+    }
+  },
+  "checks": {
+    "hickel_a_plus_is_17": true,
+    "hickel_recovers_manufactured_traction": true,
+    "hickel_wrong_a_plus_fixture_moves_output": true,
+    "yang_equilibrium_reduces_to_log_law": true,
+    "yang_profile_matches_les_velocity": true,
+    "yang_nonequilibrium_closes_both_equations": true,
+    "park_dynamic_coefficient_is_finite": true,
+    "park_wall_layer_linear_solve_closes": true,
+    "park_returns_exact_quadratic_wall_traction": true,
+    "park_drop_convection_fixture_moves_output": true,
+    "park_pressure_sign_fixture_moves_output": true
+  }
+}

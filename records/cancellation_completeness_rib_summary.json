@@ -1,0 +1,32 @@
+{
+  "geometry": "square-rib duct, d-type (p/k~0.6), wall-resolved LES (WALE)",
+  "fidelity": "OpenFOAM wall-resolved LES, NOT DNS",
+  "closure": "A_ml_vandriest",
+  "converged": true,
+  "les_time": "139.99984127",
+  "n_stations": 48,
+  "eps_median": 0.5210734345944655,
+  "C_all": {
+    "n": 48,
+    "median": 0.27683345123215997,
+    "mean": 0.7181443480662332,
+    "cv": 2.789558377096429,
+    "q25": 0.20379819736061072,
+    "q75": 0.4816651392411281
+  },
+  "C_failband_eps_lt_1": {
+    "n": 37,
+    "median": 0.26560006353099397,
+    "mean": 0.27556268752697904,
+    "cv": 0.49485181336760464,
+    "q25": 0.20073716879720957,
+    "q75": 0.30122373411823794
+  },
+  "hill_reference": {
+    "C_median_eps_lt_1": 0.303,
+    "C_cv_eps_lt_1": 0.278,
+    "n": 504,
+    "source": "cancellation_completeness_summary.json (periodic-hill family)"
+  },
+  "reading": "C(x)=relErr*eps on the SHARP rib lands on the hills' O(0.3) near-constant in the failure band eps<1; the dispersion (cv) is wider than the smooth-hill value but still <1, so the constant is shape-agnostic with honestly looser scatter on the sharp geometry."
+}

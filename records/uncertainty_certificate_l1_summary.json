@@ -1,0 +1,204 @@
+{
+  "bootstrap_replicates": 5000,
+  "canonical_hill": {
+    "epsilon_all_retained": 0.07902971569448164,
+    "epsilon_all_retained_ci": [
+      0.02737626111114569,
+      0.1306831702778176
+    ],
+    "epsilon_pressure_only": 0.13759875632516333,
+    "epsilon_pressure_only_ci": [
+      0.04372899403828258,
+      0.2314685186120441
+    ],
+    "legacy_tau_m_over_pressure_2p00_status": "superseded: rms_files1 column 5 is pressure variance, not uv; documented uv is rms_files2 column 2",
+    "pressure_protocol": "exact_raw_pressure_integral_common_eta_over_H_0p10",
+    "tau_m_over_pressure": 0.7348760760932258,
+    "tau_m_over_pressure_ci": [
+      0.4819173152403205,
+      0.9878348369461312
+    ],
+    "tau_m_over_tau_w": 4.872091423091882,
+    "tau_m_over_tau_w_ci": [
+      1.7092664336957224,
+      8.034916412488041
+    ]
+  },
+  "confidence_percent": 95.0,
+  "deterministic_envelopes": {
+    "budget_closure_rms_min_max": [
+      0.00036388149323010377,
+      0.0004636010576927152
+    ],
+    "budget_operator_count": 32,
+    "equilibrium_bubble_abs_cf": [
+      0.002616224822801005,
+      0.002528112266740931,
+      0.0025596288661220595,
+      0.002569622732801152
+    ],
+    "equilibrium_last_window_drift": {
+      "bubble_abs_cf_fraction": 0.0039044202116041765,
+      "reattachment_H": 0.03638797910714775
+    },
+    "equilibrium_reattachment": [
+      3.5730616864274163,
+      3.530130181408539,
+      3.5440008131795797,
+      3.5803887922867275
+    ],
+    "equilibrium_window_end": [
+      225.0,
+      315.0,
+      360.0,
+      405.0
+    ],
+    "matching_surface_over_H": [
+      0.4,
+      0.5,
+      0.6,
+      0.75,
+      0.9
+    ],
+    "matching_surface_wall_force_rms_from_median": [
+      0.00011814750231451976,
+      5.2031917340028514e-05,
+      1.743645703505355e-05,
+      9.731666137654456e-05,
+      0.00016777210479578956
+    ],
+    "nonlinear_multi_root_indices": [
+      723
+    ],
+    "nonlinear_multi_root_station_count": 1,
+    "plain_vs_continued_branch_abs_traction": [
+      0.0032214826974600102
+    ],
+    "tble_bubble_abs_cf": [
+      0.0023483595240335543,
+      0.002381253062000049,
+      0.002406875110693627
+    ],
+    "tble_last_window_drift": {
+      "bubble_abs_cf_fraction": 0.010759901625935465,
+      "reattachment_H": 0.0395120528420243
+    },
+    "tble_reattachment": [
+      3.4949529044656664,
+      3.5162702329777993,
+      3.476758180135775
+    ],
+    "tble_window_end": [
+      315.0,
+      360.0,
+      405.0
+    ],
+    "wall_grid_points": [
+      50,
+      100,
+      200,
+      400,
+      500,
+      800,
+      1600,
+      3200,
+      6400
+    ],
+    "wall_grid_rms_error": [
+      1.0592462650336759e-05,
+      2.658299120892157e-06,
+      7.355524920556303e-07,
+      1.5190608808036057e-07,
+      9.855372898304541e-08,
+      4.2198531656552223e-08,
+      1.0092080532086182e-08,
+      1.912423777643659e-09,
+      0.0
+    ],
+    "wall_tolerance_rms_error": [
+      9.935102145857441e-08,
+      6.934876369258602e-10,
+      5.846815727413668e-12,
+      6.546178032865715e-14,
+      0.0
+    ],
+    "wall_tolerances": [
+      1e-06,
+      1e-08,
+      1e-10,
+      1e-12,
+      1e-14
+    ]
+  },
+  "family_cluster_ci_high": [
+    35.68946769341664,
+    1.114096046098489,
+    39.938463450877684,
+    1.0092531199123427
+  ],
+  "family_cluster_ci_low": [
+    4.89496225527356,
+    0.9603433483356706,
+    4.114757978616148,
+    0.7943311397419742
+  ],
+  "family_cluster_median": [
+    14.847604641407889,
+    1.0106494362031349,
+    14.808252628261737,
+    0.9576863508053404
+  ],
+  "family_cluster_simultaneous_ci_high": [
+    144.06515173287573,
+    1.13799173316961,
+    137.43763085608865,
+    1.0841045236663696
+  ],
+  "family_cluster_simultaneous_ci_low": [
+    0.0,
+    0.8833071392366596,
+    0.0,
+    0.8312681779443112
+  ],
+  "family_cluster_simultaneous_critical": 1.808433646798408,
+  "idea": "nested family/block/operator uncertainty certificate",
+  "matching_index": 10,
+  "n_cases": 18,
+  "n_independent_families": 10,
+  "schema": "uncertainty-certificate-l1-v1",
+  "seed": 20260821,
+  "simultaneous_critical_value_18_cases_4_statistics": 6.79202578940786,
+  "sources": {
+    "budget": {
+      "path": "codes/results/wall_following_budget_certificate_l1.npz",
+      "sha256": "570e72aeb0764b67ac13dd2a964712931bc8f2f7a86fb809c31c326270124c95"
+    },
+    "exact_pressure": {
+      "path": "codes/results/exact_pressure_traction_512.npz",
+      "sha256": "c44a3c1f364549637caef3109ee83928742be5f527a89409a4494e4573848e55"
+    },
+    "metrics": {
+      "path": "codes/results/signed_wall_error_metrics_m2.npz",
+      "sha256": "c12d04ac9872b4cc60ff92bfa4ded8f1a4a97fdde613b8f25ec2d2b5270f311d"
+    },
+    "numerics": {
+      "path": "codes/results/wall_model_numerics_l1.npz",
+      "sha256": "f3fe1e8ce7d737f9d66ff1fce3a1dcd4beed1513bc1f3fa2f5dd191b1a0bf15d"
+    }
+  },
+  "statistics": [
+    "median_abs_tau_m_over_abs_pressure",
+    "median_abs_tau_m_over_abs_tau_w",
+    "median_epsilon_pressure_only",
+    "median_epsilon_all_retained_tractions"
+  ],
+  "status": "PASS",
+  "uncertainty_semantics": {
+    "casewise_confidence_interval": "circular station-block sampling of the median reconstruction operator",
+    "casewise_simultaneous_rule": "95th percentile of the maximum studentised deviation over the registered 18-case by four-statistic table",
+    "cross_family_confidence_interval": "physical-family outer cluster, case within family, then circular-block draw",
+    "cross_family_simultaneous_rule": "95th percentile of the maximum studentised deviation over four family-weighted statistics",
+    "deterministic_envelope": "differentiation operator, matching surface, wall-normal grid, nonlinear branch, root tolerance and averaging-window sensitivity"
+  },
+  "xiao_members_outer_units": 1
+}

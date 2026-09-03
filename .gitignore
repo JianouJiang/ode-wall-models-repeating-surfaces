@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+
+# Bulk data are NOT redistributed here; stage them from the Zenodo deposit.
+codes/results/
+codes/raw_data/
+codes/new_data_download/
+codes/vendor/
+*.npz
+*.dat
+processor*/

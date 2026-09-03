@@ -1,0 +1,89 @@
+{
+  "question": "Is the 12% rib-vs-hill completeness gap sampling noise or a systematic geometry-dependent offset (B-L3-1)?",
+  "hill": {
+    "n": 504,
+    "median": 0.30341310375019537,
+    "cv": 0.27791174870742336,
+    "iqr": [
+      0.27812674287440553,
+      0.3507023134038122
+    ],
+    "source": "periodic-hill family, cancellation_completeness.npz"
+  },
+  "rib": {
+    "n": 37,
+    "median": 0.26560006353099397,
+    "cv": 0.49485181336760464,
+    "iqr": [
+      0.20073716879720957,
+      0.30122373411823794
+    ],
+    "source": "sharp square-rib WRLES, cancellation_completeness_rib.npz"
+  },
+  "gap": {
+    "delta_abs": 0.0378130402192014,
+    "rel_shift": 0.12462560038386955
+  },
+  "autocorrelation": {
+    "hill": {
+      "lag1": 0.8244094895352901,
+      "tau_int": 41.254916518555504,
+      "n_eff": 12.216725727061222,
+      "block_len": 42
+    },
+    "rib": {
+      "lag1": 0.6546365021189644,
+      "tau_int": 2.906548126289001,
+      "n_eff": 12.729876951062414,
+      "block_len": 3
+    },
+    "note": "both pools have effective n ~ 12-13; corrected symmetrically (B-L4-1)"
+  },
+  "bootstrap": {
+    "seed": 20260610,
+    "replicates": 20000,
+    "method": "symmetric moving-block (both hill and rib); i.i.d. kept as reference",
+    "hill_median_ci_iid": [
+      0.2948468268700045,
+      0.3118841067444441
+    ],
+    "hill_median_ci_block": [
+      0.28291583818033206,
+      0.3466085714587699
+    ],
+    "rib_median_ci_iid": [
+      0.2360910942575614,
+      0.28653820055199364
+    ],
+    "rib_median_ci_block": [
+      0.20481854021507778,
+      0.28872028694212254
+    ],
+    "delta_ci_iid": [
+      0.017039291414105873,
+      0.06717576325282451
+    ],
+    "delta_ci_block": [
+      0.002606165425157354,
+      0.10620902238169885
+    ],
+    "delta_ci_block_99": [
+      -0.00957117042724503,
+      0.13060420032307637
+    ],
+    "delta_p_iid": 0.0013000000000000789,
+    "delta_p_block": 0.03380000000000005
+  },
+  "mann_whitney_u": {
+    "U": 12285.0,
+    "p": 0.0012561303035481272
+  },
+  "overlap": {
+    "frac_rib_in_hill_iqr": 0.24324324324324326,
+    "rib_median_in_hill_iqr": false,
+    "cliffs_delta": 0.31756756756756754
+  },
+  "verdict": "SMALL, RESOLVED-AT-95%-but-THRESHOLD-SENSITIVE systematic geometry-dependent offset: the SYMMETRIC block-block bootstrap (both pools corrected for autocorrelation, effective n ~ 12-13) gives a 95% CI on Delta that still excludes zero (~[0.002,0.105], p~0.036), so the sharp rib sits ~10-12% below the smooth-hill constant -- a modest offset, NOT exact equality. BUT the 99% CI includes zero, so the resolution is sensitive to the confidence threshold. Both medians remain O(0.30), an order of magnitude above the closure floor beta=0.06; shape-agnosticism holds at the mechanism / order-of-magnitude level whether or not the 12% offset is judged resolved -- not as identical prefactors.",
+  "resolved_under_block_bootstrap_95": true,
+  "resolved_under_block_bootstrap_99": false
+}

@@ -1,0 +1,47 @@
+{
+  "idea": "An affine-exact physical-face coarse-graining preserves signed wall force and its first moment under resolution change, while a scalar surrogate-wall traction loses the wall-normal force moment even when given the exact net streamwise force.",
+  "certificate_2d_abs_residual": 0.0,
+  "certificate_3d_abs_residual": 0.0,
+  "cube_pressure_max_abs_residual": 1.3877787807814457e-16,
+  "physical_face_manufactured_max_abs_residual": 1.3877787807814457e-16,
+  "deposition_row_sum_max_abs_error": 4.929390229335695e-14,
+  "deposition_coordinate_max_abs_error": 2.6978419498391304e-14,
+  "deposition_m0_relative_error_max": 3.7104627570376816e-15,
+  "deposition_m1_relative_error_max": 3.096729268846609e-15,
+  "deposition_phase_relative_errors": [
+    0.4766979174705435,
+    0.48322262703615076,
+    0.4871760453018548
+  ],
+  "deposition_negative_nonzero_weight_fraction": 0.25319284802043424,
+  "deposition_max_weight_l1": 3.7820332025775487,
+  "deposition_max_constraint_condition": 3773.8054361765685,
+  "scalar_oracle_streamwise_net_force_abs_error": 0.0,
+  "scalar_oracle_wall_normal_streamwise_moment_loss": 0.08628141725673032,
+  "thin_layer_reynolds_streamwise_fraction_min": 0.2633676919811546,
+  "thin_layer_reynolds_streamwise_fraction_max": 0.48437950279237546,
+  "thin_layer_viscous_streamwise_to_normal_min": 0.3038134736662933,
+  "thin_layer_viscous_streamwise_to_normal_max": 0.483083848817734,
+  "thin_layer_heights_over_H": [
+    0.05,
+    0.075,
+    0.1,
+    0.15,
+    0.2,
+    0.3
+  ],
+  "thin_layer_fourier_modes": [
+    96,
+    128,
+    192,
+    256,
+    320,
+    -1
+  ],
+  "source_hashes": {
+    "mean_files.dat": "19988c5933527ffbddd7b52cd89b982dec6589295d730da24c7713e52bb3b075",
+    "rms_files1.dat": "1a0416edb11d8cd814ebdbfa01e9f54c5862b15b667f45051fc178f8b98a8fe8",
+    "rms_files2.dat": "b9522832924064aa8f10d3b460cf42d6fb4b2eff95a3c71168c2418ee825f753"
+  },
+  "status": "PASS"
+}

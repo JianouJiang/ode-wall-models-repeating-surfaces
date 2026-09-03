@@ -1,0 +1,1574 @@
+{
+  "apriori_source": "codes/results/r2m4_apriori_ladder_20260823.json",
+  "apriori_verdict_ladder_L1": "INCONCLUSIVE",
+  "bracket_reference": "C_xiao_cubic6_repaired",
+  "cases": {
+    "L1:equilibrium": {
+      "Ubar_volume": 0.721044918040774,
+      "average_start": 135.0,
+      "case_id": "r2m4_L1_equilibrium_153600_v1",
+      "cells": 153600,
+      "checks": {
+        "courant_bounded": true,
+        "mass_flow_matched": true,
+        "reached_405": true
+      },
+      "driver_sha256": "fcc759e77b4221f4597f007e3c2668c1056bcbb0f28b33cff8167572c2d23454",
+      "external_source": null,
+      "grid": "L1",
+      "ladder_kernel_sha256": "1dd17038d5312a0966c348a6a78089b85cd28219b6912b3b29f1969e451b6a9b",
+      "latest_time": 405.0,
+      "matching_height_over_H": {
+        "max": 0.093532182,
+        "median": 0.093532182,
+        "min": 0.052555332059128976
+      },
+      "metrics": {
+        "correlation": 0.727688914638198,
+        "r2": 0.44966387678947806,
+        "reattachment_x_over_H": 2.978299294544797,
+        "relative_rms": 0.735457992015219,
+        "relative_rms_interval": {
+          "high": 1.9589841813967195,
+          "low": 0.5791277178160241,
+          "median": 0.7535786526343737
+        },
+        "separation_x_over_H": 0.6123761899015313,
+        "sign_accuracy": 0.671630859375,
+        "signed_force_ratio": 2.934390845596999,
+        "signed_tangent_force_per_span": 0.013784196588729461,
+        "truth_reattachment_x_over_H": 5.142943693333334,
+        "truth_separation_x_over_H": 0.18066292458175814
+      },
+      "metrics_by_reference": {
+        "A_xiao_linear4_deposited": {
+          "correlation": 0.9050418393405771,
+          "r2": -0.5797492324418645,
+          "relative_rms": 1.222209018107894,
+          "relative_rms_interval": {
+            "high": 2.0642353165296563,
+            "low": 0.7420398380957081,
+            "median": 1.2270223309936796
+          },
+          "sign_accuracy": 0.80810546875,
+          "signed_force_ratio": 4.576762680698017,
+          "truth_reattachment_x_over_H": 4.473418642039499,
+          "truth_separation_x_over_H": 0.3786521727161055
+        },
+        "B_mglet_deposited": {
+          "correlation": 0.727688914638198,
+          "r2": 0.44966387678947806,
+          "relative_rms": 0.735457992015219,
+          "relative_rms_interval": {
+            "high": 1.9589841813967195,
+            "low": 0.5791277178160241,
+            "median": 0.7535786526343737
+          },
+          "sign_accuracy": 0.671630859375,
+          "signed_force_ratio": 2.934390845596999,
+          "truth_reattachment_x_over_H": 5.142943693333334,
+          "truth_separation_x_over_H": 0.18066292458175814
+        },
+        "C_xiao_cubic6_repaired": {
+          "correlation": 0.7073739786710207,
+          "r2": 0.17144847829167154,
+          "relative_rms": 0.9051686730777504,
+          "relative_rms_interval": {
+            "high": 2.219220902185549,
+            "low": 0.5099781223298213,
+            "median": 0.9347240534689981
+          },
+          "sign_accuracy": 0.71728515625,
+          "signed_force_ratio": 5.82075726021421,
+          "truth_reattachment_x_over_H": 4.722256722599092,
+          "truth_separation_x_over_H": 0.18269698806333354
+        }
+      },
+      "model": "equilibrium",
+      "nodes": 1,
+      "producer_job_id": "14888764",
+      "result_dir": "codes/results/r2m4_ladder_campaign/r2m4_L1_equilibrium_153600_v1",
+      "sample_sha256": "97fab5d17f80effdd3f70bdc166b2440975c42911351c94ec963e0dd00e06253",
+      "solver_wall_seconds": 2159,
+      "tangent_source": "mesh (deposit protocol)",
+      "telemetry": {
+        "bottom_clipped_fraction_window": null,
+        "bottom_convection_over_pressure_impulse_window": null,
+        "max_courant": 0.50228662,
+        "time_steps": 40507,
+        "ubar_final": 0.72104495,
+        "ubar_window_mean": 0.7210449142145802
+      }
+    },
+    "L1:hickel": {
+      "Ubar_volume": 0.721044918040774,
+      "average_start": 135.0,
+      "case_id": "r2m4_L1_hickel_153600_v2",
+      "cells": 153600,
+      "checks": {
+        "courant_bounded": true,
+        "mass_flow_matched": true,
+        "reached_405": true
+      },
+      "driver_sha256": "501a53b80f25077bd1bea1b26d52a17f47ef0ee02013cb69319f50a10d496cea",
+      "external_source": null,
+      "grid": "L1",
+      "ladder_kernel_sha256": "6d182aa836fdeb1c018b2adce5ac288ae9a644a4c2cbb70e3c130ccc476a89e7",
+      "latest_time": 405.0,
+      "matching_height_over_H": {
+        "max": 0.093532182,
+        "median": 0.093532182,
+        "min": 0.052555332059128976
+      },
+      "metrics": {
+        "correlation": 0.9424329656864344,
+        "r2": 0.8031219200880149,
+        "reattachment_x_over_H": 3.36558044730514,
+        "relative_rms": 0.4398884349965478,
+        "relative_rms_interval": {
+          "high": 1.3574160764772591,
+          "low": 0.3215693373687107,
+          "median": 0.4515477792691619
+        },
+        "separation_x_over_H": 0.5661696687517528,
+        "sign_accuracy": 0.7197265625,
+        "signed_force_ratio": 2.578874893494623,
+        "signed_tangent_force_per_span": 0.012722394478420485,
+        "truth_reattachment_x_over_H": 5.142943693333334,
+        "truth_separation_x_over_H": 0.18066292458175814
+      },
+      "metrics_by_reference": {
+        "A_xiao_linear4_deposited": {
+          "correlation": 0.9505896922171144,
+          "r2": -0.9245719912104078,
+          "relative_rms": 1.3490203090884358,
+          "relative_rms_interval": {
+            "high": 1.4769235781094248,
+            "low": 0.7866726555239503,
+            "median": 1.3399670087048947
+          },
+          "sign_accuracy": 0.856201171875,
+          "signed_force_ratio": 4.022265264508066,
+          "truth_reattachment_x_over_H": 4.473418642039499,
+          "truth_separation_x_over_H": 0.3786521727161055
+        },
+        "B_mglet_deposited": {
+          "correlation": 0.9424329656864344,
+          "r2": 0.8031219200880149,
+          "relative_rms": 0.4398884349965478,
+          "relative_rms_interval": {
+            "high": 1.3574160764772591,
+            "low": 0.3215693373687107,
+            "median": 0.4515477792691619
+          },
+          "sign_accuracy": 0.7197265625,
+          "signed_force_ratio": 2.578874893494623,
+          "truth_reattachment_x_over_H": 5.142943693333334,
+          "truth_separation_x_over_H": 0.18066292458175814
+        },
+        "C_xiao_cubic6_repaired": {
+          "correlation": 0.9198190060566539,
+          "r2": 0.5894895582124471,
+          "relative_rms": 0.6371355818378097,
+          "relative_rms_interval": {
+            "high": 1.460528276955289,
+            "low": 0.4592632176166319,
+            "median": 0.6548670226057685
+          },
+          "sign_accuracy": 0.765380859375,
+          "signed_force_ratio": 5.115543753149557,
+          "truth_reattachment_x_over_H": 4.722256722599092,
+          "truth_separation_x_over_H": 0.18269698806333354
+        }
+      },
+      "model": "hickel",
+      "nodes": 1,
+      "producer_job_id": "14890530",
+      "result_dir": "codes/results/r2m4_ladder_campaign/r2m4_L1_hickel_153600_v2",
+      "sample_sha256": "c65fecd3583433791a59425c707aa72cbd1250858208c1288cb0c07f5fa0aa35",
+      "solver_wall_seconds": 11278,
+      "tangent_source": "mesh (deposit protocol)",
+      "telemetry": {
+        "bottom_clipped_fraction_window": 1.0,
+        "bottom_convection_over_pressure_impulse_window": 0.0,
+        "max_courant": 0.50210223,
+        "time_steps": 40507,
+        "ubar_final": 0.72104491,
+        "ubar_window_mean": 0.7210449134848298
+      }
+    },
+    "L1:resolvedConvectionConstant": {
+      "Ubar_volume": 0.721044918040774,
+      "average_start": 135.0,
+      "case_id": "r2m4_L1_resolvedConvectionConstant_153600_v2",
+      "cells": 153600,
+      "checks": {
+        "courant_bounded": true,
+        "mass_flow_matched": true,
+        "reached_405": true
+      },
+      "driver_sha256": "501a53b80f25077bd1bea1b26d52a17f47ef0ee02013cb69319f50a10d496cea",
+      "external_source": null,
+      "grid": "L1",
+      "ladder_kernel_sha256": "6d182aa836fdeb1c018b2adce5ac288ae9a644a4c2cbb70e3c130ccc476a89e7",
+      "latest_time": 405.0,
+      "matching_height_over_H": {
+        "max": 0.093532182,
+        "median": 0.093532182,
+        "min": 0.052555332059128976
+      },
+      "metrics": {
+        "correlation": 0.9360678677653526,
+        "r2": 0.2769284257214223,
+        "reattachment_x_over_H": 3.131195076416659,
+        "relative_rms": 0.8430134543481186,
+        "relative_rms_interval": {
+          "high": 2.482878159466212,
+          "low": 0.6855401175739885,
+          "median": 0.85416080902414
+        },
+        "separation_x_over_H": 0.48511288262945523,
+        "sign_accuracy": 0.702880859375,
+        "signed_force_ratio": 5.099485984733241,
+        "signed_tangent_force_per_span": 0.025283444945011266,
+        "truth_reattachment_x_over_H": 5.142943693333334,
+        "truth_separation_x_over_H": 0.18066292458175814
+      },
+      "metrics_by_reference": {
+        "A_xiao_linear4_deposited": {
+          "correlation": 0.8640580181882486,
+          "r2": -13.286575458164286,
+          "relative_rms": 3.6754919594855195,
+          "relative_rms_interval": {
+            "high": 4.275581138205545,
+            "low": 1.7764878883473458,
+            "median": 3.6321322183963636
+          },
+          "sign_accuracy": 0.83935546875,
+          "signed_force_ratio": 7.953656610089835,
+          "truth_reattachment_x_over_H": 4.473418642039499,
+          "truth_separation_x_over_H": 0.3786521727161055
+        },
+        "B_mglet_deposited": {
+          "correlation": 0.9360678677653526,
+          "r2": 0.2769284257214223,
+          "relative_rms": 0.8430134543481186,
+          "relative_rms_interval": {
+            "high": 2.482878159466212,
+            "low": 0.6855401175739885,
+            "median": 0.85416080902414
+          },
+          "sign_accuracy": 0.702880859375,
+          "signed_force_ratio": 5.099485984733241,
+          "truth_reattachment_x_over_H": 5.142943693333334,
+          "truth_separation_x_over_H": 0.18066292458175814
+        },
+        "C_xiao_cubic6_repaired": {
+          "correlation": 0.9339832098715392,
+          "r2": -2.1326001057532094,
+          "relative_rms": 1.7600387701670985,
+          "relative_rms_interval": {
+            "high": 2.682607665781137,
+            "low": 1.346155842569941,
+            "median": 1.7637756738868013
+          },
+          "sign_accuracy": 0.74853515625,
+          "signed_force_ratio": 10.115513450955328,
+          "truth_reattachment_x_over_H": 4.722256722599092,
+          "truth_separation_x_over_H": 0.18269698806333354
+        }
+      },
+      "model": "resolvedConvectionConstant",
+      "nodes": 1,
+      "producer_job_id": "14889616",
+      "result_dir": "codes/results/r2m4_ladder_campaign/r2m4_L1_resolvedConvectionConstant_153600_v2",
+      "sample_sha256": "f810d19fa1a50377167616a8a607866da39aef0dfe70e43ffaf40149787a0c76",
+      "solver_wall_seconds": 10410,
+      "tangent_source": "mesh (deposit protocol)",
+      "telemetry": {
+        "bottom_clipped_fraction_window": 1.0,
+        "bottom_convection_over_pressure_impulse_window": 1.0219423282080393,
+        "max_courant": 0.50198368,
+        "time_steps": 40506,
+        "ubar_final": 0.72104484,
+        "ubar_window_mean": 0.7210449117817114
+      }
+    },
+    "L1:resolvedConvectionLinear": {
+      "Ubar_volume": 0.721044918040774,
+      "average_start": 135.0,
+      "case_id": "r2m4_L1_resolvedConvectionLinear_153600_v2",
+      "cells": 153600,
+      "checks": {
+        "courant_bounded": true,
+        "mass_flow_matched": true,
+        "reached_405": true
+      },
+      "driver_sha256": "501a53b80f25077bd1bea1b26d52a17f47ef0ee02013cb69319f50a10d496cea",
+      "external_source": null,
+      "grid": "L1",
+      "ladder_kernel_sha256": "6d182aa836fdeb1c018b2adce5ac288ae9a644a4c2cbb70e3c130ccc476a89e7",
+      "latest_time": 405.0,
+      "matching_height_over_H": {
+        "max": 0.093532182,
+        "median": 0.093532182,
+        "min": 0.052555332059128976
+      },
+      "metrics": {
+        "correlation": 0.9640051133506043,
+        "r2": 0.5933906638223616,
+        "reattachment_x_over_H": 3.6084021961911237,
+        "relative_rms": 0.6321680384706789,
+        "relative_rms_interval": {
+          "high": 1.6341550854279405,
+          "low": 0.5139840162265069,
+          "median": 0.6406862631048582
+        },
+        "separation_x_over_H": 0.4723683443646708,
+        "sign_accuracy": 0.75732421875,
+        "signed_force_ratio": 3.8912389626265385,
+        "signed_tangent_force_per_span": 0.019853768168374475,
+        "truth_reattachment_x_over_H": 5.142943693333334,
+        "truth_separation_x_over_H": 0.18066292458175814
+      },
+      "metrics_by_reference": {
+        "A_xiao_linear4_deposited": {
+          "correlation": 0.9001654031347888,
+          "r2": -10.063111239320822,
+          "relative_rms": 3.2343725831871124,
+          "relative_rms_interval": {
+            "high": 3.7037163666291306,
+            "low": 1.2787785939877552,
+            "median": 3.1894003578430814
+          },
+          "sign_accuracy": 0.893798828125,
+          "signed_force_ratio": 6.069156497182271,
+          "truth_reattachment_x_over_H": 4.473418642039499,
+          "truth_separation_x_over_H": 0.3786521727161055
+        },
+        "B_mglet_deposited": {
+          "correlation": 0.9640051133506043,
+          "r2": 0.5933906638223616,
+          "relative_rms": 0.6321680384706789,
+          "relative_rms_interval": {
+            "high": 1.6341550854279405,
+            "low": 0.5139840162265069,
+            "median": 0.6406862631048582
+          },
+          "sign_accuracy": 0.75732421875,
+          "signed_force_ratio": 3.8912389626265385,
+          "truth_reattachment_x_over_H": 5.142943693333334,
+          "truth_separation_x_over_H": 0.18066292458175814
+        },
+        "C_xiao_cubic6_repaired": {
+          "correlation": 0.9538691814574314,
+          "r2": -1.2275343581214444,
+          "relative_rms": 1.4841642325906057,
+          "relative_rms_interval": {
+            "high": 1.9185855969120067,
+            "low": 0.8658141341499886,
+            "median": 1.4857108458890744
+          },
+          "sign_accuracy": 0.802978515625,
+          "signed_force_ratio": 7.718793655903981,
+          "truth_reattachment_x_over_H": 4.722256722599092,
+          "truth_separation_x_over_H": 0.18269698806333354
+        }
+      },
+      "model": "resolvedConvectionLinear",
+      "nodes": 1,
+      "producer_job_id": "14899301",
+      "result_dir": "codes/results/r2m4_ladder_campaign/r2m4_L1_resolvedConvectionLinear_153600_v2",
+      "sample_sha256": "a17341584b5279992f2d56d91b857266857b917a68da55bdb6e742c47f065c47",
+      "solver_wall_seconds": 11586,
+      "tangent_source": "mesh (deposit protocol)",
+      "telemetry": {
+        "bottom_clipped_fraction_window": 1.0,
+        "bottom_convection_over_pressure_impulse_window": 0.5439401198095757,
+        "max_courant": 0.50409329,
+        "time_steps": 40507,
+        "ubar_final": 0.72104508,
+        "ubar_window_mean": 0.7210449134635989
+      }
+    },
+    "L1:totalGradient": {
+      "Ubar_volume": 0.721044918040774,
+      "average_start": 135.0,
+      "case_id": "r2m4_L1_totalGradient_153600_v2",
+      "cells": 153600,
+      "checks": {
+        "courant_bounded": true,
+        "mass_flow_matched": true,
+        "reached_405": true
+      },
+      "driver_sha256": "501a53b80f25077bd1bea1b26d52a17f47ef0ee02013cb69319f50a10d496cea",
+      "external_source": null,
+      "grid": "L1",
+      "ladder_kernel_sha256": "6d182aa836fdeb1c018b2adce5ac288ae9a644a4c2cbb70e3c130ccc476a89e7",
+      "latest_time": 405.0,
+      "matching_height_over_H": {
+        "max": 0.093532182,
+        "median": 0.093532182,
+        "min": 0.052555332059128976
+      },
+      "metrics": {
+        "correlation": 0.9684292544107658,
+        "r2": 0.7173816184705928,
+        "reattachment_x_over_H": 3.6340904424831852,
+        "relative_rms": 0.5270405905245343,
+        "relative_rms_interval": {
+          "high": 1.4447049169562733,
+          "low": 0.434238752824043,
+          "median": 0.5335135345395253
+        },
+        "separation_x_over_H": 0.4783495412778025,
+        "sign_accuracy": 0.75927734375,
+        "signed_force_ratio": 3.442637669304434,
+        "signed_tangent_force_per_span": 0.017636971408284043,
+        "truth_reattachment_x_over_H": 5.142943693333334,
+        "truth_separation_x_over_H": 0.18066292458175814
+      },
+      "metrics_by_reference": {
+        "A_xiao_linear4_deposited": {
+          "correlation": 0.9112598463624134,
+          "r2": -8.09663435876316,
+          "relative_rms": 2.9328629994145246,
+          "relative_rms_interval": {
+            "high": 3.326087328389418,
+            "low": 1.1674360171108131,
+            "median": 2.8966453839443718
+          },
+          "sign_accuracy": 0.895751953125,
+          "signed_force_ratio": 5.369474087502533,
+          "truth_reattachment_x_over_H": 4.473418642039499,
+          "truth_separation_x_over_H": 0.3786521727161055
+        },
+        "B_mglet_deposited": {
+          "correlation": 0.9684292544107658,
+          "r2": 0.7173816184705928,
+          "relative_rms": 0.5270405905245343,
+          "relative_rms_interval": {
+            "high": 1.4447049169562733,
+            "low": 0.434238752824043,
+            "median": 0.5335135345395253
+          },
+          "sign_accuracy": 0.75927734375,
+          "signed_force_ratio": 3.442637669304434,
+          "truth_reattachment_x_over_H": 5.142943693333334,
+          "truth_separation_x_over_H": 0.18066292458175814
+        },
+        "C_xiao_cubic6_repaired": {
+          "correlation": 0.9523899497727834,
+          "r2": -0.7610910658610532,
+          "relative_rms": 1.3196557742167359,
+          "relative_rms_interval": {
+            "high": 1.7032659263259353,
+            "low": 0.7907585030434208,
+            "median": 1.322928070191632
+          },
+          "sign_accuracy": 0.804931640625,
+          "signed_force_ratio": 6.828932907134204,
+          "truth_reattachment_x_over_H": 4.722256722599092,
+          "truth_separation_x_over_H": 0.18269698806333354
+        }
+      },
+      "model": "totalGradient",
+      "nodes": 1,
+      "producer_job_id": "14890529",
+      "result_dir": "codes/results/r2m4_ladder_campaign/r2m4_L1_totalGradient_153600_v2",
+      "sample_sha256": "c819be76691769d3d4f48b518befad4f455831aea75610dc6b1ad0a313d40967",
+      "solver_wall_seconds": 12268,
+      "tangent_source": "mesh (deposit protocol)",
+      "telemetry": {
+        "bottom_clipped_fraction_window": 1.0,
+        "bottom_convection_over_pressure_impulse_window": 0.0,
+        "max_courant": 0.50247274,
+        "time_steps": 40507,
+        "ubar_final": 0.72104497,
+        "ubar_window_mean": 0.7210449115654085
+      }
+    },
+    "L2:equilibrium": {
+      "Ubar_volume": 0.721044918040774,
+      "average_start": 135.0,
+      "case_id": "r2m4_L2_equilibrium_327680_v1",
+      "cells": 327680,
+      "checks": {
+        "courant_bounded": true,
+        "mass_flow_matched": true,
+        "reached_405": true
+      },
+      "driver_sha256": "fcc759e77b4221f4597f007e3c2668c1056bcbb0f28b33cff8167572c2d23454",
+      "external_source": null,
+      "grid": "L2",
+      "ladder_kernel_sha256": "1dd17038d5312a0966c348a6a78089b85cd28219b6912b3b29f1969e451b6a9b",
+      "latest_time": 405.0,
+      "matching_height_over_H": {
+        "max": 0.093532182,
+        "median": 0.093532182,
+        "min": 0.05253355844443228
+      },
+      "metrics": {
+        "correlation": 0.7254185136491271,
+        "r2": 0.44343248918305134,
+        "reattachment_x_over_H": 2.9023953738352595,
+        "relative_rms": 0.73961002164254,
+        "relative_rms_interval": {
+          "high": 1.9675702416710923,
+          "low": 0.5856574032862771,
+          "median": 0.7577635455196226
+        },
+        "separation_x_over_H": 0.6236298478867001,
+        "sign_accuracy": 0.661865234375,
+        "signed_force_ratio": 2.950370671826567,
+        "signed_tangent_force_per_span": 0.013846776348592783,
+        "truth_reattachment_x_over_H": 5.142943693333334,
+        "truth_separation_x_over_H": 0.18066292458175814
+      },
+      "metrics_by_reference": {
+        "A_xiao_linear4_deposited": {
+          "correlation": 0.9047249128732677,
+          "r2": -0.5471428887855265,
+          "relative_rms": 1.209529931595279,
+          "relative_rms_interval": {
+            "high": 2.0694031183957935,
+            "low": 0.748664332335828,
+            "median": 1.2185314721479443
+          },
+          "sign_accuracy": 0.79833984375,
+          "signed_force_ratio": 4.601686379066714,
+          "truth_reattachment_x_over_H": 4.473418642039499,
+          "truth_separation_x_over_H": 0.3786521727161055
+        },
+        "B_mglet_deposited": {
+          "correlation": 0.7254185136491271,
+          "r2": 0.44343248918305134,
+          "relative_rms": 0.73961002164254,
+          "relative_rms_interval": {
+            "high": 1.9675702416710923,
+            "low": 0.5856574032862771,
+            "median": 0.7577635455196226
+          },
+          "sign_accuracy": 0.661865234375,
+          "signed_force_ratio": 2.950370671826567,
+          "truth_reattachment_x_over_H": 5.142943693333334,
+          "truth_separation_x_over_H": 0.18066292458175814
+        },
+        "C_xiao_cubic6_repaired": {
+          "correlation": 0.7053680900835422,
+          "r2": 0.17196340479967087,
+          "relative_rms": 0.9048873581738054,
+          "relative_rms_interval": {
+            "high": 2.2242294982671096,
+            "low": 0.5186643416525005,
+            "median": 0.9367011408308432
+          },
+          "sign_accuracy": 0.70751953125,
+          "signed_force_ratio": 5.852455385800407,
+          "truth_reattachment_x_over_H": 4.722256722599092,
+          "truth_separation_x_over_H": 0.18269698806333354
+        }
+      },
+      "model": "equilibrium",
+      "nodes": 2,
+      "producer_job_id": "14888776",
+      "result_dir": "codes/results/r2m4_ladder_campaign/r2m4_L2_equilibrium_327680_v1",
+      "sample_sha256": "850216e3f38babe1e9f9b044f5a1e74182992ab3f504db4a9dd73a99b296c8ab",
+      "solver_wall_seconds": 2801,
+      "tangent_source": "mesh (deposit protocol)",
+      "telemetry": {
+        "bottom_clipped_fraction_window": null,
+        "bottom_convection_over_pressure_impulse_window": null,
+        "max_courant": 0.50681507,
+        "time_steps": 40632,
+        "ubar_final": 0.72104481,
+        "ubar_window_mean": 0.7210449101929512
+      }
+    },
+    "L2:hickel": {
+      "Ubar_volume": 0.721044918040774,
+      "average_start": 135.0,
+      "case_id": "r2m4_L2_hickel_327680_v2",
+      "cells": 327680,
+      "checks": {
+        "courant_bounded": true,
+        "mass_flow_matched": true,
+        "reached_405": true
+      },
+      "driver_sha256": "501a53b80f25077bd1bea1b26d52a17f47ef0ee02013cb69319f50a10d496cea",
+      "external_source": null,
+      "grid": "L2",
+      "ladder_kernel_sha256": "6d182aa836fdeb1c018b2adce5ac288ae9a644a4c2cbb70e3c130ccc476a89e7",
+      "latest_time": 405.0,
+      "matching_height_over_H": {
+        "max": 0.093532182,
+        "median": 0.093532182,
+        "min": 0.05253355844443228
+      },
+      "metrics": {
+        "correlation": 0.9372136113331658,
+        "r2": 0.7953455049584728,
+        "reattachment_x_over_H": 3.2454650011667323,
+        "relative_rms": 0.44849179850068294,
+        "relative_rms_interval": {
+          "high": 1.5045762799415414,
+          "low": 0.3085375153561515,
+          "median": 0.4624051844443388
+        },
+        "separation_x_over_H": 0.5589510067731595,
+        "sign_accuracy": 0.707275390625,
+        "signed_force_ratio": 2.8125276949176037,
+        "signed_tangent_force_per_span": 0.013826515202935132,
+        "truth_reattachment_x_over_H": 5.142943693333334,
+        "truth_separation_x_over_H": 0.18066292458175814
+      },
+      "metrics_by_reference": {
+        "A_xiao_linear4_deposited": {
+          "correlation": 0.9469428605064573,
+          "r2": -1.3346183849898798,
+          "relative_rms": 1.4857965923346554,
+          "relative_rms_interval": {
+            "high": 1.64474757660036,
+            "low": 0.9275622018533786,
+            "median": 1.4793393523176626
+          },
+          "sign_accuracy": 0.84375,
+          "signed_force_ratio": 4.386693003709141,
+          "truth_reattachment_x_over_H": 4.473418642039499,
+          "truth_separation_x_over_H": 0.3786521727161055
+        },
+        "B_mglet_deposited": {
+          "correlation": 0.9372136113331658,
+          "r2": 0.7953455049584728,
+          "relative_rms": 0.44849179850068294,
+          "relative_rms_interval": {
+            "high": 1.5045762799415414,
+            "low": 0.3085375153561515,
+            "median": 0.4624051844443388
+          },
+          "sign_accuracy": 0.707275390625,
+          "signed_force_ratio": 2.8125276949176037,
+          "truth_reattachment_x_over_H": 5.142943693333334,
+          "truth_separation_x_over_H": 0.18066292458175814
+        },
+        "C_xiao_cubic6_repaired": {
+          "correlation": 0.9179591596831165,
+          "r2": 0.5044393841781738,
+          "relative_rms": 0.7000324100580839,
+          "relative_rms_interval": {
+            "high": 1.626406495520528,
+            "low": 0.5151925216497444,
+            "median": 0.7185647159085066
+          },
+          "sign_accuracy": 0.7529296875,
+          "signed_force_ratio": 5.579025379086644,
+          "truth_reattachment_x_over_H": 4.722256722599092,
+          "truth_separation_x_over_H": 0.18269698806333354
+        }
+      },
+      "model": "hickel",
+      "nodes": 2,
+      "producer_job_id": "14893278",
+      "result_dir": "codes/results/r2m4_ladder_campaign/r2m4_L2_hickel_327680_v2",
+      "sample_sha256": "974fe8138405566dbe42f4134dc1d2fdf9b61fde1c109510250e745b80e6be34",
+      "solver_wall_seconds": 14719,
+      "tangent_source": "mesh (deposit protocol)",
+      "telemetry": {
+        "bottom_clipped_fraction_window": 1.0,
+        "bottom_convection_over_pressure_impulse_window": 0.0,
+        "max_courant": 0.5071807159570269,
+        "time_steps": 40622,
+        "ubar_final": 0.7210448653798524,
+        "ubar_window_mean": 0.7210449108546164
+      }
+    },
+    "L2:resolvedConvectionLinear": {
+      "Ubar_volume": 0.721044918040774,
+      "average_start": 135.0,
+      "case_id": "r2m4_L2_resolvedConvectionLinear_327680_v2",
+      "cells": 327680,
+      "checks": {
+        "courant_bounded": true,
+        "mass_flow_matched": true,
+        "reached_405": true
+      },
+      "driver_sha256": "501a53b80f25077bd1bea1b26d52a17f47ef0ee02013cb69319f50a10d496cea",
+      "external_source": null,
+      "grid": "L2",
+      "ladder_kernel_sha256": "6d182aa836fdeb1c018b2adce5ac288ae9a644a4c2cbb70e3c130ccc476a89e7",
+      "latest_time": 405.0,
+      "matching_height_over_H": {
+        "max": 0.093532182,
+        "median": 0.093532182,
+        "min": 0.05253355844443228
+      },
+      "metrics": {
+        "correlation": 0.9582193297321353,
+        "r2": 0.6202213587312602,
+        "reattachment_x_over_H": 3.4261108425288587,
+        "relative_rms": 0.6109548683444277,
+        "relative_rms_interval": {
+          "high": 1.6755749494273862,
+          "low": 0.5019495562925053,
+          "median": 0.6186857236690231
+        },
+        "separation_x_over_H": 0.46018132604635253,
+        "sign_accuracy": 0.73828125,
+        "signed_force_ratio": 3.8803872548841065,
+        "signed_tangent_force_per_span": 0.019669512183094026,
+        "truth_reattachment_x_over_H": 5.142943693333334,
+        "truth_separation_x_over_H": 0.18066292458175814
+      },
+      "metrics_by_reference": {
+        "A_xiao_linear4_deposited": {
+          "correlation": 0.8913612834497827,
+          "r2": -9.266902000204826,
+          "relative_rms": 3.115811067701305,
+          "relative_rms_interval": {
+            "high": 3.567862858045019,
+            "low": 1.265741687202644,
+            "median": 3.0733666958058867
+          },
+          "sign_accuracy": 0.874755859375,
+          "signed_force_ratio": 6.052231113472079,
+          "truth_reattachment_x_over_H": 4.473418642039499,
+          "truth_separation_x_over_H": 0.3786521727161055
+        },
+        "B_mglet_deposited": {
+          "correlation": 0.9582193297321353,
+          "r2": 0.6202213587312602,
+          "relative_rms": 0.6109548683444277,
+          "relative_rms_interval": {
+            "high": 1.6755749494273862,
+            "low": 0.5019495562925053,
+            "median": 0.6186857236690231
+          },
+          "sign_accuracy": 0.73828125,
+          "signed_force_ratio": 3.8803872548841065,
+          "truth_reattachment_x_over_H": 5.142943693333334,
+          "truth_separation_x_over_H": 0.18066292458175814
+        },
+        "C_xiao_cubic6_repaired": {
+          "correlation": 0.9466077928147136,
+          "r2": -1.0572183696859487,
+          "relative_rms": 1.4262969459000805,
+          "relative_rms_interval": {
+            "high": 1.9032304243823466,
+            "low": 0.942670275181349,
+            "median": 1.4294325137756552
+          },
+          "sign_accuracy": 0.783935546875,
+          "signed_force_ratio": 7.697267840172153,
+          "truth_reattachment_x_over_H": 4.722256722599092,
+          "truth_separation_x_over_H": 0.18269698806333354
+        }
+      },
+      "model": "resolvedConvectionLinear",
+      "nodes": 2,
+      "producer_job_id": "14889621",
+      "result_dir": "codes/results/r2m4_ladder_campaign/r2m4_L2_resolvedConvectionLinear_327680_v2",
+      "sample_sha256": "41b630fa338c55cd99f78f1b3225e4a698febe4e5fcb2033e151e40fd84ca68a",
+      "solver_wall_seconds": 13766,
+      "tangent_source": "mesh (deposit protocol)",
+      "telemetry": {
+        "bottom_clipped_fraction_window": 1.0,
+        "bottom_convection_over_pressure_impulse_window": 0.5720000907634692,
+        "max_courant": 0.5079815808175437,
+        "time_steps": 40679,
+        "ubar_final": 0.721044836728123,
+        "ubar_window_mean": 0.7210449091323511
+      }
+    },
+    "L2:totalGradient": {
+      "Ubar_volume": 0.721044918040774,
+      "average_start": 135.0,
+      "case_id": "r2m4_L2_totalGradient_327680_v2",
+      "cells": 327680,
+      "checks": {
+        "courant_bounded": true,
+        "mass_flow_matched": true,
+        "reached_405": true
+      },
+      "driver_sha256": "501a53b80f25077bd1bea1b26d52a17f47ef0ee02013cb69319f50a10d496cea",
+      "external_source": null,
+      "grid": "L2",
+      "ladder_kernel_sha256": "6d182aa836fdeb1c018b2adce5ac288ae9a644a4c2cbb70e3c130ccc476a89e7",
+      "latest_time": 405.0,
+      "matching_height_over_H": {
+        "max": 0.093532182,
+        "median": 0.093532182,
+        "min": 0.05253355844443228
+      },
+      "metrics": {
+        "correlation": 0.9669457023109078,
+        "r2": 0.7083145909078694,
+        "reattachment_x_over_H": 3.757109064997041,
+        "relative_rms": 0.5354281669603841,
+        "relative_rms_interval": {
+          "high": 1.441105182010771,
+          "low": 0.44733090560461874,
+          "median": 0.5423084661734352
+        },
+        "separation_x_over_H": 0.46412606660995626,
+        "sign_accuracy": 0.7744140625,
+        "signed_force_ratio": 3.357070453740735,
+        "signed_tangent_force_per_span": 0.017274395198836265,
+        "truth_reattachment_x_over_H": 5.142943693333334,
+        "truth_separation_x_over_H": 0.18066292458175814
+      },
+      "metrics_by_reference": {
+        "A_xiao_linear4_deposited": {
+          "correlation": 0.9113729842899327,
+          "r2": -8.310637441377093,
+          "relative_rms": 2.9671610205904044,
+          "relative_rms_interval": {
+            "high": 3.3701117472346547,
+            "low": 1.250603547282034,
+            "median": 2.930749274148515
+          },
+          "sign_accuracy": 0.910888671875,
+          "signed_force_ratio": 5.236015097378296,
+          "truth_reattachment_x_over_H": 4.473418642039499,
+          "truth_separation_x_over_H": 0.3786521727161055
+        },
+        "B_mglet_deposited": {
+          "correlation": 0.9669457023109078,
+          "r2": 0.7083145909078694,
+          "relative_rms": 0.5354281669603841,
+          "relative_rms_interval": {
+            "high": 1.441105182010771,
+            "low": 0.44733090560461874,
+            "median": 0.5423084661734352
+          },
+          "sign_accuracy": 0.7744140625,
+          "signed_force_ratio": 3.357070453740735,
+          "truth_reattachment_x_over_H": 5.142943693333334,
+          "truth_separation_x_over_H": 0.18066292458175814
+        },
+        "C_xiao_cubic6_repaired": {
+          "correlation": 0.9550484642558901,
+          "r2": -0.7921622320657873,
+          "relative_rms": 1.3312463064467634,
+          "relative_rms_interval": {
+            "high": 1.702478499969039,
+            "low": 0.7421345543130489,
+            "median": 1.3340513748602052
+          },
+          "sign_accuracy": 0.820068359375,
+          "signed_force_ratio": 6.6591988746088315,
+          "truth_reattachment_x_over_H": 4.722256722599092,
+          "truth_separation_x_over_H": 0.18269698806333354
+        }
+      },
+      "model": "totalGradient",
+      "nodes": 2,
+      "producer_job_id": "14899099",
+      "result_dir": "codes/results/r2m4_ladder_campaign/r2m4_L2_totalGradient_327680_v2",
+      "sample_sha256": "bd6981a293fc97628304852826446040e7baa0d909df2d54d4c906717fea27be",
+      "solver_wall_seconds": 14802,
+      "tangent_source": "mesh (deposit protocol)",
+      "telemetry": {
+        "bottom_clipped_fraction_window": 1.0,
+        "bottom_convection_over_pressure_impulse_window": 0.0,
+        "max_courant": 0.5072257794565808,
+        "time_steps": 40649,
+        "ubar_final": 0.7210448577554619,
+        "ubar_window_mean": 0.7210449092823743
+      }
+    },
+    "W1:equilibrium": {
+      "Ubar_volume": 0.72104506,
+      "average_start": 135.0,
+      "case_id": "rswm_m13_re5600_g1_equilibrium_307200_v2",
+      "cells": 307200,
+      "checks": {
+        "courant_bounded": true,
+        "mass_flow_matched": true,
+        "reached_405": true
+      },
+      "driver_sha256": null,
+      "external_source": "Agent B corrected Re=5600 matrix (pinned driver, crest-bulk Ubar)",
+      "grid": "W1",
+      "ladder_kernel_sha256": null,
+      "latest_time": 405.0,
+      "matching_height_over_H": {
+        "max": 0.014515746,
+        "median": 0.014515746,
+        "min": 0.008147054106317364
+      },
+      "metrics": {
+        "correlation": 0.9785450535166864,
+        "r2": 0.9442368358507591,
+        "reattachment_x_over_H": 4.398599773305699,
+        "relative_rms": 0.2341087068238393,
+        "relative_rms_interval": {
+          "high": 0.5443248851867157,
+          "low": 0.2056268256029425,
+          "median": 0.2361963292311543
+        },
+        "separation_x_over_H": 0.04504020786080411,
+        "sign_accuracy": 0.8916015625,
+        "signed_force_ratio": 1.2836975274079887,
+        "signed_tangent_force_per_span": 0.007012179306071265,
+        "truth_reattachment_x_over_H": 5.142943693333334,
+        "truth_separation_x_over_H": 0.18066292458175814
+      },
+      "metrics_by_reference": {
+        "A_xiao_linear4_deposited": {
+          "correlation": 0.9230129282651388,
+          "r2": -1.5759564704774869,
+          "relative_rms": 1.5607044449867862,
+          "relative_rms_interval": {
+            "high": 1.7162220150759442,
+            "low": 0.8073414631146523,
+            "median": 1.5500875255566222
+          },
+          "sign_accuracy": 0.926513671875,
+          "signed_force_ratio": 2.002180093207693,
+          "truth_reattachment_x_over_H": 4.473418642039499,
+          "truth_separation_x_over_H": 0.3786521727161055
+        },
+        "B_mglet_deposited": {
+          "correlation": 0.9785450535166864,
+          "r2": 0.9442368358507591,
+          "relative_rms": 0.2341087068238393,
+          "relative_rms_interval": {
+            "high": 0.5443248851867157,
+            "low": 0.2056268256029425,
+            "median": 0.2361963292311543
+          },
+          "sign_accuracy": 0.8916015625,
+          "signed_force_ratio": 1.2836975274079887,
+          "truth_reattachment_x_over_H": 5.142943693333334,
+          "truth_separation_x_over_H": 0.18066292458175814
+        },
+        "C_xiao_cubic6_repaired": {
+          "correlation": 0.9627792608894269,
+          "r2": 0.7216830012470807,
+          "relative_rms": 0.524613692675033,
+          "relative_rms_interval": {
+            "high": 0.7254978929054201,
+            "low": 0.2524382280879293,
+            "median": 0.5185267827921305
+          },
+          "sign_accuracy": 0.936279296875,
+          "signed_force_ratio": 2.5463859777884803,
+          "truth_reattachment_x_over_H": 4.722256722599092,
+          "truth_separation_x_over_H": 0.18269698806333354
+        }
+      },
+      "model": "equilibrium",
+      "nodes": null,
+      "producer_job_id": "14889022",
+      "result_dir": "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g1_equilibrium_307200_v2",
+      "sample_sha256": "bb05021d456927d9ab0980161ab60a298ab45cdd908c28384185e0874f1138b2",
+      "solver_wall_seconds": null,
+      "tangent_source": "mesh (deposit protocol)",
+      "telemetry": {
+        "bottom_clipped_fraction_window": null,
+        "bottom_convection_over_pressure_impulse_window": null,
+        "max_courant": 0.50888121,
+        "time_steps": 43964,
+        "ubar_final": 0.72104506,
+        "ubar_window_mean": 0.7210449902554363
+      }
+    },
+    "W1:totalGradient": {
+      "Ubar_volume": 0.72104499,
+      "average_start": 135.0,
+      "case_id": "rswm_m13_re5600_g1_tble_307200_v2",
+      "cells": 307200,
+      "checks": {
+        "courant_bounded": true,
+        "mass_flow_matched": true,
+        "reached_405": true
+      },
+      "driver_sha256": null,
+      "external_source": "Agent B corrected Re=5600 matrix (pinned driver, crest-bulk Ubar)",
+      "grid": "W1",
+      "ladder_kernel_sha256": null,
+      "latest_time": 405.0,
+      "matching_height_over_H": {
+        "max": 0.014515746,
+        "median": 0.014515746,
+        "min": 0.008147054106317364
+      },
+      "metrics": {
+        "correlation": 0.9832881776800871,
+        "r2": 0.962277932394055,
+        "reattachment_x_over_H": 4.174895057851873,
+        "relative_rms": 0.1925491501570849,
+        "relative_rms_interval": {
+          "high": 0.6733568766684839,
+          "low": 0.14747074583646058,
+          "median": 0.19644039091671614
+        },
+        "separation_x_over_H": 8.937942618570416,
+        "sign_accuracy": 0.85546875,
+        "signed_force_ratio": 1.4445894114705211,
+        "signed_tangent_force_per_span": 0.00789616643908388,
+        "truth_reattachment_x_over_H": 5.142943693333334,
+        "truth_separation_x_over_H": 0.18066292458175814
+      },
+      "metrics_by_reference": {
+        "A_xiao_linear4_deposited": {
+          "correlation": 0.9004142432245178,
+          "r2": -2.48186351645089,
+          "relative_rms": 1.8145012807008563,
+          "relative_rms_interval": {
+            "high": 2.0050051614861713,
+            "low": 0.8965065931047895,
+            "median": 1.8008123774925142
+          },
+          "sign_accuracy": 0.889404296875,
+          "signed_force_ratio": 2.253122796259501,
+          "truth_reattachment_x_over_H": 4.473418642039499,
+          "truth_separation_x_over_H": 0.3786521727161055
+        },
+        "B_mglet_deposited": {
+          "correlation": 0.9832881776800871,
+          "r2": 0.962277932394055,
+          "relative_rms": 0.1925491501570849,
+          "relative_rms_interval": {
+            "high": 0.6733568766684839,
+            "low": 0.14747074583646058,
+            "median": 0.19644039091671614
+          },
+          "sign_accuracy": 0.85546875,
+          "signed_force_ratio": 1.4445894114705211,
+          "truth_reattachment_x_over_H": 5.142943693333334,
+          "truth_separation_x_over_H": 0.18066292458175814
+        },
+        "C_xiao_cubic6_repaired": {
+          "correlation": 0.9693661366165272,
+          "r2": 0.6049887375934918,
+          "relative_rms": 0.6249920521215087,
+          "relative_rms_interval": {
+            "high": 0.8089635025070415,
+            "low": 0.3216471429059897,
+            "median": 0.6248709059154186
+          },
+          "sign_accuracy": 0.917236328125,
+          "signed_force_ratio": 2.8655365788993543,
+          "truth_reattachment_x_over_H": 4.722256722599092,
+          "truth_separation_x_over_H": 0.18269698806333354
+        }
+      },
+      "model": "totalGradient",
+      "nodes": null,
+      "producer_job_id": "14889021",
+      "result_dir": "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g1_tble_307200_v2",
+      "sample_sha256": "a43b2af8675b1ec5e6931c2e44481f414d5c21e29a40d83bbec6f5515b659584",
+      "solver_wall_seconds": null,
+      "tangent_source": "mesh (deposit protocol)",
+      "telemetry": {
+        "bottom_clipped_fraction_window": null,
+        "bottom_convection_over_pressure_impulse_window": null,
+        "max_courant": 0.50934016,
+        "time_steps": 43446,
+        "ubar_final": 0.72104499,
+        "ubar_window_mean": 0.7210449913651429
+      }
+    }
+  },
+  "coupled_verdict": {
+    "L1": "REFUTED",
+    "L2": "REFUTED"
+  },
+  "dns_sha256": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85",
+  "ladder_table": [
+    {
+      "apriori_interval": {
+        "high": 1.038422936235421,
+        "low": 0.6470253527093309,
+        "median": 0.6924905745724582
+      },
+      "apriori_relative_rms": 0.6892570578999285,
+      "coupled_force_ratio": 2.934390845596999,
+      "coupled_interval": {
+        "high": 1.9589841813967195,
+        "low": 0.5791277178160241,
+        "median": 0.7535786526343737
+      },
+      "coupled_r2": 0.44966387678947806,
+      "coupled_relative_rms": 0.735457992015219,
+      "grid": "L1",
+      "ladder": "M0_equilibrium",
+      "model": "equilibrium"
+    },
+    {
+      "apriori_interval": {
+        "high": 1.1257712793305505,
+        "low": 0.57795302607121,
+        "median": 0.6660589004807433
+      },
+      "apriori_relative_rms": 0.6647799855593821,
+      "coupled_force_ratio": 3.442637669304434,
+      "coupled_interval": {
+        "high": 1.4447049169562733,
+        "low": 0.434238752824043,
+        "median": 0.5335135345395253
+      },
+      "coupled_r2": 0.7173816184705928,
+      "coupled_relative_rms": 0.5270405905245343,
+      "grid": "L1",
+      "ladder": "M1_pressure_gradient_ode",
+      "model": "totalGradient"
+    },
+    {
+      "apriori_interval": {
+        "high": 0.6105844470681833,
+        "low": 0.37860197180543015,
+        "median": 0.5350257218077821
+      },
+      "apriori_relative_rms": 0.5378697124578066,
+      "coupled_force_ratio": 2.578874893494623,
+      "coupled_interval": {
+        "high": 1.3574160764772591,
+        "low": 0.3215693373687107,
+        "median": 0.4515477792691619
+      },
+      "coupled_r2": 0.8031219200880149,
+      "coupled_relative_rms": 0.4398884349965478,
+      "grid": "L1",
+      "ladder": "M2_hickel_modelled_convection",
+      "model": "hickel"
+    },
+    {
+      "apriori_interval": {
+        "high": 1.1545855447690978,
+        "low": 0.5668530700360315,
+        "median": 0.6571287221764783
+      },
+      "apriori_relative_rms": 0.6554287699905005,
+      "coupled_force_ratio": 3.8912389626265385,
+      "coupled_interval": {
+        "high": 1.6341550854279405,
+        "low": 0.5139840162265069,
+        "median": 0.6406862631048582
+      },
+      "coupled_r2": 0.5933906638223616,
+      "coupled_relative_rms": 0.6321680384706789,
+      "grid": "L1",
+      "ladder": "Xc_resolved_convection_linear",
+      "model": "resolvedConvectionLinear"
+    },
+    {
+      "apriori_interval": {
+        "high": 1.8870851842876828,
+        "low": 0.608063410876533,
+        "median": 0.9329902021293356
+      },
+      "apriori_relative_rms": 0.9398722356319041,
+      "coupled_force_ratio": 5.099485984733241,
+      "coupled_interval": {
+        "high": 2.482878159466212,
+        "low": 0.6855401175739885,
+        "median": 0.85416080902414
+      },
+      "coupled_r2": 0.2769284257214223,
+      "coupled_relative_rms": 0.8430134543481186,
+      "grid": "L1",
+      "ladder": "Xc_resolved_convection_constant",
+      "model": "resolvedConvectionConstant"
+    },
+    {
+      "apriori_interval": {
+        "high": 1.038422936235421,
+        "low": 0.6470253527093309,
+        "median": 0.6924905745724582
+      },
+      "apriori_relative_rms": 0.6892570578999285,
+      "coupled_force_ratio": 2.950370671826567,
+      "coupled_interval": {
+        "high": 1.9675702416710923,
+        "low": 0.5856574032862771,
+        "median": 0.7577635455196226
+      },
+      "coupled_r2": 0.44343248918305134,
+      "coupled_relative_rms": 0.73961002164254,
+      "grid": "L2",
+      "ladder": "M0_equilibrium",
+      "model": "equilibrium"
+    },
+    {
+      "apriori_interval": {
+        "high": 1.1257712793305505,
+        "low": 0.57795302607121,
+        "median": 0.6660589004807433
+      },
+      "apriori_relative_rms": 0.6647799855593821,
+      "coupled_force_ratio": 3.357070453740735,
+      "coupled_interval": {
+        "high": 1.441105182010771,
+        "low": 0.44733090560461874,
+        "median": 0.5423084661734352
+      },
+      "coupled_r2": 0.7083145909078694,
+      "coupled_relative_rms": 0.5354281669603841,
+      "grid": "L2",
+      "ladder": "M1_pressure_gradient_ode",
+      "model": "totalGradient"
+    },
+    {
+      "apriori_interval": {
+        "high": 0.6105844470681833,
+        "low": 0.37860197180543015,
+        "median": 0.5350257218077821
+      },
+      "apriori_relative_rms": 0.5378697124578066,
+      "coupled_force_ratio": 2.8125276949176037,
+      "coupled_interval": {
+        "high": 1.5045762799415414,
+        "low": 0.3085375153561515,
+        "median": 0.4624051844443388
+      },
+      "coupled_r2": 0.7953455049584728,
+      "coupled_relative_rms": 0.44849179850068294,
+      "grid": "L2",
+      "ladder": "M2_hickel_modelled_convection",
+      "model": "hickel"
+    },
+    {
+      "apriori_interval": {
+        "high": 1.1545855447690978,
+        "low": 0.5668530700360315,
+        "median": 0.6571287221764783
+      },
+      "apriori_relative_rms": 0.6554287699905005,
+      "coupled_force_ratio": 3.8803872548841065,
+      "coupled_interval": {
+        "high": 1.6755749494273862,
+        "low": 0.5019495562925053,
+        "median": 0.6186857236690231
+      },
+      "coupled_r2": 0.6202213587312602,
+      "coupled_relative_rms": 0.6109548683444277,
+      "grid": "L2",
+      "ladder": "Xc_resolved_convection_linear",
+      "model": "resolvedConvectionLinear"
+    },
+    {
+      "apriori_interval": {
+        "high": 1.8870851842876828,
+        "low": 0.608063410876533,
+        "median": 0.9329902021293356
+      },
+      "apriori_relative_rms": 0.9398722356319041,
+      "coupled_force_ratio": null,
+      "coupled_interval": null,
+      "coupled_r2": null,
+      "coupled_relative_rms": null,
+      "grid": "L2",
+      "ladder": "Xc_resolved_convection_constant",
+      "model": "resolvedConvectionConstant"
+    },
+    {
+      "apriori_interval": {
+        "high": 0.6183828519117792,
+        "low": 0.37151947422869597,
+        "median": 0.5730772066510901
+      },
+      "apriori_relative_rms": 0.5765830384055055,
+      "coupled_force_ratio": 1.2836975274079887,
+      "coupled_interval": {
+        "high": 0.5443248851867157,
+        "low": 0.2056268256029425,
+        "median": 0.2361963292311543
+      },
+      "coupled_r2": 0.9442368358507591,
+      "coupled_relative_rms": 0.2341087068238393,
+      "grid": "W1",
+      "ladder": "M0_equilibrium",
+      "model": "equilibrium"
+    },
+    {
+      "apriori_interval": {
+        "high": 0.5253939508418594,
+        "low": 0.14700811529225036,
+        "median": 0.4466756706750481
+      },
+      "apriori_relative_rms": 0.45175450973387976,
+      "coupled_force_ratio": 1.4445894114705211,
+      "coupled_interval": {
+        "high": 0.6733568766684839,
+        "low": 0.14747074583646058,
+        "median": 0.19644039091671614
+      },
+      "coupled_r2": 0.962277932394055,
+      "coupled_relative_rms": 0.1925491501570849,
+      "grid": "W1",
+      "ladder": "M1_pressure_gradient_ode",
+      "model": "totalGradient"
+    },
+    {
+      "apriori_interval": {
+        "high": 0.5447090063936976,
+        "low": 0.17697739300591936,
+        "median": 0.47087260250030827
+      },
+      "apriori_relative_rms": 0.4759717770866375,
+      "coupled_force_ratio": null,
+      "coupled_interval": null,
+      "coupled_r2": null,
+      "coupled_relative_rms": null,
+      "grid": "W1",
+      "ladder": "M2_hickel_modelled_convection",
+      "model": "hickel"
+    },
+    {
+      "apriori_interval": {
+        "high": 0.49372678544289145,
+        "low": 0.14825313516498995,
+        "median": 0.4137764486117232
+      },
+      "apriori_relative_rms": 0.41860603073740243,
+      "coupled_force_ratio": null,
+      "coupled_interval": null,
+      "coupled_r2": null,
+      "coupled_relative_rms": null,
+      "grid": "W1",
+      "ladder": "Xc_resolved_convection_linear",
+      "model": "resolvedConvectionLinear"
+    },
+    {
+      "apriori_interval": {
+        "high": 0.5093722353075768,
+        "low": 0.15342462059692094,
+        "median": 0.38578067210473493
+      },
+      "apriori_relative_rms": 0.3912455389174215,
+      "coupled_force_ratio": null,
+      "coupled_interval": null,
+      "coupled_r2": null,
+      "coupled_relative_rms": null,
+      "grid": "W1",
+      "ladder": "Xc_resolved_convection_constant",
+      "model": "resolvedConvectionConstant"
+    }
+  ],
+  "paired_relative_rms_differences": {
+    "L1": {
+      "hickel-minus-totalGradient": {
+        "high": 0.1425751926022695,
+        "low": -0.35242423882531065,
+        "median": -0.08567685538386291
+      },
+      "resolvedConvectionConstant-minus-totalGradient": {
+        "high": 1.0864873455760682,
+        "low": 0.2244871836490061,
+        "median": 0.322569296878528
+      },
+      "resolvedConvectionLinear-minus-totalGradient": {
+        "high": 0.23074814095668297,
+        "low": 0.01812804677970486,
+        "median": 0.1078828328834816
+      },
+      "totalGradient-minus-equilibrium": {
+        "high": 0.11374484053602701,
+        "low": -0.6983928877202096,
+        "median": -0.21324141228892823
+      }
+    },
+    "L2": {
+      "hickel-minus-totalGradient": {
+        "high": 0.25532684642293446,
+        "low": -0.2951494965184852,
+        "median": -0.08080619544987114
+      },
+      "resolvedConvectionLinear-minus-totalGradient": {
+        "high": 0.3106790480288117,
+        "low": 0.037727318916887485,
+        "median": 0.07834331229475458
+      },
+      "totalGradient-minus-equilibrium": {
+        "high": 0.09417571673025232,
+        "low": -0.7048652933467098,
+        "median": -0.21252621288055418
+      }
+    },
+    "W1": {
+      "totalGradient-minus-equilibrium": {
+        "high": 0.1409691243872976,
+        "low": -0.07274130119869832,
+        "median": -0.03923050922075985
+      }
+    }
+  },
+  "paired_relative_rms_differences_by_reference": {
+    "A_xiao_linear4_deposited": {
+      "L1": {
+        "hickel-minus-totalGradient": {
+          "high": -0.16895164126833942,
+          "low": -1.8785877633824064,
+          "median": -1.5592611161524466
+        },
+        "resolvedConvectionConstant-minus-totalGradient": {
+          "high": 1.704194739929386,
+          "low": 0.29053947028974403,
+          "median": 0.7602817630040166
+        },
+        "resolvedConvectionLinear-minus-totalGradient": {
+          "high": 0.43371727919682657,
+          "low": 0.04368951503838955,
+          "median": 0.30140950487319706
+        },
+        "totalGradient-minus-equilibrium": {
+          "high": 2.4670113187011857,
+          "low": -0.7356987392158663,
+          "median": 1.644651949256675
+        }
+      },
+      "L2": {
+        "hickel-minus-totalGradient": {
+          "high": -0.029818648069758133,
+          "low": -1.774906602924275,
+          "median": -1.4601545206737456
+        },
+        "resolvedConvectionLinear-minus-totalGradient": {
+          "high": 0.34697506156417013,
+          "low": -0.03344085866914457,
+          "median": 0.1514372392033756
+        },
+        "totalGradient-minus-equilibrium": {
+          "high": 2.511499373121556,
+          "low": -0.6734844211499598,
+          "median": 1.6910903200694152
+        }
+      },
+      "W1": {
+        "totalGradient-minus-equilibrium": {
+          "high": 0.3683790086076568,
+          "low": 0.010870471952157337,
+          "median": 0.2475597161451083
+        }
+      }
+    },
+    "B_mglet_deposited": {
+      "L1": {
+        "hickel-minus-totalGradient": {
+          "high": 0.1425751926022695,
+          "low": -0.35242423882531065,
+          "median": -0.08567685538386291
+        },
+        "resolvedConvectionConstant-minus-totalGradient": {
+          "high": 1.0864873455760682,
+          "low": 0.2244871836490061,
+          "median": 0.322569296878528
+        },
+        "resolvedConvectionLinear-minus-totalGradient": {
+          "high": 0.23074814095668297,
+          "low": 0.01812804677970486,
+          "median": 0.1078828328834816
+        },
+        "totalGradient-minus-equilibrium": {
+          "high": 0.11374484053602701,
+          "low": -0.6983928877202096,
+          "median": -0.21324141228892823
+        }
+      },
+      "L2": {
+        "hickel-minus-totalGradient": {
+          "high": 0.25532684642293446,
+          "low": -0.2951494965184852,
+          "median": -0.08080619544987114
+        },
+        "resolvedConvectionLinear-minus-totalGradient": {
+          "high": 0.3106790480288117,
+          "low": 0.037727318916887485,
+          "median": 0.07834331229475458
+        },
+        "totalGradient-minus-equilibrium": {
+          "high": 0.09417571673025232,
+          "low": -0.7048652933467098,
+          "median": -0.21252621288055418
+        }
+      },
+      "W1": {
+        "totalGradient-minus-equilibrium": {
+          "high": 0.1409691243872976,
+          "low": -0.07274130119869832,
+          "median": -0.03923050922075985
+        }
+      }
+    },
+    "C_xiao_cubic6_repaired": {
+      "L1": {
+        "hickel-minus-totalGradient": {
+          "high": 0.1387267729697112,
+          "low": -0.9013148720442843,
+          "median": -0.6653504633895619
+        },
+        "resolvedConvectionConstant-minus-totalGradient": {
+          "high": 1.1854788250304074,
+          "low": 0.26537487965558226,
+          "median": 0.4475417414424555
+        },
+        "resolvedConvectionLinear-minus-totalGradient": {
+          "high": 0.26676485582874404,
+          "low": 0.011382972451585155,
+          "median": 0.16408587211043912
+        },
+        "totalGradient-minus-equilibrium": {
+          "high": 0.8536959678755486,
+          "low": -0.8226926305763664,
+          "median": 0.38214034327958213
+        }
+      },
+      "L2": {
+        "hickel-minus-totalGradient": {
+          "high": 0.2608670889973386,
+          "low": -0.8482719904746869,
+          "median": -0.6129956902210272
+        },
+        "resolvedConvectionLinear-minus-totalGradient": {
+          "high": 0.33118002311420114,
+          "low": 0.030567073931006276,
+          "median": 0.0979760854457713
+        },
+        "totalGradient-minus-equilibrium": {
+          "high": 0.8584562603355775,
+          "low": -0.8219179931949581,
+          "median": 0.3933297158830981
+        }
+      },
+      "W1": {
+        "totalGradient-minus-equilibrium": {
+          "high": 0.20752970693949901,
+          "low": -0.033055561531186904,
+          "median": 0.1007638641811306
+        }
+      }
+    }
+  },
+  "pending": [],
+  "primary_reference": "B_mglet_deposited",
+  "references": {
+    "A_xiao_linear4_deposited": "Xiao archive, deposited 4-point through-origin linear fit (WITHDRAWN as a scoring reference)",
+    "B_mglet_deposited": "Peller & Manhart MGLET DNS Re=5600, deposited bottom-wall tau_w (ERCOFTAC UFR3-30) [PRIMARY]",
+    "C_xiao_cubic6_repaired": "Xiao archive, curvature-aware through-origin cubic on the first six fluid points [BRACKET]"
+  },
+  "rescore_source": "codes/results/r2m4_ladder_rescored_20260825.json",
+  "row": "R2-m4 / R3-2",
+  "row_verdict": "OPEN_INCONCLUSIVE_REFUTED",
+  "row_verdict_bracket": "OPEN_INCONCLUSIVE_REFUTED",
+  "schema": "r2m4-coupled-ladder-v2",
+  "scoring_note": "metrics[] and the verdicts are against the PRIMARY reference (MGLET DNS); metrics_by_reference[] carries all three.  The 20260823 artifact scored against the withdrawn reference and is retained as superseded.",
+  "stamp": "20260825",
+  "status": "R2M4_LADDER_HARVEST_OK",
+  "verdict_by_reference": {
+    "A_xiao_linear4_deposited": {
+      "L1": "REFUTED",
+      "L2": "REFUTED"
+    },
+    "B_mglet_deposited": {
+      "L1": "REFUTED",
+      "L2": "REFUTED"
+    },
+    "C_xiao_cubic6_repaired": {
+      "L1": "REFUTED",
+      "L2": "REFUTED"
+    }
+  },
+  "withdrawn_reference": "A_xiao_linear4_deposited"
+}

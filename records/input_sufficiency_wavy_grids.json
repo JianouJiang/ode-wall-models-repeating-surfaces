@@ -1,0 +1,92 @@
+{
+ "heights": {
+  "eta0.05": {
+   "G0": {
+    "a_and_b": {
+     "r2_hills_to_wavy": -0.17316611137856452,
+     "relrms_hills_to_wavy": 0.9647493065690883
+    },
+    "a_only": {
+     "r2_hills_to_wavy": -0.2839249179745955,
+     "relrms_hills_to_wavy": 1.0092634232255793
+    },
+    "n_station": 128,
+    "r2_equilibrium": -0.2244365719333068,
+    "r2_tble": 0.47690128827800793
+   },
+   "G1": {
+    "a_and_b": {
+     "r2_hills_to_wavy": -0.19634137806121044,
+     "relrms_hills_to_wavy": 0.964503430276758
+    },
+    "a_only": {
+     "r2_hills_to_wavy": -0.28915037357606965,
+     "relrms_hills_to_wavy": 1.0012165133879989
+    },
+    "n_station": 192,
+    "r2_equilibrium": -0.25929534052565506,
+    "r2_tble": 0.4556665619110747
+   },
+   "G2": {
+    "a_and_b": {
+     "r2_hills_to_wavy": -0.19840829553330908,
+     "relrms_hills_to_wavy": 0.9624280219867964
+    },
+    "a_only": {
+     "r2_hills_to_wavy": -0.2935460546699076,
+     "relrms_hills_to_wavy": 0.9999005423642652
+    },
+    "n_station": 288,
+    "r2_equilibrium": -0.27306879693025166,
+    "r2_tble": 0.43302321511315556
+   },
+   "collapse_is_grid_robust": true,
+   "grid_spread_a_and_b": 0.02524218415474455
+  },
+  "eta0.10": {
+   "G0": {
+    "a_and_b": {
+     "r2_hills_to_wavy": -0.3611592203922047,
+     "relrms_hills_to_wavy": 1.0391761844784402
+    },
+    "a_only": {
+     "r2_hills_to_wavy": -0.40879285051864644,
+     "relrms_hills_to_wavy": 1.0572027640952182
+    },
+    "n_station": 128,
+    "r2_equilibrium": -0.24657948182466982,
+    "r2_tble": 0.39259218499265514
+   },
+   "G1": {
+    "a_and_b": {
+     "r2_hills_to_wavy": -0.37923635502542274,
+     "relrms_hills_to_wavy": 1.0356083957011988
+    },
+    "a_only": {
+     "r2_hills_to_wavy": -0.4307158309278847,
+     "relrms_hills_to_wavy": 1.054758189040701
+    },
+    "n_station": 192,
+    "r2_equilibrium": -0.26964048031372445,
+    "r2_tble": 0.37259880879809226
+   },
+   "G2": {
+    "a_and_b": {
+     "r2_hills_to_wavy": -0.44511719790249105,
+     "relrms_hills_to_wavy": 1.0568598291344853
+    },
+    "a_only": {
+     "r2_hills_to_wavy": -0.46068095862424063,
+     "relrms_hills_to_wavy": 1.0625357226484193
+    },
+    "n_station": 288,
+    "r2_equilibrium": -0.2797747151209862,
+    "r2_tble": 0.3452380728950901
+   },
+   "collapse_is_grid_robust": true,
+   "grid_spread_a_and_b": 0.08395797751028633
+  }
+ },
+ "schema": "input_sufficiency_wavy_grids_v1",
+ "source_sha256": "999fd95b6455eecd75c830b95a68c78fca4fc5e7696b0e6f741ca158ab996c5a"
+}

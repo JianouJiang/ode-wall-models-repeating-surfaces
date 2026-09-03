@@ -1,0 +1,420 @@
+{
+  "active_claim_count": 25,
+  "bootstrap_replicates": 5000,
+  "claims": {
+    "canonical_hill_r2": {
+      "block_length": 23,
+      "interval": [
+        -3.329918161560938,
+        -0.8022989573474453
+      ],
+      "point": -1.7570171877613001,
+      "replicates": 5000,
+      "source": "signed_wall_error_metrics_m2.npz:station_tau_pred scored against reference_rebase_headlines_l0_20260825.npz:reference_B_mglet",
+      "uncertainty_kind": "circular_station_block_95pct_interval"
+    },
+    "canonical_hill_r2_bracket": {
+      "interval": [
+        -10.490347831930002,
+        -0.8910261891534489
+      ],
+      "point": -6.962994244231073,
+      "source": "reference_rebase_headlines_l0_20260825.json: same prediction, curvature-aware same-simulation reference",
+      "uncertainty_kind": "phase_block_95pct_interval_on_the_bracket_reference"
+    },
+    "canonical_hill_r2_superseded": {
+      "interval": [
+        -99.36978219762581,
+        -5.790790462165158
+      ],
+      "point": -47.68617253416459,
+      "source": "reference_rebase_headlines_l0_20260825.json: withdrawn four-point through-origin reconstruction, negative control only",
+      "uncertainty_kind": "withdrawn_reference_reported_only_as_the_superseded_value"
+    },
+    "corrected_exact_stress_r2": {
+      "block_length": 23,
+      "interval": [
+        -49.40224530197276,
+        -10.744774499448948
+      ],
+      "point": -36.77000761955062,
+      "replicates": 5000,
+      "source": "diagnostic_test_corrected.npz:controlled_dns scored against reference_rebase_headlines_l0_20260825.npz:reference_B_mglet",
+      "uncertainty_kind": "circular_station_block_95pct_interval"
+    },
+    "coupled_finest_r2": {
+      "grid_paths": [
+        [
+          0.9481311991629616,
+          0.9442368358507591,
+          0.9351386406397463
+        ],
+        [
+          0.9738888966749571,
+          0.962277932394055,
+          0.9698821883202405
+        ]
+      ],
+      "intervals": [
+        [
+          0.9351386406397463,
+          0.9481311991629616
+        ],
+        [
+          0.962277932394055,
+          0.9738888966749571
+        ]
+      ],
+      "point": [
+        0.9351386406397463,
+        0.9698821883202405
+      ],
+      "source": "m13_highre_coupled_20260825_summary.json:campaigns[5600].grid_path_convergence and averaging",
+      "uncertainty_kind": "three_grid_envelope_plus_180_225_270_window_two_sem",
+      "window_intervals": [
+        [
+          0.9351325776733662,
+          0.93783580241839
+        ],
+        [
+          0.9693492050867729,
+          0.9708331126290353
+        ]
+      ]
+    },
+    "coupled_finest_traction_errors": {
+      "block_length": 512,
+      "intervals": [
+        [
+          0.21577981164632926,
+          0.6907289944045535
+        ],
+        [
+          0.1412001977516776,
+          0.5295838350303629
+        ]
+      ],
+      "point": [
+        0.2524857573842549,
+        0.1720503531180704
+      ],
+      "replicates_per_model": 20000,
+      "source": "m13_highre_coupled_20260825: Re5600 G2c phase-resampled E_tau against the full-wall reference",
+      "uncertainty_kind": "paired_circular_phase_block_95pct_intervals"
+    },
+    "coupled_holm_p": {
+      "block_count": 8,
+      "permutations": 256,
+      "point": [
+        1.0,
+        1.0
+      ],
+      "source": "m13_highre_coupled_20260825_summary.json:campaigns[5600].failure_significance_tests",
+      "uncertainty_kind": "exact_phase_block_sign_flip_test_with_Holm_correction"
+    },
+    "coupled_model_difference_p": {
+      "interval": [
+        -0.18122942890605878,
+        -0.05545869122692694
+      ],
+      "permutations": 256,
+      "point": [
+        -0.08043540426618448,
+        0.0625
+      ],
+      "source": "rswm_grid_results_l3.npz/json: G2c paired model difference",
+      "uncertainty_kind": "paired_phase_block_95pct_interval_and_exact_sign_flip_test"
+    },
+    "curved_bfs_r2": {
+      "block_length": 8,
+      "interval": [
+        0.7331350927299611,
+        0.9236404331061738
+      ],
+      "point": 0.8830969265193732,
+      "replicates": 5000,
+      "source": "signed_wall_error_metrics_m2.npz:station_tau_ref/pred",
+      "uncertainty_kind": "circular_station_block_95pct_interval"
+    },
+    "exact_stress_worse_on_every_reference": {
+      "per_reference_scores": {
+        "A_withdrawn_linear4": -482.97683570594313,
+        "B_mglet": -36.77000761955062,
+        "C_repaired_cubic6": -95.93531739043706
+      },
+      "point": true,
+      "source": "reference_rebase_headlines_l0_20260825.json",
+      "uncertainty_kind": "qualitative_statement_checked_on_three_references"
+    },
+    "independent_phase_closure": {
+      "interval": [
+        0.0322457950856644,
+        0.06371867039278582
+      ],
+      "point": 0.04272668249518504,
+      "source": "independent_phase_balance_r1_sta3.npz",
+      "uncertainty_kind": "phase_count_by_volume_surface_operator_deterministic_envelope"
+    },
+    "independent_phase_operator_envelope": {
+      "interval": [
+        0.0322457950856644,
+        0.06371867039278582
+      ],
+      "point": [
+        0.0322457950856644,
+        0.06371867039278582
+      ],
+      "source": "independent_phase_balance_r1_sta3.npz",
+      "uncertainty_kind": "nine_phase_count_by_4320_operator_deterministic_envelope"
+    },
+    "independent_wavelength_closure": {
+      "interval": [
+        0.03631415955111096,
+        0.06480777287248488
+      ],
+      "point": 0.037037598799155746,
+      "source": "independent_phase_balance_r1_sta3.npz",
+      "uncertainty_kind": "phase_count_by_volume_surface_operator_deterministic_envelope"
+    },
+    "re10595_finest_r2": {
+      "intervals": [
+        [
+          0.8616282337914474,
+          0.8920846280611704
+        ],
+        [
+          0.9658895204918851,
+          0.9759657447777864
+        ]
+      ],
+      "point": [
+        0.8616282337914474,
+        0.9658895204918851
+      ],
+      "source": "m13_highre_coupled_20260825_summary.json: Re10595 grid_path_convergence and averaging",
+      "uncertainty_kind": "three_grid_envelope_plus_180_225_270_window_two_sem",
+      "window_intervals": [
+        [
+          0.8608591169284713,
+          0.873637114567181
+        ],
+        [
+          0.9656357293724275,
+          0.967366636944942
+        ]
+      ]
+    },
+    "re10595_finest_reattachment": {
+      "interval": [
+        4.45,
+        4.569999999999999
+      ],
+      "model_grid_paths": [
+        [
+          4.10642591324209,
+          4.20754675750607,
+          4.077750112208312
+        ],
+        [
+          4.360636328740537,
+          4.030130006123805,
+          4.03054470989635
+        ]
+      ],
+      "point": [
+        4.077750112208312,
+        4.03054470989635,
+        4.511223114612481
+      ],
+      "source": "m13_highre_coupled_20260825_summary.json: Re10595 metrics and Krank event uncertainty",
+      "uncertainty_kind": "documented_dns_event_interval_and_model_grid_paths"
+    },
+    "re10595_finest_traction_errors": {
+      "block_length": 512,
+      "intervals": [
+        [
+          0.2646029056346996,
+          0.5862491616835197
+        ],
+        [
+          0.14334974395790326,
+          0.4449366771420279
+        ]
+      ],
+      "point": [
+        0.36542786400555477,
+        0.18143531767296084
+      ],
+      "replicates_per_model": 20000,
+      "source": "m13_highre_coupled_20260825.npz/json: Re10595 G2c phase-resampled E_tau",
+      "uncertainty_kind": "paired_circular_phase_block_95pct_intervals"
+    },
+    "re19000_cancellation_medians": {
+      "intervals": [
+        [
+          0.23403251046585105,
+          1.3171164664155541
+        ],
+        [
+          0.3089822194121084,
+          1.4567613994190627
+        ]
+      ],
+      "point": [
+        0.7379111653220678,
+        0.9846300287433702
+      ],
+      "source": "m13_highre_coupled_20260825.npz/json: Re19000 G2c separated-phase eps_c",
+      "uncertainty_kind": "paired_circular_phase_block_95pct_intervals"
+    },
+    "re19000_profile_mean_rms": {
+      "intervals": [
+        [
+          0.05484704086987052,
+          0.055548883377177574
+        ],
+        [
+          0.050336458462834896,
+          0.06636931256057395
+        ]
+      ],
+      "point": [
+        0.055548883377177574,
+        0.06636931256057395
+      ],
+      "reference": "Rapp (2009) PIV; no wall-traction truth",
+      "source": "m13_highre_coupled_20260825.npz/json: Re19000 stationwise PIV velocity RMS",
+      "stations": 10,
+      "uncertainty_kind": "two_grid_deterministic_envelope"
+    },
+    "re19000_reattachment": {
+      "convergence_claim_permitted": false,
+      "experimental_bracket": [
+        3.0,
+        4.0
+      ],
+      "model_grid_paths": [
+        [
+          3.967227229094665,
+          3.852910072841762
+        ],
+        [
+          3.851321263905727,
+          3.9780679554452947
+        ]
+      ],
+      "model_window_paths": [
+        [
+          3.8719659398133506,
+          3.852910072841762
+        ],
+        [
+          3.917965777464079,
+          3.9780679554452947
+        ]
+      ],
+      "point": [
+        3.852910072841762,
+        3.9780679554452947,
+        3.827242139459334
+      ],
+      "source": "m13_highre_coupled_20260825.npz/json: Re19000 coupled event and Rapp PIV bracket",
+      "uncertainty_kind": "experimental_sign_change_bracket_plus_two_grid_and_window_sensitivity"
+    },
+    "thin_layer_reynolds_range": {
+      "interval": [
+        0.2633676919811546,
+        0.48437950279237546
+      ],
+      "point": [
+        0.2633676919811546,
+        0.48437950279237546
+      ],
+      "source": "full_rans_thin_layer_audit.npz:reynolds_streamwise_fraction",
+      "uncertainty_kind": "six_height_by_six_operator_deterministic_envelope"
+    },
+    "thin_layer_viscous_range": {
+      "interval": [
+        0.3038134736662933,
+        0.483083848817734
+      ],
+      "point": [
+        0.3038134736662933,
+        0.483083848817734
+      ],
+      "source": "full_rans_thin_layer_audit.npz:viscous_streamwise_to_normal_ratio",
+      "uncertainty_kind": "six_height_by_six_operator_deterministic_envelope"
+    },
+    "three_term_hill_ratio": {
+      "interval": [
+        0.4819173152403205,
+        0.9878348369461312
+      ],
+      "operator_envelope": [
+        0.7347886204748302,
+        0.7352442503486692
+      ],
+      "point": 0.7348760760932258,
+      "source": "uncertainty_certificate_l1.npz",
+      "uncertainty_kind": "simultaneous_station_block_95pct_interval"
+    },
+    "xiao_family_epsilon_range": {
+      "members_with_independent_reference": 1,
+      "members_without_independent_reference": 28,
+      "point": [
+        0.09429303489783938,
+        0.5446411202370304
+      ],
+      "source": "reference_rebase_headlines_l0_20260825.json: corrected 29-case sweep",
+      "uncertainty_kind": "single_estimator_family_range_with_stated_reference_limitation"
+    },
+    "xiao_family_outer_scale_rho": {
+      "interval": [
+        0.37880059896359064,
+        0.8449191355778481
+      ],
+      "permutation_p": 9.99950002499875e-05,
+      "point": 0.6539216880982754,
+      "source": "reference_rebase_headlines_l0_20260825.json: corrected 29-case sweep",
+      "uncertainty_kind": "member_bootstrap_95pct_interval_plus_permutation_p"
+    },
+    "xiao_family_r2_range": {
+      "estimator_bias_correlates_with_reported_variables": {
+        "rho(L_sep_over_delta_legacy, repaired_over_legacy)": 0.6068965517241378,
+        "rho(alpha, repaired_over_legacy)": -0.5600985221674876,
+        "rho(median_dy_first, repaired_over_legacy)": 0.32955665024630537
+      },
+      "limitation": "28 of 29 members are parameterised geometries (alpha != 1 and/or Lx != 9H and/or Ly != 3.036H) for which no independent published DNS wall traction exists.  For them the repaired estimator applied to Xiao's own field is the ONLY option; it is validated at exactly one point, the alpha=1/Lx=9/Ly=3.036 member, against MGLET.",
+      "members_with_independent_reference": [
+        "alph10-9-3036"
+      ],
+      "n_members": 29,
+      "point": [
+        -17.58156146525824,
+        -3.346796042869867
+      ],
+      "source": "corrected 29-case sweep: same predictions, curvature-aware same-simulation wall-gradient estimator",
+      "uncertainty_kind": "single_estimator_family_range_with_stated_reference_limitation"
+    }
+  },
+  "coverage": "25/25 active M15 headline groups",
+  "schema": "headline-uncertainty-m1-v1",
+  "seed": 20260821,
+  "semantics": {
+    "deterministic_envelope": "operator, height, averaging-window or reference-data sensitivity; not a confidence interval",
+    "sampling_interval": "circular moving-block 95% interval; block length ceil(sqrt(N))"
+  },
+  "source_sha256": {
+    "codes/results/active_manuscript_number_reconciliation_m15.json": "eb98289e2a5667c7b830d4033b80dd7151ada07ad63d6eebb43e6d9bf23d4c34",
+    "codes/results/diagnostic_test_corrected.npz": "7a1cb8861005a9a1b6205b94868c8179bb46f7275f9ac419b9f6781c5fb80973",
+    "codes/results/full_rans_thin_layer_audit.npz": "6eb9d13138bea9fac5e6dffa989dc722bfba7cc955f53a479d056313238f8fbf",
+    "codes/results/independent_phase_balance_r1_sta3.npz": "630cc985e510958f795c24ef9853c68a2a1eee096f5a849b8e10959e4668417f",
+    "codes/results/m13_highre_coupled_20260825.npz": "abfed3bebe43b073c893a6c2f336dcf4007a576a58b855cd5d0d35f8cf92709f",
+    "codes/results/m13_highre_coupled_20260825_summary.json": "779f0441e7b390a7f3eedb9edc4d454e4abdecf7d5dfdfd9e720552e7e4ab94a",
+    "codes/results/rswm_grid_results_l3.npz": "960187df2ec98eaf6750e51fbe293b366fb8cc09a66daa7dc09a48797018d23a",
+    "codes/results/rswm_grid_results_l3_summary.json": "56f2c854230b68ff096f3276f7b4f65a8ba58ff2af206ade4ec866938e64070b",
+    "codes/results/signed_wall_error_metrics_m2.npz": "c12d04ac9872b4cc60ff92bfa4ded8f1a4a97fdde613b8f25ec2d2b5270f311d",
+    "codes/results/uncertainty_certificate_l1.npz": "bf111e123abd4017925c94f5d99e9c22abbb95d924cb5604d3ec84e9b9bbb315"
+  },
+  "status": "PASS"
+}

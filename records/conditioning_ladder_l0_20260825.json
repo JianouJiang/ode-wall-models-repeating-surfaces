@@ -1,0 +1,4723 @@
+{
+ "amplification_bound": {
+  "delta_fitted_over_all_points": 0.8791138112527641,
+  "max_relative_prediction_error_leave_one_out": 0.09462569638929808,
+  "model": "E(Xfull) = delta * RMS(sum_j|I_j| + |tau(y_m)|) / RMS(tau_truth)",
+  "n_points": 6,
+  "points": [
+   {
+    "delta_leave_one_out": 0.8797330828699437,
+    "measured_E_Xfull": 1.9512896879736352,
+    "predicted_E_Xfull_leave_one_out": 2.047144072108189,
+    "predictor": 2.3270058975499857,
+    "reference": "B_mglet",
+    "relative_prediction_error": 0.049123605134251576,
+    "surface": "common_W1"
+   },
+   {
+    "delta_leave_one_out": 0.8818973305688474,
+    "measured_E_Xfull": 3.009769134019732,
+    "predicted_E_Xfull_leave_one_out": 3.279386552151146,
+    "predictor": 3.718558202274922,
+    "reference": "C_xiao_repaired_cubic6",
+    "relative_prediction_error": 0.08958076388115624,
+    "surface": "common_W1"
+   },
+   {
+    "delta_leave_one_out": 0.869310865873878,
+    "measured_E_Xfull": 7.345190979347255,
+    "predicted_E_Xfull_leave_one_out": 6.900367438020384,
+    "predictor": 7.937744377649949,
+    "reference": "B_mglet",
+    "relative_prediction_error": 0.06055983330829634,
+    "surface": "archive_index10"
+   },
+   {
+    "delta_leave_one_out": 0.8579715065211574,
+    "measured_E_Xfull": 11.483313635112253,
+    "predicted_E_Xfull_leave_one_out": 10.882961016547762,
+    "predictor": 12.684524991599346,
+    "reference": "C_xiao_repaired_cubic6",
+    "relative_prediction_error": 0.05228043382258648,
+    "surface": "archive_index10"
+   },
+   {
+    "delta_leave_one_out": 0.8819949091706054,
+    "measured_E_Xfull": 4.880892703304983,
+    "predicted_E_Xfull_leave_one_out": 5.0617160921886155,
+    "predictor": 5.738940258678434,
+    "reference": "B_mglet",
+    "relative_prediction_error": 0.037047196051081345,
+    "surface": "ladder_L1"
+   },
+   {
+    "delta_leave_one_out": 0.8972244542042903,
+    "measured_E_Xfull": 7.516995083510849,
+    "predicted_E_Xfull_leave_one_out": 8.228295978042993,
+    "predictor": 9.170833384540677,
+    "reference": "C_xiao_repaired_cubic6",
+    "relative_prediction_error": 0.09462569638929808,
+    "surface": "ladder_L1"
+   }
+  ],
+  "predictor_range": [
+   2.3270058975499857,
+   12.684524991599346
+  ]
+ },
+ "bootstrap": {
+  "block_points": 512,
+  "dense_points": 4096,
+  "draws": 20000,
+  "pairing": "identical resampled blocks across rungs within a reference",
+  "seed": 20260823
+ },
+ "contrasts": [
+  {
+   "first": "M1_pressure_gradient_ode",
+   "question": "does the standard pressure-gradient ODE beat the equilibrium closure?",
+   "second": "M0_equilibrium"
+  },
+  {
+   "first": "M2_hickel_modelled_convection",
+   "question": "does a MODELLED convective source beat the equilibrium closure?",
+   "second": "M0_equilibrium"
+  },
+  {
+   "first": "M2_hickel_modelled_convection",
+   "question": "does the modelled convective surrogate beat the exact-pressure-gradient ODE?",
+   "second": "M1_pressure_gradient_ode"
+  },
+  {
+   "first": "Xc_exact_convection_profile",
+   "question": "does the EXACT within-layer convection repair the pressure-gradient ODE?",
+   "second": "M1_pressure_gradient_ode"
+  },
+  {
+   "first": "Xc_exact_convection_profile",
+   "question": "does exact convection beat its modelled surrogate?",
+   "second": "M2_hickel_modelled_convection"
+  },
+  {
+   "first": "Xall_all_omitted_transport",
+   "question": "does supplying ALL omitted transport beat the crudest closure?",
+   "second": "M0_equilibrium"
+  },
+  {
+   "first": "Xall_all_omitted_transport",
+   "question": "completion versus regularisation",
+   "second": "M2_hickel_modelled_convection"
+  },
+  {
+   "first": "Xfull_all_transport_plus_exact_shear_stress",
+   "question": "does the closure-free exact-budget reconstruction beat the crudest closure?",
+   "second": "M0_equilibrium"
+  },
+  {
+   "first": "Xfull_all_transport_plus_exact_shear_stress",
+   "question": "does removing the last modelling assumption (exact stress at y_m) help?",
+   "second": "Xall_all_omitted_transport"
+  }
+ ],
+ "identifiability_rule": "a contrast is IDENTIFIED only if its paired 95% phase-block interval excludes zero with the same sign under BOTH corrected references B and C; otherwise UNRESOLVED",
+ "inputs": {
+  "deposited_ladder": {
+   "path": "codes/results/r2m4_apriori_ladder_20260823.json",
+   "sha256": "20aab3fe79a48d092b76fcf19406b608dbbf98299e51d260d38a3776bf6e55b9"
+  },
+  "dns_archive": {
+   "path": "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz",
+   "sha256": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85"
+  },
+  "krank_stations": {
+   "path": "codes/raw_data/geometry_driven/krank_pehill_Re5600_wall_profiles.npz",
+   "sha256": "a62603c48f5a0f594badbfdf5e923b4c5f5039247374a66aed3272f7948bd0ec"
+  },
+  "ladder_common_module": {
+   "path": "codes/analysis/r2m4_ladder_common.py",
+   "sha256": "e5446f5e63e53cfb63038171adb22b7887b17913e84fe208df96f9921665a608"
+  },
+  "mglet_wall": {
+   "path": "codes/raw_data/periodic_hill_ufr3_30/ercoftac_ufr3_30/UFR3-30_data-NP-Re5600-DNS2-11.dat",
+   "sha256": "b9fe7b1c03424cd515ac07d407079423c1f9140b163f425f21de3294b29afdb4"
+  }
+ },
+ "instrument_fidelity_vs_deposited_ladder": {
+  "archive_index10": {
+   "rungs_compared": 11,
+   "worst_relative_difference": 0.0
+  },
+  "common_W1": {
+   "rungs_compared": 11,
+   "worst_relative_difference": 0.0
+  },
+  "ladder_L1": {
+   "rungs_compared": 11,
+   "worst_relative_difference": 0.0
+  }
+ },
+ "krank_station_crosscheck": {
+  "references": {
+   "A_withdrawn_linear4": {
+    "per_station_ratio": [
+     5.984359544290269,
+     0.5238860790766058,
+     0.7053607400878288,
+     0.8162285390012329,
+     0.4391785700733701,
+     0.2539839119874896,
+     -10.21203941745037,
+     1.145145515459022,
+     4.640965968718324,
+     0.5258093177766433
+    ],
+    "rms_ratio_to_krank": 0.6955331226421939,
+    "sign_agreement": 0.9
+   },
+   "B_mglet": {
+    "per_station_ratio": [
+     1.3358934529377458,
+     0.7577062137924112,
+     1.0213282515005555,
+     0.9987517781550939,
+     1.035964120101409,
+     0.9900914466130007,
+     6.03757254614537,
+     0.8467479212969304,
+     -0.5086949068810462,
+     0.8960077372979253
+    ],
+    "rms_ratio_to_krank": 0.9425862989932643,
+    "sign_agreement": 0.9
+   },
+   "C_xiao_repaired_cubic6": {
+    "per_station_ratio": [
+     -0.35913919540307465,
+     0.6131489719622092,
+     0.19394450020595685,
+     1.2277885454076796,
+     0.8991519498902546,
+     0.6723828523008838,
+     -8.476797636646394,
+     1.4060886678604465,
+     1.405662108975699,
+     0.7981573301722426
+    ],
+    "rms_ratio_to_krank": 0.8455303867670685,
+    "sign_agreement": 0.8
+   }
+  },
+  "x_over_H": [
+   0.05,
+   0.5,
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0
+  ]
+ },
+ "mglet_trailing_rows_stripped": [
+  [
+   0.0,
+   0.0,
+   0.0
+  ],
+  [
+   9.0,
+   0.0,
+   0.0
+  ]
+ ],
+ "node": "development/nodes/node_002 (L0 attempt 3)",
+ "question": "re-adjudicate the eleven-rung a-priori wall-model ladder against a converged wall-traction truth, and test whether supplying exact omitted transport improves or degrades the wall-stress prediction",
+ "reference_envelope_note": "All model errors in this study are normalised by the RMS of the reference they are scored against. To compare the model spread with the reference spread on one scale, the B-to-C distance is also reported in units of the PRIMARY truth's RMS.",
+ "reference_notes": {
+  "A_withdrawn_linear4": "through-origin LINEAR fit of the first four archive points; withdrawn by the independent audit as under-resolved at the archive spacing (first point y+ 2.4-13). Retained ONLY as a negative control and as a verifier red fixture.",
+  "B_mglet": "Peller & Manhart MGLET full-wall DNS traction, ERCOFTAC UFR3-30, column 1 = tau_w (normalisation settled from the deposit's own velocity profiles); two trailing plot-axis placeholder rows stripped.",
+  "C_xiao_repaired_cubic6": "through-origin degree-3 fit of the first 6 fluid points of the SAME archive columns as A; validated by the audit against MGLET at the Xiao spacing (relative RMS error 0.264, sign accuracy 0.90) but NOT validated at the windward traction peak, which carries 92% of the traction energy -- hence a bracket, not an answer.",
+  "K_krank_stations": "Krank et al. Re=5600 deposited station traction, 10 stations; sparse independent cross-check, station metric only."
+ },
+ "reference_to_reference": {
+  "A_withdrawn_linear4_vs_B_mglet": {
+   "relative_rms_distance_in_primary_truth_units": 0.7029056019082559,
+   "relative_rms_distance_normalised_by_second": 0.7029056019082559,
+   "rms_ratio_first_over_second": 0.3599465280186923,
+   "sign_agreement": 0.863525390625
+  },
+  "A_withdrawn_linear4_vs_C_xiao_repaired_cubic6": {
+   "relative_rms_distance_in_primary_truth_units": 0.3409862554235417,
+   "relative_rms_distance_normalised_by_second": 0.544896443237736,
+   "rms_ratio_first_over_second": 0.5751949814796448,
+   "sign_agreement": 0.9091796875
+  },
+  "B_mglet_vs_C_xiao_repaired_cubic6": {
+   "relative_rms_distance_in_primary_truth_units": 0.4306106204265176,
+   "relative_rms_distance_normalised_by_second": 0.688116285506459,
+   "rms_ratio_first_over_second": 1.5980011938044711,
+   "sign_agreement": 0.922119140625
+  }
+ },
+ "references": {
+  "A_withdrawn_linear4": {
+   "role": "NEGATIVE_CONTROL_withdrawn_estimator_not_a_truth"
+  },
+  "B_mglet": {
+   "role": "PRIMARY_TRUTH"
+  },
+  "C_xiao_repaired_cubic6": {
+   "role": "SENSITIVITY_BRACKET_same_simulation"
+  }
+ },
+ "regional_amplification_note": "Lambda_tau = RMS(sum_j|I_j| + |tau(y_m)|)/RMS(tau_truth) is an upper bound on the error of the closure-free reconstruction. It is ATTAINED (attainment ~ 1) where the wall is curved and the one-dimensional wall-normal reduction is not a closed balance, and NOT attained (attainment << 1) on the flat inter-hill floor where it is closed. The flat floor is therefore a positive control on the reconstruction itself: if the assembled budget were mis-implemented it would fail there too.",
+ "runtime_seconds": 432.5,
+ "schema": "conditioning-ladder-l0-v1",
+ "stated_limits": [
+  "MGLET reattaches at x/H = 5.14 against 4.67-4.72 for the Xiao alpha=1 DNS: a ~10% reference uncertainty in the bubble length that this study does not settle.",
+  "The repaired estimator C was never validated at the windward traction maximum (x/H ~ 8.66), which carries 92% of the traction energy.",
+  "All results here are a priori: the ladder receives reference profiles, not a coupled large-eddy simulation.",
+  "One geometry (periodic hill, alpha=1), one Reynolds number (Re_H = 5600)."
+ ],
+ "surfaces": {
+  "archive_index10": {
+   "identifiability": {
+    "M1_pressure_gradient_ode-minus-M0_equilibrium": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 4.480426458342659,
+       "low": 1.1772178863841207,
+       "median": 3.7081721299989097
+      },
+      "B_mglet": {
+       "high": 0.5357121784970689,
+       "low": -0.31409429499381936,
+       "median": 0.39900479795853144
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 1.6169013434679755,
+       "low": -0.13344840844968855,
+       "median": 1.3294882142620659
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 3.75007284834042,
+      "B_mglet": 0.40465790710234106,
+      "C_xiao_repaired_cubic6": 1.3513208794928087
+     },
+     "question": "does the standard pressure-gradient ODE beat the equilibrium closure?",
+     "verdict": "UNRESOLVED",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    },
+    "M2_hickel_modelled_convection-minus-M0_equilibrium": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 0.9605268329237915,
+       "low": -0.184867098266108,
+       "median": 0.5879864829724237
+      },
+      "B_mglet": {
+       "high": -0.10816733754825231,
+       "low": -0.6503825962871982,
+       "median": -0.18416572301718814
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 0.06800761878792738,
+       "low": -0.6563433954277591,
+       "median": -0.18922818587164508
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 0.6012722971940244,
+      "B_mglet": -0.18012563291136063,
+      "C_xiao_repaired_cubic6": -0.188074531502193
+     },
+     "question": "does a MODELLED convective source beat the equilibrium closure?",
+     "verdict": "UNRESOLVED",
+     "verdict_under_withdrawn_control_only": "UNRESOLVED"
+    },
+    "M2_hickel_modelled_convection-minus-M1_pressure_gradient_ode": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": -1.1574526334704371,
+       "low": -3.612409314908687,
+       "median": -3.1230555186357973
+      },
+      "B_mglet": {
+       "high": -0.19399976941171093,
+       "low": -0.7615247324631642,
+       "median": -0.5814451757607941
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": -0.37870967794184224,
+       "low": -1.7324452092507296,
+       "median": -1.5239221122074227
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": -3.1488005511463957,
+      "B_mglet": -0.5847835400137017,
+      "C_xiao_repaired_cubic6": -1.5393954109950019
+     },
+     "question": "does the modelled convective surrogate beat the exact-pressure-gradient ODE?",
+     "verdict": "IDENTIFIED_FIRST_BETTER",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_FIRST_BETTER"
+    },
+    "Xall_all_omitted_transport-minus-M0_equilibrium": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 7.951153113957429,
+       "low": 2.475330127712428,
+       "median": 3.9805890790494303
+      },
+      "B_mglet": {
+       "high": 4.535383349105375,
+       "low": 0.5010199575112452,
+       "median": 0.9470559164182693
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 5.442933701950873,
+       "low": 1.0264562830792838,
+       "median": 1.9473073718799565
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 3.9883920449217345,
+      "B_mglet": 0.9344043954838972,
+      "C_xiao_repaired_cubic6": 1.9412224862816645
+     },
+     "question": "does supplying ALL omitted transport beat the crudest closure?",
+     "verdict": "IDENTIFIED_SECOND_BETTER",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    },
+    "Xall_all_omitted_transport-minus-M2_hickel_modelled_convection": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 7.52623598963215,
+       "low": 1.978793675072204,
+       "median": 3.3992761456031495
+      },
+      "B_mglet": {
+       "high": 4.939085827770434,
+       "low": 0.6981075501524318,
+       "median": 1.1373524714079404
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 5.716673751500581,
+       "low": 1.2429193572358717,
+       "median": 2.1430762184289938
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 3.38711974772771,
+      "B_mglet": 1.114530028395258,
+      "C_xiao_repaired_cubic6": 2.1292970177838577
+     },
+     "question": "completion versus regularisation",
+     "verdict": "IDENTIFIED_SECOND_BETTER",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    },
+    "Xc_exact_convection_profile-minus-M1_pressure_gradient_ode": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 0.18841832693307456,
+       "low": -0.8310534052807975,
+       "median": -0.5159425120848473
+      },
+      "B_mglet": {
+       "high": 0.2004191768930417,
+       "low": -0.3613362055937754,
+       "median": -0.28617344501462355
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 0.3537984194978161,
+       "low": -0.4350798509724552,
+       "median": -0.2599239751345097
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": -0.5281564564433445,
+      "B_mglet": -0.29033514538770533,
+      "C_xiao_repaired_cubic6": -0.2706365113306808
+     },
+     "question": "does the EXACT within-layer convection repair the pressure-gradient ODE?",
+     "verdict": "UNRESOLVED",
+     "verdict_under_withdrawn_control_only": "UNRESOLVED"
+    },
+    "Xc_exact_convection_profile-minus-M2_hickel_modelled_convection": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 2.948150555852777,
+       "low": 1.0810066828750624,
+       "median": 2.60298166478776
+      },
+      "B_mglet": {
+       "high": 0.7496672435016405,
+       "low": 0.14619766432881537,
+       "median": 0.2931240274962393
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 1.4778572497961442,
+       "low": 0.35622948065107224,
+       "median": 1.25711486827465
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 2.620644094703051,
+      "B_mglet": 0.29444839462599637,
+      "C_xiao_repaired_cubic6": 1.2687588996643209
+     },
+     "question": "does exact convection beat its modelled surrogate?",
+     "verdict": "IDENTIFIED_SECOND_BETTER",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    },
+    "Xfull_all_transport_plus_exact_shear_stress-minus-M0_equilibrium": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 26.420114237481492,
+       "low": 11.395108027916308,
+       "median": 18.824701918276673
+      },
+      "B_mglet": {
+       "high": 17.518792269241075,
+       "low": 4.805045250513257,
+       "median": 6.643293894589098
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 21.091201380811025,
+       "low": 6.295475198371768,
+       "median": 10.75234600048001
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 18.86570257868668,
+      "B_mglet": 6.564359180150887,
+      "C_xiao_repaired_cubic6": 10.722512522836617
+     },
+     "question": "does the closure-free exact-budget reconstruction beat the crudest closure?",
+     "verdict": "IDENTIFIED_SECOND_BETTER",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    },
+    "Xfull_all_transport_plus_exact_shear_stress-minus-Xall_all_omitted_transport": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 19.52777299146728,
+       "low": 7.623882944612675,
+       "median": 14.828572402407122
+      },
+      "B_mglet": {
+       "high": 13.46180369465104,
+       "low": 3.9912907320705036,
+       "median": 5.6904428926319035
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 16.102886935884023,
+       "low": 4.618524651677791,
+       "median": 8.781366175213645
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 14.877310533764945,
+      "B_mglet": 5.62995478466699,
+      "C_xiao_repaired_cubic6": 8.781290036554953
+     },
+     "question": "does removing the last modelling assumption (exact stress at y_m) help?",
+     "verdict": "IDENTIFIED_SECOND_BETTER",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    }
+   },
+   "mechanism_regional_Lambda": {
+    "flat_floor_2.05_to_6.90": {
+     "Lambda_imp_median": 1.2141354085475182,
+     "stations": 276
+    },
+    "leeward_and_crest_x_lt_1.929": {
+     "Lambda_imp_median": 1.3150090506737286,
+     "stations": 110
+    },
+    "recirculation_0.2_to_4.7": {
+     "Lambda_imp_median": 1.3035214689741248,
+     "stations": 256
+    },
+    "sloped_wall_complement_of_flat_floor": {
+     "Lambda_imp_median": 1.1792252905375402,
+     "stations": 236
+    },
+    "windward_face_x_gt_7.071": {
+     "Lambda_imp_median": 1.1019859332802084,
+     "stations": 109
+    }
+   },
+   "note": "the paper's a-priori surface: archive wall index 10",
+   "phase_count": 512,
+   "reference_free_diagnostics": {
+    "Lambda_imp_median": 1.2080041194646434,
+    "Lambda_imp_quartiles": [
+     1.0457184154936883,
+     1.450157684382378
+    ],
+    "S_abs_median": 0.0051703053586101885,
+    "abs_I_net_median": 0.00417271324803743,
+    "note": "Lambda_imp = sum_j|I_j| / |sum_j I_j| over the four omitted source terms; it contains no wall stress"
+   },
+   "regional_amplification": {
+    "B_mglet": {
+     "flat_floor_2.05_to_6.90": {
+      "E_Xfull_over_E_M0": 0.10866988783811235,
+      "Lambda_tau_global_norm": 2.4211331354997623,
+      "bound_attainment": 0.014644184825283256,
+      "bound_delta_times_Lambda_tau": 2.128451578299551,
+      "measured_E_Xfull_global_norm": 0.03116943830428448,
+      "median_wall_slope_magnitude": 0.0,
+      "stations": 276
+     },
+     "leeward_and_crest_x_lt_1.929": {
+      "E_Xfull_over_E_M0": 13.509950335548634,
+      "Lambda_tau_global_norm": 8.439864247974032,
+      "bound_attainment": 0.9669377440780607,
+      "bound_delta_times_Lambda_tau": 7.4196012254923955,
+      "measured_E_Xfull_global_norm": 7.1742924709364315,
+      "median_wall_slope_magnitude": 0.6161731213501457,
+      "stations": 110
+     },
+     "recirculation_0.2_to_4.7": {
+      "E_Xfull_over_E_M0": 7.968014414272429,
+      "Lambda_tau_global_norm": 4.418212091232056,
+      "bound_attainment": 0.7814060700689611,
+      "bound_delta_times_Lambda_tau": 3.884111270446058,
+      "measured_E_Xfull_global_norm": 3.035068123549814,
+      "median_wall_slope_magnitude": 0.0,
+      "stations": 256
+     },
+     "sloped_wall_complement_of_flat_floor": {
+      "E_Xfull_over_E_M0": 9.76882549421766,
+      "Lambda_tau_global_norm": 11.394710691251298,
+      "bound_attainment": 1.0800194014434203,
+      "bound_delta_times_Lambda_tau": 10.017247543908546,
+      "measured_E_Xfull_global_norm": 10.81882169648268,
+      "median_wall_slope_magnitude": 0.5658343928826369,
+      "stations": 236
+     },
+     "windward_face_x_gt_7.071": {
+      "E_Xfull_over_E_M0": 9.224038977545979,
+      "Lambda_tau_global_norm": 14.446760733546403,
+      "bound_attainment": 1.1147708981188715,
+      "bound_delta_times_Lambda_tau": 12.700346888724757,
+      "measured_E_Xfull_global_norm": 14.157977107564914,
+      "median_wall_slope_magnitude": 0.6245853755506794,
+      "stations": 109
+     }
+    },
+    "C_xiao_repaired_cubic6": {
+     "flat_floor_2.05_to_6.90": {
+      "E_Xfull_over_E_M0": 0.21891664908810118,
+      "Lambda_tau_global_norm": 3.868973640888182,
+      "bound_attainment": 0.024487632834603718,
+      "bound_delta_times_Lambda_tau": 3.4012681630776926,
+      "measured_E_Xfull_global_norm": 0.08328900594947358,
+      "median_wall_slope_magnitude": 0.0,
+      "stations": 276
+     },
+     "leeward_and_crest_x_lt_1.929": {
+      "E_Xfull_over_E_M0": 13.082865398357088,
+      "Lambda_tau_global_norm": 13.486913143810176,
+      "bound_attainment": 0.9659170400805838,
+      "bound_delta_times_Lambda_tau": 11.856531615889962,
+      "measured_E_Xfull_global_norm": 11.452425924042293,
+      "median_wall_slope_magnitude": 0.6161731213501457,
+      "stations": 110
+     },
+     "recirculation_0.2_to_4.7": {
+      "E_Xfull_over_E_M0": 8.88457018246235,
+      "Lambda_tau_global_norm": 7.060308196270174,
+      "bound_attainment": 0.7776886680512557,
+      "bound_delta_times_Lambda_tau": 6.206814447042201,
+      "measured_E_Xfull_global_norm": 4.82696926016154,
+      "median_wall_slope_magnitude": 0.0,
+      "stations": 256
+     },
+     "sloped_wall_complement_of_flat_floor": {
+      "E_Xfull_over_E_M0": 16.226826792567664,
+      "Lambda_tau_global_norm": 18.208761287676143,
+      "bound_attainment": 1.05660957518398,
+      "bound_delta_times_Lambda_tau": 16.007573533800763,
+      "measured_E_Xfull_global_norm": 16.913755471275543,
+      "median_wall_slope_magnitude": 0.5658343928826369,
+      "stations": 236
+     },
+     "windward_face_x_gt_7.071": {
+      "E_Xfull_over_E_M0": 17.604450813165812,
+      "Lambda_tau_global_norm": 23.085940898814705,
+      "bound_attainment": 1.0846203783465018,
+      "bound_delta_times_Lambda_tau": 20.295169489913057,
+      "measured_E_Xfull_global_norm": 22.012554410755882,
+      "median_wall_slope_magnitude": 0.6245853755506794,
+      "stations": 109
+     }
+    }
+   },
+   "regions": {
+    "A_withdrawn_linear4": {
+     "flat_floor_2.05_to_6.90": {
+      "fraction_of_tau2_energy": 0.12798168511930022,
+      "fraction_of_wall": 0.5390625,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.24362604354586787,
+        "relative_rms_local_norm": 0.4999992591497637
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 1.080591259298099,
+        "relative_rms_local_norm": 2.217721969412673
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.41303264069570533,
+        "relative_rms_local_norm": 0.8476762637802394
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 1.046631946622749,
+        "relative_rms_local_norm": 2.1480265011787383
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 1.0364074522071747,
+        "relative_rms_local_norm": 2.127042539207507
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.9318892161058748,
+        "relative_rms_local_norm": 1.9125373908346848
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 1.0445401016229598,
+        "relative_rms_local_norm": 2.1437333602036284
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 1.0364930814423088,
+        "relative_rms_local_norm": 2.12721827803044
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 1.0467238472379798,
+        "relative_rms_local_norm": 2.1482151108973957
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 0.505226176117492,
+        "relative_rms_local_norm": 1.0368871491945164
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 1.0808536032670695,
+        "relative_rms_local_norm": 2.218260383895043
+       }
+      }
+     },
+     "leeward_and_crest_x_lt_1.929": {
+      "fraction_of_tau2_energy": 0.08653521091832617,
+      "fraction_of_wall": 0.21435546875,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.9202546344084163,
+        "relative_rms_local_norm": 1.448367826267348
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 1.359590733036825,
+        "relative_rms_local_norm": 2.139828913643738
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.38634895453224266,
+        "relative_rms_local_norm": 0.6080658271460362
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 3.9685340811106857,
+        "relative_rms_local_norm": 6.245985475771273
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 1.3908080896863664,
+        "relative_rms_local_norm": 2.188961200840938
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 2.9816965025930657,
+        "relative_rms_local_norm": 4.692824269041439
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 1.2462005833584613,
+        "relative_rms_local_norm": 1.9613667375577069
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 4.007738319500209,
+        "relative_rms_local_norm": 6.307688134376414
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 3.9668217139970467,
+        "relative_rms_local_norm": 6.24329042014056
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 19.63715535196629,
+        "relative_rms_local_norm": 30.90647191305415
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 3.4537409411436215,
+        "relative_rms_local_norm": 5.4357642682565155
+       }
+      }
+     },
+     "recirculation_0.2_to_4.7": {
+      "fraction_of_tau2_energy": 0.14636113718686805,
+      "fraction_of_wall": 0.5,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.4619849286483379,
+        "relative_rms_local_norm": 0.8538860575638231
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 1.1816840832296305,
+        "relative_rms_local_norm": 2.184104936208724
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.36309715855826347,
+        "relative_rms_local_norm": 0.6711119389566637
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 2.4228899253374676,
+        "relative_rms_local_norm": 4.478223850961029
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 1.1235905725472257,
+        "relative_rms_local_norm": 2.0767307866844655
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 1.9465092558683692,
+        "relative_rms_local_norm": 3.5977301670161586
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 1.124637773970676,
+        "relative_rms_local_norm": 2.0786663275203137
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 2.437943499174153,
+        "relative_rms_local_norm": 4.506047349128515
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 2.422270847460278,
+        "relative_rms_local_norm": 4.477079610239963
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 8.374539139810034,
+        "relative_rms_local_norm": 15.478648255752027
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 2.4148236603218196,
+        "relative_rms_local_norm": 4.463314985311173
+       }
+      }
+     },
+     "sloped_wall_complement_of_flat_floor": {
+      "fraction_of_tau2_energy": 0.8720183148806998,
+      "fraction_of_wall": 0.4609375,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.76053006220913,
+        "relative_rms_local_norm": 0.5529356649111202
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 6.219598413320408,
+        "relative_rms_local_norm": 4.521895918433536
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 1.630421113240927,
+        "relative_rms_local_norm": 1.1853811271001435
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 6.582854844801584,
+        "relative_rms_local_norm": 4.785997821112898
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 5.436156945342449,
+        "relative_rms_local_norm": 3.952302748431773
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 5.150090222266217,
+        "relative_rms_local_norm": 3.744320840032724
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 5.913703618892489,
+        "relative_rms_local_norm": 4.299498211946371
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 6.551722785697579,
+        "relative_rms_local_norm": 4.763363573426853
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 6.558636850059192,
+        "relative_rms_local_norm": 4.768390373766502
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 28.587310834170474,
+        "relative_rms_local_norm": 20.784114277084736
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 4.180527331075091,
+        "relative_rms_local_norm": 3.03940997778926
+       }
+      }
+     },
+     "windward_face_x_gt_7.071": {
+      "fraction_of_tau2_energy": 0.7778182913387294,
+      "fraction_of_wall": 0.214111328125,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.62716829450669,
+        "relative_rms_local_norm": 0.3290522326839363
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 9.019285757218613,
+        "relative_rms_local_norm": 4.7320888852673875
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 2.3566146821578142,
+        "relative_rms_local_norm": 1.236429407436351
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 8.800263114640424,
+        "relative_rms_local_norm": 4.617175726901536
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 7.848245820456353,
+        "relative_rms_local_norm": 4.117687122409194
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 6.9361527803909935,
+        "relative_rms_local_norm": 3.639145311737698
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 8.582231054918104,
+        "relative_rms_local_norm": 4.502782291077842
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 8.731773714702351,
+        "relative_rms_local_norm": 4.581241847331727
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 8.762015674574323,
+        "relative_rms_local_norm": 4.597108695997024
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 37.057580910966635,
+        "relative_rms_local_norm": 19.44275538706958
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 5.0599739936959285,
+        "relative_rms_local_norm": 2.6547830216097417
+       }
+      }
+     }
+    },
+    "B_mglet": {
+     "flat_floor_2.05_to_6.90": {
+      "fraction_of_tau2_energy": 0.06705774475819172,
+      "fraction_of_wall": 0.5390625,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.2868268195023648,
+        "relative_rms_local_norm": 0.8132327239943189
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.20951419499965832,
+        "relative_rms_local_norm": 0.5940302228733679
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.14262315103587167,
+        "relative_rms_local_norm": 0.4043757617324164
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 0.19844225287047246,
+        "relative_rms_local_norm": 0.5626382293587898
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.19965202401257603,
+        "relative_rms_local_norm": 0.5660682624463844
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.19439203667964497,
+        "relative_rms_local_norm": 0.5511547552842696
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.20279913111228945,
+        "relative_rms_local_norm": 0.5749911744803502
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 0.20068189409353296,
+        "relative_rms_local_norm": 0.568988226669918
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 0.19844345210395636,
+        "relative_rms_local_norm": 0.5626416295147254
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 0.03116943830428448,
+        "relative_rms_local_norm": 0.08837390890274521
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 0.21062404309615426,
+        "relative_rms_local_norm": 0.5971769467128584
+       }
+      }
+     },
+     "leeward_and_crest_x_lt_1.929": {
+      "fraction_of_tau2_energy": 0.008763975198777543,
+      "fraction_of_wall": 0.21435546875,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.5310376642953873,
+        "relative_rms_local_norm": 2.626286122943199
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.3358644806711368,
+        "relative_rms_local_norm": 1.6610426794237325
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.20926859007867282,
+        "relative_rms_local_norm": 1.0349533207230197
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 1.5274241788158087,
+        "relative_rms_local_norm": 7.55398947077418
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.47793743842876785,
+        "relative_rms_local_norm": 2.3636750207651804
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 1.1975703461221132,
+        "relative_rms_local_norm": 5.922672896360336
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.3636819151355385,
+        "relative_rms_local_norm": 1.7986158630634956
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 1.5404065512550353,
+        "relative_rms_local_norm": 7.618194755770793
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 1.5266362125047932,
+        "relative_rms_local_norm": 7.5500925249884
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 7.1742924709364315,
+        "relative_rms_local_norm": 35.480995087903196
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 1.3180282979205167,
+        "relative_rms_local_norm": 6.518406623884295
+       }
+      }
+     },
+     "recirculation_0.2_to_4.7": {
+      "fraction_of_tau2_energy": 0.07467051856256743,
+      "fraction_of_wall": 0.5,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.3809064549523597,
+        "relative_rms_local_norm": 0.9856636732743562
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.2327183188654896,
+        "relative_rms_local_norm": 0.6022003303668887
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.16384833011615257,
+        "relative_rms_local_norm": 0.4239868997293709
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 0.838997344682132,
+        "relative_rms_local_norm": 2.1710558954172914
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.22076096931697062,
+        "relative_rms_local_norm": 0.5712585468255917
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.713762542081146,
+        "relative_rms_local_norm": 1.8469884138911106
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.25377373083721155,
+        "relative_rms_local_norm": 0.6566849799088554
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 0.8474205303789414,
+        "relative_rms_local_norm": 2.1928523970166864
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 0.8386198858734721,
+        "relative_rms_local_norm": 2.1700791531462786
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 3.035068123549814,
+        "relative_rms_local_norm": 7.853782356274781
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 0.836447596735777,
+        "relative_rms_local_norm": 2.1644579659412932
+       }
+      }
+     },
+     "sloped_wall_complement_of_flat_floor": {
+      "fraction_of_tau2_energy": 0.9329422552418084,
+      "fraction_of_wall": 0.4609375,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 1.1074843851890415,
+        "relative_rms_local_norm": 0.7784509460463231
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 1.7313683740022048,
+        "relative_rms_local_norm": 1.2169790985058822
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.8712447447465055,
+        "relative_rms_local_norm": 0.6123980661542564
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 2.517273654478299,
+        "relative_rms_local_norm": 1.7693920419940083
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 1.3006922005645718,
+        "relative_rms_local_norm": 0.9142567494274264
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 1.9197684615551738,
+        "relative_rms_local_norm": 1.349405549255149
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 1.6998881507306747,
+        "relative_rms_local_norm": 1.194851644687841
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 2.536665597515001,
+        "relative_rms_local_norm": 1.7830226417609032
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 2.539299872662504,
+        "relative_rms_local_norm": 1.7848742741704833
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 10.81882169648268,
+        "relative_rms_local_norm": 7.6045514477351785
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 1.8546891723059558,
+        "relative_rms_local_norm": 1.3036613067524174
+       }
+      }
+     },
+     "windward_face_x_gt_7.071": {
+      "fraction_of_tau2_energy": 0.9229747942821931,
+      "fraction_of_wall": 0.214111328125,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 1.5348999654088182,
+        "relative_rms_local_norm": 0.7392732272582393
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 2.516976333606076,
+        "relative_rms_local_norm": 1.2122830536268672
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 1.2607207391227297,
+        "relative_rms_local_norm": 0.6072168287751651
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 3.3616732751974667,
+        "relative_rms_local_norm": 1.6191250942409647
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 1.8460175109965127,
+        "relative_rms_local_norm": 0.8891206943027883
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 2.548013258572143,
+        "relative_rms_local_norm": 1.227231759210898
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 2.466480599443996,
+        "relative_rms_local_norm": 1.1879621563709784
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 3.3869730841557537,
+        "relative_rms_local_norm": 1.6313105602902966
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 3.397499733179911,
+        "relative_rms_local_norm": 1.636380643013395
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 14.157977107564914,
+        "relative_rms_local_norm": 6.819085063286206
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 2.3792655929560755,
+        "relative_rms_local_norm": 1.1459556929109962
+       }
+      }
+     }
+    },
+    "C_xiao_repaired_cubic6": {
+     "flat_floor_2.05_to_6.90": {
+      "fraction_of_tau2_energy": 0.13806601603897922,
+      "fraction_of_wall": 0.5390625,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.3804598978488594,
+        "relative_rms_local_norm": 0.7517701039241927
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.4518145925296549,
+        "relative_rms_local_norm": 0.892763482040933
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.23918338004223905,
+        "relative_rms_local_norm": 0.4726146316286006
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 0.43130013563618913,
+        "relative_rms_local_norm": 0.8522279210581677
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.43339735703329624,
+        "relative_rms_local_norm": 0.8563719277105628
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.414099360494716,
+        "relative_rms_local_norm": 0.8182400327451165
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.43983517574247366,
+        "relative_rms_local_norm": 0.8690927418289698
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 0.4352168663023431,
+        "relative_rms_local_norm": 0.8599671888143382
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 0.43129180221833163,
+        "relative_rms_local_norm": 0.8522114546330748
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 0.08328900594947358,
+        "relative_rms_local_norm": 0.16457499203569784
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 0.4537458441288082,
+        "relative_rms_local_norm": 0.8965795405101913
+       }
+      }
+     },
+     "leeward_and_crest_x_lt_1.929": {
+      "fraction_of_tau2_energy": 0.014697298478710706,
+      "fraction_of_wall": 0.21435546875,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.8753759650756981,
+        "relative_rms_local_norm": 3.343052101082751
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.5357758432249585,
+        "relative_rms_local_norm": 2.0461226145816016
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.3727931947181521,
+        "relative_rms_local_norm": 1.4236935015277679
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 2.448863612296171,
+        "relative_rms_local_norm": 9.352185770423647
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.780066175940069,
+        "relative_rms_local_norm": 2.9790649646572436
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 1.9143339186694135,
+        "relative_rms_local_norm": 7.310822188759026
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.580361268087588,
+        "relative_rms_local_norm": 2.2163939085299016
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 2.4691374386271128,
+        "relative_rms_local_norm": 9.429611311467353
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 2.447009556629791,
+        "relative_rms_local_norm": 9.345105150280643
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 11.452425924042293,
+        "relative_rms_local_norm": 43.73670065816049
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 2.1068837119028703,
+        "relative_rms_local_norm": 8.04616793334603
+       }
+      }
+     },
+     "recirculation_0.2_to_4.7": {
+      "fraction_of_tau2_energy": 0.1445382004828891,
+      "fraction_of_wall": 0.5,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.5432980055343264,
+        "relative_rms_local_norm": 1.0104894676014522
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.4513564179104197,
+        "relative_rms_local_norm": 0.8394856999046761
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.22970360336457157,
+        "relative_rms_local_norm": 0.42722975145421516
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 1.3481387202173656,
+        "relative_rms_local_norm": 2.507426796653826
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.4261349515670711,
+        "relative_rms_local_norm": 0.7925758533051969
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 1.1525707751817864,
+        "relative_rms_local_norm": 2.143686553461591
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.4721584117812306,
+        "relative_rms_local_norm": 0.8781756923166513
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 1.3614685544951821,
+        "relative_rms_local_norm": 2.532219188684346
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 1.3473973510172534,
+        "relative_rms_local_norm": 2.506047911105405
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 4.82696926016154,
+        "relative_rms_local_norm": 8.977764593544116
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 1.3482457309704086,
+        "relative_rms_local_norm": 2.5076258278259798
+       }
+      }
+     },
+     "sloped_wall_complement_of_flat_floor": {
+      "fraction_of_tau2_energy": 0.8619339839610205,
+      "fraction_of_wall": 0.4609375,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 1.0423329026364239,
+        "relative_rms_local_norm": 0.7622377718559386
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 3.0723760419417316,
+        "relative_rms_local_norm": 2.2467688226955116
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.8029460024547591,
+        "relative_rms_local_norm": 0.5871787893135643
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 3.95243728451528,
+        "relative_rms_local_norm": 2.890340486738067
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 2.671558637270555,
+        "relative_rms_local_norm": 1.9536588530448602
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 2.8466444911585995,
+        "relative_rms_local_norm": 2.0816957314870144
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 2.9380237526230983,
+        "relative_rms_local_norm": 2.148519607502407
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 3.947992988886966,
+        "relative_rms_local_norm": 2.8870904598142055
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 3.952033272895667,
+        "relative_rms_local_norm": 2.890045040901177
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 16.913755471275543,
+        "relative_rms_local_norm": 12.368700298659022
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 2.594917499925041,
+        "relative_rms_local_norm": 1.8976126804497246
+       }
+      }
+     },
+     "windward_face_x_gt_7.071": {
+      "fraction_of_tau2_energy": 0.842453027631691,
+      "fraction_of_wall": 0.214111328125,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 1.2503971094794613,
+        "relative_rms_local_norm": 0.6303691285814771
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 4.473787649710933,
+        "relative_rms_local_norm": 2.2553935872267608
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 1.1146171551322779,
+        "relative_rms_local_norm": 0.5619176815557411
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 5.2549567480738775,
+        "relative_rms_local_norm": 2.6492083842033978
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 3.839163280784983,
+        "relative_rms_local_norm": 1.9354571387308426
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 3.7096007834502287,
+        "relative_rms_local_norm": 1.8701401303000176
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 4.269590299450966,
+        "relative_rms_local_norm": 2.1524505263653935
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 5.237834484892956,
+        "relative_rms_local_norm": 2.6405764495652946
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 5.2551657573768935,
+        "relative_rms_local_norm": 2.6493137531387614
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 22.012554410755882,
+        "relative_rms_local_norm": 11.097302318250808
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 3.1673747182444343,
+        "relative_rms_local_norm": 1.5967849140837616
+       }
+      }
+     }
+    }
+   },
+   "runtime_seconds": 284.7,
+   "scores": {
+    "A_withdrawn_linear4": {
+     "M0_equilibrium": {
+      "r2": 0.6842136979665834,
+      "relative_rms": 0.5464470064037737,
+      "relative_rms_interval": {
+       "high": 0.9939157106014577,
+       "low": 0.26722310834544993,
+       "median": 0.5293129529732974
+      },
+      "sign_accuracy": 0.953125
+     },
+     "M1_pressure_gradient_ode": {
+      "r2": -18.522293218323323,
+      "relative_rms": 4.296519854744194,
+      "relative_rms_interval": {
+       "high": 4.868062712581946,
+       "low": 1.916594564618023,
+       "median": 4.259960487116011
+      },
+      "sign_accuracy": 0.520263671875
+     },
+     "M2_hickel_modelled_convection": {
+      "r2": -0.39305594372953023,
+      "relative_rms": 1.1477193035977982,
+      "relative_rms_interval": {
+       "high": 1.2671412078116844,
+       "low": 0.6897253191273394,
+       "median": 1.1391925501576652
+      },
+      "sign_accuracy": 0.594482421875
+     },
+     "Xall_all_omitted_transport": {
+      "r2": -20.74808096016238,
+      "relative_rms": 4.534839051325508,
+      "relative_rms_interval": {
+       "high": 8.498872237997013,
+       "low": 3.0397825593838057,
+       "median": 4.526795040767679
+      },
+      "sign_accuracy": 0.557861328125
+     },
+     "Xc_exact_convection_profile": {
+      "r2": -14.017676301679433,
+      "relative_rms": 3.768363398300849,
+      "relative_rms_interval": {
+       "high": 4.19287332416901,
+       "low": 1.831857914068112,
+       "median": 3.7403059288143776
+      },
+      "sign_accuracy": 0.580810546875
+     },
+     "Xc_resolved_convection_constant": {
+      "r2": -12.424186110678948,
+      "relative_rms": 3.5628323713560373,
+      "relative_rms_interval": {
+       "high": 4.122403115647654,
+       "low": 1.7666841919814125,
+       "median": 3.5237239637166065
+      },
+      "sign_accuracy": 0.550048828125
+     },
+     "Xc_resolved_convection_linear": {
+      "r2": -16.66940178100471,
+      "relative_rms": 4.087542962965174,
+      "relative_rms_interval": {
+       "high": 4.6310822759741,
+       "low": 1.847232138551309,
+       "median": 4.051355864708174
+      },
+      "sign_accuracy": 0.5302734375
+     },
+     "Xcp_convection_plus_pressure_profile": {
+      "r2": -20.536714909740237,
+      "relative_rms": 4.512748566405951,
+      "relative_rms_interval": {
+       "high": 8.452300050131038,
+       "low": 3.041078103859545,
+       "median": 4.505039667303505
+      },
+      "sign_accuracy": 0.559814453125
+     },
+     "Xcpr_plus_streamwise_normal_stress": {
+      "r2": -20.59305124505338,
+      "relative_rms": 4.518646997944582,
+      "relative_rms_interval": {
+       "high": 8.499081929246143,
+       "low": 3.0344901377065523,
+       "median": 4.509074469168988
+      },
+      "sign_accuracy": 0.559814453125
+     },
+     "Xfull_all_transport_plus_exact_shear_stress": {
+      "r2": -397.5147898566615,
+      "relative_rms": 19.412149585090454,
+      "relative_rms_interval": {
+       "high": 27.123265789185286,
+       "low": 11.859907046893895,
+       "median": 19.358654693136195
+      },
+      "sign_accuracy": 0.6728515625
+     },
+     "Xp_exact_pressure_profile": {
+      "r2": -8.185243571084973,
+      "relative_rms": 2.947112713759364,
+      "relative_rms_interval": {
+       "high": 8.381064119276296,
+       "low": 0.8833582617686769,
+       "median": 2.9864237159971223
+      },
+      "sign_accuracy": 0.5830078125
+     }
+    },
+    "B_mglet": {
+     "M0_equilibrium": {
+      "r2": 0.379663607789956,
+      "relative_rms": 0.7808317991963687,
+      "relative_rms_interval": {
+       "high": 1.2441099771733468,
+       "low": 0.7042398344954243,
+       "median": 0.7809063695750426
+      },
+      "sign_accuracy": 0.816650390625
+     },
+     "M1_pressure_gradient_ode": {
+      "r2": -0.42990719495022045,
+      "relative_rms": 1.1854897062987098,
+      "relative_rms_interval": {
+       "high": 1.3812006808381265,
+       "low": 0.6100188740732057,
+       "median": 1.1818989262737296
+      },
+      "sign_accuracy": 0.65673828125
+     },
+     "M2_hickel_modelled_convection": {
+      "r2": 0.6328559816968127,
+      "relative_rms": 0.6007061662850081,
+      "relative_rms_interval": {
+       "high": 0.7378304366602043,
+       "low": 0.4094096684191491,
+       "median": 0.5977557310470385
+      },
+      "sign_accuracy": 0.7158203125
+     },
+     "Xall_all_omitted_transport": {
+      "r2": -1.9933682085089552,
+      "relative_rms": 1.715236194680266,
+      "relative_rms_interval": {
+       "high": 5.55521362331098,
+       "low": 1.2655681270819232,
+       "median": 1.733121495450475
+      },
+      "sign_accuracy": 0.62255859375
+     },
+     "Xc_exact_convection_profile": {
+      "r2": 0.1847170981650723,
+      "relative_rms": 0.8951545609110044,
+      "relative_rms_interval": {
+       "high": 1.4352685562588856,
+       "low": 0.5742305004542534,
+       "median": 0.8907059354841851
+      },
+      "sign_accuracy": 0.70654296875
+     },
+     "Xc_resolved_convection_constant": {
+      "r2": -0.7491565679769561,
+      "relative_rms": 1.3111675856599416,
+      "relative_rms_interval": {
+       "high": 2.574108442139048,
+       "low": 0.6149891531582103,
+       "median": 1.2976900728196048
+      },
+      "sign_accuracy": 0.6474609375
+     },
+     "Xc_resolved_convection_linear": {
+      "r2": -0.3777309639317099,
+      "relative_rms": 1.1636599066149935,
+      "relative_rms_interval": {
+       "high": 1.3899558920168207,
+       "low": 0.5938706514867547,
+       "median": 1.1605351363737488
+      },
+      "sign_accuracy": 0.650634765625
+     },
+     "Xcp_convection_plus_pressure_profile": {
+      "r2": -2.0398211951629595,
+      "relative_rms": 1.7284940185207174,
+      "relative_rms_interval": {
+       "high": 5.532311894252528,
+       "low": 1.2822770803682029,
+       "median": 1.7469500966851825
+      },
+      "sign_accuracy": 0.62451171875
+     },
+     "Xcpr_plus_streamwise_normal_stress": {
+      "r2": -2.0456021445329244,
+      "relative_rms": 1.7301368109041784,
+      "relative_rms_interval": {
+       "high": 5.5521123657285045,
+       "low": 1.2791867958224197,
+       "median": 1.7482728106409642
+      },
+      "sign_accuracy": 0.62451171875
+     },
+     "Xfull_all_transport_plus_exact_shear_stress": {
+      "r2": -53.89318893406636,
+      "relative_rms": 7.345190979347255,
+      "relative_rms_interval": {
+       "high": 18.65392334231923,
+       "low": 5.5653429314029434,
+       "median": 7.42827483741633
+      },
+      "sign_accuracy": 0.695556640625
+     },
+     "Xp_exact_pressure_profile": {
+      "r2": -0.6375625333899517,
+      "relative_rms": 1.2686528757956024,
+      "relative_rms_interval": {
+       "high": 5.353588866876783,
+       "low": 0.7571355070259286,
+       "median": 1.2864966762284362
+      },
+      "sign_accuracy": 0.637939453125
+     }
+    },
+    "C_xiao_repaired_cubic6": {
+     "M0_equilibrium": {
+      "r2": 0.41466732709038023,
+      "relative_rms": 0.7608011122756365,
+      "relative_rms_interval": {
+       "high": 1.4375158777335078,
+       "low": 0.5928173951585243,
+       "median": 0.7528255239566408
+      },
+      "sign_accuracy": 0.8623046875
+     },
+     "M1_pressure_gradient_ode": {
+      "r2": -3.5112665278217534,
+      "relative_rms": 2.1121219917684453,
+      "relative_rms_interval": {
+       "high": 2.3329108414684696,
+       "low": 0.8488258159357785,
+       "median": 2.096521264652625
+      },
+      "sign_accuracy": 0.611083984375
+     },
+     "M2_hickel_modelled_convection": {
+      "r2": 0.6682925938266564,
+      "relative_rms": 0.5727265807734435,
+      "relative_rms_interval": {
+       "high": 0.8945805831903094,
+       "low": 0.4419243939847658,
+       "median": 0.5712537028449476
+      },
+      "sign_accuracy": 0.643310546875
+     },
+     "Xall_all_omitted_transport": {
+      "r2": -6.383100233728554,
+      "relative_rms": 2.702023598557301,
+      "relative_rms_interval": {
+       "high": 6.511304639736036,
+       "low": 1.7651682027793498,
+       "median": 2.716245335634203
+      },
+      "sign_accuracy": 0.559326171875
+     },
+     "Xc_exact_convection_profile": {
+      "r2": -2.429233731293725,
+      "relative_rms": 1.8414854804377645,
+      "relative_rms_interval": {
+       "high": 2.22800158766882,
+       "low": 0.8138509318505484,
+       "median": 1.8306317311055609
+      },
+      "sign_accuracy": 0.635009765625
+     },
+     "Xc_resolved_convection_constant": {
+      "r2": -2.8706692925503248,
+      "relative_rms": 1.956423131373457,
+      "relative_rms_interval": {
+       "high": 3.172652263769834,
+       "low": 0.8300241384908579,
+       "median": 1.9361720231864616
+      },
+      "sign_accuracy": 0.585205078125
+     },
+     "Xc_resolved_convection_linear": {
+      "r2": -3.1290425898194467,
+      "relative_rms": 2.0206655471366393,
+      "relative_rms_interval": {
+       "high": 2.256804653848317,
+       "low": 0.8293867431649448,
+       "median": 2.0066766375903944
+      },
+      "sign_accuracy": 0.60498046875
+     },
+     "Xcp_convection_plus_pressure_profile": {
+      "r2": -6.368583840797826,
+      "relative_rms": 2.699365979533154,
+      "relative_rms_interval": {
+       "high": 6.476573188154001,
+       "low": 1.7707684765425689,
+       "median": 2.715076317141908
+      },
+      "sign_accuracy": 0.561279296875
+     },
+     "Xcpr_plus_streamwise_normal_stress": {
+      "r2": -6.381607745458783,
+      "relative_rms": 2.7017504787145388,
+      "relative_rms_interval": {
+       "high": 6.508813866896871,
+       "low": 1.7644933928170938,
+       "median": 2.716049109948577
+      },
+      "sign_accuracy": 0.561279296875
+     },
+     "Xfull_all_transport_plus_exact_shear_stress": {
+      "r2": -132.35059020852344,
+      "relative_rms": 11.483313635112253,
+      "relative_rms_interval": {
+       "high": 22.288009546030725,
+       "low": 7.016031816115945,
+       "median": 11.514041709222251
+      },
+      "sign_accuracy": 0.66455078125
+     },
+     "Xp_exact_pressure_profile": {
+      "r2": -2.250932923390217,
+      "relative_rms": 1.7929730419600998,
+      "relative_rms_interval": {
+       "high": 6.2360137488407235,
+       "low": 0.7546240360039438,
+       "median": 1.8136269903034705
+      },
+      "sign_accuracy": 0.57470703125
+     }
+    }
+   },
+   "y_m_over_H": {
+    "max": 0.13885706999999992,
+    "median": 0.0935321823,
+    "min": 0.08030867600500097
+   }
+  },
+  "common_W1": {
+   "identifiability": {
+    "M1_pressure_gradient_ode-minus-M0_equilibrium": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 0.7060844362873525,
+       "low": 0.3951021268452492,
+       "median": 0.6401885542867369
+      },
+      "B_mglet": {
+       "high": -0.07960191920377375,
+       "low": -0.273703074446213,
+       "median": -0.12664193523605763
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 0.093552825071452,
+       "low": -0.1332008361449852,
+       "median": 0.02402398179169693
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 0.6438792231026857,
+      "B_mglet": -0.12482852867162575,
+      "C_xiao_repaired_cubic6": 0.025120882449260473
+     },
+     "question": "does the standard pressure-gradient ODE beat the equilibrium closure?",
+     "verdict": "UNRESOLVED",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    },
+    "M2_hickel_modelled_convection-minus-M0_equilibrium": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 0.5376050675658458,
+       "low": 0.329546720683376,
+       "median": 0.48893913970915326
+      },
+      "B_mglet": {
+       "high": -0.06828927162071526,
+       "low": -0.2415364433033034,
+       "median": -0.10216876715686002
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 0.03514124096331084,
+       "low": -0.14543801233144754,
+       "median": -0.023215907958859056
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 0.4906987253212438,
+      "B_mglet": -0.100611261318868,
+      "C_xiao_repaired_cubic6": -0.02225837172103673
+     },
+     "question": "does a MODELLED convective source beat the equilibrium closure?",
+     "verdict": "UNRESOLVED",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    },
+    "M2_hickel_modelled_convection-minus-M1_pressure_gradient_ode": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": -0.06450633080075342,
+       "low": -0.17335565214813942,
+       "median": -0.15191682295649322
+      },
+      "B_mglet": {
+       "high": 0.037928628274922147,
+       "low": -0.00490132094400553,
+       "median": 0.02446759943990165
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": -0.008132428778797073,
+       "low": -0.06252067092434238,
+       "median": -0.047082476631277986
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": -0.15318049778144194,
+      "B_mglet": 0.024217267352757754,
+      "C_xiao_repaired_cubic6": -0.0473792541702972
+     },
+     "question": "does the modelled convective surrogate beat the exact-pressure-gradient ODE?",
+     "verdict": "UNRESOLVED",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_FIRST_BETTER"
+    },
+    "Xall_all_omitted_transport-minus-M0_equilibrium": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 6.605812193358599,
+       "low": 0.06296385754332501,
+       "median": 1.9411728388373555
+      },
+      "B_mglet": {
+       "high": 4.006075369302398,
+       "low": -0.024006163985318598,
+       "median": 0.4597297675551648
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 4.823512385808944,
+       "low": -0.025740528965907273,
+       "median": 1.0838739118888494
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 1.9166722865168866,
+      "B_mglet": 0.44668539892957426,
+      "C_xiao_repaired_cubic6": 1.0685632861308583
+     },
+     "question": "does supplying ALL omitted transport beat the crudest closure?",
+     "verdict": "UNRESOLVED",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    },
+    "Xall_all_omitted_transport-minus-M2_hickel_modelled_convection": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 6.209931682071952,
+       "low": -0.4490288879786164,
+       "median": 1.4536615188525164
+      },
+      "B_mglet": {
+       "high": 4.208269208967653,
+       "low": 0.07708777716549059,
+       "median": 0.5617691226109359
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 4.840760270839048,
+       "low": 0.0017648979402558628,
+       "median": 1.1106481927733032
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 1.4259735611956428,
+      "B_mglet": 0.5472966602484423,
+      "C_xiao_repaired_cubic6": 1.0908216578518948
+     },
+     "question": "completion versus regularisation",
+     "verdict": "IDENTIFIED_SECOND_BETTER",
+     "verdict_under_withdrawn_control_only": "UNRESOLVED"
+    },
+    "Xc_exact_convection_profile-minus-M1_pressure_gradient_ode": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 0.03507935562067421,
+       "low": -0.035650977908351436,
+       "median": -0.011961583348726879
+      },
+      "B_mglet": {
+       "high": 0.011247248252534035,
+       "low": -0.02997583310346482,
+       "median": -0.01252631538573884
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 0.004480848153779309,
+       "low": -0.03287453230941515,
+       "median": -0.023776498896200676
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": -0.012828757291206916,
+      "B_mglet": -0.012794915723492395,
+      "C_xiao_repaired_cubic6": -0.024249728566122564
+     },
+     "question": "does the EXACT within-layer convection repair the pressure-gradient ODE?",
+     "verdict": "UNRESOLVED",
+     "verdict_under_withdrawn_control_only": "UNRESOLVED"
+    },
+    "Xc_exact_convection_profile-minus-M2_hickel_modelled_convection": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 0.16314490127032397,
+       "low": 0.06600270059681043,
+       "median": 0.13941901709603938
+      },
+      "B_mglet": {
+       "high": 0.008057149163277735,
+       "low": -0.054078950613247107,
+       "median": -0.03691376611466954
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 0.056364045626896404,
+       "low": 0.006437623499058636,
+       "median": 0.022743766815283256
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 0.14035174049023502,
+      "B_mglet": -0.03701218307625015,
+      "C_xiao_repaired_cubic6": 0.02312952560417464
+     },
+     "question": "does exact convection beat its modelled surrogate?",
+     "verdict": "UNRESOLVED",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    },
+    "Xfull_all_transport_plus_exact_shear_stress-minus-M0_equilibrium": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 14.936648953647579,
+       "low": 0.20314323770078138,
+       "median": 4.727481794712768
+      },
+      "B_mglet": {
+       "high": 9.337489508113938,
+       "low": -0.02569378788688425,
+       "median": 1.4051795021875177
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 11.003425134567246,
+       "low": 0.03511928592832436,
+       "median": 2.6971311423868958
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 4.704614378188081,
+      "B_mglet": 1.3747066495681297,
+      "C_xiao_repaired_cubic6": 2.6748210685527605
+     },
+     "question": "does the closure-free exact-budget reconstruction beat the crudest closure?",
+     "verdict": "UNRESOLVED",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    },
+    "Xfull_all_transport_plus_exact_shear_stress-minus-Xall_all_omitted_transport": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 8.33893313148429,
+       "low": 0.11455572680432913,
+       "median": 2.782039432765261
+      },
+      "B_mglet": {
+       "high": 5.319133351545284,
+       "low": -0.002989733972225064,
+       "median": 0.9441712651209376
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 6.177195778322869,
+       "low": 0.06057218891902741,
+       "median": 1.6119281065670825
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 2.7879420916711948,
+      "B_mglet": 0.9280212506385555,
+      "C_xiao_repaired_cubic6": 1.6062577824219024
+     },
+     "question": "does removing the last modelling assumption (exact stress at y_m) help?",
+     "verdict": "UNRESOLVED",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    }
+   },
+   "mechanism_regional_Lambda": {
+    "flat_floor_2.05_to_6.90": {
+     "Lambda_imp_median": 1.0552678491863634,
+     "stations": 62
+    },
+    "leeward_and_crest_x_lt_1.929": {
+     "Lambda_imp_median": 1.2386333196781776,
+     "stations": 27
+    },
+    "recirculation_0.2_to_4.7": {
+     "Lambda_imp_median": 1.044587422255733,
+     "stations": 61
+    },
+    "sloped_wall_complement_of_flat_floor": {
+     "Lambda_imp_median": 1.1737438293133402,
+     "stations": 58
+    },
+    "windward_face_x_gt_7.071": {
+     "Lambda_imp_median": 1.1273308761066925,
+     "stations": 27
+    }
+   },
+   "note": "wall-resolved ceiling surface, y_m/H = 0.0145 on the flat floor",
+   "phase_count": 120,
+   "reference_free_diagnostics": {
+    "Lambda_imp_median": 1.077912569612476,
+    "Lambda_imp_quartiles": [
+     1.0277566468885162,
+     1.1698929353931673
+    ],
+    "S_abs_median": 0.00045050308052359733,
+    "abs_I_net_median": 0.0004032112000024816,
+    "note": "Lambda_imp = sum_j|I_j| / |sum_j I_j| over the four omitted source terms; it contains no wall stress"
+   },
+   "regional_amplification": {
+    "B_mglet": {
+     "flat_floor_2.05_to_6.90": {
+      "E_Xfull_over_E_M0": 0.34070671860968266,
+      "Lambda_tau_global_norm": 0.38417505952083164,
+      "bound_attainment": 0.14788159404690884,
+      "bound_delta_times_Lambda_tau": 0.3377336007636158,
+      "measured_E_Xfull_global_norm": 0.04994458324412581,
+      "median_wall_slope_magnitude": 0.0,
+      "stations": 62
+     },
+     "leeward_and_crest_x_lt_1.929": {
+      "E_Xfull_over_E_M0": 26.71968168233411,
+      "Lambda_tau_global_norm": 2.5177507110327273,
+      "bound_attainment": 0.9543525782780022,
+      "bound_delta_times_Lambda_tau": 2.2133894233603377,
+      "measured_E_Xfull_global_norm": 2.112353902917199,
+      "median_wall_slope_magnitude": 0.6577839282276101,
+      "stations": 27
+     },
+     "recirculation_0.2_to_4.7": {
+      "E_Xfull_over_E_M0": 9.012397149490685,
+      "Lambda_tau_global_norm": 1.7069701270126916,
+      "bound_attainment": 0.9221634739846358,
+      "bound_delta_times_Lambda_tau": 1.500621014052742,
+      "measured_E_Xfull_global_norm": 1.3838178874532236,
+      "median_wall_slope_magnitude": 0.0,
+      "stations": 61
+     },
+     "sloped_wall_complement_of_flat_floor": {
+      "E_Xfull_over_E_M0": 3.444169197794308,
+      "Lambda_tau_global_norm": 3.3234904899499864,
+      "bound_attainment": 0.9835229163589604,
+      "bound_delta_times_Lambda_tau": 2.921726391282249,
+      "measured_E_Xfull_global_norm": 2.8735848611568584,
+      "median_wall_slope_magnitude": 0.6450964424960595,
+      "stations": 58
+     },
+     "windward_face_x_gt_7.071": {
+      "E_Xfull_over_E_M0": 2.9868858976840786,
+      "Lambda_tau_global_norm": 4.1679302658542206,
+      "bound_attainment": 0.9956633768620514,
+      "bound_delta_times_Lambda_tau": 3.66408506105085,
+      "measured_E_Xfull_global_norm": 3.6481953049956855,
+      "median_wall_slope_magnitude": 0.6577839300894563,
+      "stations": 27
+     }
+    },
+    "C_xiao_repaired_cubic6": {
+     "flat_floor_2.05_to_6.90": {
+      "E_Xfull_over_E_M0": 0.3787902845971792,
+      "Lambda_tau_global_norm": 0.6139122037441926,
+      "bound_attainment": 0.09757225828801455,
+      "bound_delta_times_Lambda_tau": 0.5396986972081407,
+      "measured_E_Xfull_global_norm": 0.05265962068169766,
+      "median_wall_slope_magnitude": 0.0,
+      "stations": 62
+     },
+     "leeward_and_crest_x_lt_1.929": {
+      "E_Xfull_over_E_M0": 25.22141252559056,
+      "Lambda_tau_global_norm": 4.023368641932353,
+      "bound_attainment": 0.9535051792299338,
+      "bound_delta_times_Lambda_tau": 3.5369989408840086,
+      "measured_E_Xfull_global_norm": 3.3725468090636928,
+      "median_wall_slope_magnitude": 0.6577839282276101,
+      "stations": 27
+     },
+     "recirculation_0.2_to_4.7": {
+      "E_Xfull_over_E_M0": 13.876676024008779,
+      "Lambda_tau_global_norm": 2.7277403007548506,
+      "bound_attainment": 0.92054211998565,
+      "bound_delta_times_Lambda_tau": 2.3979941719043576,
+      "measured_E_Xfull_global_norm": 2.2074546387180707,
+      "median_wall_slope_magnitude": 0.0,
+      "stations": 61
+     },
+     "sloped_wall_complement_of_flat_floor": {
+      "E_Xfull_over_E_M0": 9.433728985732047,
+      "Lambda_tau_global_norm": 5.310941770537885,
+      "bound_attainment": 0.949422859874955,
+      "bound_delta_times_Lambda_tau": 4.668922261239063,
+      "measured_E_Xfull_global_norm": 4.432781525799433,
+      "median_wall_slope_magnitude": 0.6450964424960595,
+      "stations": 58
+     },
+     "windward_face_x_gt_7.071": {
+      "E_Xfull_over_E_M0": 8.230644578339625,
+      "Lambda_tau_global_norm": 6.66035754052883,
+      "bound_attainment": 0.9495885197296733,
+      "bound_delta_times_Lambda_tau": 5.855212301760386,
+      "measured_E_Xfull_global_norm": 5.560042382331618,
+      "median_wall_slope_magnitude": 0.6577839300894563,
+      "stations": 27
+     }
+    }
+   },
+   "regions": {
+    "A_withdrawn_linear4": {
+     "flat_floor_2.05_to_6.90": {
+      "fraction_of_tau2_energy": 0.12798168511930022,
+      "fraction_of_wall": 0.5390625,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.17901084098939507,
+        "relative_rms_local_norm": 0.3673880122657017
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.4360131016722249,
+        "relative_rms_local_norm": 0.8948395854676294
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.3956934956645966,
+        "relative_rms_local_norm": 0.8120907428578327
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 0.43614844789547763,
+        "relative_rms_local_norm": 0.8951173595937866
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.43496246647529097,
+        "relative_rms_local_norm": 0.8926833430049687
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.4289517675324746,
+        "relative_rms_local_norm": 0.8803474491299174
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.43363277154646224,
+        "relative_rms_local_norm": 0.889954379920263
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 0.43499000106007335,
+        "relative_rms_local_norm": 0.8927398528583153
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 0.4361652761803307,
+        "relative_rms_local_norm": 0.8951518966647697
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 0.4483695990437623,
+        "relative_rms_local_norm": 0.9201991054989578
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 0.43604073215367595,
+        "relative_rms_local_norm": 0.8948962921318858
+       }
+      }
+     },
+     "leeward_and_crest_x_lt_1.929": {
+      "fraction_of_tau2_energy": 0.08653521091832617,
+      "fraction_of_wall": 0.21435546875,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.430680539008298,
+        "relative_rms_local_norm": 0.6778382990704486
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.7456136492870066,
+        "relative_rms_local_norm": 1.1735043542022612
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.6979640962471766,
+        "relative_rms_local_norm": 1.0985098070644737
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 2.8878994820841637,
+        "relative_rms_local_norm": 4.54519927306175
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.7479981916961944,
+        "relative_rms_local_norm": 1.1772573312335128
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.7536775242423615,
+        "relative_rms_local_norm": 1.1861959034796925
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.7478012489450053,
+        "relative_rms_local_norm": 1.1769473675193696
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 2.9100640415867143,
+        "relative_rms_local_norm": 4.580083568849643
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 2.889660420826337,
+        "relative_rms_local_norm": 4.547970774473238
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 5.875484965370101,
+        "relative_rms_local_norm": 9.247292074796368
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 2.906288920229954,
+        "relative_rms_local_norm": 4.574141991259109
+       }
+      }
+     },
+     "recirculation_0.2_to_4.7": {
+      "fraction_of_tau2_energy": 0.14636113718686805,
+      "fraction_of_wall": 0.5,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.2600208047005364,
+        "relative_rms_local_norm": 0.48059606719188297
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.5471821515241783,
+        "relative_rms_local_norm": 1.0113559580856515
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.5021021479920825,
+        "relative_rms_local_norm": 0.9280346545019897
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 1.9312047905619028,
+        "relative_rms_local_norm": 3.569442946517655
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.5474272550190515,
+        "relative_rms_local_norm": 1.0118089825112422
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.5451554852965048,
+        "relative_rms_local_norm": 1.0076100739066827
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.5461617830979186,
+        "relative_rms_local_norm": 1.0094700126386633
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 1.9448169743186685,
+        "relative_rms_local_norm": 3.594602325540919
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 1.9322368683476034,
+        "relative_rms_local_norm": 3.5713505343563092
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 3.8696896567390344,
+        "relative_rms_local_norm": 7.152341645983879
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 1.9426786319725287,
+        "relative_rms_local_norm": 3.59065003055803
+       }
+      }
+     },
+     "sloped_wall_complement_of_flat_floor": {
+      "fraction_of_tau2_energy": 0.8720183148806998,
+      "fraction_of_wall": 0.4609375,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.7349505669183849,
+        "relative_rms_local_norm": 0.5343383524056879
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 1.64204289623156,
+        "relative_rms_local_norm": 1.193830626501538
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 1.4196903668076744,
+        "relative_rms_local_norm": 1.0321714761130054
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 3.551943156201529,
+        "relative_rms_local_norm": 2.5824042314592126
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 1.622704269338998,
+        "relative_rms_local_norm": 1.1797706740412148
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 1.6439887197284822,
+        "relative_rms_local_norm": 1.1952453177314217
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 1.5834912855299208,
+        "relative_rms_local_norm": 1.1512612720425088
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 3.5571563788641223,
+        "relative_rms_local_norm": 2.5861944520994036
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 3.5527758576256083,
+        "relative_rms_local_norm": 2.5830096385804753
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 7.6742336938730675,
+        "relative_rms_local_norm": 5.579473739511683
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 3.551202254723842,
+        "relative_rms_local_norm": 2.5818655665575143
+       }
+      }
+     },
+     "windward_face_x_gt_7.071": {
+      "fraction_of_tau2_energy": 0.7778182913387294,
+      "fraction_of_wall": 0.214111328125,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.9876281748296634,
+        "relative_rms_local_norm": 0.5181723292388071
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 2.28866275435547,
+        "relative_rms_local_norm": 1.2007775198100379
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 1.9603111101851596,
+        "relative_rms_local_norm": 1.0285034387283936
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 4.335942131566575,
+        "relative_rms_local_norm": 2.2749100228393453
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 2.257937340718544,
+        "relative_rms_local_norm": 1.184657020661846
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 2.288758463834849,
+        "relative_rms_local_norm": 1.2008277350682939
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 2.1972158988519443,
+        "relative_rms_local_norm": 1.1527987041732735
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 4.330324529175513,
+        "relative_rms_local_norm": 2.271962672622027
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 4.33623500139085,
+        "relative_rms_local_norm": 2.275063680909129
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 9.602890815866468,
+        "relative_rms_local_norm": 5.038285083697294
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 4.322359393602205,
+        "relative_rms_local_norm": 2.2677836577276453
+       }
+      }
+     }
+    },
+    "B_mglet": {
+     "flat_floor_2.05_to_6.90": {
+      "fraction_of_tau2_energy": 0.06705774475819172,
+      "fraction_of_wall": 0.5390625,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.14659113106995367,
+        "relative_rms_local_norm": 0.41562607374114047
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.05116231910332706,
+        "relative_rms_local_norm": 0.14505921099865005
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.06521730872614429,
+        "relative_rms_local_norm": 0.18490896255433154
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 0.05135703016599258,
+        "relative_rms_local_norm": 0.14561127028012877
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.05159853659804476,
+        "relative_rms_local_norm": 0.1462960072720903
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.054137160741850335,
+        "relative_rms_local_norm": 0.15349370318925237
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.052124327896715394,
+        "relative_rms_local_norm": 0.14778676985423755
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 0.05158879410704713,
+        "relative_rms_local_norm": 0.14626838463726752
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 0.051352834450324555,
+        "relative_rms_local_norm": 0.14559937427511874
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 0.04994458324412581,
+        "relative_rms_local_norm": 0.14160659575296994
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 0.05115267073104016,
+        "relative_rms_local_norm": 0.14503185521619358
+       }
+      }
+     },
+     "leeward_and_crest_x_lt_1.929": {
+      "fraction_of_tau2_energy": 0.008763975198777543,
+      "fraction_of_wall": 0.21435546875,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.07905610283949585,
+        "relative_rms_local_norm": 0.3909778152870311
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.08490573917891864,
+        "relative_rms_local_norm": 0.41990762530883935
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.0717924170294722,
+        "relative_rms_local_norm": 0.3550547188159052
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 1.0333876089520486,
+        "relative_rms_local_norm": 5.11069500242187
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.0848331296530792,
+        "relative_rms_local_norm": 0.4195485295178493
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.08688488978434053,
+        "relative_rms_local_norm": 0.4296956612989624
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.08499116361978676,
+        "relative_rms_local_norm": 0.42033009821179207
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 1.0412335013061962,
+        "relative_rms_local_norm": 5.149497444503157
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 1.0338493577543892,
+        "relative_rms_local_norm": 5.1129786153431525
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 2.112353902917199,
+        "relative_rms_local_norm": 10.446802769323893
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 1.040095317580426,
+        "relative_rms_local_norm": 5.143868472538774
+       }
+      }
+     },
+     "recirculation_0.2_to_4.7": {
+      "fraction_of_tau2_energy": 0.07467051856256743,
+      "fraction_of_wall": 0.5,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.15354603936106245,
+        "relative_rms_local_norm": 0.39732787724031227
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.06081924847671254,
+        "relative_rms_local_norm": 0.15738069827889878
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.07189801427430098,
+        "relative_rms_local_norm": 0.1860489890086085
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 0.6784788041201427,
+        "relative_rms_local_norm": 1.7556854225310874
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.06109716909846713,
+        "relative_rms_local_norm": 0.15809986766381137
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.06450436824578057,
+        "relative_rms_local_norm": 0.16691660569346292
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.061671282462117755,
+        "relative_rms_local_norm": 0.1595854888170747
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 0.6836228170303273,
+        "relative_rms_local_norm": 1.768996477238883
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 0.6787859390970157,
+        "relative_rms_local_norm": 1.7564801892922166
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 1.3838178874532236,
+        "relative_rms_local_norm": 3.5808766282537747
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 0.682835928499916,
+        "relative_rms_local_norm": 1.7669602622331813
+       }
+      }
+     },
+     "sloped_wall_complement_of_flat_floor": {
+      "fraction_of_tau2_energy": 0.9329422552418084,
+      "fraction_of_wall": 0.4609375,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.8343332444286247,
+        "relative_rms_local_norm": 0.5864529668583067
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.6630936780264597,
+        "relative_rms_local_norm": 0.4660886490863919
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.6975114536810555,
+        "relative_rms_local_norm": 0.4902809089299082
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 1.5061682844648243,
+        "relative_rms_local_norm": 1.0586859206565469
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.644139696958726,
+        "relative_rms_local_norm": 0.4527658928553838
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.5732915039351044,
+        "relative_rms_local_norm": 0.4029666869952519
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.6139908339261628,
+        "relative_rms_local_norm": 0.4315742523557178
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 1.5096377288183231,
+        "relative_rms_local_norm": 1.0611245936305007
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 1.5083325656897038,
+        "relative_rms_local_norm": 1.0602071942650504
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 2.8735848611568584,
+        "relative_rms_local_norm": 2.019843244408466
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 1.513313353409896,
+        "relative_rms_local_norm": 1.0637081907257613
+       }
+      }
+     },
+     "windward_face_x_gt_7.071": {
+      "fraction_of_tau2_energy": 0.9229747942821931,
+      "fraction_of_wall": 0.214111328125,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 1.2214043086896496,
+        "relative_rms_local_norm": 0.588280360558622
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.9691758820457785,
+        "relative_rms_local_norm": 0.46679640253298105
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 1.0208721052591518,
+        "relative_rms_local_norm": 0.4916955064702422
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 1.9530747724657218,
+        "relative_rms_local_norm": 0.9406840332638986
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.9412551496856097,
+        "relative_rms_local_norm": 0.45334858809263223
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.836575936293223,
+        "relative_rms_local_norm": 0.4029306184167831
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.8968097617106854,
+        "relative_rms_local_norm": 0.43194179537294164
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 1.954677429569399,
+        "relative_rms_local_norm": 0.9414559412161593
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 1.9564225857851991,
+        "relative_rms_local_norm": 0.9422964828128755
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 3.6481953049956855,
+        "relative_rms_local_norm": 1.757126312837053
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 1.9613944870933233,
+        "relative_rms_local_norm": 0.9446911623415101
+       }
+      }
+     }
+    },
+    "C_xiao_repaired_cubic6": {
+     "flat_floor_2.05_to_6.90": {
+      "fraction_of_tau2_energy": 0.13806601603897922,
+      "fraction_of_wall": 0.5390625,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.13902051563359924,
+        "relative_rms_local_norm": 0.2746977226151276
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.07393704483217924,
+        "relative_rms_local_norm": 0.14609597540137098
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.06853984134504902,
+        "relative_rms_local_norm": 0.1354313659396091
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 0.07119371049252483,
+        "relative_rms_local_norm": 0.14067528125388926
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.07359094627894412,
+        "relative_rms_local_norm": 0.14541210162964185
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.07245329889661131,
+        "relative_rms_local_norm": 0.14316416618182976
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.07336190464642992,
+        "relative_rms_local_norm": 0.1449595265938714
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 0.07360180599691252,
+        "relative_rms_local_norm": 0.14543355989988752
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 0.07117880373413835,
+        "relative_rms_local_norm": 0.14064582623020677
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 0.05265962068169766,
+        "relative_rms_local_norm": 0.10405282852758117
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 0.0739481669644677,
+        "relative_rms_local_norm": 0.14611795218944673
+       }
+      }
+     },
+     "leeward_and_crest_x_lt_1.929": {
+      "fraction_of_tau2_energy": 0.014697298478710706,
+      "fraction_of_wall": 0.21435546875,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.1337176022810691,
+        "relative_rms_local_norm": 0.5106661926899253
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.13332943501102432,
+        "relative_rms_local_norm": 0.5091837857476893
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.11502215648822087,
+        "relative_rms_local_norm": 0.43926847121712326
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 1.6471060197865786,
+        "relative_rms_local_norm": 6.2902815017058495
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.13425394476600908,
+        "relative_rms_local_norm": 0.5127144793035787
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.13509472711273,
+        "relative_rms_local_norm": 0.5159254187203534
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.13297558746338917,
+        "relative_rms_local_norm": 0.507832445483872
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 1.6597240669367208,
+        "relative_rms_local_norm": 6.338469698229153
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 1.6478671486664886,
+        "relative_rms_local_norm": 6.293188245325385
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 3.3725468090636928,
+        "relative_rms_local_norm": 12.879722708705325
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 1.6578122719404886,
+        "relative_rms_local_norm": 6.33116857215992
+       }
+      }
+     },
+     "recirculation_0.2_to_4.7": {
+      "fraction_of_tau2_energy": 0.1445382004828891,
+      "fraction_of_wall": 0.5,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.1590766142337571,
+        "relative_rms_local_norm": 0.29586937847640354
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.07971255004210288,
+        "relative_rms_local_norm": 0.14825876670388305
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.07334068962843604,
+        "relative_rms_local_norm": 0.1364076320200651
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 1.0773566889378232,
+        "relative_rms_local_norm": 2.0037945582939587
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.07971716851587295,
+        "relative_rms_local_norm": 0.1482673566840661
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.07800415883227102,
+        "relative_rms_local_norm": 0.1450812999977791
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.07834858795450021,
+        "relative_rms_local_norm": 0.14572190974933805
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 1.0857293543070516,
+        "relative_rms_local_norm": 2.0193670251264773
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 1.0778694709330652,
+        "relative_rms_local_norm": 2.0047482905000216
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 2.2074546387180707,
+        "relative_rms_local_norm": 4.105683510541888
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 1.0845008617599783,
+        "relative_rms_local_norm": 2.0170821303409285
+       }
+      }
+     },
+     "sloped_wall_complement_of_flat_floor": {
+      "fraction_of_tau2_energy": 0.8619339839610205,
+      "fraction_of_wall": 0.4609375,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.4698864608580287,
+        "relative_rms_local_norm": 0.34361882661841686
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.5242905371466638,
+        "relative_rms_local_norm": 0.3834034691114635
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.4545632682526979,
+        "relative_rms_local_norm": 0.3324132739973069
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 2.0658248938691637,
+        "relative_rms_local_norm": 1.5106975517749877
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.4881904300933221,
+        "relative_rms_local_norm": 0.35700416319441886
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.4323849569808362,
+        "relative_rms_local_norm": 0.3161947064699533
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.426020307928727,
+        "relative_rms_local_norm": 0.3115403624500592
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 2.069886460925855,
+        "relative_rms_local_norm": 1.5136676967408673
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 2.0674125721074414,
+        "relative_rms_local_norm": 1.5118585899804478
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 4.432781525799433,
+        "relative_rms_local_norm": 3.241606884713394
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 2.0702791477102176,
+        "relative_rms_local_norm": 1.5139548609460771
+       }
+      }
+     },
+     "windward_face_x_gt_7.071": {
+      "fraction_of_tau2_energy": 0.842453027631691,
+      "fraction_of_wall": 0.214111328125,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.6755293986286127,
+        "relative_rms_local_norm": 0.3405581115922137
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.7570525086540167,
+        "relative_rms_local_norm": 0.38165677651743835
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.656429216663158,
+        "relative_rms_local_norm": 0.33092903858010186
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 2.5437520829233944,
+        "relative_rms_local_norm": 1.282394826158286
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.7030298294021584,
+        "relative_rms_local_norm": 0.3544220452584967
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.6193606760509512,
+        "relative_rms_local_norm": 0.3122414844692071
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.6101387108306819,
+        "relative_rms_local_norm": 0.30759236769211384
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 2.542615338078848,
+        "relative_rms_local_norm": 1.2818217531308105
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 2.5460350609918705,
+        "relative_rms_local_norm": 1.2835457556387573
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 5.560042382331618,
+        "relative_rms_local_norm": 2.8030127747860343
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 2.544540504355873,
+        "relative_rms_local_norm": 1.2827922971117767
+       }
+      }
+     }
+    }
+   },
+   "runtime_seconds": 71.4,
+   "scores": {
+    "A_withdrawn_linear4": {
+     "M0_equilibrium": {
+      "r2": 0.7184290279997526,
+      "relative_rms": 0.5159948265792245,
+      "relative_rms_interval": {
+       "high": 0.5958773415860927,
+       "low": 0.25302736355322725,
+       "median": 0.5091807295602896
+      },
+      "sign_accuracy": 0.9658203125
+     },
+     "M1_pressure_gradient_ode": {
+      "r2": -0.4227180751965105,
+      "relative_rms": 1.1598740496819102,
+      "relative_rms_interval": {
+       "high": 1.2662670157282487,
+       "low": 0.6761407179243624,
+       "median": 1.14870556588382
+      },
+      "sign_accuracy": 0.82861328125
+     },
+     "M2_hickel_modelled_convection": {
+      "r2": -0.07174572300046878,
+      "relative_rms": 1.0066935519004683,
+      "relative_rms_interval": {
+       "high": 1.103110086773959,
+       "low": 0.6052868493662659,
+       "median": 0.9973232371241036
+      },
+      "sign_accuracy": 0.8427734375
+     },
+     "Xall_all_omitted_transport": {
+      "r2": -5.25838899183131,
+      "relative_rms": 2.432667113096111,
+      "relative_rms_interval": {
+       "high": 6.901566777363617,
+       "low": 0.6051010674428449,
+       "median": 2.449014826821692
+      },
+      "sign_accuracy": 0.888427734375
+     },
+     "Xc_exact_convection_profile": {
+      "r2": -0.39142024828549205,
+      "relative_rms": 1.1470452923907033,
+      "relative_rms_interval": {
+       "high": 1.2432387739035498,
+       "low": 0.6804943199581414,
+       "median": 1.1369072050071825
+      },
+      "sign_accuracy": 0.827880859375
+     },
+     "Xc_resolved_convection_constant": {
+      "r2": -0.4223529724339836,
+      "relative_rms": 1.1597252147163335,
+      "relative_rms_interval": {
+       "high": 1.2714129681857906,
+       "low": 0.664455099082446,
+       "median": 1.1479790853498528
+      },
+      "sign_accuracy": 0.82470703125
+     },
+     "Xc_resolved_convection_linear": {
+      "r2": -0.329476127773241,
+      "relative_rms": 1.1212221766620984,
+      "relative_rms_interval": {
+       "high": 1.221334876412951,
+       "low": 0.6701540178774815,
+       "median": 1.1109889792641767
+      },
+      "sign_accuracy": 0.827880859375
+     },
+     "Xcp_convection_plus_pressure_profile": {
+      "r2": -5.275879605494162,
+      "relative_rms": 2.43606408585214,
+      "relative_rms_interval": {
+       "high": 6.9153264723639225,
+       "low": 0.6054967029354996,
+       "median": 2.45339071604071
+      },
+      "sign_accuracy": 0.88623046875
+     },
+     "Xcpr_plus_streamwise_normal_stress": {
+      "r2": -5.261281228775357,
+      "relative_rms": 2.4332291616529624,
+      "relative_rms_interval": {
+       "high": 6.902559887666881,
+       "low": 0.6057168419591593,
+       "median": 2.44963440400773
+      },
+      "sign_accuracy": 0.88818359375
+     },
+     "Xfull_all_transport_plus_exact_shear_stress": {
+      "r2": -27.8230247632445,
+      "relative_rms": 5.220609204767306,
+      "relative_rms_interval": {
+       "high": 15.256481568256559,
+       "low": 0.7458238146894879,
+       "median": 5.240499651232135
+      },
+      "sign_accuracy": 0.899169921875
+     },
+     "Xp_exact_pressure_profile": {
+      "r2": -5.255770061349948,
+      "relative_rms": 2.4321580641448977,
+      "relative_rms_interval": {
+       "high": 6.911944153066055,
+       "low": 0.5913629589940745,
+       "median": 2.448977996166884
+      },
+      "sign_accuracy": 0.886474609375
+     }
+    },
+    "B_mglet": {
+     "M0_equilibrium": {
+      "r2": 0.6617514047710351,
+      "relative_rms": 0.5765830384055055,
+      "relative_rms_interval": {
+       "high": 0.618375623658281,
+       "low": 0.37066841535294925,
+       "median": 0.5733333575612997
+      },
+      "sign_accuracy": 0.897705078125
+     },
+     "M1_pressure_gradient_ode": {
+      "r2": 0.7923570118130063,
+      "relative_rms": 0.45175450973387976,
+      "relative_rms_interval": {
+       "high": 0.5242142589526038,
+       "low": 0.14716375045014288,
+       "median": 0.44691318348540343
+      },
+      "sign_accuracy": 0.932373046875
+     },
+     "M2_hickel_modelled_convection": {
+      "r2": 0.7694980092954004,
+      "relative_rms": 0.4759717770866375,
+      "relative_rms_interval": {
+       "high": 0.5426790221872856,
+       "low": 0.17811104136743816,
+       "median": 0.47113030423399416
+      },
+      "sign_accuracy": 0.937255859375
+     },
+     "Xall_all_omitted_transport": {
+      "r2": -0.0653478503043261,
+      "relative_rms": 1.0232684373350798,
+      "relative_rms_interval": {
+       "high": 4.444233376365657,
+       "low": 0.5418853050364734,
+       "median": 1.0353192770535857
+      },
+      "sign_accuracy": 0.93798828125
+     },
+     "Xc_exact_convection_profile": {
+      "r2": 0.8039524732400393,
+      "relative_rms": 0.43895959401038737,
+      "relative_rms_interval": {
+       "high": 0.5164741201326867,
+       "low": 0.14748967005065908,
+       "median": 0.4339892486327034
+      },
+      "sign_accuracy": 0.931640625
+     },
+     "Xc_resolved_convection_constant": {
+      "r2": 0.844256089824396,
+      "relative_rms": 0.3912455389174215,
+      "relative_rms_interval": {
+       "high": 0.5140684727879747,
+       "low": 0.1546048718623596,
+       "median": 0.38577911022774525
+      },
+      "sign_accuracy": 0.928955078125
+     },
+     "Xc_resolved_convection_linear": {
+      "r2": 0.8217115380660454,
+      "relative_rms": 0.41860603073740243,
+      "relative_rms_interval": {
+       "high": 0.49495865193242966,
+       "low": 0.14901473146045832,
+       "median": 0.4141537252534676
+      },
+      "sign_accuracy": 0.93212890625
+     },
+     "Xcp_convection_plus_pressure_profile": {
+      "r2": -0.07026795424022425,
+      "relative_rms": 1.0256285996195778,
+      "relative_rms_interval": {
+       "high": 4.443295900119431,
+       "low": 0.5441696224640631,
+       "median": 1.0377106250605317
+      },
+      "sign_accuracy": 0.938720703125
+     },
+     "Xcpr_plus_streamwise_normal_stress": {
+      "r2": -0.06840734617825905,
+      "relative_rms": 1.0247367094516,
+      "relative_rms_interval": {
+       "high": 4.444720022987842,
+       "low": 0.5439083757280933,
+       "median": 1.0368419872454122
+      },
+      "sign_accuracy": 0.938232421875
+     },
+     "Xfull_all_transport_plus_exact_shear_stress": {
+      "r2": -2.873965740046222,
+      "relative_rms": 1.9512896879736352,
+      "relative_rms_interval": {
+       "high": 9.758906229408044,
+       "low": 0.5452740594139759,
+       "median": 1.9814360420343127
+      },
+      "sign_accuracy": 0.9287109375
+     },
+     "Xp_exact_pressure_profile": {
+      "r2": -0.07545432467342561,
+      "relative_rms": 1.0281106235157276,
+      "relative_rms_interval": {
+       "high": 4.4431019957286795,
+       "low": 0.5496815339681212,
+       "median": 1.0404624999844492
+      },
+      "sign_accuracy": 0.9384765625
+     }
+    },
+    "C_xiao_repaired_cubic6": {
+     "M0_equilibrium": {
+      "r2": 0.886547143033154,
+      "relative_rms": 0.33494806546697153,
+      "relative_rms_interval": {
+       "high": 0.39639367520735536,
+       "low": 0.265476877591369,
+       "median": 0.3323110761831536
+      },
+      "sign_accuracy": 0.943359375
+     },
+     "M1_pressure_gradient_ode": {
+      "r2": 0.8688912041731702,
+      "relative_rms": 0.360068947916232,
+      "relative_rms_interval": {
+       "high": 0.4650393292444631,
+       "low": 0.14961524971408577,
+       "median": 0.35617266195148745
+      },
+      "sign_accuracy": 0.91943359375
+     },
+     "M2_hickel_modelled_convection": {
+      "r2": 0.9011247434456265,
+      "relative_rms": 0.3126896937459348,
+      "relative_rms_interval": {
+       "high": 0.41267340918717565,
+       "low": 0.14076285127429852,
+       "median": 0.3087231799709961
+      },
+      "sign_accuracy": 0.93359375
+     },
+     "Xall_all_omitted_transport": {
+      "r2": -0.992013825201661,
+      "relative_rms": 1.4035113515978297,
+      "relative_rms_interval": {
+       "high": 5.136679420014643,
+       "low": 0.30597407883320127,
+       "median": 1.4171640636962726
+      },
+      "sign_accuracy": 0.909423828125
+     },
+     "Xc_exact_convection_profile": {
+      "r2": 0.885956225006783,
+      "relative_rms": 0.33581921935010944,
+      "relative_rms_interval": {
+       "high": 0.4531380804361635,
+       "low": 0.14887152290731515,
+       "median": 0.33245310997051086
+      },
+      "sign_accuracy": 0.918701171875
+     },
+     "Xc_resolved_convection_constant": {
+      "r2": 0.9099931111904598,
+      "relative_rms": 0.2983373518655749,
+      "relative_rms_interval": {
+       "high": 0.4518302868081612,
+       "low": 0.14477517665869163,
+       "median": 0.29415776771878144
+      },
+      "sign_accuracy": 0.91552734375
+     },
+     "Xc_resolved_convection_linear": {
+      "r2": 0.9124675384037615,
+      "relative_rms": 0.2942078974760933,
+      "relative_rms_interval": {
+       "high": 0.43450999978627264,
+       "low": 0.14697101324911424,
+       "median": 0.29108188285107894
+      },
+      "sign_accuracy": 0.918701171875
+     },
+     "Xcp_convection_plus_pressure_profile": {
+      "r2": -1.0000336243683168,
+      "relative_rms": 1.4063337649766081,
+      "relative_rms_interval": {
+       "high": 5.134473163600636,
+       "low": 0.3097127176971799,
+       "median": 1.4204597832235186
+      },
+      "sign_accuracy": 0.90771484375
+     },
+     "Xcpr_plus_streamwise_normal_stress": {
+      "r2": -0.9950714985461859,
+      "relative_rms": 1.4045881096098316,
+      "relative_rms_interval": {
+       "high": 5.137260655235494,
+       "low": 0.30946333340617965,
+       "median": 1.418167663884864
+      },
+      "sign_accuracy": 0.90966796875
+     },
+     "Xfull_all_transport_plus_exact_shear_stress": {
+      "r2": -8.160661956921162,
+      "relative_rms": 3.009769134019732,
+      "relative_rms_interval": {
+       "high": 11.314991550978473,
+       "low": 0.36780635717530014,
+       "median": 3.0290627521941893
+      },
+      "sign_accuracy": 0.914794921875
+     },
+     "Xp_exact_pressure_profile": {
+      "r2": -1.0008193043228086,
+      "relative_rms": 1.4066099652722288,
+      "relative_rms_interval": {
+       "high": 5.132902963202768,
+       "low": 0.3145787061700629,
+       "median": 1.4201685278812364
+      },
+      "sign_accuracy": 0.907958984375
+     }
+    }
+   },
+   "y_m_over_H": {
+    "max": 0.014515746000000001,
+    "median": 0.014515745999999998,
+    "min": 0.008147054106317386
+   }
+  },
+  "ladder_L1": {
+   "identifiability": {
+    "M1_pressure_gradient_ode-minus-M0_equilibrium": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 2.7178587185785865,
+       "low": 1.2633997452441568,
+       "median": 2.283275917149929
+      },
+      "B_mglet": {
+       "high": 0.3541713065959567,
+       "low": -0.2728153845620852,
+       "median": -0.025623027583717983
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 0.9663050774988673,
+       "low": -0.048391162217087204,
+       "median": 0.6201198300859067
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 2.30706545381649,
+      "B_mglet": -0.024477072340546413,
+      "C_xiao_repaired_cubic6": 0.6251674349387752
+     },
+     "question": "does the standard pressure-gradient ODE beat the equilibrium closure?",
+     "verdict": "UNRESOLVED",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    },
+    "M2_hickel_modelled_convection-minus-M0_equilibrium": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 0.8285917049209076,
+       "low": 0.05567189593493089,
+       "median": 0.4964021946483106
+      },
+      "B_mglet": {
+       "high": -0.0943995530242191,
+       "low": -0.5614477772511621,
+       "median": -0.1560928674705072
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 0.07124636841714017,
+       "low": -0.5130144761554455,
+       "median": -0.1513680713852345
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 0.5006389290377984,
+      "B_mglet": -0.15138734544212196,
+      "C_xiao_repaired_cubic6": -0.14844699989826882
+     },
+     "question": "does a MODELLED convective source beat the equilibrium closure?",
+     "verdict": "UNRESOLVED",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    },
+    "M2_hickel_modelled_convection-minus-M1_pressure_gradient_ode": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": -1.103827040308826,
+       "low": -1.9673148678844459,
+       "median": -1.792099813692832
+      },
+      "B_mglet": {
+       "high": -0.05787478370088177,
+       "low": -0.6093685144472825,
+       "median": -0.13242239480542878
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": -0.3707989829435548,
+       "low": -0.9879415308049814,
+       "median": -0.7715308281057107
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": -1.8064265247786917,
+      "B_mglet": -0.12691027310157554,
+      "C_xiao_repaired_cubic6": -0.7736144348370441
+     },
+     "question": "does the modelled convective surrogate beat the exact-pressure-gradient ODE?",
+     "verdict": "IDENTIFIED_FIRST_BETTER",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_FIRST_BETTER"
+    },
+    "Xall_all_omitted_transport-minus-M0_equilibrium": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 10.931026943032883,
+       "low": 1.546762769947295,
+       "median": 3.82947512130948
+      },
+      "B_mglet": {
+       "high": 6.412742249338876,
+       "low": 0.21420146650561128,
+       "median": 1.0002376676582374
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 7.535770777567072,
+       "low": 0.5690677715299507,
+       "median": 1.8948685829453285
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 3.811704203941753,
+      "B_mglet": 0.9813701878580644,
+      "C_xiao_repaired_cubic6": 1.8868080903517945
+     },
+     "question": "does supplying ALL omitted transport beat the crudest closure?",
+     "verdict": "IDENTIFIED_SECOND_BETTER",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    },
+    "Xall_all_omitted_transport-minus-M2_hickel_modelled_convection": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 10.354133446977052,
+       "low": 1.0741424105510908,
+       "median": 3.3383135860570468
+      },
+      "B_mglet": {
+       "high": 6.742553906586687,
+       "low": 0.3734434402190748,
+       "median": 1.1557685226078513
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 7.701084052508547,
+       "low": 0.7399066576462655,
+       "median": 2.0448341622056656
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 3.3110652749039544,
+      "B_mglet": 1.1327575333001865,
+      "C_xiao_repaired_cubic6": 2.0352550902500632
+     },
+     "question": "completion versus regularisation",
+     "verdict": "IDENTIFIED_SECOND_BETTER",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    },
+    "Xc_exact_convection_profile-minus-M1_pressure_gradient_ode": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": -0.0055066723679360425,
+       "low": -0.7058335329238373,
+       "median": -0.38664599689671597
+      },
+      "B_mglet": {
+       "high": 0.040614059948067854,
+       "low": -0.25287907077010696,
+       "median": -0.19484162507973818
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 0.005565894701161543,
+       "low": -0.4342165579818492,
+       "median": -0.2715035085587171
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": -0.3977552359760579,
+      "B_mglet": -0.19757671596566473,
+      "C_xiao_repaired_cubic6": -0.27698718317030613
+     },
+     "question": "does the EXACT within-layer convection repair the pressure-gradient ODE?",
+     "verdict": "UNRESOLVED",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_FIRST_BETTER"
+    },
+    "Xc_exact_convection_profile-minus-M2_hickel_modelled_convection": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 1.6351194244405733,
+       "low": 0.8573245654111376,
+       "median": 1.3973018675081954
+      },
+      "B_mglet": {
+       "high": 0.5887499640733326,
+       "low": -0.15719000159543162,
+       "median": -0.06467084752502655
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 0.760970750676308,
+       "low": 0.3136993238730248,
+       "median": 0.49866185082426884
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 1.4086712888026338,
+      "B_mglet": -0.07066644286408919,
+      "C_xiao_repaired_cubic6": 0.49662725166673793
+     },
+     "question": "does exact convection beat its modelled surrogate?",
+     "verdict": "UNRESOLVED",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    },
+    "Xfull_all_transport_plus_exact_shear_stress-minus-M0_equilibrium": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 27.075777236982272,
+       "low": 7.876258859720516,
+       "median": 12.135887708884418
+      },
+      "B_mglet": {
+       "high": 16.82534168250284,
+       "low": 2.689247105305229,
+       "median": 4.245912765655938
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 19.81844588223396,
+       "low": 4.247154249488083,
+       "median": 6.855316841367552
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 12.195976347440638,
+      "B_mglet": 4.1916356454050545,
+      "C_xiao_repaired_cubic6": 6.861609662393845
+     },
+     "question": "does the closure-free exact-budget reconstruction beat the crudest closure?",
+     "verdict": "IDENTIFIED_SECOND_BETTER",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    },
+    "Xfull_all_transport_plus_exact_shear_stress-minus-Xall_all_omitted_transport": {
+     "paired_interval": {
+      "A_withdrawn_linear4": {
+       "high": 16.29679420130417,
+       "low": 5.65955525877545,
+       "median": 8.373541798432019
+      },
+      "B_mglet": {
+       "high": 10.450042617145137,
+       "low": 2.3791032422926044,
+       "median": 3.2534663538494897
+      },
+      "C_xiao_repaired_cubic6": {
+       "high": 12.252348047343217,
+       "low": 3.409623590106089,
+       "median": 4.997671967055303
+      }
+     },
+     "point_estimate": {
+      "A_withdrawn_linear4": 8.384272143498887,
+      "B_mglet": 3.21026545754699,
+      "C_xiao_repaired_cubic6": 4.97480157204205
+     },
+     "question": "does removing the last modelling assumption (exact stress at y_m) help?",
+     "verdict": "IDENTIFIED_SECOND_BETTER",
+     "verdict_under_withdrawn_control_only": "IDENTIFIED_SECOND_BETTER"
+    }
+   },
+   "mechanism_regional_Lambda": {
+    "flat_floor_2.05_to_6.90": {
+     "Lambda_imp_median": 1.2126348079643983,
+     "stations": 62
+    },
+    "leeward_and_crest_x_lt_1.929": {
+     "Lambda_imp_median": 1.4335472287779523,
+     "stations": 27
+    },
+    "recirculation_0.2_to_4.7": {
+     "Lambda_imp_median": 1.3106106639073631,
+     "stations": 61
+    },
+    "sloped_wall_complement_of_flat_floor": {
+     "Lambda_imp_median": 1.1614789361346838,
+     "stations": 58
+    },
+    "windward_face_x_gt_7.071": {
+     "Lambda_imp_median": 1.0531955329443632,
+     "stations": 27
+    }
+   },
+   "note": "first cell centre of the coupled ladder mesh, y_m/H = 0.0935 on the flat floor",
+   "phase_count": 120,
+   "reference_free_diagnostics": {
+    "Lambda_imp_median": 1.1977761300114032,
+    "Lambda_imp_quartiles": [
+     1.0456198355773958,
+     1.4609104159668784
+    ],
+    "S_abs_median": 0.004675644087931827,
+    "abs_I_net_median": 0.0036635353156868004,
+    "note": "Lambda_imp = sum_j|I_j| / |sum_j I_j| over the four omitted source terms; it contains no wall stress"
+   },
+   "regional_amplification": {
+    "B_mglet": {
+     "flat_floor_2.05_to_6.90": {
+      "E_Xfull_over_E_M0": 0.10837441816695893,
+      "Lambda_tau_global_norm": 2.4247641328774554,
+      "bound_attainment": 0.014583819692529643,
+      "bound_delta_times_Lambda_tau": 2.1316436382429034,
+      "measured_E_Xfull_global_norm": 0.031087506468862387,
+      "median_wall_slope_magnitude": 0.0,
+      "stations": 62
+     },
+     "leeward_and_crest_x_lt_1.929": {
+      "E_Xfull_over_E_M0": 11.096384959725118,
+      "Lambda_tau_global_norm": 4.959535495698215,
+      "bound_attainment": 0.9486627426403338,
+      "bound_delta_times_Lambda_tau": 4.359996151666624,
+      "measured_E_Xfull_global_norm": 4.13616590714136,
+      "median_wall_slope_magnitude": 0.6577839291585218,
+      "stations": 27
+     },
+     "recirculation_0.2_to_4.7": {
+      "E_Xfull_over_E_M0": 8.05655487490743,
+      "Lambda_tau_global_norm": 3.9385829280590596,
+      "bound_attainment": 0.765554892190832,
+      "bound_delta_times_Lambda_tau": 3.462462648821071,
+      "measured_E_Xfull_global_norm": 2.6507052198329975,
+      "median_wall_slope_magnitude": 0.0,
+      "stations": 61
+     },
+     "sloped_wall_complement_of_flat_floor": {
+      "E_Xfull_over_E_M0": 7.436996987982501,
+      "Lambda_tau_global_norm": 7.864942298620018,
+      "bound_attainment": 1.0397593805326126,
+      "bound_delta_times_Lambda_tau": 6.914179399422919,
+      "measured_E_Xfull_global_norm": 7.189082889235325,
+      "median_wall_slope_magnitude": 0.6450964429234386,
+      "stations": 58
+     },
+     "windward_face_x_gt_7.071": {
+      "E_Xfull_over_E_M0": 7.094344794127483,
+      "Lambda_tau_global_norm": 10.382398389109783,
+      "bound_attainment": 1.0629939113436546,
+      "bound_delta_times_Lambda_tau": 9.12730981779486,
+      "measured_E_Xfull_global_norm": 9.702274763263098,
+      "median_wall_slope_magnitude": 0.6577839291585446,
+      "stations": 27
+     }
+    },
+    "C_xiao_repaired_cubic6": {
+     "flat_floor_2.05_to_6.90": {
+      "E_Xfull_over_E_M0": 0.21901491021716718,
+      "Lambda_tau_global_norm": 3.874775979032437,
+      "bound_attainment": 0.024465625534398478,
+      "bound_delta_times_Lambda_tau": 3.406369078677866,
+      "measured_E_Xfull_global_norm": 0.08333895031088662,
+      "median_wall_slope_magnitude": 0.0,
+      "stations": 62
+     },
+     "leeward_and_crest_x_lt_1.929": {
+      "E_Xfull_over_E_M0": 10.424559923701297,
+      "Lambda_tau_global_norm": 7.925343642841396,
+      "bound_attainment": 0.9448551579748257,
+      "bound_delta_times_Lambda_tau": 6.9672790553461645,
+      "measured_E_Xfull_global_norm": 6.583069552493795,
+      "median_wall_slope_magnitude": 0.6577839291585218,
+      "stations": 27
+     },
+     "recirculation_0.2_to_4.7": {
+      "E_Xfull_over_E_M0": 9.3293478503736,
+      "Lambda_tau_global_norm": 6.293860220936286,
+      "bound_attainment": 0.7612686561717432,
+      "bound_delta_times_Lambda_tau": 5.533019446319462,
+      "measured_E_Xfull_global_norm": 4.21211427847174,
+      "median_wall_slope_magnitude": 0.0,
+      "stations": 61
+     },
+     "sloped_wall_complement_of_flat_floor": {
+      "E_Xfull_over_E_M0": 12.678888785923307,
+      "Lambda_tau_global_norm": 12.568187182398068,
+      "bound_attainment": 1.0020539710972147,
+      "bound_delta_times_Lambda_tau": 11.048866934456104,
+      "measured_E_Xfull_global_norm": 11.071560987796447,
+      "median_wall_slope_magnitude": 0.6450964429234386,
+      "stations": 58
+     },
+     "windward_face_x_gt_7.071": {
+      "E_Xfull_over_E_M0": 13.367213823656744,
+      "Lambda_tau_global_norm": 16.59108502035105,
+      "bound_attainment": 1.018087341248106,
+      "bound_delta_times_Lambda_tau": 14.585451985059454,
+      "measured_E_Xfull_global_norm": 14.849264032371087,
+      "median_wall_slope_magnitude": 0.6577839291585446,
+      "stations": 27
+     }
+    }
+   },
+   "regions": {
+    "A_withdrawn_linear4": {
+     "flat_floor_2.05_to_6.90": {
+      "fraction_of_tau2_energy": 0.12798168511930022,
+      "fraction_of_wall": 0.5390625,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.24373132539744832,
+        "relative_rms_local_norm": 0.5002153314835174
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 1.0804791102916946,
+        "relative_rms_local_norm": 2.217491803461199
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.4130408562186012,
+        "relative_rms_local_norm": 0.84769312468436
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 1.046378021737185,
+        "relative_rms_local_norm": 2.1475053653723446
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 1.0362820731314504,
+        "relative_rms_local_norm": 2.126785220884463
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.9318243305908928,
+        "relative_rms_local_norm": 1.912404224819474
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 1.0444693585944342,
+        "relative_rms_local_norm": 2.1435881726804142
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 1.0363725490284024,
+        "relative_rms_local_norm": 2.126970906621458
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 1.0464553549771318,
+        "relative_rms_local_norm": 2.1476640781360476
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 0.5048534414519897,
+        "relative_rms_local_norm": 1.036122177379935
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 1.080753223033585,
+        "relative_rms_local_norm": 2.218054371263368
+       }
+      }
+     },
+     "leeward_and_crest_x_lt_1.929": {
+      "fraction_of_tau2_energy": 0.08653521091832617,
+      "fraction_of_wall": 0.21435546875,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.515099902837304,
+        "relative_rms_local_norm": 0.8107040146150283
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 1.2465328882255338,
+        "relative_rms_local_norm": 1.9618897446255161
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.5062630277132906,
+        "relative_rms_local_norm": 0.7967958579638084
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 4.41657781273664,
+        "relative_rms_local_norm": 6.951151308557282
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 1.3118208103308684,
+        "relative_rms_local_norm": 2.064644919427764
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 2.23912869161687,
+        "relative_rms_local_norm": 3.524113690440456
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 1.2652087634465945,
+        "relative_rms_local_norm": 1.9912832796170097
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 4.5085770780524825,
+        "relative_rms_local_norm": 7.0959468585512875
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 4.42048694719586,
+        "relative_rms_local_norm": 6.9573038063199535
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 11.458684769678804,
+        "relative_rms_local_norm": 18.034563186320067
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 4.502588623546718,
+        "relative_rms_local_norm": 7.086521766287785
+       }
+      }
+     },
+     "recirculation_0.2_to_4.7": {
+      "fraction_of_tau2_energy": 0.14636113718686805,
+      "fraction_of_wall": 0.5,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.27970340805964744,
+        "relative_rms_local_norm": 0.5169753937514665
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 1.176456298895621,
+        "relative_rms_local_norm": 2.174442430187539
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.41441701137211456,
+        "relative_rms_local_norm": 0.7659663467014923
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 3.021154584754588,
+        "relative_rms_local_norm": 5.583995532526655
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 1.1535641290878873,
+        "relative_rms_local_norm": 2.1321308667272367
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 1.2775129851585465,
+        "relative_rms_local_norm": 2.3612253533360947
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 1.1695858081014059,
+        "relative_rms_local_norm": 2.1617437122554075
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 3.0689345579985603,
+        "relative_rms_local_norm": 5.672307186119269
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 3.0240475453781053,
+        "relative_rms_local_norm": 5.589342587350997
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 7.3691290514031005,
+        "relative_rms_local_norm": 13.620350282403672
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 3.087663531514911,
+        "relative_rms_local_norm": 5.706923920056638
+       }
+      }
+     },
+     "sloped_wall_complement_of_flat_floor": {
+      "fraction_of_tau2_energy": 0.8720183148806998,
+      "fraction_of_wall": 0.4609375,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.7433026439073255,
+        "relative_rms_local_norm": 0.5404106452350526
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 4.020418969103205,
+        "relative_rms_local_norm": 2.9230048177780947
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 1.4592187926167646,
+        "relative_rms_local_norm": 1.0609102170171476
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 6.30220091646815,
+        "relative_rms_local_norm": 4.581951230209969
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 3.4220864004763754,
+        "relative_rms_local_norm": 2.4879931948178435
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 3.494267814678339,
+        "relative_rms_local_norm": 2.5404719596151946
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 3.72603931943291,
+        "relative_rms_local_norm": 2.7089790804470333
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 6.287670961884474,
+        "relative_rms_local_norm": 4.571387374159998
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 6.295998718438802,
+        "relative_rms_local_norm": 4.577441985064148
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 18.744392905662515,
+        "relative_rms_local_norm": 13.62792066962079
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 5.669620156481907,
+        "relative_rms_local_norm": 4.122039807225622
+       }
+      }
+     },
+     "windward_face_x_gt_7.071": {
+      "fraction_of_tau2_energy": 0.7778182913387294,
+      "fraction_of_wall": 0.214111328125,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.9590331618250566,
+        "relative_rms_local_norm": 0.5031695732716978
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 5.758575414818533,
+        "relative_rms_local_norm": 3.0213135994307665
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 2.075407218045318,
+        "relative_rms_local_norm": 1.0888901508698383
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 8.1177469314894,
+        "relative_rms_local_norm": 4.259084484286325
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 4.837310774740194,
+        "relative_rms_local_norm": 2.537959786162857
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 4.602021497782987,
+        "relative_rms_local_norm": 2.414512120540257
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 5.31105672252698,
+        "relative_rms_local_norm": 2.786516932959994
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 8.042042318858234,
+        "relative_rms_local_norm": 4.219365046889778
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 8.105231399073865,
+        "relative_rms_local_norm": 4.252518042837305
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 24.99839239439096,
+        "relative_rms_local_norm": 13.115740867215878
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 6.9874523017203005,
+        "relative_rms_local_norm": 3.6660602916192992
+       }
+      }
+     }
+    },
+    "B_mglet": {
+     "flat_floor_2.05_to_6.90": {
+      "fraction_of_tau2_energy": 0.06705774475819172,
+      "fraction_of_wall": 0.5390625,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.28685281078944064,
+        "relative_rms_local_norm": 0.8133064164238674
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.20950534603472196,
+        "relative_rms_local_norm": 0.594005133630067
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.14268324764279935,
+        "relative_rms_local_norm": 0.4045461521005117
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 0.19836685826485892,
+        "relative_rms_local_norm": 0.5624244649674266
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.19962071725033767,
+        "relative_rms_local_norm": 0.5659794991864538
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.19436851219402188,
+        "relative_rms_local_norm": 0.5510880569136045
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.20279468829053804,
+        "relative_rms_local_norm": 0.5749785778618004
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 0.20065874126867406,
+        "relative_rms_local_norm": 0.5689225820594843
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 0.19836295251711986,
+        "relative_rms_local_norm": 0.5624133911010477
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 0.031087506468862387,
+        "relative_rms_local_norm": 0.08814160967139104
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 0.2106395840645195,
+        "relative_rms_local_norm": 0.5972210096218258
+       }
+      }
+     },
+     "leeward_and_crest_x_lt_1.929": {
+      "fraction_of_tau2_energy": 0.008763975198777543,
+      "fraction_of_wall": 0.21435546875,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.37274895582243955,
+        "relative_rms_local_norm": 1.8434575847213475
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.2898404880681405,
+        "relative_rms_local_norm": 1.4334276132568722
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.14447227445115607,
+        "relative_rms_local_norm": 0.714498339857978
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 1.6196933520742811,
+        "relative_rms_local_norm": 8.010313505013256
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.3079839770752685,
+        "relative_rms_local_norm": 1.523157582720371
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.7856401143589457,
+        "relative_rms_local_norm": 3.885441407825824
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.3312796370761736,
+        "relative_rms_local_norm": 1.638367995650984
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 1.6509713073144399,
+        "relative_rms_local_norm": 8.165000950602003
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 1.6198271987436061,
+        "relative_rms_local_norm": 8.010975453635522
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 4.13616590714136,
+        "relative_rms_local_norm": 20.45571501699315
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 1.658634911515054,
+        "relative_rms_local_norm": 8.202901873110969
+       }
+      }
+     },
+     "recirculation_0.2_to_4.7": {
+      "fraction_of_tau2_energy": 0.07467051856256743,
+      "fraction_of_wall": 0.5,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.32901224667242823,
+        "relative_rms_local_norm": 0.8513781149966442
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.2232858857415951,
+        "relative_rms_local_norm": 0.5777922202917382
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.14507121973186723,
+        "relative_rms_local_norm": 0.375397763593131
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 1.0497712226549916,
+        "relative_rms_local_norm": 2.7164710546825583
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.2191045888734068,
+        "relative_rms_local_norm": 0.5669723657669191
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.3315183234005409,
+        "relative_rms_local_norm": 0.8578630373738402
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.23018095413793413,
+        "relative_rms_local_norm": 0.5956344446873931
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 1.069292487641869,
+        "relative_rms_local_norm": 2.766985824132539
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 1.0502473812417694,
+        "relative_rms_local_norm": 2.7177032003067727
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 2.6507052198329975,
+        "relative_rms_local_norm": 6.859174502765713
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 1.0773595001690144,
+        "relative_rms_local_norm": 2.787860663864123
+       }
+      }
+     },
+     "sloped_wall_complement_of_flat_floor": {
+      "fraction_of_tau2_energy": 0.9329422552418084,
+      "fraction_of_wall": 0.4609375,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.9666647574084295,
+        "relative_rms_local_norm": 0.6794688078476011
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.9525947537412042,
+        "relative_rms_local_norm": 0.6695790000885895
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.7770669844201523,
+        "relative_rms_local_norm": 0.5462005038201749
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 2.4513306699224033,
+        "relative_rms_local_norm": 1.7230407079263117
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.653415496502507,
+        "relative_rms_local_norm": 0.45928585379276515
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 1.3683052594121097,
+        "relative_rms_local_norm": 0.9617819789736357
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.9401536781849814,
+        "relative_rms_local_norm": 0.6608341661513396
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 2.447906334097494,
+        "relative_rms_local_norm": 1.7206337417440967
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 2.4509885728896568,
+        "relative_rms_local_norm": 1.722800247868958
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 7.189082889235325,
+        "relative_rms_local_norm": 5.0532074773906706
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 2.261482119670612,
+        "relative_rms_local_norm": 1.5895961325214827
+       }
+      }
+     },
+     "windward_face_x_gt_7.071": {
+      "fraction_of_tau2_energy": 0.9229747942821931,
+      "fraction_of_wall": 0.214111328125,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 1.3676068819342404,
+        "relative_rms_local_norm": 0.6586977496991578
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 1.365310251479533,
+        "relative_rms_local_norm": 0.6575915946100092
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 1.1305364900653125,
+        "relative_rms_local_norm": 0.5445145471230619
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 3.2100847755396518,
+        "relative_rms_local_norm": 1.546113613439075
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.9046736252967057,
+        "relative_rms_local_norm": 0.43572936716457134
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 1.84575673016786,
+        "relative_rms_local_norm": 0.8889950911435271
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 1.3371958279889777,
+        "relative_rms_local_norm": 0.6440504902678563
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 3.1883809164710697,
+        "relative_rms_local_norm": 1.5356601100843366
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 3.209449547701791,
+        "relative_rms_local_norm": 1.5458076606445457
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 9.702274763263098,
+        "relative_rms_local_norm": 4.673028951481708
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 2.8723570939663343,
+        "relative_rms_local_norm": 1.3834495710142323
+       }
+      }
+     }
+    },
+    "C_xiao_repaired_cubic6": {
+     "flat_floor_2.05_to_6.90": {
+      "fraction_of_tau2_energy": 0.13806601603897922,
+      "fraction_of_wall": 0.5390625,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.3805172452791034,
+        "relative_rms_local_norm": 0.7518834196345687
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.4518311591952393,
+        "relative_rms_local_norm": 0.8927962169598521
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.23929766552176202,
+        "relative_rms_local_norm": 0.472840454132638
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 0.4312405759949569,
+        "relative_rms_local_norm": 0.8521102341273452
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.43338512289766534,
+        "relative_rms_local_norm": 0.8563477536584047
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.41410274432512906,
+        "relative_rms_local_norm": 0.818246719028101
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.43985640683624666,
+        "relative_rms_local_norm": 0.8691346934292892
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 0.43522570150103657,
+        "relative_rms_local_norm": 0.8599846467337604
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 0.43122272268676853,
+        "relative_rms_local_norm": 0.8520749568657258
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 0.08333895031088662,
+        "relative_rms_local_norm": 0.16467367964504168
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 0.4538024695653916,
+        "relative_rms_local_norm": 0.8966914295964937
+       }
+      }
+     },
+     "leeward_and_crest_x_lt_1.929": {
+      "fraction_of_tau2_energy": 0.014697298478710706,
+      "fraction_of_wall": 0.21435546875,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.6314961591353623,
+        "relative_rms_local_norm": 2.411677548675444
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.49273004131853565,
+        "relative_rms_local_norm": 1.8817311253845974
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.29803533719001807,
+        "relative_rms_local_norm": 1.1381939874301175
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 2.58559004762191,
+        "relative_rms_local_norm": 9.874342666574822
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.5170956208156401,
+        "relative_rms_local_norm": 1.9747830310590355
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 1.3045891746100367,
+        "relative_rms_local_norm": 4.98221307784336
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.5794432949560883,
+        "relative_rms_local_norm": 2.2128881782740653
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 2.6358010399948495,
+        "relative_rms_local_norm": 10.066097946873487
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 2.585769801839906,
+        "relative_rms_local_norm": 9.875029146144886
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 6.583069552493795,
+        "relative_rms_local_norm": 25.140677122812214
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 2.647372590217634,
+        "relative_rms_local_norm": 10.11028958204332
+       }
+      }
+     },
+     "recirculation_0.2_to_4.7": {
+      "fraction_of_tau2_energy": 0.1445382004828891,
+      "fraction_of_wall": 0.5,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.4514907521969033,
+        "relative_rms_local_norm": 0.839735550594807
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 0.44956315686922504,
+        "relative_rms_local_norm": 0.8361503823140932
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.20978636207734974,
+        "relative_rms_local_norm": 0.390185325854639
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 1.6823667290138233,
+        "relative_rms_local_norm": 3.129063318831134
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 0.43148035007418567,
+        "relative_rms_local_norm": 0.8025178535270815
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 0.567615369510132,
+        "relative_rms_local_norm": 1.0557177583867567
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 0.4503869494211695,
+        "relative_rms_local_norm": 0.8376825684969041
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 1.7136067633184182,
+        "relative_rms_local_norm": 3.187167205299951
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 1.6831483914462733,
+        "relative_rms_local_norm": 3.1305171464674664
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 4.21211427847174,
+        "relative_rms_local_norm": 7.834185053823953
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 1.7294740912866524,
+        "relative_rms_local_norm": 3.2166791262485828
+       }
+      }
+     },
+     "sloped_wall_complement_of_flat_floor": {
+      "fraction_of_tau2_energy": 0.8619339839610205,
+      "fraction_of_wall": 0.4609375,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 0.8732280229548672,
+        "relative_rms_local_norm": 0.638574663483932
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 1.8217608944792412,
+        "relative_rms_local_norm": 1.332218297580213
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.7004007004979592,
+        "relative_rms_local_norm": 0.5121894051349186
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 3.7152911303130636,
+        "relative_rms_local_norm": 2.7169201181340514
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 1.401903523034879,
+        "relative_rms_local_norm": 1.0251847706738175
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 2.0109208370756164,
+        "relative_rms_local_norm": 1.4705472832664217
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 1.7184349967908148,
+        "relative_rms_local_norm": 1.256658078930459
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 3.7071937661677574,
+        "relative_rms_local_norm": 2.7109986732785614
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 3.7120677968533196,
+        "relative_rms_local_norm": 2.7145629570887753
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 11.071560987796447,
+        "relative_rms_local_norm": 8.096417139821176
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 3.3706443321963353,
+        "relative_rms_local_norm": 2.4648866201898616
+       }
+      }
+     },
+     "windward_face_x_gt_7.071": {
+      "fraction_of_tau2_energy": 0.842453027631691,
+      "fraction_of_wall": 0.214111328125,
+      "models": {
+       "M0_equilibrium": {
+        "relative_rms_global_norm": 1.1108720357335402,
+        "relative_rms_local_norm": 0.5600296352431591
+       },
+       "M1_pressure_gradient_ode": {
+        "relative_rms_global_norm": 2.623329046547894,
+        "relative_rms_local_norm": 1.3225123702847423
+       },
+       "M2_hickel_modelled_convection": {
+        "relative_rms_global_norm": 0.9800059994110023,
+        "relative_rms_local_norm": 0.49405546699520764
+       },
+       "Xall_all_omitted_transport": {
+        "relative_rms_global_norm": 4.79694888442363,
+        "relative_rms_local_norm": 2.4183105232727513
+       },
+       "Xc_exact_convection_profile": {
+        "relative_rms_global_norm": 1.9865625319095068,
+        "relative_rms_local_norm": 1.00149599084864
+       },
+       "Xc_resolved_convection_constant": {
+        "relative_rms_global_norm": 2.6432598953618514,
+        "relative_rms_local_norm": 1.332560211649294
+       },
+       "Xc_resolved_convection_linear": {
+        "relative_rms_global_norm": 2.4503977194635684,
+        "relative_rms_local_norm": 1.2353316105627645
+       },
+       "Xcp_convection_plus_pressure_profile": {
+        "relative_rms_global_norm": 4.755479132190903,
+        "relative_rms_local_norm": 2.397404163701658
+       },
+       "Xcpr_plus_streamwise_normal_stress": {
+        "relative_rms_global_norm": 4.791473011219837,
+        "relative_rms_local_norm": 2.4155499431390255
+       },
+       "Xfull_all_transport_plus_exact_shear_stress": {
+        "relative_rms_global_norm": 14.849264032371087,
+        "relative_rms_local_norm": 7.4860358818798005
+       },
+       "Xp_exact_pressure_profile": {
+        "relative_rms_global_norm": 4.17390802502816,
+        "relative_rms_local_norm": 2.104213729038097
+       }
+      }
+     }
+    }
+   },
+   "runtime_seconds": 74.4,
+   "scores": {
+    "A_withdrawn_linear4": {
+     "M0_equilibrium": {
+      "r2": 0.6968131560810784,
+      "relative_rms": 0.5354347866421663,
+      "relative_rms_interval": {
+       "high": 0.7654157828326323,
+       "low": 0.26268019322686437,
+       "median": 0.5239518285627467
+      },
+      "sign_accuracy": 0.96435546875
+     },
+     "M1_pressure_gradient_ode": {
+      "r2": -7.544727270415409,
+      "relative_rms": 2.8425002404586563,
+      "relative_rms_interval": {
+       "high": 3.082484842656541,
+       "low": 1.856281687457423,
+       "median": 2.821344219852412
+      },
+      "sign_accuracy": 0.5673828125
+     },
+     "M2_hickel_modelled_convection": {
+      "r2": -0.13521598456153217,
+      "relative_rms": 1.0360737156799646,
+      "relative_rms_interval": {
+       "high": 1.1440361522675588,
+       "low": 0.6968073607271825,
+       "median": 1.0336759137616673
+      },
+      "sign_accuracy": 0.624755859375
+     },
+     "Xall_all_omitted_transport": {
+      "r2": -18.985003904459706,
+      "relative_rms": 4.347138990583919,
+      "relative_rms_interval": {
+       "high": 11.34588635996452,
+       "low": 2.107539781509344,
+       "median": 4.347442938482388
+      },
+      "sign_accuracy": 0.566650390625
+     },
+     "Xc_exact_convection_profile": {
+      "r2": -5.320687515932557,
+      "relative_rms": 2.4447450044825985,
+      "relative_rms_interval": {
+       "high": 2.719416199722385,
+       "low": 1.7085855734668478,
+       "median": 2.4292503030320205
+      },
+      "sign_accuracy": 0.569580078125
+     },
+     "Xc_resolved_convection_constant": {
+      "r2": -5.446843959557043,
+      "relative_rms": 2.4690221532169234,
+      "relative_rms_interval": {
+       "high": 3.088465776741903,
+       "low": 1.7795969309738242,
+       "median": 2.4542384714201133
+      },
+      "sign_accuracy": 0.58984375
+     },
+     "Xc_resolved_convection_linear": {
+      "r2": -6.38950109548518,
+      "relative_rms": 2.6433761441035086,
+      "relative_rms_interval": {
+       "high": 2.8694215176287483,
+       "low": 1.803774350369828,
+       "median": 2.6285890313408258
+      },
+      "sign_accuracy": 0.591552734375
+     },
+     "Xcp_convection_plus_pressure_profile": {
+      "r2": -18.883952810667388,
+      "relative_rms": 4.3361347432945525,
+      "relative_rms_interval": {
+       "high": 11.293505027325313,
+       "low": 2.0932848438949145,
+       "median": 4.345140100442976
+      },
+      "sign_accuracy": 0.5654296875
+     },
+     "Xcpr_plus_streamwise_normal_stress": {
+      "r2": -18.94700771577047,
+      "relative_rms": 4.343004558140436,
+      "relative_rms_interval": {
+       "high": 11.35184734357773,
+       "low": 2.0961111607599814,
+       "median": 4.343989828773126
+      },
+      "sign_accuracy": 0.565673828125
+     },
+     "Xfull_all_transport_plus_exact_shear_stress": {
+      "r2": -170.41557163370464,
+      "relative_rms": 12.731411134082805,
+      "relative_rms_interval": {
+       "high": 27.46988601429096,
+       "low": 8.436616332181831,
+       "median": 12.65343974842419
+      },
+      "sign_accuracy": 0.68603515625
+     },
+     "Xp_exact_pressure_profile": {
+      "r2": -15.335081842469126,
+      "relative_rms": 3.930176592243597,
+      "relative_rms_interval": {
+       "high": 11.30624661512645,
+       "low": 0.8753962315300239,
+       "median": 3.9627313172854777
+      },
+      "sign_accuracy": 0.6494140625
+     }
+    },
+    "B_mglet": {
+     "M0_equilibrium": {
+      "r2": 0.516635533930834,
+      "relative_rms": 0.6892570578999285,
+      "relative_rms_interval": {
+       "high": 1.0432726211916843,
+       "low": 0.6476578500613797,
+       "median": 0.6924037333392847
+      },
+      "sign_accuracy": 0.827880859375
+     },
+     "M1_pressure_gradient_ode": {
+      "r2": 0.5503566774846491,
+      "relative_rms": 0.6647799855593821,
+      "relative_rms_interval": {
+       "high": 1.1516602233619073,
+       "low": 0.5787832997410616,
+       "median": 0.6661956072464719
+      },
+      "sign_accuracy": 0.703857421875
+     },
+     "M2_hickel_modelled_convection": {
+      "r2": 0.7056483623874068,
+      "relative_rms": 0.5378697124578066,
+      "relative_rms_interval": {
+       "high": 0.6127081880349521,
+       "low": 0.3792944862455976,
+       "median": 0.535058324441295
+      },
+      "sign_accuracy": 0.7548828125
+     },
+     "Xall_all_omitted_transport": {
+      "r2": -1.839693037406053,
+      "relative_rms": 1.670627245757993,
+      "relative_rms_interval": {
+       "high": 7.279045271520674,
+       "low": 0.9124876338264436,
+       "median": 1.6919772856711979
+      },
+      "sign_accuracy": 0.62060546875
+     },
+     "Xc_exact_convection_profile": {
+      "r2": 0.7779125469160296,
+      "relative_rms": 0.4672032695937174,
+      "relative_rms_interval": {
+       "high": 1.1256631394269654,
+       "low": 0.3985101132066498,
+       "median": 0.472684199346315
+      },
+      "sign_accuracy": 0.7060546875
+     },
+     "Xc_resolved_convection_constant": {
+      "r2": 0.10122720604460156,
+      "relative_rms": 0.9398722356319041,
+      "relative_rms_interval": {
+       "high": 1.9243361496767224,
+       "low": 0.6086008729404871,
+       "median": 0.9340961421997835
+      },
+      "sign_accuracy": 0.718994140625
+     },
+     "Xc_resolved_convection_linear": {
+      "r2": 0.5629176409989756,
+      "relative_rms": 0.6554287699905005,
+      "relative_rms_interval": {
+       "high": 1.1764425065671225,
+       "low": 0.5665893351870254,
+       "median": 0.6568598837101601
+      },
+      "sign_accuracy": 0.72802734375
+     },
+     "Xcp_convection_plus_pressure_profile": {
+      "r2": -1.8323267172945332,
+      "relative_rms": 1.668458989164952,
+      "relative_rms_interval": {
+       "high": 7.245440040695397,
+       "low": 0.9114287708047775,
+       "median": 1.6904236308661347
+      },
+      "sign_accuracy": 0.620849609375
+     },
+     "Xcpr_plus_streamwise_normal_stress": {
+      "r2": -1.83890567578944,
+      "relative_rms": 1.6703956223142484,
+      "relative_rms_interval": {
+       "high": 7.278523744326333,
+       "low": 0.9111017454095999,
+       "median": 1.6916015583780202
+      },
+      "sign_accuracy": 0.62109375
+     },
+     "Xfull_all_transport_plus_exact_shear_stress": {
+      "r2": -23.238782301365507,
+      "relative_rms": 4.880892703304983,
+      "relative_rms_interval": {
+       "high": 17.628023440012306,
+       "low": 3.3820415874808596,
+       "median": 4.936990511800965
+      },
+      "sign_accuracy": 0.709228515625
+     },
+     "Xp_exact_pressure_profile": {
+      "r2": -1.4228400420494145,
+      "relative_rms": 1.543143212351188,
+      "relative_rms_interval": {
+       "high": 7.234820932556498,
+       "low": 0.6790033133700871,
+       "median": 1.5674955434338955
+      },
+      "sign_accuracy": 0.692626953125
+     }
+    },
+    "C_xiao_repaired_cubic6": {
+     "M0_equilibrium": {
+      "r2": 0.5656357819106574,
+      "relative_rms": 0.6553854211170045,
+      "relative_rms_interval": {
+       "high": 1.2115161019544665,
+       "low": 0.505193762649142,
+       "median": 0.6645211519435131
+      },
+      "sign_accuracy": 0.87353515625
+     },
+     "M1_pressure_gradient_ode": {
+      "r2": -0.6582710057246328,
+      "relative_rms": 1.2805528560557797,
+      "relative_rms_interval": {
+       "high": 1.7612500399010924,
+       "low": 0.8383039708793285,
+       "median": 1.280000240004262
+      },
+      "sign_accuracy": 0.658203125
+     },
+     "M2_hickel_modelled_convection": {
+      "r2": 0.740121168701444,
+      "relative_rms": 0.5069384212187357,
+      "relative_rms_interval": {
+       "high": 0.8273521304302127,
+       "low": 0.4152812374353913,
+       "median": 0.5071992714185307
+      },
+      "sign_accuracy": 0.683349609375
+     },
+     "Xall_all_omitted_transport": {
+      "r2": -5.5354831753373706,
+      "relative_rms": 2.542193511468799,
+      "relative_rms_interval": {
+       "high": 8.455990365739734,
+       "low": 1.2286175694646275,
+       "median": 2.552679916594481
+      },
+      "sign_accuracy": 0.557373046875
+     },
+     "Xc_exact_convection_profile": {
+      "r2": -0.018479014027388052,
+      "relative_rms": 1.0035656728854736,
+      "relative_rms_interval": {
+       "high": 1.5631666975694998,
+       "low": 0.7835308034795345,
+       "median": 1.0055561249196656
+      },
+      "sign_accuracy": 0.660400390625
+     },
+     "Xc_resolved_convection_constant": {
+      "r2": -0.978397458717758,
+      "relative_rms": 1.3987062908812031,
+      "relative_rms_interval": {
+       "high": 2.55750457223159,
+       "low": 0.8304519021063714,
+       "median": 1.3824241358488036
+      },
+      "sign_accuracy": 0.6455078125
+     },
+     "Xc_resolved_convection_linear": {
+      "r2": -0.48194451372022984,
+      "relative_rms": 1.2105583483825084,
+      "relative_rms_interval": {
+       "high": 1.7771026639004128,
+       "low": 0.8279990527070347,
+       "median": 1.209447744817092
+      },
+      "sign_accuracy": 0.654541015625
+     },
+     "Xcp_convection_plus_pressure_profile": {
+      "r2": -5.509350178661705,
+      "relative_rms": 2.5371057713325746,
+      "relative_rms_interval": {
+       "high": 8.423731214079142,
+       "low": 1.2230288685216115,
+       "median": 2.547233601121386
+      },
+      "sign_accuracy": 0.5576171875
+     },
+     "Xcpr_plus_streamwise_normal_stress": {
+      "r2": -5.524315347242869,
+      "relative_rms": 2.540020533720562,
+      "relative_rms_interval": {
+       "high": 8.460352533328159,
+       "low": 1.2217199081197752,
+       "median": 2.550328745817198
+      },
+      "sign_accuracy": 0.557861328125
+     },
+     "Xfull_all_transport_plus_exact_shear_stress": {
+      "r2": -56.14115591316617,
+      "relative_rms": 7.516995083510849,
+      "relative_rms_interval": {
+       "high": 20.66721360987578,
+       "low": 4.913386320572306,
+       "median": 7.51466547520072
+      },
+      "sign_accuracy": 0.677734375
+     },
+     "Xp_exact_pressure_profile": {
+      "r2": -4.408023277190533,
+      "relative_rms": 2.3125388183419977,
+      "relative_rms_interval": {
+       "high": 8.41442329117379,
+       "low": 0.6681565567915233,
+       "median": 2.336837649095704
+      },
+      "sign_accuracy": 0.62939453125
+     }
+    }
+   },
+   "y_m_over_H": {
+    "max": 0.093532182,
+    "median": 0.093532182,
+    "min": 0.05255533205912904
+   }
+  }
+ }
+}

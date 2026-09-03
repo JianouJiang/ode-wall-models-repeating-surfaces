@@ -1,0 +1,40 @@
+{
+  "bfs": {
+    "coordinate_identity": "dy/dx_normalised=(x_max-x_min)*V/U",
+    "corrected_plot_median_abs_dy_dxnormalised": 0.15194040623508093,
+    "old_plot_median_abs_dy_dxnormalised": 0.005071309370411732,
+    "old_to_corrected_factor": 29.960784313725494,
+    "physical_median_abs_dy_dx": 0.005071309370411732,
+    "x_extent": 29.96078431372549
+  },
+  "hill": {
+    "coordinate_identity": "dy/dx_normalised=(x_max-x_min)*V/U",
+    "corrected_plot_median_abs_dy_dxnormalised": 0.32723972828846226,
+    "old_plot_median_abs_dy_dxnormalised": 0.03643112432929528,
+    "old_to_corrected_factor": 8.98242188,
+    "physical_median_abs_dy_dx": 0.03643112432929528,
+    "x_extent": 8.98242188
+  },
+  "resolution": "both criticised figures are removed from the active build; the archived streamline generator is additionally repaired against stored DNS/RANS velocity fields with the exact normalised-coordinate vector transform",
+  "schema": "figure-streamline-provenance-r3-1b-v1",
+  "sources": {
+    "bfs_npz": {
+      "path": "codes/error_spreading_viz/out/fields_bfs.npz",
+      "sha256": "10d41f37f4663b4e7dcaf01ae675580f960a925f7a4e49cf12ca8ec3d7b789da"
+    },
+    "generator": {
+      "path": "codes/error_spreading_viz/stageM1_forcebalance.py",
+      "sha256": "a7a577e0b21f1bbda8eb8ad9bc8a3d5cc56fe6d2cc22654ffd459a93f5d356d2"
+    },
+    "hill_npz": {
+      "path": "codes/results/momentum_budget_pehill.npz",
+      "sha256": "12ff9aa25e55d771ccf9ac5db194a3837be5762b113f872f8ba0ae3f5c7b50c2"
+    },
+    "rendered_png": {
+      "path": "manuscript/figures/figM1_forcebalance.png",
+      "sha256": "2dce54dd45ab8b6364535d007e3480f3bc6c6132e299821d51fb4e25b8e46608"
+    }
+  },
+  "status": "PASS",
+  "uses_random_or_generative_image_model": false
+}

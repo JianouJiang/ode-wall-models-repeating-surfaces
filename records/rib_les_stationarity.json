@@ -1,0 +1,37 @@
+{
+  "case": "rib_les_dtype",
+  "windows": [
+    {
+      "time": "120.00046185",
+      "n_stations": 48,
+      "f_res_band_median": 0.9922792480707601,
+      "f_res_pooled_median": 0.9941638181448242,
+      "f_res_pooled_min": 0.1295535808620728,
+      "n_pooled_cells": 480,
+      "standard_ml_r2": -0.9946622984095803,
+      "controlled_dns_r2": -5.857802157521815,
+      "controlled_dns_total_r2": -5.879281608605413,
+      "eps_median": 0.5170632054483584
+    },
+    {
+      "time": "139.99984127",
+      "n_stations": 48,
+      "f_res_band_median": 0.9924243816295462,
+      "f_res_pooled_median": 0.9932281191286121,
+      "f_res_pooled_min": 0.24573780330200143,
+      "n_pooled_cells": 480,
+      "standard_ml_r2": -0.9431719607410027,
+      "controlled_dns_r2": -5.6811978658689695,
+      "controlled_dns_total_r2": -5.69447775678548,
+      "eps_median": 0.5210734345944655
+    }
+  ],
+  "drift": {
+    "f_res_band": 0.00014513355878609246,
+    "standard_ml_r2": 0.05149033766857758,
+    "controlled_dns_r2": 0.1766042916528452,
+    "controlled_dns_total_r2": 0.1848038518199333
+  },
+  "stationary": true,
+  "note": "MEASURED resolved fraction f_res and closure-independence verdict on the wall-resolved square-rib LES; converged (window-independent) across the last 20 flow-time units."
+}

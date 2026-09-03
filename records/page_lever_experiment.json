@@ -1,0 +1,68 @@
+{
+ "baseline": {
+  "built": true,
+  "total_pages": 28,
+  "body_pages": 24,
+  "meets_target": false
+ },
+ "figures_90pct": {
+  "built": true,
+  "total_pages": 28,
+  "body_pages": 24,
+  "meets_target": false
+ },
+ "figures_80pct": {
+  "built": true,
+  "total_pages": 27,
+  "body_pages": 24,
+  "meets_target": false
+ },
+ "physical_metrics_no_resizebox": {
+  "built": true,
+  "total_pages": 28,
+  "body_pages": 24,
+  "meets_target": false
+ },
+ "prose_1500": {
+  "built": true,
+  "total_pages": 27,
+  "body_pages": 24,
+  "meets_target": false
+ },
+ "prose_2500": {
+  "built": true,
+  "total_pages": 27,
+  "body_pages": 24,
+  "meets_target": false
+ },
+ "prose_3500": {
+  "built": true,
+  "total_pages": 27,
+  "body_pages": 24,
+  "meets_target": false
+ },
+ "figs_90_plus_prose_1500": {
+  "built": true,
+  "total_pages": 27,
+  "body_pages": 24,
+  "meets_target": false
+ },
+ "figs_90_plus_prose_2500": {
+  "built": true,
+  "total_pages": 27,
+  "body_pages": 24,
+  "meets_target": false
+ },
+ "figs_80_plus_resize_plus_prose_1500": {
+  "built": true,
+  "total_pages": 27,
+  "body_pages": 24,
+  "meets_target": false
+ },
+ "figs_90_plus_resize_plus_prose_2000": {
+  "built": true,
+  "total_pages": 27,
+  "body_pages": 24,
+  "meets_target": false
+ }
+}

@@ -1,0 +1,123 @@
+{
+  "schema": "wall-origin-rsl-sensitivity-v1",
+  "ledger_row": "M10/M11",
+  "case": "Xiao periodic hill h/Lx=1.0, Re_H=5600",
+  "origin_convention": "eta=y-y_w(x), measured from the local analytic surface",
+  "pressure_definition": "exact wall-to-eta integral from exact_pressure_traction_512.npz",
+  "sources_sha256": {
+    "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85",
+    "codes/results/exact_pressure_traction_512.npz": "c44a3c1f364549637caef3109ee83928742be5f527a89409a4494e4573848e55",
+    "codes/results/wall_following_budget_certificate_l1.npz": "9be757418932d3cb4e9dea21e537f7f37f2332249d7290fc98e6dd2613fa4299",
+    "codes/results/critical_matching_height_map.npz": "c60861c12341828e9ff46ad9cbf9858e29292415080738e52dd59e041f4d926e"
+  },
+  "stations": 512,
+  "eta_reference_over_H": 0.1,
+  "exact_epsilon_median": 0.09633614714665636,
+  "exact_epsilon_fraction_below_0p1": 0.51953125,
+  "legacy_local_epsilon_median": 0.08364189563744982,
+  "legacy_local_epsilon_fraction_below_0p1": 0.564453125,
+  "translation_offsets_over_H": [
+    -10.0,
+    -1.0,
+    0.0,
+    1.0,
+    10.0
+  ],
+  "translation_invariance_max_error": 1.6375789613221059e-15,
+  "jackson_force_centroid_over_H": 0.3918496650412549,
+  "jackson_centroid_ensemble_min": 0.3917537657655805,
+  "jackson_centroid_ensemble_max": 0.39185915926022435,
+  "jackson_centroid_ensemble_std": 3.4130670622567285e-05,
+  "signed_force_condition_number": 1.254291288946119,
+  "centroid_interpretation": "stable for this hill; no centroid-ill-conditioning claim",
+  "origin_table": [
+    {
+      "origin": "local_surface",
+      "origin_height_over_H": "stationwise",
+      "positive_height_fraction": 1.0,
+      "median_positive_height_over_H": 0.0935321823,
+      "median_legacy_epsilon_on_valid_stations": 0.08364189563744982,
+      "fraction_epsilon_below_0p1_on_valid_stations": 0.564453125
+    },
+    {
+      "origin": "trough_plane",
+      "origin_height_over_H": 0.0,
+      "positive_height_fraction": 1.0,
+      "median_positive_height_over_H": 0.0935321823,
+      "median_legacy_epsilon_on_valid_stations": 0.06568851651694516,
+      "fraction_epsilon_below_0p1_on_valid_stations": 0.62890625
+    },
+    {
+      "origin": "jackson_force_centroid_plane",
+      "origin_height_over_H": 0.3918496650412549,
+      "positive_height_fraction": 0.267578125,
+      "median_positive_height_over_H": 0.5131399111898556,
+      "median_legacy_epsilon_on_valid_stations": 0.012517119263196316,
+      "fraction_epsilon_below_0p1_on_valid_stations": 0.9124087591240876
+    },
+    {
+      "origin": "crest_plane",
+      "origin_height_over_H": 1.0,
+      "positive_height_fraction": 0.107421875,
+      "median_positive_height_over_H": 0.1248541879022067,
+      "median_legacy_epsilon_on_valid_stations": 0.06162682338490528,
+      "fraction_epsilon_below_0p1_on_valid_stations": 0.8727272727272727
+    }
+  ],
+  "wall_location_perturbation_table": [
+    {
+      "wall_location_shift_over_first_spacing": -1.0,
+      "positive_height_fraction": 1.0,
+      "median_epsilon": 0.0760511363167341,
+      "fraction_epsilon_below_0p1": 0.609375
+    },
+    {
+      "wall_location_shift_over_first_spacing": -0.5,
+      "positive_height_fraction": 1.0,
+      "median_epsilon": 0.07966610852173861,
+      "fraction_epsilon_below_0p1": 0.587890625
+    },
+    {
+      "wall_location_shift_over_first_spacing": -0.25,
+      "positive_height_fraction": 1.0,
+      "median_epsilon": 0.08160560615659326,
+      "fraction_epsilon_below_0p1": 0.576171875
+    },
+    {
+      "wall_location_shift_over_first_spacing": 0.0,
+      "positive_height_fraction": 1.0,
+      "median_epsilon": 0.08364189563744982,
+      "fraction_epsilon_below_0p1": 0.564453125
+    },
+    {
+      "wall_location_shift_over_first_spacing": 0.25,
+      "positive_height_fraction": 1.0,
+      "median_epsilon": 0.08578240807818788,
+      "fraction_epsilon_below_0p1": 0.55078125
+    },
+    {
+      "wall_location_shift_over_first_spacing": 0.5,
+      "positive_height_fraction": 1.0,
+      "median_epsilon": 0.08803535526123937,
+      "fraction_epsilon_below_0p1": 0.5390625
+    },
+    {
+      "wall_location_shift_over_first_spacing": 0.75,
+      "positive_height_fraction": 1.0,
+      "median_epsilon": 0.09040983491810849,
+      "fraction_epsilon_below_0p1": 0.53125
+    }
+  ],
+  "roughness_sublayer_reference": "y_r=0.5 lambda (literature comparison, not a universal hill law)",
+  "wavelength_over_H": 8.999936,
+  "roughness_sublayer_height_over_H": 4.499968,
+  "median_eta_match_over_rsl_height": 0.02078507720499346,
+  "max_eta_match_over_rsl_height": 0.030857346096683336,
+  "fraction_match_above_rsl_height": 0.0,
+  "median_eta_match_plus": 12.415246100724257,
+  "median_rsl_height_plus": 589.4439108494303,
+  "critical_height_plus": 1.0,
+  "critical_height_over_median_rsl_plus": 0.0016965142596162023,
+  "result": "no overlap between the deposited matching interface and the wavelength-scaled outer edge of the roughness layer",
+  "status": "PASS"
+}

@@ -1,0 +1,74 @@
+{
+ "caveat": "ten wall stations per Krank case; a probe of Reynolds-number transfer, not a scored result",
+ "heights": {
+  "eta0.05": {
+   "krank_pehill_Re10595": {
+    "a_and_b": {
+     "r2_empirical": 0.382924202888584,
+     "relrms_empirical": 0.7848527193457409
+    },
+    "a_only": {
+     "r2_empirical": 0.33875243808870215,
+     "relrms_empirical": 0.8124580624731815
+    },
+    "n_station": 10,
+    "nu": 9.438414346389807e-05,
+    "r2_equilibrium": -1.545819046475163,
+    "r2_tble": 0.20251642688352856,
+    "relrms_equilibrium": 1.5941628219218822,
+    "relrms_tble": 0.8922360857224712
+   },
+   "krank_pehill_Re5600": {
+    "a_and_b": {
+     "r2_empirical": 0.3550062382720407,
+     "relrms_empirical": 0.7976923899454991
+    },
+    "a_only": {
+     "r2_empirical": 0.1948305401241217,
+     "relrms_empirical": 0.8912536851983474
+    },
+    "n_station": 10,
+    "nu": 0.00017857142857142857,
+    "r2_equilibrium": -0.8055084791784226,
+    "r2_tble": 0.41901874229051606,
+    "relrms_equilibrium": 1.3346194751690483,
+    "relrms_tble": 0.7570747345485217
+   }
+  },
+  "eta0.10": {
+   "krank_pehill_Re10595": {
+    "a_and_b": {
+     "r2_empirical": 0.15718550763434436,
+     "relrms_empirical": 0.9172440606615622
+    },
+    "a_only": {
+     "r2_empirical": 0.1281694577136262,
+     "relrms_empirical": 0.9328996938610066
+    },
+    "n_station": 10,
+    "nu": 9.438414346389807e-05,
+    "r2_equilibrium": -1.245150609900334,
+    "r2_tble": -0.45512952053758027,
+    "relrms_equilibrium": 1.4970684254932256,
+    "relrms_tble": 1.205229453951245
+   },
+   "krank_pehill_Re5600": {
+    "a_and_b": {
+     "r2_empirical": 0.34838428770772656,
+     "relrms_empirical": 0.8017767634367211
+    },
+    "a_only": {
+     "r2_empirical": 0.22889010929350662,
+     "relrms_empirical": 0.8721994903873329
+    },
+    "n_station": 10,
+    "nu": 0.00017857142857142857,
+    "r2_equilibrium": -0.669799215488434,
+    "r2_tble": -0.16160565935840854,
+    "relrms_equilibrium": 1.283482105603843,
+    "relrms_tble": 1.0705009360343216
+   }
+  }
+ },
+ "schema": "input_sufficiency_reynolds_probe_v1"
+}

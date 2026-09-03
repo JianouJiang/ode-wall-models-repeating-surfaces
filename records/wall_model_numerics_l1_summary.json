@@ -1,0 +1,164 @@
+{
+  "approach": "rationalised quadratic plus safeguarded Brent-Dekker shooting",
+  "bracketing": {
+    "converged": 786,
+    "expansion_max": 0,
+    "failed": 0,
+    "scan_count": 0
+  },
+  "branch_audit": {
+    "brent_continuation_max_delta": 5.637851296924623e-18,
+    "multi_root_face_count": 1,
+    "multi_root_global_indices": [
+      723
+    ],
+    "plain_bisection_max_delta": 0.003221482697460016
+  },
+  "canonical_hill_R2": {
+    "archived_solver": -47.68617253416459,
+    "difference": 5.660604273316494e-06,
+    "stable_solver": -47.68616687356032
+  },
+  "checks": {
+    "N200_max_relative_error_lt_3e-4": true,
+    "N200_p95_relative_error_lt_1e-4": true,
+    "N500_p95_relative_error_lt_2e-5": true,
+    "brent_matches_zero_pressure_continuation": true,
+    "cpp_all_bracketed": true,
+    "cpp_all_converged": true,
+    "cpp_no_zero_fallback": true,
+    "cpp_python_same_grid_max_abs_lt_2e-11": true,
+    "kernel_cost_lt_200us_per_face": true,
+    "p95_iterations_lt_20": true,
+    "plain_bisection_branch_error_detected": true,
+    "printed_hill_R2_unchanged": true,
+    "rationalisation_repairs_order": true,
+    "rationalised_observed_order_gt_1p95": true,
+    "registered_families_10": true,
+    "registered_multi_root_detected": true,
+    "registered_real_faces_786": true
+  },
+  "closure_changed": false,
+  "cost": {
+    "benchmark_blocks": 7,
+    "benchmark_repeats_per_block": 30,
+    "compiler": "/usr/bin/g++",
+    "face_evaluations": 165060,
+    "microseconds_per_face": 85.77469147582697,
+    "microseconds_per_face_p25_p75": [
+      85.47595935114504,
+      86.25290754877014
+    ],
+    "scope": "warmed standalone single-thread wall-model kernel; excludes OpenFOAM field access and communication",
+    "seconds": 14.158186761
+  },
+  "cpp_python_same_grid_max_abs": 2.4824977143400595e-15,
+  "equation_changed": false,
+  "failure_handling": "the report records converged=false; the scalar OpenFOAM API returns NaN rather than a false zero; zero failures in the registered corpus",
+  "formula_audit": {
+    "direct_subtraction_max_relative_difference_N200": 0.0013902065066429396,
+    "direct_subtraction_p95_relative_difference_N200": 3.375301912791439e-05
+  },
+  "iterations": {
+    "max": 16,
+    "median": 10.0,
+    "p95": 12.0,
+    "residual_evaluations_median": 12.0
+  },
+  "matching_index": 10,
+  "maximum_iterations": 100,
+  "n_faces": 786,
+  "n_families": 10,
+  "python_N500_relative_error": {
+    "max": 2.1154426525873954e-05,
+    "median": 2.5052163915816846e-06,
+    "p95": 7.000657113440247e-06
+  },
+  "python_reference_grid_points": 6400,
+  "root_method": "safeguarded Brent-Dekker with bracket expansion",
+  "runtime_N200_relative_error": {
+    "max": 0.00018686710006295668,
+    "median": 1.5829173978386294e-05,
+    "p95": 4.3627477856160567e-05
+  },
+  "runtime_grid_points": 200,
+  "runtime_seconds": 47.41746720200172,
+  "schema": "wall-model-numerics-l1-v1",
+  "source_hashes": {
+    "cpp_harness": "9455edc70bec5ae1d8538e15b1fcc2ae3aaa03a6f9f345236625110e8a8a86f1",
+    "crwm_header": "e900bac3974af36492dc7727fe42dc30d14ee8a7ee6de10ae4b25932736eba6f",
+    "tble_header": "e7007f43a3f4140d1b9fbeae7246f01acb0873126ea3db9569e4a4e9b68ec079"
+  },
+  "sources": [
+    {
+      "family": "apg_tbl_kth_b1n",
+      "n_faces": 15,
+      "path": "codes/vendor/universal_wall_function/codes/results/apg_tbl_kth_b1n_wall_profiles.npz",
+      "sha256": "e0dfe2c40203780365bc7d12ad99415fe170de6d1750880cf098c30ca91ac6cc"
+    },
+    {
+      "family": "apg_tbl_kth_b2n",
+      "n_faces": 15,
+      "path": "codes/vendor/universal_wall_function/codes/results/apg_tbl_kth_b2n_wall_profiles.npz",
+      "sha256": "90d9e46c408a56f9c18b9b106e9d06f3407bf344174583c6c6590acea9b6b6f6"
+    },
+    {
+      "family": "apg_tbl_kth_m13n",
+      "n_faces": 15,
+      "path": "codes/vendor/universal_wall_function/codes/results/apg_tbl_kth_m13n_wall_profiles.npz",
+      "sha256": "72e39d9ceed9669b45e175589293c9b32c1a2d78befa56dce44e199bc012c812"
+    },
+    {
+      "family": "apg_tbl_kth_m16n",
+      "n_faces": 15,
+      "path": "codes/vendor/universal_wall_function/codes/results/apg_tbl_kth_m16n_wall_profiles.npz",
+      "sha256": "7d196fe2c1fb97f75e26bfbc06f2fead80d2ae3226ceba59879691632d517fb3"
+    },
+    {
+      "family": "apg_tbl_kth_m18n",
+      "n_faces": 15,
+      "path": "codes/vendor/universal_wall_function/codes/results/apg_tbl_kth_m18n_wall_profiles.npz",
+      "sha256": "01101d3bc5ce5dd44831b07bc1ef6172c66561dcd9984e1f5a82beedf3a16d3c"
+    },
+    {
+      "family": "bfs_Re13700",
+      "n_faces": 46,
+      "path": "codes/vendor/universal_wall_function/codes/results/bfs_Re13700_wall_profiles.npz",
+      "sha256": "dc0c718077c255144a40cba9003f7e998f417fa9c532a0374bb52468a009b03f"
+    },
+    {
+      "family": "nasa_hump_Re936000",
+      "n_faces": 51,
+      "path": "codes/vendor/universal_wall_function/codes/results/nasa_hump_Re936000_wall_profiles.npz",
+      "sha256": "bb5477f798f809f50188c6170c3ee0506ae0f400e9de6c535956b0f44071eb7e"
+    },
+    {
+      "family": "separation_bubble_caseC",
+      "n_faces": 51,
+      "path": "codes/vendor/universal_wall_function/codes/results/separation_bubble_caseC_wall_profiles.npz",
+      "sha256": "f403a93667e4a4e381a70bfebb710b26d861749084cf3cbaab44644e74ebe8f7"
+    },
+    {
+      "family": "periodic_hills_case_1p0",
+      "n_faces": 512,
+      "path": "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "sha256": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85"
+    },
+    {
+      "family": "conv_div_channel_Re12600",
+      "n_faces": 51,
+      "path": "codes/new_data_download/conv_div_channel_Re12600_wall_profiles.npz",
+      "sha256": "b25c0ef3991ce594d60cf34e58c6d90db8a6cbb4ce9433a2b6d3afefa9a071de"
+    }
+  ],
+  "spatial_scheme": "composite trapezoidal on y=y_m*eta^(3/2)",
+  "stable_order_median": 2.0084350153710058,
+  "stable_order_p10_p90": [
+    2.001019002750667,
+    2.0161765742700353
+  ],
+  "status": "PASS",
+  "tau_tolerance": 1e-12,
+  "unstable_order_median": -0.035195204612358075,
+  "velocity_residual_tolerance": 1e-14
+}

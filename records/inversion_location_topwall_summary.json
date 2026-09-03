@@ -1,0 +1,71 @@
+{
+  "bundle": "codes/results/rswm_r23m6_ym_campaign_final",
+  "n_cases": 6,
+  "patch": "topWall",
+  "records": [
+    {
+      "case": "rswm_r23m6_ym0300_g1_tble_307200_v1",
+      "frac_inverted_all": 0.010416666666666666,
+      "frac_inverted_attached": 0.008582089552238806,
+      "frac_inverted_separated": 0.012735849056603774,
+      "frac_requested_negative": 0.010416666666666666,
+      "n_faces": 4800,
+      "peak_bin_fraction": 0.25,
+      "peak_bin_phase": 0.225
+    },
+    {
+      "case": "rswm_r23m6_ym0300_g2_tble_819200_v1",
+      "frac_inverted_all": 0.0240234375,
+      "frac_inverted_attached": 0.031425561797752806,
+      "frac_inverted_separated": 0.014744718309859154,
+      "frac_requested_negative": 0.0240234375,
+      "n_faces": 10240,
+      "peak_bin_fraction": 0.375,
+      "peak_bin_phase": 0.7916666666666667
+    },
+    {
+      "case": "rswm_r23m6_ym0600_g1_tble_307200_v1",
+      "frac_inverted_all": 0.010416666666666666,
+      "frac_inverted_attached": 0.008582089552238806,
+      "frac_inverted_separated": 0.012735849056603774,
+      "frac_requested_negative": 0.010416666666666666,
+      "n_faces": 4800,
+      "peak_bin_fraction": 0.25,
+      "peak_bin_phase": 0.225
+    },
+    {
+      "case": "rswm_r23m6_ym0935_g1_tble_307200_v1",
+      "frac_inverted_all": 0.010416666666666666,
+      "frac_inverted_attached": 0.008582089552238806,
+      "frac_inverted_separated": 0.012735849056603774,
+      "frac_requested_negative": 0.010416666666666666,
+      "n_faces": 4800,
+      "peak_bin_fraction": 0.25,
+      "peak_bin_phase": 0.225
+    },
+    {
+      "case": "rswm_r23m6_ym1500_g1_tble_307200_v1",
+      "frac_inverted_all": 0.010416666666666666,
+      "frac_inverted_attached": 0.008582089552238806,
+      "frac_inverted_separated": 0.012735849056603774,
+      "frac_requested_negative": 0.010416666666666666,
+      "n_faces": 4800,
+      "peak_bin_fraction": 0.25,
+      "peak_bin_phase": 0.225
+    },
+    {
+      "case": "rswm_r23m6_ym2500_g1_tble_307200_v1",
+      "frac_inverted_all": 0.010416666666666666,
+      "frac_inverted_attached": 0.008582089552238806,
+      "frac_inverted_separated": 0.012735849056603774,
+      "frac_requested_negative": 0.010416666666666666,
+      "n_faces": 4800,
+      "peak_bin_fraction": 0.25,
+      "peak_bin_phase": 0.225
+    }
+  ],
+  "separated_window_xH": [
+    0.5,
+    4.473
+  ]
+}

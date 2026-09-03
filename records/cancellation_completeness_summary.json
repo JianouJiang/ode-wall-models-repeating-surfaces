@@ -1,0 +1,128 @@
+{
+  "pointwise": {
+    "identity": "C(x) = relErr(x)*eps(x) = |Delta tau_w|/Phi  (algebraic, closure-free)",
+    "hill_all_n": 512,
+    "hill_full_median": 0.30354738743610876,
+    "hill_full_cv": 0.8946547780990213,
+    "bands": {
+      "hill_eps_lt_1.0": {
+        "n": 504,
+        "median": 0.30341310375019537,
+        "mean": 0.29739005042555183,
+        "cv": 0.27791174870742336
+      },
+      "hill_eps_lt_0.3": {
+        "n": 482,
+        "median": 0.3035640833128611,
+        "mean": 0.29631600694084875,
+        "cv": 0.25984820590460816
+      },
+      "hill_eps_lt_0.1": {
+        "n": 289,
+        "median": 0.29199199120018304,
+        "mean": 0.2649007790713069,
+        "cv": 0.28808141155773753
+      },
+      "hill_eps_lt_0.05": {
+        "n": 155,
+        "median": 0.29548047971932073,
+        "mean": 0.25382241318486304,
+        "cv": 0.30944229495168657
+      }
+    },
+    "corpus_deep_band_eps_lt_0p1": {
+      "n": 293,
+      "median": 0.29199199120018304,
+      "mean": 0.2640944894471234,
+      "cv": 0.2965135047021179
+    }
+  },
+  "pointwise_per_geometry": {
+    "BFS": {
+      "n": 46,
+      "eps_median": 5.53446306137894,
+      "C_median": 0.7012082414888405,
+      "C_cv": 1.7378672132256254
+    },
+    "Conv-div ch.": {
+      "n": 51,
+      "eps_median": 3.3226917829294615,
+      "C_median": 0.535113053298682,
+      "C_cv": 1.228035712601844
+    },
+    "Gauss. bump": {
+      "n": 61,
+      "eps_median": 46.89643093415197,
+      "C_median": 1.1123286444699698,
+      "C_cv": 1.112700960969063
+    },
+    "JAXA sep. bubble": {
+      "n": 50,
+      "eps_median": 9.624516950380125,
+      "C_median": 0.39582418251544166,
+      "C_cv": 3.404556151845118
+    },
+    "NASA hump": {
+      "n": 51,
+      "eps_median": 5009.048226732378,
+      "C_median": 238.77506086659162,
+      "C_cv": 5.20835192135957
+    },
+    "Periodic hills": {
+      "n": 512,
+      "eps_median": 0.08364189563744982,
+      "C_median": 0.30354738743610876,
+      "C_cv": 0.8946547780990213
+    },
+    "Sep. bubble": {
+      "n": 51,
+      "eps_median": 28.20624166514212,
+      "C_median": 0.2605895082879746,
+      "C_cv": 2.948012662052094
+    },
+    "Swept sep.": {
+      "n": 60,
+      "eps_median": 30.97276565748718,
+      "C_median": 0.6510989545947184,
+      "C_cv": 2.6570171626133714
+    }
+  },
+  "case_level": {
+    "definition": "C_case = agg_rel_err(relRMSE) * agg_eps_median  (coarser aggregate, NOT the pointwise constant)",
+    "n_cases": 29,
+    "mean": 0.9404692502735891,
+    "median": 0.9283404502460196,
+    "cv": 0.34345996694361236,
+    "range": [
+      0.4120074742133889,
+      1.7475630274855936
+    ],
+    "rho_C_minusR2": 0.10738916256157634,
+    "ratio_caselevel_over_pointwise_median": 3.0596583956714554
+  },
+  "closure_independence": {
+    "r2_ml": -47.68617253416459,
+    "r2_dns_exact_stress": -482.97683570594313,
+    "compensation_ratio": 1.3471775642714043,
+    "corr_closure_struct": -0.9400788856286472,
+    "corr_struct_convection": 0.6560431465277061,
+    "p_struct_convection": 4.669626206742714e-30,
+    "struct_over_closure_meanabs": 1.2001469527201227,
+    "interpretation": "exact DNS stress RAISES error -> C is set by dropped convection, not closure"
+  },
+  "two_scale_aggregation": {
+    "within_family_rho_cov_minusR2": 0.6541871921182264,
+    "within_family_rho_invEps_minusR2": 0.5413793103448274,
+    "within_family_rho_C_minusR2": 0.10738916256157634,
+    "cross_geom_n": 15,
+    "cross_geom_rho_cov_minusR2": 0.8018632638284104,
+    "cross_geom_rho_epsmed_minusR2": -0.6249999999999999,
+    "reading": "coverage (wall-extent of deep cancellation) governs case severity; the squared error is band-dominated, so median depth and L_sep/delta are weaker proxies -- a scale separation, not a contradiction"
+  },
+  "beta_gap": {
+    "beta_closure_floor": 0.06,
+    "C_case_mean": 0.9404692502735891,
+    "gap_C_over_beta": 15.674487504559819,
+    "note": "beta is the WORST-CASE closure-channel floor (how little the closure can help); C is the ACTUAL prefactor (full structural cancellation). The 15.7x gap is physical, not a discrepancy."
+  }
+}

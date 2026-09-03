@@ -1,0 +1,47 @@
+{
+  "schema": "force-representation-dictionary-v1",
+  "conserved_quantity": "signed integrated Cartesian force",
+  "representations": {
+    "resolved_physical_surface": {
+      "support": "actual wall faces",
+      "force": "(-p I + sigma_nu) dot S_f",
+      "inputs": "physical face geometry, pressure, molecular traction",
+      "invariants": [
+        "signed zeroth force moment",
+        "physical first force moment"
+      ],
+      "status": "reference representation"
+    },
+    "affine_exact_deposition_oracle": {
+      "support": "volume-cell centres",
+      "force": "sum_g w_cg f_g",
+      "inputs": "resolved integrated face forces and face centroids",
+      "invariants": [
+        "signed zeroth force moment",
+        "physical first force moment"
+      ],
+      "status": "oracle representation; not a deployed roughness closure"
+    },
+    "scalar_surrogate_oracle": {
+      "support": "surrogate plane y=0",
+      "force": "streamwise component only",
+      "inputs": "exact net streamwise reference force",
+      "invariants": [
+        "signed net streamwise force only"
+      ],
+      "lost_quantities": [
+        "normal force",
+        "wall-normal streamwise force moment"
+      ],
+      "status": "oracle capability comparator"
+    },
+    "deployed_scalar_wall_model": {
+      "support": "surrogate wall",
+      "force": "model-predicted streamwise wall traction",
+      "inputs": "runtime matching-plane fields",
+      "invariants": [],
+      "status": "kept separate from both oracle comparisons"
+    }
+  },
+  "comparison_rule": "oracle-input and matched-runtime-input results must be tabulated separately; conservation is not phase accuracy"
+}

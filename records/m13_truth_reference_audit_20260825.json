@@ -1,0 +1,406 @@
+{
+  "conclusion": "The apparent Reynolds-number flip of the coupled verdict is a REFERENCE artefact, not physics, and that conclusion survived an independent adversarial audit.  But the reason is estimator under-resolution, NOT a defect of the public Xiao archive: the archive is the same flow at the same normalisation, and the deposited four-point through-origin fit reproduces the same deficit and sign flips when it is applied to MGLET's or Krank's own profiles at the archive's wall spacing.  Source A is therefore unusable as a SCORING reference at that resolution; sources B (MGLET) and D (Krank) are used instead.  Attribution of the change must be split: about 1.9x of the total came from the run-side crest-bulk drive fix (deposited 24 Aug) and about 6.3x from this reference fix -- they must not be double-counted.  The honest published bracket on E_tau at Re=5,600 is 0.16-0.63, spanning MGLET (0.16-0.25) and the same-simulation repaired estimator (0.53-0.63, R^2 +0.61..+0.72); every defensible reference gives POSITIVE R^2, which is what refutes the flip.  E_tau is effectively a windward-face metric: that face carries 92.3% of the traction energy.",
+  "coupled_archive": "codes/results/m13_highre_coupled_20260825.npz",
+  "date": "20260825",
+  "independent_audit": {
+    "independent_code": "codes/analysis/verify_truth_reference_independent.py",
+    "open_items_from_the_audit": [
+      "MGLET reattaches at x/H=5.14 vs Xiao 4.67-4.72 and Krank(5600) just past 5.0: a ~10% reference spread in the bubble; coupled separation/reattachment must be reported against that spread, not against MGLET alone",
+      "the repaired cubic estimator was validated only at the ten ERCOFTAC stations, none at the windward traction maximum, so C is a bracket rather than an answer"
+    ],
+    "report": "work_progress/archer2_campaign_20260823/TRUTH_REFERENCE_AUDIT_V/REPORT.md",
+    "reproduced": "G1c equilibrium 0.234 / R^2 +0.944 and G1c TBLE 0.193 (this artifact 0.192)",
+    "verdict": "withdrawal survives; two of the four original legs corrected/retracted here"
+  },
+  "retracted_and_superseded": {
+    "policy": "Superseded reasoning is retained verbatim, never silently rewritten -- the same standard applied to the withdrawn TBLE aborts.",
+    "test2_original_diagnosis_CORRECTED": {
+      "claimed": "the reconstructed Xiao truth is low in RMS and disagrees in sign at some stations, therefore the public Xiao velocity archive is invalid as a wall-traction reference",
+      "conclusion_unaffected": "A remains unusable AS A SCORING REFERENCE, so the withdrawal and the corrected numbers stand.",
+      "superseded_per_station_table": [
+        {
+          "krank": 0.000330565285,
+          "mglet": 0.0004416,
+          "sign_disagreement_with_krank": false,
+          "x_over_H": 0.05,
+          "xiao": 0.0004416,
+          "xiao_over_krank": 1.3358934529377458
+        },
+        {
+          "krank": -0.0008945421,
+          "mglet": -0.0006778001076689125,
+          "sign_disagreement_with_krank": false,
+          "x_over_H": 0.5,
+          "xiao": -0.0006778001076689125,
+          "xiao_over_krank": 0.7577062137924112
+        },
+        {
+          "krank": -0.0006059756,
+          "mglet": -0.0006189,
+          "sign_disagreement_with_krank": false,
+          "x_over_H": 1.0,
+          "xiao": -0.0006189,
+          "xiao_over_krank": 1.0213282515005555
+        },
+        {
+          "krank": -0.00114743225,
+          "mglet": -0.001146,
+          "sign_disagreement_with_krank": false,
+          "x_over_H": 2.0,
+          "xiao": -0.001146,
+          "xiao_over_krank": 0.9987517781550939
+        },
+        {
+          "krank": -0.00214968835,
+          "mglet": -0.002227,
+          "sign_disagreement_with_krank": false,
+          "x_over_H": 3.0,
+          "xiao": -0.002227,
+          "xiao_over_krank": 1.035964120101409
+        },
+        {
+          "krank": -0.00114544975,
+          "mglet": -0.0011341,
+          "sign_disagreement_with_krank": false,
+          "x_over_H": 4.0,
+          "xiao": -0.0011341,
+          "xiao_over_krank": 0.9900914466130007
+        },
+        {
+          "krank": -2.49934885e-05,
+          "mglet": -0.0001509,
+          "sign_disagreement_with_krank": false,
+          "x_over_H": 5.0,
+          "xiao": -0.0001509,
+          "xiao_over_krank": 6.03757254614537
+        },
+        {
+          "krank": 0.000495424895,
+          "mglet": 0.0004195,
+          "sign_disagreement_with_krank": false,
+          "x_over_H": 6.0,
+          "xiao": 0.0004195,
+          "xiao_over_krank": 0.8467479212969304
+        },
+        {
+          "krank": 7.017959e-05,
+          "mglet": -3.57e-05,
+          "sign_disagreement_with_krank": true,
+          "x_over_H": 7.0,
+          "xiao": -3.57e-05,
+          "xiao_over_krank": -0.5086949068810462
+        },
+        {
+          "krank": 0.0034136982,
+          "mglet": 0.0030587,
+          "sign_disagreement_with_krank": false,
+          "x_over_H": 8.0,
+          "xiao": 0.0030587,
+          "xiao_over_krank": 0.8960077372979253
+        }
+      ],
+      "why_it_was_wrong": "The archive is the same flow, correctly normalised: crest bulk velocity %.5f, U_max within %.2f%% of MGLET at the ten stations, and the deposited estimator does apply the full geometric tangent projection.  The deficit AND the sign flips are reproduced by feeding MGLET's and Krank's OWN profiles through the same estimator at the archive's wall spacing (test 2).  The defect is estimator under-resolution, not the data."
+    },
+    "test3_dean_Cf_ordering_RETRACTED": {
+      "claimed": "C_f must be larger at the lower Re; source A gives ratio 0.458 (unphysical) while B gives 1.271 against Dean's expected 1.173",
+      "status": "RETRACTED -- do not cite; removed from the live test set",
+      "superseded_numbers": {
+        "dean_expectation": 1.172811547849728,
+        "ratio_A_over_D": 1.2711119847077843,
+        "ratio_B_over_D": 1.2711201059508321
+      },
+      "why_it_was_wrong": "Dean's C_f ~ Re^-1/4 is a plane-channel correlation with no standing for this flow: 92.3% of the traction energy sits on the windward face, where tau is set by an accelerating reattached boundary layer under a strong favourable pressure gradient.  The 1.271-vs-1.173 agreement is a coincidence, and the leg is redundant given test 2."
+    }
+  },
+  "sources": {
+    "A_xiao5600_reconstructed": {
+      "definition": "nu dU_t/dn from a 4-point through-origin fit of the public Xiao velocity archive",
+      "file": "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "role": "truth used by the harvest at Re=5600 (under audit)"
+    },
+    "B_mglet5600": {
+      "definition": "Peller & Manhart MGLET DNS bottom-wall tau_w (ERCOFTAC UFR3-30), 1003 points",
+      "file": "codes/raw_data/periodic_hill_ufr3_30/ercoftac_ufr3_30/UFR3-30_data-NP-Re5600-DNS2-11.dat",
+      "sha256": "b9fe7b1c03424cd515ac07d407079423c1f9140b163f425f21de3294b29afdb4"
+    },
+    "C_krank5600": {
+      "definition": "Krank et al. (2018) DNS tau_w at 10 stations",
+      "file": "codes/raw_data/geometry_driven/krank_pehill_Re5600_wall_profiles.npz",
+      "sha256": "a62603c48f5a0f594badbfdf5e923b4c5f5039247374a66aed3272f7948bd0ec"
+    },
+    "D_krank10595": {
+      "definition": "Krank et al. (2018) DNS bottom-wall c_f, 1153 points; tau = c_f/2",
+      "file": "codes/raw_data/periodic_hill_ufr3_30/krank_2018_re10595/KKW_DNS_Periodic_Hill_Re10595_cf_cp_bottom.dat",
+      "role": "truth used by the harvest at Re=10595"
+    }
+  },
+  "status": "M13_TRUTH_REFERENCE_AUDIT_OK",
+  "test1_independent_5600_dns_agree": {
+    "ratio_mglet_over_krank": 0.9425862989932643,
+    "station_relative_rms_difference": 0.10480919985907952,
+    "station_rms_krank": 0.0014293646274112395,
+    "station_rms_mglet": 0.0013472995140634465,
+    "verdict": "two independent DNS codes agree at Re=5600 within a few per cent"
+  },
+  "test2_estimator_resolution_not_archive_validity": {
+    "archive_first_spacing_over_H_range": [
+      0.00933556445,
+      0.013581100000000013
+    ],
+    "archive_is_the_same_flow": {
+      "U_max_ratio_archive_over_mglet_rms_deviation": 0.004111409266214593,
+      "crest_bulk_velocity_of_archive": 1.0017818751765053
+    },
+    "mglet_first_spacing_over_H_range": [
+      0.0010170000000000456,
+      0.0015175
+    ],
+    "per_station": [
+      {
+        "archive_first_spacing_over_H": 0.013581100000000013,
+        "estimator_on_mglet_at_archive_spacing": 0.002578250432845539,
+        "estimator_on_mglet_native_spacing": 0.0008799125253225945,
+        "estimator_on_xiao_archive": 0.001969957509526596,
+        "mglet_deposited_tau": 0.0004416,
+        "mglet_first_spacing_over_H": 0.0010170000000000456,
+        "x_over_H": 0.05
+      },
+      {
+        "archive_first_spacing_over_H": 0.012777269000000091,
+        "estimator_on_mglet_at_archive_spacing": -0.0004870127148196778,
+        "estimator_on_mglet_native_spacing": -0.0005892175013176117,
+        "estimator_on_xiao_archive": -0.0004674525315166501,
+        "mglet_deposited_tau": -0.0006778001076689125,
+        "mglet_first_spacing_over_H": 0.001089099999999954,
+        "x_over_H": 0.5
+      },
+      {
+        "archive_first_spacing_over_H": 0.010451227000000007,
+        "estimator_on_mglet_at_archive_spacing": -0.0005508597292671394,
+        "estimator_on_mglet_native_spacing": -0.0005987071343965358,
+        "estimator_on_xiao_archive": -0.00041750869271813093,
+        "mglet_deposited_tau": -0.0006189,
+        "mglet_first_spacing_over_H": 0.001293500000000003,
+        "x_over_H": 1.0
+      },
+      {
+        "archive_first_spacing_over_H": 0.00933556445,
+        "estimator_on_mglet_at_archive_spacing": -0.0009161431619733723,
+        "estimator_on_mglet_native_spacing": -0.0011117894406527027,
+        "estimator_on_xiao_archive": -0.000941520350986558,
+        "mglet_deposited_tau": -0.001146,
+        "mglet_first_spacing_over_H": 0.0015175,
+        "x_over_H": 2.0
+      },
+      {
+        "archive_first_spacing_over_H": 0.00933556445,
+        "estimator_on_mglet_at_archive_spacing": -0.0010656246650246495,
+        "estimator_on_mglet_native_spacing": -0.0019081701576841611,
+        "estimator_on_xiao_archive": -0.0009405934128118347,
+        "mglet_deposited_tau": -0.002227,
+        "mglet_first_spacing_over_H": 0.0015175,
+        "x_over_H": 3.0
+      },
+      {
+        "archive_first_spacing_over_H": 0.00933556445,
+        "estimator_on_mglet_at_archive_spacing": -0.0004196040654246447,
+        "estimator_on_mglet_native_spacing": -0.0009246410920216522,
+        "estimator_on_xiao_archive": -0.00028625794429074076,
+        "mglet_deposited_tau": -0.0011341,
+        "mglet_first_spacing_over_H": 0.0015175,
+        "x_over_H": 4.0
+      },
+      {
+        "archive_first_spacing_over_H": 0.00933556445,
+        "estimator_on_mglet_at_archive_spacing": 0.00013883751299282335,
+        "estimator_on_mglet_native_spacing": -5.057464501451323e-05,
+        "estimator_on_xiao_archive": 0.0002514159597805608,
+        "mglet_deposited_tau": -0.0001509,
+        "mglet_first_spacing_over_H": 0.0015175,
+        "x_over_H": 5.0
+      },
+      {
+        "archive_first_spacing_over_H": 0.00933556445,
+        "estimator_on_mglet_at_archive_spacing": 0.0004945873065380104,
+        "estimator_on_mglet_native_spacing": 0.0004690315368321958,
+        "estimator_on_xiao_archive": 0.0005665707885973694,
+        "mglet_deposited_tau": 0.0004195,
+        "mglet_first_spacing_over_H": 0.0015175,
+        "x_over_H": 6.0
+      },
+      {
+        "archive_first_spacing_over_H": 0.00933556445,
+        "estimator_on_mglet_at_archive_spacing": 0.00030448206097096836,
+        "estimator_on_mglet_native_spacing": 7.95481289715227e-05,
+        "estimator_on_xiao_archive": 0.0003293000916867072,
+        "mglet_deposited_tau": -3.57e-05,
+        "mglet_first_spacing_over_H": 0.0015175,
+        "x_over_H": 7.0
+      },
+      {
+        "archive_first_spacing_over_H": 0.010551483000000028,
+        "estimator_on_mglet_at_archive_spacing": 0.00180538979723677,
+        "estimator_on_mglet_native_spacing": 0.0029050484275919904,
+        "estimator_on_xiao_archive": 0.0018044899983028293,
+        "mglet_deposited_tau": 0.0030587,
+        "mglet_first_spacing_over_H": 0.001293500000000003,
+        "x_over_H": 8.0
+      }
+    ],
+    "question": "is the deficit a property of the Xiao archive, or of the estimator applied to it?",
+    "rms_ratio_vs_mglet_deposited": {
+      "estimator_on_mglet_at_archive_spacing": 0.8448005808481805,
+      "estimator_on_mglet_native_spacing": 0.935327964357011,
+      "estimator_on_xiao_archive": 0.7375911296424104
+    },
+    "sign_flips_vs_mglet_deposited_out_of_10": {
+      "estimator_on_mglet_at_archive_spacing": 2,
+      "estimator_on_mglet_native_spacing": 1,
+      "estimator_on_xiao_archive": 2
+    },
+    "spacing_ratio_archive_over_mglet": 7.491934809865134,
+    "station_ratios_vs_mglet_deposited": {
+      "estimator_on_mglet_at_archive_spacing": [
+        5.838429422204572,
+        0.7185196775707369,
+        0.8900625775846492,
+        0.7994268429087018,
+        0.4785023192746518,
+        0.36998859485463775,
+        -0.920063041701944,
+        1.1789923874565205,
+        -8.528909270895472,
+        0.5902474244733938
+      ],
+      "estimator_on_mglet_native_spacing": [
+        1.9925555374152955,
+        0.8693086570081056,
+        0.9673729752731228,
+        0.9701478539726899,
+        0.8568343770472211,
+        0.8153082550230598,
+        0.33515337981784776,
+        1.1180727934021353,
+        -2.2282389067653416,
+        0.9497657264824894
+      ],
+      "estimator_on_xiao_archive": [
+        4.4609545052685595,
+        0.689661341489471,
+        0.6745979846794812,
+        0.8215709868992652,
+        0.42235896399274125,
+        0.2524097912800818,
+        -1.666109740096493,
+        1.3505859084561846,
+        -9.224092204109445,
+        0.5899532475570763
+      ]
+    },
+    "verdict": "The archive is the same flow, correctly normalised.  Running the SAME estimator on MGLET's own profiles resampled to the archive's wall spacing reproduces both the magnitude deficit and the sign flips, so the defect is a four-point through-origin linear fit applied at a spacing whose fit points already lie in the buffer/log layer -- not the public data.  A is therefore unusable AS A SCORING REFERENCE at this resolution, which is what the withdrawal requires.",
+    "windward_share_of_traction_energy": 0.9229752767456841
+  },
+  "test4_geometry_identical": {
+    "max_abs_difference_over_H": 0.0,
+    "rms_difference_over_H": 0.0,
+    "verdict": "the run geometry and the reference-family geometry are the same hill polynomial"
+  },
+  "test5_rescored_coupled_metrics": {
+    "10595:G0:equilibrium": {
+      "D_krank": {
+        "r2": 0.8920846280611704,
+        "relative_rms": 0.3227153128186569
+      }
+    },
+    "10595:G0:total_gradient_tble": {
+      "D_krank": {
+        "r2": 0.9759657447777864,
+        "relative_rms": 0.15229766733586414
+      }
+    },
+    "10595:G1c:equilibrium": {
+      "D_krank": {
+        "r2": 0.8772048690210481,
+        "relative_rms": 0.3442456733435285
+      }
+    },
+    "10595:G1c:total_gradient_tble": {
+      "D_krank": {
+        "r2": 0.9696401099311168,
+        "relative_rms": 0.17117014340763956
+      }
+    },
+    "10595:G2c:equilibrium": {
+      "D_krank": {
+        "r2": 0.8616282337914474,
+        "relative_rms": 0.36542786400555477
+      }
+    },
+    "10595:G2c:total_gradient_tble": {
+      "D_krank": {
+        "r2": 0.9658895204918851,
+        "relative_rms": 0.18143531767296084
+      }
+    },
+    "5600:G0:equilibrium": {
+      "A_xiao": {
+        "r2": 0.9481563788210309,
+        "relative_rms": 0.2257335519101147
+      },
+      "B_mglet": {
+        "r2": 0.9481311991629616,
+        "relative_rms": 0.22578597695235889
+      }
+    },
+    "5600:G0:total_gradient_tble": {
+      "A_xiao": {
+        "r2": 0.9739528660749601,
+        "relative_rms": 0.16000310937319906
+      },
+      "B_mglet": {
+        "r2": 0.9738888966749571,
+        "relative_rms": 0.1601977725758809
+      }
+    },
+    "5600:G1c:equilibrium": {
+      "A_xiao": {
+        "r2": 0.9442446269088177,
+        "relative_rms": 0.23409482553413496
+      },
+      "B_mglet": {
+        "r2": 0.9442368358507591,
+        "relative_rms": 0.2341087068238393
+      }
+    },
+    "5600:G1c:total_gradient_tble": {
+      "A_xiao": {
+        "r2": 0.9623157705715734,
+        "relative_rms": 0.19245458874655563
+      },
+      "B_mglet": {
+        "r2": 0.962277932394055,
+        "relative_rms": 0.1925491501570849
+      }
+    },
+    "5600:G2c:equilibrium": {
+      "A_xiao": {
+        "r2": 0.9351395184915178,
+        "relative_rms": 0.2524867168815702
+      },
+      "B_mglet": {
+        "r2": 0.9351386406397463,
+        "relative_rms": 0.2524857573842549
+      }
+    },
+    "5600:G2c:total_gradient_tble": {
+      "A_xiao": {
+        "r2": 0.9699095725107185,
+        "relative_rms": 0.17197393547102938
+      },
+      "B_mglet": {
+        "r2": 0.9698821883202405,
+        "relative_rms": 0.1720503531180704
+      }
+    }
+  }
+}

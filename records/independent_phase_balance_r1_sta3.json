@@ -1,0 +1,61 @@
+{
+  "schema": "independent-phase-balance-r1-sta3-v1",
+  "ledger_row": "R1-STA-3",
+  "idea": "Conservative phase integration evaluated from independent volume and surface archives makes the complete wall-following force balance close below the physical small-residual scale before wavelength telescoping.",
+  "volume_source": "Xiao 29-case alph10-9-3036, 768x385",
+  "surface_source": "Xiao 5-case case_1p0, 512x257",
+  "source_hashes": {
+    "codes/raw_data/geometry_driven/xiao_pehill_parameterized/pehill-29-cases-DNS/alph10-9-3036/mean_files.dat": "19988c5933527ffbddd7b52cd89b982dec6589295d730da24c7713e52bb3b075",
+    "codes/raw_data/geometry_driven/xiao_pehill_parameterized/pehill-29-cases-DNS/alph10-9-3036/rms_files1.dat": "1a0416edb11d8cd814ebdbfa01e9f54c5862b15b667f45051fc178f8b98a8fe8",
+    "codes/raw_data/geometry_driven/xiao_pehill_parameterized/pehill-29-cases-DNS/alph10-9-3036/rms_files2.dat": "b9522832924064aa8f10d3b460cf42d6fb4b2eff95a3c71168c2418ee825f753",
+    "codes/raw_data/geometry_driven/xiao_pehill_parameterized/pehill-5-cases-DNS/case_1p0/dns-data/mean_files.dat": "aa81c64e28bb305686dc2a29ca80c3870e21c94820efee8c73920fbe7e1e44dd"
+  },
+  "physical_surface": "eta=y-h(x), analytic Xiao hill surface",
+  "matching_height_over_H": 0.1,
+  "primary_phase_count": 48,
+  "phase_counts": [
+    9,
+    12,
+    18,
+    24,
+    32,
+    36,
+    48,
+    64,
+    96
+  ],
+  "primary_phase_closure_over_full_leg": 0.04272668249518504,
+  "primary_wavelength_closure_over_direct": 0.037037598799155746,
+  "primary_parent_direct_correlation": 0.9980757834166072,
+  "phase_closure_central_range": [
+    0.03562562738568937,
+    0.05970536996933385
+  ],
+  "phase_closure_operator_envelope": [
+    0.0322457950856644,
+    0.06371867039278582
+  ],
+  "wavelength_closure_operator_envelope": [
+    0.03631415955111096,
+    0.06480777287248488
+  ],
+  "epsilon_reference_median": 0.13154,
+  "max_phase_closure_over_epsilon": 0.4844052789477408,
+  "volume_operator_count": 12,
+  "surface_operator_count": 40,
+  "operator_pair_count": 4320,
+  "matching_plane_wavelength_inventory": {
+    "mean_flux": 0.0022938847735329247,
+    "mean_product": 1.1104293123465134e-07,
+    "dispersive_flux": 0.0022937737306016883,
+    "reynolds_flux": -0.002841237010996161,
+    "molecular_flux": -0.00012857169499979105,
+    "pressure_flux": -0.025474658574242196
+  },
+  "uses_modelled_eddy_viscosity": false,
+  "uses_boussinesq_reference_stress": false,
+  "uses_thin_layer_deletion": false,
+  "uses_pressure_height_proxy": false,
+  "uses_same_operator_wall_reference": false,
+  "status": "PASS"
+}

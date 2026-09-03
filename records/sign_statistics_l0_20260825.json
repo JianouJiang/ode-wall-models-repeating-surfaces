@@ -1,0 +1,31 @@
+{
+ "dense_points": 4096,
+ "model": "M1_pressure_gradient",
+ "model_note": "the pressure-gradient ODE at the paper's a-priori matching surface, the arm the reported sentence refers to",
+ "model_reversed_fraction": 0.84814453125,
+ "references": {
+  "A_withdrawn_linear4": {
+   "over_prediction_of_reversal_points": 0.393310546875,
+   "reference_reversed_fraction": 0.454833984375,
+   "sign_accuracy_on_attached_reference": 0.19928347514554412,
+   "sign_accuracy_on_reversed_reference": 0.9049919484702094,
+   "sign_accuracy_overall": 0.520263671875
+  },
+  "B_mglet": {
+   "over_prediction_of_reversal_points": 0.2568359375,
+   "reference_reversed_fraction": 0.59130859375,
+   "sign_accuracy_on_attached_reference": 0.26583034647550774,
+   "sign_accuracy_on_reversed_reference": 0.9269199009083402,
+   "sign_accuracy_overall": 0.65673828125
+  },
+  "C_xiao_repaired_cubic6": {
+   "over_prediction_of_reversal_points": 0.302490234375,
+   "reference_reversed_fraction": 0.545654296875,
+   "sign_accuracy_on_attached_reference": 0.23911875335840946,
+   "sign_accuracy_on_reversed_reference": 0.9208053691275168,
+   "sign_accuracy_overall": 0.611083984375
+  }
+ },
+ "schema": "sign_statistics_l0/1",
+ "surface": "archive_index10"
+}

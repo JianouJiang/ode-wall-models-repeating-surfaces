@@ -1,0 +1,14 @@
+{
+  "case": "rib_les_dtype",
+  "time": "60.00073791",
+  "converged": false,
+  "fidelity": "OpenFOAM wall-resolved LES (WALE), NOT DNS",
+  "has_resolved_stress": true,
+  "n_stations": 48,
+  "f_res_band_median": 0.9864921544564913,
+  "f_res_band_p25": 0.9794613561554066,
+  "f_res_band_p75": 0.9926893632444974,
+  "f_res_pooled_median": 0.9891136148309135,
+  "f_res_pooled_min": 0.1520425676671782,
+  "n_pooled_cells": 480
+}

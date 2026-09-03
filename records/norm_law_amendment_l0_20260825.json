@@ -1,0 +1,946 @@
+{
+ "amends": "faithful_tournament_l0_20260825.json",
+ "amends_sha256": "d54e3b0dc7d3180bb0173a3e52c03f542103e9e393f19accfb89f92c75a9fed0",
+ "correction": "both candidate families are excluded; the fit set is unchanged and was already disjoint from the test set, so this is a change of what is being predicted, not a leakage repair",
+ "defect": "the tournament's test-set filter excluded the uniformly rescaling candidate family but not the wall-normal horizon family, so candidate arms entered a test set intended for published families and completion variants",
+ "no_new_model_evaluation": true,
+ "schema": "norm_law_amendment_l0/1",
+ "surfaces": {
+  "archive_index10": {
+   "B_mglet": {
+    "E0": 0.0016783610545031298,
+    "delta": 0.33447377564151537,
+    "equal_norm_pairs": [
+     {
+      "N": 0.0017181669242710693,
+      "arms": [
+       "FAC_exactshape_modelnorm",
+       "M2_hickel"
+      ],
+      "error_ratio": 1.621565263472308,
+      "relative_rms": [
+       0.9255603101267019,
+       0.5707820283130456
+      ]
+     },
+     {
+      "N": 0.0017181669242710693,
+      "arms": [
+       "FAC_exactshape_modelnorm",
+       "M2_hickel_Aplus26_variant"
+      ],
+      "error_ratio": 1.5407930043050524,
+      "relative_rms": [
+       0.9255603101267019,
+       0.6007038632318815
+      ]
+     },
+     {
+      "N": 0.01229833517578284,
+      "arms": [
+       "FAC_modelshape_exactnorm",
+       "ORACLE_closure_free"
+      ],
+      "error_ratio": 3.3788052220422116,
+      "relative_rms": [
+       2.1739018666804615,
+       7.345190979347255
+      ]
+     },
+     {
+      "N": 0.01229833517578284,
+      "arms": [
+       "FAC_modelshape_exactnorm",
+       "Xall"
+      ],
+      "error_ratio": 1.2674067125115063,
+      "relative_rms": [
+       2.1739018666804615,
+       1.715236194680266
+      ]
+     },
+     {
+      "N": 0.001718166924271069,
+      "arms": [
+       "M2_hickel",
+       "M2_hickel_Aplus26_variant"
+      ],
+      "error_ratio": 1.0524225245971224,
+      "relative_rms": [
+       0.5707820283130456,
+       0.6007038632318815
+      ]
+     },
+     {
+      "N": 0.012302525925361685,
+      "arms": [
+       "M4_park_moin",
+       "Xcp_pressure_plus_convection"
+      ],
+      "error_ratio": 1.074254859740539,
+      "relative_rms": [
+       1.8568430994283338,
+       1.7284940185207174
+      ]
+     },
+     {
+      "N": 0.012298335175782838,
+      "arms": [
+       "ORACLE_closure_free",
+       "Xall"
+      ],
+      "error_ratio": 4.282320418685229,
+      "relative_rms": [
+       7.345190979347255,
+       1.715236194680266
+      ]
+     }
+    ],
+    "excluded_candidate_arms": [
+     "NLWH_M1_c2.000e-05",
+     "NLWH_Xall_c2.000e-05",
+     "NLWM_M1_c2.000e-05",
+     "NLWM_Xall_c2.000e-05"
+    ],
+    "excluded_normless_arms": [
+     "M3_yang_integral",
+     "M5_meneveau"
+    ],
+    "fit_rms": 0.0004978997317779873,
+    "fitted_on": [
+     "FIT_scale_M1_pressure_gradient_0.5",
+     "FIT_scale_M1_pressure_gradient_2",
+     "FIT_scale_M2_hickel_0.5",
+     "FIT_scale_M2_hickel_2",
+     "FIT_scale_Xall_0.5",
+     "FIT_scale_Xall_2"
+    ],
+    "held_out_median_relative_error": 0.14882646197652755,
+    "per_arm_relative_error": {
+     "FAC_exactshape_modelnorm": 0.34010520304483866,
+     "FAC_modelshape_exactnorm": 0.27775262256984146,
+     "M0_equilibrium": 0.4173095763487344,
+     "M1_pressure_gradient": 0.1434297723733783,
+     "M2_hickel": 0.0700624802886013,
+     "M2_hickel_Aplus26_variant": 0.016761286725815554,
+     "M4_park_moin": 0.1542231515796768,
+     "ORACLE_closure_free": 0.786241783717376,
+     "Xall": 0.0846188257511859,
+     "Xc_exact_convection": 0.5025384123859423,
+     "Xcp_pressure_plus_convection": 0.09142011032843059,
+     "Xcpr_plus_normal_stress": 0.09344666992163805
+    },
+    "superseded_by_this_amendment": {
+     "held_out_median_relative_error": 0.21598788707475913,
+     "tested_on": [
+      "FAC_exactshape_modelnorm",
+      "FAC_modelshape_exactnorm",
+      "M0_equilibrium",
+      "M1_pressure_gradient",
+      "M2_hickel",
+      "M2_hickel_Aplus26_variant",
+      "M4_park_moin",
+      "NLWH_M1_c2.000e-05",
+      "NLWH_Xall_c2.000e-05",
+      "ORACLE_closure_free",
+      "Xall",
+      "Xc_exact_convection",
+      "Xcp_pressure_plus_convection",
+      "Xcpr_plus_normal_stress"
+     ],
+     "zero_parameter_null_median_relative_error": 0.49406151644151625
+    },
+    "tested_on": [
+     "FAC_exactshape_modelnorm",
+     "FAC_modelshape_exactnorm",
+     "M0_equilibrium",
+     "M1_pressure_gradient",
+     "M2_hickel",
+     "M2_hickel_Aplus26_variant",
+     "M4_park_moin",
+     "ORACLE_closure_free",
+     "Xall",
+     "Xc_exact_convection",
+     "Xcp_pressure_plus_convection",
+     "Xcpr_plus_normal_stress"
+    ],
+    "training_test_overlap": [],
+    "zero_parameter_null_median_relative_error": 0.42181115584200307,
+    "zero_parameter_null_value": 0.005015905071104119
+   },
+   "C_xiao_repaired_cubic6": {
+    "E0": 0.0011284401065378082,
+    "delta": 0.37536260547468603,
+    "equal_norm_pairs": [
+     {
+      "N": 0.0017181669242710693,
+      "arms": [
+       "FAC_exactshape_modelnorm",
+       "M2_hickel"
+      ],
+      "error_ratio": 1.7643980248577464,
+      "relative_rms": [
+       1.0570818598628706,
+       0.5991175715287355
+      ]
+     },
+     {
+      "N": 0.0017181669242710693,
+      "arms": [
+       "FAC_exactshape_modelnorm",
+       "M2_hickel_Aplus26_variant"
+      ],
+      "error_ratio": 1.8456658957273553,
+      "relative_rms": [
+       1.0570818598628706,
+       0.5727373856286633
+      ]
+     },
+     {
+      "N": 0.01229833517578284,
+      "arms": [
+       "FAC_modelshape_exactnorm",
+       "ORACLE_closure_free"
+      ],
+      "error_ratio": 3.285229373004467,
+      "relative_rms": [
+       3.495437405215432,
+       11.483313635112253
+      ]
+     },
+     {
+      "N": 0.01229833517578284,
+      "arms": [
+       "FAC_modelshape_exactnorm",
+       "Xall"
+      ],
+      "error_ratio": 1.2936368901743716,
+      "relative_rms": [
+       3.495437405215432,
+       2.702023598557301
+      ]
+     },
+     {
+      "N": 0.001718166924271069,
+      "arms": [
+       "M2_hickel",
+       "M2_hickel_Aplus26_variant"
+      ],
+      "error_ratio": 1.0460598287487661,
+      "relative_rms": [
+       0.5991175715287355,
+       0.5727373856286633
+      ]
+     },
+     {
+      "N": 0.012302525925361685,
+      "arms": [
+       "M4_park_moin",
+       "Xcp_pressure_plus_convection"
+      ],
+      "error_ratio": 1.099693544839072,
+      "relative_rms": [
+       2.9684753428508075,
+       2.699365979533154
+      ]
+     },
+     {
+      "N": 0.012298335175782838,
+      "arms": [
+       "ORACLE_closure_free",
+       "Xall"
+      ],
+      "error_ratio": 4.249893909602999,
+      "relative_rms": [
+       11.483313635112253,
+       2.702023598557301
+      ]
+     }
+    ],
+    "excluded_candidate_arms": [
+     "NLWH_M1_c2.000e-05",
+     "NLWH_Xall_c2.000e-05",
+     "NLWM_M1_c2.000e-05",
+     "NLWM_Xall_c2.000e-05"
+    ],
+    "excluded_normless_arms": [
+     "M3_yang_integral",
+     "M5_meneveau"
+    ],
+    "fit_rms": 0.0003688152349228904,
+    "fitted_on": [
+     "FIT_scale_M1_pressure_gradient_0.5",
+     "FIT_scale_M1_pressure_gradient_2",
+     "FIT_scale_M2_hickel_0.5",
+     "FIT_scale_M2_hickel_2",
+     "FIT_scale_Xall_0.5",
+     "FIT_scale_Xall_2"
+    ],
+    "held_out_median_relative_error": 0.21733883291265904,
+    "per_arm_relative_error": {
+     "FAC_exactshape_modelnorm": 0.2732597463559171,
+     "FAC_modelshape_exactnorm": 0.28803508771386455,
+     "M0_equilibrium": 0.3574684572302915,
+     "M1_pressure_gradient": 0.0039270596921709075,
+     "M2_hickel": 0.28225906811423757,
+     "M2_hickel_Aplus26_variant": 0.34131970120313165,
+     "M4_park_moin": 0.16141791946940096,
+     "ORACLE_closure_free": 0.7832830431456248,
+     "Xall": 0.07897592495689475,
+     "Xc_exact_convection": 0.13221706017595344,
+     "Xcp_pressure_plus_convection": 0.07781669922278153,
+     "Xcpr_plus_normal_stress": 0.07996718422628167
+    },
+    "superseded_by_this_amendment": {
+     "held_out_median_relative_error": 0.21733883291265904,
+     "tested_on": [
+      "FAC_exactshape_modelnorm",
+      "FAC_modelshape_exactnorm",
+      "M0_equilibrium",
+      "M1_pressure_gradient",
+      "M2_hickel",
+      "M2_hickel_Aplus26_variant",
+      "M4_park_moin",
+      "NLWH_M1_c2.000e-05",
+      "NLWH_Xall_c2.000e-05",
+      "ORACLE_closure_free",
+      "Xall",
+      "Xc_exact_convection",
+      "Xcp_pressure_plus_convection",
+      "Xcpr_plus_normal_stress"
+     ],
+     "zero_parameter_null_median_relative_error": 0.6060429922037047
+    },
+    "tested_on": [
+     "FAC_exactshape_modelnorm",
+     "FAC_modelshape_exactnorm",
+     "M0_equilibrium",
+     "M1_pressure_gradient",
+     "M2_hickel",
+     "M2_hickel_Aplus26_variant",
+     "M4_park_moin",
+     "ORACLE_closure_free",
+     "Xall",
+     "Xc_exact_convection",
+     "Xcp_pressure_plus_convection",
+     "Xcpr_plus_normal_stress"
+    ],
+    "training_test_overlap": [],
+    "zero_parameter_null_median_relative_error": 0.3423383860128277,
+    "zero_parameter_null_value": 0.00487399299945136
+   }
+  },
+  "ladder_L1": {
+   "B_mglet": {
+    "E0": 0.0012004047669447575,
+    "delta": 0.39529988963096735,
+    "equal_norm_pairs": [
+     {
+      "N": 0.0015944228423462607,
+      "arms": [
+       "FAC_exactshape_modelnorm",
+       "M2_hickel"
+      ],
+      "error_ratio": 1.8156039102671484,
+      "relative_rms": [
+       0.8568599977150502,
+       0.4719421416034357
+      ]
+     },
+     {
+      "N": 0.0015944228423462607,
+      "arms": [
+       "FAC_exactshape_modelnorm",
+       "M2_hickel_Aplus26_variant"
+      ],
+      "error_ratio": 1.5930688446433339,
+      "relative_rms": [
+       0.8568599977150502,
+       0.5378675256855514
+      ]
+     },
+     {
+      "N": 0.010737792188007966,
+      "arms": [
+       "FAC_modelshape_exactnorm",
+       "ORACLE_closure_free"
+      ],
+      "error_ratio": 2.9400276944719024,
+      "relative_rms": [
+       1.6601519477120796,
+       4.880892703304983
+      ]
+     },
+     {
+      "N": 0.010737792188007966,
+      "arms": [
+       "FAC_modelshape_exactnorm",
+       "Xall"
+      ],
+      "error_ratio": 1.0063098429395874,
+      "relative_rms": [
+       1.6601519477120796,
+       1.670627245757993
+      ]
+     },
+     {
+      "N": 0.0015944228423462605,
+      "arms": [
+       "M2_hickel",
+       "M2_hickel_Aplus26_variant"
+      ],
+      "error_ratio": 1.1396895472358803,
+      "relative_rms": [
+       0.4719421416034357,
+       0.5378675256855514
+      ]
+     },
+     {
+      "N": 0.010807307014438118,
+      "arms": [
+       "M4_park_moin",
+       "Xcp_pressure_plus_convection"
+      ],
+      "error_ratio": 1.881962918556845,
+      "relative_rms": [
+       3.1399779487412762,
+       1.668458989164952
+      ]
+     },
+     {
+      "N": 0.010737792188007972,
+      "arms": [
+       "ORACLE_closure_free",
+       "Xall"
+      ],
+      "error_ratio": 2.9215929021260734,
+      "relative_rms": [
+       4.880892703304983,
+       1.670627245757993
+      ]
+     }
+    ],
+    "excluded_candidate_arms": [
+     "NLWH_M1_c1.363e-01",
+     "NLWH_M1_c1.363e-02",
+     "NLWH_M1_c1.363e-03",
+     "NLWH_M1_c1.363e-04",
+     "NLWH_M1_c2.000e-01",
+     "NLWH_M1_c2.000e-02",
+     "NLWH_M1_c2.000e-03",
+     "NLWH_M1_c2.000e-04",
+     "NLWH_M1_c2.000e-05",
+     "NLWH_M1_c2.936e-02",
+     "NLWH_M1_c2.936e-03",
+     "NLWH_M1_c2.936e-04",
+     "NLWH_M1_c2.936e-05",
+     "NLWH_M1_c4.309e-02",
+     "NLWH_M1_c4.309e-03",
+     "NLWH_M1_c4.309e-04",
+     "NLWH_M1_c4.309e-05",
+     "NLWH_M1_c6.325e-02",
+     "NLWH_M1_c6.325e-03",
+     "NLWH_M1_c6.325e-04",
+     "NLWH_M1_c6.325e-05",
+     "NLWH_M1_c9.283e-02",
+     "NLWH_M1_c9.283e-03",
+     "NLWH_M1_c9.283e-04",
+     "NLWH_M1_c9.283e-05",
+     "NLWH_Xall_c1.363e-01",
+     "NLWH_Xall_c1.363e-02",
+     "NLWH_Xall_c1.363e-03",
+     "NLWH_Xall_c1.363e-04",
+     "NLWH_Xall_c2.000e-01",
+     "NLWH_Xall_c2.000e-02",
+     "NLWH_Xall_c2.000e-03",
+     "NLWH_Xall_c2.000e-04",
+     "NLWH_Xall_c2.000e-05",
+     "NLWH_Xall_c2.936e-02",
+     "NLWH_Xall_c2.936e-03",
+     "NLWH_Xall_c2.936e-04",
+     "NLWH_Xall_c2.936e-05",
+     "NLWH_Xall_c4.309e-02",
+     "NLWH_Xall_c4.309e-03",
+     "NLWH_Xall_c4.309e-04",
+     "NLWH_Xall_c4.309e-05",
+     "NLWH_Xall_c6.325e-02",
+     "NLWH_Xall_c6.325e-03",
+     "NLWH_Xall_c6.325e-04",
+     "NLWH_Xall_c6.325e-05",
+     "NLWH_Xall_c9.283e-02",
+     "NLWH_Xall_c9.283e-03",
+     "NLWH_Xall_c9.283e-04",
+     "NLWH_Xall_c9.283e-05",
+     "NLWM_M1_c1.363e-01",
+     "NLWM_M1_c1.363e-02",
+     "NLWM_M1_c1.363e-03",
+     "NLWM_M1_c1.363e-04",
+     "NLWM_M1_c2.000e-01",
+     "NLWM_M1_c2.000e-02",
+     "NLWM_M1_c2.000e-03",
+     "NLWM_M1_c2.000e-04",
+     "NLWM_M1_c2.000e-05",
+     "NLWM_M1_c2.936e-02",
+     "NLWM_M1_c2.936e-03",
+     "NLWM_M1_c2.936e-04",
+     "NLWM_M1_c2.936e-05",
+     "NLWM_M1_c4.309e-02",
+     "NLWM_M1_c4.309e-03",
+     "NLWM_M1_c4.309e-04",
+     "NLWM_M1_c4.309e-05",
+     "NLWM_M1_c6.325e-02",
+     "NLWM_M1_c6.325e-03",
+     "NLWM_M1_c6.325e-04",
+     "NLWM_M1_c6.325e-05",
+     "NLWM_M1_c9.283e-02",
+     "NLWM_M1_c9.283e-03",
+     "NLWM_M1_c9.283e-04",
+     "NLWM_M1_c9.283e-05",
+     "NLWM_Xall_c1.363e-01",
+     "NLWM_Xall_c1.363e-02",
+     "NLWM_Xall_c1.363e-03",
+     "NLWM_Xall_c1.363e-04",
+     "NLWM_Xall_c2.000e-01",
+     "NLWM_Xall_c2.000e-02",
+     "NLWM_Xall_c2.000e-03",
+     "NLWM_Xall_c2.000e-04",
+     "NLWM_Xall_c2.000e-05",
+     "NLWM_Xall_c2.936e-02",
+     "NLWM_Xall_c2.936e-03",
+     "NLWM_Xall_c2.936e-04",
+     "NLWM_Xall_c2.936e-05",
+     "NLWM_Xall_c4.309e-02",
+     "NLWM_Xall_c4.309e-03",
+     "NLWM_Xall_c4.309e-04",
+     "NLWM_Xall_c4.309e-05",
+     "NLWM_Xall_c6.325e-02",
+     "NLWM_Xall_c6.325e-03",
+     "NLWM_Xall_c6.325e-04",
+     "NLWM_Xall_c6.325e-05",
+     "NLWM_Xall_c9.283e-02",
+     "NLWM_Xall_c9.283e-03",
+     "NLWM_Xall_c9.283e-04",
+     "NLWM_Xall_c9.283e-05"
+    ],
+    "excluded_normless_arms": [
+     "M3_yang_integral",
+     "M5_meneveau"
+    ],
+    "fit_rms": 0.0006247142503236652,
+    "fitted_on": [
+     "FIT_scale_M1_pressure_gradient_0.5",
+     "FIT_scale_M1_pressure_gradient_2",
+     "FIT_scale_M2_hickel_0.5",
+     "FIT_scale_M2_hickel_2",
+     "FIT_scale_Xall_0.5",
+     "FIT_scale_Xall_2"
+    ],
+    "held_out_median_relative_error": 0.24703970579905316,
+    "per_arm_relative_error": {
+     "FAC_exactshape_modelnorm": 0.4208213646814692,
+     "FAC_modelshape_exactnorm": 0.11087210113884219,
+     "M0_equilibrium": 0.5278755756732013,
+     "M1_pressure_gradient": 0.3771844922374061,
+     "M2_hickel": 0.05155899502751523,
+     "M2_hickel_Aplus26_variant": 0.07732856059100529,
+     "M4_park_moin": 0.5275327680253451,
+     "ORACLE_closure_free": 0.6975783933828329,
+     "Xall": 0.11644718065772133,
+     "Xc_exact_convection": 0.953013250105302,
+     "Xcp_pressure_plus_convection": 0.11083418919050456,
+     "Xcpr_plus_normal_stress": 0.1168949193607002
+    },
+    "superseded_by_this_amendment": {
+     "held_out_median_relative_error": 0.3087210255636159,
+     "tested_on": [
+      "FAC_exactshape_modelnorm",
+      "FAC_modelshape_exactnorm",
+      "M0_equilibrium",
+      "M1_pressure_gradient",
+      "M2_hickel",
+      "M2_hickel_Aplus26_variant",
+      "M4_park_moin",
+      "NLWH_M1_c1.363e-01",
+      "NLWH_M1_c1.363e-02",
+      "NLWH_M1_c1.363e-03",
+      "NLWH_M1_c1.363e-04",
+      "NLWH_M1_c2.000e-01",
+      "NLWH_M1_c2.000e-02",
+      "NLWH_M1_c2.000e-03",
+      "NLWH_M1_c2.000e-04",
+      "NLWH_M1_c2.000e-05",
+      "NLWH_M1_c2.936e-02",
+      "NLWH_M1_c2.936e-03",
+      "NLWH_M1_c2.936e-04",
+      "NLWH_M1_c2.936e-05",
+      "NLWH_M1_c4.309e-02",
+      "NLWH_M1_c4.309e-03",
+      "NLWH_M1_c4.309e-04",
+      "NLWH_M1_c4.309e-05",
+      "NLWH_M1_c6.325e-02",
+      "NLWH_M1_c6.325e-03",
+      "NLWH_M1_c6.325e-04",
+      "NLWH_M1_c6.325e-05",
+      "NLWH_M1_c9.283e-02",
+      "NLWH_M1_c9.283e-03",
+      "NLWH_M1_c9.283e-04",
+      "NLWH_M1_c9.283e-05",
+      "NLWH_Xall_c1.363e-01",
+      "NLWH_Xall_c1.363e-02",
+      "NLWH_Xall_c1.363e-03",
+      "NLWH_Xall_c1.363e-04",
+      "NLWH_Xall_c2.000e-01",
+      "NLWH_Xall_c2.000e-02",
+      "NLWH_Xall_c2.000e-03",
+      "NLWH_Xall_c2.000e-04",
+      "NLWH_Xall_c2.000e-05",
+      "NLWH_Xall_c2.936e-02",
+      "NLWH_Xall_c2.936e-03",
+      "NLWH_Xall_c2.936e-04",
+      "NLWH_Xall_c2.936e-05",
+      "NLWH_Xall_c4.309e-02",
+      "NLWH_Xall_c4.309e-03",
+      "NLWH_Xall_c4.309e-04",
+      "NLWH_Xall_c4.309e-05",
+      "NLWH_Xall_c6.325e-02",
+      "NLWH_Xall_c6.325e-03",
+      "NLWH_Xall_c6.325e-04",
+      "NLWH_Xall_c6.325e-05",
+      "NLWH_Xall_c9.283e-02",
+      "NLWH_Xall_c9.283e-03",
+      "NLWH_Xall_c9.283e-04",
+      "NLWH_Xall_c9.283e-05",
+      "ORACLE_closure_free",
+      "Xall",
+      "Xc_exact_convection",
+      "Xcp_pressure_plus_convection",
+      "Xcpr_plus_normal_stress"
+     ],
+     "zero_parameter_null_median_relative_error": 0.6352179674982563
+    },
+    "tested_on": [
+     "FAC_exactshape_modelnorm",
+     "FAC_modelshape_exactnorm",
+     "M0_equilibrium",
+     "M1_pressure_gradient",
+     "M2_hickel",
+     "M2_hickel_Aplus26_variant",
+     "M4_park_moin",
+     "ORACLE_closure_free",
+     "Xall",
+     "Xc_exact_convection",
+     "Xcp_pressure_plus_convection",
+     "Xcpr_plus_normal_stress"
+    ],
+    "training_test_overlap": [],
+    "zero_parameter_null_median_relative_error": 0.6352179674982563,
+    "zero_parameter_null_value": 0.0041386314900027825
+   },
+   "C_xiao_repaired_cubic6": {
+    "E0": 0.0007604359960453262,
+    "delta": 0.4290035470163799,
+    "equal_norm_pairs": [
+     {
+      "N": 0.0015944228423462607,
+      "arms": [
+       "FAC_exactshape_modelnorm",
+       "M2_hickel"
+      ],
+      "error_ratio": 1.688582198903501,
+      "relative_rms": [
+       0.9015293814709244,
+       0.5338972435314918
+      ]
+     },
+     {
+      "N": 0.0015944228423462607,
+      "arms": [
+       "FAC_exactshape_modelnorm",
+       "M2_hickel_Aplus26_variant"
+      ],
+      "error_ratio": 1.7783652195856199,
+      "relative_rms": [
+       0.9015293814709244,
+       0.5069427649293498
+      ]
+     },
+     {
+      "N": 0.010737792188007966,
+      "arms": [
+       "FAC_modelshape_exactnorm",
+       "ORACLE_closure_free"
+      ],
+      "error_ratio": 2.8867808877794814,
+      "relative_rms": [
+       2.603936833353826,
+       7.516995083510849
+      ]
+     },
+     {
+      "N": 0.010737792188007966,
+      "arms": [
+       "FAC_modelshape_exactnorm",
+       "Xall"
+      ],
+      "error_ratio": 1.0242874201379553,
+      "relative_rms": [
+       2.603936833353826,
+       2.542193511468799
+      ]
+     },
+     {
+      "N": 0.0015944228423462605,
+      "arms": [
+       "M2_hickel",
+       "M2_hickel_Aplus26_variant"
+      ],
+      "error_ratio": 1.0531706544937052,
+      "relative_rms": [
+       0.5338972435314918,
+       0.5069427649293498
+      ]
+     },
+     {
+      "N": 0.010807307014438118,
+      "arms": [
+       "M4_park_moin",
+       "Xcp_pressure_plus_convection"
+      ],
+      "error_ratio": 1.9502875349313442,
+      "relative_rms": [
+       4.948085760632294,
+       2.5371057713325746
+      ]
+     },
+     {
+      "N": 0.010737792188007972,
+      "arms": [
+       "ORACLE_closure_free",
+       "Xall"
+      ],
+      "error_ratio": 2.9568933480472017,
+      "relative_rms": [
+       7.516995083510849,
+       2.542193511468799
+      ]
+     }
+    ],
+    "excluded_candidate_arms": [
+     "NLWH_M1_c1.363e-01",
+     "NLWH_M1_c1.363e-02",
+     "NLWH_M1_c1.363e-03",
+     "NLWH_M1_c1.363e-04",
+     "NLWH_M1_c2.000e-01",
+     "NLWH_M1_c2.000e-02",
+     "NLWH_M1_c2.000e-03",
+     "NLWH_M1_c2.000e-04",
+     "NLWH_M1_c2.000e-05",
+     "NLWH_M1_c2.936e-02",
+     "NLWH_M1_c2.936e-03",
+     "NLWH_M1_c2.936e-04",
+     "NLWH_M1_c2.936e-05",
+     "NLWH_M1_c4.309e-02",
+     "NLWH_M1_c4.309e-03",
+     "NLWH_M1_c4.309e-04",
+     "NLWH_M1_c4.309e-05",
+     "NLWH_M1_c6.325e-02",
+     "NLWH_M1_c6.325e-03",
+     "NLWH_M1_c6.325e-04",
+     "NLWH_M1_c6.325e-05",
+     "NLWH_M1_c9.283e-02",
+     "NLWH_M1_c9.283e-03",
+     "NLWH_M1_c9.283e-04",
+     "NLWH_M1_c9.283e-05",
+     "NLWH_Xall_c1.363e-01",
+     "NLWH_Xall_c1.363e-02",
+     "NLWH_Xall_c1.363e-03",
+     "NLWH_Xall_c1.363e-04",
+     "NLWH_Xall_c2.000e-01",
+     "NLWH_Xall_c2.000e-02",
+     "NLWH_Xall_c2.000e-03",
+     "NLWH_Xall_c2.000e-04",
+     "NLWH_Xall_c2.000e-05",
+     "NLWH_Xall_c2.936e-02",
+     "NLWH_Xall_c2.936e-03",
+     "NLWH_Xall_c2.936e-04",
+     "NLWH_Xall_c2.936e-05",
+     "NLWH_Xall_c4.309e-02",
+     "NLWH_Xall_c4.309e-03",
+     "NLWH_Xall_c4.309e-04",
+     "NLWH_Xall_c4.309e-05",
+     "NLWH_Xall_c6.325e-02",
+     "NLWH_Xall_c6.325e-03",
+     "NLWH_Xall_c6.325e-04",
+     "NLWH_Xall_c6.325e-05",
+     "NLWH_Xall_c9.283e-02",
+     "NLWH_Xall_c9.283e-03",
+     "NLWH_Xall_c9.283e-04",
+     "NLWH_Xall_c9.283e-05",
+     "NLWM_M1_c1.363e-01",
+     "NLWM_M1_c1.363e-02",
+     "NLWM_M1_c1.363e-03",
+     "NLWM_M1_c1.363e-04",
+     "NLWM_M1_c2.000e-01",
+     "NLWM_M1_c2.000e-02",
+     "NLWM_M1_c2.000e-03",
+     "NLWM_M1_c2.000e-04",
+     "NLWM_M1_c2.000e-05",
+     "NLWM_M1_c2.936e-02",
+     "NLWM_M1_c2.936e-03",
+     "NLWM_M1_c2.936e-04",
+     "NLWM_M1_c2.936e-05",
+     "NLWM_M1_c4.309e-02",
+     "NLWM_M1_c4.309e-03",
+     "NLWM_M1_c4.309e-04",
+     "NLWM_M1_c4.309e-05",
+     "NLWM_M1_c6.325e-02",
+     "NLWM_M1_c6.325e-03",
+     "NLWM_M1_c6.325e-04",
+     "NLWM_M1_c6.325e-05",
+     "NLWM_M1_c9.283e-02",
+     "NLWM_M1_c9.283e-03",
+     "NLWM_M1_c9.283e-04",
+     "NLWM_M1_c9.283e-05",
+     "NLWM_Xall_c1.363e-01",
+     "NLWM_Xall_c1.363e-02",
+     "NLWM_Xall_c1.363e-03",
+     "NLWM_Xall_c1.363e-04",
+     "NLWM_Xall_c2.000e-01",
+     "NLWM_Xall_c2.000e-02",
+     "NLWM_Xall_c2.000e-03",
+     "NLWM_Xall_c2.000e-04",
+     "NLWM_Xall_c2.000e-05",
+     "NLWM_Xall_c2.936e-02",
+     "NLWM_Xall_c2.936e-03",
+     "NLWM_Xall_c2.936e-04",
+     "NLWM_Xall_c2.936e-05",
+     "NLWM_Xall_c4.309e-02",
+     "NLWM_Xall_c4.309e-03",
+     "NLWM_Xall_c4.309e-04",
+     "NLWM_Xall_c4.309e-05",
+     "NLWM_Xall_c6.325e-02",
+     "NLWM_Xall_c6.325e-03",
+     "NLWM_Xall_c6.325e-04",
+     "NLWM_Xall_c6.325e-05",
+     "NLWM_Xall_c9.283e-02",
+     "NLWM_Xall_c9.283e-03",
+     "NLWM_Xall_c9.283e-04",
+     "NLWM_Xall_c9.283e-05"
+    ],
+    "excluded_normless_arms": [
+     "M3_yang_integral",
+     "M5_meneveau"
+    ],
+    "fit_rms": 0.00029410136206966473,
+    "fitted_on": [
+     "FIT_scale_M1_pressure_gradient_0.5",
+     "FIT_scale_M1_pressure_gradient_2",
+     "FIT_scale_M2_hickel_0.5",
+     "FIT_scale_M2_hickel_2",
+     "FIT_scale_Xall_0.5",
+     "FIT_scale_Xall_2"
+    ],
+    "held_out_median_relative_error": 0.20316912878600946,
+    "per_arm_relative_error": {
+     "FAC_exactshape_modelnorm": 0.3059201749818606,
+     "FAC_modelshape_exactnorm": 0.10713217909315627,
+     "M0_equilibrium": 0.4973647201774758,
+     "M1_pressure_gradient": 0.05643153917086122,
+     "M2_hickel": 0.17201083714368692,
+     "M2_hickel_Aplus26_variant": 0.23432742042833196,
+     "M4_park_moin": 0.5275162122631116,
+     "ORACLE_closure_free": 0.6907046791508863,
+     "Xall": 0.08544672319913062,
+     "Xc_exact_convection": 0.34270375397148256,
+     "Xcp_pressure_plus_convection": 0.07852075831959943,
+     "Xcpr_plus_normal_stress": 0.08531469999867611
+    },
+    "superseded_by_this_amendment": {
+     "held_out_median_relative_error": 0.1731755592206261,
+     "tested_on": [
+      "FAC_exactshape_modelnorm",
+      "FAC_modelshape_exactnorm",
+      "M0_equilibrium",
+      "M1_pressure_gradient",
+      "M2_hickel",
+      "M2_hickel_Aplus26_variant",
+      "M4_park_moin",
+      "NLWH_M1_c1.363e-01",
+      "NLWH_M1_c1.363e-02",
+      "NLWH_M1_c1.363e-03",
+      "NLWH_M1_c1.363e-04",
+      "NLWH_M1_c2.000e-01",
+      "NLWH_M1_c2.000e-02",
+      "NLWH_M1_c2.000e-03",
+      "NLWH_M1_c2.000e-04",
+      "NLWH_M1_c2.000e-05",
+      "NLWH_M1_c2.936e-02",
+      "NLWH_M1_c2.936e-03",
+      "NLWH_M1_c2.936e-04",
+      "NLWH_M1_c2.936e-05",
+      "NLWH_M1_c4.309e-02",
+      "NLWH_M1_c4.309e-03",
+      "NLWH_M1_c4.309e-04",
+      "NLWH_M1_c4.309e-05",
+      "NLWH_M1_c6.325e-02",
+      "NLWH_M1_c6.325e-03",
+      "NLWH_M1_c6.325e-04",
+      "NLWH_M1_c6.325e-05",
+      "NLWH_M1_c9.283e-02",
+      "NLWH_M1_c9.283e-03",
+      "NLWH_M1_c9.283e-04",
+      "NLWH_M1_c9.283e-05",
+      "NLWH_Xall_c1.363e-01",
+      "NLWH_Xall_c1.363e-02",
+      "NLWH_Xall_c1.363e-03",
+      "NLWH_Xall_c1.363e-04",
+      "NLWH_Xall_c2.000e-01",
+      "NLWH_Xall_c2.000e-02",
+      "NLWH_Xall_c2.000e-03",
+      "NLWH_Xall_c2.000e-04",
+      "NLWH_Xall_c2.000e-05",
+      "NLWH_Xall_c2.936e-02",
+      "NLWH_Xall_c2.936e-03",
+      "NLWH_Xall_c2.936e-04",
+      "NLWH_Xall_c2.936e-05",
+      "NLWH_Xall_c4.309e-02",
+      "NLWH_Xall_c4.309e-03",
+      "NLWH_Xall_c4.309e-04",
+      "NLWH_Xall_c4.309e-05",
+      "NLWH_Xall_c6.325e-02",
+      "NLWH_Xall_c6.325e-03",
+      "NLWH_Xall_c6.325e-04",
+      "NLWH_Xall_c6.325e-05",
+      "NLWH_Xall_c9.283e-02",
+      "NLWH_Xall_c9.283e-03",
+      "NLWH_Xall_c9.283e-04",
+      "NLWH_Xall_c9.283e-05",
+      "ORACLE_closure_free",
+      "Xall",
+      "Xc_exact_convection",
+      "Xcp_pressure_plus_convection",
+      "Xcpr_plus_normal_stress"
+     ],
+     "zero_parameter_null_median_relative_error": 0.7068980806017411
+    },
+    "tested_on": [
+     "FAC_exactshape_modelnorm",
+     "FAC_modelshape_exactnorm",
+     "M0_equilibrium",
+     "M1_pressure_gradient",
+     "M2_hickel",
+     "M2_hickel_Aplus26_variant",
+     "M4_park_moin",
+     "ORACLE_closure_free",
+     "Xall",
+     "Xc_exact_convection",
+     "Xcp_pressure_plus_convection",
+     "Xcpr_plus_normal_stress"
+    ],
+    "training_test_overlap": [],
+    "zero_parameter_null_median_relative_error": 0.679477433499986,
+    "zero_parameter_null_value": 0.003949178819391309
+   }
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "class-map-resolution-m17-v2",
+  "ledger_row": "M17",
+  "status": "CLOSED_BY_DELETION",
+  "resolution": "Both hard-coded class maps and every manuscript reference were deleted under the supervisor's cut-do-not-defend rule.",
+  "active_manuscript_assets": [],
+  "historical_assets_not_loaded": [
+    "manuscript/figures/fig_repeating_class_morphology.pdf",
+    "manuscript/figures/fig_repeating_class_amplitude.pdf"
+  ],
+  "historical_generator_not_loaded": "codes/figures/stage_classmaps_3d.py",
+  "verification_command": "python3 codes/analysis/ledger_verifiers/verify_m17.py",
+  "expected_checks": 7
+}

@@ -1,0 +1,97 @@
+{
+  "benchmark": {
+    "n": 15,
+    "n_success": 12,
+    "mean_R2_success": 0.9668322565423119,
+    "min_R2_success": 0.8844276434868767,
+    "worst": "periodic_hills_1p0",
+    "worst_R2": -47.68617253416459
+  },
+  "canonical_hill": {
+    "r2": -47.68617253416459,
+    "relRMS": 6.824037414449163,
+    "eps_median": 0.08364189563744982,
+    "frac_below_0p1": 0.564453125
+  },
+  "cure_ceiling": {
+    "r2_sep_ode": -28.589163696165027,
+    "r2_sep_exact": -25.84599910067702,
+    "r2_sep_crwm_const": -34.35011842272203,
+    "r2_sep_crwm_linear": -27.600217344521308,
+    "gap_closed_linear": 0.0345916502544066,
+    "gap_closed_exact": 0.09595120111386742,
+    "corr_struct_C": 0.6810926691586253
+  },
+  "generalisation": {
+    "spearman_rho": -0.6749999999999999,
+    "spearman_p": 0.005763499218050829,
+    "n": 15,
+    "spearman_rho_no_hills": -0.5054945054945055,
+    "n_pitch_O_delta": 2
+  },
+  "xiao_family": {
+    "n": 29,
+    "r2_min": -84.3115704538056,
+    "r2_max": -9.856236209522903,
+    "eps_min": 0.08394008859971455,
+    "eps_max": 0.40976622749443814,
+    "Lsep_collapse_rho_r2": -0.7536945812807879
+  },
+  "coupled": {
+    "labels": [
+      "hill alpha=0.8 (Re5600)",
+      "hill alpha=1.0 (Re5600)",
+      "hill alpha=1.2 (Re5600)",
+      "hill alpha=1.0 (Re10595, cross-Re)",
+      "conv-div control"
+    ],
+    "eps": [
+      0.09823786615124785,
+      0.14909175910684377,
+      0.20490547244972762,
+      0.08364189563744982,
+      1.6976689405704075
+    ],
+    "e_reatt": [
+      0.04843997238961749,
+      0.3330733413202195,
+      0.3274809133558941,
+      0.20633746074554615,
+      0.1328112145029353
+    ],
+    "is_control": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "cross_geom_spearman": 0.09999999999999999,
+    "n_real": 5,
+    "canonical_tble": 0.3874036659567503,
+    "canonical_spalding": 0.3330733413202195
+  },
+  "cure_forecast": {
+    "gap_closed": 0.0345916502544066,
+    "e_tble_coupled": 0.3874036659567503,
+    "predicted_floor": 0.3740027338366994,
+    "band": [
+      0.31589218394318686,
+      0.34866329936107526
+    ],
+    "landed": false,
+    "measured_value": null
+  },
+  "_meta": {
+    "structural_checks_passed": 14,
+    "structural_checks_total": 14,
+    "groups_run": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+}

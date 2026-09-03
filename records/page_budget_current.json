@@ -1,0 +1,1534 @@
+{
+ "tex": "manuscript/main.tex",
+ "total_pages": 30,
+ "body_pages": 26,
+ "chars_per_line": 112.2,
+ "median_lines_per_page": 52,
+ "page_lines": {
+  "1": 38,
+  "2": 50,
+  "3": 52,
+  "4": 53,
+  "5": 50,
+  "6": 58,
+  "7": 56,
+  "8": 52,
+  "9": 52,
+  "10": 49,
+  "11": 55,
+  "12": 49,
+  "13": 47,
+  "14": 61,
+  "15": 49,
+  "16": 55,
+  "17": 50,
+  "18": 53,
+  "19": 50,
+  "20": 54,
+  "21": 52,
+  "22": 50,
+  "23": 50,
+  "24": 53,
+  "25": 49,
+  "26": 49,
+  "27": 50,
+  "28": 53,
+  "29": 51,
+  "30": 27
+ },
+ "sections": {
+  "(front)": {
+   "paras": 3,
+   "chars": 2773,
+   "est_lines": 25,
+   "pages": [
+    1
+   ],
+   "first_line": 117,
+   "page_span": 1
+  },
+  "\\section{Related work}\\label{sec:related}": {
+   "paras": 5,
+   "chars": 5431,
+   "est_lines": 48,
+   "pages": [
+    2,
+    3
+   ],
+   "first_line": 160,
+   "page_span": 2
+  },
+  "\\subsection{Wall models and reference data}\\label{sec:models_data}": {
+   "paras": 8,
+   "chars": 11315,
+   "est_lines": 102,
+   "pages": [
+    3,
+    4,
+    5
+   ],
+   "first_line": 423,
+   "page_span": 3
+  },
+  "\\subsection{Measurement conventions}\\label{sec:conventions}": {
+   "paras": 5,
+   "chars": 7085,
+   "est_lines": 64,
+   "pages": [
+    5,
+    6
+   ],
+   "first_line": 611,
+   "page_span": 2
+  },
+  "\\subsection{The conservative phase-balance construction}\\label{sec:balance_construction}": {
+   "paras": 5,
+   "chars": 11787,
+   "est_lines": 104,
+   "pages": [
+    6,
+    7,
+    8
+   ],
+   "first_line": 727,
+   "page_span": 3
+  },
+  "\\subsection{Simulation protocols}\\label{sec:protocols}": {
+   "paras": 13,
+   "chars": 16954,
+   "est_lines": 150,
+   "pages": [
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "first_line": 941,
+   "page_span": 5
+  },
+  "\\section{Verification of the conservative phase balance}\\label{sec:theory}": {
+   "paras": 2,
+   "chars": 444,
+   "est_lines": 4,
+   "pages": [
+    12
+   ],
+   "first_line": 1200,
+   "page_span": 1
+  },
+  "\\subsection{Cross-grid phase closure}": {
+   "paras": 2,
+   "chars": 1776,
+   "est_lines": 16,
+   "pages": [
+    12
+   ],
+   "first_line": 1208,
+   "page_span": 1
+  },
+  "\\subsection{The full-term DNS audit measures thin-layer remainders}": {
+   "paras": 3,
+   "chars": 2220,
+   "est_lines": 20,
+   "pages": [
+    13
+   ],
+   "first_line": 1235,
+   "page_span": 1
+  },
+  "\\subsection{Where the reduced model already succeeds}\\label{sec:res_success}": {
+   "paras": 2,
+   "chars": 1608,
+   "est_lines": 15,
+   "pages": [
+    13
+   ],
+   "first_line": 1869,
+   "page_span": 1
+  },
+  "\\subsection{A smooth repeating wall the model reproduces}\\label{sec:wavy_wrles}": {
+   "paras": 5,
+   "chars": 9086,
+   "est_lines": 82,
+   "pages": [
+    13,
+    14,
+    15
+   ],
+   "first_line": 1899,
+   "page_span": 3
+  },
+  "\\subsection{The periodic-hill family: the size of the failure and its origin}\\label{sec:diagnosis}": {
+   "paras": 1,
+   "chars": 99,
+   "est_lines": 1,
+   "pages": [
+    15
+   ],
+   "first_line": 2035,
+   "page_span": 1
+  },
+  "\\subsubsection{Catastrophic failure on periodic hills}\\label{sec:pehill_fail}": {
+   "paras": 2,
+   "chars": 1388,
+   "est_lines": 13,
+   "pages": [
+    15
+   ],
+   "first_line": 2037,
+   "page_span": 1
+  },
+  "\\subsubsection{Amplitude--pitch sweep across the 29-case hill family}\\label{sec:sweep_results}": {
+   "paras": 2,
+   "chars": 2077,
+   "est_lines": 19,
+   "pages": [
+    16
+   ],
+   "first_line": 2058,
+   "page_span": 1
+  },
+  "\\subsubsection{DNS-stress substitution control}\\label{sec:dns_stress}": {
+   "paras": 2,
+   "chars": 1925,
+   "est_lines": 18,
+   "pages": [
+    16
+   ],
+   "first_line": 2087,
+   "page_span": 1
+  },
+  "\\subsubsection{Spatial distribution of the cancellation parameter}\\label{sec:epsilon_validation}": {
+   "paras": 2,
+   "chars": 2149,
+   "est_lines": 19,
+   "pages": [
+    17
+   ],
+   "first_line": 2120,
+   "page_span": 1
+  },
+  "\\subsubsection{The scoring reference, and the model-family ladder}\\label{sec:why_fails}": {
+   "paras": 4,
+   "chars": 6278,
+   "est_lines": 56,
+   "pages": [
+    17,
+    18
+   ],
+   "first_line": 2155,
+   "page_span": 2
+  },
+  "\\subsection{Sharp repeating walls in two and three dimensions}\\label{sec:rib_pair}\\label{sec:aposteriori_results}": {
+   "paras": 6,
+   "chars": 7723,
+   "est_lines": 69,
+   "pages": [
+    18,
+    19
+   ],
+   "first_line": 2255,
+   "page_span": 2
+  },
+  "\\subsection{What sets the accuracy: the assembled source, not the retained terms}\\label{sec:source_budget}": {
+   "paras": 2,
+   "chars": 3163,
+   "est_lines": 28,
+   "pages": [
+    20
+   ],
+   "first_line": 2372,
+   "page_span": 1
+  },
+  "\\subsection{Coupled assessment: grids, Reynolds numbers, source control and matching surface}\\label{sec:corrected_grid_r": {
+   "paras": 6,
+   "chars": 10362,
+   "est_lines": 93,
+   "pages": [
+    20,
+    21
+   ],
+   "first_line": 2421,
+   "page_span": 2
+  },
+  "\\subsubsection{Source-controlled intervention at the a-priori surface}\\label{sec:coupled_ladder_results}": {
+   "paras": 3,
+   "chars": 3390,
+   "est_lines": 30,
+   "pages": [
+    22
+   ],
+   "first_line": 2572,
+   "page_span": 1
+  },
+  "\\subsubsection{Matching-surface dependence of the coupled verdict}\\label{sec:ym_sweep_results}": {
+   "paras": 3,
+   "chars": 5013,
+   "est_lines": 44,
+   "pages": [
+    23
+   ],
+   "first_line": 2628,
+   "page_span": 1
+  },
+  "\\subsection{The wall model as deployed, and the share of its error the flow carries}\\label{sec:as_deployed}\\label{sec:ap": {
+   "paras": 5,
+   "chars": 6117,
+   "est_lines": 55,
+   "pages": [
+    24,
+    25
+   ],
+   "first_line": 2707,
+   "page_span": 2
+  },
+  "\\subsection{Efficacy, robustness, computational complexity and reproducibility}": {
+   "paras": 2,
+   "chars": 1669,
+   "est_lines": 15,
+   "pages": [
+    25
+   ],
+   "first_line": 2883,
+   "page_span": 1
+  },
+  "\\subsection{Evaluation boundary}\\label{sec:limitations}": {
+   "paras": 9,
+   "chars": 6657,
+   "est_lines": 59,
+   "pages": [
+    25,
+    26
+   ],
+   "first_line": 2909,
+   "page_span": 2
+  }
+ },
+ "blocks": [
+  {
+   "id": 1,
+   "src_line": 117,
+   "kind": "para",
+   "head": "Wall-modelled large-eddy simulation avoids resolving the smallest near-wall",
+   "chars": 599,
+   "src_lines": 9,
+   "page": 1,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 5
+  },
+  {
+   "id": 2,
+   "src_line": 126,
+   "kind": "para",
+   "head": "The unresolved numerical question is more specific.  Before a reduced balance is",
+   "chars": 520,
+   "src_lines": 8,
+   "page": 1,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 5
+  },
+  {
+   "id": 3,
+   "src_line": 134,
+   "kind": "para",
+   "head": "We address both requirements with an independently anchored wall-following",
+   "chars": 1654,
+   "src_lines": 26,
+   "page": 1,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 15
+  },
+  {
+   "id": 4,
+   "src_line": 160,
+   "kind": "section",
+   "head": "\\section{Related work}\\label{sec:related}",
+   "chars": 42,
+   "src_lines": 2,
+   "page": 2,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 5,
+   "src_line": 162,
+   "kind": "para",
+   "head": "The pressure-gradient ODE studied here belongs to a long sequence of",
+   "chars": 1160,
+   "src_lines": 17,
+   "page": 2,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 10
+  },
+  {
+   "id": 6,
+   "src_line": 179,
+   "kind": "para",
+   "head": "Repeating surfaces are a rough-wall problem.  The mean field over a periodic",
+   "chars": 1928,
+   "src_lines": 28,
+   "page": 2,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 17
+  },
+  {
+   "id": 7,
+   "src_line": 207,
+   "kind": "para",
+   "head": "Rough-wall wall models answer a different question.  Equivalent-sand-grain and",
+   "chars": 1809,
+   "src_lines": 207,
+   "page": 2,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 16
+  },
+  {
+   "id": 8,
+   "src_line": 414,
+   "kind": "para",
+   "head": "This section answers one question: with what instrument is a reduced wall",
+   "chars": 492,
+   "src_lines": 9,
+   "page": 3,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 4
+  },
+  {
+   "id": 9,
+   "src_line": 423,
+   "kind": "section",
+   "head": "\\subsection{Wall models and reference data}\\label{sec:models_data}",
+   "chars": 67,
+   "src_lines": 2,
+   "page": 3,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 10,
+   "src_line": 425,
+   "kind": "para",
+   "head": "\\paragraph{The ODE wall model retains the streamwise pressure gradient}\\label{sec:ode} The",
+   "chars": 2201,
+   "src_lines": 39,
+   "page": 3,
+   "has_float": false,
+   "has_display": true,
+   "est_lines": 20
+  },
+  {
+   "id": 11,
+   "src_line": 464,
+   "kind": "para",
+   "head": "\\paragraph{Wall stress is recovered by shooting}\\label{sec:shooting}",
+   "chars": 620,
+   "src_lines": 13,
+   "page": 3,
+   "has_float": false,
+   "has_display": true,
+   "est_lines": 6
+  },
+  {
+   "id": 12,
+   "src_line": 477,
+   "kind": "para",
+   "head": "\\paragraph{Spalding's law supplies the equilibrium baseline}\\label{sec:spalding}",
+   "chars": 837,
+   "src_lines": 16,
+   "page": 3,
+   "has_float": false,
+   "has_display": true,
+   "est_lines": 7
+  },
+  {
+   "id": 13,
+   "src_line": 493,
+   "kind": "para",
+   "head": "\\paragraph{A model comparison is admitted only on a common observable}\\label{sec:model_registry}",
+   "chars": 2035,
+   "src_lines": 28,
+   "page": 4,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 18
+  },
+  {
+   "id": 14,
+   "src_line": 521,
+   "kind": "para",
+   "head": "\\paragraph{Source-model benchmarks return wall traction}\\label{sec:source_benchmarks}",
+   "chars": 1928,
+   "src_lines": 27,
+   "page": 4,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 17
+  },
+  {
+   "id": 15,
+   "src_line": 548,
+   "kind": "para",
+   "head": "\\paragraph{The reference data span nine geometry types}\\label{sec:datasets}",
+   "chars": 2223,
+   "src_lines": 43,
+   "page": 4,
+   "has_float": true,
+   "has_display": false,
+   "est_lines": 20
+  },
+  {
+   "id": 16,
+   "src_line": 591,
+   "kind": "para",
+   "head": "The step flow labelled BFS is the \\emph{rounded} backward-facing step LES of",
+   "chars": 1404,
+   "src_lines": 20,
+   "page": 5,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 13
+  },
+  {
+   "id": 17,
+   "src_line": 611,
+   "kind": "section",
+   "head": "\\subsection{Measurement conventions}\\label{sec:conventions}",
+   "chars": 60,
+   "src_lines": 2,
+   "page": 5,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 18,
+   "src_line": 613,
+   "kind": "para",
+   "head": "\\paragraph{The matching surface, wall origin and roughness sublayer are fixed by measurement}\\label{sec:origin_rsl}",
+   "chars": 1835,
+   "src_lines": 26,
+   "page": 5,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 16
+  },
+  {
+   "id": 19,
+   "src_line": 639,
+   "kind": "para",
+   "head": "\\paragraph{Physical errors replace a variance score for a sign-changing wall stress}\\label{sec:physical_metrics}",
+   "chars": 1546,
+   "src_lines": 24,
+   "page": 5,
+   "has_float": false,
+   "has_display": true,
+   "est_lines": 14
+  },
+  {
+   "id": 20,
+   "src_line": 663,
+   "kind": "para",
+   "head": "Table~\\ref{tab:physical_metrics} keeps the aggregate label from concealing local",
+   "chars": 1117,
+   "src_lines": 16,
+   "page": 6,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 10
+  },
+  {
+   "id": 21,
+   "src_line": 679,
+   "kind": "para",
+   "head": "The classical pressure-gradient parameter $p^+$ \\citep{patel1965}, weighted by",
+   "chars": 2527,
+   "src_lines": 48,
+   "page": 6,
+   "has_float": true,
+   "has_display": true,
+   "est_lines": 23
+  },
+  {
+   "id": 22,
+   "src_line": 727,
+   "kind": "section",
+   "head": "\\subsection{The conservative phase-balance construction}\\label{sec:balance_construction}",
+   "chars": 89,
+   "src_lines": 2,
+   "page": 6,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 23,
+   "src_line": 729,
+   "kind": "para",
+   "head": "\\paragraph{An independent wall-following phase balance is constructed here}\\label{sec:budget_method}",
+   "chars": 3753,
+   "src_lines": 65,
+   "page": 6,
+   "has_float": false,
+   "has_display": true,
+   "est_lines": 33
+  },
+  {
+   "id": 24,
+   "src_line": 794,
+   "kind": "para",
+   "head": "\\paragraph{The certificate is computed in five steps and accepted only if every check below is met}",
+   "chars": 1274,
+   "src_lines": 38,
+   "page": 7,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 11
+  },
+  {
+   "id": 25,
+   "src_line": 832,
+   "kind": "para",
+   "head": "\\paragraph{Sampling uncertainty and numerical sensitivity are reported separately}\\label{sec:uncertainty_method}",
+   "chars": 2829,
+   "src_lines": 53,
+   "page": 7,
+   "has_float": true,
+   "has_display": true,
+   "est_lines": 25
+  },
+  {
+   "id": 26,
+   "src_line": 885,
+   "kind": "para",
+   "head": "Table~\\ref{tab:headline_uncertainty} is the uncertainty registry for the",
+   "chars": 3842,
+   "src_lines": 56,
+   "page": 8,
+   "has_float": true,
+   "has_display": false,
+   "est_lines": 34
+  },
+  {
+   "id": 27,
+   "src_line": 941,
+   "kind": "section",
+   "head": "\\subsection{Simulation protocols}\\label{sec:protocols}",
+   "chars": 55,
+   "src_lines": 2,
+   "page": 8,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 28,
+   "src_line": 943,
+   "kind": "para",
+   "head": "\\paragraph{The wall-model integration, root solve and boundary delivery are specified here}\\label{sec:wall_model_numeric",
+   "chars": 1718,
+   "src_lines": 27,
+   "page": 8,
+   "has_float": false,
+   "has_display": true,
+   "est_lines": 15
+  },
+  {
+   "id": 29,
+   "src_line": 970,
+   "kind": "para",
+   "head": "\\paragraph{The conversion to a boundary value is part of the method}",
+   "chars": 1398,
+   "src_lines": 26,
+   "page": 9,
+   "has_float": false,
+   "has_display": true,
+   "est_lines": 12
+  },
+  {
+   "id": 30,
+   "src_line": 996,
+   "kind": "para",
+   "head": "\\noindent\\emph{Proof.}  If $\\tauw U_m\\le 0$ the lower guard returns zero and,",
+   "chars": 319,
+   "src_lines": 6,
+   "page": 9,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 3
+  },
+  {
+   "id": 31,
+   "src_line": 1002,
+   "kind": "para",
+   "head": "Three consequences follow, checked face by face in \\S\\,\\ref{sec:as_deployed}:",
+   "chars": 722,
+   "src_lines": 12,
+   "page": 9,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 6
+  },
+  {
+   "id": 32,
+   "src_line": 1014,
+   "kind": "para",
+   "head": "\\paragraph{A sharp-geometry calculation is admitted under a stated protocol}\\label{sec:rib_method}",
+   "chars": 1028,
+   "src_lines": 15,
+   "page": 10,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 9
+  },
+  {
+   "id": 33,
+   "src_line": 1029,
+   "kind": "para",
+   "head": "\\paragraph{The smooth repeating geometry follows the same protocol unchanged}\\label{sec:wavy_method}",
+   "chars": 1599,
+   "src_lines": 22,
+   "page": 10,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 14
+  },
+  {
+   "id": 34,
+   "src_line": 1051,
+   "kind": "para",
+   "head": "\\paragraph{The amplitude--pitch sweep maps one parameterised family}\\label{sec:sweep_method}",
+   "chars": 1850,
+   "src_lines": 29,
+   "page": 10,
+   "has_float": false,
+   "has_display": true,
+   "est_lines": 16
+  },
+  {
+   "id": 35,
+   "src_line": 1080,
+   "kind": "para",
+   "head": "\\paragraph{The coupled calculations share one drive, one matching surface and one averaging window}\\label{sec:aposterior",
+   "chars": 2231,
+   "src_lines": 30,
+   "page": 10,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 20
+  },
+  {
+   "id": 36,
+   "src_line": 1110,
+   "kind": "para",
+   "head": "\\paragraph{The source-controlled intervention is also run coupled}",
+   "chars": 862,
+   "src_lines": 13,
+   "page": 11,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 8
+  },
+  {
+   "id": 37,
+   "src_line": 1123,
+   "kind": "para",
+   "head": "\\paragraph{Grid error is separated from matching-height error by refining at a fixed physical surface}",
+   "chars": 1803,
+   "src_lines": 31,
+   "page": 11,
+   "has_float": false,
+   "has_display": true,
+   "est_lines": 16
+  },
+  {
+   "id": 38,
+   "src_line": 1154,
+   "kind": "para",
+   "head": "\\paragraph{The matching surface itself is an experimental axis}",
+   "chars": 1832,
+   "src_lines": 25,
+   "page": 11,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 16
+  },
+  {
+   "id": 39,
+   "src_line": 1179,
+   "kind": "para",
+   "head": "\\paragraph{One further experiment measures how much of a wall-model error the coupled solution carries}\\label{sec:gain_m",
+   "chars": 1537,
+   "src_lines": 21,
+   "page": 12,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 14
+  },
+  {
+   "id": 40,
+   "src_line": 1200,
+   "kind": "section",
+   "head": "\\section{Verification of the conservative phase balance}\\label{sec:theory}",
+   "chars": 147,
+   "src_lines": 3,
+   "page": 12,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 41,
+   "src_line": 1203,
+   "kind": "para",
+   "head": "Does the instrument measure what it claims?  This section answers that question",
+   "chars": 297,
+   "src_lines": 5,
+   "page": 12,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 3
+  },
+  {
+   "id": 42,
+   "src_line": 1208,
+   "kind": "section",
+   "head": "\\subsection{Cross-grid phase closure}",
+   "chars": 38,
+   "src_lines": 2,
+   "page": 12,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 43,
+   "src_line": 1210,
+   "kind": "para",
+   "head": "The primary balance gives $C_{48}=0.04273$, parent--direct correlation",
+   "chars": 1738,
+   "src_lines": 25,
+   "page": 12,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 15
+  },
+  {
+   "id": 44,
+   "src_line": 1235,
+   "kind": "section",
+   "head": "\\subsection{The full-term DNS audit measures thin-layer remainders}",
+   "chars": 95,
+   "src_lines": 3,
+   "page": 13,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 45,
+   "src_line": 1238,
+   "kind": "para",
+   "head": "The reference operator retains the full steady Reynolds-averaged balance \\citep{pope2000},",
+   "chars": 1523,
+   "src_lines": 621,
+   "page": 13,
+   "has_float": false,
+   "has_display": true,
+   "est_lines": 14
+  },
+  {
+   "id": 46,
+   "src_line": 1859,
+   "kind": "para",
+   "head": "With an instrument that closes below the force being interpreted, the question",
+   "chars": 602,
+   "src_lines": 10,
+   "page": 13,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 5
+  },
+  {
+   "id": 47,
+   "src_line": 1869,
+   "kind": "section",
+   "head": "\\subsection{Where the reduced model already succeeds}\\label{sec:res_success}",
+   "chars": 77,
+   "src_lines": 2,
+   "page": 13,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 48,
+   "src_line": 1871,
+   "kind": "para",
+   "head": "On the success set the ODE is accurate point by point",
+   "chars": 1531,
+   "src_lines": 28,
+   "page": 13,
+   "has_float": true,
+   "has_display": false,
+   "est_lines": 14
+  },
+  {
+   "id": 49,
+   "src_line": 1899,
+   "kind": "section",
+   "head": "\\subsection{A smooth repeating wall the model reproduces}\\label{sec:wavy_wrles}",
+   "chars": 80,
+   "src_lines": 2,
+   "page": 13,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 50,
+   "src_line": 1901,
+   "kind": "para",
+   "head": "Does a smooth surface that repeats at a pitch of order $\\delta$ defeat the",
+   "chars": 1339,
+   "src_lines": 20,
+   "page": 13,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 12
+  },
+  {
+   "id": 51,
+   "src_line": 1921,
+   "kind": "para",
+   "head": "Half the wall is under reversed shear ($f_{\\rm sep}=0.486$), form drag carries",
+   "chars": 2142,
+   "src_lines": 30,
+   "page": 13,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 19
+  },
+  {
+   "id": 52,
+   "src_line": 1951,
+   "kind": "para",
+   "head": "\\paragraph{Doubling the amplitude does not turn the verdict}\\label{sec:wavy_amplitude_res}",
+   "chars": 4325,
+   "src_lines": 67,
+   "page": 14,
+   "has_float": true,
+   "has_display": false,
+   "est_lines": 39
+  },
+  {
+   "id": 53,
+   "src_line": 2018,
+   "kind": "para",
+   "head": "\\paragraph{The cancellation coordinate is a description, not a criterion}\\label{sec:criterion}",
+   "chars": 1200,
+   "src_lines": 17,
+   "page": 15,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 11
+  },
+  {
+   "id": 54,
+   "src_line": 2035,
+   "kind": "section",
+   "head": "\\subsection{The periodic-hill family: the size of the failure and its origin}\\label{sec:diagnosis}",
+   "chars": 99,
+   "src_lines": 2,
+   "page": 15,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 55,
+   "src_line": 2037,
+   "kind": "section",
+   "head": "\\subsubsection{Catastrophic failure on periodic hills}\\label{sec:pehill_fail}",
+   "chars": 78,
+   "src_lines": 2,
+   "page": 15,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 56,
+   "src_line": 2039,
+   "kind": "para",
+   "head": "On the canonical hill ($h/L_x=1.0$) the hill-surface-aware evaluation yields",
+   "chars": 1310,
+   "src_lines": 19,
+   "page": 15,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 12
+  },
+  {
+   "id": 57,
+   "src_line": 2058,
+   "kind": "section",
+   "head": "\\subsubsection{Amplitude--pitch sweep across the 29-case hill family}\\label{sec:sweep_results}",
+   "chars": 95,
+   "src_lines": 2,
+   "page": 16,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 58,
+   "src_line": 2060,
+   "kind": "para",
+   "head": "Every member fails on either wall-traction estimator: the best score is",
+   "chars": 1982,
+   "src_lines": 27,
+   "page": 16,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 18
+  },
+  {
+   "id": 59,
+   "src_line": 2087,
+   "kind": "section",
+   "head": "\\subsubsection{DNS-stress substitution control}\\label{sec:dns_stress}",
+   "chars": 70,
+   "src_lines": 2,
+   "page": 16,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 60,
+   "src_line": 2089,
+   "kind": "para",
+   "head": "Replacing the mixing-length closure with the \\emph{exact} DNS Reynolds stress",
+   "chars": 1855,
+   "src_lines": 31,
+   "page": 16,
+   "has_float": true,
+   "has_display": false,
+   "est_lines": 17
+  },
+  {
+   "id": 61,
+   "src_line": 2120,
+   "kind": "section",
+   "head": "\\subsubsection{Spatial distribution of the cancellation parameter}\\label{sec:epsilon_validation}",
+   "chars": 152,
+   "src_lines": 3,
+   "page": 17,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 62,
+   "src_line": 2123,
+   "kind": "para",
+   "head": "Figure~\\ref{fig:cancellation} plots $\\varepsilon(x)$ for the three separated",
+   "chars": 1997,
+   "src_lines": 32,
+   "page": 17,
+   "has_float": true,
+   "has_display": false,
+   "est_lines": 18
+  },
+  {
+   "id": 63,
+   "src_line": 2155,
+   "kind": "section",
+   "head": "\\subsubsection{The scoring reference, and the model-family ladder}\\label{sec:why_fails}",
+   "chars": 88,
+   "src_lines": 2,
+   "page": 17,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 64,
+   "src_line": 2157,
+   "kind": "para",
+   "head": "Changing only the local stress closure is insufficient in this test, and the",
+   "chars": 2895,
+   "src_lines": 50,
+   "page": 17,
+   "has_float": true,
+   "has_display": false,
+   "est_lines": 26
+  },
+  {
+   "id": 65,
+   "src_line": 2207,
+   "kind": "para",
+   "head": "Table~\\ref{tab:reference_ladder} changes two published conclusions.  Of $27$",
+   "chars": 1178,
+   "src_lines": 17,
+   "page": 17,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 10
+  },
+  {
+   "id": 66,
+   "src_line": 2224,
+   "kind": "para",
+   "head": "\\paragraph{Completion fails where the reduction is not a closed balance}",
+   "chars": 2117,
+   "src_lines": 31,
+   "page": 18,
+   "has_float": false,
+   "has_display": true,
+   "est_lines": 19
+  },
+  {
+   "id": 67,
+   "src_line": 2255,
+   "kind": "section",
+   "head": "\\subsection{Sharp repeating walls in two and three dimensions}\\label{sec:rib_pair}\\label{sec:aposteriori_results}",
+   "chars": 114,
+   "src_lines": 2,
+   "page": 18,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 68,
+   "src_line": 2257,
+   "kind": "para",
+   "head": "The matched square-rib pair admitted in \\S\\,\\ref{sec:protocols} isolates pitch: both",
+   "chars": 1695,
+   "src_lines": 32,
+   "page": 18,
+   "has_float": true,
+   "has_display": false,
+   "est_lines": 15
+  },
+  {
+   "id": 69,
+   "src_line": 2289,
+   "kind": "para",
+   "head": "The force decomposition gives the mechanism.  On the wide-pitch $k$-type wall",
+   "chars": 1347,
+   "src_lines": 19,
+   "page": 18,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 12
+  },
+  {
+   "id": 70,
+   "src_line": 2308,
+   "kind": "para",
+   "head": "Three limits are stated rather than absorbed.  Each verdict is invariant across",
+   "chars": 1861,
+   "src_lines": 26,
+   "page": 19,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 17
+  },
+  {
+   "id": 71,
+   "src_line": 2334,
+   "kind": "para",
+   "head": "Three qualifications attach to the positive end of that span and are stated",
+   "chars": 1281,
+   "src_lines": 18,
+   "page": 19,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 11
+  },
+  {
+   "id": 72,
+   "src_line": 2352,
+   "kind": "para",
+   "head": "\\paragraph{A three-dimensional array reproduces the same sign-ambiguous residual}\\label{sec:rough_wall_result}",
+   "chars": 1425,
+   "src_lines": 20,
+   "page": 19,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 13
+  },
+  {
+   "id": 73,
+   "src_line": 2372,
+   "kind": "section",
+   "head": "\\subsection{What sets the accuracy: the assembled source, not the retained terms}\\label{sec:source_budget}",
+   "chars": 107,
+   "src_lines": 2,
+   "page": 20,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 74,
+   "src_line": 2374,
+   "kind": "para",
+   "head": "If not completeness, what sets the accuracy of a one-dimensional wall model",
+   "chars": 3056,
+   "src_lines": 47,
+   "page": 20,
+   "has_float": false,
+   "has_display": true,
+   "est_lines": 27
+  },
+  {
+   "id": 75,
+   "src_line": 2421,
+   "kind": "section",
+   "head": "\\subsection{Coupled assessment: grids, Reynolds numbers, source control and matching surface}\\label{sec:corrected_grid_r",
+   "chars": 128,
+   "src_lines": 2,
+   "page": 20,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 76,
+   "src_line": 2423,
+   "kind": "para",
+   "head": "The corrected crest-bulk calculations evaluate both wall treatments on the same",
+   "chars": 977,
+   "src_lines": 14,
+   "page": 20,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 9
+  },
+  {
+   "id": 77,
+   "src_line": 2437,
+   "kind": "para",
+   "head": "This is not a grid-convergence claim: the error grows monotonically under",
+   "chars": 1219,
+   "src_lines": 17,
+   "page": 21,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 11
+  },
+  {
+   "id": 78,
+   "src_line": 2454,
+   "kind": "para",
+   "head": "An earlier version of this comparison reported the opposite at $Re_H=5600$",
+   "chars": 1361,
+   "src_lines": 19,
+   "page": 21,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 12
+  },
+  {
+   "id": 79,
+   "src_line": 2473,
+   "kind": "para",
+   "head": "\\paragraph{The coupled verdict is invariant across wall-consistent subgrid closures, and not across a wall-inconsistent ",
+   "chars": 4145,
+   "src_lines": 64,
+   "page": 21,
+   "has_float": true,
+   "has_display": false,
+   "est_lines": 37
+  },
+  {
+   "id": 80,
+   "src_line": 2537,
+   "kind": "para",
+   "head": "\\paragraph{Beyond the DNS-certified points, only the mean field can be followed}",
+   "chars": 2532,
+   "src_lines": 35,
+   "page": 21,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 23
+  },
+  {
+   "id": 81,
+   "src_line": 2572,
+   "kind": "section",
+   "head": "\\subsubsection{Source-controlled intervention at the a-priori surface}\\label{sec:coupled_ladder_results}",
+   "chars": 105,
+   "src_lines": 2,
+   "page": 22,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 82,
+   "src_line": 2574,
+   "kind": "para",
+   "head": "The missing-convection explanation, which the a-priori frame leaves unresolved,",
+   "chars": 1827,
+   "src_lines": 34,
+   "page": 22,
+   "has_float": true,
+   "has_display": false,
+   "est_lines": 16
+  },
+  {
+   "id": 83,
+   "src_line": 2608,
+   "kind": "para",
+   "head": "The coupled data settle in deployment the comparison the a-priori frame leaves",
+   "chars": 1458,
+   "src_lines": 20,
+   "page": 22,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 13
+  },
+  {
+   "id": 84,
+   "src_line": 2628,
+   "kind": "section",
+   "head": "\\subsubsection{Matching-surface dependence of the coupled verdict}\\label{sec:ym_sweep_results}",
+   "chars": 95,
+   "src_lines": 2,
+   "page": 23,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 85,
+   "src_line": 2630,
+   "kind": "para",
+   "head": "Table~\\ref{tab:ym_sweep} reports both registered scores at all six coupled",
+   "chars": 1386,
+   "src_lines": 19,
+   "page": 23,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 12
+  },
+  {
+   "id": 86,
+   "src_line": 2649,
+   "kind": "para",
+   "head": "An earlier version of this sweep reported the two models moving in",
+   "chars": 3532,
+   "src_lines": 58,
+   "page": 23,
+   "has_float": true,
+   "has_display": false,
+   "est_lines": 31
+  },
+  {
+   "id": 87,
+   "src_line": 2707,
+   "kind": "section",
+   "head": "\\subsection{The wall model as deployed, and the share of its error the flow carries}\\label{sec:as_deployed}\\label{sec:ap",
+   "chars": 136,
+   "src_lines": 2,
+   "page": 24,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 88,
+   "src_line": 2709,
+   "kind": "para",
+   "head": "The two scores compared throughout this paper measure different quantities: the",
+   "chars": 1211,
+   "src_lines": 18,
+   "page": 24,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 11
+  },
+  {
+   "id": 89,
+   "src_line": 2727,
+   "kind": "para",
+   "head": "The two architectures are deficient in different ways.  On the hill wall the",
+   "chars": 1690,
+   "src_lines": 24,
+   "page": 24,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 15
+  },
+  {
+   "id": 90,
+   "src_line": 2751,
+   "kind": "para",
+   "head": "Nothing here shows the projection to be wrong --- a scalar eddy-viscosity wall",
+   "chars": 960,
+   "src_lines": 14,
+   "page": 24,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 9
+  },
+  {
+   "id": 91,
+   "src_line": 2765,
+   "kind": "para",
+   "head": "\\paragraph{About nine tenths of a delivered-traction error survives into the coupled solution}\\label{sec:gain_results}",
+   "chars": 2120,
+   "src_lines": 118,
+   "page": 25,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 19
+  },
+  {
+   "id": 92,
+   "src_line": 2883,
+   "kind": "section",
+   "head": "\\subsection{Efficacy, robustness, computational complexity and reproducibility}",
+   "chars": 105,
+   "src_lines": 3,
+   "page": 25,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 93,
+   "src_line": 2886,
+   "kind": "para",
+   "head": "The diagnostic meets four methodological contracts, every quantity below being",
+   "chars": 1564,
+   "src_lines": 23,
+   "page": 25,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 14
+  },
+  {
+   "id": 94,
+   "src_line": 2909,
+   "kind": "section",
+   "head": "\\subsection{Evaluation boundary}\\label{sec:limitations}",
+   "chars": 56,
+   "src_lines": 2,
+   "page": 25,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 95,
+   "src_line": 2911,
+   "kind": "para",
+   "head": "The evidence is separated by function.  The cross-grid balance establishes phase",
+   "chars": 1447,
+   "src_lines": 117,
+   "page": 25,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 13
+  },
+  {
+   "id": 96,
+   "src_line": 3028,
+   "kind": "para",
+   "head": "We developed a conservative test for deciding whether a reduced ODE wall",
+   "chars": 787,
+   "src_lines": 12,
+   "page": 26,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 7
+  },
+  {
+   "id": 97,
+   "src_line": 3040,
+   "kind": "para",
+   "head": "Once the wall traction is scored against a reference the archive can resolve, a",
+   "chars": 935,
+   "src_lines": 13,
+   "page": 26,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 8
+  },
+  {
+   "id": 98,
+   "src_line": 3053,
+   "kind": "para",
+   "head": "The coupled matrix adds a deliberately narrower result.  Across three grids both",
+   "chars": 1570,
+   "src_lines": 22,
+   "page": 26,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 14
+  },
+  {
+   "id": 99,
+   "src_line": 3075,
+   "kind": "para",
+   "head": "\\medskip\\noindent\\textbf{Funding.}",
+   "chars": 153,
+   "src_lines": 4,
+   "page": 26,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 100,
+   "src_line": 3079,
+   "kind": "para",
+   "head": "\\medskip\\noindent\\textbf{CRediT authorship contribution statement.}",
+   "chars": 360,
+   "src_lines": 6,
+   "page": 26,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 3
+  },
+  {
+   "id": 101,
+   "src_line": 3085,
+   "kind": "para",
+   "head": "\\medskip\\noindent\\textbf{Competing interest declaration.}",
+   "chars": 102,
+   "src_lines": 3,
+   "page": 26,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 1
+  },
+  {
+   "id": 102,
+   "src_line": 3088,
+   "kind": "para",
+   "head": "\\medskip\\noindent\\textbf{Data availability statement.}",
+   "chars": 1247,
+   "src_lines": 547,
+   "page": 26,
+   "has_float": false,
+   "has_display": false,
+   "est_lines": 11
+  }
+ ]
+}

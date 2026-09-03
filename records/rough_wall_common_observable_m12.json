@@ -1,0 +1,156 @@
+{
+  "case": "r24_cube_staggered_G1",
+  "forcing": {
+    "body_force_gx": 0.26666666666666666,
+    "equivalent_dp_ds": -0.26666666666666666
+  },
+  "geometry_contract": {
+    "layout": "staggered cubes",
+    "plan_area_density": 0.25,
+    "published_surface": "Cheng--Castro C20S",
+    "simulation_fidelity": "cube_les_staggered_G1"
+  },
+  "headline": {
+    "absolute_relative_error": 0.1753244543500447,
+    "calibration": "pressure_drag_xwire",
+    "full_sensitivity_signed_error_range": [
+      -0.15585475004426547,
+      0.3908695392941206
+    ],
+    "matching_plane_over_h": 2.0,
+    "prediction": 1.2079896983409701,
+    "reference": 1.0277925332617956,
+    "signed_relative_error": 0.1753244543500447,
+    "window": "cum_260"
+  },
+  "matching_surface": {
+    "all_planes_above_rsl": true,
+    "height_origin": "cube base",
+    "input": "intrinsic period-mean U",
+    "model_distance": "Delta=(y-d)",
+    "planes_over_h": [
+      1.9,
+      2.0,
+      2.2,
+      2.5
+    ],
+    "published_rsl_top_over_h": 1.85
+  },
+  "model": {
+    "implementation": "codes/models/source_faithful_wall_models.py:meneveau_rough_wall_stress",
+    "name": "Meneveau generalized-Moody rough-wall model",
+    "output": "signed plan-mean kinematic total surface traction",
+    "source": "Meneveau (2020), doi:10.1080/14685248.2020.1840573, equations (49)--(51)"
+  },
+  "reference": {
+    "block_standard_error": 0.022888110531169504,
+    "components": {
+      "plan_area": 16.0,
+      "terms": {
+        "cube_pressure_x": {
+          "block_sd": 0.36387055650095945,
+          "block_sd_from_zero": 38.31466171818006,
+          "force_x": 13.941577281540187,
+          "fraction_of_total": 0.8477864470672457,
+          "opposes_resistance": false
+        },
+        "cube_viscous_x": {
+          "block_sd": 0.036198704058576885,
+          "block_sd_from_zero": 70.04369094091794,
+          "force_x": 2.5354908395407114,
+          "fraction_of_total": 0.15418304019818171,
+          "opposes_resistance": false
+        },
+        "floor_viscous_x": {
+          "block_sd": 0.019936561389616882,
+          "block_sd_from_zero": 1.6245323483434266,
+          "force_x": -0.0323875888921672,
+          "fraction_of_total": -0.001969487265427377,
+          "opposes_resistance": true
+        }
+      },
+      "total_force_x": 16.44468053218873
+    },
+    "kind": "pressure plus molecular force integrated over cube and floor, divided by plan area",
+    "relative_block_standard_error": 0.022269193237405557,
+    "support": "one complete periodic plan",
+    "tau": 1.0277925332617956,
+    "uses_local_viscous_shear": false
+  },
+  "roughness_calibration": {
+    "independent_of_present_wrles": true,
+    "methods": [
+      {
+        "d_over_h": 0.8300000000000001,
+        "name": "pressure_drag_xwire",
+        "primary": true,
+        "z0_over_h": 0.053500000000000006
+      },
+      {
+        "d_over_h": 0.9199999999999999,
+        "name": "is_and_rs_xwire",
+        "primary": false,
+        "z0_over_h": 0.0325
+      },
+      {
+        "d_over_h": 1.03,
+        "name": "is_xwire",
+        "primary": false,
+        "z0_over_h": 0.028000000000000004
+      },
+      {
+        "d_over_h": 0.875,
+        "name": "rs_xwire",
+        "primary": false,
+        "z0_over_h": 0.0365
+      },
+      {
+        "d_over_h": 0.725,
+        "name": "pressure_drag_lda",
+        "primary": false,
+        "z0_over_h": 0.0665
+      },
+      {
+        "d_over_h": 0.835,
+        "name": "is_and_rs_lda",
+        "primary": false,
+        "z0_over_h": 0.0405
+      },
+      {
+        "d_over_h": 0.975,
+        "name": "is_lda",
+        "primary": false,
+        "z0_over_h": 0.034499999999999996
+      },
+      {
+        "d_over_h": 0.74,
+        "name": "rs_lda",
+        "primary": false,
+        "z0_over_h": 0.0475
+      }
+    ],
+    "primary_d_over_h": 0.8300000000000001,
+    "primary_method": "pressure_drag_xwire",
+    "primary_z0_over_h": 0.053500000000000006,
+    "source": "Cheng & Castro (2002), Boundary-Layer Meteorology 104:229--259, doi:10.1023/A:1016060103448, Table IV"
+  },
+  "row": "M12",
+  "schema": "rough-wall-common-observable-m12-v1",
+  "source_hashes": {
+    "codes/models/source_faithful_wall_models.py": "4b21ff7110c464de87ca95bf5ef01ef3f277a76c3b7f0384071b0f10b1a8a7c9",
+    "codes/results/r2_4_m20/r24_cube_staggered_G1/PROVENANCE.json": "8ad4d393e13525ea553b5be8ad3716a0f25cda66fcb2dbc40ea1124637443c39",
+    "codes/results/r2_4_m20_les_20260825.json": "f8780b78f3702213fbd4d715ec35e349a54ae4854e10c5eeb3a3c9f78ec51964"
+  },
+  "status": "PASS",
+  "uncertainty_design": {
+    "averaging_windows": [
+      "disj_160-260",
+      "disj_60-160",
+      "cum_240",
+      "cum_260"
+    ],
+    "calibration_methods": 8,
+    "envelope_semantics": "deterministic window x plane x published-calibration sensitivity; separate from force block SE",
+    "matching_planes": 4
+  }
+}

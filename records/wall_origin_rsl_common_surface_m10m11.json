@@ -1,0 +1,307 @@
+{
+  "common_surface": {
+    "definition": "mesh-recorded wall-normal first-cell-centre surface",
+    "epsilon_fraction_below_0p1": 0.31666666666666665,
+    "epsilon_median_rebuilt": 0.14372126975025212,
+    "model_metrics": {
+      "M0_equilibrium": {
+        "correlation": 0.9258293900715742,
+        "r2": 0.6968131560810784,
+        "relative_rms": 0.5354347866421663,
+        "relative_rms_interval": {
+          "high": 0.7654157828326323,
+          "low": 0.26268019322686437,
+          "median": 0.5239518285627467
+        },
+        "reversed_fraction": 0.419189453125,
+        "sign_accuracy": 0.96435546875,
+        "signed_force_ratio": 1.8576095100008434,
+        "truth_reversed_fraction": 0.454833984375
+      },
+      "M1_pressure_gradient_ode": {
+        "correlation": 0.7714247078536445,
+        "r2": -7.544727270415409,
+        "relative_rms": 2.8425002404586563,
+        "relative_rms_interval": {
+          "high": 3.082484842656541,
+          "low": 1.856281687457423,
+          "median": 2.821344219852412
+        },
+        "reversed_fraction": 0.870361328125,
+        "sign_accuracy": 0.5673828125,
+        "signed_force_ratio": -0.05296530266099091,
+        "truth_reversed_fraction": 0.454833984375
+      },
+      "M2_hickel_modelled_convection": {
+        "correlation": 0.8749283305377213,
+        "r2": -0.13521598456153217,
+        "relative_rms": 1.0360737156799646,
+        "relative_rms_interval": {
+          "high": 1.1440361522675588,
+          "low": 0.6968073607271825,
+          "median": 1.0336759137616673
+        },
+        "reversed_fraction": 0.82470703125,
+        "sign_accuracy": 0.624755859375,
+        "signed_force_ratio": 0.47361525273850225,
+        "truth_reversed_fraction": 0.454833984375
+      },
+      "Xall_all_omitted_transport": {
+        "correlation": 0.23730442387761824,
+        "r2": -18.985003904459706,
+        "relative_rms": 4.347138990583919,
+        "relative_rms_interval": {
+          "high": 11.34588635996452,
+          "low": 2.107539781509344,
+          "median": 4.347442938482388
+        },
+        "reversed_fraction": 0.7509765625,
+        "sign_accuracy": 0.566650390625,
+        "signed_force_ratio": 1.8390440561914203,
+        "truth_reversed_fraction": 0.454833984375
+      },
+      "Xc_exact_convection_profile": {
+        "correlation": 0.7750835805423049,
+        "r2": -5.320687515932557,
+        "relative_rms": 2.4447450044825985,
+        "relative_rms_interval": {
+          "high": 2.719416199722385,
+          "low": 1.7085855734668478,
+          "median": 2.4292503030320205
+        },
+        "reversed_fraction": 0.875,
+        "sign_accuracy": 0.569580078125,
+        "signed_force_ratio": -0.7999297603351937,
+        "truth_reversed_fraction": 0.454833984375
+      },
+      "Xc_resolved_convection_constant": {
+        "correlation": 0.7283515821081517,
+        "r2": -5.446843959557043,
+        "relative_rms": 2.4690221532169234,
+        "relative_rms_interval": {
+          "high": 3.088465776741903,
+          "low": 1.7795969309738242,
+          "median": 2.4542384714201133
+        },
+        "reversed_fraction": 0.852783203125,
+        "sign_accuracy": 0.58984375,
+        "signed_force_ratio": -0.46233992831825294,
+        "truth_reversed_fraction": 0.454833984375
+      },
+      "Xc_resolved_convection_linear": {
+        "correlation": 0.7895191930593567,
+        "r2": -6.38950109548518,
+        "relative_rms": 2.6433761441035086,
+        "relative_rms_interval": {
+          "high": 2.8694215176287483,
+          "low": 1.803774350369828,
+          "median": 2.6285890313408258
+        },
+        "reversed_fraction": 0.8505859375,
+        "sign_accuracy": 0.591552734375,
+        "signed_force_ratio": -0.1427975562398914,
+        "truth_reversed_fraction": 0.454833984375
+      },
+      "Xcp_convection_plus_pressure_profile": {
+        "correlation": 0.2303379770704516,
+        "r2": -18.883952810667388,
+        "relative_rms": 4.3361347432945525,
+        "relative_rms_interval": {
+          "high": 11.293505027325313,
+          "low": 2.0932848438949145,
+          "median": 4.345140100442976
+        },
+        "reversed_fraction": 0.749267578125,
+        "sign_accuracy": 0.5654296875,
+        "signed_force_ratio": 1.8412552223359875,
+        "truth_reversed_fraction": 0.454833984375
+      },
+      "Xcpr_plus_streamwise_normal_stress": {
+        "correlation": 0.23534923531192203,
+        "r2": -18.94700771577047,
+        "relative_rms": 4.343004558140436,
+        "relative_rms_interval": {
+          "high": 11.35184734357773,
+          "low": 2.0961111607599814,
+          "median": 4.343989828773126
+        },
+        "reversed_fraction": 0.74951171875,
+        "sign_accuracy": 0.565673828125,
+        "signed_force_ratio": 1.8252271178594992,
+        "truth_reversed_fraction": 0.454833984375
+      },
+      "Xfull_all_transport_plus_exact_shear_stress": {
+        "correlation": -0.2868608995676638,
+        "r2": -170.41557163370464,
+        "relative_rms": 12.731411134082805,
+        "relative_rms_interval": {
+          "high": 27.46988601429096,
+          "low": 8.436616332181831,
+          "median": 12.65343974842419
+        },
+        "reversed_fraction": 0.567138671875,
+        "sign_accuracy": 0.68603515625,
+        "signed_force_ratio": 4.950687703901605,
+        "truth_reversed_fraction": 0.454833984375
+      },
+      "Xp_exact_pressure_profile": {
+        "correlation": 0.2923139204750093,
+        "r2": -15.335081842469126,
+        "relative_rms": 3.930176592243597,
+        "relative_rms_interval": {
+          "high": 11.30624661512645,
+          "low": 0.8753962315300239,
+          "median": 3.9627313172854777
+        },
+        "reversed_fraction": 0.691162109375,
+        "sign_accuracy": 0.6494140625,
+        "signed_force_ratio": 2.449056217482932,
+        "truth_reversed_fraction": 0.454833984375
+      }
+    },
+    "phase_count": 120,
+    "y_m_over_H": {
+      "max": 0.093532182,
+      "median": 0.093532182,
+      "min": 0.05255533205912904
+    }
+  },
+  "critical_height_same_operator": {
+    "map_sha256": "c60861c12341828e9ff46ad9cbf9858e29292415080738e52dd59e041f4d926e",
+    "map_source": "codes/results/critical_matching_height_map.npz",
+    "rebuilt_ycrit_plus": 1.0,
+    "stored_ycrit_plus": 1.0
+  },
+  "jackson_centroid": {
+    "centroid_discrepancy_over_H": 0.016538996862454636,
+    "direct_ensemble_max": 0.3760654803053533,
+    "direct_ensemble_min": 0.3744475341513921,
+    "direct_ensemble_std": 0.00051679337226406,
+    "direct_wall_force_over_H": 0.37531066817880027,
+    "integrated_force_discrepancy_over_direct_abs_mean": 0.01446711117794375,
+    "reconstructed_parent_force_over_H": 0.3918496650412549,
+    "signed_force_condition_number": 1.2851500697731963
+  },
+  "ledger_row": "M10/M11",
+  "origin_perturbation": [
+    {
+      "epsilon_fraction_below_0p1": 0.375,
+      "epsilon_median": 0.1275220257986231,
+      "wall_shift_over_first_spacing": -1.0
+    },
+    {
+      "epsilon_fraction_below_0p1": 0.3416666666666667,
+      "epsilon_median": 0.13574428973293118,
+      "wall_shift_over_first_spacing": -0.5
+    },
+    {
+      "epsilon_fraction_below_0p1": 0.31666666666666665,
+      "epsilon_median": 0.13996440831709334,
+      "wall_shift_over_first_spacing": -0.25
+    },
+    {
+      "epsilon_fraction_below_0p1": 0.31666666666666665,
+      "epsilon_median": 0.14372126975025212,
+      "wall_shift_over_first_spacing": 0.0
+    },
+    {
+      "epsilon_fraction_below_0p1": 0.2916666666666667,
+      "epsilon_median": 0.1484005405505112,
+      "wall_shift_over_first_spacing": 0.25
+    },
+    {
+      "epsilon_fraction_below_0p1": 0.2833333333333333,
+      "epsilon_median": 0.15476399187460227,
+      "wall_shift_over_first_spacing": 0.5
+    },
+    {
+      "epsilon_fraction_below_0p1": 0.26666666666666666,
+      "epsilon_median": 0.16250024993019752,
+      "wall_shift_over_first_spacing": 0.75
+    }
+  ],
+  "roughness_sublayer": {
+    "cases": [
+      {
+        "dispersive_stress_peak": 0.02112691970823691,
+        "edge_over_H": {
+          "0.025": null,
+          "0.050": null,
+          "0.100": null
+        },
+        "eta_max_over_H": 2.0,
+        "name": "pitch9_512_independent",
+        "primary_edge_is_lower_bound": true,
+        "source": "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz",
+        "source_sha256": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85",
+        "stations": 512,
+        "tail_ratio_at_eta_max": 0.4694810757948172
+      },
+      {
+        "dispersive_stress_peak": 0.020785015084911762,
+        "edge_over_H": {
+          "0.025": null,
+          "0.050": null,
+          "0.100": null
+        },
+        "eta_max_over_H": 2.0,
+        "name": "pitch6_768",
+        "primary_edge_is_lower_bound": true,
+        "source": "codes/raw_data/geometry_driven/xiao_pehill_parameterized/pehill-29-cases-DNS/alph10-6-3036/mean_files.dat",
+        "source_sha256": "2c66b585e21a2977057bb79be2852189f289424397fe361a03357169e2cb9748",
+        "stations": 512,
+        "tail_ratio_at_eta_max": 0.32695520024371694
+      },
+      {
+        "dispersive_stress_peak": 0.022395770107032708,
+        "edge_over_H": {
+          "0.025": null,
+          "0.050": null,
+          "0.100": null
+        },
+        "eta_max_over_H": 2.0,
+        "name": "pitch9_768",
+        "primary_edge_is_lower_bound": true,
+        "source": "codes/raw_data/geometry_driven/xiao_pehill_parameterized/pehill-29-cases-DNS/alph10-9-3036/mean_files.dat",
+        "source_sha256": "19988c5933527ffbddd7b52cd89b982dec6589295d730da24c7713e52bb3b075",
+        "stations": 768,
+        "tail_ratio_at_eta_max": 0.43305474660941423
+      },
+      {
+        "dispersive_stress_peak": 0.020743945449006207,
+        "edge_over_H": {
+          "0.025": null,
+          "0.050": null,
+          "0.100": null
+        },
+        "eta_max_over_H": 2.0,
+        "name": "pitch12_768",
+        "primary_edge_is_lower_bound": true,
+        "source": "codes/raw_data/geometry_driven/xiao_pehill_parameterized/pehill-29-cases-DNS/alph10-12-3036/mean_files.dat",
+        "source_sha256": "dd3a3599348015389aa9d2d0d5ba4a310220558e766952473c0f00b6d1853e5b",
+        "stations": 1024,
+        "tail_ratio_at_eta_max": 0.4707464624758837
+      }
+    ],
+    "edge_rule": "lowest eta above the signal peak after which the tail remains below 5% of the peak",
+    "result": "no edge detected below eta/H=2.0 in either independent canonical archive or at pitches 6H, 9H and 12H",
+    "signal": "absolute dispersive shear stress |<U_tilde W_tilde>|",
+    "threshold_sensitivity": [
+      0.025,
+      0.05,
+      0.1
+    ]
+  },
+  "schema": "wall-origin-rsl-common-surface-v2",
+  "sources_sha256": {
+    "codes/raw_data/geometry_driven/xiao_pehill_parameterized/pehill-29-cases-DNS/alph10-12-3036/mean_files.dat": "dd3a3599348015389aa9d2d0d5ba4a310220558e766952473c0f00b6d1853e5b",
+    "codes/raw_data/geometry_driven/xiao_pehill_parameterized/pehill-29-cases-DNS/alph10-6-3036/mean_files.dat": "2c66b585e21a2977057bb79be2852189f289424397fe361a03357169e2cb9748",
+    "codes/raw_data/geometry_driven/xiao_pehill_parameterized/pehill-29-cases-DNS/alph10-9-3036/mean_files.dat": "19988c5933527ffbddd7b52cd89b982dec6589295d730da24c7713e52bb3b075",
+    "codes/results/critical_matching_height_map.npz": "c60861c12341828e9ff46ad9cbf9858e29292415080738e52dd59e041f4d926e",
+    "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85",
+    "codes/results/r2m4_apriori_ladder_20260823.json": "20aab3fe79a48d092b76fcf19406b608dbbf98299e51d260d38a3776bf6e55b9",
+    "codes/results/r2m4_apriori_ladder_20260823.npz": "6a1d1971b97a320b1122b6aeae777e2de50d86550d85ee35e30b9ee30b3b0ceb",
+    "codes/results/wall_following_budget_certificate_l1.npz": "570e72aeb0764b67ac13dd2a964712931bc8f2f7a86fb809c31c326270124c95"
+  },
+  "status": "M10_M11_COMMON_SURFACE_PASS"
+}

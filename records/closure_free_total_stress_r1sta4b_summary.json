@@ -1,0 +1,28 @@
+{
+  "schema": "closure-free-total-stress-r1sta4b-v1",
+  "coordinate_map": "xi=x, eta=y-h(x), J=1; eta is vertical, not true-normal",
+  "momentum_component": "fixed Cartesian x",
+  "phase_identity": "RANS: mean advection plus measured Reynolds stress; no dispersive term",
+  "wavelength_identity": "dispersive flux emerges from <UW>=<U><W>+<U~W~>",
+  "stress_definition": "tau_xeta=-(<viscous momentum flux>+<Reynolds momentum flux>+<U~W~>)",
+  "raw_uv_source": "rms_files2.dat column 2 (x,y,uv,uw,vw)",
+  "source_sha256": {
+    "mean": "19988c5933527ffbddd7b52cd89b982dec6589295d730da24c7713e52bb3b075",
+    "rms1": "1a0416edb11d8cd814ebdbfa01e9f54c5862b15b667f45051fc178f8b98a8fe8",
+    "rms2": "b9522832924064aa8f10d3b460cf42d6fb4b2eff95a3c71168c2418ee825f753"
+  },
+  "grid": [
+    768,
+    385
+  ],
+  "eta_points": 401,
+  "eta_match": 0.1,
+  "tau_total_at_match": 0.0006760349753942596,
+  "viscous_at_match": 0.000128571694999791,
+  "reynolds_at_match": 0.002841237010996159,
+  "dispersive_at_match": -0.0022937737306016905,
+  "max_raw_reproduction_error": 0.0,
+  "checks_passed": 13,
+  "checks_total": 13,
+  "status": "PASS"
+}

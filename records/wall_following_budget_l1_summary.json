@@ -1,0 +1,57 @@
+{
+  "approach": "full wall-following conservative momentum certificate",
+  "source_case": "Xiao 29-case alph10-9-3036 DNS",
+  "source_grid": [
+    768,
+    385
+  ],
+  "eta_match_over_H": 0.1,
+  "reference_heights_over_H": [
+    0.4,
+    0.5,
+    0.6,
+    0.75,
+    0.9
+  ],
+  "forcing_fit_interval_over_H": [
+    0.4,
+    0.9
+  ],
+  "forcing": 0.011035961313934037,
+  "forcing_fit_r2": 0.9999717822593597,
+  "forcing_ensemble_min": 0.011035961303087417,
+  "forcing_ensemble_max": 0.011035961324832536,
+  "station_closure_rms": 0.0003638814932304086,
+  "station_closure_relative_rms": 0.006107497466982795,
+  "station_closure_correlation": 0.9999791243270993,
+  "wall_traction_rms": 0.05957947509557823,
+  "wall_traction_uncertainty_rms": 0.007348628516926242,
+  "closure_below_propagated_uncertainty": true,
+  "station_fraction_below_local_uncertainty": 0.99609375,
+  "component_sum_max_abs_error": 2.858824288409778e-15,
+  "wavelength_residual": -0.00010878109494519284,
+  "wavelength_residual_relative": 0.004007349487966125,
+  "wavelength_mean_terms": {
+    "q_wall_reference": -0.027145397543153437,
+    "q_wall_match": -0.02725417863809863,
+    "q_wall_direct": -0.02664991149051364,
+    "q_pressure_wall": -0.02640277581723194,
+    "q_viscous_reference": -0.0007426217259215011,
+    "q_viscous_direct": -0.0002471356732817002,
+    "mean_transport": 0.0022938847735329226,
+    "pressure_total": -0.025474658574242196,
+    "pressure_impulse": 0.0009281172429897429,
+    "reynolds_transport": -0.002841237010996161,
+    "viscous_transport": -0.00012857169499979105,
+    "body_force": -0.0011035961313934036
+  },
+  "pressure_form_fraction_of_total_wall_force": 0.9726428126631435,
+  "pressure_approx_rel_rms": 1.3935841902662847,
+  "pressure_approx_correlation": 0.8726200301445916,
+  "legacy_tau_m_over_phi_wrong_column": 1.9985054387348402,
+  "corrected_tau_m_over_phi_documented_uv": 0.6366329576092367,
+  "uses_modelled_eddy_viscosity": false,
+  "uses_boussinesq_reference_stress": false,
+  "uses_thin_layer_deletion": false,
+  "status": "PASS"
+}

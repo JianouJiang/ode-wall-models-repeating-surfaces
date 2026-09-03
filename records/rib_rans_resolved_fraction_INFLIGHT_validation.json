@@ -1,0 +1,14 @@
+{
+  "case": "rib_rans_dtype",
+  "time": "20000",
+  "converged": false,
+  "fidelity": "RANS (k-omega SST) -- no resolved stress",
+  "has_resolved_stress": false,
+  "n_stations": 110,
+  "f_res_band_median": 0.0,
+  "f_res_band_p25": 0.0,
+  "f_res_band_p75": 0.0,
+  "f_res_pooled_median": 0.0,
+  "f_res_pooled_min": 0.0,
+  "n_pooled_cells": 1017
+}

@@ -1,0 +1,305 @@
+{
+  "schema": "direct-force-adequacy-certificate-l1-v1",
+  "case": "matched-numerics multi-pitch d-type square-rib WRLES (r24_rib_dtype_p3_G1, OpenFOAM 10, WALE)",
+  "method": {
+    "parent": "complete steady Cartesian finite-volume x-momentum balance",
+    "control_volumes": "528 Cartesian streamwise bins spanning full height and span",
+    "direct_force": "pMean plus molecular traction on physical wall faces",
+    "reynolds_stress": "deposited UPrime2Mean; no Boussinesq substitution",
+    "sgs_stress": "mean of five stored instantaneous WALE nut-strain fluxes",
+    "body_force": "time-integrated meanVelocityForce history over averaging window",
+    "thin_layer_deletion": false,
+    "pressure_height_proxy": false,
+    "self_reconstruction_as_reference": false
+  },
+  "mesh": {
+    "cells": 6566912,
+    "faces": 19887296,
+    "physical_wall_faces": 271040,
+    "phase_control_volumes": 528,
+    "reconstructed_volume": 40.08672226503996
+  },
+  "averaging_windows_end_time": [
+    99.99906353,
+    119.99946257,
+    139.99967714
+  ],
+  "body_gradient_central": 0.007170106303034658,
+  "phase_parent_closure": {
+    "residual_l2": 0.003808687739259291,
+    "residual_over_direct_force_l2": 0.08141965231589776,
+    "residual_over_full_leg_l2": 0.025072173418706135,
+    "max_abs_residual_over_local_full_leg": 0.06170661292040899,
+    "correlation_parent_direct": 0.9993810935763221,
+    "propagated_window_sgs_l2": 0.006497204252823451
+  },
+  "wavelength_parent_closure": {
+    "direct_force": -0.2869762806830984,
+    "parent_force": -0.28742605998119003,
+    "residual": -0.0004497792980916841,
+    "relative_to_direct": 0.0015673047856814533
+  },
+  "effectivity_candidates": {
+    "zero": {
+      "estimated_error_norm": 0.050101972473653195,
+      "independent_true_error_norm": 0.046778481987150636,
+      "effectivity_index": 1.0710474206370244,
+      "norm_difference": 0.003323490486502559,
+      "parent_closure_bound": 0.003808687739259291,
+      "two_sided_bound_pass": true
+    },
+    "uniform_body_balance": {
+      "estimated_error_norm": 0.04851538136680758,
+      "independent_true_error_norm": 0.045080490801858,
+      "effectivity_index": 1.076194613320581,
+      "norm_difference": 0.003434890564949583,
+      "parent_closure_bound": 0.003808687739259291,
+      "two_sided_bound_pass": true
+    },
+    "alternating_manufactured": {
+      "estimated_error_norm": 0.049945244121309094,
+      "independent_true_error_norm": 0.046786649547661936,
+      "effectivity_index": 1.06751059552639,
+      "norm_difference": 0.0031585945736471582,
+      "parent_closure_bound": 0.003808687739259291,
+      "two_sided_bound_pass": true
+    }
+  },
+  "deterministic_window_sensitivity": {
+    "records": [
+      {
+        "end_time": 99.99906353,
+        "phase_closure_over_full_leg": 0.024867908784385773,
+        "wavelength_closure_over_direct": 0.0015672647051953132,
+        "effectivity": {
+          "zero": 1.0701967842404705,
+          "uniform_body_balance": 1.0748614627050468,
+          "alternating_manufactured": 1.0668089672483323
+        }
+      },
+      {
+        "end_time": 119.99946257,
+        "phase_closure_over_full_leg": 0.02499945334182978,
+        "wavelength_closure_over_direct": 0.0015699971299173476,
+        "effectivity": {
+          "zero": 1.0709076253614602,
+          "uniform_body_balance": 1.0759036321573845,
+          "alternating_manufactured": 1.0674009052524316
+        }
+      },
+      {
+        "end_time": 139.99967714,
+        "phase_closure_over_full_leg": 0.025072173418706135,
+        "wavelength_closure_over_direct": 0.0015673047856814533,
+        "effectivity": {
+          "zero": 1.0710474206370244,
+          "uniform_body_balance": 1.076194613320581,
+          "alternating_manufactured": 1.06751059552639
+        }
+      }
+    ],
+    "phase_closure_envelope": [
+      0.024867908784385773,
+      0.025072173418706135
+    ],
+    "wavelength_closure_envelope": [
+      0.0015672647051953132,
+      0.0015699971299173476
+    ],
+    "effectivity_envelope": [
+      1.0668089672483323,
+      1.076194613320581
+    ]
+  },
+  "best_projection": {
+    "signed_x_force": {
+      "1": {
+        "n_coefficients": 1,
+        "best_direct_gap": 0.04508048655227427,
+        "best_parent_estimated_gap": 0.04851538136680758,
+        "gap_difference": 0.0034348948145333097,
+        "gap_perturbation_bound": 0.003808687739259291,
+        "gap_bound_pass": true,
+        "sigma_min_positive": 22.978250586152118,
+        "sigma_max": 22.978250586152118,
+        "coefficient_norm": 0.0005435156831119287,
+        "direct_residual_norm_rebuild": 0.04508048655227427,
+        "parent_residual_norm_rebuild": 0.04851538136680758
+      },
+      "4": {
+        "n_coefficients": 4,
+        "best_direct_gap": 0.04506241655196426,
+        "best_parent_estimated_gap": 0.04849838343057296,
+        "gap_difference": 0.0034359668786086983,
+        "gap_perturbation_bound": 0.003808687739259291,
+        "gap_bound_pass": true,
+        "sigma_min_positive": 11.489125293076057,
+        "sigma_max": 11.489125293076057,
+        "coefficient_norm": 0.0010926926413592074,
+        "direct_residual_norm_rebuild": 0.04506241655196426,
+        "parent_residual_norm_rebuild": 0.04849838343057296
+      },
+      "8": {
+        "n_coefficients": 8,
+        "best_direct_gap": 0.04500801962550969,
+        "best_parent_estimated_gap": 0.048447694369130066,
+        "gap_difference": 0.0034396747436203773,
+        "gap_perturbation_bound": 0.003808687739259291,
+        "gap_bound_pass": true,
+        "sigma_min_positive": 8.124038404635959,
+        "sigma_max": 8.12403840463596,
+        "coefficient_norm": 0.0015691367362821364,
+        "direct_residual_norm_rebuild": 0.04500801962550969,
+        "parent_residual_norm_rebuild": 0.048447694369130066
+      },
+      "16": {
+        "n_coefficients": 16,
+        "best_direct_gap": 0.044780367246329014,
+        "best_parent_estimated_gap": 0.04822760173591864,
+        "gap_difference": 0.003447234489589626,
+        "gap_perturbation_bound": 0.003808687739259291,
+        "gap_bound_pass": true,
+        "sigma_min_positive": 5.744562646538029,
+        "sigma_max": 5.7445626465380295,
+        "coefficient_norm": 0.0023545255348208934,
+        "direct_residual_norm_rebuild": 0.044780367246329014,
+        "parent_residual_norm_rebuild": 0.04822760173591864
+      },
+      "48": {
+        "n_coefficients": 48,
+        "best_direct_gap": 0.04304495787104761,
+        "best_parent_estimated_gap": 0.04657955081875232,
+        "gap_difference": 0.0035345929477047094,
+        "gap_perturbation_bound": 0.003808687739259291,
+        "gap_bound_pass": true,
+        "sigma_min_positive": 3.3166247903554,
+        "sigma_max": 3.3166247903554003,
+        "coefficient_norm": 0.005521511477039872,
+        "direct_residual_norm_rebuild": 0.04304495787104761,
+        "parent_residual_norm_rebuild": 0.04657955081875232
+      },
+      "528": {
+        "n_coefficients": 528,
+        "best_direct_gap": 0.0,
+        "best_parent_estimated_gap": 0.0,
+        "gap_difference": 0.0,
+        "gap_perturbation_bound": 0.003808687739259291,
+        "gap_bound_pass": true,
+        "sigma_min_positive": 1.0,
+        "sigma_max": 1.0,
+        "coefficient_norm": 0.046778481987150636,
+        "direct_residual_norm_rebuild": 0.0,
+        "parent_residual_norm_rebuild": 0.0
+      }
+    },
+    "complete_vector_moment": {
+      "1": {
+        "n_coefficients": 1,
+        "best_direct_gap": 0.04778008981917445,
+        "best_parent_estimated_gap": 0.051033606030785016,
+        "gap_difference": 0.0032535162116105673,
+        "gap_perturbation_bound": 0.003808687739259291,
+        "gap_bound_pass": true,
+        "sigma_min_positive": 22.978250586152118,
+        "sigma_max": 22.978250586152118,
+        "coefficient_norm": 0.0005435156831119287,
+        "direct_residual_norm_rebuild": 0.04778008981917445,
+        "parent_residual_norm_rebuild": 0.051033606030785016
+      },
+      "4": {
+        "n_coefficients": 4,
+        "best_direct_gap": 0.04776304115988993,
+        "best_parent_estimated_gap": 0.05101744712073969,
+        "gap_difference": 0.0032544059608497627,
+        "gap_perturbation_bound": 0.003808687739259291,
+        "gap_bound_pass": true,
+        "sigma_min_positive": 11.489125293076057,
+        "sigma_max": 11.489125293076057,
+        "coefficient_norm": 0.0010926926413592074,
+        "direct_residual_norm_rebuild": 0.04776304115988993,
+        "parent_residual_norm_rebuild": 0.05101744712073969
+      },
+      "8": {
+        "n_coefficients": 8,
+        "best_direct_gap": 0.04771172335966144,
+        "best_parent_estimated_gap": 0.05096926333608554,
+        "gap_difference": 0.003257539976424105,
+        "gap_perturbation_bound": 0.003808687739259291,
+        "gap_bound_pass": true,
+        "sigma_min_positive": 8.124038404635959,
+        "sigma_max": 8.12403840463596,
+        "coefficient_norm": 0.0015691367362821364,
+        "direct_residual_norm_rebuild": 0.04771172335966144,
+        "parent_residual_norm_rebuild": 0.05096926333608554
+      },
+      "16": {
+        "n_coefficients": 16,
+        "best_direct_gap": 0.0474970315499263,
+        "best_parent_estimated_gap": 0.05076010524552702,
+        "gap_difference": 0.003263073695600721,
+        "gap_perturbation_bound": 0.003808687739259291,
+        "gap_bound_pass": true,
+        "sigma_min_positive": 5.744562646538029,
+        "sigma_max": 5.7445626465380295,
+        "coefficient_norm": 0.0023545255348208934,
+        "direct_residual_norm_rebuild": 0.0474970315499263,
+        "parent_residual_norm_rebuild": 0.05076010524552702
+      },
+      "48": {
+        "n_coefficients": 48,
+        "best_direct_gap": 0.045864530014586034,
+        "best_parent_estimated_gap": 0.049196964030469664,
+        "gap_difference": 0.00333243401588363,
+        "gap_perturbation_bound": 0.003808687739259291,
+        "gap_bound_pass": true,
+        "sigma_min_positive": 3.3166247903554,
+        "sigma_max": 3.3166247903554003,
+        "coefficient_norm": 0.005521511477039872,
+        "direct_residual_norm_rebuild": 0.045864530014586034,
+        "parent_residual_norm_rebuild": 0.049196964030469664
+      }
+    }
+  },
+  "interpretation_guards": {
+    "phasewise_scalar_signed_x_gap_is_zero_within_roundoff": true,
+    "complete_trace_gap_not_called_wall_stress_error": true,
+    "oracle_projection_separate_from_target_blind_candidates": true,
+    "volume_filtered_method_claimed_as_prior_art": true
+  },
+  "source_hashes": {
+    "jobs/r24_rib_dtype_p3_G1/constant/polyMesh/points": "e458c61bde029e7cb4c85f2deff13d813cd2e2148d8ce95b5c4377a1636e2e35",
+    "jobs/r24_rib_dtype_p3_G1/constant/polyMesh/faces": "5c0efebe771eee1783c237f478b205984aadf5c9d10d2bfcc2b0a1339bbd1ae6",
+    "jobs/r24_rib_dtype_p3_G1/constant/polyMesh/owner": "34f57fc3d990a36d5e0e782d74b525fc089f2ffb35412b52da5b02e4585506a3",
+    "jobs/r24_rib_dtype_p3_G1/constant/polyMesh/neighbour": "efd5874222b4b02d749aa32b9e53f6ae2cb6fbbf5775af0abc80b93ded6e5ae4",
+    "jobs/r24_rib_dtype_p3_G1/constant/polyMesh/boundary": "6d4cf669939eb3a7f038b76ab5f1e4728fe43c8d01de070d5595eb996484b82f",
+    "jobs/r24_rib_dtype_p3_G1/0/C": "4be06247f9700ae9aa245711995d32bfe071d851b962f7b1121bbc3dc7b30666",
+    "jobs/r24_rib_dtype_p3_G1/log.pimpleFoam": "0bc039e45e784f29fe681fb6d58e62b27e62e0897a4130bb693e543a6c80a9fa",
+    "jobs/r24_rib_dtype_p3_G1/59.99835503/U": "39752853b603aa8e9fed9ddcc72113c3378dd4734a7d98a65dd1015feb719e53",
+    "jobs/r24_rib_dtype_p3_G1/59.99835503/nut": "dc80c1b2b60dbe346123376710a478b19df4f53023ac30b639c137ebdffcfd5c",
+    "jobs/r24_rib_dtype_p3_G1/80.00130452/U": "d21f9ebc2139621f6f94c75f0c427fba40d89ceeced453c4223f11a8d1d0ddac",
+    "jobs/r24_rib_dtype_p3_G1/80.00130452/nut": "39cf3fc064e094e1682adb835f3430e60973fea4a22b942b58198f613be1c1b9",
+    "jobs/r24_rib_dtype_p3_G1/99.99906353/U": "da33f83ccf8d950ce68f56a33a25a83a1fb69b87729ea29a0a4bd8fe36a9ed45",
+    "jobs/r24_rib_dtype_p3_G1/99.99906353/nut": "e1d803b36421c5bd811ec7ad7377d4c0bd5cccf3fe6ef1f107ecc09439187d20",
+    "jobs/r24_rib_dtype_p3_G1/119.99946257/U": "5ac7bf9bdcbb53820b5aa769d5c0f9415c258bdbce0e37860925328c3f908cdf",
+    "jobs/r24_rib_dtype_p3_G1/119.99946257/nut": "8972ca253b575fd76b2e8a05687d622e4fb023424c3638241cbb614c6b93c7f8",
+    "jobs/r24_rib_dtype_p3_G1/139.99967714/U": "c570e7c4421bf7807cb5df90201465b1b500329361ed386befa041610c94f341",
+    "jobs/r24_rib_dtype_p3_G1/139.99967714/nut": "f86cd6bb5e896826f31604effc667410f5974f5ca1c1b1e75ddfda22b7602bb6",
+    "jobs/r24_rib_dtype_p3_G1/99.99906353/UMean": "98b7e0b648282358b0b72bcbedda041bd9891d4fb481303ea94ee783797a168b",
+    "jobs/r24_rib_dtype_p3_G1/99.99906353/UPrime2Mean": "f27cc0e0e707b62baf0e3cf859a07338e34139da12788fc472615f2739e608d2",
+    "jobs/r24_rib_dtype_p3_G1/99.99906353/pMean": "7eb3ce6759886eb39820bd060a6c58c2942d5bf4ebf20c148f3b0d629fcff9c5",
+    "jobs/r24_rib_dtype_p3_G1/119.99946257/UMean": "6995e76357b5655d85a696358ed546a5218043b307d8612b817aa13f51c7b008",
+    "jobs/r24_rib_dtype_p3_G1/119.99946257/UPrime2Mean": "d65d889fdbb4e3ed2038e5b6b97ff12d17891d38af581a223cd5abd410396cc5",
+    "jobs/r24_rib_dtype_p3_G1/119.99946257/pMean": "be264a8d565f40a4a7c45bc8849578be9bb4539c56b7c1cace7a44a47eae79dc",
+    "jobs/r24_rib_dtype_p3_G1/139.99967714/UMean": "377b4e23c69b6f91f66a48173fca5e23590e452e8c9100cef95a01e327b21c92",
+    "jobs/r24_rib_dtype_p3_G1/139.99967714/UPrime2Mean": "d7584c32473667f651e4c3c1b1e848012afb33f3396ba715fddb480c699eb474",
+    "jobs/r24_rib_dtype_p3_G1/139.99967714/pMean": "286c3214db85628974f63c21fe6d83f1a45b2ae6813f90d786b9af6fd55513e1"
+  },
+  "gates": {
+    "phase_full_leg_closure_below_10pct": true,
+    "wavelength_closure_below_10pct": true,
+    "all_effectivity_bounds_hold": true,
+    "all_projection_perturbation_bounds_hold": true,
+    "x_only_symmetric_inversion_guard": true
+  },
+  "status": "PASS"
+}

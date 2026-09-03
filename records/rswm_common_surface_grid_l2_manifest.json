@@ -1,0 +1,49 @@
+{
+  "files": {
+    "codes/analysis/rswm_common_surface_grid_l2.py": {
+      "bytes": 37828,
+      "sha256": "74f8106d4156f0c49a5ad26ce9e21fc6aa0ba1d19e71c3726ea98eb5fc9b6573"
+    },
+    "codes/openfoam/make_xiao_dns_wmles_case.py": {
+      "bytes": 5556,
+      "sha256": "fbfb1b330557832ec2c96a923f1ca294abaab5fde0b63a4f3ca8cc98d69fab23"
+    },
+    "codes/raw_data/geometry_driven/xiao_pehill_parameterized/pehill-29-cases-DNS/README_NEWDATABASE.pdf": {
+      "bytes": 1488360,
+      "sha256": "57108d29df61969df10830c46fec6074af626edb9a9c3c94a6d73a669ccb583d"
+    },
+    "codes/raw_data/geometry_driven/xiao_pehill_parameterized/utility/hill-geometry-gereration/hillShape.py": {
+      "bytes": 4109,
+      "sha256": "4354400e9aee021e003f8b535bab6ebda7aabe8d513b1877d6dd5795d5ef288c"
+    },
+    "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz": {
+      "bytes": 4239856,
+      "sha256": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85"
+    },
+    "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/CAMPAIGN_MANIFEST.json": {
+      "bytes": 1902,
+      "sha256": "7dbfe62445c915325a045d5221faea8be4678c9f76aed89278650c8cd337071a"
+    },
+    "development/nodes/node_007/corrected_re5600_native/fig_common_surface_grid_l2.pdf": {
+      "bytes": 30867,
+      "sha256": "8284c9ee3566a5ea34a24abc827db1bafb7103c9420f4928cfb077365aa63e73"
+    },
+    "development/nodes/node_007/corrected_re5600_native/fig_common_surface_grid_l2.png": {
+      "bytes": 239728,
+      "sha256": "30360cc6ac62b019024919c251b7a7f627a7c04250ab94a021aa3a06683c2fab"
+    },
+    "development/nodes/node_007/corrected_re5600_native/results_summary_l2.json": {
+      "bytes": 44133,
+      "sha256": "71fa0f714340f80dfb2ec4bf2160a16b6611b1395499485f5e1f4e02fc282dda"
+    },
+    "development/nodes/node_007/corrected_re5600_native/rswm_common_surface_grid_l2.npz": {
+      "bytes": 129094,
+      "sha256": "da456a9ec9c75b096b17257aa9075ae708b1c9c9720404c2350dda57bc019106"
+    },
+    "development/nodes/node_007/corrected_re5600_native/rswm_common_surface_grid_l2_summary.json": {
+      "bytes": 44133,
+      "sha256": "71fa0f714340f80dfb2ec4bf2160a16b6611b1395499485f5e1f4e02fc282dda"
+    }
+  },
+  "status": "RSWM_COMMON_SURFACE_GRID_L2_ANALYSIS_HASH_OK"
+}

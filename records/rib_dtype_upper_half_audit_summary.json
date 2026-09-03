@@ -1,0 +1,86 @@
+{
+ "schema": "rib-dtype-upper-half-audit-v1",
+ "case": "codes/openfoam/rib_les_dtype",
+ "cells": 94976,
+ "nu": 0.0002380952380952381,
+ "averaging_time_start": 40.0,
+ "windows": [
+  60.00073791,
+  80.00104278,
+  99.99809652,
+  120.00046185,
+  139.99984127
+ ],
+ "rows": [
+  {
+   "window_end": 60.00073791,
+   "vv_upper": 1.0591302265720908e-08,
+   "ww_upper": 8.031910505308446e-08,
+   "uu_upper": 0.00017628256754383183,
+   "vv_shear": 0.0018667692354070685,
+   "uv_shear": -0.0015767341020688516,
+   "nut_over_nu": 0.00017923417467528892
+  },
+  {
+   "window_end": 80.00104278,
+   "vv_upper": 1.6078033190235196e-08,
+   "ww_upper": 4.853677674438541e-08,
+   "uu_upper": 0.0007258184635038021,
+   "vv_shear": 0.0023299878636769077,
+   "uv_shear": -0.002416235528988188,
+   "nut_over_nu": 0.0027601670123769675
+  },
+  {
+   "window_end": 99.99809652,
+   "vv_upper": 4.906400972452455e-08,
+   "ww_upper": 3.6619131048716515e-08,
+   "uu_upper": 0.0013877715986305805,
+   "vv_shear": 0.002609589276601915,
+   "uv_shear": -0.003202019374276167,
+   "nut_over_nu": 0.0040497435854442215
+  },
+  {
+   "window_end": 120.00046185,
+   "vv_upper": 5.06670090655119e-08,
+   "ww_upper": 3.414721318993229e-08,
+   "uu_upper": 0.0021682044524100447,
+   "vv_shear": 0.002620581338315542,
+   "uv_shear": -0.0032173017499626815,
+   "nut_over_nu": 0.0014045567472850092
+  },
+  {
+   "window_end": 139.99984127,
+   "vv_upper": 5.684349049385268e-08,
+   "ww_upper": 3.6282941830357144e-08,
+   "uu_upper": 0.002847293872246875,
+   "vv_shear": 0.002517705422950196,
+   "uv_shear": -0.0030048550328863567,
+   "nut_over_nu": 0.006315163699033133
+  }
+ ],
+ "criterion": {
+  "vv_upper_max_for_laminar": 1e-06,
+  "band_upper": [
+   1.4,
+   1.8
+  ],
+  "band_shear": [
+   0.2,
+   0.6
+  ],
+  "band_nut": [
+   1.0,
+   1.8
+  ]
+ },
+ "laminar_upper_half": true,
+ "verdict": "DEPOSIT_NOT_TURBULENT_WRLES: upper half laminar over the entire averaging window; resolved-fraction 0.992 degenerate",
+ "source_sha256": {
+  "60.00073791": "0f5e6cbfcba74aa4b47fd2989eee2912cef843b5ca59c359d5c9dd9f16881b9b",
+  "80.00104278": "74f7af263d533ed125de872abb610a9970ebfe15ad0450beb806fe70d180c8fd",
+  "99.99809652": "c508ed1b4be2e0320e1ecef62872b9d276fe707b6d82a0e10e180c1f5ff12b61",
+  "120.00046185": "e1d5649018efc1193cd8f16ff2df9d14def5c45b9cf8bbce91c2683b0ffd8dac",
+  "139.99984127": "58154aa3ea6aa61bcaee7fda829d1d9f75b4eb80ade5f341f71cab1de8b8448f"
+ },
+ "cross_reference": "work_progress/archer2_campaign_20260823/R2-4_M20/REBASE.md"
+}

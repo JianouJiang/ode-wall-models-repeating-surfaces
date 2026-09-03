@@ -1,0 +1,2779 @@
+{
+  "schema": "model-matched-transfer-l2-v1",
+  "date": "20260824",
+  "node": "development/nodes/node_010",
+  "row": "R2-3 / M6 (re-reduction; no new simulation)",
+  "case_under_test": "Xiao et al. alpha=1 periodic hill, Re_H = 5600, corrected crest-bulk drive",
+  "repairs": {
+    "R1_model_identity": "each coupled arm paired with the a-priori evaluation of its own deployed architecture, proved from input/nut",
+    "R2_commensurate_sensitivity": "station, grid and averaging-window sensitivities are all differences of E_tau",
+    "R3_case_correct_ycrit": "critical height taken from the periodic_hills_1p0 row, not krank_pehill_Re10595",
+    "R4_drive_gate_provenance": "registered single-slice 3% gate scored as registered; exact controller/volume identity bound separately; slice fluxes demoted to diagnostic"
+  },
+  "wall_model_identity": {
+    "equilibrium": {
+      "deployed_bc": "nutUSpaldingWallFunction",
+      "apriori_member": "M0_equilibrium",
+      "kappa": 0.41,
+      "E": 9.8,
+      "B": 5.566786306528114,
+      "calibration_note": "the cases declare only 'type nutUSpaldingWallFunction;', so the OpenFOAM Foundation 10 defaults kappa = 0.41, E = 9.8 apply and B = ln(E)/kappa = 5.5668.  The a-priori M0 is evaluated with THESE constants, not the Python ladder's B = 5.0 default; the difference is reported per point as spalding_calibration_sensitivity."
+    },
+    "total_gradient_tble": {
+      "deployed_bc": "totalGradientTbleNut",
+      "apriori_member": "M1_pressure_gradient_ode",
+      "kappa": 0.41,
+      "A_plus": 26.0,
+      "calibration_note": "totalGradientTbleNutFvPatchScalarField.C hard-codes kappa = 0.41 and Aplus = 26.0; these equal the Python ladder's KAPPA_MIXING and VAN_DRIEST_A, so M1 needs no calibration adjustment."
+    },
+    "root_selection_note": "M1 keeps the pinned r2m4 root policy (all sign-changing brackets resolved, the root closest to the Spalding continuation state selected).  That continuation seed uses the ladder's Spalding default; it is a root-selection device, not the model, and is left unchanged so this reduction stays comparable with the closed R2-m4 row.  roots_M1_max is reported per point."
+  },
+  "points": {
+    "0145:G1c:equilibrium": {
+      "case_id": "rswm_m13_re5600_g1_equilibrium_307200_v2",
+      "producer_job_id": "14889022",
+      "case_dir": "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g1_equilibrium_307200_v2",
+      "ym_over_H": 0.014515746,
+      "ym_measured_flat_over_H": 0.014515745999999998,
+      "ym_plus_dns_median": 1.866627335122608,
+      "model": "equilibrium",
+      "deployed_nut_bc": "nutUSpaldingWallFunction",
+      "apriori_member_matched": "M0_equilibrium",
+      "deployed_constants": {
+        "kappa": 0.41,
+        "E": 9.8,
+        "B": 5.566786306528114,
+        "declared_in_case": {
+          "kappa": false,
+          "E": false
+        },
+        "source": "OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)"
+      },
+      "spalding_calibration_sensitivity": {
+        "B_deployed": 5.566786306528114,
+        "B_ladder_default": 5.0,
+        "relative_rms_at_ladder_default_B": 0.5159948265792245,
+        "r2_at_ladder_default_B": 0.7184290279997526,
+        "delta_relative_rms": -0.0023439743417992265
+      },
+      "coupled": {
+        "relative_rms": 1.5607045490436502,
+        "r2": -1.5759567935750036,
+        "relative_rms_interval": {
+          "high": 1.7160520659760101,
+          "low": 0.8059078923004014,
+          "median": 1.5517685620847974
+        },
+        "reattachment_x_over_H": 4.398599773305699,
+        "reattachment_bias_over_H": -0.07481886955104589
+      },
+      "apriori_matched": {
+        "member": "M0_equilibrium",
+        "relative_rms": 0.5136508522374252,
+        "r2": 0.7209813639632524,
+        "relative_rms_interval": {
+          "low": 0.25199414631349704,
+          "median": 0.5071916231434968,
+          "high": 0.5941251038843428
+        },
+        "sign_accuracy": 0.9658203125,
+        "signed_force_ratio": 0.7671111050593271,
+        "reversed_fraction": 0.489013671875,
+        "roots_M1_max": null
+      },
+      "apriori_mismatched_architecture": {
+        "member": "M1_pressure_gradient_ode",
+        "relative_rms": 1.1598740496819102,
+        "r2": -0.4227180751965105,
+        "relative_rms_interval": {
+          "low": 0.6738224215213496,
+          "median": 1.1504226315370962,
+          "high": 1.2648574023368215
+        },
+        "sign_accuracy": 0.82861328125,
+        "signed_force_ratio": 0.47154662065789166,
+        "reversed_fraction": 0.626220703125,
+        "roots_M1_max": 1.0
+      },
+      "apriori_identity_error_factor": 0.4428505425897678,
+      "deposited_apriori_relrms_yH_axis": 2.650941748137026,
+      "window_sensitivity": {
+        "window_origin": 135.0,
+        "per_checkpoint": {
+          "315": {
+            "checkpoint_time": 315.0,
+            "window_length": 180.0,
+            "relative_rms": 1.5411457108449746,
+            "r2": -1.511797299616616
+          },
+          "360": {
+            "checkpoint_time": 360.0,
+            "window_length": 225.0,
+            "relative_rms": 1.5488492929765083,
+            "r2": -1.5369710359819098
+          },
+          "405": {
+            "checkpoint_time": 405.0,
+            "window_length": 270.0,
+            "relative_rms": 1.5607044449867862,
+            "r2": -1.5759564704774869
+          }
+        },
+        "window_lengths": [
+          180.0,
+          225.0,
+          270.0
+        ],
+        "delta_Etau_180_to_225": 0.0077035821315336594,
+        "delta_Etau_225_to_270": 0.01185515201027787,
+        "max_abs_delta_Etau": 0.01185515201027787,
+        "delta_R2_180_to_225": -0.025173736365293742,
+        "delta_R2_225_to_270": -0.03898543449557712,
+        "max_abs_delta_R2": 0.03898543449557712,
+        "estimand": "E_tau = RMS(tau_model - tau_DNS)/RMS(tau_DNS) on the 4096-point dense phase grid"
+      },
+      "drive": {
+        "registered_single_slice_3pct_gate": {
+          "measured_crest_bulk_z2p25": 0.9781521223427371,
+          "abs_deviation": 0.021847877657262926,
+          "threshold": 0.03,
+          "outcome": "PASS"
+        },
+        "exact_controller_volume_identity": {
+          "crest_bulk_velocity_registered": 1.0000005195202408,
+          "window_Ubar_max_abs_deviation": 3.499999999823089e-07,
+          "registered_volume_average_Ubar": 0.721045,
+          "mesh_total_volume": 114.35908,
+          "holds": true
+        },
+        "slice_flux_homogeneity_diagnostic": {
+          "max_abs_deviation_fraction": 0.049423459558648575,
+          "expected_spanwise_mean": 2.036,
+          "authority": "none: ancillary spanwise-homogeneity measurement, not an admission gate"
+        }
+      }
+    },
+    "0145:G1c:total_gradient_tble": {
+      "case_id": "rswm_m13_re5600_g1_tble_307200_v2",
+      "producer_job_id": "14889021",
+      "case_dir": "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g1_tble_307200_v2",
+      "ym_over_H": 0.014515746,
+      "ym_measured_flat_over_H": 0.014515745999999998,
+      "ym_plus_dns_median": 1.866627335122608,
+      "model": "total_gradient_tble",
+      "deployed_nut_bc": "totalGradientTbleNut",
+      "apriori_member_matched": "M1_pressure_gradient_ode",
+      "deployed_constants": {
+        "kappa": 0.41,
+        "A_plus": 26.0,
+        "declared_in_case": {
+          "kappa": false,
+          "Aplus": false
+        },
+        "source": "totalGradientTbleNutFvPatchScalarField.C:135-136 (kappa = 0.41, Aplus = 26.0, hard-coded in the deployed kernel)"
+      },
+      "spalding_calibration_sensitivity": null,
+      "coupled": {
+        "relative_rms": 1.8145013004198065,
+        "r2": -2.4818635645597737,
+        "relative_rms_interval": {
+          "high": 2.0039666748915774,
+          "low": 0.8991414114632595,
+          "median": 1.8010343601579297
+        },
+        "reattachment_x_over_H": 4.174895057851873,
+        "reattachment_bias_over_H": -0.2985235850048724
+      },
+      "apriori_matched": {
+        "member": "M1_pressure_gradient_ode",
+        "relative_rms": 1.1598740496819102,
+        "r2": -0.4227180751965105,
+        "relative_rms_interval": {
+          "low": 0.6772156806889283,
+          "median": 1.1486814347569902,
+          "high": 1.2666755367879716
+        },
+        "sign_accuracy": 0.82861328125,
+        "signed_force_ratio": 0.47154662065789166,
+        "reversed_fraction": 0.626220703125,
+        "roots_M1_max": 1.0
+      },
+      "apriori_mismatched_architecture": {
+        "member": "M0_equilibrium",
+        "relative_rms": 0.5136508522374252,
+        "r2": 0.7209813639632524,
+        "relative_rms_interval": {
+          "low": 0.2531958592571762,
+          "median": 0.5077176963050523,
+          "high": 0.5923216754505282
+        },
+        "sign_accuracy": 0.9658203125,
+        "signed_force_ratio": 0.7671111050593271,
+        "reversed_fraction": 0.489013671875,
+        "roots_M1_max": null
+      },
+      "apriori_identity_error_factor": 2.2580981704392866,
+      "deposited_apriori_relrms_yH_axis": 2.650941748137026,
+      "window_sensitivity": {
+        "window_origin": 135.0,
+        "per_checkpoint": {
+          "315": {
+            "checkpoint_time": 315.0,
+            "window_length": 180.0,
+            "relative_rms": 1.8247171682432832,
+            "r2": -2.521180610766817
+          },
+          "360": {
+            "checkpoint_time": 360.0,
+            "window_length": 225.0,
+            "relative_rms": 1.8147299491541273,
+            "r2": -2.4827411598259093
+          },
+          "405": {
+            "checkpoint_time": 405.0,
+            "window_length": 270.0,
+            "relative_rms": 1.8145012807008563,
+            "r2": -2.48186351645089
+          }
+        },
+        "window_lengths": [
+          180.0,
+          225.0,
+          270.0
+        ],
+        "delta_Etau_180_to_225": -0.009987219089155897,
+        "delta_Etau_225_to_270": -0.00022866845327107477,
+        "max_abs_delta_Etau": 0.009987219089155897,
+        "delta_R2_180_to_225": 0.038439450940907616,
+        "delta_R2_225_to_270": 0.0008776433750190549,
+        "max_abs_delta_R2": 0.038439450940907616,
+        "estimand": "E_tau = RMS(tau_model - tau_DNS)/RMS(tau_DNS) on the 4096-point dense phase grid"
+      },
+      "drive": {
+        "registered_single_slice_3pct_gate": {
+          "measured_crest_bulk_z2p25": 1.003535375600966,
+          "abs_deviation": 0.003535375600965951,
+          "threshold": 0.03,
+          "outcome": "PASS"
+        },
+        "exact_controller_volume_identity": {
+          "crest_bulk_velocity_registered": 1.0000005195202408,
+          "window_Ubar_max_abs_deviation": 2.9999999995311555e-07,
+          "registered_volume_average_Ubar": 0.721045,
+          "mesh_total_volume": 114.35908,
+          "holds": true
+        },
+        "slice_flux_homogeneity_diagnostic": {
+          "max_abs_deviation_fraction": 0.01189147727669515,
+          "expected_spanwise_mean": 2.036,
+          "authority": "none: ancillary spanwise-homogeneity measurement, not an admission gate"
+        }
+      }
+    },
+    "0145:G2c:equilibrium": {
+      "case_id": "rswm_m13_re5600_g2_equilibrium_819200_v2",
+      "producer_job_id": "14889026",
+      "case_dir": "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g2_equilibrium_819200_v2",
+      "ym_over_H": 0.014515746,
+      "ym_measured_flat_over_H": 0.014515746,
+      "ym_plus_dns_median": 1.8641360672084493,
+      "model": "equilibrium",
+      "deployed_nut_bc": "nutUSpaldingWallFunction",
+      "apriori_member_matched": "M0_equilibrium",
+      "deployed_constants": {
+        "kappa": 0.41,
+        "E": 9.8,
+        "B": 5.566786306528114,
+        "declared_in_case": {
+          "kappa": false,
+          "E": false
+        },
+        "source": "OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)"
+      },
+      "spalding_calibration_sensitivity": {
+        "B_deployed": 5.566786306528114,
+        "B_ladder_default": 5.0,
+        "relative_rms_at_ladder_default_B": 0.5784163243889282,
+        "r2_at_ladder_default_B": 0.646183348499688,
+        "delta_relative_rms": -0.003511093672151855
+      },
+      "coupled": {
+        "relative_rms": 1.5669134570781087,
+        "r2": -1.5964932786467823,
+        "relative_rms_interval": {
+          "high": 1.7298237601072848,
+          "low": 0.7746798281558206,
+          "median": 1.5564520868327443
+        },
+        "reattachment_x_over_H": 4.153274607697916,
+        "reattachment_bias_over_H": -0.3201440351588296
+      },
+      "apriori_matched": {
+        "member": "M0_equilibrium",
+        "relative_rms": 0.5749052307167763,
+        "r2": 0.6504657759118098,
+        "relative_rms_interval": {
+          "low": 0.25311974833776224,
+          "median": 0.5671299725858681,
+          "high": 0.650442277262637
+        },
+        "sign_accuracy": 0.9677734375,
+        "signed_force_ratio": 0.8247627807828617,
+        "reversed_fraction": 0.487060546875,
+        "roots_M1_max": null
+      },
+      "apriori_mismatched_architecture": {
+        "member": "M1_pressure_gradient_ode",
+        "relative_rms": 1.3497967934461086,
+        "r2": -0.9267881626322236,
+        "relative_rms_interval": {
+          "low": 0.6683053343664958,
+          "median": 1.3376556128055714,
+          "high": 1.5148174525882807
+        },
+        "sign_accuracy": 0.842529296875,
+        "signed_force_ratio": 0.6409378472743738,
+        "reversed_fraction": 0.6123046875,
+        "roots_M1_max": 1.0
+      },
+      "apriori_identity_error_factor": 0.42591983734752425,
+      "deposited_apriori_relrms_yH_axis": 2.650941748137026,
+      "window_sensitivity": {
+        "window_origin": 135.0,
+        "per_checkpoint": {
+          "315": {
+            "checkpoint_time": 315.0,
+            "window_length": 180.0,
+            "relative_rms": 1.4968979814937118,
+            "r2": -1.3696357365687666
+          },
+          "360": {
+            "checkpoint_time": 360.0,
+            "window_length": 225.0,
+            "relative_rms": 1.5114964164369775,
+            "r2": -1.4160806604459957
+          },
+          "405": {
+            "checkpoint_time": 405.0,
+            "window_length": 270.0,
+            "relative_rms": 1.5669134557555815,
+            "r2": -1.5964932948223733
+          }
+        },
+        "window_lengths": [
+          180.0,
+          225.0,
+          270.0
+        ],
+        "delta_Etau_180_to_225": 0.014598434943265737,
+        "delta_Etau_225_to_270": 0.05541703931860398,
+        "max_abs_delta_Etau": 0.05541703931860398,
+        "delta_R2_180_to_225": -0.046444923877229094,
+        "delta_R2_225_to_270": -0.18041263437637767,
+        "max_abs_delta_R2": 0.18041263437637767,
+        "estimand": "E_tau = RMS(tau_model - tau_DNS)/RMS(tau_DNS) on the 4096-point dense phase grid"
+      },
+      "drive": {
+        "registered_single_slice_3pct_gate": {
+          "measured_crest_bulk_z2p25": 1.0197293362520483,
+          "abs_deviation": 0.019729336252048313,
+          "threshold": 0.03,
+          "outcome": "PASS"
+        },
+        "exact_controller_volume_identity": {
+          "crest_bulk_velocity_registered": 0.9999999074128649,
+          "window_Ubar_max_abs_deviation": 1.9000000006652584e-07,
+          "registered_volume_average_Ubar": 0.721045,
+          "mesh_total_volume": 114.35901,
+          "holds": true
+        },
+        "slice_flux_homogeneity_diagnostic": {
+          "max_abs_deviation_fraction": 0.027752619580326154,
+          "expected_spanwise_mean": 2.036,
+          "authority": "none: ancillary spanwise-homogeneity measurement, not an admission gate"
+        }
+      }
+    },
+    "0145:G2c:total_gradient_tble": {
+      "case_id": "rswm_m13_re5600_g2_tble_819200_v2",
+      "producer_job_id": "14889025",
+      "case_dir": "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g2_tble_819200_v2",
+      "ym_over_H": 0.014515746,
+      "ym_measured_flat_over_H": 0.014515746,
+      "ym_plus_dns_median": 1.8641360672084493,
+      "model": "total_gradient_tble",
+      "deployed_nut_bc": "totalGradientTbleNut",
+      "apriori_member_matched": "M1_pressure_gradient_ode",
+      "deployed_constants": {
+        "kappa": 0.41,
+        "A_plus": 26.0,
+        "declared_in_case": {
+          "kappa": false,
+          "Aplus": false
+        },
+        "source": "totalGradientTbleNutFvPatchScalarField.C:135-136 (kappa = 0.41, Aplus = 26.0, hard-coded in the deployed kernel)"
+      },
+      "spalding_calibration_sensitivity": null,
+      "coupled": {
+        "relative_rms": 1.7011341817795407,
+        "r2": -2.060372735468027,
+        "relative_rms_interval": {
+          "high": 1.8811483435871736,
+          "low": 0.8897687755491019,
+          "median": 1.6903334601354187
+        },
+        "reattachment_x_over_H": 4.458385421024365,
+        "reattachment_bias_over_H": -0.015033221832379873
+      },
+      "apriori_matched": {
+        "member": "M1_pressure_gradient_ode",
+        "relative_rms": 1.3497967934461086,
+        "r2": -0.9267881626322236,
+        "relative_rms_interval": {
+          "low": 0.6769268405826199,
+          "median": 1.3370054896392554,
+          "high": 1.5146324770967927
+        },
+        "sign_accuracy": 0.842529296875,
+        "signed_force_ratio": 0.6409378472743738,
+        "reversed_fraction": 0.6123046875,
+        "roots_M1_max": 1.0
+      },
+      "apriori_mismatched_architecture": {
+        "member": "M0_equilibrium",
+        "relative_rms": 0.5749052307167763,
+        "r2": 0.6504657759118098,
+        "relative_rms_interval": {
+          "low": 0.25880120505594467,
+          "median": 0.5663961373688684,
+          "high": 0.651195713802117
+        },
+        "sign_accuracy": 0.9677734375,
+        "signed_force_ratio": 0.8247627807828617,
+        "reversed_fraction": 0.487060546875,
+        "roots_M1_max": null
+      },
+      "apriori_identity_error_factor": 2.3478596494299038,
+      "deposited_apriori_relrms_yH_axis": 2.650941748137026,
+      "window_sensitivity": {
+        "window_origin": 135.0,
+        "per_checkpoint": {
+          "315": {
+            "checkpoint_time": 315.0,
+            "window_length": 180.0,
+            "relative_rms": 1.6469562499699193,
+            "r2": -1.8685426446277291
+          },
+          "360": {
+            "checkpoint_time": 360.0,
+            "window_length": 225.0,
+            "relative_rms": 1.6746958216564214,
+            "r2": -1.965985741158434
+          },
+          "405": {
+            "checkpoint_time": 405.0,
+            "window_length": 270.0,
+            "relative_rms": 1.7011342735876955,
+            "r2": -2.0603730900288437
+          }
+        },
+        "window_lengths": [
+          180.0,
+          225.0,
+          270.0
+        ],
+        "delta_Etau_180_to_225": 0.027739571686502096,
+        "delta_Etau_225_to_270": 0.026438451931274143,
+        "max_abs_delta_Etau": 0.027739571686502096,
+        "delta_R2_180_to_225": -0.09744309653070493,
+        "delta_R2_225_to_270": -0.09438734887040967,
+        "max_abs_delta_R2": 0.09744309653070493,
+        "estimand": "E_tau = RMS(tau_model - tau_DNS)/RMS(tau_DNS) on the 4096-point dense phase grid"
+      },
+      "drive": {
+        "registered_single_slice_3pct_gate": {
+          "measured_crest_bulk_z2p25": 0.9974684811203935,
+          "abs_deviation": 0.0025315188796064536,
+          "threshold": 0.03,
+          "outcome": "PASS"
+        },
+        "exact_controller_volume_identity": {
+          "crest_bulk_velocity_registered": 0.9999999074128649,
+          "window_Ubar_max_abs_deviation": 2.1999999999522402e-07,
+          "registered_volume_average_Ubar": 0.721045,
+          "mesh_total_volume": 114.35901,
+          "holds": true
+        },
+        "slice_flux_homogeneity_diagnostic": {
+          "max_abs_deviation_fraction": 0.01938220224093823,
+          "expected_spanwise_mean": 2.036,
+          "authority": "none: ancillary spanwise-homogeneity measurement, not an admission gate"
+        }
+      }
+    },
+    "0300:G1c:equilibrium": {
+      "case_id": "rswm_r23m6_ym0300_g1_equilibrium_307200_v1",
+      "producer_job_id": "14906183",
+      "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym0300_cont/rswm_r23m6_ym0300_g1_equilibrium_307200_v1",
+      "ym_over_H": 0.03,
+      "ym_measured_flat_over_H": 0.030000000000000002,
+      "ym_plus_dns_median": 3.85779828702419,
+      "model": "equilibrium",
+      "deployed_nut_bc": "nutUSpaldingWallFunction",
+      "apriori_member_matched": "M0_equilibrium",
+      "deployed_constants": {
+        "kappa": 0.41,
+        "E": 9.8,
+        "B": 5.566786306528114,
+        "declared_in_case": {
+          "kappa": false,
+          "E": false
+        },
+        "source": "OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)"
+      },
+      "spalding_calibration_sensitivity": {
+        "B_deployed": 5.566786306528114,
+        "B_ladder_default": 5.0,
+        "relative_rms_at_ladder_default_B": 0.480805068067137,
+        "r2_at_ladder_default_B": 0.7555245473092438,
+        "delta_relative_rms": -0.02197218314400151
+      },
+      "coupled": {
+        "relative_rms": 1.303617462017536,
+        "r2": -0.7972045951369708,
+        "relative_rms_interval": {
+          "high": 1.5394593809536687,
+          "low": 0.5676355626845733,
+          "median": 1.285799461158716
+        },
+        "reattachment_x_over_H": 4.102163844121102,
+        "reattachment_bias_over_H": -0.3712547987356434
+      },
+      "apriori_matched": {
+        "member": "M0_equilibrium",
+        "relative_rms": 0.4588328849231355,
+        "r2": 0.7773584286492742,
+        "relative_rms_interval": {
+          "low": 0.03971488353664564,
+          "median": 0.45408404253889456,
+          "high": 0.5226835261293998
+        },
+        "sign_accuracy": 0.98876953125,
+        "signed_force_ratio": 1.2501441529895019,
+        "reversed_fraction": 0.463623046875,
+        "roots_M1_max": null
+      },
+      "apriori_mismatched_architecture": {
+        "member": "M1_pressure_gradient_ode",
+        "relative_rms": 1.7627721059570942,
+        "r2": -2.2861662015432076,
+        "relative_rms_interval": {
+          "low": 0.9825867416596668,
+          "median": 1.7500443707524624,
+          "high": 1.9141885782574424
+        },
+        "sign_accuracy": 0.758544921875,
+        "signed_force_ratio": 0.5900349281371544,
+        "reversed_fraction": 0.6962890625,
+        "roots_M1_max": 1.0
+      },
+      "apriori_identity_error_factor": 0.26029052954296267,
+      "deposited_apriori_relrms_yH_axis": 4.006204072945337,
+      "window_sensitivity": {
+        "window_origin": 405.0,
+        "per_checkpoint": {
+          "585": {
+            "checkpoint_time": 585.0,
+            "window_length": 180.0,
+            "relative_rms": 1.3281073290771717,
+            "r2": -0.8653637466127184
+          },
+          "630": {
+            "checkpoint_time": 630.0,
+            "window_length": 225.0,
+            "relative_rms": 1.2975899147874481,
+            "r2": -0.7806235305250138
+          },
+          "675": {
+            "checkpoint_time": 675.0,
+            "window_length": 270.0,
+            "relative_rms": 1.303617312423559,
+            "r2": -0.7972041968978534
+          }
+        },
+        "window_lengths": [
+          180.0,
+          225.0,
+          270.0
+        ],
+        "delta_Etau_180_to_225": -0.030517414289723543,
+        "delta_Etau_225_to_270": 0.006027397636110932,
+        "max_abs_delta_Etau": 0.030517414289723543,
+        "delta_R2_180_to_225": 0.08474021608770466,
+        "delta_R2_225_to_270": -0.016580666372839614,
+        "max_abs_delta_R2": 0.08474021608770466,
+        "estimand": "E_tau = RMS(tau_model - tau_DNS)/RMS(tau_DNS) on the 4096-point dense phase grid"
+      },
+      "drive": {
+        "registered_single_slice_3pct_gate": {
+          "measured_crest_bulk_z2p25": 1.0191909223651459,
+          "abs_deviation": 0.019190922365145857,
+          "threshold": 0.03,
+          "outcome": "PASS"
+        },
+        "exact_controller_volume_identity": {
+          "crest_bulk_velocity_registered": 1.0000005195202408,
+          "window_Ubar_max_abs_deviation": 3.1000000000336314e-07,
+          "registered_volume_average_Ubar": 0.721045,
+          "mesh_total_volume": 114.35908,
+          "holds": true
+        },
+        "slice_flux_homogeneity_diagnostic": {
+          "max_abs_deviation_fraction": 0.0508139200005433,
+          "expected_spanwise_mean": 2.036,
+          "authority": "none: ancillary spanwise-homogeneity measurement, not an admission gate"
+        }
+      }
+    },
+    "0300:G1c:total_gradient_tble": {
+      "case_id": "rswm_r23m6_ym0300_g1_tble_307200_v1",
+      "producer_job_id": "14899579",
+      "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym0300/rswm_r23m6_ym0300_g1_tble_307200_v1",
+      "ym_over_H": 0.03,
+      "ym_measured_flat_over_H": 0.030000000000000002,
+      "ym_plus_dns_median": 3.85779828702419,
+      "model": "total_gradient_tble",
+      "deployed_nut_bc": "totalGradientTbleNut",
+      "apriori_member_matched": "M1_pressure_gradient_ode",
+      "deployed_constants": {
+        "kappa": 0.41,
+        "A_plus": 26.0,
+        "declared_in_case": {
+          "kappa": false,
+          "Aplus": false
+        },
+        "source": "totalGradientTbleNutFvPatchScalarField.C:135-136 (kappa = 0.41, Aplus = 26.0, hard-coded in the deployed kernel)"
+      },
+      "spalding_calibration_sensitivity": null,
+      "coupled": {
+        "relative_rms": 1.8678651133265396,
+        "r2": -2.6896757624028886,
+        "relative_rms_interval": {
+          "high": 2.073668372848402,
+          "low": 0.9016114214752468,
+          "median": 1.855303310926557
+        },
+        "reattachment_x_over_H": 4.595329680738672,
+        "reattachment_bias_over_H": 0.12191103788192681
+      },
+      "apriori_matched": {
+        "member": "M1_pressure_gradient_ode",
+        "relative_rms": 1.7627721059570942,
+        "r2": -2.2861662015432076,
+        "relative_rms_interval": {
+          "low": 0.9880353449211734,
+          "median": 1.7488453829019437,
+          "high": 1.9177898706944998
+        },
+        "sign_accuracy": 0.758544921875,
+        "signed_force_ratio": 0.5900349281371544,
+        "reversed_fraction": 0.6962890625,
+        "roots_M1_max": 1.0
+      },
+      "apriori_mismatched_architecture": {
+        "member": "M0_equilibrium",
+        "relative_rms": 0.4588328849231355,
+        "r2": 0.7773584286492742,
+        "relative_rms_interval": {
+          "low": 0.04001444642670605,
+          "median": 0.4533225029987513,
+          "high": 0.522623985292615
+        },
+        "sign_accuracy": 0.98876953125,
+        "signed_force_ratio": 1.2501441529895019,
+        "reversed_fraction": 0.463623046875,
+        "roots_M1_max": null
+      },
+      "apriori_identity_error_factor": 3.841860868913955,
+      "deposited_apriori_relrms_yH_axis": 4.006204072945337,
+      "window_sensitivity": {
+        "window_origin": 135.0,
+        "per_checkpoint": {
+          "315": {
+            "checkpoint_time": 315.0,
+            "window_length": 180.0,
+            "relative_rms": 1.8449035674987986,
+            "r2": -2.5995194667687698
+          },
+          "360": {
+            "checkpoint_time": 360.0,
+            "window_length": 225.0,
+            "relative_rms": 1.8541661240646607,
+            "r2": -2.6357538248737384
+          },
+          "405": {
+            "checkpoint_time": 405.0,
+            "window_length": 270.0,
+            "relative_rms": 1.8678651502995751,
+            "r2": -2.689675937686103
+          }
+        },
+        "window_lengths": [
+          180.0,
+          225.0,
+          270.0
+        ],
+        "delta_Etau_180_to_225": 0.009262556565862168,
+        "delta_Etau_225_to_270": 0.013699026234914369,
+        "max_abs_delta_Etau": 0.013699026234914369,
+        "delta_R2_180_to_225": -0.03623435810496867,
+        "delta_R2_225_to_270": -0.053922112812364364,
+        "max_abs_delta_R2": 0.053922112812364364,
+        "estimand": "E_tau = RMS(tau_model - tau_DNS)/RMS(tau_DNS) on the 4096-point dense phase grid"
+      },
+      "drive": {
+        "registered_single_slice_3pct_gate": {
+          "measured_crest_bulk_z2p25": 0.974920421793767,
+          "abs_deviation": 0.025079578206232966,
+          "threshold": 0.03,
+          "outcome": "PASS"
+        },
+        "exact_controller_volume_identity": {
+          "crest_bulk_velocity_registered": 1.0000005195202408,
+          "window_Ubar_max_abs_deviation": 2.600000000851921e-07,
+          "registered_volume_average_Ubar": 0.721045,
+          "mesh_total_volume": 114.35908,
+          "holds": true
+        },
+        "slice_flux_homogeneity_diagnostic": {
+          "max_abs_deviation_fraction": 0.045977130135241406,
+          "expected_spanwise_mean": 2.036,
+          "authority": "none: ancillary spanwise-homogeneity measurement, not an admission gate"
+        }
+      }
+    },
+    "0600:G1c:equilibrium": {
+      "case_id": "rswm_r23m6_ym0600_g1_equilibrium_307200_v1",
+      "producer_job_id": "14899595",
+      "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym0600/rswm_r23m6_ym0600_g1_equilibrium_307200_v1",
+      "ym_over_H": 0.06,
+      "ym_measured_flat_over_H": 0.060000000000000005,
+      "ym_plus_dns_median": 7.71559657404838,
+      "model": "equilibrium",
+      "deployed_nut_bc": "nutUSpaldingWallFunction",
+      "apriori_member_matched": "M0_equilibrium",
+      "deployed_constants": {
+        "kappa": 0.41,
+        "E": 9.8,
+        "B": 5.566786306528114,
+        "declared_in_case": {
+          "kappa": false,
+          "E": false
+        },
+        "source": "OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)"
+      },
+      "spalding_calibration_sensitivity": {
+        "B_deployed": 5.566786306528114,
+        "B_ladder_default": 5.0,
+        "relative_rms_at_ladder_default_B": 0.48590909336308397,
+        "r2_at_ladder_default_B": 0.750306499137632,
+        "delta_relative_rms": -0.049707896594132495
+      },
+      "coupled": {
+        "relative_rms": 1.0493613721481747,
+        "r2": -0.164521010937432,
+        "relative_rms_interval": {
+          "high": 1.504754673069529,
+          "low": 0.5559649429203982,
+          "median": 1.0286839336633855
+        },
+        "reattachment_x_over_H": 3.4262315101715757,
+        "reattachment_bias_over_H": -1.0471871326851696
+      },
+      "apriori_matched": {
+        "member": "M0_equilibrium",
+        "relative_rms": 0.43620119676895147,
+        "r2": 0.7987801175822036,
+        "relative_rms_interval": {
+          "low": 0.1944083905365056,
+          "median": 0.4307986974036465,
+          "high": 0.5290538373160889
+        },
+        "sign_accuracy": 0.977294921875,
+        "signed_force_ratio": 1.625637819240126,
+        "reversed_fraction": 0.43896484375,
+        "roots_M1_max": null
+      },
+      "apriori_mismatched_architecture": {
+        "member": "M1_pressure_gradient_ode",
+        "relative_rms": 2.4545361057935113,
+        "r2": -5.371417075140414,
+        "relative_rms_interval": {
+          "low": 1.530671153460445,
+          "median": 2.4372102587528417,
+          "high": 2.6586209362964635
+        },
+        "sign_accuracy": 0.580078125,
+        "signed_force_ratio": 0.20435274612586363,
+        "reversed_fraction": 0.867919921875,
+        "roots_M1_max": 1.0
+      },
+      "apriori_identity_error_factor": 0.17771227554541708,
+      "deposited_apriori_relrms_yH_axis": 5.178726615433652,
+      "window_sensitivity": {
+        "window_origin": 135.0,
+        "per_checkpoint": {
+          "315": {
+            "checkpoint_time": 315.0,
+            "window_length": 180.0,
+            "relative_rms": 1.04862000142688,
+            "r2": -0.16287614006730555
+          },
+          "360": {
+            "checkpoint_time": 360.0,
+            "window_length": 225.0,
+            "relative_rms": 1.0593418861192145,
+            "r2": -0.18677796560543225
+          },
+          "405": {
+            "checkpoint_time": 405.0,
+            "window_length": 270.0,
+            "relative_rms": 1.0493611910302192,
+            "r2": -0.16452061816934682
+          }
+        },
+        "window_lengths": [
+          180.0,
+          225.0,
+          270.0
+        ],
+        "delta_Etau_180_to_225": 0.010721884692334482,
+        "delta_Etau_225_to_270": -0.00998069508899535,
+        "max_abs_delta_Etau": 0.010721884692334482,
+        "delta_R2_180_to_225": -0.023901825538126698,
+        "delta_R2_225_to_270": 0.02225734743608543,
+        "max_abs_delta_R2": 0.023901825538126698,
+        "estimand": "E_tau = RMS(tau_model - tau_DNS)/RMS(tau_DNS) on the 4096-point dense phase grid"
+      },
+      "drive": {
+        "registered_single_slice_3pct_gate": {
+          "measured_crest_bulk_z2p25": 1.01657372844068,
+          "abs_deviation": 0.016573728440679947,
+          "threshold": 0.03,
+          "outcome": "PASS"
+        },
+        "exact_controller_volume_identity": {
+          "crest_bulk_velocity_registered": 1.0000005195202408,
+          "window_Ubar_max_abs_deviation": 2.8000000007466497e-07,
+          "registered_volume_average_Ubar": 0.721045,
+          "mesh_total_volume": 114.35908,
+          "holds": true
+        },
+        "slice_flux_homogeneity_diagnostic": {
+          "max_abs_deviation_fraction": 0.058695719429157744,
+          "expected_spanwise_mean": 2.036,
+          "authority": "none: ancillary spanwise-homogeneity measurement, not an admission gate"
+        }
+      }
+    },
+    "0600:G1c:total_gradient_tble": {
+      "case_id": "rswm_r23m6_ym0600_g1_tble_307200_v1",
+      "producer_job_id": "14899592",
+      "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym0600/rswm_r23m6_ym0600_g1_tble_307200_v1",
+      "ym_over_H": 0.06,
+      "ym_measured_flat_over_H": 0.060000000000000005,
+      "ym_plus_dns_median": 7.71559657404838,
+      "model": "total_gradient_tble",
+      "deployed_nut_bc": "totalGradientTbleNut",
+      "apriori_member_matched": "M1_pressure_gradient_ode",
+      "deployed_constants": {
+        "kappa": 0.41,
+        "A_plus": 26.0,
+        "declared_in_case": {
+          "kappa": false,
+          "Aplus": false
+        },
+        "source": "totalGradientTbleNutFvPatchScalarField.C:135-136 (kappa = 0.41, Aplus = 26.0, hard-coded in the deployed kernel)"
+      },
+      "spalding_calibration_sensitivity": null,
+      "coupled": {
+        "relative_rms": 2.3211373435545912,
+        "r2": -4.697690563790874,
+        "relative_rms_interval": {
+          "high": 2.620201249710327,
+          "low": 0.9851685852159575,
+          "median": 2.3018927848116246
+        },
+        "reattachment_x_over_H": 4.059093297042782,
+        "reattachment_bias_over_H": -0.4143253458139631
+      },
+      "apriori_matched": {
+        "member": "M1_pressure_gradient_ode",
+        "relative_rms": 2.4545361057935113,
+        "r2": -5.371417075140414,
+        "relative_rms_interval": {
+          "low": 1.5279419964171868,
+          "median": 2.438114780669517,
+          "high": 2.653943151025382
+        },
+        "sign_accuracy": 0.580078125,
+        "signed_force_ratio": 0.20435274612586363,
+        "reversed_fraction": 0.867919921875,
+        "roots_M1_max": 1.0
+      },
+      "apriori_mismatched_architecture": {
+        "member": "M0_equilibrium",
+        "relative_rms": 0.43620119676895147,
+        "r2": 0.7987801175822036,
+        "relative_rms_interval": {
+          "low": 0.19478506325344655,
+          "median": 0.43162352443196,
+          "high": 0.5296607425152604
+        },
+        "sign_accuracy": 0.977294921875,
+        "signed_force_ratio": 1.625637819240126,
+        "reversed_fraction": 0.43896484375,
+        "roots_M1_max": null
+      },
+      "apriori_identity_error_factor": 5.627073295476625,
+      "deposited_apriori_relrms_yH_axis": 5.178726615433652,
+      "window_sensitivity": {
+        "window_origin": 135.0,
+        "per_checkpoint": {
+          "315": {
+            "checkpoint_time": 315.0,
+            "window_length": 180.0,
+            "relative_rms": 2.337733965792956,
+            "r2": -4.779461288750806
+          },
+          "360": {
+            "checkpoint_time": 360.0,
+            "window_length": 225.0,
+            "relative_rms": 2.2941835418782173,
+            "r2": -4.566132047718712
+          },
+          "405": {
+            "checkpoint_time": 405.0,
+            "window_length": 270.0,
+            "relative_rms": 2.3211373924486542,
+            "r2": -4.697690848944627
+          }
+        },
+        "window_lengths": [
+          180.0,
+          225.0,
+          270.0
+        ],
+        "delta_Etau_180_to_225": -0.04355042391473862,
+        "delta_Etau_225_to_270": 0.026953850570436977,
+        "max_abs_delta_Etau": 0.04355042391473862,
+        "delta_R2_180_to_225": 0.21332924103209372,
+        "delta_R2_225_to_270": -0.131558801225915,
+        "max_abs_delta_R2": 0.21332924103209372,
+        "estimand": "E_tau = RMS(tau_model - tau_DNS)/RMS(tau_DNS) on the 4096-point dense phase grid"
+      },
+      "drive": {
+        "registered_single_slice_3pct_gate": {
+          "measured_crest_bulk_z2p25": 0.9742179407229536,
+          "abs_deviation": 0.025782059277046354,
+          "threshold": 0.03,
+          "outcome": "PASS"
+        },
+        "exact_controller_volume_identity": {
+          "crest_bulk_velocity_registered": 1.0000005195202408,
+          "window_Ubar_max_abs_deviation": 7.900000000837792e-07,
+          "registered_volume_average_Ubar": 0.721045,
+          "mesh_total_volume": 114.35908,
+          "holds": true
+        },
+        "slice_flux_homogeneity_diagnostic": {
+          "max_abs_deviation_fraction": 0.035920457707735665,
+          "expected_spanwise_mean": 2.036,
+          "authority": "none: ancillary spanwise-homogeneity measurement, not an admission gate"
+        }
+      }
+    },
+    "0935:G1c:equilibrium": {
+      "case_id": "rswm_r23m6_ym0935_g1_equilibrium_307200_v1",
+      "producer_job_id": "14899598",
+      "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym0935/rswm_r23m6_ym0935_g1_equilibrium_307200_v1",
+      "ym_over_H": 0.0935,
+      "ym_measured_flat_over_H": 0.0935,
+      "ym_plus_dns_median": 12.02347132789206,
+      "model": "equilibrium",
+      "deployed_nut_bc": "nutUSpaldingWallFunction",
+      "apriori_member_matched": "M0_equilibrium",
+      "deployed_constants": {
+        "kappa": 0.41,
+        "E": 9.8,
+        "B": 5.566786306528114,
+        "declared_in_case": {
+          "kappa": false,
+          "E": false
+        },
+        "source": "OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)"
+      },
+      "spalding_calibration_sensitivity": {
+        "B_deployed": 5.566786306528114,
+        "B_ladder_default": 5.0,
+        "relative_rms_at_ladder_default_B": 0.5353728683899938,
+        "r2_at_ladder_default_B": 0.6968832737292856,
+        "delta_relative_rms": -0.047564381963482005
+      },
+      "coupled": {
+        "relative_rms": 0.7733193225563517,
+        "r2": 0.36756644309555087,
+        "relative_rms_interval": {
+          "high": 1.2672691757057495,
+          "low": 0.4038390121208833,
+          "median": 0.7643330910429553
+        },
+        "reattachment_x_over_H": 3.4775218942247483,
+        "reattachment_bias_over_H": -0.995896748631997
+      },
+      "apriori_matched": {
+        "member": "M0_equilibrium",
+        "relative_rms": 0.48780848642651176,
+        "r2": 0.7483506063559324,
+        "relative_rms_interval": {
+          "low": 0.270241717685538,
+          "median": 0.4844898253254788,
+          "high": 0.6994001011847226
+        },
+        "sign_accuracy": 0.96435546875,
+        "signed_force_ratio": 1.7661828700506108,
+        "reversed_fraction": 0.419189453125,
+        "roots_M1_max": null
+      },
+      "apriori_mismatched_architecture": {
+        "member": "M1_pressure_gradient_ode",
+        "relative_rms": 2.8422037872029486,
+        "r2": -7.542945050601112,
+        "relative_rms_interval": {
+          "low": 1.8634462203129485,
+          "median": 2.822062915790423,
+          "high": 3.0884105646062787
+        },
+        "sign_accuracy": 0.5673828125,
+        "signed_force_ratio": -0.0527985388692027,
+        "reversed_fraction": 0.870361328125,
+        "roots_M1_max": 1.0
+      },
+      "apriori_identity_error_factor": 0.17163036958253114,
+      "deposited_apriori_relrms_yH_axis": 6.0413611420483715,
+      "window_sensitivity": {
+        "window_origin": 135.0,
+        "per_checkpoint": {
+          "315": {
+            "checkpoint_time": 315.0,
+            "window_length": 180.0,
+            "relative_rms": 0.7949582507713414,
+            "r2": 0.33167789209080334
+          },
+          "360": {
+            "checkpoint_time": 360.0,
+            "window_length": 225.0,
+            "relative_rms": 0.7865033423947176,
+            "r2": 0.3458183912466608
+          },
+          "405": {
+            "checkpoint_time": 405.0,
+            "window_length": 270.0,
+            "relative_rms": 0.7733191300107047,
+            "r2": 0.36756675302214115
+          }
+        },
+        "window_lengths": [
+          180.0,
+          225.0,
+          270.0
+        ],
+        "delta_Etau_180_to_225": -0.008454908376623771,
+        "delta_Etau_225_to_270": -0.013184212384012906,
+        "max_abs_delta_Etau": 0.013184212384012906,
+        "delta_R2_180_to_225": 0.014140499155857467,
+        "delta_R2_225_to_270": 0.02174836177548034,
+        "max_abs_delta_R2": 0.02174836177548034,
+        "estimand": "E_tau = RMS(tau_model - tau_DNS)/RMS(tau_DNS) on the 4096-point dense phase grid"
+      },
+      "drive": {
+        "registered_single_slice_3pct_gate": {
+          "measured_crest_bulk_z2p25": 0.9759617566503558,
+          "abs_deviation": 0.024038243349644217,
+          "threshold": 0.03,
+          "outcome": "PASS"
+        },
+        "exact_controller_volume_identity": {
+          "crest_bulk_velocity_registered": 1.0000005195202408,
+          "window_Ubar_max_abs_deviation": 2.600000000851921e-07,
+          "registered_volume_average_Ubar": 0.721045,
+          "mesh_total_volume": 114.35908,
+          "holds": true
+        },
+        "slice_flux_homogeneity_diagnostic": {
+          "max_abs_deviation_fraction": 0.026923907672907088,
+          "expected_spanwise_mean": 2.036,
+          "authority": "none: ancillary spanwise-homogeneity measurement, not an admission gate"
+        }
+      }
+    },
+    "0935:G1c:total_gradient_tble": {
+      "case_id": "rswm_r23m6_ym0935_g1_tble_307200_v1",
+      "producer_job_id": "14904095",
+      "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym0935/rswm_r23m6_ym0935_g1_tble_307200_v1",
+      "ym_over_H": 0.0935,
+      "ym_measured_flat_over_H": 0.0935,
+      "ym_plus_dns_median": 12.02347132789206,
+      "model": "total_gradient_tble",
+      "deployed_nut_bc": "totalGradientTbleNut",
+      "apriori_member_matched": "M1_pressure_gradient_ode",
+      "deployed_constants": {
+        "kappa": 0.41,
+        "A_plus": 26.0,
+        "declared_in_case": {
+          "kappa": false,
+          "Aplus": false
+        },
+        "source": "totalGradientTbleNutFvPatchScalarField.C:135-136 (kappa = 0.41, Aplus = 26.0, hard-coded in the deployed kernel)"
+      },
+      "spalding_calibration_sensitivity": null,
+      "coupled": {
+        "relative_rms": 2.449768912693007,
+        "r2": -5.346691962161454,
+        "relative_rms_interval": {
+          "high": 2.7803467477063606,
+          "low": 0.9511343734148762,
+          "median": 2.420669474326201
+        },
+        "reattachment_x_over_H": 4.164705224178525,
+        "reattachment_bias_over_H": -0.3087134186782201
+      },
+      "apriori_matched": {
+        "member": "M1_pressure_gradient_ode",
+        "relative_rms": 2.8422037872029486,
+        "r2": -7.542945050601112,
+        "relative_rms_interval": {
+          "low": 1.8501263172343891,
+          "median": 2.8224619663505184,
+          "high": 3.0842974018269707
+        },
+        "sign_accuracy": 0.5673828125,
+        "signed_force_ratio": -0.0527985388692027,
+        "reversed_fraction": 0.870361328125,
+        "roots_M1_max": 1.0
+      },
+      "apriori_mismatched_architecture": {
+        "member": "M0_equilibrium",
+        "relative_rms": 0.48780848642651176,
+        "r2": 0.7483506063559324,
+        "relative_rms_interval": {
+          "low": 0.26914958520961413,
+          "median": 0.48437136032591577,
+          "high": 0.696928136451837
+        },
+        "sign_accuracy": 0.96435546875,
+        "signed_force_ratio": 1.7661828700506108,
+        "reversed_fraction": 0.419189453125,
+        "roots_M1_max": null
+      },
+      "apriori_identity_error_factor": 5.826474664317113,
+      "deposited_apriori_relrms_yH_axis": 6.0413611420483715,
+      "window_sensitivity": {
+        "window_origin": 135.0,
+        "per_checkpoint": {
+          "315": {
+            "checkpoint_time": 315.0,
+            "window_length": 180.0,
+            "relative_rms": 2.4048047709675804,
+            "r2": -5.115850138772935
+          },
+          "360": {
+            "checkpoint_time": 360.0,
+            "window_length": 225.0,
+            "relative_rms": 2.409100561750166,
+            "r2": -5.137719588349421
+          },
+          "405": {
+            "checkpoint_time": 405.0,
+            "window_length": 270.0,
+            "relative_rms": 2.4497689451753337,
+            "r2": -5.346692180719542
+          }
+        },
+        "window_lengths": [
+          180.0,
+          225.0,
+          270.0
+        ],
+        "delta_Etau_180_to_225": 0.0042957907825855735,
+        "delta_Etau_225_to_270": 0.040668383425167764,
+        "max_abs_delta_Etau": 0.040668383425167764,
+        "delta_R2_180_to_225": -0.021869449576485955,
+        "delta_R2_225_to_270": -0.2089725923701211,
+        "max_abs_delta_R2": 0.2089725923701211,
+        "estimand": "E_tau = RMS(tau_model - tau_DNS)/RMS(tau_DNS) on the 4096-point dense phase grid"
+      },
+      "drive": {
+        "registered_single_slice_3pct_gate": {
+          "measured_crest_bulk_z2p25": 0.9644032708940532,
+          "abs_deviation": 0.0355967291059468,
+          "threshold": 0.03,
+          "outcome": "FAIL"
+        },
+        "exact_controller_volume_identity": {
+          "crest_bulk_velocity_registered": 1.0000005195202408,
+          "window_Ubar_max_abs_deviation": 1.3700000000005375e-06,
+          "registered_volume_average_Ubar": 0.721045,
+          "mesh_total_volume": 114.35908,
+          "holds": true
+        },
+        "slice_flux_homogeneity_diagnostic": {
+          "max_abs_deviation_fraction": 0.040496885656970516,
+          "expected_spanwise_mean": 2.036,
+          "authority": "none: ancillary spanwise-homogeneity measurement, not an admission gate"
+        }
+      }
+    },
+    "1500:G1c:equilibrium": {
+      "case_id": "rswm_r23m6_ym1500_g1_equilibrium_307200_v1",
+      "producer_job_id": "14899600",
+      "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym1500/rswm_r23m6_ym1500_g1_equilibrium_307200_v1",
+      "ym_over_H": 0.15,
+      "ym_measured_flat_over_H": 0.15,
+      "ym_plus_dns_median": 19.28899143512095,
+      "model": "equilibrium",
+      "deployed_nut_bc": "nutUSpaldingWallFunction",
+      "apriori_member_matched": "M0_equilibrium",
+      "deployed_constants": {
+        "kappa": 0.41,
+        "E": 9.8,
+        "B": 5.566786306528114,
+        "declared_in_case": {
+          "kappa": false,
+          "E": false
+        },
+        "source": "OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)"
+      },
+      "spalding_calibration_sensitivity": {
+        "B_deployed": 5.566786306528114,
+        "B_ladder_default": 5.0,
+        "relative_rms_at_ladder_default_B": 0.5852545415845597,
+        "r2_at_ladder_default_B": 0.6377680362051538,
+        "delta_relative_rms": -0.03635327723521842
+      },
+      "coupled": {
+        "relative_rms": 0.6726748592636648,
+        "r2": 0.5214717572177393,
+        "relative_rms_interval": {
+          "high": 1.2345934038331057,
+          "low": 0.35232733606246225,
+          "median": 0.6799531334390276
+        },
+        "reattachment_x_over_H": 3.4075825301050418,
+        "reattachment_bias_over_H": -1.0658361127517035
+      },
+      "apriori_matched": {
+        "member": "M0_equilibrium",
+        "relative_rms": 0.5489012643493413,
+        "r2": 0.6813707453723771,
+        "relative_rms_interval": {
+          "low": 0.326965621181069,
+          "median": 0.5581992860474556,
+          "high": 0.9243323943068807
+        },
+        "sign_accuracy": 0.93798828125,
+        "signed_force_ratio": 1.8315226271737848,
+        "reversed_fraction": 0.392822265625,
+        "roots_M1_max": null
+      },
+      "apriori_mismatched_architecture": {
+        "member": "M1_pressure_gradient_ode",
+        "relative_rms": 3.2896152155338947,
+        "r2": -10.444251380297596,
+        "relative_rms_interval": {
+          "low": 2.1411771313065526,
+          "median": 3.2611011568753225,
+          "high": 3.5907145722353753
+        },
+        "sign_accuracy": 0.559326171875,
+        "signed_force_ratio": -0.2502132213612642,
+        "reversed_fraction": 0.8681640625,
+        "roots_M1_max": 1.0
+      },
+      "apriori_identity_error_factor": 0.16685880517495608,
+      "deposited_apriori_relrms_yH_axis": 7.234969998988509,
+      "window_sensitivity": {
+        "window_origin": 135.0,
+        "per_checkpoint": {
+          "315": {
+            "checkpoint_time": 315.0,
+            "window_length": 180.0,
+            "relative_rms": 0.6491010116942953,
+            "r2": 0.5544240339348144
+          },
+          "360": {
+            "checkpoint_time": 360.0,
+            "window_length": 225.0,
+            "relative_rms": 0.6772667355234574,
+            "r2": 0.5149163059715725
+          },
+          "405": {
+            "checkpoint_time": 405.0,
+            "window_length": 270.0,
+            "relative_rms": 0.6726746688887842,
+            "r2": 0.5214720242870068
+          }
+        },
+        "window_lengths": [
+          180.0,
+          225.0,
+          270.0
+        ],
+        "delta_Etau_180_to_225": 0.028165723829162048,
+        "delta_Etau_225_to_270": -0.004592066634673153,
+        "max_abs_delta_Etau": 0.028165723829162048,
+        "delta_R2_180_to_225": -0.03950772796324198,
+        "delta_R2_225_to_270": 0.0065557183154343335,
+        "max_abs_delta_R2": 0.03950772796324198,
+        "estimand": "E_tau = RMS(tau_model - tau_DNS)/RMS(tau_DNS) on the 4096-point dense phase grid"
+      },
+      "drive": {
+        "registered_single_slice_3pct_gate": {
+          "measured_crest_bulk_z2p25": 0.9985342663157482,
+          "abs_deviation": 0.0014657336842518465,
+          "threshold": 0.03,
+          "outcome": "PASS"
+        },
+        "exact_controller_volume_identity": {
+          "crest_bulk_velocity_registered": 1.0000005195202408,
+          "window_Ubar_max_abs_deviation": 2.500000000349445e-07,
+          "registered_volume_average_Ubar": 0.721045,
+          "mesh_total_volume": 114.35908,
+          "holds": true
+        },
+        "slice_flux_homogeneity_diagnostic": {
+          "max_abs_deviation_fraction": 0.09418016820533781,
+          "expected_spanwise_mean": 2.036,
+          "authority": "none: ancillary spanwise-homogeneity measurement, not an admission gate"
+        }
+      }
+    },
+    "1500:G1c:total_gradient_tble": {
+      "case_id": "rswm_r23m6_ym1500_g1_tble_307200_v1",
+      "producer_job_id": "14904096",
+      "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym1500/rswm_r23m6_ym1500_g1_tble_307200_v1",
+      "ym_over_H": 0.15,
+      "ym_measured_flat_over_H": 0.15,
+      "ym_plus_dns_median": 19.28899143512095,
+      "model": "total_gradient_tble",
+      "deployed_nut_bc": "totalGradientTbleNut",
+      "apriori_member_matched": "M1_pressure_gradient_ode",
+      "deployed_constants": {
+        "kappa": 0.41,
+        "A_plus": 26.0,
+        "declared_in_case": {
+          "kappa": false,
+          "Aplus": false
+        },
+        "source": "totalGradientTbleNutFvPatchScalarField.C:135-136 (kappa = 0.41, Aplus = 26.0, hard-coded in the deployed kernel)"
+      },
+      "spalding_calibration_sensitivity": null,
+      "coupled": {
+        "relative_rms": 2.740432640264208,
+        "r2": -6.942101720042582,
+        "relative_rms_interval": {
+          "high": 3.1156529188051,
+          "low": 1.2226185374675247,
+          "median": 2.7055690454775663
+        },
+        "reattachment_x_over_H": 4.162784279923542,
+        "reattachment_bias_over_H": -0.3106343629332029
+      },
+      "apriori_matched": {
+        "member": "M1_pressure_gradient_ode",
+        "relative_rms": 3.2896152155338947,
+        "r2": -10.444251380297596,
+        "relative_rms_interval": {
+          "low": 2.1545652723117574,
+          "median": 3.2646484155622755,
+          "high": 3.5871862909824626
+        },
+        "sign_accuracy": 0.559326171875,
+        "signed_force_ratio": -0.2502132213612642,
+        "reversed_fraction": 0.8681640625,
+        "roots_M1_max": 1.0
+      },
+      "apriori_mismatched_architecture": {
+        "member": "M0_equilibrium",
+        "relative_rms": 0.5489012643493413,
+        "r2": 0.6813707453723771,
+        "relative_rms_interval": {
+          "low": 0.32753646130234276,
+          "median": 0.5578131385956084,
+          "high": 0.9155232127067182
+        },
+        "sign_accuracy": 0.93798828125,
+        "signed_force_ratio": 1.8315226271737848,
+        "reversed_fraction": 0.392822265625,
+        "roots_M1_max": null
+      },
+      "apriori_identity_error_factor": 5.993090978635933,
+      "deposited_apriori_relrms_yH_axis": 7.234969998988509,
+      "window_sensitivity": {
+        "window_origin": 135.0,
+        "per_checkpoint": {
+          "315": {
+            "checkpoint_time": 315.0,
+            "window_length": 180.0,
+            "relative_rms": 2.7087353613977503,
+            "r2": -6.759439297042722
+          },
+          "360": {
+            "checkpoint_time": 360.0,
+            "window_length": 225.0,
+            "relative_rms": 2.7621046433026804,
+            "r2": -7.0682146015026674
+          },
+          "405": {
+            "checkpoint_time": 405.0,
+            "window_length": 270.0,
+            "relative_rms": 2.7404326408258544,
+            "r2": -6.94210178618239
+          }
+        },
+        "window_lengths": [
+          180.0,
+          225.0,
+          270.0
+        ],
+        "delta_Etau_180_to_225": 0.053369281904930066,
+        "delta_Etau_225_to_270": -0.02167200247682599,
+        "max_abs_delta_Etau": 0.053369281904930066,
+        "delta_R2_180_to_225": -0.30877530445994505,
+        "delta_R2_225_to_270": 0.12611281532027707,
+        "max_abs_delta_R2": 0.30877530445994505,
+        "estimand": "E_tau = RMS(tau_model - tau_DNS)/RMS(tau_DNS) on the 4096-point dense phase grid"
+      },
+      "drive": {
+        "registered_single_slice_3pct_gate": {
+          "measured_crest_bulk_z2p25": 0.9119621153112685,
+          "abs_deviation": 0.08803788468873153,
+          "threshold": 0.03,
+          "outcome": "FAIL"
+        },
+        "exact_controller_volume_identity": {
+          "crest_bulk_velocity_registered": 1.0000005195202408,
+          "window_Ubar_max_abs_deviation": 4.570000000092556e-06,
+          "registered_volume_average_Ubar": 0.721045,
+          "mesh_total_volume": 114.35908,
+          "holds": true
+        },
+        "slice_flux_homogeneity_diagnostic": {
+          "max_abs_deviation_fraction": 0.09627900784168353,
+          "expected_spanwise_mean": 2.036,
+          "authority": "none: ancillary spanwise-homogeneity measurement, not an admission gate"
+        }
+      }
+    },
+    "2500:G1c:equilibrium": {
+      "case_id": "rswm_r23m6_ym2500_g1_equilibrium_307200_v1",
+      "producer_job_id": "14899602",
+      "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym2500/rswm_r23m6_ym2500_g1_equilibrium_307200_v1",
+      "ym_over_H": 0.25,
+      "ym_measured_flat_over_H": 0.25,
+      "ym_plus_dns_median": 32.148319058534916,
+      "model": "equilibrium",
+      "deployed_nut_bc": "nutUSpaldingWallFunction",
+      "apriori_member_matched": "M0_equilibrium",
+      "deployed_constants": {
+        "kappa": 0.41,
+        "E": 9.8,
+        "B": 5.566786306528114,
+        "declared_in_case": {
+          "kappa": false,
+          "E": false
+        },
+        "source": "OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)"
+      },
+      "spalding_calibration_sensitivity": {
+        "B_deployed": 5.566786306528114,
+        "B_ladder_default": 5.0,
+        "relative_rms_at_ladder_default_B": 0.5990281015170908,
+        "r2_at_ladder_default_B": 0.6205176527760748,
+        "delta_relative_rms": -0.020341299496052456
+      },
+      "coupled": {
+        "relative_rms": 0.6072639174219698,
+        "r2": 0.6100111992839279,
+        "relative_rms_interval": {
+          "high": 1.1784014230959696,
+          "low": 0.34017657036431065,
+          "median": 0.6255940938442353
+        },
+        "reattachment_x_over_H": 3.49712930728882,
+        "reattachment_bias_over_H": -0.9762893355679254
+      },
+      "apriori_matched": {
+        "member": "M0_equilibrium",
+        "relative_rms": 0.5786868020210384,
+        "r2": 0.6458523693711814,
+        "relative_rms_interval": {
+          "low": 0.38380916223759814,
+          "median": 0.5933810841133892,
+          "high": 1.029463944388282
+        },
+        "sign_accuracy": 0.890625,
+        "signed_force_ratio": 1.8407627708287535,
+        "reversed_fraction": 0.345458984375,
+        "roots_M1_max": null
+      },
+      "apriori_mismatched_architecture": {
+        "member": "M1_pressure_gradient_ode",
+        "relative_rms": 3.903809576620425,
+        "r2": -15.116637419029086,
+        "relative_rms_interval": {
+          "low": 2.4833725648285094,
+          "median": 3.8727522549121844,
+          "high": 4.2725081064924755
+        },
+        "sign_accuracy": 0.55126953125,
+        "signed_force_ratio": -0.2667368101706265,
+        "reversed_fraction": 0.865966796875,
+        "roots_M1_max": 3.0
+      },
+      "apriori_identity_error_factor": 0.1482364317887694,
+      "deposited_apriori_relrms_yH_axis": null,
+      "window_sensitivity": {
+        "window_origin": 135.0,
+        "per_checkpoint": {
+          "315": {
+            "checkpoint_time": 315.0,
+            "window_length": 180.0,
+            "relative_rms": 0.6054700133543272,
+            "r2": 0.6123119064532699
+          },
+          "360": {
+            "checkpoint_time": 360.0,
+            "window_length": 225.0,
+            "relative_rms": 0.6053213513365023,
+            "r2": 0.612502262432782
+          },
+          "405": {
+            "checkpoint_time": 405.0,
+            "window_length": 270.0,
+            "relative_rms": 0.6072637385583323,
+            "r2": 0.6100114259307843
+          }
+        },
+        "window_lengths": [
+          180.0,
+          225.0,
+          270.0
+        ],
+        "delta_Etau_180_to_225": -0.0001486620178248188,
+        "delta_Etau_225_to_270": 0.0019423872218299332,
+        "max_abs_delta_Etau": 0.0019423872218299332,
+        "delta_R2_180_to_225": 0.00019035597951211347,
+        "delta_R2_225_to_270": -0.002490836501997773,
+        "max_abs_delta_R2": 0.002490836501997773,
+        "estimand": "E_tau = RMS(tau_model - tau_DNS)/RMS(tau_DNS) on the 4096-point dense phase grid"
+      },
+      "drive": {
+        "registered_single_slice_3pct_gate": {
+          "measured_crest_bulk_z2p25": 0.9126871106812542,
+          "abs_deviation": 0.08731288931874581,
+          "threshold": 0.03,
+          "outcome": "FAIL"
+        },
+        "exact_controller_volume_identity": {
+          "crest_bulk_velocity_registered": 1.0000005195202408,
+          "window_Ubar_max_abs_deviation": 2.399999999846969e-07,
+          "registered_volume_average_Ubar": 0.721045,
+          "mesh_total_volume": 114.35908,
+          "holds": true
+        },
+        "slice_flux_homogeneity_diagnostic": {
+          "max_abs_deviation_fraction": 0.0958213603143353,
+          "expected_spanwise_mean": 2.036,
+          "authority": "none: ancillary spanwise-homogeneity measurement, not an admission gate"
+        }
+      }
+    },
+    "2500:G1c:total_gradient_tble": {
+      "case_id": "rswm_r23m6_ym2500_g1_tble_307200_v1",
+      "producer_job_id": "14904099",
+      "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym2500/rswm_r23m6_ym2500_g1_tble_307200_v1",
+      "ym_over_H": 0.25,
+      "ym_measured_flat_over_H": 0.25,
+      "ym_plus_dns_median": 32.148319058534916,
+      "model": "total_gradient_tble",
+      "deployed_nut_bc": "totalGradientTbleNut",
+      "apriori_member_matched": "M1_pressure_gradient_ode",
+      "deployed_constants": {
+        "kappa": 0.41,
+        "A_plus": 26.0,
+        "declared_in_case": {
+          "kappa": false,
+          "Aplus": false
+        },
+        "source": "totalGradientTbleNutFvPatchScalarField.C:135-136 (kappa = 0.41, Aplus = 26.0, hard-coded in the deployed kernel)"
+      },
+      "spalding_calibration_sensitivity": null,
+      "coupled": {
+        "relative_rms": 2.8331069227438426,
+        "r2": -7.488346754821389,
+        "relative_rms_interval": {
+          "high": 3.2581947002396396,
+          "low": 1.127911273079379,
+          "median": 2.7905687157347554
+        },
+        "reattachment_x_over_H": 4.5094648390834635,
+        "reattachment_bias_over_H": 0.03604619622671823
+      },
+      "apriori_matched": {
+        "member": "M1_pressure_gradient_ode",
+        "relative_rms": 3.903809576620425,
+        "r2": -15.116637419029086,
+        "relative_rms_interval": {
+          "low": 2.4857163846092782,
+          "median": 3.874515559858773,
+          "high": 4.27547162283597
+        },
+        "sign_accuracy": 0.55126953125,
+        "signed_force_ratio": -0.2667368101706265,
+        "reversed_fraction": 0.865966796875,
+        "roots_M1_max": 3.0
+      },
+      "apriori_mismatched_architecture": {
+        "member": "M0_equilibrium",
+        "relative_rms": 0.5786868020210384,
+        "r2": 0.6458523693711814,
+        "relative_rms_interval": {
+          "low": 0.3849386599670676,
+          "median": 0.5939556751425346,
+          "high": 1.0179782290412351
+        },
+        "sign_accuracy": 0.890625,
+        "signed_force_ratio": 1.8407627708287535,
+        "reversed_fraction": 0.345458984375,
+        "roots_M1_max": null
+      },
+      "apriori_identity_error_factor": 6.745979972217339,
+      "deposited_apriori_relrms_yH_axis": null,
+      "window_sensitivity": {
+        "window_origin": 135.0,
+        "per_checkpoint": {
+          "315": {
+            "checkpoint_time": 315.0,
+            "window_length": 180.0,
+            "relative_rms": 2.756964300808454,
+            "r2": -7.038212266153465
+          },
+          "360": {
+            "checkpoint_time": 360.0,
+            "window_length": 225.0,
+            "relative_rms": 2.785260084219802,
+            "r2": -7.204057506746352
+          },
+          "405": {
+            "checkpoint_time": 405.0,
+            "window_length": 270.0,
+            "relative_rms": 2.833106880395855,
+            "r2": -7.488346568270989
+          }
+        },
+        "window_lengths": [
+          180.0,
+          225.0,
+          270.0
+        ],
+        "delta_Etau_180_to_225": 0.028295783411347752,
+        "delta_Etau_225_to_270": 0.04784679617605292,
+        "max_abs_delta_Etau": 0.04784679617605292,
+        "delta_R2_180_to_225": -0.16584524059288697,
+        "delta_R2_225_to_270": -0.2842890615246372,
+        "max_abs_delta_R2": 0.2842890615246372,
+        "estimand": "E_tau = RMS(tau_model - tau_DNS)/RMS(tau_DNS) on the 4096-point dense phase grid"
+      },
+      "drive": {
+        "registered_single_slice_3pct_gate": {
+          "measured_crest_bulk_z2p25": 0.9446792974547019,
+          "abs_deviation": 0.055320702545298084,
+          "threshold": 0.03,
+          "outcome": "FAIL"
+        },
+        "exact_controller_volume_identity": {
+          "crest_bulk_velocity_registered": 1.0000005195202408,
+          "window_Ubar_max_abs_deviation": 7.339999999911306e-06,
+          "registered_volume_average_Ubar": 0.721045,
+          "mesh_total_volume": 114.35908,
+          "holds": true
+        },
+        "slice_flux_homogeneity_diagnostic": {
+          "max_abs_deviation_fraction": 0.057907308196717855,
+          "expected_spanwise_mean": 2.036,
+          "authority": "none: ancillary spanwise-homogeneity measurement, not an admission gate"
+        }
+      }
+    },
+    "0300:G2c:equilibrium": {
+      "case_id": "rswm_r23m6_ym0300_g2_equilibrium_819200_v1",
+      "producer_job_id": "14899586",
+      "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym0300/rswm_r23m6_ym0300_g2_equilibrium_819200_v1",
+      "ym_over_H": 0.03,
+      "ym_measured_flat_over_H": 0.030000000000000002,
+      "ym_plus_dns_median": 3.852260505769925,
+      "model": "equilibrium",
+      "deployed_nut_bc": "nutUSpaldingWallFunction",
+      "apriori_member_matched": "M0_equilibrium",
+      "deployed_constants": {
+        "kappa": 0.41,
+        "E": 9.8,
+        "B": 5.566786306528114,
+        "declared_in_case": {
+          "kappa": false,
+          "E": false
+        },
+        "source": "OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)"
+      },
+      "spalding_calibration_sensitivity": {
+        "B_deployed": 5.566786306528114,
+        "B_ladder_default": 5.0,
+        "relative_rms_at_ladder_default_B": 0.5076496317747162,
+        "r2_at_ladder_default_B": 0.7274630845336112,
+        "delta_relative_rms": -0.023891321326565906
+      },
+      "coupled": {
+        "relative_rms": 1.1672668933273531,
+        "r2": -0.44091219798170367,
+        "relative_rms_interval": {
+          "high": 1.4156419371652778,
+          "low": 0.37328315979622817,
+          "median": 1.1529819136635708
+        },
+        "reattachment_x_over_H": 4.178540283888704,
+        "reattachment_bias_over_H": -0.2948783589680417
+      },
+      "apriori_matched": {
+        "member": "M0_equilibrium",
+        "relative_rms": 0.4837583104481503,
+        "r2": 0.752512047371439,
+        "relative_rms_interval": {
+          "low": 0.03799515595308707,
+          "median": 0.4785178514217715,
+          "high": 0.5526654757893378
+        },
+        "sign_accuracy": 0.989013671875,
+        "signed_force_ratio": 1.2970843915171661,
+        "reversed_fraction": 0.46533203125,
+        "roots_M1_max": null
+      },
+      "apriori_mismatched_architecture": {
+        "member": "M1_pressure_gradient_ode",
+        "relative_rms": 2.0585140320234596,
+        "r2": -3.481308565916688,
+        "relative_rms_interval": {
+          "low": 0.9860810415304091,
+          "median": 2.0388226215180527,
+          "high": 2.300368010369131
+        },
+        "sign_accuracy": 0.76025390625,
+        "signed_force_ratio": 0.8526348850799494,
+        "reversed_fraction": 0.680908203125,
+        "roots_M1_max": 1.0
+      },
+      "apriori_identity_error_factor": 0.23500364968249934,
+      "deposited_apriori_relrms_yH_axis": 4.006204072945337,
+      "window_sensitivity": {
+        "window_origin": 135.0,
+        "per_checkpoint": {
+          "315": {
+            "checkpoint_time": 315.0,
+            "window_length": 180.0,
+            "relative_rms": 1.1688945932837307,
+            "r2": -0.4449335827559735
+          },
+          "360": {
+            "checkpoint_time": 360.0,
+            "window_length": 225.0,
+            "relative_rms": 1.163061060334563,
+            "r2": -0.4305472822485743
+          },
+          "405": {
+            "checkpoint_time": 405.0,
+            "window_length": 270.0,
+            "relative_rms": 1.1672667549655242,
+            "r2": -0.4409118677939692
+          }
+        },
+        "window_lengths": [
+          180.0,
+          225.0,
+          270.0
+        ],
+        "delta_Etau_180_to_225": -0.0058335329491676635,
+        "delta_Etau_225_to_270": 0.00420569463096121,
+        "max_abs_delta_Etau": 0.0058335329491676635,
+        "delta_R2_180_to_225": 0.014386300507399197,
+        "delta_R2_225_to_270": -0.010364585545394878,
+        "max_abs_delta_R2": 0.014386300507399197,
+        "estimand": "E_tau = RMS(tau_model - tau_DNS)/RMS(tau_DNS) on the 4096-point dense phase grid"
+      },
+      "drive": {
+        "registered_single_slice_3pct_gate": {
+          "measured_crest_bulk_z2p25": 0.9962926480103291,
+          "abs_deviation": 0.0037073519896708707,
+          "threshold": 0.03,
+          "outcome": "PASS"
+        },
+        "exact_controller_volume_identity": {
+          "crest_bulk_velocity_registered": 0.9999999074128649,
+          "window_Ubar_max_abs_deviation": 1.9000000006652584e-07,
+          "registered_volume_average_Ubar": 0.721045,
+          "mesh_total_volume": 114.35901,
+          "holds": true
+        },
+        "slice_flux_homogeneity_diagnostic": {
+          "max_abs_deviation_fraction": 0.02248898122473242,
+          "expected_spanwise_mean": 2.036,
+          "authority": "none: ancillary spanwise-homogeneity measurement, not an admission gate"
+        }
+      }
+    },
+    "0300:G2c:total_gradient_tble": {
+      "case_id": "rswm_r23m6_ym0300_g2_tble_819200_v1",
+      "producer_job_id": "14899585",
+      "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym0300/rswm_r23m6_ym0300_g2_tble_819200_v1",
+      "ym_over_H": 0.03,
+      "ym_measured_flat_over_H": 0.030000000000000002,
+      "ym_plus_dns_median": 3.852260505769925,
+      "model": "total_gradient_tble",
+      "deployed_nut_bc": "totalGradientTbleNut",
+      "apriori_member_matched": "M1_pressure_gradient_ode",
+      "deployed_constants": {
+        "kappa": 0.41,
+        "A_plus": 26.0,
+        "declared_in_case": {
+          "kappa": false,
+          "Aplus": false
+        },
+        "source": "totalGradientTbleNutFvPatchScalarField.C:135-136 (kappa = 0.41, Aplus = 26.0, hard-coded in the deployed kernel)"
+      },
+      "spalding_calibration_sensitivity": null,
+      "coupled": {
+        "relative_rms": 1.6916823488619719,
+        "r2": -2.0264591589160337,
+        "relative_rms_interval": {
+          "high": 1.892256272310909,
+          "low": 0.7346468001636667,
+          "median": 1.6799898405278988
+        },
+        "reattachment_x_over_H": 4.609855770704424,
+        "reattachment_bias_over_H": 0.13643712784767903
+      },
+      "apriori_matched": {
+        "member": "M1_pressure_gradient_ode",
+        "relative_rms": 2.0585140320234596,
+        "r2": -3.481308565916688,
+        "relative_rms_interval": {
+          "low": 0.975497820277764,
+          "median": 2.0407548294475317,
+          "high": 2.3000004718109412
+        },
+        "sign_accuracy": 0.76025390625,
+        "signed_force_ratio": 0.8526348850799494,
+        "reversed_fraction": 0.680908203125,
+        "roots_M1_max": 1.0
+      },
+      "apriori_mismatched_architecture": {
+        "member": "M0_equilibrium",
+        "relative_rms": 0.4837583104481503,
+        "r2": 0.752512047371439,
+        "relative_rms_interval": {
+          "low": 0.03835717096046391,
+          "median": 0.47847602486503127,
+          "high": 0.5519317250150424
+        },
+        "sign_accuracy": 0.989013671875,
+        "signed_force_ratio": 1.2970843915171661,
+        "reversed_fraction": 0.46533203125,
+        "roots_M1_max": null
+      },
+      "apriori_identity_error_factor": 4.255253062456884,
+      "deposited_apriori_relrms_yH_axis": 4.006204072945337,
+      "window_sensitivity": {
+        "window_origin": 135.0,
+        "per_checkpoint": {
+          "315": {
+            "checkpoint_time": 315.0,
+            "window_length": 180.0,
+            "relative_rms": 1.7135828496011516,
+            "r2": -2.10532742664173
+          },
+          "360": {
+            "checkpoint_time": 360.0,
+            "window_length": 225.0,
+            "relative_rms": 1.6944750238034492,
+            "r2": -2.0364597519024525
+          },
+          "405": {
+            "checkpoint_time": 405.0,
+            "window_length": 270.0,
+            "relative_rms": 1.6916824453141053,
+            "r2": -2.026459527989327
+          }
+        },
+        "window_lengths": [
+          180.0,
+          225.0,
+          270.0
+        ],
+        "delta_Etau_180_to_225": -0.019107825797702427,
+        "delta_Etau_225_to_270": -0.0027925784893438887,
+        "max_abs_delta_Etau": 0.019107825797702427,
+        "delta_R2_180_to_225": 0.06886767473927735,
+        "delta_R2_225_to_270": 0.010000223913125605,
+        "max_abs_delta_R2": 0.06886767473927735,
+        "estimand": "E_tau = RMS(tau_model - tau_DNS)/RMS(tau_DNS) on the 4096-point dense phase grid"
+      },
+      "drive": {
+        "registered_single_slice_3pct_gate": {
+          "measured_crest_bulk_z2p25": 0.9886131016266858,
+          "abs_deviation": 0.011386898373314192,
+          "threshold": 0.03,
+          "outcome": "PASS"
+        },
+        "exact_controller_volume_identity": {
+          "crest_bulk_velocity_registered": 0.9999999074128649,
+          "window_Ubar_max_abs_deviation": 2.1000000005599873e-07,
+          "registered_volume_average_Ubar": 0.721045,
+          "mesh_total_volume": 114.35901,
+          "holds": true
+        },
+        "slice_flux_homogeneity_diagnostic": {
+          "max_abs_deviation_fraction": 0.01538934905229361,
+          "expected_spanwise_mean": 2.036,
+          "authority": "none: ancillary spanwise-homogeneity measurement, not an admission gate"
+        }
+      }
+    },
+    "2500:G2c:equilibrium": {
+      "case_id": "rswm_r23m6_ym2500_g2_equilibrium_819200_v1",
+      "producer_job_id": "14904101",
+      "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym2500/rswm_r23m6_ym2500_g2_equilibrium_819200_v1",
+      "ym_over_H": 0.25,
+      "ym_measured_flat_over_H": 0.25,
+      "ym_plus_dns_median": 32.0560284385335,
+      "model": "equilibrium",
+      "deployed_nut_bc": "nutUSpaldingWallFunction",
+      "apriori_member_matched": "M0_equilibrium",
+      "deployed_constants": {
+        "kappa": 0.41,
+        "E": 9.8,
+        "B": 5.566786306528114,
+        "declared_in_case": {
+          "kappa": false,
+          "E": false
+        },
+        "source": "OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)"
+      },
+      "spalding_calibration_sensitivity": {
+        "B_deployed": 5.566786306528114,
+        "B_ladder_default": 5.0,
+        "relative_rms_at_ladder_default_B": 0.6027797279652353,
+        "r2_at_ladder_default_B": 0.6157494819827254,
+        "delta_relative_rms": -0.020897756190104144
+      },
+      "coupled": {
+        "relative_rms": 0.5691200335998557,
+        "r2": 0.6574650198541389,
+        "relative_rms_interval": {
+          "high": 1.0965276166188946,
+          "low": 0.3366169320393716,
+          "median": 0.5878835174384388
+        },
+        "reattachment_x_over_H": 3.6019365106250683,
+        "reattachment_bias_over_H": -0.871482132231677
+      },
+      "apriori_matched": {
+        "member": "M0_equilibrium",
+        "relative_rms": 0.5818819717751311,
+        "r2": 0.6419307810273022,
+        "relative_rms_interval": {
+          "low": 0.3828273371052313,
+          "median": 0.5938882018106482,
+          "high": 1.0299755107714237
+        },
+        "sign_accuracy": 0.890869140625,
+        "signed_force_ratio": 1.8518426899094365,
+        "reversed_fraction": 0.345703125,
+        "roots_M1_max": null
+      },
+      "apriori_mismatched_architecture": {
+        "member": "M1_pressure_gradient_ode",
+        "relative_rms": 4.472370279826985,
+        "r2": -20.153035143101707,
+        "relative_rms_interval": {
+          "low": 2.5120094725569135,
+          "median": 4.440795204006308,
+          "high": 4.946046117952969
+        },
+        "sign_accuracy": 0.520263671875,
+        "signed_force_ratio": 0.36186852950416054,
+        "reversed_fraction": 0.8427734375,
+        "roots_M1_max": 3.0
+      },
+      "apriori_identity_error_factor": 0.13010594726464406,
+      "deposited_apriori_relrms_yH_axis": null,
+      "window_sensitivity": {
+        "window_origin": 135.0,
+        "per_checkpoint": {
+          "315": {
+            "checkpoint_time": 315.0,
+            "window_length": 180.0,
+            "relative_rms": 0.571843217239001,
+            "r2": 0.6541791819930576
+          },
+          "360": {
+            "checkpoint_time": 360.0,
+            "window_length": 225.0,
+            "relative_rms": 0.5642911568359686,
+            "r2": 0.6632530475438411
+          },
+          "405": {
+            "checkpoint_time": 405.0,
+            "window_length": 270.0,
+            "relative_rms": 0.5691198618901503,
+            "r2": 0.6574652238350285
+          }
+        },
+        "window_lengths": [
+          180.0,
+          225.0,
+          270.0
+        ],
+        "delta_Etau_180_to_225": -0.007552060403032357,
+        "delta_Etau_225_to_270": 0.004828705054181648,
+        "max_abs_delta_Etau": 0.007552060403032357,
+        "delta_R2_180_to_225": 0.009073865550783489,
+        "delta_R2_225_to_270": -0.0057878237088125895,
+        "max_abs_delta_R2": 0.009073865550783489,
+        "estimand": "E_tau = RMS(tau_model - tau_DNS)/RMS(tau_DNS) on the 4096-point dense phase grid"
+      },
+      "drive": {
+        "registered_single_slice_3pct_gate": {
+          "measured_crest_bulk_z2p25": 0.9337744640796154,
+          "abs_deviation": 0.0662255359203846,
+          "threshold": 0.03,
+          "outcome": "FAIL"
+        },
+        "exact_controller_volume_identity": {
+          "crest_bulk_velocity_registered": 0.9999999074128649,
+          "window_Ubar_max_abs_deviation": 1.5000000008758008e-07,
+          "registered_volume_average_Ubar": 0.721045,
+          "mesh_total_volume": 114.35901,
+          "holds": true
+        },
+        "slice_flux_homogeneity_diagnostic": {
+          "max_abs_deviation_fraction": 0.07324472122490311,
+          "expected_spanwise_mean": 2.036,
+          "authority": "none: ancillary spanwise-homogeneity measurement, not an admission gate"
+        }
+      }
+    },
+    "2500:G2c:total_gradient_tble": {
+      "model_abort": {
+        "abort_line": "108] TBLE branch failure face=39 UMatch=0.96991206 ym=0.16677463 dpds=0.012454167 roots=3 branchLoss=0 ambiguous=1 truncated=0 finite=1",
+        "ambiguous": 1,
+        "amendment": "development/nodes/node_009/AMENDMENT_YM2500_G2C_TBLE_ABORT.md",
+        "case_id": "rswm_r23m6_ym2500_g2_tble_819200_v1",
+        "final_bottomwall_realizability": "TBLE_REALIZABILITY patch=bottomWall time=158.89015 faces=10240 clipped=10240 fraction=1 mismatchL1=17.913288 mismatchMax=0.024821519 lowerClipped=4618 vectorCapped=5622 appliedTractionMax=0.031749111 degenerateRoots=0",
+        "fold_degeneracy_guard_events": 0,
+        "kernel_sha256": "69edf4b532ca612fb8a735b338dc24d69de880dd97908fa8c3468848a5f1ff56",
+        "last_solver_time": 158.94045,
+        "producer_job_id": "14904100",
+        "registered_end_time": 405.0,
+        "roots": 3,
+        "slurm_log": "logs/archer2/slurm-14904100.out",
+        "slurm_log_sha256": "fedf9d57bad9c9d36e667b106ef62227e30f34bef7b75770c2280f6f6687ead5",
+        "solver_log": "development/nodes/node_009/ym2500_g2c_tble_abort_log.pimpleFoam",
+        "solver_log_sha256": "ec3498ddf188bad601a5c588d177927cbeb5bbf0a248f6c6a94984675c820d51"
+      },
+      "note": "registered distinct-root abort on ONE trajectory; recorded as an observed deployment failure of the pinned selection policy, not a located operability boundary and not a proof that no wall stress exists"
+    }
+  },
+  "arrays_note": "per-point a-priori predictions are stored in the npz",
+  "transfer_relation_model_matched": {
+    "equilibrium": {
+      "ym_over_H": [
+        0.014515746,
+        0.03,
+        0.06,
+        0.0935,
+        0.15,
+        0.25
+      ],
+      "coupled_relative_rms": [
+        1.5607045490436502,
+        1.303617462017536,
+        1.0493613721481747,
+        0.7733193225563517,
+        0.6726748592636648,
+        0.6072639174219698
+      ],
+      "apriori_matched_relative_rms": [
+        0.5136508522374252,
+        0.4588328849231355,
+        0.43620119676895147,
+        0.48780848642651176,
+        0.5489012643493413,
+        0.5786868020210384
+      ],
+      "apriori_matched_r2": [
+        0.7209813639632524,
+        0.7773584286492742,
+        0.7987801175822036,
+        0.7483506063559324,
+        0.6813707453723771,
+        0.6458523693711814
+      ],
+      "apriori_mismatched_relative_rms": [
+        1.1598740496819102,
+        1.7627721059570942,
+        2.4545361057935113,
+        2.8422037872029486,
+        3.2896152155338947,
+        3.903809576620425
+      ],
+      "deposited_apriori_relative_rms": [
+        2.650941748137026,
+        4.006204072945337,
+        5.178726615433652,
+        6.0413611420483715,
+        7.234969998988509,
+        null
+      ],
+      "spearman_coupled_vs_apriori_MATCHED": -0.6,
+      "spearman_coupled_vs_apriori_MATCHED_permutation_p": 0.24166666666666667,
+      "spearman_coupled_vs_apriori_MISMATCHED": -1.0,
+      "spearman_coupled_vs_deposited_column": -0.9999999999999999,
+      "spearman_coupled_vs_deposited_column_n": 5,
+      "spearman_coupled_vs_deposited_column_permutation_p": 0.016666666666666666,
+      "coupled_monotone_in_ym": -1.0,
+      "apriori_matched_monotone_in_ym": 0.6
+    },
+    "total_gradient_tble": {
+      "ym_over_H": [
+        0.014515746,
+        0.03,
+        0.06,
+        0.0935,
+        0.15,
+        0.25
+      ],
+      "coupled_relative_rms": [
+        1.8145013004198065,
+        1.8678651133265396,
+        2.3211373435545912,
+        2.449768912693007,
+        2.740432640264208,
+        2.8331069227438426
+      ],
+      "apriori_matched_relative_rms": [
+        1.1598740496819102,
+        1.7627721059570942,
+        2.4545361057935113,
+        2.8422037872029486,
+        3.2896152155338947,
+        3.903809576620425
+      ],
+      "apriori_matched_r2": [
+        -0.4227180751965105,
+        -2.2861662015432076,
+        -5.371417075140414,
+        -7.542945050601112,
+        -10.444251380297596,
+        -15.116637419029086
+      ],
+      "apriori_mismatched_relative_rms": [
+        0.5136508522374252,
+        0.4588328849231355,
+        0.43620119676895147,
+        0.48780848642651176,
+        0.5489012643493413,
+        0.5786868020210384
+      ],
+      "deposited_apriori_relative_rms": [
+        2.650941748137026,
+        4.006204072945337,
+        5.178726615433652,
+        6.0413611420483715,
+        7.234969998988509,
+        null
+      ],
+      "spearman_coupled_vs_apriori_MATCHED": 1.0,
+      "spearman_coupled_vs_apriori_MATCHED_permutation_p": 0.002777777777777778,
+      "spearman_coupled_vs_apriori_MISMATCHED": 0.6,
+      "spearman_coupled_vs_deposited_column": 0.9999999999999999,
+      "spearman_coupled_vs_deposited_column_n": 5,
+      "spearman_coupled_vs_deposited_column_permutation_p": 0.016666666666666666,
+      "coupled_monotone_in_ym": 1.0,
+      "apriori_matched_monotone_in_ym": 1.0
+    }
+  },
+  "deposited_column_audit": {
+    "equilibrium_column": [
+      2.650941748137026,
+      4.006204072945337,
+      5.178726615433652,
+      6.0413611420483715,
+      7.234969998988509,
+      null
+    ],
+    "total_gradient_tble_column": [
+      2.650941748137026,
+      4.006204072945337,
+      5.178726615433652,
+      6.0413611420483715,
+      7.234969998988509,
+      null
+    ],
+    "byte_identical_across_models": true,
+    "source": "codes/results/epsilon_coupled_predictor.npz sweep_relrms",
+    "source_architecture": "ode_wall_model.predict_tau_w (pressure-gradient mixing-length ODE)",
+    "consequence": "the deposited equilibrium transfer statistic compared coupled Spalding against a pressure-gradient a-priori model; it is superseded by transfer_relation_model_matched"
+  },
+  "sensitivity_common_scale": {
+    "equilibrium": {
+      "station_span_Etau": 0.9534406316216804,
+      "station_span_heights": [
+        0.014515746,
+        0.25
+      ],
+      "max_abs_grid_change_Etau": 0.13635056869018292,
+      "grid_pairs_scored": 2,
+      "max_abs_window_change_Etau": 0.030517414289723543,
+      "median_abs_window_change_Etau": 0.012519682197145388,
+      "station_over_window": 31.242510344093688,
+      "station_over_grid": 6.992568060263081,
+      "station_span_R2": 2.1859679928589317,
+      "max_abs_grid_change_R2": 0.35629239715526717,
+      "max_abs_window_change_R2": 0.08474021608770466,
+      "station_over_window_R2": 25.796110675437653,
+      "station_over_grid_R2": 6.1353203445043425,
+      "estimand": "all three are differences of E_tau on the same dense phase grid vs the same DNS truth",
+      "scope": "grid ratio uses only completed G1c/G2c pairs; the 2500/G2c TBLE point is a registered abort with no score and is excluded, so no grid statement is made for total_gradient_tble at the largest height"
+    },
+    "total_gradient_tble": {
+      "station_span_Etau": 1.018605622324036,
+      "station_span_heights": [
+        0.014515746,
+        0.25
+      ],
+      "max_abs_grid_change_Etau": 0.1761827644645677,
+      "grid_pairs_scored": 1,
+      "max_abs_window_change_Etau": 0.053369281904930066,
+      "median_abs_window_change_Etau": 0.042109403669953194,
+      "station_over_window": 19.085990779087865,
+      "station_over_grid": 5.781528206914297,
+      "station_span_R2": 5.006483190261616,
+      "max_abs_grid_change_R2": 0.663216603486855,
+      "max_abs_window_change_R2": 0.30877530445994505,
+      "station_over_window_R2": 16.21400130757888,
+      "station_over_grid_R2": 7.548790491583109,
+      "estimand": "all three are differences of E_tau on the same dense phase grid vs the same DNS truth",
+      "scope": "grid ratio uses only completed G1c/G2c pairs; the 2500/G2c TBLE point is a registered abort with no score and is excluded, so no grid statement is made for total_gradient_tble at the largest height"
+    }
+  },
+  "grid_invariance_common_scale": {
+    "0300:equilibrium": {
+      "G1c_relative_rms": 1.303617462017536,
+      "G2c_relative_rms": 1.1672668933273531,
+      "delta_Etau": -0.13635056869018292,
+      "G1c_side_above_one": true,
+      "G2c_side_above_one": true,
+      "verdict_sides_equal": true,
+      "conjunction_a_and_b_above_one": true
+    },
+    "0300:total_gradient_tble": {
+      "G1c_relative_rms": 1.8678651133265396,
+      "G2c_relative_rms": 1.6916823488619719,
+      "delta_Etau": -0.1761827644645677,
+      "G1c_side_above_one": true,
+      "G2c_side_above_one": true,
+      "verdict_sides_equal": true,
+      "conjunction_a_and_b_above_one": true
+    },
+    "2500:equilibrium": {
+      "G1c_relative_rms": 0.6072639174219698,
+      "G2c_relative_rms": 0.5691200335998557,
+      "delta_Etau": -0.03814388382211409,
+      "G1c_side_above_one": false,
+      "G2c_side_above_one": false,
+      "verdict_sides_equal": true,
+      "conjunction_a_and_b_above_one": false
+    },
+    "2500:total_gradient_tble": {
+      "G1c_relative_rms": 2.8331069227438426,
+      "G2c_relative_rms": null,
+      "verdict_sides_equal": null,
+      "note": "the fine-grid run of this pair is a registered distinct-root abort with no score; no verdict is fabricated and this pair is excluded from every grid statement"
+    }
+  },
+  "critical_matching_height": {
+    "row_used": "periodic_hills_1p0",
+    "ycrit_plus": 1.0,
+    "row_rejected": "krank_pehill_Re10595",
+    "ycrit_plus_rejected": 15.925931485532562,
+    "why": "the case under test is the Xiao Re_H=5600 periodic hill; its own row is periodic_hills_1p0.  krank_pehill_Re10595 is a different DNS at Re_H=10595 and its y_crit+ = 15.93 has no authority over this case.",
+    "apriori_relrms_at_grid_floor": 1.080021062426739,
+    "grid_floor_yplus": 1.0,
+    "interior_crossing": false,
+    "sampled_ym_plus_median_range": [
+      1.8641360672084493,
+      32.148319058534916
+    ],
+    "all_sampled_surfaces_beyond_ycrit": true,
+    "statement": "the a-priori relative error of this case exceeds unity already at the lower edge of the swept y+ grid, so y_crit+ = 1.0 is a grid-floor bound, not an interior crossing; all sampled coupled surfaces lie beyond it and the sweep therefore measures station dependence, not a window crossing"
+  },
+  "drive_gate_rollup": {
+    "registered_3pct_slice_gate": {
+      "PASS": [
+        "0145:G1c:equilibrium",
+        "0145:G1c:total_gradient_tble",
+        "0145:G2c:equilibrium",
+        "0145:G2c:total_gradient_tble",
+        "0300:G1c:equilibrium",
+        "0300:G1c:total_gradient_tble",
+        "0600:G1c:equilibrium",
+        "0600:G1c:total_gradient_tble",
+        "0935:G1c:equilibrium",
+        "1500:G1c:equilibrium",
+        "0300:G2c:equilibrium",
+        "0300:G2c:total_gradient_tble"
+      ],
+      "FAIL": [
+        "0935:G1c:total_gradient_tble",
+        "1500:G1c:total_gradient_tble",
+        "2500:G1c:equilibrium",
+        "2500:G1c:total_gradient_tble",
+        "2500:G2c:equilibrium"
+      ]
+    },
+    "exact_identity_holds": [
+      "0145:G1c:equilibrium",
+      "0145:G1c:total_gradient_tble",
+      "0145:G2c:equilibrium",
+      "0145:G2c:total_gradient_tble",
+      "0300:G1c:equilibrium",
+      "0300:G1c:total_gradient_tble",
+      "0600:G1c:equilibrium",
+      "0600:G1c:total_gradient_tble",
+      "0935:G1c:equilibrium",
+      "0935:G1c:total_gradient_tble",
+      "1500:G1c:equilibrium",
+      "1500:G1c:total_gradient_tble",
+      "2500:G1c:equilibrium",
+      "2500:G1c:total_gradient_tble",
+      "0300:G2c:equilibrium",
+      "0300:G2c:total_gradient_tble",
+      "2500:G2c:equilibrium"
+    ],
+    "exact_identity_fails": [],
+    "statement": "the registered single-slice 3% admission check FAILED at 5 of 17 scored points.  No replacement ceiling is applied here.  Admission instead rests on the exact controller/volume identity, which is a stronger and independently checkable constraint; the single-slice fluxes are reported as a spanwise-homogeneity diagnostic with no pass/fail authority."
+  },
+  "verdicts": {
+    "equilibrium_transfer": {
+      "spearman_matched": -0.6,
+      "permutation_p": 0.24166666666666667,
+      "deposited_claim": "anti-transfer rho = -1, p = 0.017 (wrong architecture)",
+      "status": "SUPERSEDED: the deposited value paired coupled Spalding with a pressure-gradient a-priori sweep"
+    },
+    "tble_transfer": {
+      "spearman_matched": 1.0,
+      "permutation_p": 0.002777777777777778
+    }
+  },
+  "self_checks": {
+    "passed": 75,
+    "total": 75,
+    "detail": [
+      {
+        "name": "0145:G1c:equilibrium: deployed nut BC is nutUSpaldingWallFunction",
+        "ok": true,
+        "note": "read nutUSpaldingWallFunction"
+      },
+      {
+        "name": "0145:G1c:total_gradient_tble: deployed nut BC is totalGradientTbleNut",
+        "ok": true,
+        "note": "read totalGradientTbleNut"
+      },
+      {
+        "name": "0145:G2c:equilibrium: deployed nut BC is nutUSpaldingWallFunction",
+        "ok": true,
+        "note": "read nutUSpaldingWallFunction"
+      },
+      {
+        "name": "0145:G2c:total_gradient_tble: deployed nut BC is totalGradientTbleNut",
+        "ok": true,
+        "note": "read totalGradientTbleNut"
+      },
+      {
+        "name": "0300:G1c:equilibrium: deployed nut BC is nutUSpaldingWallFunction",
+        "ok": true,
+        "note": "read nutUSpaldingWallFunction"
+      },
+      {
+        "name": "0300:G1c:total_gradient_tble: deployed nut BC is totalGradientTbleNut",
+        "ok": true,
+        "note": "read totalGradientTbleNut"
+      },
+      {
+        "name": "0600:G1c:equilibrium: deployed nut BC is nutUSpaldingWallFunction",
+        "ok": true,
+        "note": "read nutUSpaldingWallFunction"
+      },
+      {
+        "name": "0600:G1c:total_gradient_tble: deployed nut BC is totalGradientTbleNut",
+        "ok": true,
+        "note": "read totalGradientTbleNut"
+      },
+      {
+        "name": "0935:G1c:equilibrium: deployed nut BC is nutUSpaldingWallFunction",
+        "ok": true,
+        "note": "read nutUSpaldingWallFunction"
+      },
+      {
+        "name": "0935:G1c:total_gradient_tble: deployed nut BC is totalGradientTbleNut",
+        "ok": true,
+        "note": "read totalGradientTbleNut"
+      },
+      {
+        "name": "1500:G1c:equilibrium: deployed nut BC is nutUSpaldingWallFunction",
+        "ok": true,
+        "note": "read nutUSpaldingWallFunction"
+      },
+      {
+        "name": "1500:G1c:total_gradient_tble: deployed nut BC is totalGradientTbleNut",
+        "ok": true,
+        "note": "read totalGradientTbleNut"
+      },
+      {
+        "name": "2500:G1c:equilibrium: deployed nut BC is nutUSpaldingWallFunction",
+        "ok": true,
+        "note": "read nutUSpaldingWallFunction"
+      },
+      {
+        "name": "2500:G1c:total_gradient_tble: deployed nut BC is totalGradientTbleNut",
+        "ok": true,
+        "note": "read totalGradientTbleNut"
+      },
+      {
+        "name": "0300:G2c:equilibrium: deployed nut BC is nutUSpaldingWallFunction",
+        "ok": true,
+        "note": "read nutUSpaldingWallFunction"
+      },
+      {
+        "name": "0300:G2c:total_gradient_tble: deployed nut BC is totalGradientTbleNut",
+        "ok": true,
+        "note": "read totalGradientTbleNut"
+      },
+      {
+        "name": "2500:G2c:equilibrium: deployed nut BC is nutUSpaldingWallFunction",
+        "ok": true,
+        "note": "read nutUSpaldingWallFunction"
+      },
+      {
+        "name": "deposited a-priori column is byte-identical across the two models (the defect)",
+        "ok": true,
+        "note": "confirmed from the deposited summary"
+      },
+      {
+        "name": "grid invariance is equality of decision sides, not a conjunction",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "critical height uses the case's own row",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "no interior a-priori crossing exists for this case",
+        "ok": true,
+        "note": "min relrms over the y+ grid = 1.0800"
+      },
+      {
+        "name": "every scored point satisfies the exact controller/volume identity",
+        "ok": true,
+        "note": "[]"
+      },
+      {
+        "name": "0145:G1c:equilibrium: a-priori member matches the deployed BC",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0145:G1c:equilibrium: a-priori calibration equals the deployed calibration",
+        "ok": true,
+        "note": "{\"kappa\": 0.41, \"E\": 9.8, \"B\": 5.566786306528114, \"source\": \"OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)\"}"
+      },
+      {
+        "name": "0145:G1c:equilibrium: window sensitivity is an E_tau difference",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0145:G1c:total_gradient_tble: a-priori member matches the deployed BC",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0145:G1c:total_gradient_tble: a-priori calibration equals the deployed calibration",
+        "ok": true,
+        "note": "{\"kappa\": 0.41, \"A_plus\": 26.0, \"source\": \"totalGradientTbleNutFvPatchScalarField.C:135-136 (kappa = 0.41, Aplus = 26.0, hard-coded in the deployed kernel)\"}"
+      },
+      {
+        "name": "0145:G1c:total_gradient_tble: window sensitivity is an E_tau difference",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0145:G2c:equilibrium: a-priori member matches the deployed BC",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0145:G2c:equilibrium: a-priori calibration equals the deployed calibration",
+        "ok": true,
+        "note": "{\"kappa\": 0.41, \"E\": 9.8, \"B\": 5.566786306528114, \"source\": \"OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)\"}"
+      },
+      {
+        "name": "0145:G2c:equilibrium: window sensitivity is an E_tau difference",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0145:G2c:total_gradient_tble: a-priori member matches the deployed BC",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0145:G2c:total_gradient_tble: a-priori calibration equals the deployed calibration",
+        "ok": true,
+        "note": "{\"kappa\": 0.41, \"A_plus\": 26.0, \"source\": \"totalGradientTbleNutFvPatchScalarField.C:135-136 (kappa = 0.41, Aplus = 26.0, hard-coded in the deployed kernel)\"}"
+      },
+      {
+        "name": "0145:G2c:total_gradient_tble: window sensitivity is an E_tau difference",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0300:G1c:equilibrium: a-priori member matches the deployed BC",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0300:G1c:equilibrium: a-priori calibration equals the deployed calibration",
+        "ok": true,
+        "note": "{\"kappa\": 0.41, \"E\": 9.8, \"B\": 5.566786306528114, \"source\": \"OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)\"}"
+      },
+      {
+        "name": "0300:G1c:equilibrium: window sensitivity is an E_tau difference",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0300:G1c:total_gradient_tble: a-priori member matches the deployed BC",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0300:G1c:total_gradient_tble: a-priori calibration equals the deployed calibration",
+        "ok": true,
+        "note": "{\"kappa\": 0.41, \"A_plus\": 26.0, \"source\": \"totalGradientTbleNutFvPatchScalarField.C:135-136 (kappa = 0.41, Aplus = 26.0, hard-coded in the deployed kernel)\"}"
+      },
+      {
+        "name": "0300:G1c:total_gradient_tble: window sensitivity is an E_tau difference",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0600:G1c:equilibrium: a-priori member matches the deployed BC",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0600:G1c:equilibrium: a-priori calibration equals the deployed calibration",
+        "ok": true,
+        "note": "{\"kappa\": 0.41, \"E\": 9.8, \"B\": 5.566786306528114, \"source\": \"OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)\"}"
+      },
+      {
+        "name": "0600:G1c:equilibrium: window sensitivity is an E_tau difference",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0600:G1c:total_gradient_tble: a-priori member matches the deployed BC",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0600:G1c:total_gradient_tble: a-priori calibration equals the deployed calibration",
+        "ok": true,
+        "note": "{\"kappa\": 0.41, \"A_plus\": 26.0, \"source\": \"totalGradientTbleNutFvPatchScalarField.C:135-136 (kappa = 0.41, Aplus = 26.0, hard-coded in the deployed kernel)\"}"
+      },
+      {
+        "name": "0600:G1c:total_gradient_tble: window sensitivity is an E_tau difference",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0935:G1c:equilibrium: a-priori member matches the deployed BC",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0935:G1c:equilibrium: a-priori calibration equals the deployed calibration",
+        "ok": true,
+        "note": "{\"kappa\": 0.41, \"E\": 9.8, \"B\": 5.566786306528114, \"source\": \"OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)\"}"
+      },
+      {
+        "name": "0935:G1c:equilibrium: window sensitivity is an E_tau difference",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0935:G1c:total_gradient_tble: a-priori member matches the deployed BC",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0935:G1c:total_gradient_tble: a-priori calibration equals the deployed calibration",
+        "ok": true,
+        "note": "{\"kappa\": 0.41, \"A_plus\": 26.0, \"source\": \"totalGradientTbleNutFvPatchScalarField.C:135-136 (kappa = 0.41, Aplus = 26.0, hard-coded in the deployed kernel)\"}"
+      },
+      {
+        "name": "0935:G1c:total_gradient_tble: window sensitivity is an E_tau difference",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "1500:G1c:equilibrium: a-priori member matches the deployed BC",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "1500:G1c:equilibrium: a-priori calibration equals the deployed calibration",
+        "ok": true,
+        "note": "{\"kappa\": 0.41, \"E\": 9.8, \"B\": 5.566786306528114, \"source\": \"OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)\"}"
+      },
+      {
+        "name": "1500:G1c:equilibrium: window sensitivity is an E_tau difference",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "1500:G1c:total_gradient_tble: a-priori member matches the deployed BC",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "1500:G1c:total_gradient_tble: a-priori calibration equals the deployed calibration",
+        "ok": true,
+        "note": "{\"kappa\": 0.41, \"A_plus\": 26.0, \"source\": \"totalGradientTbleNutFvPatchScalarField.C:135-136 (kappa = 0.41, Aplus = 26.0, hard-coded in the deployed kernel)\"}"
+      },
+      {
+        "name": "1500:G1c:total_gradient_tble: window sensitivity is an E_tau difference",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "2500:G1c:equilibrium: a-priori member matches the deployed BC",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "2500:G1c:equilibrium: a-priori calibration equals the deployed calibration",
+        "ok": true,
+        "note": "{\"kappa\": 0.41, \"E\": 9.8, \"B\": 5.566786306528114, \"source\": \"OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)\"}"
+      },
+      {
+        "name": "2500:G1c:equilibrium: window sensitivity is an E_tau difference",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "2500:G1c:total_gradient_tble: a-priori member matches the deployed BC",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "2500:G1c:total_gradient_tble: a-priori calibration equals the deployed calibration",
+        "ok": true,
+        "note": "{\"kappa\": 0.41, \"A_plus\": 26.0, \"source\": \"totalGradientTbleNutFvPatchScalarField.C:135-136 (kappa = 0.41, Aplus = 26.0, hard-coded in the deployed kernel)\"}"
+      },
+      {
+        "name": "2500:G1c:total_gradient_tble: window sensitivity is an E_tau difference",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0300:G2c:equilibrium: a-priori member matches the deployed BC",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0300:G2c:equilibrium: a-priori calibration equals the deployed calibration",
+        "ok": true,
+        "note": "{\"kappa\": 0.41, \"E\": 9.8, \"B\": 5.566786306528114, \"source\": \"OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)\"}"
+      },
+      {
+        "name": "0300:G2c:equilibrium: window sensitivity is an E_tau difference",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0300:G2c:total_gradient_tble: a-priori member matches the deployed BC",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "0300:G2c:total_gradient_tble: a-priori calibration equals the deployed calibration",
+        "ok": true,
+        "note": "{\"kappa\": 0.41, \"A_plus\": 26.0, \"source\": \"totalGradientTbleNutFvPatchScalarField.C:135-136 (kappa = 0.41, Aplus = 26.0, hard-coded in the deployed kernel)\"}"
+      },
+      {
+        "name": "0300:G2c:total_gradient_tble: window sensitivity is an E_tau difference",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "2500:G2c:equilibrium: a-priori member matches the deployed BC",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "2500:G2c:equilibrium: a-priori calibration equals the deployed calibration",
+        "ok": true,
+        "note": "{\"kappa\": 0.41, \"E\": 9.8, \"B\": 5.566786306528114, \"source\": \"OpenFOAM Foundation 10 nutUSpaldingWallFunction defaults (the case declares only the BC type)\"}"
+      },
+      {
+        "name": "2500:G2c:equilibrium: window sensitivity is an E_tau difference",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "equilibrium: station/window ratio uses one estimand",
+        "ok": true,
+        "note": ""
+      },
+      {
+        "name": "total_gradient_tble: station/window ratio uses one estimand",
+        "ok": true,
+        "note": ""
+      }
+    ]
+  },
+  "status": "MODEL_MATCHED_TRANSFER_L2_OK"
+}

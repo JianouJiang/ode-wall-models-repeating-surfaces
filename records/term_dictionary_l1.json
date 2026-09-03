@@ -1,0 +1,19 @@
+{
+  "coordinate_map": "s=x, eta=y-h(s), Jacobian=1",
+  "contravariant_velocity": "W=V-h'(s)U",
+  "parent_equation": "partial_s A + partial_eta Q = f_x",
+  "A": "U^2+R_xx+p-2 nu partial_x U",
+  "Q": "UV+R_xy-nu(partial_y U+partial_x V)-h' A",
+  "certificate": "Q_w=partial_s integral_0^eta_m A d eta+Q_m-f_x eta_m",
+  "pressure_impulse": "partial_s integral p d eta-h'(p_m-p_w)",
+  "reynolds_transport": "partial_s integral R_xx d eta+R_xy,m-h'R_xx,m",
+  "dispersive_flux": "<U_tilde W_tilde>; W is required, not Cartesian V",
+  "wall_sign": "Q_w is wall-on-fluid x traction per projected wall length",
+  "raw_columns": {
+    "mean_files.dat": "x,y,U,V,W,p",
+    "rms_files1.dat": "x,y,uu,vv,ww,pp",
+    "rms_files2.dat": "x,y,uv,uw,vw"
+  },
+  "reference_model_quantities": "none",
+  "thin_layer_terms_deleted": "none"
+}

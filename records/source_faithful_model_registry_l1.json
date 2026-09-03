@@ -1,0 +1,266 @@
+{
+  "causal_instruments_and_comparator": [
+    {
+      "id": "Xs",
+      "implementation": "codes/analysis/diagnostic_test_corrected.py",
+      "name": "exact-stress substitution",
+      "role": "causal instrument, not deployable model",
+      "runtime_inputs": [
+        "u_m",
+        "y_m",
+        "nu",
+        "dp_ds",
+        "tau_matching"
+      ]
+    },
+    {
+      "id": "Xc",
+      "implementation": "codes/openfoam/pehill_wmles/wallmodel_tble/tbleShootCRWM.H",
+      "name": "exact-convection substitution",
+      "role": "causal instrument, not deployable model",
+      "runtime_inputs": [
+        "u_m",
+        "y_m",
+        "nu",
+        "dp_ds",
+        "wall_layer_state"
+      ]
+    },
+    {
+      "id": "D0",
+      "implementation": "codes/analysis/physical_face_force_migration.py",
+      "name": "distributed volume-force comparator",
+      "role": "non-local representation preserving force moments",
+      "runtime_inputs": [
+        "wall_layer_state",
+        "volume_force"
+      ]
+    }
+  ],
+  "common_observation_fields": [
+    "u_m",
+    "y_m",
+    "nu",
+    "dp_ds",
+    "tau_matching",
+    "storage_rate",
+    "momentum_flux",
+    "z0",
+    "wall_layer_state",
+    "volume_force"
+  ],
+  "common_output": "signed kinematic wall traction tau_w",
+  "density_convention": "kinematic: every traction is divided by density",
+  "idea": "source-locked term-nested M0--M5 registry under one observation/output contract",
+  "manufactured_errors": {
+    "D0_first_abs_error": 1.2499999968440534e-07,
+    "D0_zeroth_abs_error": 0.0,
+    "M0_tau_abs_error": 8.673617379884035e-19,
+    "M1_tau_abs_error": 1.0104764247564901e-16,
+    "M2_tau_abs_error": 1.2150003225741557e-14,
+    "M3_tau_abs_error": 0.0,
+    "M4_residual_abs": 0.0,
+    "M5_fully_rough_relative_error": 0.00043852112982493784
+  },
+  "manufactured_thresholds": {
+    "D0_first_abs_error": 1e-06,
+    "D0_zeroth_abs_error": 1e-06,
+    "M0_tau_abs_error": 1e-11,
+    "M1_tau_abs_error": 2e-10,
+    "M2_tau_abs_error": 2e-10,
+    "M3_tau_abs_error": 1e-15,
+    "M4_residual_abs": 1e-15,
+    "M5_fully_rough_relative_error": 0.01
+  },
+  "models": [
+    {
+      "complexity": "O(N_root) scalar residual evaluations per face",
+      "equation": "y+ = u+ + exp(-kappa B)[exp(kappa u+)-1-kappa u+-(kappa u+)^2/2-(kappa u+)^3/6]",
+      "failure_policy": "fatal if the positive friction-velocity root is not bracketed",
+      "id": "M0",
+      "implementation": "codes/models/source_faithful_wall_models.py:spalding_wall_stress",
+      "matching_surface": "physical wall-normal distance y_m",
+      "name": "equilibrium Spalding wall law",
+      "numerics": "one scalar Brent solve; sign(tau_w)=sign(u_m)",
+      "retained_terms": [
+        "equilibrium local stress"
+      ],
+      "runtime_inputs": [
+        "u_m",
+        "y_m",
+        "nu"
+      ],
+      "source": "Spalding (1961), doi:10.1115/1.3641728"
+    },
+    {
+      "complexity": "O(N_y N_root) operations per face",
+      "equation": "d tau/dy = dp/ds; tau=(nu+nu_t)dU/dy",
+      "failure_policy": "fatal on no root; multiple roots reported and selected by declared continuation state",
+      "id": "M1",
+      "implementation": "codes/models/source_faithful_wall_models.py:shoot_wall_stress",
+      "matching_surface": "physical wall-normal distance y_m",
+      "name": "pressure-gradient-retaining TBLE ODE",
+      "numerics": "wall-clustered trapezoidal integration plus audited all-bracket Brent shooting",
+      "retained_terms": [
+        "streamwise pressure gradient",
+        "wall-normal stress divergence"
+      ],
+      "runtime_inputs": [
+        "u_m",
+        "y_m",
+        "nu",
+        "dp_ds"
+      ],
+      "source": "Balaras et al. (1996), doi:10.2514/3.13200; Mukha et al. (2019), doi:10.1016/j.cpc.2019.01.016"
+    },
+    {
+      "complexity": "O(N_y N_root) operations per face",
+      "equation": "d tau/dy = (dp/ds)[1-min(y/y_pg,1)], y_pg(nu^2/|dp/ds|)^(-1/3)=4",
+      "failure_policy": "same as M1",
+      "id": "M2",
+      "implementation": "codes/models/source_faithful_wall_models.py:hickel_source",
+      "matching_surface": "physical wall-normal distance y_m",
+      "name": "Hickel parametrised-convection ODE",
+      "numerics": "same grid, closure and root policy as M1; only the source term changes",
+      "retained_terms": [
+        "streamwise pressure gradient",
+        "modelled convection",
+        "wall-normal stress divergence"
+      ],
+      "runtime_inputs": [
+        "u_m",
+        "y_m",
+        "nu",
+        "dp_ds"
+      ],
+      "source": "Hickel et al. (2013), equation (4.1)"
+    },
+    {
+      "complexity": "O(N_y) moment reduction per face plus moment evolution",
+      "equation": "tau_w = tau_m - dL_s/dt - M_s",
+      "failure_policy": "fatal on a non-finite moment or matching traction",
+      "id": "M3",
+      "implementation": "codes/models/source_faithful_wall_models.py:yang_integral_wall_stress",
+      "matching_surface": "top of the integral wall-model layer",
+      "name": "Yang integral/history wall model",
+      "numerics": "conservative algebraic traction update after profile-moment evolution",
+      "retained_terms": [
+        "matching-plane traction",
+        "resolved storage",
+        "integrated momentum flux/history"
+      ],
+      "runtime_inputs": [
+        "tau_matching",
+        "storage_rate",
+        "momentum_flux"
+      ],
+      "source": "Yang et al. (2015), doi:10.1063/1.4908072"
+    },
+    {
+      "complexity": "O(N_x N_y N_z N_iter) per wall-layer update",
+      "equation": "dU_s/dt + div(U_s U) + dp/ds - d(tau_sn)/dn - f_s = 0",
+      "failure_policy": "PDE residual and nonlinear convergence must be reported, never replaced by zero traction",
+      "id": "M4",
+      "implementation": "codes/models/source_faithful_wall_models.py:wall_layer_pde_residual",
+      "matching_surface": "Dirichlet velocity at the wall-layer outer boundary",
+      "name": "unsteady wall-layer PDE model",
+      "numerics": "time-advanced wall-parallel PDE; reference residual verified by manufactured balance",
+      "retained_terms": [
+        "resolved storage",
+        "resolved convection",
+        "streamwise pressure gradient",
+        "wall-normal stress divergence"
+      ],
+      "runtime_inputs": [
+        "wall_layer_state",
+        "dp_ds",
+        "volume_force"
+      ],
+      "source": "Park and Moin (2014), doi:10.1063/1.4861069"
+    },
+    {
+      "complexity": "O(1) elementary operations per face",
+      "equation": "Re_tauDelta=[Re_tauDelta,pres^6+(Re_Delta Theta_fit)^6]^(1/6); tau_w=sign(U_m)(nu Re_tauDelta/y_m)^2",
+      "failure_policy": "reject inputs outside Re_Delta, psi_p and z0/Delta ranges printed by the source",
+      "id": "M5",
+      "implementation": "codes/models/source_faithful_wall_models.py:meneveau_rough_wall_stress",
+      "matching_surface": "distance Delta=y_m above the roughness origin",
+      "name": "Meneveau generalized-Moody rough-wall model",
+      "numerics": "explicit equations (49)--(51); no iteration",
+      "retained_terms": [
+        "streamwise pressure-gradient fit",
+        "roughness length",
+        "viscous-to-fully-rough transition"
+      ],
+      "runtime_inputs": [
+        "u_m",
+        "y_m",
+        "nu",
+        "dp_ds",
+        "z0"
+      ],
+      "source": "Meneveau (2020), doi:10.1080/14685248.2020.1840573, equations (7)--(8), (40)--(51)"
+    }
+  ],
+  "numpy": "2.2.6",
+  "pressure_direction": "streamwise/wall-tangential dp/ds; never wall-normal",
+  "python": "3.10.12",
+  "rough_wall_real_data_test": {
+    "case": "rib_les_dtype",
+    "common_valid_station_count": 48,
+    "matching_index": 15,
+    "max_root_count": {
+      "M1": 1,
+      "M2": 1
+    },
+    "metrics": {
+      "M0": {
+        "r2_descriptive": 0.9091396714199036,
+        "relative_rms": 0.2771435417259339,
+        "sign_mismatch_fraction": 0.22916666666666666,
+        "signed_drag_error": 0.0637005516873857
+      },
+      "M1": {
+        "r2_descriptive": -2.7092271989592653,
+        "relative_rms": 1.7707584749169532,
+        "sign_mismatch_fraction": 0.375,
+        "signed_drag_error": 0.5276450816103679
+      },
+      "M2": {
+        "r2_descriptive": 0.6386331212946549,
+        "relative_rms": 0.5527029510718673,
+        "sign_mismatch_fraction": 0.375,
+        "signed_drag_error": 0.045347568633022445
+      },
+      "M5": {
+        "r2_descriptive": -51.928494037061604,
+        "relative_rms": 6.68901823379395,
+        "sign_mismatch_fraction": 0.22916666666666666,
+        "signed_drag_error": 3.9215653327031363
+      }
+    },
+    "reference_fidelity": "deposited wall-resolved LES (WALE), 48 stations",
+    "reference_runtime_seconds": {
+      "M0": 0.003775221004616469,
+      "M1": 2.4913942409912124,
+      "M2": 2.640102655044757,
+      "M5": 0.0010242059943266213
+    },
+    "roughness_mapping": "specified before scoring: ks_infinity=k, z0=ks_infinity/30, k/delta=0.2",
+    "station_count": 48,
+    "target_used_to_set_z0": false,
+    "z0": 0.006666666666666667,
+    "z0_over_y_m_max": 0.09922471906840175,
+    "z0_over_y_m_min": 0.02685943143418352
+  },
+  "schema": "source-faithful-model-registry-l1-v1",
+  "source_hashes": {
+    "codes/analysis/physical_face_force_migration.py": "8b2bf3e4e5d442d13950e6b3ee4d2c4f77521b0afdc3da24c2d06a2f762f0bb0",
+    "codes/models/source_faithful_wall_models.py": "4e0b076e65a6607fc2837413ff918b79799d387c2271247d6fb51988c3a044c2",
+    "codes/openfoam/pehill_wmles/wallmodel_tble/tbleShootCRWM.H": "e900bac3974af36492dc7727fe42dc30d14ee8a7ee6de10ae4b25932736eba6f",
+    "codes/openfoam/pehill_wmles_tble/0/nut": "6fb3d642841ac027482229f2c7fc14fbf10fbcebaf5844d8bf041d5d0c9f2eec",
+    "codes/openfoam/xiao_wmles_a1p0/0/nut": "5d395c2dbeb85cbabb01ef234ad89ca3daf18b68cf2251864898089695345b31",
+    "codes/results/rib_les_dtype_wall_profiles.npz": "40839310ad0e3a1dca45c848f53b344cab0284ecc1f5592a45edd5d653b882a2"
+  },
+  "status": "PASS"
+}

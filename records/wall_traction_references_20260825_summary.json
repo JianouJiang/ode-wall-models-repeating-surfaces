@@ -1,0 +1,59 @@
+{
+ "inputs": {
+  "definition_module": {
+   "path": "codes/analysis/conditioning_ladder_l0.py",
+   "sha256": "a56df969a75684d48deda4a6e76bd8b542df19d57dfae53136f64d1c91d837a6"
+  },
+  "dns_archive": {
+   "path": "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz",
+   "sha256": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85"
+  },
+  "krank_stations": {
+   "path": "codes/raw_data/geometry_driven/krank_pehill_Re5600_wall_profiles.npz",
+   "sha256": "a62603c48f5a0f594badbfdf5e923b4c5f5039247374a66aed3272f7948bd0ec"
+  },
+  "mglet_wall": {
+   "path": "codes/raw_data/periodic_hill_ufr3_30/ercoftac_ufr3_30/UFR3-30_data-NP-Re5600-DNS2-11.dat",
+   "sha256": "b9fe7b1c03424cd515ac07d407079423c1f9140b163f425f21de3294b29afdb4"
+  }
+ },
+ "mglet_trailing_rows_stripped": [
+  [
+   0.0,
+   0.0,
+   0.0
+  ],
+  [
+   9.0,
+   0.0,
+   0.0
+  ]
+ ],
+ "reference_to_reference_rms_ratio": {
+  "A_over_B": 0.36001365030568055,
+  "C_over_B": 0.6314163433790986
+ },
+ "rms": {
+  "A_withdrawn_linear4": 0.0013283515507969126,
+  "B_mglet": 0.0036897255136549277,
+  "C_xiao_repaired_cubic6": 0.0023297529919045607,
+  "K_krank_stations": 0.0014293646274112395
+ },
+ "roles": {
+  "A_withdrawn_linear4": "WITHDRAWN_NEGATIVE_CONTROL_ONLY",
+  "B_mglet": "PRIMARY_TRUTH",
+  "C_xiao_repaired_cubic6": "SENSITIVITY_BRACKET_same_simulation",
+  "K_krank_stations": "SPARSE_INDEPENDENT_CROSS_CHECK"
+ },
+ "schema": "wall_traction_references/1",
+ "stations": {
+  "A_withdrawn_linear4": 512,
+  "B_mglet": 999,
+  "C_xiao_repaired_cubic6": 512,
+  "K_krank_stations": 10
+ },
+ "why_A_is_withdrawn": "a through-origin linear fit of the first four archive points under-resolves the wall gradient at the archive's wall spacing; the archive's velocity data are not in question",
+ "withdrawn_keys": [
+  "A_withdrawn_linear4__tau"
+ ]
+}

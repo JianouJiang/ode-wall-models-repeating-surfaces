@@ -1,0 +1,99 @@
+{
+  "schema": "branch-identifiability-l0-v1",
+  "idea": "Strong pressure forcing makes the pressure-gradient ODE shooting map multivalued, so physically continuous root continuation, not an arbitrary converged root, is required to distinguish numerical branch error from missing-transport error.",
+  "paper_scope": {
+    "type": "diagnostic computational-methods study",
+    "fixed_physical_thesis": "complete wall-following three-term momentum balance with exact pressure traction, matching-plane total stress and transport",
+    "new_wall_model_offered": false,
+    "cancellation_claimed_novel": false,
+    "outer_scale_pitch_claimed_novel": false,
+    "industrial_geometries_claimed_tested": false
+  },
+  "current_evidence": {
+    "npz": "codes/results/wall_model_numerics_l1.npz",
+    "summary": "codes/results/wall_model_numerics_l1_summary.json",
+    "families": 10,
+    "faces": 786,
+    "multi_root_faces": 1,
+    "multi_root_global_index": 723,
+    "family": "periodic_hills_case_1p0",
+    "station": 500,
+    "root_count": 3,
+    "continuation_tau": 0.003168218374762466,
+    "plain_bisection_tau": -0.00005326432269754441,
+    "branch_delta": 0.003221482697460016,
+    "reference_tau": 0.003258684698507856,
+    "cpp_python_max_abs": 2.4824977143400595e-15
+  },
+  "frozen_branch_policy": {
+    "initialisation": "pressure-source homotopy from the unique zero-pressure root",
+    "time_advance": "enumerate all roots and continue the closest previous accepted root in dimensionless traction",
+    "restart": "persist previous root and branch identifier",
+    "root_scan_points": [4097, 8193, 16385],
+    "homotopy_initial_partitions": [20, 40, 80],
+    "wall_normal_refinement": [200, 400, 800, 1600, 3200, 6400],
+    "unresolved_tie": "fatal",
+    "branch_loss": "fatal",
+    "nonfinite_input": "fatal",
+    "invalid_height_or_viscosity": "fatal",
+    "silent_zero_fallback": false,
+    "target_force_used_for_selection": false
+  },
+  "required_implementations": [
+    "independent Python reference",
+    "standalone C++ shared kernel",
+    "OpenFOAM Foundation 10 coded boundary condition",
+    "OpenFOAM.com v2512 coded boundary condition"
+  ],
+  "telemetry_fields": [
+    "time",
+    "face_id",
+    "U_m",
+    "y_m",
+    "dpdx",
+    "nu",
+    "candidate_roots",
+    "selected_branch",
+    "applied_traction",
+    "velocity_residual",
+    "iterations",
+    "residual_evaluations",
+    "bracket_expansions",
+    "failure_code"
+  ],
+  "paired_models": [
+    "archived_global_root_pressure_gradient_ODE",
+    "continuation_defined_pressure_gradient_ODE",
+    "continuation_defined_exact_convection_intervention"
+  ],
+  "physical_outputs": [
+    "RMS_normalised_signed_wall_stress_error",
+    "skin_friction_error",
+    "signed_viscous_drag_error",
+    "reversed_shear_symmetric_difference",
+    "separation_displacement",
+    "reattachment_displacement"
+  ],
+  "coupled_factors": {
+    "grids_minimum": 3,
+    "common_physical_matching_surfaces": true,
+    "sgs_models_minimum": 2,
+    "independent_time_blocks_minimum": 6,
+    "xiao_and_krank_tracks_separate": true
+  },
+  "mandatory_transfers": [
+    "converging-diverging control",
+    "backward-facing-step control",
+    "smooth wavy-wall wall-resolved LES",
+    "matched-fidelity k-type rib wall-resolved LES",
+    "cube-array wall-resolved LES",
+    "higher-Reynolds-number coupled hills"
+  ],
+  "symmetric_outcomes": {
+    "branch_changes_headline_verdict": "withdraw the old verdict and report numerical branch selection",
+    "runtime_inputs_do_not_select_unique_path": "report a set-valued prediction",
+    "exact_convection_does_not_improve_coupled_outputs": "reject causal sufficiency",
+    "rankings_change_with_grid_sgs_or_height": "report the interaction and no universal ordering"
+  },
+  "current_level_remote_jobs": []
+}

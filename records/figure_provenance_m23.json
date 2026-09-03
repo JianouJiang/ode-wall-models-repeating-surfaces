@@ -1,0 +1,188 @@
+{
+  "active_figures": {
+    "cancellation_parameter_corrected": {
+      "inputs": {
+        "codes/new_data_download/geometry_driven/xiao_pehill_parameterized/pehill-5-cases-DNS/case_1p0/dns-data/mean_files.dat": {
+          "mtime": "2026-02-13 08:27:33",
+          "sha256": "aa81c64e28bb305686dc2a29ca80c3870e21c94820efee8c73920fbe7e1e44dd"
+        },
+        "codes/results/dose_response_xiao.npz": {
+          "mtime": "2026-08-22 02:11:44",
+          "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f"
+        },
+        "codes/results/wall_extraction_artifact.npz": {
+          "mtime": "2026-08-22 02:15:30",
+          "sha256": "865a6427fb586c37923ea3b172b3f828b079a9633988551c334dfee48889f1ab"
+        },
+        "codes/utils/plotting_utils.py": {
+          "mtime": "2026-08-26 17:16:14",
+          "sha256": "64e3b09d051e106ddd1d14f5c6e3e804acf9dee362b3670915af0bfef9ec78db"
+        },
+        "codes/vendor/universal_wall_function/codes/results/bfs_Re13700_wall_profiles.npz": {
+          "mtime": "2026-03-23 20:51:17",
+          "sha256": "dc0c718077c255144a40cba9003f7e998f417fa9c532a0374bb52468a009b03f"
+        },
+        "codes/vendor/universal_wall_function/codes/results/nasa_hump_Re936000_wall_profiles.npz": {
+          "mtime": "2026-03-23 20:51:17",
+          "sha256": "bb5477f798f809f50188c6170c3ee0506ae0f400e9de6c535956b0f44071eb7e"
+        }
+      },
+      "pdf_mtime": "2026-08-28 14:39:20",
+      "pdf_sha256": "7ce8e316cdd2115207a108d2b848f14cb74c5f6b357af3b1991fb5a3b023171b",
+      "png_mtime": "2026-08-28 14:39:21",
+      "png_sha256": "e0b8f19e84d853fffc2735b1df522ae41ade9e6de0ffa0cccb0c608aad189f1f",
+      "script": "codes/figures/plot_cancellation_parameter_corrected.py"
+    },
+    "fig_amplitude_pitch_sweep": {
+      "inputs": {
+        "codes/results/dose_response_xiao.npz": {
+          "mtime": "2026-08-22 02:11:44",
+          "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f"
+        },
+        "codes/results/repeating_structure_contrast.npz": {
+          "mtime": "2026-08-22 02:10:16",
+          "sha256": "a90ade92a8eb222dd6dccdbdfc2e7367a1172b0cdebc817d15b73054d96649da"
+        },
+        "codes/utils/plotting_utils.py": {
+          "mtime": "2026-08-26 17:16:14",
+          "sha256": "64e3b09d051e106ddd1d14f5c6e3e804acf9dee362b3670915af0bfef9ec78db"
+        }
+      },
+      "pdf_mtime": "2026-08-26 18:36:05",
+      "pdf_sha256": "6a7a3575a1bb1eaf176470b2cb771df68d91ff76a802f427513acb0cc488fdab",
+      "png_mtime": "2026-08-26 18:36:05",
+      "png_sha256": "2e6e317ad4bdabcd9639833b5ae68154a7ccf0d8934d91b17e4870e462870455",
+      "script": "codes/figures/plot_dose_response.py"
+    },
+    "fig_class_map": {
+      "inputs": {
+        "codes/figures/fig_regime_map.py": {
+          "mtime": "2026-08-28 09:49:08",
+          "sha256": "24bd077318aeeda59c31d6fd532fa6d630b11e9f1534cb84a5821b96ea8f3749"
+        }
+      },
+      "pdf_mtime": "2026-08-28 09:49:27",
+      "pdf_sha256": "7fb63ac6f518c05b648e5ed138729c660875e4c6848dc01c63013bb7ba8af6c1",
+      "png_mtime": "2026-08-28 09:49:28",
+      "png_sha256": "8f861a49f7a3213d63d4282e2348776732a08c55f7a498cc3ceb558d12f0ef04",
+      "script": "codes/figures/fig_class_map.py"
+    },
+    "fig_coupled_score": {
+      "inputs": {
+        "codes/results/m13_highre_coupled_20260825_summary.json": {
+          "mtime": "2026-08-25 02:45:53",
+          "sha256": "779f0441e7b390a7f3eedb9edc4d454e4abdecf7d5dfdfd9e720552e7e4ab94a"
+        },
+        "codes/results/scoring_reference_conditioning_l0_20260825.json": {
+          "mtime": "2026-08-25 02:28:25",
+          "sha256": "2cdc81ca9d9e4d881f7ff8d81aa32a3a8313c1e3bf276750248c6d3f861043df"
+        }
+      },
+      "pdf_mtime": "2026-08-28 14:11:42",
+      "pdf_sha256": "7969a1f821c469d3b580389a5a331a132d222f85e4c56dada7308559a69dbafe",
+      "png_mtime": "2026-08-28 14:11:44",
+      "png_sha256": "57c72dbdbed883498bbe9a20766834c19fce5f21b57c1696c8e80887ee385b9c",
+      "script": "codes/figures/fig_blueprint_20260826.py"
+    },
+    "fig_error_hierarchy": {
+      "inputs": {
+        "codes/results/reference_rebase_headlines_l0_20260825.json": {
+          "mtime": "2026-08-25 04:15:36",
+          "sha256": "83da3f8fd283a6edbbad4ce9f9485721c8f7cddff81979ef43861678eda2923a"
+        },
+        "codes/results/signed_wall_error_metrics_m2.summary.json": {
+          "mtime": "2026-08-21 19:30:00",
+          "sha256": "502e78a24f75011de4478b73cdc981da406e0ce2604776b4a6fe72aabd05d757"
+        }
+      },
+      "pdf_mtime": "2026-08-28 14:11:34",
+      "pdf_sha256": "d07dca4fac62749985ed49f699d8ff7e348734f14c85c1f1f2853daea6220d3e",
+      "png_mtime": "2026-08-28 14:11:35",
+      "png_sha256": "8da232a31795c5e293e2d26de5ef322d4942ac05af66773f345b882aeabfad9b",
+      "script": "codes/figures/fig_blueprint_20260826.py"
+    },
+    "fig_ladder_apriori_coupled": {
+      "inputs": {
+        "codes/results/r2m4_ladder_rescored_20260825.json": {
+          "mtime": "2026-08-25 02:51:46",
+          "sha256": "39ca665193110063b18baf88a8cd5751d12857a0e713450b338ee45e114c7564"
+        }
+      },
+      "pdf_mtime": "2026-08-28 14:11:38",
+      "pdf_sha256": "2d4c3d1a234562bee37005db65d30d8562c8c4929d96e791a19bf42348d32ce7",
+      "png_mtime": "2026-08-28 14:11:39",
+      "png_sha256": "2c92e27a33cab643de0135072a09e555712e5c0bb676d39688041e0f90a20fbc",
+      "script": "codes/figures/fig_blueprint_20260826.py"
+    },
+    "fig_regime_map": {
+      "inputs": {
+        "codes/results/r2_4_m20_les_20260823.json": {
+          "mtime": "2026-08-25 16:13:20",
+          "sha256": "8b8cf0c220701c3730b64594cd18b45eddc074db72ff76d64c166568538d517d"
+        }
+      },
+      "pdf_mtime": "2026-08-28 09:49:11",
+      "pdf_sha256": "ccce38f7aba8523ce9ed69fc7b0807a76b7f4307ffe95e6bd624cb704b7b2376",
+      "png_mtime": "2026-08-28 09:49:12",
+      "png_sha256": "02c44743099464d069a22dbc6385269f053ecdb27c9577f4175dedb967a0722a",
+      "script": "codes/figures/fig_regime_map.py"
+    },
+    "fig_sharp_walls": {
+      "inputs": {
+        "codes/results/r2_4_m20_les_20260823.json": {
+          "mtime": "2026-08-25 16:13:20",
+          "sha256": "8b8cf0c220701c3730b64594cd18b45eddc074db72ff76d64c166568538d517d"
+        }
+      },
+      "pdf_mtime": "2026-08-28 14:11:40",
+      "pdf_sha256": "5faecfb312f3396cd3990474cda9926fff08f118ce2ba0bf9b0a4a1adda50c21",
+      "png_mtime": "2026-08-28 14:11:41",
+      "png_sha256": "aad684e37162f5956a5b5eca0075f581fd241a3f173a95c429810e5c147abf02",
+      "script": "codes/figures/fig_blueprint_20260826.py"
+    },
+    "fig_velocity_profiles": {
+      "inputs": {
+        "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz": {
+          "mtime": "2026-08-22 02:07:12",
+          "sha256": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85"
+        },
+        "codes/utils/data_paths.py": {
+          "mtime": "2026-03-23 20:51:26",
+          "sha256": "1a98003852d1b58062c3405be1efb87a27c67a3ce788cf60d82ba24a19919833"
+        },
+        "codes/utils/plotting_utils.py": {
+          "mtime": "2026-08-26 17:16:14",
+          "sha256": "64e3b09d051e106ddd1d14f5c6e3e804acf9dee362b3670915af0bfef9ec78db"
+        },
+        "codes/vendor/universal_wall_function/codes/results/bfs_Re13700_wall_profiles.npz": {
+          "mtime": "2026-03-23 20:51:17",
+          "sha256": "dc0c718077c255144a40cba9003f7e998f417fa9c532a0374bb52468a009b03f"
+        },
+        "codes/vendor/universal_wall_function/codes/results/nasa_hump_Re936000_wall_profiles.npz": {
+          "mtime": "2026-03-23 20:51:17",
+          "sha256": "bb5477f798f809f50188c6170c3ee0506ae0f400e9de6c535956b0f44071eb7e"
+        }
+      },
+      "pdf_mtime": "2026-08-28 14:32:39",
+      "pdf_sha256": "71e8468dacf0e946b56ad597e3700f8e1893a4db0e165e66a7da0dc048e7458f",
+      "png_mtime": "2026-08-28 14:32:41",
+      "png_sha256": "c661a1ab21a59735c5246fb8572fe4cb0898fdedd750c9530fcef1a68056a6b5",
+      "script": "codes/figures/fig_velocity_profiles.py"
+    },
+    "fig_wavy_amplitude": {
+      "inputs": {
+        "codes/results/r1_sta2_wavy_amplitude_20260825.json": {
+          "mtime": "2026-08-25 23:03:35",
+          "sha256": "cc0d7b240d5463ce8308c60999e0695eaa1768e4d47d4b35154a8a31eeb7a8d2"
+        }
+      },
+      "pdf_mtime": "2026-08-28 14:11:36",
+      "pdf_sha256": "f497254d61b8a831c2260c3fb11e60e58acaa300becdb5740e04beec4e6cfb72",
+      "png_mtime": "2026-08-28 14:11:37",
+      "png_sha256": "bee7d88e27ed35a55caa2cd3d82266282d855302dcf0948e2922f4617adc0ca7",
+      "script": "codes/figures/fig_blueprint_20260826.py"
+    }
+  },
+  "generated": "2026-09-03 07:50:36",
+  "schema": "figure-provenance-m23-v1"
+}

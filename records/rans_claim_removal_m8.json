@@ -1,0 +1,43 @@
+{
+  "body_pages": 20,
+  "compiled_rans_contexts": [
+    "in the Reynolds-averaged Navier\u2013Stokes (RANS) wall-function tradition, where the",
+    "Unmatched RANS comparisons do not enter the active evidence set.",
+    "stationarity record. No steady-RANS result is used to infer transfer, dimensionality, a",
+    "Popovac, M. & Hanjalic\u0301, K. 2007 Compound wall treatment for RANS computation of complex"
+  ],
+  "ledger_row": "M8",
+  "removed_from_active_evidence": [
+    "steady-RANS cube array and pitch/Reynolds sweeps",
+    "steady-RANS fillet-radius sweep",
+    "steady-RANS wavy-wall transition point",
+    "unmatched steady-RANS k-type rib"
+  ],
+  "resolution": "deleted_not_demoted",
+  "retained_reference_case": {
+    "case": "rib_les_dtype",
+    "epsilon_median": 0.5210734345944655,
+    "fidelity": "OpenFOAM wall-resolved LES (WALE), NOT DNS",
+    "n_stations": 48,
+    "r2_modelled_stress": -0.9431719607410027,
+    "r2_resolved_stress": -5.6811978658689695,
+    "relrms_modelled_stress": 1.2816611755346516,
+    "relrms_resolved_stress": 2.3765380827836258,
+    "resolved_shear_fraction_median": 0.9924243816295462,
+    "window_epsilon_median": [
+      0.5170632054483584,
+      0.5210734345944655
+    ],
+    "window_r2": [
+      -0.9946622984095803,
+      -0.9431719607410027
+    ]
+  },
+  "schema": "rans-claim-removal-m8-v1",
+  "sha256": {
+    "manuscript_main_pdf": "ede933c255ef1714eab691a052918328877e0c447ec1078e52a5facfa14dd7f6",
+    "manuscript_main_tex": "bf2164e732d502258cd04f6c0d3b1857aee3c753eee3a2a9813ecf0e9c859a20",
+    "rib_les_dtype_apriori_npz": "b4022afaf83400a499f47fc0fffe5eef98bb03ab5d474342a4557d66b4bf5a18",
+    "rib_les_stationarity_json": "3e57735327997275c960e99898bffe363566c8625c9e51c9107020c7eefff803"
+  }
+}

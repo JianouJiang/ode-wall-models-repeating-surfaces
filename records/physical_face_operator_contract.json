@@ -1,0 +1,39 @@
+{
+  "approach": "coordinate-free physical-face force migration",
+  "idea": "An affine-exact physical-face coarse-graining preserves signed wall force and its first moment under resolution change, while a scalar surrogate-wall traction loses the wall-normal force moment even when given the exact net streamwise force.",
+  "schema": "physical-face-force-migration-v1",
+  "conserved_component": "fixed Cartesian streamwise momentum",
+  "wall_force": "sum_f (-p I + sigma_nu) dot S_f; S_f outward from fluid",
+  "outward_flux": "sum_f [rho U_x U + p e_x + rho R_x - sigma_nu,x] dot S_f",
+  "certificate": "T_w = storage + nonwall outward flux - volume body force",
+  "deposition_constraints": [
+    "sum_c w_cg = 1",
+    "sum_c r_c w_cg = r_g"
+  ],
+  "deposition_solver": "minimum-L2 correction of local Gaussian weights",
+  "signed_weight_policy": "signed weights are allowed and reported because one-sided fluid support cannot reproduce wall-normal first moments with non-negative weights",
+  "scalar_comparator": "streamwise traction on y=0 surrogate; exact net streamwise force is oracle-only; no normal force or wall-normal moment",
+  "oracle_and_deployed_separate": true,
+  "reference_modelled_quantities": "none",
+  "thin_layer_terms_deleted": "none",
+  "thin_layer_audit_terms": [
+    "partial_x R_xx",
+    "nu partial_xx U"
+  ],
+  "manufactured_tests": [
+    "flat constant traction",
+    "flat affine traction",
+    "streamwise slope",
+    "spanwise slope",
+    "non-zero curvature",
+    "vertical rib face",
+    "three-dimensional cube pressure force",
+    "periodic face telescoping",
+    "normal reversal and owner orientation",
+    "storage and body force",
+    "constant and affine deposition"
+  ],
+  "claim_boundary": "manufactured preservation is a numerical contract, not evidence that a deployed distributed model is accurate; empirical scalar-versus-distributed ranking requires later coupled runs",
+  "ledger_row_closed": "R3-3",
+  "ledger_verifier": "python3 codes/analysis/ledger_verifiers/verify_r3_3.py"
+}

@@ -1,0 +1,2237 @@
+{
+ "P5_verdict_by_surface_and_reference": {
+  "archive_index10": {
+   "B_mglet": "REFUTED",
+   "C_xiao_repaired_cubic6": "REFUTED"
+  },
+  "ladder_L1": {
+   "B_mglet": "REFUTED",
+   "C_xiao_repaired_cubic6": "REFUTED"
+  }
+ },
+ "P5_verdict_overall": "REFUTED",
+ "flat_floor_x_over_H": [
+  2.05,
+  6.9
+ ],
+ "question": "is the fraction delta of an assembled source norm that returns as wall-traction error a property of the surface rather than of the wall model?",
+ "region_definition_source": "conditioning_ladder_l0.REGIONS (registered)",
+ "registered_prediction_P5": "delta fitted on the FLAT floor is at least three times smaller than delta fitted on the SLOPED wall of the same simulation, i.e. the inconsistency is a property of surface curvature.",
+ "schema": "source_budget_regions_l0/1",
+ "surfaces": {
+  "archive_index10": {
+   "arms_used_for_the_fit": [
+    "CTL_scale_M1_pressure_gradient_0.5",
+    "CTL_scale_M1_pressure_gradient_2",
+    "CTL_scale_M2_hickel_0.5",
+    "CTL_scale_M2_hickel_2",
+    "CTL_scale_Xall_0.5",
+    "CTL_scale_Xall_2",
+    "M1_pressure_gradient",
+    "M2_hickel",
+    "Xall"
+   ],
+   "references": {
+    "B_mglet": {
+     "P5_verdict": "REFUTED",
+     "delta_ratio_sloped_over_flat": 0.9694305216929386,
+     "flat_floor": {
+      "E0": 0.00014934425393450855,
+      "delta": 0.38980566221701696,
+      "fit_rms": 0.00021270863467242327,
+      "per_arm": {
+       "CTL_lambda_0.25": {
+        "N_rms": 0.00211471409073648,
+        "absolute_rms": 0.0007611240043532375,
+        "relative_rms": 0.5849302848102166,
+        "stations": 276
+       },
+       "CTL_lambda_0.5": {
+        "N_rms": 0.0020848094041975114,
+        "absolute_rms": 0.0007504629537005088,
+        "relative_rms": 0.5767371765137889,
+        "stations": 276
+       },
+       "CTL_lambda_0.75": {
+        "N_rms": 0.002055994983849349,
+        "absolute_rms": 0.0007407712073441168,
+        "relative_rms": 0.5692889868309922,
+        "stations": 276
+       },
+       "CTL_scale_M1_pressure_gradient_0.5": {
+        "N_rms": 0.001072831728977195,
+        "absolute_rms": 0.0003964267381254542,
+        "relative_rms": 0.30465732720537175,
+        "stations": 276
+       },
+       "CTL_scale_M1_pressure_gradient_2": {
+        "N_rms": 0.00429132691590878,
+        "absolute_rms": 0.0019406352534328607,
+        "relative_rms": 1.4913947333297,
+        "stations": 276
+       },
+       "CTL_scale_M2_hickel_0.5": {
+        "N_rms": 0.0003568193962717213,
+        "absolute_rms": 0.0007521027770073758,
+        "relative_rms": 0.5779973947022026,
+        "stations": 276
+       },
+       "CTL_scale_M2_hickel_2": {
+        "N_rms": 0.0014272775850868852,
+        "absolute_rms": 0.0006169337158620958,
+        "relative_rms": 0.47411881909424625,
+        "stations": 276
+       },
+       "CTL_scale_Xall_0.5": {
+        "N_rms": 0.001014158647711161,
+        "absolute_rms": 0.0003985766376475384,
+        "relative_rms": 0.30630954331283067,
+        "stations": 276
+       },
+       "CTL_scale_Xall_2": {
+        "N_rms": 0.004056634590844644,
+        "absolute_rms": 0.0018767800750763121,
+        "relative_rms": 1.4423214844910408,
+        "stations": 276
+       },
+       "CTL_shift_M2_hickel_0.125": {
+        "N_rms": 0.0007505982362022133,
+        "absolute_rms": 0.0007740157145008249,
+        "relative_rms": 0.5948376739415405,
+        "stations": 276
+       },
+       "CTL_shift_M2_hickel_0.25": {
+        "N_rms": 0.0023023633097425103,
+        "absolute_rms": 0.002324134482470135,
+        "relative_rms": 1.7861171596127687,
+        "stations": 276
+       },
+       "CTL_shift_M2_hickel_0.5": {
+        "N_rms": 0.0023728040128672893,
+        "absolute_rms": 0.0025870569279020485,
+        "relative_rms": 1.988175299955053,
+        "stations": 276
+       },
+       "CTL_shift_Xall_0.125": {
+        "N_rms": 0.008532306261419263,
+        "absolute_rms": 0.004840967075799457,
+        "relative_rms": 3.7203244598893237,
+        "stations": 276
+       },
+       "CTL_shift_Xall_0.25": {
+        "N_rms": 0.018577022710995587,
+        "absolute_rms": 0.0074333337644536925,
+        "relative_rms": 5.712580356240348,
+        "stations": 276
+       },
+       "CTL_shift_Xall_0.5": {
+        "N_rms": 0.020963839591950882,
+        "absolute_rms": 0.008189115207219322,
+        "relative_rms": 6.293404836932993,
+        "stations": 276
+       },
+       "CTL_term_conv_matchedN": {
+        "N_rms": 0.00028500446956731005,
+        "absolute_rms": 0.0012797476224509694,
+        "relative_rms": 0.9834969558232919,
+        "stations": 276
+       },
+       "CTL_term_dRtt_matchedN": {
+        "N_rms": 0.0045650430663942585,
+        "absolute_rms": 0.002381537834242531,
+        "relative_rms": 1.8302321247291569,
+        "stations": 276
+       },
+       "CTL_term_dpds_matchedN": {
+        "N_rms": 0.0035375904258771735,
+        "absolute_rms": 0.001540502007625513,
+        "relative_rms": 1.1838889233782566,
+        "stations": 276
+       },
+       "CTL_term_visc_matchedN": {
+        "N_rms": 7.381780837399619e-05,
+        "absolute_rms": 0.0010939767067305217,
+        "relative_rms": 0.840730423667796,
+        "stations": 276
+       },
+       "M0_equilibrium": {
+        "N_rms": 0.0,
+        "absolute_rms": 0.0010581099555351347,
+        "relative_rms": 0.8131665196627421,
+        "stations": 276
+       },
+       "M1_pressure_gradient": {
+        "N_rms": 0.00214566345795439,
+        "absolute_rms": 0.0007727723400860267,
+        "relative_rms": 0.5938821301058267,
+        "stations": 276
+       },
+       "M2_hickel": {
+        "N_rms": 0.0007136387925434426,
+        "absolute_rms": 0.0005261012333079156,
+        "relative_rms": 0.4043132820377935,
+        "stations": 276
+       },
+       "M2b_hickel_Aplus17": {
+        "N_rms": 0.0007136387925434426,
+        "absolute_rms": 0.0005006306538890771,
+        "relative_rms": 0.3847389246551191,
+        "stations": 276
+       },
+       "M3_yang_integral": {
+        "N_rms": 0.002028317295422322,
+        "absolute_rms": 0.00011499840334911924,
+        "relative_rms": 0.08837725316636094,
+        "stations": 276
+       },
+       "M4_park_moin": {
+        "N_rms": 0.0019942540072614913,
+        "absolute_rms": 0.0006668935066607982,
+        "relative_rms": 0.5125133441569211,
+        "stations": 276
+       },
+       "M5_meneveau": {
+        "N_rms": 0.0,
+        "absolute_rms": 0.0006831749012050055,
+        "relative_rms": 0.5250257346391307,
+        "stations": 276
+       },
+       "Xall": {
+        "N_rms": 0.002028317295422322,
+        "absolute_rms": 0.0007320457230328419,
+        "relative_rms": 0.5625833777658332,
+        "stations": 276
+       },
+       "Xc_exact_convection": {
+        "N_rms": 0.0019925224304594936,
+        "absolute_rms": 0.0007364269791852579,
+        "relative_rms": 0.5659504104627416,
+        "stations": 276
+       },
+       "Xcp_pressure_plus_convection": {
+        "N_rms": 0.0019942540072614913,
+        "absolute_rms": 0.0007402208628358752,
+        "relative_rms": 0.5688660423855295,
+        "stations": 276
+       },
+       "Xcpr_plus_normal_stress": {
+        "N_rms": 0.002028505647881728,
+        "absolute_rms": 0.0007320508427220522,
+        "relative_rms": 0.5625873122906292,
+        "stations": 276
+       },
+       "Xfull_closure_free": {
+        "N_rms": 0.002028317295422322,
+        "absolute_rms": 0.00011499840334911924,
+        "relative_rms": 0.08837725316636094,
+        "stations": 276
+       }
+      },
+      "truth_rms": 0.0013012217423486422
+     },
+     "post_hoc_not_registered": {
+      "attainment_E_abs_over_N_by_arm": {
+       "CTL_lambda_0.25": {
+        "flat_floor": 0.359918159947648,
+        "ratio_sloped_over_flat": 1.4115799536889415,
+        "sloped_wall": 0.50805325955071
+       },
+       "CTL_lambda_0.5": {
+        "flat_floor": 0.35996717598718736,
+        "ratio_sloped_over_flat": 1.508634727865983,
+        "sloped_wall": 0.5430589825861168
+       },
+       "CTL_lambda_0.75": {
+        "flat_floor": 0.3602981588783857,
+        "ratio_sloped_over_flat": 1.6682658847563143,
+        "sloped_wall": 0.6010731267973212
+       },
+       "CTL_scale_M1_pressure_gradient_0.5": {
+        "flat_floor": 0.36951436783417596,
+        "ratio_sloped_over_flat": 1.5676918226405918,
+        "sloped_wall": 0.5792846528018454
+       },
+       "CTL_scale_M1_pressure_gradient_2": {
+        "flat_floor": 0.4522226554771555,
+        "ratio_sloped_over_flat": 1.0046435777507339,
+        "sloped_wall": 0.454322586538507
+       },
+       "CTL_scale_M2_hickel_0.5": {
+        "flat_floor": 2.10779678701839,
+        "ratio_sloped_over_flat": 1.3684731500223215,
+        "sloped_wall": 2.8844633087379843
+       },
+       "CTL_scale_M2_hickel_2": {
+        "flat_floor": 0.43224508134102035,
+        "ratio_sloped_over_flat": 1.9104343803199766,
+        "sloped_wall": 0.8257758641180901
+       },
+       "CTL_scale_Xall_0.5": {
+        "flat_floor": 0.3930121175292247,
+        "ratio_sloped_over_flat": 1.9693966316586,
+        "sloped_wall": 0.773996740463069
+       },
+       "CTL_scale_Xall_2": {
+        "flat_floor": 0.46264459690601367,
+        "ratio_sloped_over_flat": 0.9728910859785144,
+        "sloped_wall": 0.45010280430598365
+       },
+       "CTL_shift_M2_hickel_0.125": {
+        "flat_floor": 1.0311984190331922,
+        "ratio_sloped_over_flat": 1.941832755963468,
+        "sloped_wall": 2.0024148679763947
+       },
+       "CTL_shift_M2_hickel_0.25": {
+        "flat_floor": 1.0094560109759825,
+        "ratio_sloped_over_flat": 4.593121154575364,
+        "sloped_wall": 4.636553758627046
+       },
+       "CTL_shift_M2_hickel_0.5": {
+        "flat_floor": 1.09029524304279,
+        "ratio_sloped_over_flat": 5.816568023056583,
+        "sloped_wall": 6.341776446373397
+       },
+       "CTL_shift_Xall_0.125": {
+        "flat_floor": 0.5673691177365463,
+        "ratio_sloped_over_flat": 0.8026859943179805,
+        "sloped_wall": 0.455419244415675
+       },
+       "CTL_shift_Xall_0.25": {
+        "flat_floor": 0.4001359033734702,
+        "ratio_sloped_over_flat": 1.728354992348493,
+        "sloped_wall": 0.6915768862134115
+       },
+       "CTL_shift_Xall_0.5": {
+        "flat_floor": 0.39063050312422504,
+        "ratio_sloped_over_flat": 6.989360569880779,
+        "sloped_wall": 2.7302574359291487
+       },
+       "CTL_term_conv_matchedN": {
+        "flat_floor": 4.490272115359682,
+        "ratio_sloped_over_flat": 0.11344318022814251,
+        "sloped_wall": 0.5093907488561511
+       },
+       "CTL_term_dRtt_matchedN": {
+        "flat_floor": 0.5216901132377729,
+        "ratio_sloped_over_flat": 0.7459819151802536,
+        "sloped_wall": 0.3891713898037172
+       },
+       "CTL_term_dpds_matchedN": {
+        "flat_floor": 0.435466467897717,
+        "ratio_sloped_over_flat": 1.2954929470511825,
+        "sloped_wall": 0.5641437378387825
+       },
+       "CTL_term_visc_matchedN": {
+        "flat_floor": 14.81995646887692,
+        "ratio_sloped_over_flat": 0.03802841624269817,
+        "sloped_wall": 0.5635794732971189
+       },
+       "M1_pressure_gradient": {
+        "flat_floor": 0.3601554275537527,
+        "ratio_sloped_over_flat": 1.3742323625341624,
+        "sloped_wall": 0.49493724408669487
+       },
+       "M2_hickel": {
+        "flat_floor": 0.7372094101455244,
+        "ratio_sloped_over_flat": 1.8774565194513821,
+        "sloped_wall": 1.3840786132786227
+       },
+       "M2b_hickel_Aplus17": {
+        "flat_floor": 0.7015182738382335,
+        "ratio_sloped_over_flat": 1.883324486601125,
+        "sloped_wall": 1.3211865429176985
+       },
+       "M3_yang_integral": {
+        "flat_floor": 0.05669645652021869,
+        "ratio_sloped_over_flat": 41.80914046457165,
+        "sloped_wall": 2.370430114497302
+       },
+       "M4_park_moin": {
+        "flat_floor": 0.3344075048777643,
+        "ratio_sloped_over_flat": 3.8198581942076895,
+        "sloped_wall": 1.277389247711876
+       },
+       "Xall": {
+        "flat_floor": 0.3609128239871467,
+        "ratio_sloped_over_flat": 1.566760421449494,
+        "sloped_wall": 0.5654639282166289
+       },
+       "Xc_exact_convection": {
+        "flat_floor": 0.36959532697226966,
+        "ratio_sloped_over_flat": 1.0663701542063329,
+        "sloped_wall": 0.3941254258173592
+       },
+       "Xcp_pressure_plus_convection": {
+        "flat_floor": 0.3711768210772439,
+        "ratio_sloped_over_flat": 1.5311650218958244,
+        "sloped_wall": 0.5683329653719607
+       },
+       "Xcpr_plus_normal_stress": {
+        "flat_floor": 0.36088183608781077,
+        "ratio_sloped_over_flat": 1.5796043447510033,
+        "sloped_wall": 0.5700505162260253
+       },
+       "Xfull_closure_free": {
+        "flat_floor": 0.05669645652021869,
+        "ratio_sloped_over_flat": 41.80914046457165,
+        "sloped_wall": 2.370430114497302
+       }
+      },
+      "closure_free_attainment_ratio": 41.80914046457165,
+      "intercept_E0_ratio_sloped_over_flat": 16.731433126225294,
+      "why": "P5 named the fitted slope; it is region-independent. These are the two quantities that are not, found after that test returned REFUTED."
+     },
+     "sloped_wall": {
+      "E0": 0.0024987433974912386,
+      "delta": 0.37788950648190417,
+      "fit_rms": 0.0006769207577018156,
+      "per_arm": {
+       "CTL_lambda_0.25": {
+        "N_rms": 0.009730575033064336,
+        "absolute_rms": 0.004943650362851094,
+        "relative_rms": 0.950047619850849,
+        "stations": 236
+       },
+       "CTL_lambda_0.5": {
+        "N_rms": 0.008979000577967312,
+        "absolute_rms": 0.004876126918511084,
+        "relative_rms": 0.9370712799257169,
+        "stations": 236
+       },
+       "CTL_lambda_0.75": {
+        "N_rms": 0.012630628234239657,
+        "absolute_rms": 0.0075919312061689575,
+        "relative_rms": 1.458981854115692,
+        "stations": 236
+       },
+       "CTL_scale_M1_pressure_gradient_0.5": {
+        "N_rms": 0.0072218297074502944,
+        "absolute_rms": 0.0041834951146743965,
+        "relative_rms": 0.8039645372618719,
+        "stations": 236
+       },
+       "CTL_scale_M1_pressure_gradient_2": {
+        "N_rms": 0.028887318829801178,
+        "absolute_rms": 0.013124161408917787,
+        "relative_rms": 2.522139996544952,
+        "stations": 236
+       },
+       "CTL_scale_M2_hickel_0.5": {
+        "N_rms": 0.0012050883427898202,
+        "absolute_rms": 0.003476033108565099,
+        "relative_rms": 0.6680077956424222,
+        "stations": 236
+       },
+       "CTL_scale_M2_hickel_2": {
+        "N_rms": 0.004820353371159281,
+        "absolute_rms": 0.0039805314704236035,
+        "relative_rms": 0.7649599327725054,
+        "stations": 236
+       },
+       "CTL_scale_Xall_0.5": {
+        "N_rms": 0.008990580582523942,
+        "absolute_rms": 0.006958680065744091,
+        "relative_rms": 1.337286609797986,
+        "stations": 236
+       },
+       "CTL_scale_Xall_2": {
+        "N_rms": 0.03596232233009577,
+        "absolute_rms": 0.0161867421301318,
+        "relative_rms": 3.110692444884452,
+        "stations": 236
+       },
+       "CTL_shift_M2_hickel_0.125": {
+        "N_rms": 0.00250031772799148,
+        "absolute_rms": 0.005006673393195099,
+        "relative_rms": 0.9621590912494006,
+        "stations": 236
+       },
+       "CTL_shift_M2_hickel_0.25": {
+        "N_rms": 0.0008721660237011485,
+        "absolute_rms": 0.004043844655338366,
+        "relative_rms": 0.7771271647202672,
+        "stations": 236
+       },
+       "CTL_shift_M2_hickel_0.5": {
+        "N_rms": 0.0006905882546921043,
+        "absolute_rms": 0.0043795563277485,
+        "relative_rms": 0.8416426647900287,
+        "stations": 236
+       },
+       "CTL_shift_Xall_0.125": {
+        "N_rms": 0.01785578266735396,
+        "absolute_rms": 0.008131867050816846,
+        "relative_rms": 1.5627442010515802,
+        "stations": 236
+       },
+       "CTL_shift_Xall_0.25": {
+        "N_rms": 0.007019669335060456,
+        "absolute_rms": 0.004854641060988879,
+        "relative_rms": 0.932942228253128,
+        "stations": 236
+       },
+       "CTL_shift_Xall_0.5": {
+        "N_rms": 0.0017914162164983237,
+        "absolute_rms": 0.00489102744593861,
+        "relative_rms": 0.9399347936408898,
+        "stations": 236
+       },
+       "CTL_term_conv_matchedN": {
+        "N_rms": 0.018111834063501704,
+        "absolute_rms": 0.009226000716765478,
+        "relative_rms": 1.773009694935273,
+        "stations": 236
+       },
+       "CTL_term_dRtt_matchedN": {
+        "N_rms": 0.01742876275576635,
+        "absolute_rms": 0.006782775824220854,
+        "relative_rms": 1.3034821548477293,
+        "stations": 236
+       },
+       "CTL_term_dpds_matchedN": {
+        "N_rms": 0.017705871132369315,
+        "absolute_rms": 0.009988656322306621,
+        "relative_rms": 1.9195732845157472,
+        "stations": 236
+       },
+       "CTL_term_visc_matchedN": {
+        "N_rms": 0.018114280428232134,
+        "absolute_rms": 0.010208836622899375,
+        "relative_rms": 1.9618865055493544,
+        "stations": 236
+       },
+       "M0_equilibrium": {
+        "N_rms": 0.0,
+        "absolute_rms": 0.004042086128669847,
+        "relative_rms": 0.7767892192845575,
+        "stations": 236
+       },
+       "M1_pressure_gradient": {
+        "N_rms": 0.014443659414900589,
+        "absolute_rms": 0.007148704985337742,
+        "relative_rms": 1.3738047106590228,
+        "stations": 236
+       },
+       "M2_hickel": {
+        "N_rms": 0.0024101766855796404,
+        "absolute_rms": 0.0033358740047335356,
+        "relative_rms": 0.6410726741790972,
+        "stations": 236
+       },
+       "M2b_hickel_Aplus17": {
+        "N_rms": 0.0024101766855796404,
+        "absolute_rms": 0.003184293003041802,
+        "relative_rms": 0.6119425457715563,
+        "stations": 236
+       },
+       "M3_yang_integral": {
+        "N_rms": 0.017981161165047884,
+        "absolute_rms": 0.042623085919258896,
+        "relative_rms": 8.191105429417249,
+        "stations": 236
+       },
+       "M4_park_moin": {
+        "N_rms": 0.01799183339520081,
+        "absolute_rms": 0.022982574525652968,
+        "relative_rms": 4.416683750577574,
+        "stations": 236
+       },
+       "M5_meneveau": {
+        "N_rms": 0.0,
+        "absolute_rms": 0.006577780020202826,
+        "relative_rms": 1.2640870193927172,
+        "stations": 236
+       },
+       "Xall": {
+        "N_rms": 0.017981161165047884,
+        "absolute_rms": 0.010167698026284273,
+        "relative_rms": 1.9539806823358288,
+        "stations": 236
+       },
+       "Xc_exact_convection": {
+        "N_rms": 0.01429649137533454,
+        "absolute_rms": 0.005634610750997929,
+        "relative_rms": 1.082833157659703,
+        "stations": 236
+       },
+       "Xcp_pressure_plus_convection": {
+        "N_rms": 0.01799183339520081,
+        "absolute_rms": 0.010225352025972747,
+        "relative_rms": 1.965060358518132,
+        "stations": 236
+       },
+       "Xcpr_plus_normal_stress": {
+        "N_rms": 0.01795440165039869,
+        "absolute_rms": 0.010234915929339176,
+        "relative_rms": 1.966898304764905,
+        "stations": 236
+       },
+       "Xfull_closure_free": {
+        "N_rms": 0.017981161165047884,
+        "absolute_rms": 0.042623085919258896,
+        "relative_rms": 8.191105429417249,
+        "stations": 236
+       }
+      },
+      "truth_rms": 0.005203581651651539
+     }
+    },
+    "C_xiao_repaired_cubic6": {
+     "P5_verdict": "REFUTED",
+     "delta_ratio_sloped_over_flat": 0.918127845537186,
+     "flat_floor": {
+      "E0": 0.00018422427025552171,
+      "delta": 0.4586424064065389,
+      "fit_rms": 0.00013596196445848864,
+      "per_arm": {
+       "CTL_lambda_0.25": {
+        "N_rms": 0.00211471409073648,
+        "absolute_rms": 0.001030087242730707,
+        "relative_rms": 0.8815242455829546,
+        "stations": 276
+       },
+       "CTL_lambda_0.5": {
+        "N_rms": 0.0020848094041975114,
+        "absolute_rms": 0.0010179611485783156,
+        "relative_rms": 0.8711470216390705,
+        "stations": 276
+       },
+       "CTL_lambda_0.75": {
+        "N_rms": 0.002055994983849349,
+        "absolute_rms": 0.0010064635450256821,
+        "relative_rms": 0.8613076450529877,
+        "stations": 276
+       },
+       "CTL_scale_M1_pressure_gradient_0.5": {
+        "N_rms": 0.001072831728977195,
+        "absolute_rms": 0.000538587603235114,
+        "relative_rms": 0.460910504399175,
+        "stations": 276
+       },
+       "CTL_scale_M1_pressure_gradient_2": {
+        "N_rms": 0.00429132691590878,
+        "absolute_rms": 0.0022071076341129074,
+        "relative_rms": 1.8887903969415518,
+        "stations": 276
+       },
+       "CTL_scale_M2_hickel_0.5": {
+        "N_rms": 0.0003568193962717213,
+        "absolute_rms": 0.0006417186587601367,
+        "relative_rms": 0.5491676171432035,
+        "stations": 276
+       },
+       "CTL_scale_M2_hickel_2": {
+        "N_rms": 0.0014272775850868852,
+        "absolute_rms": 0.0008682979945998403,
+        "relative_rms": 0.7430688420154719,
+        "stations": 276
+       },
+       "CTL_scale_Xall_0.5": {
+        "N_rms": 0.001014158647711161,
+        "absolute_rms": 0.0005192322253992522,
+        "relative_rms": 0.4443466308388152,
+        "stations": 276
+       },
+       "CTL_scale_Xall_2": {
+        "N_rms": 0.004056634590844644,
+        "absolute_rms": 0.0021382985048105673,
+        "relative_rms": 1.8299051751066837,
+        "stations": 276
+       },
+       "CTL_shift_M2_hickel_0.125": {
+        "N_rms": 0.0007505982362022133,
+        "absolute_rms": 0.000721233112766881,
+        "relative_rms": 0.6172142021056777,
+        "stations": 276
+       },
+       "CTL_shift_M2_hickel_0.25": {
+        "N_rms": 0.0023023633097425103,
+        "absolute_rms": 0.002254438908640465,
+        "relative_rms": 1.9292953797620145,
+        "stations": 276
+       },
+       "CTL_shift_M2_hickel_0.5": {
+        "N_rms": 0.0023728040128672893,
+        "absolute_rms": 0.002500021397887397,
+        "relative_rms": 2.1394590528775947,
+        "stations": 276
+       },
+       "CTL_shift_Xall_0.125": {
+        "N_rms": 0.008532306261419263,
+        "absolute_rms": 0.00482983047779224,
+        "relative_rms": 4.133254438665467,
+        "stations": 276
+       },
+       "CTL_shift_Xall_0.25": {
+        "N_rms": 0.018577022710995587,
+        "absolute_rms": 0.007398723652049808,
+        "relative_rms": 6.33165232525362,
+        "stations": 276
+       },
+       "CTL_shift_Xall_0.5": {
+        "N_rms": 0.020963839591950882,
+        "absolute_rms": 0.008144307081998344,
+        "relative_rms": 6.969704951613888,
+        "stations": 276
+       },
+       "CTL_term_conv_matchedN": {
+        "N_rms": 0.00028500446956731005,
+        "absolute_rms": 0.001100048162653174,
+        "relative_rms": 0.9413951425289769,
+        "stations": 276
+       },
+       "CTL_term_dRtt_matchedN": {
+        "N_rms": 0.0045650430663942585,
+        "absolute_rms": 0.002256206947734948,
+        "relative_rms": 1.930808425710233,
+        "stations": 276
+       },
+       "CTL_term_dpds_matchedN": {
+        "N_rms": 0.0035375904258771735,
+        "absolute_rms": 0.001809969057381079,
+        "relative_rms": 1.5489286165768612,
+        "stations": 276
+       },
+       "CTL_term_visc_matchedN": {
+        "N_rms": 7.381780837399619e-05,
+        "absolute_rms": 0.0009247232086069631,
+        "relative_rms": 0.7913562026837071,
+        "stations": 276
+       },
+       "M0_equilibrium": {
+        "N_rms": 0.0,
+        "absolute_rms": 0.0008784075076779724,
+        "relative_rms": 0.7517203236761774,
+        "stations": 276
+       },
+       "M1_pressure_gradient": {
+        "N_rms": 0.00214566345795439,
+        "absolute_rms": 0.0010428697429149872,
+        "relative_rms": 0.8924632062497624,
+        "stations": 276
+       },
+       "M2_hickel": {
+        "N_rms": 0.0007136387925434426,
+        "absolute_rms": 0.0005521708921402321,
+        "relative_rms": 0.47253476107172354,
+        "stations": 276
+       },
+       "M2b_hickel_Aplus17": {
+        "N_rms": 0.0007136387925434426,
+        "absolute_rms": 0.0005252125358520934,
+        "relative_rms": 0.449464438769644,
+        "stations": 276
+       },
+       "M3_yang_integral": {
+        "N_rms": 0.002028317295422322,
+        "absolute_rms": 0.00019224654967282874,
+        "relative_rms": 0.1645200402802877,
+        "stations": 276
+       },
+       "M4_park_moin": {
+        "N_rms": 0.0019942540072614913,
+        "absolute_rms": 0.0008576978952405912,
+        "relative_rms": 0.7339975282440331,
+        "stations": 276
+       },
+       "M5_meneveau": {
+        "N_rms": 0.0,
+        "absolute_rms": 0.0008806587494988752,
+        "relative_rms": 0.7536468830640358,
+        "stations": 276
+       },
+       "Xall": {
+        "N_rms": 0.002028317295422322,
+        "absolute_rms": 0.0009955787418182477,
+        "relative_rms": 0.8519926884767698,
+        "stations": 276
+       },
+       "Xc_exact_convection": {
+        "N_rms": 0.0019925224304594936,
+        "absolute_rms": 0.0010003656778210849,
+        "relative_rms": 0.856089234840521,
+        "stations": 276
+       },
+       "Xcp_pressure_plus_convection": {
+        "N_rms": 0.0019942540072614913,
+        "absolute_rms": 0.001004564865045139,
+        "relative_rms": 0.8596827997311344,
+        "stations": 276
+       },
+       "Xcpr_plus_normal_stress": {
+        "N_rms": 0.002028505647881728,
+        "absolute_rms": 0.0009955598921120223,
+        "relative_rms": 0.8519765573449876,
+        "stations": 276
+       },
+       "Xfull_closure_free": {
+        "N_rms": 0.002028317295422322,
+        "absolute_rms": 0.00019224654967282874,
+        "relative_rms": 0.1645200402802877,
+        "stations": 276
+       }
+      },
+      "truth_rms": 0.0011685296778757425
+     },
+     "post_hoc_not_registered": {
+      "attainment_E_abs_over_N_by_arm": {
+       "CTL_lambda_0.25": {
+        "flat_floor": 0.48710473309040275,
+        "ratio_sloped_over_flat": 1.1925595111010368,
+        "sloped_wall": 0.5809013823492917
+       },
+       "CTL_lambda_0.5": {
+        "flat_floor": 0.4882754013526484,
+        "ratio_sloped_over_flat": 1.2132538132356119,
+        "sloped_wall": 0.5924019926002495
+       },
+       "CTL_lambda_0.75": {
+        "flat_floor": 0.48952626486535716,
+        "ratio_sloped_over_flat": 1.2244187110456748,
+        "sloped_wall": 0.5993851182494442
+       },
+       "CTL_scale_M1_pressure_gradient_0.5": {
+        "flat_floor": 0.5020243051056916,
+        "ratio_sloped_over_flat": 1.1712001654477704,
+        "sloped_wall": 0.5879709491985879
+       },
+       "CTL_scale_M1_pressure_gradient_2": {
+        "flat_floor": 0.5143182230956891,
+        "ratio_sloped_over_flat": 0.9408880067957667,
+        "sloped_wall": 0.48391584778724334
+       },
+       "CTL_scale_M2_hickel_0.5": {
+        "flat_floor": 1.7984410754158162,
+        "ratio_sloped_over_flat": 0.8746819019313503,
+        "sloped_wall": 1.573063860356169
+       },
+       "CTL_scale_M2_hickel_2": {
+        "flat_floor": 0.6083595816765964,
+        "ratio_sloped_over_flat": 1.2840460951419843,
+        "sloped_wall": 0.7811617452940447
+       },
+       "CTL_scale_Xall_0.5": {
+        "flat_floor": 0.5119832351389,
+        "ratio_sloped_over_flat": 1.4152374513722539,
+        "sloped_wall": 0.7245778488432982
+       },
+       "CTL_scale_Xall_2": {
+        "flat_floor": 0.5271114410049306,
+        "ratio_sloped_over_flat": 0.856463032510502,
+        "sloped_wall": 0.45145146323406343
+       },
+       "CTL_shift_M2_hickel_0.125": {
+        "flat_floor": 0.9608777079148088,
+        "ratio_sloped_over_flat": 1.5165008195140883,
+        "sloped_wall": 1.4571718315056263
+       },
+       "CTL_shift_M2_hickel_0.25": {
+        "flat_floor": 0.9791846921381817,
+        "ratio_sloped_over_flat": 2.773783173861564,
+        "sloped_wall": 2.7160460231557044
+       },
+       "CTL_shift_M2_hickel_0.5": {
+        "flat_floor": 1.0536147883812699,
+        "ratio_sloped_over_flat": 3.6313529089915195,
+        "sloped_wall": 3.8260471267448084
+       },
+       "CTL_shift_Xall_0.125": {
+        "flat_floor": 0.5660638905604458,
+        "ratio_sloped_over_flat": 0.7424486523189181,
+        "sloped_wall": 0.4202733726730065
+       },
+       "CTL_shift_Xall_0.25": {
+        "flat_floor": 0.39827284313274613,
+        "ratio_sloped_over_flat": 1.5828504780715875,
+        "sloped_wall": 0.6304063601555976
+       },
+       "CTL_shift_Xall_0.5": {
+        "flat_floor": 0.3884931024336482,
+        "ratio_sloped_over_flat": 4.493022603883861,
+        "sloped_wall": 1.7455082906873496
+       },
+       "CTL_term_conv_matchedN": {
+        "flat_floor": 3.8597575831819495,
+        "ratio_sloped_over_flat": 0.13005154909400304,
+        "sloped_wall": 0.5019674528201379
+       },
+       "CTL_term_dRtt_matchedN": {
+        "flat_floor": 0.4942356325932833,
+        "ratio_sloped_over_flat": 0.6875640617897858,
+        "sloped_wall": 0.3398186590270821
+       },
+       "CTL_term_dpds_matchedN": {
+        "flat_floor": 0.5116389517964853,
+        "ratio_sloped_over_flat": 1.0456211234397421,
+        "sloped_wall": 0.534980495572973
+       },
+       "CTL_term_visc_matchedN": {
+        "flat_floor": 12.527101914511938,
+        "ratio_sloped_over_flat": 0.04802057085654678,
+        "sloped_wall": 0.6015585851130034
+       },
+       "M1_pressure_gradient": {
+        "flat_floor": 0.4860360272478273,
+        "ratio_sloped_over_flat": 1.1056043963445183,
+        "sloped_wall": 0.5373635685070219
+       },
+       "M2_hickel": {
+        "flat_floor": 0.7737400179329781,
+        "ratio_sloped_over_flat": 1.1485409075509763,
+        "sloped_wall": 0.8886720624052513
+       },
+       "M2b_hickel_Aplus17": {
+        "flat_floor": 0.7359641058471765,
+        "ratio_sloped_over_flat": 1.2541356884244081,
+        "sloped_wall": 0.9229988505423027
+       },
+       "M3_yang_integral": {
+        "flat_floor": 0.09478129980289919,
+        "ratio_sloped_over_flat": 24.57531816262362,
+        "sloped_wall": 2.329280598523263
+       },
+       "M4_park_moin": {
+        "flat_floor": 0.4300845790543912,
+        "ratio_sloped_over_flat": 2.9305526780828006,
+        "sloped_wall": 1.26038551494996
+       },
+       "Xall": {
+        "flat_floor": 0.49083974389271046,
+        "ratio_sloped_over_flat": 1.1406807314114733,
+        "sloped_wall": 0.5598914380693572
+       },
+       "Xc_exact_convection": {
+        "flat_floor": 0.5020599329415788,
+        "ratio_sloped_over_flat": 0.9550748345466942,
+        "sloped_wall": 0.47950480738670276
+       },
+       "Xcp_pressure_plus_convection": {
+        "flat_floor": 0.503729645966517,
+        "ratio_sloped_over_flat": 1.1097903091072066,
+        "sloped_wall": 0.5590342795036447
+       },
+       "Xcpr_plus_normal_stress": {
+        "flat_floor": 0.49078487563080636,
+        "ratio_sloped_over_flat": 1.1424765619072395,
+        "sloped_wall": 0.5607102173467557
+       },
+       "Xfull_closure_free": {
+        "flat_floor": 0.09478129980289919,
+        "ratio_sloped_over_flat": 24.57531816262362,
+        "sloped_wall": 2.329280598523263
+       }
+      },
+      "closure_free_attainment_ratio": 24.57531816262362,
+      "intercept_E0_ratio_sloped_over_flat": 9.207529758865473,
+      "why": "P5 named the fitted slope; it is region-independent. These are the two quantities that are not, found after that test returned REFUTED."
+     },
+     "sloped_wall": {
+      "E0": 0.0016962504506829916,
+      "delta": 0.42109236446602605,
+      "fit_rms": 0.0005523893047354128,
+      "per_arm": {
+       "CTL_lambda_0.25": {
+        "N_rms": 0.009730575033064336,
+        "absolute_rms": 0.005652504487760578,
+        "relative_rms": 1.7717308690911557,
+        "stations": 236
+       },
+       "CTL_lambda_0.5": {
+        "N_rms": 0.008979000577967312,
+        "absolute_rms": 0.0053191778339466275,
+        "relative_rms": 1.667252381133863,
+        "stations": 236
+       },
+       "CTL_lambda_0.75": {
+        "N_rms": 0.012630628234239657,
+        "absolute_rms": 0.007570610597744505,
+        "relative_rms": 2.372945394901688,
+        "stations": 236
+       },
+       "CTL_scale_M1_pressure_gradient_0.5": {
+        "N_rms": 0.0072218297074502944,
+        "absolute_rms": 0.0042462260680401105,
+        "relative_rms": 1.330944507549922,
+        "stations": 236
+       },
+       "CTL_scale_M1_pressure_gradient_2": {
+        "N_rms": 0.028887318829801178,
+        "absolute_rms": 0.013979031381823635,
+        "relative_rms": 4.3816119868280206,
+        "stations": 236
+       },
+       "CTL_scale_M2_hickel_0.5": {
+        "N_rms": 0.0012050883427898202,
+        "absolute_rms": 0.0018956809205791729,
+        "relative_rms": 0.5941855353162033,
+        "stations": 236
+       },
+       "CTL_scale_M2_hickel_2": {
+        "N_rms": 0.004820353371159281,
+        "absolute_rms": 0.0037654756523488155,
+        "relative_rms": 1.1802572584459192,
+        "stations": 236
+       },
+       "CTL_scale_Xall_0.5": {
+        "N_rms": 0.008990580582523942,
+        "absolute_rms": 0.006514375538337525,
+        "relative_rms": 2.041877234970146,
+        "stations": 236
+       },
+       "CTL_scale_Xall_2": {
+        "N_rms": 0.03596232233009577,
+        "absolute_rms": 0.016235243037216768,
+        "relative_rms": 5.088802904715637,
+        "stations": 236
+       },
+       "CTL_shift_M2_hickel_0.125": {
+        "N_rms": 0.00250031772799148,
+        "absolute_rms": 0.0036433925630433316,
+        "relative_rms": 1.1419913219243487,
+        "stations": 236
+       },
+       "CTL_shift_M2_hickel_0.25": {
+        "N_rms": 0.0008721660237011485,
+        "absolute_rms": 0.0023688430602050283,
+        "relative_rms": 0.7424943019302876,
+        "stations": 236
+       },
+       "CTL_shift_M2_hickel_0.5": {
+        "N_rms": 0.0006905882546921043,
+        "absolute_rms": 0.002642223207628438,
+        "relative_rms": 0.8281830523303141,
+        "stations": 236
+       },
+       "CTL_shift_Xall_0.125": {
+        "N_rms": 0.01785578266735396,
+        "absolute_rms": 0.007504310003325062,
+        "relative_rms": 2.352164020906077,
+        "stations": 236
+       },
+       "CTL_shift_Xall_0.25": {
+        "N_rms": 0.007019669335060456,
+        "absolute_rms": 0.004425244195011326,
+        "relative_rms": 1.3870562616172664,
+        "stations": 236
+       },
+       "CTL_shift_Xall_0.5": {
+        "N_rms": 0.0017914162164983237,
+        "absolute_rms": 0.003126931857969588,
+        "relative_rms": 0.9801109774092658,
+        "stations": 236
+       },
+       "CTL_term_conv_matchedN": {
+        "N_rms": 0.018111834063501704,
+        "absolute_rms": 0.009091551210756959,
+        "relative_rms": 2.849671674370098,
+        "stations": 236
+       },
+       "CTL_term_dRtt_matchedN": {
+        "N_rms": 0.01742876275576635,
+        "absolute_rms": 0.005922618788165673,
+        "relative_rms": 1.8563959667035363,
+        "stations": 236
+       },
+       "CTL_term_dpds_matchedN": {
+        "N_rms": 0.017705871132369315,
+        "absolute_rms": 0.009472295712946133,
+        "relative_rms": 2.9690128954564274,
+        "stations": 236
+       },
+       "CTL_term_visc_matchedN": {
+        "N_rms": 0.018114280428232134,
+        "absolute_rms": 0.010896800904747492,
+        "relative_rms": 3.415512288240631,
+        "stations": 236
+       },
+       "M0_equilibrium": {
+        "N_rms": 0.0,
+        "absolute_rms": 0.002450419917804686,
+        "relative_rms": 0.7680638945110143,
+        "stations": 236
+       },
+       "M1_pressure_gradient": {
+        "N_rms": 0.014443659414900589,
+        "absolute_rms": 0.007761496365491025,
+        "relative_rms": 2.4327769630002147,
+        "stations": 236
+       },
+       "M2_hickel": {
+        "N_rms": 0.0024101766855796404,
+        "absolute_rms": 0.002141856685935112,
+        "relative_rms": 0.6713472967349998,
+        "stations": 236
+       },
+       "M2b_hickel_Aplus17": {
+        "N_rms": 0.0024101766855796404,
+        "absolute_rms": 0.002224590310393865,
+        "relative_rms": 0.6972794683383594,
+        "stations": 236
+       },
+       "M3_yang_integral": {
+        "N_rms": 0.017981161165047884,
+        "absolute_rms": 0.04188316984066599,
+        "relative_rms": 13.127933832299288,
+        "stations": 236
+       },
+       "M4_park_moin": {
+        "N_rms": 0.01799183339520081,
+        "absolute_rms": 0.02267664619870406,
+        "relative_rms": 7.107807550564189,
+        "stations": 236
+       },
+       "M5_meneveau": {
+        "N_rms": 0.0,
+        "absolute_rms": 0.007417142368369921,
+        "relative_rms": 2.3248420453163017,
+        "stations": 236
+       },
+       "Xall": {
+        "N_rms": 0.017981161165047884,
+        "absolute_rms": 0.010067498182855537,
+        "relative_rms": 3.155574196129641,
+        "stations": 236
+       },
+       "Xc_exact_convection": {
+        "N_rms": 0.01429649137533454,
+        "absolute_rms": 0.006855236343235445,
+        "relative_rms": 2.1487172403887285,
+        "stations": 236
+       },
+       "Xcp_pressure_plus_convection": {
+        "N_rms": 0.01799183339520081,
+        "absolute_rms": 0.010058051619035698,
+        "relative_rms": 3.152613248683657,
+        "stations": 236
+       },
+       "Xcpr_plus_normal_stress": {
+        "N_rms": 0.01795440165039869,
+        "absolute_rms": 0.010067216451726,
+        "relative_rms": 3.155485889832837,
+        "stations": 236
+       },
+       "Xfull_closure_free": {
+        "N_rms": 0.017981161165047884,
+        "absolute_rms": 0.04188316984066599,
+        "relative_rms": 13.127933832299288,
+        "stations": 236
+       }
+      },
+      "truth_rms": 0.003190385507399406
+     }
+    }
+   },
+   "stations": {
+    "flat_floor": 276,
+    "sloped_wall": 236
+   }
+  },
+  "ladder_L1": {
+   "arms_used_for_the_fit": [
+    "CTL_scale_M1_pressure_gradient_0.5",
+    "CTL_scale_M1_pressure_gradient_2",
+    "CTL_scale_M2_hickel_0.5",
+    "CTL_scale_M2_hickel_2",
+    "CTL_scale_Xall_0.5",
+    "CTL_scale_Xall_2",
+    "M1_pressure_gradient",
+    "M2_hickel",
+    "Xall"
+   ],
+   "references": {
+    "B_mglet": {
+     "P5_verdict": "REFUTED",
+     "delta_ratio_sloped_over_flat": 1.2379903577215623,
+     "flat_floor": {
+      "E0": 0.00014916377424593983,
+      "delta": 0.3899930855478154,
+      "fit_rms": 0.00021233114503678855,
+      "per_arm": {
+       "CTL_lambda_0.25": {
+        "N_rms": 0.0021195118165870342,
+        "absolute_rms": 0.0007642379125372159,
+        "relative_rms": 0.5887015604488026,
+        "stations": 62
+       },
+       "CTL_lambda_0.5": {
+        "N_rms": 0.0020885095854503203,
+        "absolute_rms": 0.0007528660598499701,
+        "relative_rms": 0.5799416869691557,
+        "stations": 62
+       },
+       "CTL_lambda_0.75": {
+        "N_rms": 0.0020584767570848155,
+        "absolute_rms": 0.0007422622153263742,
+        "relative_rms": 0.5717734193192654,
+        "stations": 62
+       },
+       "CTL_scale_M1_pressure_gradient_0.5": {
+        "N_rms": 0.001075720771838703,
+        "absolute_rms": 0.00039624692206713196,
+        "relative_rms": 0.3052337204385894,
+        "stations": 62
+       },
+       "CTL_scale_M1_pressure_gradient_2": {
+        "N_rms": 0.004302883087354812,
+        "absolute_rms": 0.00194677538003855,
+        "relative_rms": 1.4996242469405041,
+        "stations": 62
+       },
+       "CTL_scale_M2_hickel_0.5": {
+        "N_rms": 0.0003576392414989899,
+        "absolute_rms": 0.0007516724571762554,
+        "relative_rms": 0.5790222406226131,
+        "stations": 62
+       },
+       "CTL_scale_M2_hickel_2": {
+        "N_rms": 0.0014305569659959596,
+        "absolute_rms": 0.0006199557124265466,
+        "relative_rms": 0.47755926436963353,
+        "stations": 62
+       },
+       "CTL_scale_Xall_0.5": {
+        "N_rms": 0.0010147281844752464,
+        "absolute_rms": 0.0003996433303486485,
+        "relative_rms": 0.30785001416394503,
+        "stations": 62
+       },
+       "CTL_scale_Xall_2": {
+        "N_rms": 0.0040589127379009856,
+        "absolute_rms": 0.001876454335579968,
+        "relative_rms": 1.4454551093904995,
+        "stations": 62
+       },
+       "CTL_shift_M2_hickel_0.125": {
+        "N_rms": 0.0008018403705985757,
+        "absolute_rms": 0.000853799981257626,
+        "relative_rms": 0.6576922880059896,
+        "stations": 62
+       },
+       "CTL_shift_M2_hickel_0.25": {
+        "N_rms": 0.0022343528870000474,
+        "absolute_rms": 0.0022692408972880486,
+        "relative_rms": 1.7480232730572118,
+        "stations": 62
+       },
+       "CTL_shift_M2_hickel_0.5": {
+        "N_rms": 0.002315505224952742,
+        "absolute_rms": 0.0026022963744701385,
+        "relative_rms": 2.0045798713580965,
+        "stations": 62
+       },
+       "CTL_shift_Xall_0.125": {
+        "N_rms": 0.011048656880063849,
+        "absolute_rms": 0.006822771795923191,
+        "relative_rms": 5.255662323151848,
+        "stations": 62
+       },
+       "CTL_shift_Xall_0.25": {
+        "N_rms": 0.021014691698768836,
+        "absolute_rms": 0.008090558754828567,
+        "relative_rms": 6.232253707563037,
+        "stations": 62
+       },
+       "CTL_shift_Xall_0.5": {
+        "N_rms": 0.02376393886429901,
+        "absolute_rms": 0.00917884512240447,
+        "relative_rms": 7.07057364994864,
+        "stations": 62
+       },
+       "CTL_term_conv_matchedN": {
+        "N_rms": 0.00043011749422913287,
+        "absolute_rms": 0.0013575938005509608,
+        "relative_rms": 1.0457706634660733,
+        "stations": 62
+       },
+       "CTL_term_dRtt_matchedN": {
+        "N_rms": 0.0042236517796377685,
+        "absolute_rms": 0.002254781901824984,
+        "relative_rms": 1.7368853367523132,
+        "stations": 62
+       },
+       "CTL_term_dpds_matchedN": {
+        "N_rms": 0.0025077611171336286,
+        "absolute_rms": 0.0009753058415862761,
+        "relative_rms": 0.751289698453312,
+        "stations": 62
+       },
+       "CTL_term_visc_matchedN": {
+        "N_rms": 7.085418681638925e-05,
+        "absolute_rms": 0.0010904873276180145,
+        "relative_rms": 0.8400153681031991,
+        "stations": 62
+       },
+       "M0_equilibrium": {
+        "N_rms": 0.0,
+        "absolute_rms": 0.0010581419953888558,
+        "relative_rms": 0.815099373693391,
+        "stations": 62
+       },
+       "M1_pressure_gradient": {
+        "N_rms": 0.002151441543677406,
+        "absolute_rms": 0.000776362913438722,
+        "relative_rms": 0.5980415929623194,
+        "stations": 62
+       },
+       "M2_hickel": {
+        "N_rms": 0.0007152784829979798,
+        "absolute_rms": 0.000526076819616344,
+        "relative_rms": 0.40524323583463084,
+        "stations": 62
+       },
+       "M2b_hickel_Aplus17": {
+        "N_rms": 0.0007152784829979798,
+        "absolute_rms": 0.0005008709529633117,
+        "relative_rms": 0.3858268567363459,
+        "stations": 62
+       },
+       "M3_yang_integral": {
+        "N_rms": 0.0020294563689504928,
+        "absolute_rms": 0.00011402976236956842,
+        "relative_rms": 0.08783848320440672,
+        "stations": 62
+       },
+       "M4_park_moin": {
+        "N_rms": 0.0019975911229474204,
+        "absolute_rms": 0.0006722352891185409,
+        "relative_rms": 0.5178308445585857,
+        "stations": 62
+       },
+       "M5_meneveau": {
+        "N_rms": 0.0,
+        "absolute_rms": 0.0006873458930428104,
+        "relative_rms": 0.5294707226169881,
+        "stations": 62
+       },
+       "Xall": {
+        "N_rms": 0.0020294563689504928,
+        "absolute_rms": 0.0007324483872291038,
+        "relative_rms": 0.5642137107258266,
+        "stations": 62
+       },
+       "Xc_exact_convection": {
+        "N_rms": 0.0019955508457908137,
+        "absolute_rms": 0.0007386656922006033,
+        "relative_rms": 0.5690029747474928,
+        "stations": 62
+       },
+       "Xcp_pressure_plus_convection": {
+        "N_rms": 0.0019975911229474204,
+        "absolute_rms": 0.000742709118161355,
+        "relative_rms": 0.5721176738923587,
+        "stations": 62
+       },
+       "Xcpr_plus_normal_stress": {
+        "N_rms": 0.0020295882660492557,
+        "absolute_rms": 0.0007324113530056719,
+        "relative_rms": 0.5641851828227132,
+        "stations": 62
+       },
+       "Xfull_closure_free": {
+        "N_rms": 0.0020294563689504928,
+        "absolute_rms": 0.00011402976236956842,
+        "relative_rms": 0.08783848320440672,
+        "stations": 62
+       }
+      },
+      "truth_rms": 0.0012981754489568387
+     },
+     "post_hoc_not_registered": {
+      "attainment_E_abs_over_N_by_arm": {
+       "CTL_lambda_0.25": {
+        "flat_floor": 0.3605726123140176,
+        "ratio_sloped_over_flat": 1.771478687508039,
+        "sloped_wall": 0.6387466980133809
+       },
+       "CTL_lambda_0.5": {
+        "flat_floor": 0.36048005960558643,
+        "ratio_sloped_over_flat": 1.904913459558427,
+        "sloped_wall": 0.6866833174451056
+       },
+       "CTL_lambda_0.75": {
+        "flat_floor": 0.36058809640267936,
+        "ratio_sloped_over_flat": 2.003509716858291,
+        "sloped_wall": 0.7224417549262023
+       },
+       "CTL_scale_M1_pressure_gradient_0.5": {
+        "flat_floor": 0.36835481143478976,
+        "ratio_sloped_over_flat": 2.3824636316212047,
+        "sloped_wall": 0.8775919417760732
+       },
+       "CTL_scale_M1_pressure_gradient_2": {
+        "flat_floor": 0.45243510932464726,
+        "ratio_sloped_over_flat": 1.305245607158799,
+        "sloped_wall": 0.5905389389704068
+       },
+       "CTL_scale_M2_hickel_0.5": {
+        "flat_floor": 2.1017616915463075,
+        "ratio_sloped_over_flat": 1.3606953752585935,
+        "sloped_wall": 2.859857413582739
+       },
+       "CTL_scale_M2_hickel_2": {
+        "flat_floor": 0.4333666726755833,
+        "ratio_sloped_over_flat": 1.9900740197038647,
+        "sloped_wall": 0.862431756297187
+       },
+       "CTL_scale_Xall_0.5": {
+        "flat_floor": 0.3938427417932802,
+        "ratio_sloped_over_flat": 2.2678110588475318,
+        "sloped_wall": 0.8931609252856338
+       },
+       "CTL_scale_Xall_2": {
+        "flat_floor": 0.4623046753526296,
+        "ratio_sloped_over_flat": 1.1828908646386689,
+        "sloped_wall": 0.5468559771543712
+       },
+       "CTL_shift_M2_hickel_0.125": {
+        "flat_floor": 1.0648004422878612,
+        "ratio_sloped_over_flat": 1.8735046811641587,
+        "sloped_wall": 1.9949086131319744
+       },
+       "CTL_shift_M2_hickel_0.25": {
+        "flat_floor": 1.0156143689257804,
+        "ratio_sloped_over_flat": 4.292442412056634,
+        "sloped_wall": 4.359466191471152
+       },
+       "CTL_shift_M2_hickel_0.5": {
+        "flat_floor": 1.1238568354011162,
+        "ratio_sloped_over_flat": 5.357352334428521,
+        "sloped_wall": 6.02089704069962
+       },
+       "CTL_shift_Xall_0.125": {
+        "flat_floor": 0.617520470586264,
+        "ratio_sloped_over_flat": 0.6919695626835222,
+        "sloped_wall": 0.4273053699796999
+       },
+       "CTL_shift_Xall_0.25": {
+        "flat_floor": 0.38499535804765384,
+        "ratio_sloped_over_flat": 1.8725642802992308,
+        "sloped_wall": 0.7209285555610496
+       },
+       "CTL_shift_Xall_0.5": {
+        "flat_floor": 0.3862509988272194,
+        "ratio_sloped_over_flat": 7.274563621147879,
+        "sloped_wall": 2.8098074647005222
+       },
+       "CTL_term_conv_matchedN": {
+        "flat_floor": 3.1563324411718563,
+        "ratio_sloped_over_flat": 0.1695997478292784,
+        "sloped_wall": 0.5353131860881175
+       },
+       "CTL_term_dRtt_matchedN": {
+        "flat_floor": 0.5338465431017043,
+        "ratio_sloped_over_flat": 0.7675094915652987,
+        "sloped_wall": 0.4097322888698814
+       },
+       "CTL_term_dpds_matchedN": {
+        "flat_floor": 0.3889149707772209,
+        "ratio_sloped_over_flat": 1.6866811740154748,
+        "sloped_wall": 0.655975559502717
+       },
+       "CTL_term_visc_matchedN": {
+        "flat_floor": 15.390584192912852,
+        "ratio_sloped_over_flat": 0.04008440265178919,
+        "sloped_wall": 0.6169223738349807
+       },
+       "M1_pressure_gradient": {
+        "flat_floor": 0.36085708009138096,
+        "ratio_sloped_over_flat": 1.8123519197325126,
+        "sloped_wall": 0.6540000218526834
+       },
+       "M2_hickel": {
+        "flat_floor": 0.7354853139316786,
+        "ratio_sloped_over_flat": 1.9993998751893396,
+        "sloped_wall": 1.4705292448785905
+       },
+       "M2b_hickel_Aplus17": {
+        "flat_floor": 0.7002460787915612,
+        "ratio_sloped_over_flat": 1.8431785985524434,
+        "sloped_wall": 1.2906785861488737
+       },
+       "M3_yang_integral": {
+        "flat_floor": 0.05618734362273452,
+        "ratio_sloped_over_flat": 34.23757196992335,
+        "sloped_wall": 1.9237182210821868
+       },
+       "M4_park_moin": {
+        "flat_floor": 0.3365229657842423,
+        "ratio_sloped_over_flat": 3.090433331995047,
+        "sloped_wall": 1.0400017904414511
+       },
+       "Xall": {
+        "flat_floor": 0.3609086642290714,
+        "ratio_sloped_over_flat": 1.8612023967696225,
+        "sloped_wall": 0.6717240708780706
+       },
+       "Xc_exact_convection": {
+        "flat_floor": 0.3701562873021552,
+        "ratio_sloped_over_flat": 1.0488670869369257,
+        "sloped_wall": 0.3882447467739993
+       },
+       "Xcp_pressure_plus_convection": {
+        "flat_floor": 0.3718023721818993,
+        "ratio_sloped_over_flat": 1.7913454515427816,
+        "sloped_wall": 0.6660264882808618
+       },
+       "Xcpr_plus_normal_stress": {
+        "flat_floor": 0.3608669626531518,
+        "ratio_sloped_over_flat": 1.8616139016453823,
+        "sloped_wall": 0.6717949543196524
+       },
+       "Xfull_closure_free": {
+        "flat_floor": 0.05618734362273452,
+        "ratio_sloped_over_flat": 34.23757196992335,
+        "sloped_wall": 1.9237182210821868
+       }
+      },
+      "closure_free_attainment_ratio": 34.23757196992335,
+      "intercept_E0_ratio_sloped_over_flat": 14.006347743541763,
+      "why": "P5 named the fitted slope; it is region-independent. These are the two quantities that are not, found after that test returned REFUTED."
+     },
+     "sloped_wall": {
+      "E0": 0.002089239692827792,
+      "delta": 0.4828076794862759,
+      "fit_rms": 0.0006120734508229454,
+      "per_arm": {
+       "CTL_lambda_0.25": {
+        "N_rms": 0.005758709118226012,
+        "absolute_rms": 0.0036783564340864138,
+        "relative_rms": 0.6921147870132238,
+        "stations": 58
+       },
+       "CTL_lambda_0.5": {
+        "N_rms": 0.007575621544552645,
+        "absolute_rms": 0.005202052933922025,
+        "relative_rms": 0.9788115488289234,
+        "stations": 58
+       },
+       "CTL_lambda_0.75": {
+        "N_rms": 0.011174195009511655,
+        "absolute_rms": 0.008072705052559212,
+        "relative_rms": 1.5189497369795502,
+        "stations": 58
+       },
+       "CTL_scale_M1_pressure_gradient_0.5": {
+        "N_rms": 0.003801058617538325,
+        "absolute_rms": 0.0033357784129701353,
+        "relative_rms": 0.6276557498402279,
+        "stations": 58
+       },
+       "CTL_scale_M1_pressure_gradient_2": {
+        "N_rms": 0.0152042344701533,
+        "absolute_rms": 0.008978692491861616,
+        "relative_rms": 1.6894191612525076,
+        "stations": 58
+       },
+       "CTL_scale_M2_hickel_0.5": {
+        "N_rms": 0.0010854473472208363,
+        "absolute_rms": 0.0031042246430032262,
+        "relative_rms": 0.5840868921032097,
+        "stations": 58
+       },
+       "CTL_scale_M2_hickel_2": {
+        "N_rms": 0.004341789388883345,
+        "absolute_rms": 0.003744497048127154,
+        "relative_rms": 0.7045597193682092,
+        "stations": 58
+       },
+       "CTL_scale_Xall_0.5": {
+        "N_rms": 0.0076509698374493985,
+        "absolute_rms": 0.006833547299348781,
+        "relative_rms": 1.2857914175487601,
+        "stations": 58
+       },
+       "CTL_scale_Xall_2": {
+        "N_rms": 0.030603879349797594,
+        "absolute_rms": 0.016735914346548045,
+        "relative_rms": 3.1490079879410997,
+        "stations": 58
+       },
+       "CTL_shift_M2_hickel_0.125": {
+        "N_rms": 0.002296994812753548,
+        "absolute_rms": 0.00458229473628152,
+        "relative_rms": 0.8621986482995614,
+        "stations": 58
+       },
+       "CTL_shift_M2_hickel_0.25": {
+        "N_rms": 0.000859151892397036,
+        "absolute_rms": 0.00374544362824334,
+        "relative_rms": 0.7047378266580395,
+        "stations": 58
+       },
+       "CTL_shift_M2_hickel_0.5": {
+        "N_rms": 0.0006556644381156927,
+        "absolute_rms": 0.0039476880751427535,
+        "relative_rms": 0.7427918800915971,
+        "stations": 58
+       },
+       "CTL_shift_Xall_0.125": {
+        "N_rms": 0.015989285060445585,
+        "absolute_rms": 0.00683230736846459,
+        "relative_rms": 1.2855581137580043,
+        "stations": 58
+       },
+       "CTL_shift_Xall_0.25": {
+        "N_rms": 0.003991744501630915,
+        "absolute_rms": 0.0028777625977295376,
+        "relative_rms": 0.5414760866960099,
+        "stations": 58
+       },
+       "CTL_shift_Xall_0.5": {
+        "N_rms": 0.0015031167695199524,
+        "absolute_rms": 0.0042234687193136965,
+        "relative_rms": 0.7946824092513001,
+        "stations": 58
+       },
+       "CTL_term_conv_matchedN": {
+        "N_rms": 0.015438728542818816,
+        "absolute_rms": 0.0082645549654059,
+        "relative_rms": 1.5550479683357972,
+        "stations": 58
+       },
+       "CTL_term_dRtt_matchedN": {
+        "N_rms": 0.014814944225046523,
+        "absolute_rms": 0.006070161006807943,
+        "relative_rms": 1.1421536405311172,
+        "stations": 58
+       },
+       "CTL_term_dpds_matchedN": {
+        "N_rms": 0.015225948839616407,
+        "absolute_rms": 0.009987850309027118,
+        "relative_rms": 1.8793009903264495,
+        "stations": 58
+       },
+       "CTL_term_visc_matchedN": {
+        "N_rms": 0.015444958149083443,
+        "absolute_rms": 0.009528340245114487,
+        "relative_rms": 1.792840171285591,
+        "stations": 58
+       },
+       "M0_equilibrium": {
+        "N_rms": 0.0,
+        "absolute_rms": 0.003596202486950548,
+        "relative_rms": 0.676656806623578,
+        "stations": 58
+       },
+       "M1_pressure_gradient": {
+        "N_rms": 0.00760211723507665,
+        "absolute_rms": 0.00497178483786679,
+        "relative_rms": 0.9354846018315227,
+        "stations": 58
+       },
+       "M2_hickel": {
+        "N_rms": 0.0021708946944416726,
+        "absolute_rms": 0.003192364135728251,
+        "relative_rms": 0.6006711050058904,
+        "stations": 58
+       },
+       "M2b_hickel_Aplus17": {
+        "N_rms": 0.0021708946944416726,
+        "absolute_rms": 0.0028019272949000693,
+        "relative_rms": 0.5272070142430199,
+        "stations": 58
+       },
+       "M3_yang_integral": {
+        "N_rms": 0.015301939674898797,
+        "absolute_rms": 0.02943662017050325,
+        "relative_rms": 5.538756361645838,
+        "stations": 58
+       },
+       "M4_park_moin": {
+        "N_rms": 0.015407310865558296,
+        "absolute_rms": 0.016023630886068653,
+        "relative_rms": 3.0149856536794184,
+        "stations": 58
+       },
+       "M5_meneveau": {
+        "N_rms": 0.0,
+        "absolute_rms": 0.004361455587997323,
+        "relative_rms": 0.8206458399141334,
+        "stations": 58
+       },
+       "Xall": {
+        "N_rms": 0.015301939674898797,
+        "absolute_rms": 0.01027868121075368,
+        "relative_rms": 1.934023356473475,
+        "stations": 58
+       },
+       "Xc_exact_convection": {
+        "N_rms": 0.007604737828837656,
+        "absolute_rms": 0.0029524995126397288,
+        "relative_rms": 0.5555384878993722,
+        "stations": 58
+       },
+       "Xcp_pressure_plus_convection": {
+        "N_rms": 0.015407310865558296,
+        "absolute_rms": 0.010261677149639357,
+        "relative_rms": 1.930823894336679,
+        "stations": 58
+       },
+       "Xcpr_plus_normal_stress": {
+        "N_rms": 0.015289015385358904,
+        "absolute_rms": 0.010271083392399648,
+        "relative_rms": 1.9325937608032087,
+        "stations": 58
+       },
+       "Xfull_closure_free": {
+        "N_rms": 0.015301939674898797,
+        "absolute_rms": 0.02943662017050325,
+        "relative_rms": 5.538756361645838,
+        "stations": 58
+       }
+      },
+      "truth_rms": 0.005314662398646503
+     }
+    },
+    "C_xiao_repaired_cubic6": {
+     "P5_verdict": "REFUTED",
+     "delta_ratio_sloped_over_flat": 1.142135585658932,
+     "flat_floor": {
+      "E0": 0.00018313415179041842,
+      "delta": 0.4594565208229616,
+      "fit_rms": 0.00013520604577708508,
+      "per_arm": {
+       "CTL_lambda_0.25": {
+        "N_rms": 0.0021195118165870342,
+        "absolute_rms": 0.0010340654278687888,
+        "relative_rms": 0.8891932643505864,
+        "stations": 62
+       },
+       "CTL_lambda_0.5": {
+        "N_rms": 0.0020885095854503203,
+        "absolute_rms": 0.0010215859228005569,
+        "relative_rms": 0.878462133079743,
+        "stations": 62
+       },
+       "CTL_lambda_0.75": {
+        "N_rms": 0.0020584767570848155,
+        "absolute_rms": 0.0010095808924636524,
+        "relative_rms": 0.8681390028152484,
+        "stations": 62
+       },
+       "CTL_scale_M1_pressure_gradient_0.5": {
+        "N_rms": 0.001075720771838703,
+        "absolute_rms": 0.0005383671913026146,
+        "relative_rms": 0.46294215757725893,
+        "stations": 62
+       },
+       "CTL_scale_M1_pressure_gradient_2": {
+        "N_rms": 0.004302883087354812,
+        "absolute_rms": 0.002214458992049172,
+        "relative_rms": 1.904214150132642,
+        "stations": 62
+       },
+       "CTL_scale_M2_hickel_0.5": {
+        "N_rms": 0.0003576392414989899,
+        "absolute_rms": 0.0006394286215935558,
+        "relative_rms": 0.5498449208632817,
+        "stations": 62
+       },
+       "CTL_scale_M2_hickel_2": {
+        "N_rms": 0.0014305569659959596,
+        "absolute_rms": 0.0008717511774378532,
+        "relative_rms": 0.7496191771588657,
+        "stations": 62
+       },
+       "CTL_scale_Xall_0.5": {
+        "N_rms": 0.0010147281844752464,
+        "absolute_rms": 0.0005206947679387443,
+        "relative_rms": 0.4477456338405623,
+        "stations": 62
+       },
+       "CTL_scale_Xall_2": {
+        "N_rms": 0.0040589127379009856,
+        "absolute_rms": 0.00214047484002239,
+        "relative_rms": 1.8405951489766998,
+        "stations": 62
+       },
+       "CTL_shift_M2_hickel_0.125": {
+        "N_rms": 0.0008018403705985757,
+        "absolute_rms": 0.0007983794929291036,
+        "relative_rms": 0.6865268370603291,
+        "stations": 62
+       },
+       "CTL_shift_M2_hickel_0.25": {
+        "N_rms": 0.0022343528870000474,
+        "absolute_rms": 0.00218363361671754,
+        "relative_rms": 1.877707397873786,
+        "stations": 62
+       },
+       "CTL_shift_M2_hickel_0.5": {
+        "N_rms": 0.002315505224952742,
+        "absolute_rms": 0.0025031327746678,
+        "relative_rms": 2.152444848288871,
+        "stations": 62
+       },
+       "CTL_shift_Xall_0.125": {
+        "N_rms": 0.011048656880063849,
+        "absolute_rms": 0.006794357151213227,
+        "relative_rms": 5.842470361766739,
+        "stations": 62
+       },
+       "CTL_shift_Xall_0.25": {
+        "N_rms": 0.021014691698768836,
+        "absolute_rms": 0.008055212456449065,
+        "relative_rms": 6.926680330034501,
+        "stations": 62
+       },
+       "CTL_shift_Xall_0.5": {
+        "N_rms": 0.02376393886429901,
+        "absolute_rms": 0.00914716994889216,
+        "relative_rms": 7.865655003270323,
+        "stations": 62
+       },
+       "CTL_term_conv_matchedN": {
+        "N_rms": 0.00043011749422913287,
+        "absolute_rms": 0.0011784385571246747,
+        "relative_rms": 1.0133397744530783,
+        "stations": 62
+       },
+       "CTL_term_dRtt_matchedN": {
+        "N_rms": 0.0042236517796377685,
+        "absolute_rms": 0.002125244217584833,
+        "relative_rms": 1.827498330807994,
+        "stations": 62
+       },
+       "CTL_term_dpds_matchedN": {
+        "N_rms": 0.0025077611171336286,
+        "absolute_rms": 0.0012478822807284171,
+        "relative_rms": 1.0730544594388594,
+        "stations": 62
+       },
+       "CTL_term_visc_matchedN": {
+        "N_rms": 7.085418681638925e-05,
+        "absolute_rms": 0.0009190701528919368,
+        "relative_rms": 0.790308782589791,
+        "stations": 62
+       },
+       "M0_equilibrium": {
+        "N_rms": 0.0,
+        "absolute_rms": 0.0008761762501548065,
+        "relative_rms": 0.7534242989124147,
+        "stations": 62
+       },
+       "M1_pressure_gradient": {
+        "N_rms": 0.002151441543677406,
+        "absolute_rms": 0.0010470208296744562,
+        "relative_rms": 0.9003336194113849,
+        "stations": 62
+       },
+       "M2_hickel": {
+        "N_rms": 0.0007152784829979798,
+        "absolute_rms": 0.0005514875851250919,
+        "relative_rms": 0.4742243893376018,
+        "stations": 62
+       },
+       "M2b_hickel_Aplus17": {
+        "N_rms": 0.0007152784829979798,
+        "absolute_rms": 0.0005248948963888564,
+        "relative_rms": 0.4513573259314044,
+        "stations": 62
+       },
+       "M3_yang_integral": {
+        "N_rms": 0.0020294563689504928,
+        "absolute_rms": 0.00019301652678040305,
+        "relative_rms": 0.16597498658784746,
+        "stations": 62
+       },
+       "M4_park_moin": {
+        "N_rms": 0.0019975911229474204,
+        "absolute_rms": 0.0008634342972305874,
+        "relative_rms": 0.7424674886279445,
+        "stations": 62
+       },
+       "M5_meneveau": {
+        "N_rms": 0.0,
+        "absolute_rms": 0.0008903724139824358,
+        "relative_rms": 0.7656315857193644,
+        "stations": 62
+       },
+       "Xall": {
+        "N_rms": 0.0020294563689504928,
+        "absolute_rms": 0.0009980539632140958,
+        "relative_rms": 0.8582269918620574,
+        "stations": 62
+       },
+       "Xc_exact_convection": {
+        "N_rms": 0.0019955508457908137,
+        "absolute_rms": 0.0010039644590789905,
+        "relative_rms": 0.8633094295593201,
+        "stations": 62
+       },
+       "Xcp_pressure_plus_convection": {
+        "N_rms": 0.0019975911229474204,
+        "absolute_rms": 0.001008318970910343,
+        "relative_rms": 0.8670538759798466,
+        "stations": 62
+       },
+       "Xcpr_plus_normal_stress": {
+        "N_rms": 0.0020295882660492557,
+        "absolute_rms": 0.0009979989456380225,
+        "relative_rms": 0.8581796822269542,
+        "stations": 62
+       },
+       "Xfull_closure_free": {
+        "N_rms": 0.0020294563689504928,
+        "absolute_rms": 0.00019301652678040305,
+        "relative_rms": 0.16597498658784746,
+        "stations": 62
+       }
+      },
+      "truth_rms": 0.00116292539465423
+     },
+     "post_hoc_not_registered": {
+      "attainment_E_abs_over_N_by_arm": {
+       "CTL_lambda_0.25": {
+        "flat_floor": 0.4878790577039119,
+        "ratio_sloped_over_flat": 1.3799179516401954,
+        "sloped_wall": 0.6732330699549307
+       },
+       "CTL_lambda_0.5": {
+        "flat_floor": 0.489145910517947,
+        "ratio_sloped_over_flat": 1.3700468214160162,
+        "sloped_wall": 0.6701527999137563
+       },
+       "CTL_lambda_0.75": {
+        "flat_floor": 0.4904504697412304,
+        "ratio_sloped_over_flat": 1.4141381015144507,
+        "sloped_wall": 0.6935646961667341
+       },
+       "CTL_scale_M1_pressure_gradient_0.5": {
+        "flat_floor": 0.5004711309816922,
+        "ratio_sloped_over_flat": 1.4945062097505029,
+        "sloped_wall": 0.7479572130529962
+       },
+       "CTL_scale_M1_pressure_gradient_2": {
+        "flat_floor": 0.5146454010235508,
+        "ratio_sloped_over_flat": 1.233244868254512,
+        "sloped_wall": 0.6346837997830794
+       },
+       "CTL_scale_M2_hickel_0.5": {
+        "flat_floor": 1.7879151597388725,
+        "ratio_sloped_over_flat": 0.779505846165301,
+        "sloped_wall": 1.3936903194640191
+       },
+       "CTL_scale_M2_hickel_2": {
+        "flat_floor": 0.6093788630297127,
+        "ratio_sloped_over_flat": 1.2898851864464798,
+        "sloped_wall": 0.7860287683556247
+       },
+       "CTL_scale_Xall_0.5": {
+        "flat_floor": 0.5131371887615548,
+        "ratio_sloped_over_flat": 1.5858363283875365,
+        "sloped_wall": 0.8137515953847263
+       },
+       "CTL_scale_Xall_2": {
+        "flat_floor": 0.5273517757687269,
+        "ratio_sloped_over_flat": 1.0323374837445323,
+        "sloped_wall": 0.5444050052452983
+       },
+       "CTL_shift_M2_hickel_0.125": {
+        "flat_floor": 0.9956838320987897,
+        "ratio_sloped_over_flat": 1.4202710913295549,
+        "sloped_wall": 1.4141409628341415
+       },
+       "CTL_shift_M2_hickel_0.25": {
+        "flat_floor": 0.9773002417936739,
+        "ratio_sloped_over_flat": 2.5538670239775074,
+        "sloped_wall": 2.4958948600421085
+       },
+       "CTL_shift_M2_hickel_0.5": {
+        "flat_floor": 1.0810309334192443,
+        "ratio_sloped_over_flat": 3.2158227668259602,
+        "sloped_wall": 3.4764038873327245
+       },
+       "CTL_shift_Xall_0.125": {
+        "flat_floor": 0.6149486969292111,
+        "ratio_sloped_over_flat": 0.6245057380178711,
+        "sloped_wall": 0.3840389898189051
+       },
+       "CTL_shift_Xall_0.25": {
+        "flat_floor": 0.38331337770332297,
+        "ratio_sloped_over_flat": 2.321056929768782,
+        "sloped_wall": 0.8896921715913764
+       },
+       "CTL_shift_Xall_0.5": {
+        "flat_floor": 0.38491808959473955,
+        "ratio_sloped_over_flat": 4.4833984565468645,
+        "sloped_wall": 1.725741168786023
+       },
+       "CTL_term_conv_matchedN": {
+        "flat_floor": 2.7398061528204085,
+        "ratio_sloped_over_flat": 0.19139415869004803,
+        "sloped_wall": 0.5243828935928793
+       },
+       "CTL_term_dRtt_matchedN": {
+        "flat_floor": 0.5031769493476329,
+        "ratio_sloped_over_flat": 0.7038615575328474,
+        "sloped_wall": 0.3541669112824516
+       },
+       "CTL_term_dpds_matchedN": {
+        "flat_floor": 0.49760811434653185,
+        "ratio_sloped_over_flat": 1.255895866257232,
+        "sloped_wall": 0.6249439738238654
+       },
+       "CTL_term_visc_matchedN": {
+        "flat_floor": 12.971289265849666,
+        "ratio_sloped_over_flat": 0.05003979544927389,
+        "sloped_wall": 0.6490806615764794
+       },
+       "M1_pressure_gradient": {
+        "flat_floor": 0.4866601338769397,
+        "ratio_sloped_over_flat": 1.4227144195505321,
+        "sloped_wall": 0.6923783898871145
+       },
+       "M2_hickel": {
+        "flat_floor": 0.7710110093255097,
+        "ratio_sloped_over_flat": 1.1413950053485153,
+        "sloped_wall": 0.8800281151128544
+       },
+       "M2b_hickel_Aplus17": {
+        "flat_floor": 0.7338329180389156,
+        "ratio_sloped_over_flat": 1.2169252498465417,
+        "sloped_wall": 0.8930198071301242
+       },
+       "M3_yang_integral": {
+        "flat_floor": 0.09510750254769905,
+        "ratio_sloped_over_flat": 19.749801182021063,
+        "sloped_wall": 1.8783542662356179
+       },
+       "M4_park_moin": {
+        "flat_floor": 0.43223775241682144,
+        "ratio_sloped_over_flat": 2.34058054499927,
+        "sloped_wall": 1.0116872741210234
+       },
+       "Xall": {
+        "flat_floor": 0.49178389764064084,
+        "ratio_sloped_over_flat": 1.3289286259817086,
+        "sloped_wall": 0.6535456993715061
+       },
+       "Xc_exact_convection": {
+        "flat_floor": 0.5031014174340073,
+        "ratio_sloped_over_flat": 0.9927125928759001,
+        "sloped_wall": 0.4994351125804539
+       },
+       "Xcp_pressure_plus_convection": {
+        "flat_floor": 0.5047674468149324,
+        "ratio_sloped_over_flat": 1.2825710352915483,
+        "sloped_wall": 0.6474001068428993
+       },
+       "Xcpr_plus_normal_stress": {
+        "flat_floor": 0.4917248302685064,
+        "ratio_sloped_over_flat": 1.327991881711846,
+        "sloped_wall": 0.6530065826327118
+       },
+       "Xfull_closure_free": {
+        "flat_floor": 0.09510750254769905,
+        "ratio_sloped_over_flat": 19.749801182021063,
+        "sloped_wall": 1.8783542662356179
+       }
+      },
+      "closure_free_attainment_ratio": 19.749801182021063,
+      "intercept_E0_ratio_sloped_over_flat": 6.932110453697306,
+      "why": "P5 named the fitted slope; it is region-independent. These are the two quantities that are not, found after that test returned REFUTED."
+     },
+     "sloped_wall": {
+      "E0": 0.0012695061680553488,
+      "delta": 0.5247616424949485,
+      "fit_rms": 0.0005308904064946486,
+      "per_arm": {
+       "CTL_lambda_0.25": {
+        "N_rms": 0.005758709118226012,
+        "absolute_rms": 0.00387695341864075,
+        "relative_rms": 1.1897105937997217,
+        "stations": 58
+       },
+       "CTL_lambda_0.5": {
+        "N_rms": 0.007575621544552645,
+        "absolute_rms": 0.00507682398916893,
+        "relative_rms": 1.5579117493984314,
+        "stations": 58
+       },
+       "CTL_lambda_0.75": {
+        "N_rms": 0.011174195009511655,
+        "absolute_rms": 0.007750027166679788,
+        "relative_rms": 2.3782306431907543,
+        "stations": 58
+       },
+       "CTL_scale_M1_pressure_gradient_0.5": {
+        "N_rms": 0.003801058617538325,
+        "absolute_rms": 0.0028430292102250405,
+        "relative_rms": 0.8724329659531068,
+        "stations": 58
+       },
+       "CTL_scale_M1_pressure_gradient_2": {
+        "N_rms": 0.0152042344701533,
+        "absolute_rms": 0.009649881306309772,
+        "relative_rms": 2.9612339327645802,
+        "stations": 58
+       },
+       "CTL_scale_M2_hickel_0.5": {
+        "N_rms": 0.0010854473472208363,
+        "absolute_rms": 0.0015127774601095794,
+        "relative_rms": 0.4642220774952711,
+        "stations": 58
+       },
+       "CTL_scale_M2_hickel_2": {
+        "N_rms": 0.004341789388883345,
+        "absolute_rms": 0.0034127713658034966,
+        "relative_rms": 1.0472682567169622,
+        "stations": 58
+       },
+       "CTL_scale_Xall_0.5": {
+        "N_rms": 0.0076509698374493985,
+        "absolute_rms": 0.006225988911464868,
+        "relative_rms": 1.9105529948426025,
+        "stations": 58
+       },
+       "CTL_scale_Xall_2": {
+        "N_rms": 0.030603879349797594,
+        "absolute_rms": 0.016660905097953038,
+        "relative_rms": 5.112688535802925,
+        "stations": 58
+       },
+       "CTL_shift_M2_hickel_0.125": {
+        "N_rms": 0.002296994812753548,
+        "absolute_rms": 0.003248274456132331,
+        "relative_rms": 0.9967895186588416,
+        "stations": 58
+       },
+       "CTL_shift_M2_hickel_0.25": {
+        "N_rms": 0.000859151892397036,
+        "absolute_rms": 0.0021443527922292128,
+        "relative_rms": 0.6580319540319723,
+        "stations": 58
+       },
+       "CTL_shift_M2_hickel_0.5": {
+        "N_rms": 0.0006556644381156927,
+        "absolute_rms": 0.0022793544014512207,
+        "relative_rms": 0.6994595460941291,
+        "stations": 58
+       },
+       "CTL_shift_Xall_0.125": {
+        "N_rms": 0.015989285060445585,
+        "absolute_rms": 0.0061405088825400335,
+        "relative_rms": 1.8843219610929536,
+        "stations": 58
+       },
+       "CTL_shift_Xall_0.25": {
+        "N_rms": 0.003991744501630915,
+        "absolute_rms": 0.003551423834093945,
+        "relative_rms": 1.0898161783887834,
+        "stations": 58
+       },
+       "CTL_shift_Xall_0.5": {
+        "N_rms": 0.0015031167695199524,
+        "absolute_rms": 0.0025939904906532338,
+        "relative_rms": 0.7960111029726707,
+        "stations": 58
+       },
+       "CTL_term_conv_matchedN": {
+        "N_rms": 0.015438728542818816,
+        "absolute_rms": 0.008095805146678308,
+        "relative_rms": 2.4843386309548,
+        "stations": 58
+       },
+       "CTL_term_dRtt_matchedN": {
+        "N_rms": 0.014814944225046523,
+        "absolute_rms": 0.0052469630370065206,
+        "relative_rms": 1.610121875694544,
+        "stations": 58
+       },
+       "CTL_term_dpds_matchedN": {
+        "N_rms": 0.015225948839616407,
+        "absolute_rms": 0.009515364973068749,
+        "relative_rms": 2.919955256078275,
+        "stations": 58
+       },
+       "CTL_term_visc_matchedN": {
+        "N_rms": 0.015444958149083443,
+        "absolute_rms": 0.010025023653428118,
+        "relative_rms": 3.0763528873549775,
+        "stations": 58
+       },
+       "M0_equilibrium": {
+        "N_rms": 0.0,
+        "absolute_rms": 0.0020667515971650756,
+        "relative_rms": 0.634218677500089,
+        "stations": 58
+       },
+       "M1_pressure_gradient": {
+        "N_rms": 0.00760211723507665,
+        "absolute_rms": 0.005263541690955454,
+        "relative_rms": 1.6152093240345606,
+        "stations": 58
+       },
+       "M2_hickel": {
+        "N_rms": 0.0021708946944416726,
+        "absolute_rms": 0.001910448366058001,
+        "relative_rms": 0.586254312233506,
+        "stations": 58
+       },
+       "M2b_hickel_Aplus17": {
+        "N_rms": 0.0021708946944416726,
+        "absolute_rms": 0.0019386519613301123,
+        "relative_rms": 0.5949090760274528,
+        "stations": 58
+       },
+       "M3_yang_integral": {
+        "N_rms": 0.015301939674898797,
+        "absolute_rms": 0.028742463670026218,
+        "relative_rms": 8.820124935141102,
+        "stations": 58
+       },
+       "M4_park_moin": {
+        "N_rms": 0.015407310865558296,
+        "absolute_rms": 0.0155873803311119,
+        "relative_rms": 4.783258787775399,
+        "stations": 58
+       },
+       "M5_meneveau": {
+        "N_rms": 0.0,
+        "absolute_rms": 0.004911842639033642,
+        "relative_rms": 1.507284352357342,
+        "stations": 58
+       },
+       "Xall": {
+        "N_rms": 0.015301939674898797,
+        "absolute_rms": 0.01000051686657233,
+        "relative_rms": 3.0688325535273546,
+        "stations": 58
+       },
+       "Xc_exact_convection": {
+        "N_rms": 0.007604737828837656,
+        "absolute_rms": 0.0037980730936903713,
+        "relative_rms": 1.1655047940125445,
+        "stations": 58
+       },
+       "Xcp_pressure_plus_convection": {
+        "N_rms": 0.015407310865558296,
+        "absolute_rms": 0.009974694700524204,
+        "relative_rms": 3.0609085727143266,
+        "stations": 58
+       },
+       "Xcpr_plus_normal_stress": {
+        "N_rms": 0.015289015385358904,
+        "absolute_rms": 0.009983827688612171,
+        "relative_rms": 3.063711188971994,
+        "stations": 58
+       },
+       "Xfull_closure_free": {
+        "N_rms": 0.015301939674898797,
+        "absolute_rms": 0.028742463670026218,
+        "relative_rms": 8.820124935141102,
+        "stations": 58
+       }
+      },
+      "truth_rms": 0.003258736569083123
+     }
+    }
+   },
+   "stations": {
+    "flat_floor": 62,
+    "sloped_wall": 58
+   }
+  }
+ }
+}

@@ -1,0 +1,1336 @@
+{
+ "Re_H": 5600,
+ "date": "20260825",
+ "findings": {
+  "instrument_fidelity": {
+   "flow_points_checked": 17,
+   "max_abs_difference_flow_vs_deposited": 0.0,
+   "max_abs_difference_rescored_A_vs_deposited": 0.0,
+   "points_checked": 17,
+   "verdict": "re-scoring against the deposited reference reproduces the deposited summary on both the wall-stress and the velocity channel; this script measures the same estimand on the same deposits"
+  },
+  "model_ranking_is_not_reference_stable": {
+   "flipped_pairs": [
+    "0145:G1c",
+    "0145:G2c",
+    "0300:G1c",
+    "0300:G2c",
+    "0600:G1c",
+    "0935:G1c",
+    "1500:G1c",
+    "2500:G1c"
+   ],
+   "pairs_compared": 8,
+   "pairs_where_B_and_C_agree": 7,
+   "pairs_whose_winner_flips_between_A_and_B": 8,
+   "sign_test_p_all_pairs_flip": 0.0078125,
+   "winner_under_A": [
+    "equilibrium"
+   ],
+   "winner_under_B": [
+    "total_gradient_tble"
+   ]
+  },
+  "published_trends_under_each_reference": {
+   "A_xiao_reconstructed:equilibrium": {
+    "any_point_above_unit_error": true,
+    "exact_permutation_p": 0.002777777777777778,
+    "flow_u_rms_vs_xiao": [
+     0.03972274224027149,
+     0.05212091720746696,
+     0.07796715624504244,
+     0.06407038890090481,
+     0.097503106864422,
+     0.07734675578229723
+    ],
+    "max_relative_rms": 1.5607045490436502,
+    "range": 0.9534406316216804,
+    "relative_rms": [
+     1.5607045490436502,
+     1.303617462017536,
+     1.0493613721481747,
+     0.7733193225563517,
+     0.6726748592636648,
+     0.6072639174219698
+    ],
+    "spearman_flow_vs_ym": 0.7142857142857143,
+    "spearman_rho_vs_ym": -1.0,
+    "ym_over_H": [
+     0.014515745999999998,
+     0.029999999999999995,
+     0.05999999999999999,
+     0.0935,
+     0.14999999999999997,
+     0.25
+    ]
+   },
+   "A_xiao_reconstructed:total_gradient_tble": {
+    "any_point_above_unit_error": true,
+    "exact_permutation_p": 0.002777777777777778,
+    "flow_u_rms_vs_xiao": [
+     0.0328079686219601,
+     0.03709191188151607,
+     0.04931018491927401,
+     0.053054277807726445,
+     0.08110032208707804,
+     0.07258833149500939
+    ],
+    "max_relative_rms": 2.8331069227438426,
+    "range": 1.018605622324036,
+    "relative_rms": [
+     1.8145013004198065,
+     1.8678651133265396,
+     2.3211373435545912,
+     2.449768912693007,
+     2.740432640264208,
+     2.8331069227438426
+    ],
+    "spearman_flow_vs_ym": 0.9428571428571428,
+    "spearman_rho_vs_ym": 1.0,
+    "ym_over_H": [
+     0.014515745999999998,
+     0.029999999999999995,
+     0.05999999999999999,
+     0.0935,
+     0.14999999999999997,
+     0.25
+    ]
+   },
+   "B_mglet_dns:equilibrium": {
+    "any_point_above_unit_error": false,
+    "exact_permutation_p": 0.002777777777777778,
+    "flow_u_rms_vs_xiao": [
+     0.03972274224027149,
+     0.05212091720746696,
+     0.07796715624504244,
+     0.06407038890090481,
+     0.097503106864422,
+     0.07734675578229723
+    ],
+    "max_relative_rms": 0.7946361066202225,
+    "range": 0.5605273997963832,
+    "relative_rms": [
+     0.2341087068238393,
+     0.5030050320096892,
+     0.6491807695982953,
+     0.7047879169297514,
+     0.7467222286560797,
+     0.7946361066202225
+    ],
+    "spearman_flow_vs_ym": 0.7142857142857143,
+    "spearman_rho_vs_ym": 1.0,
+    "ym_over_H": [
+     0.014515745999999998,
+     0.029999999999999995,
+     0.05999999999999999,
+     0.0935,
+     0.14999999999999997,
+     0.25
+    ]
+   },
+   "B_mglet_dns:total_gradient_tble": {
+    "any_point_above_unit_error": false,
+    "exact_permutation_p": 0.002777777777777778,
+    "flow_u_rms_vs_xiao": [
+     0.0328079686219601,
+     0.03709191188151607,
+     0.04931018491927401,
+     0.053054277807726445,
+     0.08110032208707804,
+     0.07258833149500939
+    ],
+    "max_relative_rms": 0.4874376652965805,
+    "range": 0.2948885151394956,
+    "relative_rms": [
+     0.1925491501570849,
+     0.24680159333244076,
+     0.34759598491748467,
+     0.36916844200358206,
+     0.4556974539806934,
+     0.4874376652965805
+    ],
+    "spearman_flow_vs_ym": 0.9428571428571428,
+    "spearman_rho_vs_ym": 1.0,
+    "ym_over_H": [
+     0.014515745999999998,
+     0.029999999999999995,
+     0.05999999999999999,
+     0.0935,
+     0.14999999999999997,
+     0.25
+    ]
+   }
+  },
+  "reference_effect_dominates_model_effect": {
+   "max_abs_change_in_E_tau_from_changing_reference": 2.345669257447262,
+   "median_abs_change_in_E_tau_from_changing_reference": 1.326595842219811,
+   "median_abs_model_difference_under_A": 0.91801181135771,
+   "median_abs_model_difference_under_B": 0.27669957413834845,
+   "n_points": 17,
+   "ratio_reference_over_model_under_B": 4.79435447759858
+  },
+  "wall_stress_and_flow_rankings": {
+   "concordant_under_A": 0,
+   "concordant_under_B": 8,
+   "flow_winner_stable_across_flow_references": 8,
+   "pairs_with_both_metrics": 8,
+   "verdict": "the flow-side ranking is stable across two independent flow references; the wall-stress ranking is not stable across two independent wall-stress references, so the fragility is specific to the wall-stress channel"
+  }
+ },
+ "model_pairs": [
+  {
+   "A_xiao_reconstructed": {
+    "abs_difference": 0.2537967513761563,
+    "equilibrium": 1.5607045490436502,
+    "total_gradient_tble": 1.8145013004198065,
+    "winner": "equilibrium"
+   },
+   "B_mglet_dns": {
+    "abs_difference": 0.0415595566667544,
+    "equilibrium": 0.2341087068238393,
+    "total_gradient_tble": 0.1925491501570849,
+    "winner": "total_gradient_tble"
+   },
+   "C_krank_dns_stations": {
+    "abs_difference": 0.13018630310270218,
+    "equilibrium": 0.2894266312568086,
+    "total_gradient_tble": 0.4196129343595108,
+    "winner": "equilibrium"
+   },
+   "flow_winner_rapp": "total_gradient_tble",
+   "flow_winner_stable": true,
+   "flow_winner_xiao": "total_gradient_tble",
+   "grid": "G1c",
+   "tag": "0145",
+   "winner_stable_A_vs_B": false,
+   "winner_stable_B_vs_C": false
+  },
+  {
+   "A_xiao_reconstructed": {
+    "abs_difference": 0.13422072470143198,
+    "equilibrium": 1.5669134570781087,
+    "total_gradient_tble": 1.7011341817795407,
+    "winner": "equilibrium"
+   },
+   "B_mglet_dns": {
+    "abs_difference": 0.08043540426618448,
+    "equilibrium": 0.2524857573842549,
+    "total_gradient_tble": 0.1720503531180704,
+    "winner": "total_gradient_tble"
+   },
+   "C_krank_dns_stations": {
+    "abs_difference": 0.035772294654703274,
+    "equilibrium": 0.3578162954973852,
+    "total_gradient_tble": 0.3220440008426819,
+    "winner": "total_gradient_tble"
+   },
+   "flow_winner_rapp": "total_gradient_tble",
+   "flow_winner_stable": true,
+   "flow_winner_xiao": "total_gradient_tble",
+   "grid": "G2c",
+   "tag": "0145",
+   "winner_stable_A_vs_B": false,
+   "winner_stable_B_vs_C": true
+  },
+  {
+   "A_xiao_reconstructed": {
+    "abs_difference": 0.5642476513090036,
+    "equilibrium": 1.303617462017536,
+    "total_gradient_tble": 1.8678651133265396,
+    "winner": "equilibrium"
+   },
+   "B_mglet_dns": {
+    "abs_difference": 0.2562034386772484,
+    "equilibrium": 0.5030050320096892,
+    "total_gradient_tble": 0.24680159333244076,
+    "winner": "total_gradient_tble"
+   },
+   "C_krank_dns_stations": {
+    "abs_difference": 0.39991060262438505,
+    "equilibrium": 1.2005482492212205,
+    "total_gradient_tble": 0.8006376465968355,
+    "winner": "total_gradient_tble"
+   },
+   "flow_winner_rapp": "total_gradient_tble",
+   "flow_winner_stable": true,
+   "flow_winner_xiao": "total_gradient_tble",
+   "grid": "G1c",
+   "tag": "0300",
+   "winner_stable_A_vs_B": false,
+   "winner_stable_B_vs_C": true
+  },
+  {
+   "A_xiao_reconstructed": {
+    "abs_difference": 0.5244154555346188,
+    "equilibrium": 1.1672668933273531,
+    "total_gradient_tble": 1.6916823488619719,
+    "winner": "equilibrium"
+   },
+   "B_mglet_dns": {
+    "abs_difference": 0.2623743736013106,
+    "equilibrium": 0.5186050977023264,
+    "total_gradient_tble": 0.2562307241010158,
+    "winner": "total_gradient_tble"
+   },
+   "C_krank_dns_stations": {
+    "abs_difference": 0.34332667870042444,
+    "equilibrium": 1.2029457890730475,
+    "total_gradient_tble": 0.8596191103726231,
+    "winner": "total_gradient_tble"
+   },
+   "flow_winner_rapp": "total_gradient_tble",
+   "flow_winner_stable": true,
+   "flow_winner_xiao": "total_gradient_tble",
+   "grid": "G2c",
+   "tag": "0300",
+   "winner_stable_A_vs_B": false,
+   "winner_stable_B_vs_C": true
+  },
+  {
+   "A_xiao_reconstructed": {
+    "abs_difference": 1.2717759714064165,
+    "equilibrium": 1.0493613721481747,
+    "total_gradient_tble": 2.3211373435545912,
+    "winner": "equilibrium"
+   },
+   "B_mglet_dns": {
+    "abs_difference": 0.3015847846808106,
+    "equilibrium": 0.6491807695982953,
+    "total_gradient_tble": 0.34759598491748467,
+    "winner": "total_gradient_tble"
+   },
+   "C_krank_dns_stations": {
+    "abs_difference": 0.5529532604555973,
+    "equilibrium": 1.4286520025160425,
+    "total_gradient_tble": 0.8756987420604452,
+    "winner": "total_gradient_tble"
+   },
+   "flow_winner_rapp": "total_gradient_tble",
+   "flow_winner_stable": true,
+   "flow_winner_xiao": "total_gradient_tble",
+   "grid": "G1c",
+   "tag": "0600",
+   "winner_stable_A_vs_B": false,
+   "winner_stable_B_vs_C": true
+  },
+  {
+   "A_xiao_reconstructed": {
+    "abs_difference": 1.6764495901366554,
+    "equilibrium": 0.7733193225563517,
+    "total_gradient_tble": 2.449768912693007,
+    "winner": "equilibrium"
+   },
+   "B_mglet_dns": {
+    "abs_difference": 0.33561947492616934,
+    "equilibrium": 0.7047879169297514,
+    "total_gradient_tble": 0.36916844200358206,
+    "winner": "total_gradient_tble"
+   },
+   "C_krank_dns_stations": {
+    "abs_difference": 0.5362984234330548,
+    "equilibrium": 1.3236185101443387,
+    "total_gradient_tble": 0.787320086711284,
+    "winner": "total_gradient_tble"
+   },
+   "flow_winner_rapp": "total_gradient_tble",
+   "flow_winner_stable": true,
+   "flow_winner_xiao": "total_gradient_tble",
+   "grid": "G1c",
+   "tag": "0935",
+   "winner_stable_A_vs_B": false,
+   "winner_stable_B_vs_C": true
+  },
+  {
+   "A_xiao_reconstructed": {
+    "abs_difference": 2.067757781000543,
+    "equilibrium": 0.6726748592636648,
+    "total_gradient_tble": 2.740432640264208,
+    "winner": "equilibrium"
+   },
+   "B_mglet_dns": {
+    "abs_difference": 0.29102477467538634,
+    "equilibrium": 0.7467222286560797,
+    "total_gradient_tble": 0.4556974539806934,
+    "winner": "total_gradient_tble"
+   },
+   "C_krank_dns_stations": {
+    "abs_difference": 0.4070051647128192,
+    "equilibrium": 1.2954389506323456,
+    "total_gradient_tble": 0.8884337859195264,
+    "winner": "total_gradient_tble"
+   },
+   "flow_winner_rapp": "total_gradient_tble",
+   "flow_winner_stable": true,
+   "flow_winner_xiao": "total_gradient_tble",
+   "grid": "G1c",
+   "tag": "1500",
+   "winner_stable_A_vs_B": false,
+   "winner_stable_B_vs_C": true
+  },
+  {
+   "A_xiao_reconstructed": {
+    "abs_difference": 2.225843005321873,
+    "equilibrium": 0.6072639174219698,
+    "total_gradient_tble": 2.8331069227438426,
+    "winner": "equilibrium"
+   },
+   "B_mglet_dns": {
+    "abs_difference": 0.30719844132364205,
+    "equilibrium": 0.7946361066202225,
+    "total_gradient_tble": 0.4874376652965805,
+    "winner": "total_gradient_tble"
+   },
+   "C_krank_dns_stations": {
+    "abs_difference": 0.26441749792270586,
+    "equilibrium": 1.2462610026270406,
+    "total_gradient_tble": 0.9818435047043348,
+    "winner": "total_gradient_tble"
+   },
+   "flow_winner_rapp": "total_gradient_tble",
+   "flow_winner_stable": true,
+   "flow_winner_xiao": "total_gradient_tble",
+   "grid": "G1c",
+   "tag": "2500",
+   "winner_stable_A_vs_B": false,
+   "winner_stable_B_vs_C": true
+  }
+ ],
+ "no_new_simulation": true,
+ "points": {
+  "ym0145_G1c_equilibrium": {
+   "case_dir": "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g1_equilibrium_307200_v2",
+   "case_id": "rswm_m13_re5600_g1_equilibrium_307200_v2",
+   "fidelity_vs_deposited_summary": {
+    "abs_difference": 0.0,
+    "deposited_profile_u_rms_vs_xiao": 0.03972274224027149,
+    "deposited_r2": -1.5759567935750036,
+    "deposited_relative_rms": 1.5607045490436502,
+    "flow_abs_difference": 0.0,
+    "rescored_A_r2": -1.5759567935750036,
+    "rescored_A_relative_rms": 1.5607045490436502
+   },
+   "flow": {
+    "u_rms_vs_rapp_piv": 0.04176646914514969,
+    "u_rms_vs_xiao_dns": 0.03972274224027149
+   },
+   "grid": "G1c",
+   "model": "equilibrium",
+   "model_reattachment_x_over_H": 4.398599773305699,
+   "model_separation_x_over_H": 0.04504020786080411,
+   "tag": "0145",
+   "wall": {
+    "A_xiao_reconstructed": {
+     "r2": -1.5759567935750036,
+     "relative_rms": 1.5607045490436502,
+     "relative_rms_interval": {
+      "high": 1.7163369117293683,
+      "low": 0.8047872660937085,
+      "median": 1.5490961333232156
+     },
+     "sign_accuracy": 0.926513671875
+    },
+    "B_mglet_dns": {
+     "r2": 0.9442368358507591,
+     "relative_rms": 0.2341087068238393,
+     "relative_rms_interval": {
+      "high": 0.5387450842994581,
+      "low": 0.20593294272218893,
+      "median": 0.23660783855504036
+     },
+     "sign_accuracy": 0.8916015625
+    },
+    "C_krank_dns_stations": {
+     "note": "10 stations only; reported as corroboration of B, not as an independent dense score",
+     "r2": 0.9150894613466224,
+     "relative_rms": 0.2894266312568086,
+     "sign_accuracy": 0.8
+    }
+   },
+   "ym_over_H": 0.014515745999999998
+  },
+  "ym0145_G1c_total_gradient_tble": {
+   "case_dir": "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g1_tble_307200_v2",
+   "case_id": "rswm_m13_re5600_g1_tble_307200_v2",
+   "fidelity_vs_deposited_summary": {
+    "abs_difference": 0.0,
+    "deposited_profile_u_rms_vs_xiao": 0.0328079686219601,
+    "deposited_r2": -2.4818635645597737,
+    "deposited_relative_rms": 1.8145013004198065,
+    "flow_abs_difference": 0.0,
+    "rescored_A_r2": -2.4818635645597737,
+    "rescored_A_relative_rms": 1.8145013004198065
+   },
+   "flow": {
+    "u_rms_vs_rapp_piv": 0.03336845183753315,
+    "u_rms_vs_xiao_dns": 0.0328079686219601
+   },
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "model_reattachment_x_over_H": 4.174895057851873,
+   "model_separation_x_over_H": 8.937942618570416,
+   "tag": "0145",
+   "wall": {
+    "A_xiao_reconstructed": {
+     "r2": -2.4818635645597737,
+     "relative_rms": 1.8145013004198065,
+     "relative_rms_interval": {
+      "high": 2.0057181018080716,
+      "low": 0.8967778470901407,
+      "median": 1.7986031005117176
+     },
+     "sign_accuracy": 0.889404296875
+    },
+    "B_mglet_dns": {
+     "r2": 0.962277932394055,
+     "relative_rms": 0.1925491501570849,
+     "relative_rms_interval": {
+      "high": 0.6613165795360657,
+      "low": 0.14757303867071744,
+      "median": 0.1967077035441704
+     },
+     "sign_accuracy": 0.85546875
+    },
+    "C_krank_dns_stations": {
+     "note": "10 stations only; reported as corroboration of B, not as an independent dense score",
+     "r2": 0.8215229620061946,
+     "relative_rms": 0.4196129343595108,
+     "sign_accuracy": 0.8
+    }
+   },
+   "ym_over_H": 0.014515745999999998
+  },
+  "ym0145_G2c_equilibrium": {
+   "case_dir": "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g2_equilibrium_819200_v2",
+   "case_id": "rswm_m13_re5600_g2_equilibrium_819200_v2",
+   "fidelity_vs_deposited_summary": {
+    "abs_difference": 0.0,
+    "deposited_profile_u_rms_vs_xiao": 0.02926419482824985,
+    "deposited_r2": -1.5964932786467823,
+    "deposited_relative_rms": 1.5669134570781087,
+    "flow_abs_difference": 0.0,
+    "rescored_A_r2": -1.5964932786467823,
+    "rescored_A_relative_rms": 1.5669134570781087
+   },
+   "flow": {
+    "u_rms_vs_rapp_piv": 0.029896168832886823,
+    "u_rms_vs_xiao_dns": 0.02926419482824985
+   },
+   "grid": "G2c",
+   "model": "equilibrium",
+   "model_reattachment_x_over_H": 4.153274607697916,
+   "model_separation_x_over_H": 0.09873711591836663,
+   "tag": "0145",
+   "wall": {
+    "A_xiao_reconstructed": {
+     "r2": -1.5964932786467823,
+     "relative_rms": 1.5669134570781087,
+     "relative_rms_interval": {
+      "high": 1.72931138637015,
+      "low": 0.7741289824339402,
+      "median": 1.553980137073778
+     },
+     "sign_accuracy": 0.914306640625
+    },
+    "B_mglet_dns": {
+     "r2": 0.9351386406397463,
+     "relative_rms": 0.2524857573842549,
+     "relative_rms_interval": {
+      "high": 0.6764234969538233,
+      "low": 0.21553650581953446,
+      "median": 0.2562759777607566
+     },
+     "sign_accuracy": 0.861328125
+    },
+    "C_krank_dns_stations": {
+     "note": "10 stations only; reported as corroboration of B, not as an independent dense score",
+     "r2": 0.8702208735041306,
+     "relative_rms": 0.3578162954973852,
+     "sign_accuracy": 0.9
+    }
+   },
+   "ym_over_H": 0.014515746
+  },
+  "ym0145_G2c_total_gradient_tble": {
+   "case_dir": "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g2_tble_819200_v2",
+   "case_id": "rswm_m13_re5600_g2_tble_819200_v2",
+   "fidelity_vs_deposited_summary": {
+    "abs_difference": 0.0,
+    "deposited_profile_u_rms_vs_xiao": 0.025017446699830324,
+    "deposited_r2": -2.060372735468027,
+    "deposited_relative_rms": 1.7011341817795407,
+    "flow_abs_difference": 0.0,
+    "rescored_A_r2": -2.060372735468027,
+    "rescored_A_relative_rms": 1.7011341817795407
+   },
+   "flow": {
+    "u_rms_vs_rapp_piv": 0.025135632086434833,
+    "u_rms_vs_xiao_dns": 0.025017446699830324
+   },
+   "grid": "G2c",
+   "model": "total_gradient_tble",
+   "model_reattachment_x_over_H": 4.458385421024365,
+   "model_separation_x_over_H": 8.96286131970474,
+   "tag": "0145",
+   "wall": {
+    "A_xiao_reconstructed": {
+     "r2": -2.060372735468027,
+     "relative_rms": 1.7011341817795407,
+     "relative_rms_interval": {
+      "high": 1.881648493677268,
+      "low": 0.890687549309407,
+      "median": 1.687773922433864
+     },
+     "sign_accuracy": 0.947265625
+    },
+    "B_mglet_dns": {
+     "r2": 0.9698821883202405,
+     "relative_rms": 0.1720503531180704,
+     "relative_rms_interval": {
+      "high": 0.5215220186968583,
+      "low": 0.14128804544949777,
+      "median": 0.17494318210688753
+     },
+     "sign_accuracy": 0.866455078125
+    },
+    "C_krank_dns_stations": {
+     "note": "10 stations only; reported as corroboration of B, not as an independent dense score",
+     "r2": 0.8948728131100722,
+     "relative_rms": 0.3220440008426819,
+     "sign_accuracy": 0.8
+    }
+   },
+   "ym_over_H": 0.014515746
+  },
+  "ym0300_G1c_equilibrium": {
+   "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym0300_cont/rswm_r23m6_ym0300_g1_equilibrium_307200_v1",
+   "case_id": "rswm_r23m6_ym0300_g1_equilibrium_307200_v1",
+   "fidelity_vs_deposited_summary": {
+    "abs_difference": 0.0,
+    "deposited_profile_u_rms_vs_xiao": 0.05212091720746696,
+    "deposited_r2": -0.7972045951369708,
+    "deposited_relative_rms": 1.303617462017536,
+    "flow_abs_difference": 0.0,
+    "rescored_A_r2": -0.7972045951369708,
+    "rescored_A_relative_rms": 1.303617462017536
+   },
+   "flow": {
+    "u_rms_vs_rapp_piv": 0.04475553837751103,
+    "u_rms_vs_xiao_dns": 0.05212091720746696
+   },
+   "grid": "G1c",
+   "model": "equilibrium",
+   "model_reattachment_x_over_H": 4.102163844121102,
+   "model_separation_x_over_H": 0.34132858453339754,
+   "tag": "0300",
+   "wall": {
+    "A_xiao_reconstructed": {
+     "r2": -0.7972045951369708,
+     "relative_rms": 1.303617462017536,
+     "relative_rms_interval": {
+      "high": 1.5396001928659928,
+      "low": 0.5679202106364676,
+      "median": 1.2846527555517395
+     },
+     "sign_accuracy": 0.95458984375
+    },
+    "B_mglet_dns": {
+     "r2": 0.7425713161879923,
+     "relative_rms": 0.5030050320096892,
+     "relative_rms_interval": {
+      "high": 1.167313755927101,
+      "low": 0.3660082904915667,
+      "median": 0.5108888616106582
+     },
+     "sign_accuracy": 0.826416015625
+    },
+    "C_krank_dns_stations": {
+     "note": "10 stations only; reported as corroboration of B, not as an independent dense score",
+     "r2": -0.46097859809979536,
+     "relative_rms": 1.2005482492212205,
+     "sign_accuracy": 0.9
+    }
+   },
+   "ym_over_H": 0.029999999999999995
+  },
+  "ym0300_G1c_total_gradient_tble": {
+   "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym0300/rswm_r23m6_ym0300_g1_tble_307200_v1",
+   "case_id": "rswm_r23m6_ym0300_g1_tble_307200_v1",
+   "fidelity_vs_deposited_summary": {
+    "abs_difference": 0.0,
+    "deposited_profile_u_rms_vs_xiao": 0.03709191188151607,
+    "deposited_r2": -2.6896757624028886,
+    "deposited_relative_rms": 1.8678651133265396,
+    "flow_abs_difference": 0.0,
+    "rescored_A_r2": -2.6896757624028886,
+    "rescored_A_relative_rms": 1.8678651133265396
+   },
+   "flow": {
+    "u_rms_vs_rapp_piv": 0.03477218015117876,
+    "u_rms_vs_xiao_dns": 0.03709191188151607
+   },
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "model_reattachment_x_over_H": 4.595329680738672,
+   "model_separation_x_over_H": 0.313488188446006,
+   "tag": "0300",
+   "wall": {
+    "A_xiao_reconstructed": {
+     "r2": -2.6896757624028886,
+     "relative_rms": 1.8678651133265396,
+     "relative_rms_interval": {
+      "high": 2.074453621205127,
+      "low": 0.9022414264293284,
+      "median": 1.8531766358152915
+     },
+     "sign_accuracy": 0.97900390625
+    },
+    "B_mglet_dns": {
+     "r2": 0.9380261901802649,
+     "relative_rms": 0.24680159333244076,
+     "relative_rms_interval": {
+      "high": 0.7413645954850919,
+      "low": 0.12730535589267059,
+      "median": 0.2531109917494808
+     },
+     "sign_accuracy": 0.884521484375
+    },
+    "C_krank_dns_stations": {
+     "note": "10 stations only; reported as corroboration of B, not as an independent dense score",
+     "r2": 0.35023452627982266,
+     "relative_rms": 0.8006376465968355,
+     "sign_accuracy": 0.9
+    }
+   },
+   "ym_over_H": 0.029999999999999995
+  },
+  "ym0300_G2c_equilibrium": {
+   "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym0300/rswm_r23m6_ym0300_g2_equilibrium_819200_v1",
+   "case_id": "rswm_r23m6_ym0300_g2_equilibrium_819200_v1",
+   "fidelity_vs_deposited_summary": {
+    "abs_difference": 0.0,
+    "deposited_profile_u_rms_vs_xiao": 0.0270147618583661,
+    "deposited_r2": -0.44091219798170367,
+    "deposited_relative_rms": 1.1672668933273531,
+    "flow_abs_difference": 0.0,
+    "rescored_A_r2": -0.44091219798170367,
+    "rescored_A_relative_rms": 1.1672668933273531
+   },
+   "flow": {
+    "u_rms_vs_rapp_piv": 0.034709684882764366,
+    "u_rms_vs_xiao_dns": 0.0270147618583661
+   },
+   "grid": "G2c",
+   "model": "equilibrium",
+   "model_reattachment_x_over_H": 4.178540283888704,
+   "model_separation_x_over_H": 0.3558755512017211,
+   "tag": "0300",
+   "wall": {
+    "A_xiao_reconstructed": {
+     "r2": -0.44091219798170367,
+     "relative_rms": 1.1672668933273531,
+     "relative_rms_interval": {
+      "high": 1.4157254402505748,
+      "low": 0.3740322050570183,
+      "median": 1.1473141304315249
+     },
+     "sign_accuracy": 0.964599609375
+    },
+    "B_mglet_dns": {
+     "r2": 0.7263560570160026,
+     "relative_rms": 0.5186050977023264,
+     "relative_rms_interval": {
+      "high": 1.1166049939269895,
+      "low": 0.39101192583417993,
+      "median": 0.5228574408356885
+     },
+     "sign_accuracy": 0.83349609375
+    },
+    "C_krank_dns_stations": {
+     "note": "10 stations only; reported as corroboration of B, not as an independent dense score",
+     "r2": -0.4668196827539255,
+     "relative_rms": 1.2029457890730475,
+     "sign_accuracy": 0.9
+    }
+   },
+   "ym_over_H": 0.029999999999999995
+  },
+  "ym0300_G2c_total_gradient_tble": {
+   "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym0300/rswm_r23m6_ym0300_g2_tble_819200_v1",
+   "case_id": "rswm_r23m6_ym0300_g2_tble_819200_v1",
+   "fidelity_vs_deposited_summary": {
+    "abs_difference": 0.0,
+    "deposited_profile_u_rms_vs_xiao": 0.024670024966253562,
+    "deposited_r2": -2.0264591589160337,
+    "deposited_relative_rms": 1.6916823488619719,
+    "flow_abs_difference": 0.0,
+    "rescored_A_r2": -2.0264591589160337,
+    "rescored_A_relative_rms": 1.6916823488619719
+   },
+   "flow": {
+    "u_rms_vs_rapp_piv": 0.03426251431244672,
+    "u_rms_vs_xiao_dns": 0.024670024966253562
+   },
+   "grid": "G2c",
+   "model": "total_gradient_tble",
+   "model_reattachment_x_over_H": 4.609855770704424,
+   "model_separation_x_over_H": 0.3222413239142304,
+   "tag": "0300",
+   "wall": {
+    "A_xiao_reconstructed": {
+     "r2": -2.0264591589160337,
+     "relative_rms": 1.6916823488619719,
+     "relative_rms_interval": {
+      "high": 1.8944600103793536,
+      "low": 0.72642720978921,
+      "median": 1.6773597627672694
+     },
+     "sign_accuracy": 0.978515625
+    },
+    "B_mglet_dns": {
+     "r2": 0.9332002734621214,
+     "relative_rms": 0.2562307241010158,
+     "relative_rms_interval": {
+      "high": 0.7451659654503355,
+      "low": 0.12936569001873546,
+      "median": 0.2609568252086806
+     },
+     "sign_accuracy": 0.885009765625
+    },
+    "C_krank_dns_stations": {
+     "note": "10 stations only; reported as corroboration of B, not as an independent dense score",
+     "r2": 0.250974263775235,
+     "relative_rms": 0.8596191103726231,
+     "sign_accuracy": 0.9
+    }
+   },
+   "ym_over_H": 0.029999999999999995
+  },
+  "ym0600_G1c_equilibrium": {
+   "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym0600/rswm_r23m6_ym0600_g1_equilibrium_307200_v1",
+   "case_id": "rswm_r23m6_ym0600_g1_equilibrium_307200_v1",
+   "fidelity_vs_deposited_summary": {
+    "abs_difference": 0.0,
+    "deposited_profile_u_rms_vs_xiao": 0.07796715624504244,
+    "deposited_r2": -0.164521010937432,
+    "deposited_relative_rms": 1.0493613721481747,
+    "flow_abs_difference": 0.0,
+    "rescored_A_r2": -0.164521010937432,
+    "rescored_A_relative_rms": 1.0493613721481747
+   },
+   "flow": {
+    "u_rms_vs_rapp_piv": 0.06909658790562488,
+    "u_rms_vs_xiao_dns": 0.07796715624504244
+   },
+   "grid": "G1c",
+   "model": "equilibrium",
+   "model_reattachment_x_over_H": 3.4262315101715757,
+   "model_separation_x_over_H": 0.48224471133334074,
+   "tag": "0600",
+   "wall": {
+    "A_xiao_reconstructed": {
+     "r2": -0.164521010937432,
+     "relative_rms": 1.0493613721481747,
+     "relative_rms_interval": {
+      "high": 1.5021330359957963,
+      "low": 0.5576057934640204,
+      "median": 1.0324609176230974
+     },
+     "sign_accuracy": 0.872314453125
+    },
+    "B_mglet_dns": {
+     "r2": 0.5712110651058104,
+     "relative_rms": 0.6491807695982953,
+     "relative_rms_interval": {
+      "high": 1.4950851073073002,
+      "low": 0.5280038150614573,
+      "median": 0.6630328736891395
+     },
+     "sign_accuracy": 0.73583984375
+    },
+    "C_krank_dns_stations": {
+     "note": "10 stations only; reported as corroboration of B, not as an independent dense score",
+     "r2": -1.0688905935418913,
+     "relative_rms": 1.4286520025160425,
+     "sign_accuracy": 0.8
+    }
+   },
+   "ym_over_H": 0.05999999999999999
+  },
+  "ym0600_G1c_total_gradient_tble": {
+   "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym0600/rswm_r23m6_ym0600_g1_tble_307200_v1",
+   "case_id": "rswm_r23m6_ym0600_g1_tble_307200_v1",
+   "fidelity_vs_deposited_summary": {
+    "abs_difference": 0.0,
+    "deposited_profile_u_rms_vs_xiao": 0.04931018491927401,
+    "deposited_r2": -4.697690563790874,
+    "deposited_relative_rms": 2.3211373435545912,
+    "flow_abs_difference": 0.0,
+    "rescored_A_r2": -4.697690563790874,
+    "rescored_A_relative_rms": 2.3211373435545912
+   },
+   "flow": {
+    "u_rms_vs_rapp_piv": 0.04072087214117773,
+    "u_rms_vs_xiao_dns": 0.04931018491927401
+   },
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "model_reattachment_x_over_H": 4.059093297042782,
+   "model_separation_x_over_H": 0.4273352588471753,
+   "tag": "0600",
+   "wall": {
+    "A_xiao_reconstructed": {
+     "r2": -4.697690563790874,
+     "relative_rms": 2.3211373435545912,
+     "relative_rms_interval": {
+      "high": 2.6236995527539206,
+      "low": 0.9837820811472491,
+      "median": 2.297306544369452
+     },
+     "sign_accuracy": 0.94873046875
+    },
+    "B_mglet_dns": {
+     "r2": 0.8770688967212259,
+     "relative_rms": 0.34759598491748467,
+     "relative_rms_interval": {
+      "high": 1.1010264536099383,
+      "low": 0.26297048745499246,
+      "median": 0.35821803207134617
+     },
+     "sign_accuracy": 0.812255859375
+    },
+    "C_krank_dns_stations": {
+     "note": "10 stations only; reported as corroboration of B, not as an independent dense score",
+     "r2": 0.22269033414943795,
+     "relative_rms": 0.8756987420604452,
+     "sign_accuracy": 0.9
+    }
+   },
+   "ym_over_H": 0.05999999999999999
+  },
+  "ym0935_G1c_equilibrium": {
+   "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym0935/rswm_r23m6_ym0935_g1_equilibrium_307200_v1",
+   "case_id": "rswm_r23m6_ym0935_g1_equilibrium_307200_v1",
+   "fidelity_vs_deposited_summary": {
+    "abs_difference": 0.0,
+    "deposited_profile_u_rms_vs_xiao": 0.06407038890090481,
+    "deposited_r2": 0.36756644309555087,
+    "deposited_relative_rms": 0.7733193225563517,
+    "flow_abs_difference": 0.0,
+    "rescored_A_r2": 0.36756644309555087,
+    "rescored_A_relative_rms": 0.7733193225563517
+   },
+   "flow": {
+    "u_rms_vs_rapp_piv": 0.049101265390978435,
+    "u_rms_vs_xiao_dns": 0.06407038890090481
+   },
+   "grid": "G1c",
+   "model": "equilibrium",
+   "model_reattachment_x_over_H": 3.4775218942247483,
+   "model_separation_x_over_H": 0.5731165857791359,
+   "tag": "0935",
+   "wall": {
+    "A_xiao_reconstructed": {
+     "r2": 0.36756644309555087,
+     "relative_rms": 0.7733193225563517,
+     "relative_rms_interval": {
+      "high": 1.2603741492366443,
+      "low": 0.4023164788267047,
+      "median": 0.7657702852613749
+     },
+     "sign_accuracy": 0.867919921875
+    },
+    "B_mglet_dns": {
+     "r2": 0.4946070534952891,
+     "relative_rms": 0.7047879169297514,
+     "relative_rms_interval": {
+      "high": 1.4067274615056453,
+      "low": 0.6202272730757322,
+      "median": 0.714681707716948
+     },
+     "sign_accuracy": 0.7314453125
+    },
+    "C_krank_dns_stations": {
+     "note": "10 stations only; reported as corroboration of B, not as an independent dense score",
+     "r2": -0.7758663592484221,
+     "relative_rms": 1.3236185101443387,
+     "sign_accuracy": 0.7
+    }
+   },
+   "ym_over_H": 0.0935
+  },
+  "ym0935_G1c_total_gradient_tble": {
+   "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym0935/rswm_r23m6_ym0935_g1_tble_307200_v1",
+   "case_id": "rswm_r23m6_ym0935_g1_tble_307200_v1",
+   "fidelity_vs_deposited_summary": {
+    "abs_difference": 0.0,
+    "deposited_profile_u_rms_vs_xiao": 0.053054277807726445,
+    "deposited_r2": -5.346691962161454,
+    "deposited_relative_rms": 2.449768912693007,
+    "flow_abs_difference": 0.0,
+    "rescored_A_r2": -5.346691962161454,
+    "rescored_A_relative_rms": 2.449768912693007
+   },
+   "flow": {
+    "u_rms_vs_rapp_piv": 0.0429094329769907,
+    "u_rms_vs_xiao_dns": 0.053054277807726445
+   },
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "model_reattachment_x_over_H": 4.164705224178525,
+   "model_separation_x_over_H": 0.48710335309293307,
+   "tag": "0935",
+   "wall": {
+    "A_xiao_reconstructed": {
+     "r2": -5.346691962161454,
+     "relative_rms": 2.449768912693007,
+     "relative_rms_interval": {
+      "high": 2.7812967733754848,
+      "low": 0.9488231388907967,
+      "median": 2.421984159719223
+     },
+     "sign_accuracy": 0.953857421875
+    },
+    "B_mglet_dns": {
+     "r2": 0.8613367374821603,
+     "relative_rms": 0.36916844200358206,
+     "relative_rms_interval": {
+      "high": 1.0334835336087005,
+      "low": 0.30178872368480875,
+      "median": 0.37657651263026726
+     },
+     "sign_accuracy": 0.8173828125
+    },
+    "C_krank_dns_stations": {
+     "note": "10 stations only; reported as corroboration of B, not as an independent dense score",
+     "r2": 0.37167074667150646,
+     "relative_rms": 0.787320086711284,
+     "sign_accuracy": 0.9
+    }
+   },
+   "ym_over_H": 0.0935
+  },
+  "ym1500_G1c_equilibrium": {
+   "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym1500/rswm_r23m6_ym1500_g1_equilibrium_307200_v1",
+   "case_id": "rswm_r23m6_ym1500_g1_equilibrium_307200_v1",
+   "fidelity_vs_deposited_summary": {
+    "abs_difference": 0.0,
+    "deposited_profile_u_rms_vs_xiao": 0.097503106864422,
+    "deposited_r2": 0.5214717572177393,
+    "deposited_relative_rms": 0.6726748592636648,
+    "flow_abs_difference": 0.0,
+    "rescored_A_r2": 0.5214717572177393,
+    "rescored_A_relative_rms": 0.6726748592636648
+   },
+   "flow": {
+    "u_rms_vs_rapp_piv": 0.08462835218263846,
+    "u_rms_vs_xiao_dns": 0.097503106864422
+   },
+   "grid": "G1c",
+   "model": "equilibrium",
+   "model_reattachment_x_over_H": 3.4075825301050418,
+   "model_separation_x_over_H": 0.7326931646122858,
+   "tag": "1500",
+   "wall": {
+    "A_xiao_reconstructed": {
+     "r2": 0.5214717572177393,
+     "relative_rms": 0.6726748592636648,
+     "relative_rms_interval": {
+      "high": 1.2269536518151938,
+      "low": 0.3580847191412009,
+      "median": 0.6837426823668731
+     },
+     "sign_accuracy": 0.84228515625
+    },
+    "B_mglet_dns": {
+     "r2": 0.43267694058242767,
+     "relative_rms": 0.7467222286560797,
+     "relative_rms_interval": {
+      "high": 1.4035035576204875,
+      "low": 0.6761136536064528,
+      "median": 0.7549206775836349
+     },
+     "sign_accuracy": 0.705810546875
+    },
+    "C_krank_dns_stations": {
+     "note": "10 stations only; reported as corroboration of B, not as an independent dense score",
+     "r2": -0.7010556377227897,
+     "relative_rms": 1.2954389506323456,
+     "sign_accuracy": 0.7
+    }
+   },
+   "ym_over_H": 0.14999999999999997
+  },
+  "ym1500_G1c_total_gradient_tble": {
+   "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym1500/rswm_r23m6_ym1500_g1_tble_307200_v1",
+   "case_id": "rswm_r23m6_ym1500_g1_tble_307200_v1",
+   "fidelity_vs_deposited_summary": {
+    "abs_difference": 0.0,
+    "deposited_profile_u_rms_vs_xiao": 0.08110032208707804,
+    "deposited_r2": -6.942101720042582,
+    "deposited_relative_rms": 2.740432640264208,
+    "flow_abs_difference": 0.0,
+    "rescored_A_r2": -6.942101720042582,
+    "rescored_A_relative_rms": 2.740432640264208
+   },
+   "flow": {
+    "u_rms_vs_rapp_piv": 0.0766071845129811,
+    "u_rms_vs_xiao_dns": 0.08110032208707804
+   },
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "model_reattachment_x_over_H": 4.162784279923542,
+   "model_separation_x_over_H": 0.6084559691010775,
+   "tag": "1500",
+   "wall": {
+    "A_xiao_reconstructed": {
+     "r2": -6.942101720042582,
+     "relative_rms": 2.740432640264208,
+     "relative_rms_interval": {
+      "high": 3.1122249451793094,
+      "low": 1.20548544632739,
+      "median": 2.7023898333553067
+     },
+     "sign_accuracy": 0.940185546875
+    },
+    "B_mglet_dns": {
+     "r2": 0.78871654934662,
+     "relative_rms": 0.4556974539806934,
+     "relative_rms_interval": {
+      "high": 1.1317332127114734,
+      "low": 0.34581558907828813,
+      "median": 0.46398815925672865
+     },
+     "sign_accuracy": 0.8037109375
+    },
+    "C_krank_dns_stations": {
+     "note": "10 stations only; reported as corroboration of B, not as an independent dense score",
+     "r2": 0.19991754268209838,
+     "relative_rms": 0.8884337859195264,
+     "sign_accuracy": 0.8
+    }
+   },
+   "ym_over_H": 0.14999999999999997
+  },
+  "ym2500_G1c_equilibrium": {
+   "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym2500/rswm_r23m6_ym2500_g1_equilibrium_307200_v1",
+   "case_id": "rswm_r23m6_ym2500_g1_equilibrium_307200_v1",
+   "fidelity_vs_deposited_summary": {
+    "abs_difference": 0.0,
+    "deposited_profile_u_rms_vs_xiao": 0.07734675578229723,
+    "deposited_r2": 0.6100111992839279,
+    "deposited_relative_rms": 0.6072639174219698,
+    "flow_abs_difference": 0.0,
+    "rescored_A_r2": 0.6100111992839279,
+    "rescored_A_relative_rms": 0.6072639174219698
+   },
+   "flow": {
+    "u_rms_vs_rapp_piv": 0.06793381567357501,
+    "u_rms_vs_xiao_dns": 0.07734675578229723
+   },
+   "grid": "G1c",
+   "model": "equilibrium",
+   "model_reattachment_x_over_H": 3.49712930728882,
+   "model_separation_x_over_H": 1.1229817818937162,
+   "tag": "2500",
+   "wall": {
+    "A_xiao_reconstructed": {
+     "r2": 0.6100111992839279,
+     "relative_rms": 0.6072639174219698,
+     "relative_rms_interval": {
+      "high": 1.175146784927524,
+      "low": 0.3438563103173152,
+      "median": 0.6268148962167163
+     },
+     "sign_accuracy": 0.808837890625
+    },
+    "B_mglet_dns": {
+     "r2": 0.35753589836226274,
+     "relative_rms": 0.7946361066202225,
+     "relative_rms_interval": {
+      "high": 1.3612636940604754,
+      "low": 0.738254098139479,
+      "median": 0.8009685871078471
+     },
+     "sign_accuracy": 0.67236328125
+    },
+    "C_krank_dns_stations": {
+     "note": "10 stations only; reported as corroboration of B, not as an independent dense score",
+     "r2": -0.5743548541107992,
+     "relative_rms": 1.2462610026270406,
+     "sign_accuracy": 0.6
+    }
+   },
+   "ym_over_H": 0.25
+  },
+  "ym2500_G1c_total_gradient_tble": {
+   "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym2500/rswm_r23m6_ym2500_g1_tble_307200_v1",
+   "case_id": "rswm_r23m6_ym2500_g1_tble_307200_v1",
+   "fidelity_vs_deposited_summary": {
+    "abs_difference": 0.0,
+    "deposited_profile_u_rms_vs_xiao": 0.07258833149500939,
+    "deposited_r2": -7.488346754821389,
+    "deposited_relative_rms": 2.8331069227438426,
+    "flow_abs_difference": 0.0,
+    "rescored_A_r2": -7.488346754821389,
+    "rescored_A_relative_rms": 2.8331069227438426
+   },
+   "flow": {
+    "u_rms_vs_rapp_piv": 0.061222094919348734,
+    "u_rms_vs_xiao_dns": 0.07258833149500939
+   },
+   "grid": "G1c",
+   "model": "total_gradient_tble",
+   "model_reattachment_x_over_H": 4.5094648390834635,
+   "model_separation_x_over_H": 1.3711756072504706,
+   "tag": "2500",
+   "wall": {
+    "A_xiao_reconstructed": {
+     "r2": -7.488346754821389,
+     "relative_rms": 2.8331069227438426,
+     "relative_rms_interval": {
+      "high": 3.250957174670903,
+      "low": 1.1161213940692218,
+      "median": 2.786644273594519
+     },
+     "sign_accuracy": 0.91064453125
+    },
+    "B_mglet_dns": {
+     "r2": 0.7582589262946428,
+     "relative_rms": 0.4874376652965805,
+     "relative_rms_interval": {
+      "high": 1.1500253018129662,
+      "low": 0.2999754400617241,
+      "median": 0.49219181600525064
+     },
+     "sign_accuracy": 0.782470703125
+    },
+    "C_krank_dns_stations": {
+     "note": "10 stations only; reported as corroboration of B, not as an independent dense score",
+     "r2": 0.02283217329806353,
+     "relative_rms": 0.9818435047043348,
+     "sign_accuracy": 0.8
+    }
+   },
+   "ym_over_H": 0.25
+  },
+  "ym2500_G2c_equilibrium": {
+   "case_dir": "codes/results/rswm_r23m6_ym_campaign_final/ym2500/rswm_r23m6_ym2500_g2_equilibrium_819200_v1",
+   "case_id": "rswm_r23m6_ym2500_g2_equilibrium_819200_v1",
+   "fidelity_vs_deposited_summary": {
+    "abs_difference": 0.0,
+    "deposited_profile_u_rms_vs_xiao": 0.06281789687822663,
+    "deposited_r2": 0.6574650198541389,
+    "deposited_relative_rms": 0.5691200335998557,
+    "flow_abs_difference": 0.0,
+    "rescored_A_r2": 0.6574650198541389,
+    "rescored_A_relative_rms": 0.5691200335998557
+   },
+   "flow": {
+    "u_rms_vs_rapp_piv": 0.056504883280917406,
+    "u_rms_vs_xiao_dns": 0.06281789687822663
+   },
+   "grid": "G2c",
+   "model": "equilibrium",
+   "model_reattachment_x_over_H": 3.6019365106250683,
+   "model_separation_x_over_H": 1.2612618251936618,
+   "tag": "2500",
+   "wall": {
+    "A_xiao_reconstructed": {
+     "r2": 0.6574650198541389,
+     "relative_rms": 0.5691200335998557,
+     "relative_rms_interval": {
+      "high": 1.0931923673731527,
+      "low": 0.33906798657778064,
+      "median": 0.5863655081056851
+     },
+     "sign_accuracy": 0.80517578125
+    },
+    "B_mglet_dns": {
+     "r2": 0.35209972962094005,
+     "relative_rms": 0.7979909061587088,
+     "relative_rms_interval": {
+      "high": 1.306762464628977,
+      "low": 0.7483610218247136,
+      "median": 0.8034400381994933
+     },
+     "sign_accuracy": 0.668701171875
+    },
+    "C_krank_dns_stations": {
+     "note": "10 stations only; reported as corroboration of B, not as an independent dense score",
+     "r2": -0.467361393452411,
+     "relative_rms": 1.2031678983266163,
+     "sign_accuracy": 0.6
+    }
+   },
+   "ym_over_H": 0.25
+  }
+ },
+ "producer_harvest_already_migrated": "codes/analysis/harvest_m13_highre.py",
+ "producer_harvest_under_audit": "codes/analysis/harvest_r2_3_ym.py",
+ "provenance": {
+  "bootstrap": {
+   "block_points": 512,
+   "draws": 20000,
+   "seed": 20260825
+  },
+  "l2_reducer_sha256": "74f8106d4156f0c49a5ad26ce9e21fc6aa0ba1d19e71c3726ea98eb5fc9b6573",
+  "l3_analyser_sha256": "44640f3e7b4a4a378e8be1bb7fc9c6a14b06fde9aad4b0fa8b93778790c24738",
+  "this_script_sha256": "73b55e1e9c6a2452e570159b858438006e2fc0ae687acba6d70a0ed89a42c504"
+ },
+ "references": {
+  "A_xiao_reconstructed": {
+   "definition": "nu dU_t/dn from the deposited 4-point through-origin fit of the Xiao archive",
+   "file": "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz",
+   "reattachment_x_over_H": 4.473418642856745,
+   "rms": 0.0013277857307644272,
+   "role": "the reference harvest_r2_3_ym.py uses and main.tex currently prints",
+   "separation_x_over_H": 0.3786520086310376
+  },
+  "B_mglet_dns": {
+   "definition": "Peller & Manhart MGLET DNS bottom-wall tau_w, ERCOFTAC UFR3-30",
+   "file": "codes/raw_data/periodic_hill_ufr3_30/ercoftac_ufr3_30/UFR3-30_data-NP-Re5600-DNS2-11.dat",
+   "reattachment_x_over_H": 5.142943693333334,
+   "rms": 0.0036888417214117138,
+   "role": "the reference harvest_m13_highre.py was migrated to for Re_H=5600",
+   "sentinel_repair": {
+    "definition": "sentinel := tau_w == 0 and c_p == 0 exactly (trailing outline rows)",
+    "rows_total": 1001,
+    "sentinel_row_indices": [
+     999,
+     1000
+    ],
+    "sentinel_rows_dropped": 2
+   },
+   "sentinel_repair_effect": {
+    "max_abs_difference": 0.000473,
+    "max_abs_difference_over_rms": 0.1282245310918311,
+    "rms_ratio_unrepaired_over_repaired": 0.9999890750159698,
+    "separation_unchanged": true,
+    "verdict": "local to the crest abscissa; no aggregate metric in this study changes"
+   },
+   "separation_x_over_H": 0.18066292458175814,
+   "sha256": "b9fe7b1c03424cd515ac07d407079423c1f9140b163f425f21de3294b29afdb4"
+  },
+  "C_krank_dns_stations": {
+   "definition": "Krank, Kronbichler & Wall (2018) DNS tau_w at 10 ERCOFTAC stations",
+   "file": "codes/raw_data/geometry_driven/krank_pehill_Re5600_wall_profiles.npz",
+   "role": "independent corroboration of B; scored station-restricted, never densified",
+   "sha256": "a62603c48f5a0f594badbfdf5e923b4c5f5039247374a66aed3272f7948bd0ec",
+   "station_rms": 0.0014293646274112395
+  },
+  "cross_check_A_vs_C_at_stations": {
+   "relative_rms_difference": 0.6228324317950658,
+   "station_rms_A": 0.0009941687491461333
+  },
+  "cross_check_B_vs_C_at_stations": {
+   "relative_rms_difference": 0.10480919985907952,
+   "station_rms_B": 0.0013472995140634465,
+   "station_rms_C": 0.0014293646274112395
+  },
+  "documented_separation_x_over_H": 0.18
+ },
+ "source_archive": "codes/results/r2_3_ym_window_20260825.npz",
+ "source_archive_sha256": "7c599b2bb3b8f6455f618bbd930708e5f56a3f1ad20398a4e6273aa48a415ad4",
+ "source_summary": "codes/results/r2_3_ym_window_20260825_summary.json",
+ "status": "SCORING_REFERENCE_CONDITIONING_L0_OK"
+}

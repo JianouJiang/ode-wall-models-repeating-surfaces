@@ -1,0 +1,1051 @@
+{
+ "schema": "epsilon_predictor_outoffamily_v1",
+ "ledger_row": "R2-2 (real)",
+ "idea": "Pre-registered out-of-family test of the cancellation coordinate epsilon as a predictor of ODE wall-model failure, on the campaign's high-fidelity anchors, with the verdict stated plainly either way.",
+ "date": "20260825",
+ "generated": "2026-08-25T02:15:14",
+ "status": "R2_2_REAL_PARTIAL",
+ "preregistration": {
+  "path": "work_progress/archer2_campaign_20260823/R2-2_real/preregistration_r2_2_real_20260824.json",
+  "sha256": "8ad8bdce6e5c8319bbd7c9abd586714c8498652bd8e9b6b8b5c9091f3ea08962",
+  "registered_utc": "2026-08-24T01:13:34Z",
+  "eps_threshold": 0.5,
+  "p2_frac": 0.2,
+  "p2_pitch": 3.0
+ },
+ "amendments": [
+  {
+   "path": "work_progress/archer2_campaign_20260823/R2-2_real/amendment_01_truth_reference_20260825.json",
+   "sha256": "0bab34e7fa65e566620873f4c016772dc1553794f8e0449150a15d49d3e63afd",
+   "amendment_id": "AMD-01",
+   "title": "Truth-reference correction for the coupled canonical-hill anchors (Re_H=5,600)"
+  }
+ ],
+ "withdrawn_reference_registry": {
+  "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz": "AMD-01"
+ },
+ "anchors": [
+  {
+   "id": "xiao29_family",
+   "status": "EVALUATED",
+   "blind": false,
+   "in_family": true,
+   "role": "in-family calibration set (excluded from headline by preregistration)",
+   "n_members": 29,
+   "members": [
+    {
+     "member": "alph05-10071-2024",
+     "eps_median": 0.11635106495162105,
+     "frac_eps_lt0p1": 0.44642857142857145,
+     "pitch_over_delta": 9.940474750905748,
+     "measured_r2": -71.04158877001208,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph05-10071-3036",
+     "eps_median": 0.17458052069970406,
+     "frac_eps_lt0p1": 0.34151785714285715,
+     "pitch_over_delta": 6.6269829162484095,
+     "measured_r2": -42.45817541647885,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph05-10071-4048",
+     "eps_median": 0.2190976277397588,
+     "frac_eps_lt0p1": 0.2779017857142857,
+     "pitch_over_delta": 4.970237375452874,
+     "measured_r2": -30.11197259812478,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph05-4071-2024",
+     "eps_median": 0.15642584373351093,
+     "frac_eps_lt0p1": 0.4348958333333333,
+     "pitch_over_delta": 4.012251700028468,
+     "measured_r2": -76.57549542593937,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph05-4071-3036",
+     "eps_median": 0.32235482454195885,
+     "frac_eps_lt0p1": 0.3046875,
+     "pitch_over_delta": 2.6748343653661584,
+     "measured_r2": -24.866688763539408,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "FAIL"
+    },
+    {
+     "member": "alph05-4071-4048",
+     "eps_median": 0.40976622749443814,
+     "frac_eps_lt0p1": 0.23177083333333334,
+     "pitch_over_delta": 2.006125850014234,
+     "measured_r2": -18.25860799698215,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "FAIL"
+    },
+    {
+     "member": "alph05-7071-2024",
+     "eps_median": 0.08394008859971455,
+     "frac_eps_lt0p1": 0.5421875,
+     "pitch_over_delta": 6.9762371780319175,
+     "measured_r2": -84.3115704538056,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph05-7071-3036",
+     "eps_median": 0.17557412724462584,
+     "frac_eps_lt0p1": 0.309375,
+     "pitch_over_delta": 4.650824609187007,
+     "measured_r2": -57.580410859086854,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph05-7071-4048",
+     "eps_median": 0.2452273977675407,
+     "frac_eps_lt0p1": 0.1828125,
+     "pitch_over_delta": 3.4881185890159587,
+     "measured_r2": -28.485094739428558,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph075-80355-3036",
+     "eps_median": 0.09823786615124785,
+     "frac_eps_lt0p1": 0.5028409090909091,
+     "pitch_over_delta": 5.285959139374311,
+     "measured_r2": -29.09700678430664,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph10-12-2024",
+     "eps_median": 0.19185602989860162,
+     "frac_eps_lt0p1": 0.31640625,
+     "pitch_over_delta": 11.846128077682295,
+     "measured_r2": -37.419383784283454,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph10-12-3036",
+     "eps_median": 0.23881708988801287,
+     "frac_eps_lt0p1": 0.279296875,
+     "pitch_over_delta": 7.897418419310216,
+     "measured_r2": -21.669754574857514,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph10-12-4048",
+     "eps_median": 0.3180378250082239,
+     "frac_eps_lt0p1": 0.216796875,
+     "pitch_over_delta": 5.923064038841147,
+     "measured_r2": -16.454407463774114,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph10-6-2024",
+     "eps_median": 0.1067269257672858,
+     "frac_eps_lt0p1": 0.470703125,
+     "pitch_over_delta": 5.917274167099403,
+     "measured_r2": -36.60714942467291,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph10-6-3036",
+     "eps_median": 0.1821246734387889,
+     "frac_eps_lt0p1": 0.322265625,
+     "pitch_over_delta": 3.9448492953068204,
+     "measured_r2": -18.05490731079248,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph10-6-4048",
+     "eps_median": 0.3080761447620112,
+     "frac_eps_lt0p1": 0.201171875,
+     "pitch_over_delta": 2.9586370835497013,
+     "measured_r2": -12.050467402287886,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "FAIL"
+    },
+    {
+     "member": "alph10-9-2024",
+     "eps_median": 0.12089758557578573,
+     "frac_eps_lt0p1": 0.4375,
+     "pitch_over_delta": 8.881701147094407,
+     "measured_r2": -39.52102734702448,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph10-9-3036",
+     "eps_median": 0.14909175910684377,
+     "frac_eps_lt0p1": 0.3658854166666667,
+     "pitch_over_delta": 5.921133873777556,
+     "measured_r2": -23.35171538489192,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph10-9-4048",
+     "eps_median": 0.18640959580690375,
+     "frac_eps_lt0p1": 0.2565104166666667,
+     "pitch_over_delta": 4.440850573547204,
+     "measured_r2": -17.091160846798715,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph125-99645-3036",
+     "eps_median": 0.20490547244972762,
+     "frac_eps_lt0p1": 0.2175925925925926,
+     "pitch_over_delta": 6.556632152316759,
+     "measured_r2": -16.880709187258358,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph15-10929-2024",
+     "eps_median": 0.1398127070557751,
+     "frac_eps_lt0p1": 0.37604166666666666,
+     "pitch_over_delta": 10.788157388918487,
+     "measured_r2": -29.76973735534289,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph15-10929-3036",
+     "eps_median": 0.20699485888592198,
+     "frac_eps_lt0p1": 0.2552083333333333,
+     "pitch_over_delta": 7.192104653517442,
+     "measured_r2": -17.570337916160934,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph15-10929-4048",
+     "eps_median": 0.25753352722001954,
+     "frac_eps_lt0p1": 0.16770833333333332,
+     "pitch_over_delta": 5.394078694459243,
+     "measured_r2": -11.111389667496887,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph15-13929-2024",
+     "eps_median": 0.22780680433174819,
+     "frac_eps_lt0p1": 0.2911184210526316,
+     "pitch_over_delta": 13.752514704879461,
+     "measured_r2": -23.95258917933354,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph15-13929-3036",
+     "eps_median": 0.34337618884885246,
+     "frac_eps_lt0p1": 0.19572368421052633,
+     "pitch_over_delta": 9.168342789300585,
+     "measured_r2": -14.76129466158141,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph15-13929-4048",
+     "eps_median": 0.393012823427467,
+     "frac_eps_lt0p1": 0.125,
+     "pitch_over_delta": 6.876257352439731,
+     "measured_r2": -10.475665161757748,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph15-7929-2024",
+     "eps_median": 0.08525740450538043,
+     "frac_eps_lt0p1": 0.5866477272727273,
+     "pitch_over_delta": 7.823851070982991,
+     "measured_r2": -27.892345243867872,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph15-7929-3036",
+     "eps_median": 0.11629781445722773,
+     "frac_eps_lt0p1": 0.41761363636363635,
+     "pitch_over_delta": 5.2159005164166645,
+     "measured_r2": -16.556948067787324,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    },
+    {
+     "member": "alph15-7929-4048",
+     "eps_median": 0.14988818887770333,
+     "frac_eps_lt0p1": 0.33238636363636365,
+     "pitch_over_delta": 3.9119255354914957,
+     "measured_r2": -9.856236209522903,
+     "measured_bin": "FAIL",
+     "resolved": true,
+     "resolution_basis": "point value, no archived interval; accepted because |R2|>1",
+     "p1_forecast": "FAIL",
+     "p1_score": 1.0,
+     "p2_forecast": "TOLERATED"
+    }
+   ],
+   "summary": {
+    "n_p1_correct": 29,
+    "n_resolved": 29,
+    "eps_median_range": [
+     0.08394008859971455,
+     0.40976622749443814
+    ],
+    "r2_range": [
+     -84.3115704538056,
+     -9.856236209522903
+    ]
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "instrument": "rib_eps_ode.evaluate, Y_IDX=10 (archived)"
+   }
+  },
+  {
+   "id": "wavy_wrles_G0",
+   "status": "EVALUATED",
+   "blind": false,
+   "in_family": false,
+   "leaked": true,
+   "y_m": "eta_m = 0.1*delta (actual 0.0997)",
+   "eps": {
+    "median_pointwise": 0.24747407557429713,
+    "median_exact_integral": 0.2802549980325322,
+    "primary_form": "exact_integral",
+    "frac_lt0p1": 0.2109375,
+    "form_bin_invariant": true
+   },
+   "p1_forecast": "FAIL",
+   "p2_forecast": "FAIL",
+   "p0_forecast": "TOLERATED",
+   "measured": {
+    "metric": "a-priori standard_ml R2 at eta_m=0.1*delta",
+    "value": 0.6132134831265845,
+    "interval": [
+     0.6090775321200247,
+     0.6173494341331444
+    ],
+    "bin": "TOLERATED",
+    "resolved": true,
+    "resolution_basis": "block-window replicates (n=6), +/-2*SEM"
+   },
+   "scores": {
+    "p1": 0.0,
+    "p2": 0.0,
+    "p0": 1.0
+   },
+   "provenance": {
+    "source": "codes/results/r1_sta2_wavy_wrles_20260824.json",
+    "sha256": "b15324444c238c377b2708d0a240d1e6eb076d916d403b959cfb370494497c62",
+    "npz": "codes/results/r1_sta2_wavy_wrles_20260824.npz",
+    "npz_sha256": "999fd95b6455eecd75c830b95a68c78fca4fc5e7696b0e6f741ca158ab996c5a",
+    "case_id": "r1sta2_wavy_G0_v1",
+    "slurm_job_id": "14888703"
+   }
+  },
+  {
+   "id": "wavy_wrles_G1",
+   "status": "EVALUATED",
+   "blind": true,
+   "in_family": false,
+   "leaked": false,
+   "y_m": "eta_m = 0.1*delta (actual 0.0990)",
+   "eps": {
+    "median_pointwise": 0.22946858858460184,
+    "median_exact_integral": 0.28365406799550497,
+    "primary_form": "exact_integral",
+    "frac_lt0p1": 0.21354166666666666,
+    "form_bin_invariant": true
+   },
+   "p1_forecast": "FAIL",
+   "p2_forecast": "FAIL",
+   "p0_forecast": "TOLERATED",
+   "measured": {
+    "metric": "a-priori standard_ml R2 at eta_m=0.1*delta",
+    "value": 0.6155421640065566,
+    "interval": [
+     0.6063646512509997,
+     0.6247196767621135
+    ],
+    "bin": "TOLERATED",
+    "resolved": true,
+    "resolution_basis": "block-window replicates (n=6), +/-2*SEM"
+   },
+   "scores": {
+    "p1": 0.0,
+    "p2": 0.0,
+    "p0": 1.0
+   },
+   "provenance": {
+    "source": "codes/results/r1_sta2_wavy_wrles_20260824.json",
+    "sha256": "b15324444c238c377b2708d0a240d1e6eb076d916d403b959cfb370494497c62",
+    "npz": "codes/results/r1_sta2_wavy_wrles_20260824.npz",
+    "npz_sha256": "999fd95b6455eecd75c830b95a68c78fca4fc5e7696b0e6f741ca158ab996c5a",
+    "case_id": "r1sta2_wavy_G1_v1",
+    "slurm_job_id": "14899155"
+   }
+  },
+  {
+   "id": "wavy_wrles_G2",
+   "status": "EVALUATED",
+   "blind": true,
+   "in_family": false,
+   "leaked": false,
+   "y_m": "eta_m = 0.1*delta (actual 0.1003)",
+   "eps": {
+    "median_pointwise": 0.2194323458459644,
+    "median_exact_integral": 0.28245354225536057,
+    "primary_form": "exact_integral",
+    "frac_lt0p1": 0.2152777777777778,
+    "form_bin_invariant": true
+   },
+   "p1_forecast": "FAIL",
+   "p2_forecast": "FAIL",
+   "p0_forecast": "TOLERATED",
+   "measured": {
+    "metric": "a-priori standard_ml R2 at eta_m=0.1*delta",
+    "value": 0.5971764902480612,
+    "interval": [
+     0.5928025820366658,
+     0.6015503984594566
+    ],
+    "bin": "TOLERATED",
+    "resolved": true,
+    "resolution_basis": "block-window replicates (n=6), +/-2*SEM"
+   },
+   "scores": {
+    "p1": 0.0,
+    "p2": 0.0,
+    "p0": 1.0
+   },
+   "provenance": {
+    "source": "codes/results/r1_sta2_wavy_wrles_20260824.json",
+    "sha256": "b15324444c238c377b2708d0a240d1e6eb076d916d403b959cfb370494497c62",
+    "npz": "codes/results/r1_sta2_wavy_wrles_20260824.npz",
+    "npz_sha256": "999fd95b6455eecd75c830b95a68c78fca4fc5e7696b0e6f741ca158ab996c5a",
+    "case_id": "r1sta2_wavy_G2_v1",
+    "slurm_job_id": "14899157"
+   }
+  },
+  {
+   "id": "rib_dtype_p3",
+   "status": "EVALUATED",
+   "blind": true,
+   "in_family": false,
+   "leaked": false,
+   "y_m": "Y_IDX=10 deposit convention (y_m/k=0.146)",
+   "eps": {
+    "median_pointwise": 0.4041566757140683,
+    "median_exact_integral": null,
+    "primary_form": "pointwise (only form archived by the deposited instrument)",
+    "interval_ci95": [
+     0.18630812343142886,
+     0.7604266913045759
+    ],
+    "frac_lt0p1": 0.10416666666666667,
+    "form_bin_invariant": null
+   },
+   "p1_forecast": "FAIL",
+   "p2_forecast": "TOLERATED",
+   "p0_forecast": "FAIL",
+   "measured": {
+    "metric": "a-priori standard_ml R2, production grid G1, window cum_140",
+    "value": -0.081410425218436,
+    "interval": [
+     -2.47806984621006,
+     0.604458304780249
+    ],
+    "bin": "UNRESOLVED",
+    "resolved": false,
+    "resolution_basis": "station moving-block bootstrap 95% CI (archived)"
+   },
+   "grid_check": {
+    "case": "r24_rib_dtype_p3_G0",
+    "window": "cum_140",
+    "standard_ml_r2": -2.000637010819744,
+    "r2_ci95": [
+     -9.112876546784822,
+     -0.46939899558541975
+    ],
+    "eps_median": 0.17985946209495007,
+    "bin": "FAIL"
+   },
+   "scores": {
+    "p1": null,
+    "p2": null,
+    "p0": null
+   },
+   "provenance": {
+    "source": "codes/results/r2_4_m20_les_20260825.json",
+    "sha256": "f8780b78f3702213fbd4d715ec35e349a54ae4854e10c5eeb3a3c9f78ec51964",
+    "case_id": "r24_rib_dtype_p3_G1",
+    "deposit_manifest_sha256": "9f8b08a0b43f23d41b64062f83c1fd739e1707e1cc561ebd822a6b02e3b0d6a1"
+   }
+  },
+  {
+   "id": "rib_ktype_p8",
+   "status": "EVALUATED",
+   "blind": true,
+   "in_family": false,
+   "leaked": false,
+   "y_m": "Y_IDX=10 deposit convention (y_m/k=0.146)",
+   "eps": {
+    "median_pointwise": 0.16984877337184917,
+    "median_exact_integral": null,
+    "primary_form": "pointwise (only form archived by the deposited instrument)",
+    "interval_ci95": [
+     0.08570357156477068,
+     0.35774664559256536
+    ],
+    "frac_lt0p1": 0.328125,
+    "form_bin_invariant": null
+   },
+   "p1_forecast": "FAIL",
+   "p2_forecast": "FAIL",
+   "p0_forecast": "MARGINAL",
+   "measured": {
+    "metric": "a-priori standard_ml R2, production grid G1, window cum_140",
+    "value": -101.68624667149601,
+    "interval": [
+     -274.3363975985945,
+     -0.28964470541577086
+    ],
+    "bin": "FAIL",
+    "resolved": true,
+    "resolution_basis": "station moving-block bootstrap 95% CI (archived)"
+   },
+   "grid_check": {
+    "case": "r24_rib_ktype_p8_G0",
+    "window": "cum_140",
+    "standard_ml_r2": -141.2759878057411,
+    "r2_ci95": [
+     -414.86147116390123,
+     -2.775619251870724
+    ],
+    "eps_median": 0.084913004365943,
+    "bin": "FAIL"
+   },
+   "scores": {
+    "p1": 1.0,
+    "p2": 1.0,
+    "p0": 0.5
+   },
+   "provenance": {
+    "source": "codes/results/r2_4_m20_les_20260825.json",
+    "sha256": "f8780b78f3702213fbd4d715ec35e349a54ae4854e10c5eeb3a3c9f78ec51964",
+    "case_id": "r24_rib_ktype_p8_G1",
+    "deposit_manifest_sha256": "64a55514eb5ddca2ed896d1eb969db1aa7123550b5138de09d50c7f0d11f1a0f"
+   }
+  },
+  {
+   "id": "cube_aligned",
+   "status": "PENDING",
+   "blind": true,
+   "reason": "case r24_cube_aligned_G1 not yet in the deposited r2_4_m20 harvest"
+  },
+  {
+   "id": "cube_staggered",
+   "status": "EVALUATED",
+   "blind": true,
+   "in_family": false,
+   "leaked": false,
+   "y_m": "cube floor stations, Y_IDX=10 convention",
+   "eps": {
+    "median_pointwise": 0.5349728644118223,
+    "median_exact_integral": null,
+    "primary_form": "pointwise (only form archived by the deposited instrument)",
+    "interval_ci95": [
+     0.4723307628976604,
+     0.5960747822106341
+    ],
+    "frac_lt0p1": 0.15983072916666666,
+    "form_bin_invariant": null
+   },
+   "p1_forecast": "TOLERATED",
+   "p2_forecast": "TOLERATED",
+   "p0_forecast": "FAIL",
+   "measured": {
+    "metric": "a-priori standard_ml R2, production grid G1, window cum_260",
+    "value": -0.01264745132882017,
+    "interval": [
+     -0.2544381837893531,
+     0.1794478358425061
+    ],
+    "bin": "UNRESOLVED",
+    "resolved": false,
+    "resolution_basis": "station moving-block bootstrap 95% CI (archived)"
+   },
+   "grid_check": null,
+   "scores": {
+    "p1": null,
+    "p2": null,
+    "p0": null
+   },
+   "provenance": {
+    "source": "codes/results/r2_4_m20_les_20260825.json",
+    "sha256": "f8780b78f3702213fbd4d715ec35e349a54ae4854e10c5eeb3a3c9f78ec51964",
+    "case_id": "r24_cube_staggered_G1",
+    "deposit_manifest_sha256": "f0619cb07493514b973504aeb5e19020fbdedf6855eb6596eafd99da8c3fa1a3"
+   }
+  },
+  {
+   "id": "cube_sparse",
+   "status": "PENDING",
+   "blind": true,
+   "reason": "case r24_cube_sparse_G1 not yet in the deposited r2_4_m20 harvest"
+  },
+  {
+   "id": "hill_coupled_re5600",
+   "status": "EVALUATED",
+   "blind": false,
+   "in_family": false,
+   "leaked": true,
+   "y_m": "coupled matching plane of the m13 campaign (finest grid G2c)",
+   "eps": {
+    "median_pointwise": 0.14909175910684377,
+    "median_exact_integral": null,
+    "primary_form": "a-priori canonical member alph10-9-3036 (Y_IDX=10)",
+    "frac_lt0p1": 0.3658854166666667,
+    "eps_c_coupled_sensitivity": {
+     "equilibrium": 1.233600148667061,
+     "total_gradient_tble": 1.4611503543396394
+    }
+   },
+   "p1_forecast": "FAIL",
+   "p2_forecast": "TOLERATED",
+   "p0_forecast": "FAIL",
+   "measured": {
+    "metric": "coupled phase-averaged wall-traction R2 vs registered reference truth, G2c equilibrium, longest window",
+    "value": 0.9351395184915178,
+    "interval": [
+     0.9351334576828961,
+     0.9378345860879743
+    ],
+    "bin": "TOLERATED",
+    "resolved": true,
+    "resolution_basis": "window replicates 180/225/270 +/-2*SEM -> [0.935,0.938]; archived relRMS bootstrap [0.216,0.691] TOLERATED_side",
+    "sensitivity_total_gradient_tble": 0.9699095725107185,
+    "failure_significance_p": 0.984375
+   },
+   "scores": {
+    "p1": 0.0,
+    "p2": 1.0,
+    "p0": 0.0
+   },
+   "truth_reference": {
+    "file": "codes/raw_data/periodic_hill_ufr3_30/ercoftac_ufr3_30/UFR3-30_data-NP-Re5600-DNS2-11.dat",
+    "definition": "deposited bottom-wall tau_w, H=1, u_b=1 (crest bulk), rho=1; cross-checked against Krank et al. (2018) DNS at the same Re (station RMS ratio 0.94)",
+    "reference": "Peller & Manhart MGLET DNS Re=5600 (ERCOFTAC UFR3-30 bottom wall)",
+    "status": "VALID",
+    "withdrawal": null
+   },
+   "superseded_by_amendment": [
+    {
+     "amendment": "AMD-01",
+     "reason": "wall traction RECONSTRUCTED from the public Xiao velocity archive; fails four independent tests (disagrees with two mutually-consistent DNS at the same Re, separation at x/H=0.379 vs 0.181, inverts the C_f(Re) ordering, geometry bit-identical) -- withdrawn by Agent B, audit codes/results/m13_truth_reference_audit_20260825.json",
+     "truth_reference": {
+      "file": "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "definition": "nu dU_t/dn on the analytic Xiao surface (deposited L2 reconstruction, first four DNS points)",
+      "reference": "Xiao et al. (2020) alpha=1 DNS Re=5600",
+      "status": "WITHDRAWN",
+      "withdrawal": {
+       "amendment": "AMD-01",
+       "reason": "wall traction RECONSTRUCTED from the public Xiao velocity archive; fails four independent tests (disagrees with two mutually-consistent DNS at the same Re, separation at x/H=0.379 vs 0.181, inverts the C_f(Re) ordering, geometry bit-identical) -- withdrawn by Agent B, audit codes/results/m13_truth_reference_audit_20260825.json"
+      }
+     },
+     "value": -1.5964932786467823,
+     "bin": "UNRESOLVED",
+     "source": "codes/results/m13_highre_coupled_20260824_summary.json",
+     "sha256": "38fd6adf59606db2cfe8eec97dae7350eec862ebe72507c106c6b709eed3a220"
+    }
+   ],
+   "provenance": {
+    "source": "codes/results/m13_highre_coupled_20260825_summary.json",
+    "sha256": "2e95f3481ecf8f467109af56e391d2b5bb915b3f78021f0968ac976231946fac",
+    "case_id": "rswm_m13_re5600_g2_equilibrium_819200_v2",
+    "truth": "Peller & Manhart MGLET DNS Re=5600 (ERCOFTAC UFR3-30 bottom wall)"
+   }
+  },
+  {
+   "id": "hill_coupled_re10595",
+   "status": "EVALUATED",
+   "blind": false,
+   "in_family": false,
+   "leaked": true,
+   "y_m": "coupled matching plane of the m13 campaign (finest grid G2c)",
+   "eps": {
+    "median_pointwise": null,
+    "median_exact_integral": null,
+    "primary_form": "NOT ARCHIVED at this Re: P1 not evaluable (preregistered)",
+    "frac_lt0p1": null,
+    "eps_c_coupled_sensitivity": {
+     "equilibrium": 0.9823303959641244,
+     "total_gradient_tble": 1.149545305874039
+    }
+   },
+   "p1_forecast": null,
+   "p2_forecast": null,
+   "p0_forecast": "FAIL",
+   "measured": {
+    "metric": "coupled phase-averaged wall-traction R2 vs registered reference truth, G2c equilibrium, longest window",
+    "value": 0.8616282337914474,
+    "interval": [
+     0.8608591169284713,
+     0.873637114567181
+    ],
+    "bin": "TOLERATED",
+    "resolved": true,
+    "resolution_basis": "window replicates 180/225/270 +/-2*SEM -> [0.861,0.874]; archived relRMS bootstrap [0.265,0.586] TOLERATED_side",
+    "sensitivity_total_gradient_tble": 0.9658895204918851,
+    "failure_significance_p": 1.0
+   },
+   "scores": {
+    "p1": null,
+    "p2": null,
+    "p0": 0.0
+   },
+   "truth_reference": {
+    "file": "codes/raw_data/periodic_hill_ufr3_30/krank_2018_re10595/KKW_DNS_Periodic_Hill_Re10595_cf_cp_bottom.dat",
+    "definition": "c_f = tau_w/(0.5 rho u_b^2), bottom wall, x/H = 0 at the crest; treated here as the signed wall-tangential traction (x-projection reported as sensitivity)",
+    "reference": "Krank, Kronbichler & Wall (2018) DNS Re=10595",
+    "status": "VALID",
+    "withdrawal": null
+   },
+   "superseded_by_amendment": null,
+   "provenance": {
+    "source": "codes/results/m13_highre_coupled_20260825_summary.json",
+    "sha256": "2e95f3481ecf8f467109af56e391d2b5bb915b3f78021f0968ac976231946fac",
+    "case_id": "rswm_m13_re10595_g2_equilibrium_819200_v2",
+    "truth": "Krank, Kronbichler & Wall (2018) DNS Re=10595"
+   }
+  },
+  {
+   "id": "hill_coupled_re19000",
+   "status": "PENDING",
+   "blind": true,
+   "reason": "Re_H=19000 bundle is terminal but supplies profile/event truth, not the registered wall-traction reference; the wall-traction anchor remains unscored"
+  },
+  {
+   "id": "hill_coupled_re37000",
+   "status": "PENDING",
+   "blind": true,
+   "reason": "Re_H=37000 bundle is terminal but supplies profile/event truth, not the registered wall-traction reference; the wall-traction anchor remains unscored"
+  }
+ ],
+ "pending_anchors": [
+  "cube_aligned",
+  "cube_sparse",
+  "hill_coupled_re19000",
+  "hill_coupled_re37000"
+ ],
+ "scoreboard": {
+  "p1": {
+   "all_out_of_family": {
+    "verdict": "DESCRIPTIVE_ONLY",
+    "mean_score": 0.2,
+    "anchors": [
+     [
+      "wavy_wrles_G0",
+      0.0,
+      "TOLERATED"
+     ],
+     [
+      "wavy_wrles_G1",
+      0.0,
+      "TOLERATED"
+     ],
+     [
+      "wavy_wrles_G2",
+      0.0,
+      "TOLERATED"
+     ],
+     [
+      "rib_ktype_p8",
+      1.0,
+      "FAIL"
+     ],
+     [
+      "hill_coupled_re5600",
+      0.0,
+      "TOLERATED"
+     ]
+    ]
+   },
+   "blind_subset": {
+    "verdict": "DESCRIPTIVE_ONLY",
+    "mean_score": 0.3333333333333333,
+    "anchors": [
+     [
+      "wavy_wrles_G1",
+      0.0,
+      "TOLERATED"
+     ],
+     [
+      "wavy_wrles_G2",
+      0.0,
+      "TOLERATED"
+     ],
+     [
+      "rib_ktype_p8",
+      1.0,
+      "FAIL"
+     ]
+    ]
+   },
+   "headline": "DESCRIPTIVE_ONLY"
+  },
+  "p2": {
+   "all_out_of_family": {
+    "verdict": "DESCRIPTIVE_ONLY",
+    "mean_score": 0.4,
+    "anchors": [
+     [
+      "wavy_wrles_G0",
+      0.0,
+      "TOLERATED"
+     ],
+     [
+      "wavy_wrles_G1",
+      0.0,
+      "TOLERATED"
+     ],
+     [
+      "wavy_wrles_G2",
+      0.0,
+      "TOLERATED"
+     ],
+     [
+      "rib_ktype_p8",
+      1.0,
+      "FAIL"
+     ],
+     [
+      "hill_coupled_re5600",
+      1.0,
+      "TOLERATED"
+     ]
+    ]
+   },
+   "blind_subset": {
+    "verdict": "DESCRIPTIVE_ONLY",
+    "mean_score": 0.3333333333333333,
+    "anchors": [
+     [
+      "wavy_wrles_G1",
+      0.0,
+      "TOLERATED"
+     ],
+     [
+      "wavy_wrles_G2",
+      0.0,
+      "TOLERATED"
+     ],
+     [
+      "rib_ktype_p8",
+      1.0,
+      "FAIL"
+     ]
+    ]
+   },
+   "headline": "DESCRIPTIVE_ONLY"
+  },
+  "p0": {
+   "all_out_of_family": {
+    "verdict": "DESCRIPTIVE_ONLY",
+    "mean_score": 0.5833333333333334,
+    "anchors": [
+     [
+      "wavy_wrles_G0",
+      1.0,
+      "TOLERATED"
+     ],
+     [
+      "wavy_wrles_G1",
+      1.0,
+      "TOLERATED"
+     ],
+     [
+      "wavy_wrles_G2",
+      1.0,
+      "TOLERATED"
+     ],
+     [
+      "rib_ktype_p8",
+      0.5,
+      "FAIL"
+     ],
+     [
+      "hill_coupled_re5600",
+      0.0,
+      "TOLERATED"
+     ],
+     [
+      "hill_coupled_re10595",
+      0.0,
+      "TOLERATED"
+     ]
+    ]
+   },
+   "blind_subset": {
+    "verdict": "MIXED",
+    "mean_score": 0.8333333333333334,
+    "anchors": [
+     [
+      "wavy_wrles_G1",
+      1.0,
+      "TOLERATED"
+     ],
+     [
+      "wavy_wrles_G2",
+      1.0,
+      "TOLERATED"
+     ],
+     [
+      "rib_ktype_p8",
+      0.5,
+      "FAIL"
+     ]
+    ]
+   },
+   "headline": "MIXED"
+  }
+ },
+ "headline": {
+  "question": "Is epsilon an out-of-family predictor of ODE wall-model failure?",
+  "verdict": "DESCRIPTIVE_ONLY",
+  "verdict_all_resolved": "DESCRIPTIVE_ONLY",
+  "verdict_blind_subset": "DESCRIPTIVE_ONLY",
+  "geometry_readable_P0": "MIXED",
+  "partial": true,
+  "plain_statement": "epsilon does NOT predict out of family: at least one high-fidelity anchor with epsilon below threshold is tolerated (or vice versa). epsilon remains a descriptive a-priori coordinate; the deleted earlier submission claim stays dead.  [PARTIAL: pending anchors ['cube_aligned', 'cube_sparse', 'hill_coupled_re19000', 'hill_coupled_re37000']]"
+ },
+ "rerun_command": "python3 codes/analysis/epsilon_predictor_outoffamily.py --date <YYYYMMDD>"
+}

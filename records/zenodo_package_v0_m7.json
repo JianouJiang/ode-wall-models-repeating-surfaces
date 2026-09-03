@@ -1,0 +1,19 @@
+{
+ "file": "rswm_reproducibility_deposit_v2_20260903.tar.gz",
+ "files": 14250,
+ "sha256": "94946986fba38aa3a513eeda2220568cecbd88b89f5ab77e1ff608681c472790",
+ "built": "2026-09-03T07:25:00",
+ "excluded": "v1 exclusions ['.pytest_cache','__pycache__','new_data_download','raw_data','vendor','openfoam local run/case dirs','time dirs','.partial.*'] PLUS, for the public record: manuscript/ (entire; the article is not part of the deposit), REFEREE_POINT_LEDGER.md, codes/results/{_backup_before_reproduce,_superseded_wall_pinned,quarantine_20260824_spleen,r1sta1/,the earlier submission_main_tex_*,research_direction_l0_node001.md,uncited_claims_disposition_r1sta1.json}, codes/openfoam/spleen_*, codes/figures/method_comparison/, codes/analysis/{l5_validate_node*,sync_referee_audit,check_referee_ledger,audit_uncited_claims_r1sta1,sync_submission_flat,compress_prose,apply_compression,tighten_paragraphs,measure_body_length,page_*,build_manuscript_pipeline,find_restatement,reconcile_active_manuscript_numbers_m15,guard_no_legacy_headline,reanchor_audit_citations}.py, ledger_verifiers/{verify_referee_answers,verify_audit_anchors,verify_writing_rows,verify_writing_l4,verify_paper_register,verify_no_placeholders,verify_consistency_sweep,verify_r1_sci2b,verify_r1_wri3,verify_r1_wri4,verify_r1_wri6,verify_m4_manuscript,verify_branch_direction,verify_m15,verify_m7}.py, *.bak*, dotfiles, .pid/.lock; 36 text files had venue strings (earlier submission id / venue name) neutralised in the shipped copies (41 substitutions); README.md + LICENSE (MIT) added at the root",
+ "bytes": 3830898974,
+ "note": "v2 built 2026-09-03 from the v1 selection minus review-process material (v1 carried the response letter to the earlier venue's referees, the referee point ledger and the earlier manuscript source; it was never published and its file was deleted from the deposition before publishing). PUBLISHED 2026-09-03, access open, licence CC BY 4.0; DOI 10.5281/zenodo.22069527 resolves; concept DOI 10.5281/zenodo.22069526.",
+ "private_code_repository": "github.com/JianouJiang/ode-wall-models-repeating-surfaces (private during review)",
+ "md5_on_zenodo": "6de92b58e8cd20298896c54a062588fd",
+ "uploaded": "2026-09-03T07:36:16+01:00",
+ "deposition_id": 22069527,
+ "published": "2026-09-03",
+ "v1_superseded": {
+  "file": "rswm_reproducibility_deposit_v1_20260827.tar.gz",
+  "sha256": "44c2632d7ff43f97065121e5117b63db2214dce207b90882cbc3d9f3e2bacd17",
+  "status": "deleted from the deposition 2026-09-03 before publication; local copy still on ~/Desktop"
+ }
+}

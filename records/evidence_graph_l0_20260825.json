@@ -1,0 +1,402 @@
+{
+  "generated_by": "codes/analysis/evidence_graph_l0.py",
+  "question": "for every artifact rendered in the compiled paper, does its provenance closure touch a quantity that has been withdrawn?",
+  "method": "static ast recovery of read/write/key-touch edges over every producer under codes/ (no script is executed); contamination is decided per KEY, so admissible quantities in a partly withdrawn container do not condemn their consumers; anything the static pass cannot resolve is reported as UNRESOLVED and counted against the build",
+  "withdrawal_registry": {
+    "periodic_hills_case_1p0_wall_profiles_corrected.npz": {
+      "status": "WITHDRAWN_AS_SCORING_REFERENCE",
+      "keys": [
+        "tau_w",
+        "u_tau",
+        "Re_tau",
+        "median_eps",
+        "frac_below_01"
+      ],
+      "safe_keys": [
+        "x",
+        "y",
+        "U",
+        "V",
+        "uv",
+        "dp_dx",
+        "nu",
+        "is_separated",
+        "geometry",
+        "re_identifier",
+        "extraction"
+      ],
+      "reason": "wall traction reconstructed by a four-point through-origin fit at a wall spacing of 0.0093-0.0136 H (fit points at y+ 2.4-44), about 7.5x coarser than the wall-resolved deposit; recovers 0.30 of the wall-resolved traction in RMS on the 512-station surface and places separation at x/H = 0.378 against 0.181.  The velocity fields in the same container are sound and remain admissible.",
+      "replacement": "ercoftac UFR3-30 MGLET full-wall DNS (primary); curvature-aware cubic re-reading of the same archive (bracket)"
+    }
+  },
+  "withdrawn_estimators": {
+    "through_origin_4pt_wall_gradient": {
+      "status": "WITHDRAWN_AS_SCORING_REFERENCE",
+      "why": "a through-origin least-squares fit of the first ~4 fluid points under-resolves the wall traction at the archives' wall spacing; on the one member with an independent published traction it is biased, and the bias correlates with the reported geometric variables, so it cannot be used as a scoring reference",
+      "code_signatures": [
+        "nfit\\s*=\\s*min\\(\\s*4",
+        "np\\.sum\\(\\s*yf\\s*\\*\\s*uf\\s*\\)\\s*/\\s*np\\.sum\\(\\s*yf\\s*\\*\\s*yf\\s*\\)"
+      ],
+      "replacement": "wall-resolved full-wall DNS traction where it exists; otherwise a curvature-aware cubic re-reading, reported as a bracket and never as a single figure"
+    }
+  },
+  "estimator_instantiations": {
+    "through_origin_4pt_wall_gradient": [
+      "codes/analysis/build_corrected_pehill_profiles.py",
+      "codes/analysis/build_corrected_xiao_profiles.py",
+      "codes/analysis/diagnostic_test_corrected.py",
+      "codes/analysis/dispersive_budget_l2.py",
+      "codes/analysis/dose_response_xiao.py",
+      "codes/analysis/input_sufficiency_bracket.py",
+      "codes/analysis/pehill_5case_corrected.py",
+      "codes/openfoam/harvest_rans_profiles.py",
+      "codes/openfoam/rib_harvest.py",
+      "codes/openfoam/rib_les_harvest.py",
+      "codes/openfoam/rib_resolved_fraction.py"
+    ]
+  },
+  "negative_control_producers": {
+    "codes/analysis/reference_rebase_headlines_l0.py": {
+      "declares_in": "codes/results/reference_rebase_headlines_l0_20260825.json",
+      "marker": "A_withdrawn",
+      "why": "reference A is the declared negative control of the rebase study",
+      "exemption_currently_valid": true
+    },
+    "codes/analysis/conditioning_ladder_l0.py": {
+      "declares_in": "codes/results/conditioning_ladder_l0_20260825.json",
+      "marker": "A_withdrawn",
+      "why": "reference A is the declared negative control of the ladder re-adjudication",
+      "exemption_currently_valid": true
+    },
+    "codes/analysis/audit_m13_truth_references.py": {
+      "declares_in": "codes/results/m13_truth_reference_audit_20260825.json",
+      "marker": "reconstruct|withdraw|xiao",
+      "why": "the audit that established the withdrawal must read the withdrawn quantity",
+      "exemption_currently_valid": true
+    }
+  },
+  "admissible_roots": {
+    "UFR3-30_data-NP-Re5600-DNS2-11.dat": "B_mglet_full_wall_dns",
+    "krank_pehill_Re5600_wall_profiles.npz": "K_krank_ten_station_dns",
+    "reference_rebase_headlines_l0_20260825.json": "corrected_headline_object",
+    "reference_rebase_headlines_l0_20260825.npz": "corrected_headline_object",
+    "conditioning_ladder_l0_20260825.json": "corrected_ladder_object",
+    "m13_highre_coupled_20260825_summary.json": "corrected_coupled_reynolds_object",
+    "r1_sta2_wavy_wrles_20260824.json": "wavy_wall_wrles"
+  },
+  "n_scripts_scanned": 798,
+  "active_figures": [
+    "cancellation_parameter_corrected.pdf",
+    "fig_amplitude_pitch_sweep.pdf",
+    "fig_applied_traction.pdf",
+    "fig_as_deployed_operator.pdf",
+    "fig_common_surface_grid_l3.pdf",
+    "fig_coupling_gain.pdf",
+    "fig_m13_re19000_validation.pdf",
+    "fig_metric_station_l3.pdf",
+    "fig_velocity_profiles.pdf"
+  ],
+  "figure_closures": [
+    {
+      "file": "cancellation_parameter_corrected.pdf",
+      "producers": [
+        "codes/figures/plot_cancellation_parameter_corrected.py"
+      ],
+      "withdrawn": [],
+      "roots": [
+        "corrected_headline_object"
+      ],
+      "unresolved": [],
+      "via": [],
+      "rendered_sha256": "3606ec13c9001b9a91207551aa5c9b06083d0edf35a2c7241b86d8ef1e11f18e",
+      "rendered_present": true,
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "fig_amplitude_pitch_sweep.pdf",
+      "producers": [
+        "codes/figures/plot_dose_response.py"
+      ],
+      "withdrawn": [],
+      "roots": [],
+      "unresolved": [],
+      "via": [],
+      "rendered_sha256": "0739f4dd3f425b3bfd4c01a4878aa16e71dac768f70eb94b28ad80ab83da7b33",
+      "rendered_present": true,
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "fig_applied_traction.pdf",
+      "producers": [
+        "codes/figures/fig_applied_traction.py"
+      ],
+      "withdrawn": [],
+      "roots": [],
+      "unresolved": [],
+      "via": [],
+      "rendered_sha256": "0c3d079e234287336d082e1e4c87a5f9d51fdc7760527c5b246917f2cb9fd0b0",
+      "rendered_present": true,
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "fig_as_deployed_operator.pdf",
+      "producers": [
+        "codes/figures/fig_as_deployed_operator.py"
+      ],
+      "withdrawn": [],
+      "roots": [],
+      "unresolved": [],
+      "via": [],
+      "rendered_sha256": "07eb09c7fb63c1feaa644841ef9d706fb9f452e4d0f4ac57cc2a485c234d9b07",
+      "rendered_present": true,
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "fig_common_surface_grid_l3.pdf",
+      "producers": [
+        "codes/figures/fig_corrected_grid_l0.py"
+      ],
+      "withdrawn": [],
+      "roots": [
+        "corrected_coupled_reynolds_object"
+      ],
+      "unresolved": [],
+      "via": [],
+      "rendered_sha256": "dbcb3d52537b977fe972f1ce13b7da4c12a13b0c08924859107d7706b9e0560b",
+      "rendered_present": true,
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "fig_coupling_gain.pdf",
+      "producers": [
+        "codes/figures/fig_coupling_gain.py"
+      ],
+      "withdrawn": [],
+      "roots": [],
+      "unresolved": [],
+      "via": [],
+      "rendered_sha256": "71ff3faa1132dd05e02d83e77e2c882f383180abf167e38942c1dba0a3fba99b",
+      "rendered_present": true,
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "fig_m13_re19000_validation.pdf",
+      "producers": [
+        "codes/figures/plot_m13_re19000_validation.py"
+      ],
+      "withdrawn": [],
+      "roots": [],
+      "unresolved": [],
+      "via": [],
+      "rendered_sha256": "21e2cc8fc0325ac197b26b19b51cf8902a02920e76313209b9e5ee2678af6672",
+      "rendered_present": true,
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "fig_metric_station_l3.pdf",
+      "producers": [
+        "codes/figures/node_generators/fig_metric_station_l3.py"
+      ],
+      "withdrawn": [],
+      "roots": [],
+      "unresolved": [],
+      "via": [],
+      "rendered_sha256": "85c467b22a22953c92dea0cad6d5ae19291b28b131bd2cc9cf1166d9586551df",
+      "rendered_present": true,
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "fig_velocity_profiles.pdf",
+      "producers": [
+        "codes/figures/fig_velocity_profiles.py"
+      ],
+      "withdrawn": [],
+      "roots": [
+        "WITHDRAWN::periodic_hills_case_1p0_wall_profiles_corrected.npz"
+      ],
+      "unresolved": [],
+      "via": [],
+      "rendered_sha256": "52271f93153a073af765f0a4064a922cccdf52d7595ef46c08c2a021ca051aa4",
+      "rendered_present": true,
+      "verdict": "CLEAN"
+    }
+  ],
+  "direct_consumers_of_withdrawn_keys": [
+    {
+      "script": "codes/analysis/build_corrected_xiao_profiles.py",
+      "file": "periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "withdrawn_keys": [
+        "median_eps",
+        "tau_w"
+      ],
+      "writes": []
+    },
+    {
+      "script": "codes/analysis/ledger_verifiers/verify_reference_rebase_l0.py",
+      "file": "periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "withdrawn_keys": [
+        "tau_w"
+      ],
+      "writes": []
+    },
+    {
+      "script": "codes/analysis/periodic_solvability.py",
+      "file": "periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "withdrawn_keys": [
+        "tau_w"
+      ],
+      "writes": [
+        "periodic_solvability.npz"
+      ]
+    },
+    {
+      "script": "codes/analysis/r2m4_ladder_common.py",
+      "file": "periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "withdrawn_keys": [
+        "tau_w"
+      ],
+      "writes": []
+    },
+    {
+      "script": "codes/analysis/reference_rebase_headlines_l0.py",
+      "file": "periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "withdrawn_keys": [
+        "tau_w"
+      ],
+      "writes": []
+    },
+    {
+      "script": "codes/analysis/rib_pk_sweep_l2.py",
+      "file": "periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "withdrawn_keys": [
+        "tau_w"
+      ],
+      "writes": [
+        "pk_sweep_l2.json",
+        "rib_pk_sweep_l2.npz"
+      ]
+    },
+    {
+      "script": "codes/analysis/rib_pk_sweep_l2att2.py",
+      "file": "periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "withdrawn_keys": [
+        "tau_w"
+      ],
+      "writes": [
+        "pk_sweep_l2att2.json",
+        "rib_pk_sweep_l2att2.npz"
+      ]
+    },
+    {
+      "script": "codes/analysis/rib_pk_sweep_l3_results.py",
+      "file": "periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "withdrawn_keys": [
+        "tau_w"
+      ],
+      "writes": [
+        "pk_sweep_l3.json",
+        "rib_pk_sweep_l3_results.npz"
+      ]
+    },
+    {
+      "script": "codes/analysis/rib_pk_sweep_l3_results_node005.py",
+      "file": "periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "withdrawn_keys": [
+        "tau_w"
+      ],
+      "writes": [
+        "pk_sweep_l3.json",
+        "rib_pk_sweep_l3_results_node005.npz"
+      ]
+    },
+    {
+      "script": "codes/analysis/rib_two_factor_methodology.py",
+      "file": "periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "withdrawn_keys": [
+        "tau_w"
+      ],
+      "writes": [
+        "rib_two_factor_methodology.npz",
+        "two_factor_methodology.json"
+      ]
+    },
+    {
+      "script": "codes/analysis/rswm_common_surface_grid_l2.py",
+      "file": "periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "withdrawn_keys": [
+        "tau_w"
+      ],
+      "writes": [
+        "fig_common_surface_grid_l2.pdf",
+        "fig_common_surface_grid_l2.png",
+        "results_summary.json",
+        "rswm_common_surface_grid_l2.npz",
+        "rswm_common_surface_grid_l2_manifest.json",
+        "rswm_common_surface_grid_l2_summary.json"
+      ]
+    },
+    {
+      "script": "codes/analysis/verify_epsilon_reference_contamination.py",
+      "file": "periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "withdrawn_keys": [
+        "tau_w"
+      ],
+      "writes": [
+        "epsilon_reference_contamination.json"
+      ]
+    },
+    {
+      "script": "codes/analysis/verify_m2_reference_contamination.py",
+      "file": "periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "withdrawn_keys": [
+        "tau_w"
+      ],
+      "writes": [
+        "m2_reference_contamination.json"
+      ]
+    },
+    {
+      "script": "codes/analysis/wall_model_numerics_l1.py",
+      "file": "periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "withdrawn_keys": [
+        "tau_w"
+      ],
+      "writes": [
+        "wall_model_numerics_l1.npz",
+        "wall_model_numerics_l1_summary.json"
+      ]
+    },
+    {
+      "script": "codes/figures/node_generators/analyze_grid_results_l3.py",
+      "file": "periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "withdrawn_keys": [
+        "tau_w"
+      ],
+      "writes": [
+        "fig_common_surface_grid_l3_superseded_reference.pdf",
+        "fig_common_surface_grid_l3_superseded_reference.png",
+        "grid_results_l3.npz",
+        "grid_results_l3_summary.json",
+        "rswm_grid_results_l3.npz",
+        "rswm_grid_results_l3_summary.json"
+      ]
+    },
+    {
+      "script": "codes/reproduce_pipeline.py",
+      "file": "periodic_hills_case_1p0_wall_profiles_corrected.npz",
+      "withdrawn_keys": [
+        "median_eps",
+        "tau_w"
+      ],
+      "writes": []
+    }
+  ],
+  "summary": {
+    "n_active_figures": 9,
+    "n_clean": 9,
+    "n_contaminated": 0,
+    "n_unresolved": 0,
+    "n_no_producer": 0,
+    "n_direct_consumer_scripts": 16
+  }
+}

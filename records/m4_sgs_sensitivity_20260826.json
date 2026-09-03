@@ -1,0 +1,2192 @@
+{
+  "acceptance": {
+    "A1": "the alternative-SGS run lands on the same side of the DNS-RMS threshold as the corrected WALE baseline - by point estimate, by 95% phase-block interval classification, and by the conclusion of the exact one-sided block test at alpha=0.05 (Holm over the two wall models per SGS and grid). Outcome-neutral: M4 asks whether the SGS model CHANGES the verdict, not which verdict it is",
+    "A2": "0.75 <= E_tau(sgs)/E_tau(WALE) <= 1.33 and |E_tau(sgs)-E_tau(WALE)| < 0.5 |E_tau(WALE)-1| for the same model and grid, so the SGS choice cannot be what decides the classification",
+    "completeness": "at least two alternative SGS closures x two wall models x grids G1c and G2c",
+    "reported_not_gating": "TBLE-vs-equilibrium ranking under each SGS; reattachment, reversed-shear coverage, profile RMS; averaging-window envelopes"
+  },
+  "acceptance_gate_sign_note": "A1 is evaluated on the crest-bulk-corrected runs against the MGLET primary reference. The corrected WALE baseline no longer exceeds the DNS RMS, so the coupled 'wall-traction failure' verdict of 2026-08-22 is withdrawn independently of M4; what M4 certifies is that WHATEVER the corrected verdict is, it is the same under every subgrid-scale closure tested",
+  "all_cases_verdict_invariant": false,
+  "base_metrics": {
+    "Smagorinsky:G1c:equilibrium": {
+      "cf_error_rms": 0.00952749198724844,
+      "cf_rms": 0.013527939676708303,
+      "profile_u_rms_max": 0.1327569466666707,
+      "profile_u_rms_mean": 0.11457108432124334,
+      "r2": -0.696795202139928,
+      "reattachment_phase": 0.3785230400869108,
+      "reattachment_x_over_H": 3.406707360782197,
+      "relative_rms": 1.2913934382094177,
+      "reversed_fraction": 0.308837890625,
+      "separation_phase": 0.0915364706101569,
+      "separation_x_over_H": 0.8238282354914122,
+      "sign_accuracy": 0.717529296875,
+      "signed_tangent_force_error_over_abs_truth": 1.3536352791241413,
+      "signed_tangent_force_per_span": 0.030448683539146537,
+      "signed_x_force_error_over_abs_truth": 1.475915070338305,
+      "signed_x_force_per_span": 0.0281303912855766,
+      "truth_reattachment_phase": 0.5714381881481482,
+      "truth_reattachment_x_over_H": 5.142943693333334,
+      "truth_reversed_fraction": 0.59130859375,
+      "truth_separation_phase": 0.020073658286862014,
+      "truth_separation_x_over_H": 0.18066292458175814,
+      "truth_signed_tangent_force_per_span": 0.006007416989013975,
+      "truth_signed_x_force_per_span": 0.004426779401559795
+    },
+    "Smagorinsky:G1c:total_gradient_tble": {
+      "cf_error_rms": 0.008687073144976245,
+      "cf_rms": 0.013485357219044326,
+      "profile_u_rms_max": 0.1457704032404925,
+      "profile_u_rms_mean": 0.1129258935760683,
+      "r2": -0.4106497611459219,
+      "reattachment_phase": 0.38276867284044996,
+      "reattachment_x_over_H": 3.4449180555640497,
+      "relative_rms": 1.1774797891913502,
+      "reversed_fraction": 0.3095703125,
+      "separation_phase": 0.09901448684186102,
+      "separation_x_over_H": 0.8911303815767492,
+      "sign_accuracy": 0.71826171875,
+      "signed_tangent_force_error_over_abs_truth": 1.2601500656832925,
+      "signed_tangent_force_per_span": 0.028760712594947852,
+      "signed_x_force_error_over_abs_truth": 1.3621524329741017,
+      "signed_x_force_per_span": 0.026303331275704136,
+      "truth_reattachment_phase": 0.5714381881481482,
+      "truth_reattachment_x_over_H": 5.142943693333334,
+      "truth_reversed_fraction": 0.59130859375,
+      "truth_separation_phase": 0.020073658286862014,
+      "truth_separation_x_over_H": 0.18066292458175814,
+      "truth_signed_tangent_force_per_span": 0.006007416989013975,
+      "truth_signed_x_force_per_span": 0.004426779401559795
+    },
+    "Smagorinsky:G2c:equilibrium": {
+      "cf_error_rms": 0.007441109014333035,
+      "cf_rms": 0.011708107801626604,
+      "profile_u_rms_max": 0.15266685705854569,
+      "profile_u_rms_mean": 0.12203580691269847,
+      "r2": -0.035017224669613656,
+      "reattachment_phase": 0.408908765547429,
+      "reattachment_x_over_H": 3.680178889926861,
+      "relative_rms": 1.0085969494355718,
+      "reversed_fraction": 0.332763671875,
+      "separation_phase": 0.09537201835186167,
+      "separation_x_over_H": 0.858348165166755,
+      "sign_accuracy": 0.741455078125,
+      "signed_tangent_force_error_over_abs_truth": 1.021460939583251,
+      "signed_tangent_force_per_span": 0.024248100924195968,
+      "signed_x_force_error_over_abs_truth": 1.12315017615504,
+      "signed_x_force_per_span": 0.022269164786787796,
+      "truth_reattachment_phase": 0.5714381881481482,
+      "truth_reattachment_x_over_H": 5.142943693333334,
+      "truth_reversed_fraction": 0.59130859375,
+      "truth_separation_phase": 0.020073658286862014,
+      "truth_separation_x_over_H": 0.18066292458175814,
+      "truth_signed_tangent_force_per_span": 0.00590011896517324,
+      "truth_signed_x_force_per_span": 0.004327535753850642
+    },
+    "Smagorinsky:G2c:total_gradient_tble": {
+      "cf_error_rms": 0.00652807049749617,
+      "cf_rms": 0.011570817800826387,
+      "profile_u_rms_max": 0.1328058801151713,
+      "profile_u_rms_mean": 0.1033800880345394,
+      "r2": 0.20339704213478238,
+      "reattachment_phase": 0.41493797711962865,
+      "reattachment_x_over_H": 3.734441794076658,
+      "relative_rms": 0.8848401463804046,
+      "reversed_fraction": 0.338623046875,
+      "separation_phase": 0.09572813901744005,
+      "separation_x_over_H": 0.8615532511569605,
+      "sign_accuracy": 0.747314453125,
+      "signed_tangent_force_error_over_abs_truth": 0.9015950217252892,
+      "signed_tangent_force_per_span": 0.022095010567890337,
+      "signed_x_force_error_over_abs_truth": 0.9837921660079184,
+      "signed_x_force_per_span": 0.020043006812626732,
+      "truth_reattachment_phase": 0.5714381881481482,
+      "truth_reattachment_x_over_H": 5.142943693333334,
+      "truth_reversed_fraction": 0.59130859375,
+      "truth_separation_phase": 0.020073658286862014,
+      "truth_separation_x_over_H": 0.18066292458175814,
+      "truth_signed_tangent_force_per_span": 0.00590011896517324,
+      "truth_signed_x_force_per_span": 0.004327535753850642
+    },
+    "dynamicLagrangian:G1c:equilibrium": {
+      "cf_error_rms": 0.0016733499487050357,
+      "cf_rms": 0.0065880788677067795,
+      "profile_u_rms_max": 0.06267959022290982,
+      "profile_u_rms_mean": 0.04743994812119355,
+      "r2": 0.9476585448215855,
+      "reattachment_phase": 0.5138405402435912,
+      "reattachment_x_over_H": 4.6245648621923205,
+      "relative_rms": 0.22681238110490784,
+      "reversed_fraction": 0.516845703125,
+      "separation_phase": 0.01657636284687328,
+      "separation_x_over_H": 0.14918726562185952,
+      "sign_accuracy": 0.919677734375,
+      "signed_tangent_force_error_over_abs_truth": 0.06369940396949578,
+      "signed_tangent_force_per_span": 0.007157574742371581,
+      "signed_x_force_error_over_abs_truth": 0.1012911195348784,
+      "signed_x_force_per_span": 0.006053543321113762,
+      "truth_reattachment_phase": 0.5714381881481482,
+      "truth_reattachment_x_over_H": 5.142943693333334,
+      "truth_reversed_fraction": 0.59130859375,
+      "truth_separation_phase": 0.020073658286862014,
+      "truth_separation_x_over_H": 0.18066292458175814,
+      "truth_signed_tangent_force_per_span": 0.006007416989013975,
+      "truth_signed_x_force_per_span": 0.004426779401559795
+    },
+    "dynamicLagrangian:G1c:total_gradient_tble": {
+      "cf_error_rms": 0.001159955908249755,
+      "cf_rms": 0.007142183940939718,
+      "profile_u_rms_max": 0.04748921929131622,
+      "profile_u_rms_mean": 0.030793657625030994,
+      "r2": 0.9748490029805363,
+      "reattachment_phase": 0.5119577441992093,
+      "reattachment_x_over_H": 4.607619697792884,
+      "relative_rms": 0.15722494970668485,
+      "reversed_fraction": 0.538330078125,
+      "separation_phase": 0.9946163248038223,
+      "separation_x_over_H": 8.951546923234401,
+      "sign_accuracy": 0.897216796875,
+      "signed_tangent_force_error_over_abs_truth": 0.058594636935964325,
+      "signed_tangent_force_per_span": 0.007065402963409377,
+      "signed_x_force_error_over_abs_truth": 0.08943658214774135,
+      "signed_x_force_per_span": 0.005863156110537442,
+      "truth_reattachment_phase": 0.5714381881481482,
+      "truth_reattachment_x_over_H": 5.142943693333334,
+      "truth_reversed_fraction": 0.59130859375,
+      "truth_separation_phase": 0.020073658286862014,
+      "truth_separation_x_over_H": 0.18066292458175814,
+      "truth_signed_tangent_force_per_span": 0.006007416989013975,
+      "truth_signed_x_force_per_span": 0.004426779401559795
+    },
+    "dynamicLagrangian:G2c:equilibrium": {
+      "cf_error_rms": 0.0018286567091201015,
+      "cf_rms": 0.006474436308061886,
+      "profile_u_rms_max": 0.06992034323470617,
+      "profile_u_rms_mean": 0.04978871008577375,
+      "r2": 0.9374918550586028,
+      "reattachment_phase": 0.4956421397860404,
+      "reattachment_x_over_H": 4.460779258074363,
+      "relative_rms": 0.24786326538568285,
+      "reversed_fraction": 0.496826171875,
+      "separation_phase": 0.021358483026568995,
+      "separation_x_over_H": 0.19222634723912096,
+      "sign_accuracy": 0.905517578125,
+      "signed_tangent_force_error_over_abs_truth": 0.07682912797675294,
+      "signed_tangent_force_per_span": 0.00728016141165195,
+      "signed_x_force_error_over_abs_truth": 0.12039433459871746,
+      "signed_x_force_per_span": 0.006250760746284176,
+      "truth_reattachment_phase": 0.5714381881481482,
+      "truth_reattachment_x_over_H": 5.142943693333334,
+      "truth_reversed_fraction": 0.59130859375,
+      "truth_separation_phase": 0.020073658286862014,
+      "truth_separation_x_over_H": 0.18066292458175814,
+      "truth_signed_tangent_force_per_span": 0.00590011896517324,
+      "truth_signed_x_force_per_span": 0.004327535753850642
+    },
+    "dynamicLagrangian:G2c:total_gradient_tble": {
+      "cf_error_rms": 0.0013480585441587331,
+      "cf_rms": 0.007298889899724454,
+      "profile_u_rms_max": 0.05170901392371966,
+      "profile_u_rms_mean": 0.02983337361616305,
+      "r2": 0.9660304534339846,
+      "reattachment_phase": 0.4766434697123196,
+      "reattachment_x_over_H": 4.289791227410876,
+      "relative_rms": 0.1827211149144715,
+      "reversed_fraction": 0.4970703125,
+      "separation_phase": 0.0015448595590673872,
+      "separation_x_over_H": 0.013903736031606485,
+      "sign_accuracy": 0.8701171875,
+      "signed_tangent_force_error_over_abs_truth": 0.12976434638357462,
+      "signed_tangent_force_per_span": 0.00823100974533523,
+      "signed_x_force_error_over_abs_truth": 0.1711607549418094,
+      "signed_x_force_per_span": 0.007061722895837522,
+      "truth_reattachment_phase": 0.5714381881481482,
+      "truth_reattachment_x_over_H": 5.142943693333334,
+      "truth_reversed_fraction": 0.59130859375,
+      "truth_separation_phase": 0.020073658286862014,
+      "truth_separation_x_over_H": 0.18066292458175814,
+      "truth_signed_tangent_force_per_span": 0.00590011896517324,
+      "truth_signed_x_force_per_span": 0.004327535753850642
+    }
+  },
+  "bootstrap_protocol": {
+    "block_length_over_H": 1.125,
+    "circular": true,
+    "confidence_level": 0.95,
+    "dense_phase_points": 4096,
+    "draws": 20000,
+    "estimand": "phase-averaged RMS-normalised physical-tangent wall-traction error",
+    "note": "identical to the WALE Level-3 primary protocol; WALE references resampled in the same draws",
+    "paired": true,
+    "primary_block_points": 512,
+    "seed": 20261334
+  },
+  "bulk_velocity_convention": "crest-section u_b = 1 (meanVelocityForce Ubar = 2.036 Lz Lx / V_mesh = 0.721045); the 2026-08-22 deposits drove the volume average and are superseded",
+  "campaign_status": "TERMINAL_M4_SGS_RE_CAMPAIGN_OK",
+  "case_manifest_sha256": {
+    "Smagorinsky:G1c:equilibrium": "5618cb32618f2e5c6a0a69d471b3bf469652e774d2c1abc7fd9a611161bd5976",
+    "Smagorinsky:G1c:total_gradient_tble": "5429fc159da89b6ddcb2947e79d54aad3048e25aaff12d232b69a00ce71bbf1a",
+    "Smagorinsky:G2c:equilibrium": "0ae21f82581ccccbb63f882c26014f6c7836d005f32e27eab1f0a10b2be57aee",
+    "Smagorinsky:G2c:total_gradient_tble": "6aea7bafc5298c03551abeb1319a993dea6ce149568377c7f28bb67924c77da1",
+    "dynamicLagrangian:G1c:equilibrium": "ea9709fcb1d9e6661cc43bddfdbbf264839dfd818b773204b5b8341d278e8fce",
+    "dynamicLagrangian:G1c:total_gradient_tble": "f9aa9be4a6d6dab4194932a70ad462eec9ddb8cc06161976bc6729c0347f0a70",
+    "dynamicLagrangian:G2c:equilibrium": "f338c32df6363e47763dcdf1dd4c27acacf5b7b40a763bbcfb2ba4effac9f067",
+    "dynamicLagrangian:G2c:total_gradient_tble": "b827e424cae7bf040ee6e33dfc299849a7e7778158bb21908483b469ff3416bd"
+  },
+  "complete": true,
+  "conclusion": "INCOMPLETE or NOT INVARIANT - see missing_cases / table[*].criterion.",
+  "cost": {
+    "Smagorinsky:G1c:equilibrium": {
+      "clock_seconds_per_step": 0.07808364213869773,
+      "maximum_courant": 0.50642999,
+      "mpi_ranks": 128,
+      "node_hours": 0.9277777777777778,
+      "producer_elapsed_seconds": 3340,
+      "time_steps": 41558
+    },
+    "Smagorinsky:G1c:total_gradient_tble": {
+      "clock_seconds_per_step": 0.1368835054531416,
+      "maximum_courant": 0.50714468,
+      "mpi_ranks": 128,
+      "node_hours": 1.6205555555555555,
+      "producer_elapsed_seconds": 5834,
+      "time_steps": 41444
+    },
+    "Smagorinsky:G2c:equilibrium": {
+      "clock_seconds_per_step": 0.10341557741293718,
+      "maximum_courant": 0.50820393,
+      "mpi_ranks": 256,
+      "node_hours": 3.24,
+      "producer_elapsed_seconds": 5832,
+      "time_steps": 53783
+    },
+    "Smagorinsky:G2c:total_gradient_tble": {
+      "clock_seconds_per_step": 0.17781335342310953,
+      "maximum_courant": 0.50898861,
+      "mpi_ranks": 256,
+      "node_hours": 5.407777777777778,
+      "producer_elapsed_seconds": 9734,
+      "time_steps": 53095
+    },
+    "dynamicLagrangian:G1c:equilibrium": {
+      "clock_seconds_per_step": 0.08674386332097277,
+      "maximum_courant": 0.50965789,
+      "mpi_ranks": 128,
+      "node_hours": 1.0827777777777778,
+      "producer_elapsed_seconds": 3898,
+      "time_steps": 43957
+    },
+    "dynamicLagrangian:G1c:total_gradient_tble": {
+      "clock_seconds_per_step": 0.1438786664237566,
+      "maximum_courant": 0.50989568,
+      "mpi_ranks": 128,
+      "node_hours": 1.7958333333333334,
+      "producer_elapsed_seconds": 6465,
+      "time_steps": 43912
+    },
+    "dynamicLagrangian:G2c:equilibrium": {
+      "clock_seconds_per_step": 0.12279296534912067,
+      "maximum_courant": 0.50848957,
+      "mpi_ranks": 384,
+      "node_hours": 6.1883333333333335,
+      "producer_elapsed_seconds": 7426,
+      "time_steps": 57430
+    },
+    "dynamicLagrangian:G2c:total_gradient_tble": {
+      "clock_seconds_per_step": 0.1901539415228846,
+      "maximum_courant": 0.50954651,
+      "mpi_ranks": 256,
+      "node_hours": 6.305555555555555,
+      "producer_elapsed_seconds": 11350,
+      "time_steps": 58074
+    }
+  },
+  "dns_tangent_reconstruction_audit": {
+    "bracket_reference": "C_xiao_cubic6_repaired",
+    "module": "codes/analysis/r2m4_truth_references.py",
+    "note": "the deposited Xiao 4-point through-origin wall-gradient fit was withdrawn as a scoring reference on 2026-08-25; MGLET is primary, the repaired cubic is the bracket, and every headline is reported on all three",
+    "primary_label": "Peller & Manhart MGLET DNS Re=5600, deposited bottom-wall tau_w (ERCOFTAC UFR3-30) [PRIMARY]",
+    "primary_reference": "B_mglet_deposited",
+    "superseded_reference": "A_xiao_linear4_deposited"
+  },
+  "estimand": "phase-averaged RMS-normalised physical-tangent wall-traction error E_tau (eq. coupled_error)",
+  "failed_cases": [],
+  "failure_significance_tests": {
+    "Smagorinsky:G1c:equilibrium": {
+      "block_values": [
+        8.262629204507719e-05,
+        -1.3916458179086887e-07,
+        -3.9745099741355776e-06,
+        4.4495300122441856e-06,
+        7.4157618518612275e-06,
+        3.854221901933679e-06,
+        8.303989378588941e-07,
+        -2.2376749023904218e-05
+      ],
+      "observed": 9.085722646143063e-06,
+      "p_one_sided": 0.28125,
+      "p_one_sided_holm_all_sgs_cases": 1.0,
+      "p_one_sided_holm_two_models": 0.5625,
+      "p_two_sided": 0.5625,
+      "permutations": 256
+    },
+    "Smagorinsky:G1c:total_gradient_tble": {
+      "block_values": [
+        6.619417354871084e-05,
+        2.4861777903497966e-07,
+        -3.943609420187102e-06,
+        2.999752227026045e-06,
+        5.219046642705872e-06,
+        2.9597380697522294e-06,
+        6.57147168704748e-07,
+        -3.226481232843459e-05
+      ],
+      "observed": 5.258756710914128e-06,
+      "p_one_sided": 0.30078125,
+      "p_one_sided_holm_all_sgs_cases": 1.0,
+      "p_one_sided_holm_two_models": 0.5625,
+      "p_two_sided": 0.6015625,
+      "permutations": 256
+    },
+    "Smagorinsky:G2c:equilibrium": {
+      "block_values": [
+        4.7200284908889574e-05,
+        -5.943485663480945e-07,
+        -4.347995437048083e-06,
+        1.1643347039613945e-06,
+        3.6437709179652275e-06,
+        2.3407467874013105e-06,
+        4.519993161722192e-07,
+        -4.797901186963875e-05
+      ],
+      "observed": 2.3497259516934908e-07,
+      "p_one_sided": 0.453125,
+      "p_one_sided_holm_all_sgs_cases": 1.0,
+      "p_one_sided_holm_two_models": 0.90625,
+      "p_two_sided": 0.90625,
+      "permutations": 256
+    },
+    "Smagorinsky:G2c:total_gradient_tble": {
+      "block_values": [
+        3.576176943841701e-05,
+        -5.021475037722249e-08,
+        -4.437229007354383e-06,
+        6.528872649849856e-07,
+        2.5668919207919583e-06,
+        1.3437870361470218e-06,
+        1.9528750637143554e-07,
+        -5.966219653344293e-05
+      ],
+      "observed": -2.953627140557766e-06,
+      "p_one_sided": 0.6171875,
+      "p_one_sided_holm_all_sgs_cases": 1.0,
+      "p_one_sided_holm_two_models": 0.90625,
+      "p_two_sided": 0.7734375,
+      "permutations": 256
+    },
+    "dynamicLagrangian:G1c:equilibrium": {
+      "block_values": [
+        -3.783672745137448e-07,
+        -1.0901284088153625e-06,
+        -4.775091711199457e-06,
+        -1.4679226856583676e-06,
+        1.4523207502734396e-07,
+        -4.7470317411403525e-08,
+        -5.091902370553374e-07,
+        -9.513728730373329e-05
+      ],
+      "observed": -1.2907528232919952e-05,
+      "p_one_sided": 0.9921875,
+      "p_one_sided_holm_all_sgs_cases": 1.0,
+      "p_one_sided_holm_two_models": 1.0,
+      "p_two_sided": 0.0234375,
+      "permutations": 256
+    },
+    "dynamicLagrangian:G1c:total_gradient_tble": {
+      "block_values": [
+        -3.076389957599508e-07,
+        -1.0851461644472992e-06,
+        -4.845407474960796e-06,
+        -1.4593775169660916e-06,
+        1.5876542541372463e-07,
+        -3.061388907296651e-08,
+        -4.6506350776858353e-07,
+        -9.813494842329292e-05
+      ],
+      "observed": -1.3271178818356861e-05,
+      "p_one_sided": 0.9921875,
+      "p_one_sided_holm_all_sgs_cases": 1.0,
+      "p_one_sided_holm_two_models": 1.0,
+      "p_two_sided": 0.0234375,
+      "permutations": 256
+    },
+    "dynamicLagrangian:G2c:equilibrium": {
+      "block_values": [
+        -3.8838910751485155e-07,
+        -1.0461814944600374e-06,
+        -4.685888391918732e-06,
+        -1.173308151214161e-06,
+        2.36435373821013e-07,
+        -6.38573067799386e-08,
+        -5.81930327097837e-07,
+        -9.446933584023746e-05
+      ],
+      "observed": -1.2771556905675252e-05,
+      "p_one_sided": 0.9921875,
+      "p_one_sided_holm_all_sgs_cases": 1.0,
+      "p_one_sided_holm_two_models": 1.0,
+      "p_two_sided": 0.0234375,
+      "permutations": 256
+    },
+    "dynamicLagrangian:G2c:total_gradient_tble": {
+      "block_values": [
+        -3.209294473532416e-07,
+        -7.196642382055541e-07,
+        -4.727442810016049e-06,
+        -1.0234531634192053e-06,
+        4.895931587064133e-07,
+        9.317266190708732e-08,
+        -4.816073653148744e-07,
+        -9.853557108436775e-05
+      ],
+      "observed": -1.3153237786007897e-05,
+      "p_one_sided": 0.97265625,
+      "p_one_sided_holm_all_sgs_cases": 1.0,
+      "p_one_sided_holm_two_models": 1.0,
+      "p_two_sided": 0.0625,
+      "permutations": 256
+    }
+  },
+  "finalizer_job": "14899170",
+  "generated": "2026-08-26T01:47:49",
+  "grids": [
+    "G1c",
+    "G2c"
+  ],
+  "invariance_holds_on_every_reference": false,
+  "matching_surface_check": {
+    "Smagorinsky:G1c:equilibrium": {
+      "crest_bulk_velocity": 0.8909747473117927,
+      "max_relative_ym_mismatch_vs_wale": 0.0,
+      "nu": 0.0001785714,
+      "polyMesh_points_sha256_equals_wale_case": true,
+      "volume_average_Ubar": 0.721045,
+      "volume_average_Ubar_source": "manifest['volume_average_Ubar']",
+      "wale_crest_bulk_velocity": 0.9609268176920095,
+      "wale_nu": 0.0001785714,
+      "wale_volume_average_Ubar": 0.721045,
+      "wale_volume_average_Ubar_source": "input/fvConstraints"
+    },
+    "Smagorinsky:G1c:total_gradient_tble": {
+      "crest_bulk_velocity": 0.9627625821159294,
+      "max_relative_ym_mismatch_vs_wale": 0.0,
+      "nu": 0.0001785714,
+      "polyMesh_points_sha256_equals_wale_case": true,
+      "volume_average_Ubar": 0.721045,
+      "volume_average_Ubar_source": "manifest['volume_average_Ubar']",
+      "wale_crest_bulk_velocity": 0.9991449305891544,
+      "wale_nu": 0.0001785714,
+      "wale_volume_average_Ubar": 0.721045,
+      "wale_volume_average_Ubar_source": "input/fvConstraints"
+    },
+    "Smagorinsky:G2c:equilibrium": {
+      "crest_bulk_velocity": 1.0547223456426695,
+      "max_relative_ym_mismatch_vs_wale": 0.0,
+      "nu": 0.0001785714,
+      "polyMesh_points_sha256_equals_wale_case": true,
+      "volume_average_Ubar": 0.721045,
+      "volume_average_Ubar_source": "manifest['volume_average_Ubar']",
+      "wale_crest_bulk_velocity": 1.0198821907035858,
+      "wale_nu": 0.0001785714,
+      "wale_volume_average_Ubar": 0.721045,
+      "wale_volume_average_Ubar_source": "input/fvConstraints"
+    },
+    "Smagorinsky:G2c:total_gradient_tble": {
+      "crest_bulk_velocity": 1.0455486685112858,
+      "max_relative_ym_mismatch_vs_wale": 0.0,
+      "nu": 0.0001785714,
+      "polyMesh_points_sha256_equals_wale_case": true,
+      "volume_average_Ubar": 0.721045,
+      "volume_average_Ubar_source": "manifest['volume_average_Ubar']",
+      "wale_crest_bulk_velocity": 1.0003021446530342,
+      "wale_nu": 0.0001785714,
+      "wale_volume_average_Ubar": 0.721045,
+      "wale_volume_average_Ubar_source": "input/fvConstraints"
+    },
+    "dynamicLagrangian:G1c:equilibrium": {
+      "crest_bulk_velocity": 0.957437715993644,
+      "max_relative_ym_mismatch_vs_wale": 0.0,
+      "nu": 0.0001785714,
+      "polyMesh_points_sha256_equals_wale_case": true,
+      "volume_average_Ubar": 0.721045,
+      "volume_average_Ubar_source": "manifest['volume_average_Ubar']",
+      "wale_crest_bulk_velocity": 0.9609268176920095,
+      "wale_nu": 0.0001785714,
+      "wale_volume_average_Ubar": 0.721045,
+      "wale_volume_average_Ubar_source": "input/fvConstraints"
+    },
+    "dynamicLagrangian:G1c:total_gradient_tble": {
+      "crest_bulk_velocity": 0.9993606341667964,
+      "max_relative_ym_mismatch_vs_wale": 0.0,
+      "nu": 0.0001785714,
+      "polyMesh_points_sha256_equals_wale_case": true,
+      "volume_average_Ubar": 0.721045,
+      "volume_average_Ubar_source": "manifest['volume_average_Ubar']",
+      "wale_crest_bulk_velocity": 0.9991449305891544,
+      "wale_nu": 0.0001785714,
+      "wale_volume_average_Ubar": 0.721045,
+      "wale_volume_average_Ubar_source": "input/fvConstraints"
+    },
+    "dynamicLagrangian:G2c:equilibrium": {
+      "crest_bulk_velocity": 1.0343296350854931,
+      "max_relative_ym_mismatch_vs_wale": 0.0,
+      "nu": 0.0001785714,
+      "polyMesh_points_sha256_equals_wale_case": true,
+      "volume_average_Ubar": 0.721045,
+      "volume_average_Ubar_source": "manifest['volume_average_Ubar']",
+      "wale_crest_bulk_velocity": 1.0198821907035858,
+      "wale_nu": 0.0001785714,
+      "wale_volume_average_Ubar": 0.721045,
+      "wale_volume_average_Ubar_source": "input/fvConstraints"
+    },
+    "dynamicLagrangian:G2c:total_gradient_tble": {
+      "crest_bulk_velocity": 0.9983168934514749,
+      "max_relative_ym_mismatch_vs_wale": 0.0,
+      "nu": 0.0001785714,
+      "polyMesh_points_sha256_equals_wale_case": true,
+      "volume_average_Ubar": 0.721045,
+      "volume_average_Ubar_source": "manifest['volume_average_Ubar']",
+      "wale_crest_bulk_velocity": 1.0003021446530342,
+      "wale_nu": 0.0001785714,
+      "wale_volume_average_Ubar": 0.721045,
+      "wale_volume_average_Ubar_source": "input/fvConstraints"
+    }
+  },
+  "missing_cases": [],
+  "model_ranking_by_sgs": {
+    "Smagorinsky:G1c": {
+      "paired_exact_p_two_sided": 0.046875,
+      "rankable_at_5pct": true,
+      "tble_minus_equilibrium_interval_95": {
+        "high": 0.045111365777030045,
+        "low": -0.5077764850327334,
+        "median": -0.11798569909720358
+      },
+      "tble_minus_equilibrium_relative_rms": -0.11391364901806744,
+      "tble_point_estimate_worse": false
+    },
+    "Smagorinsky:G2c": {
+      "paired_exact_p_two_sided": 0.046875,
+      "rankable_at_5pct": true,
+      "tble_minus_equilibrium_interval_95": {
+        "high": 0.013041076145316589,
+        "low": -0.45650398188539537,
+        "median": -0.12471977469489737
+      },
+      "tble_minus_equilibrium_relative_rms": -0.12375680305516712,
+      "tble_point_estimate_worse": false
+    },
+    "WALE:G1c": {
+      "paired_exact_p_two_sided": 0.984375,
+      "rankable_at_5pct": false,
+      "tble_minus_equilibrium_interval_95": {
+        "high": 0.13934613648789548,
+        "low": -0.07257170212176338,
+        "median": -0.03942934943196311
+      },
+      "tble_minus_equilibrium_relative_rms": -0.0415595566667544,
+      "tble_point_estimate_worse": false
+    },
+    "WALE:G2c": {
+      "paired_exact_p_two_sided": 0.0625,
+      "rankable_at_5pct": false,
+      "tble_minus_equilibrium_interval_95": {
+        "high": -0.05434796234774497,
+        "low": -0.17757988816157905,
+        "median": -0.08141115160005505
+      },
+      "tble_minus_equilibrium_relative_rms": -0.08043540426618448,
+      "tble_point_estimate_worse": false
+    },
+    "dynamicLagrangian:G1c": {
+      "paired_exact_p_two_sided": 0.796875,
+      "rankable_at_5pct": false,
+      "tble_minus_equilibrium_interval_95": {
+        "high": 0.033421469840228056,
+        "low": -0.08801029654413366,
+        "median": -0.06861757307253888
+      },
+      "tble_minus_equilibrium_relative_rms": -0.06958743139822299,
+      "tble_point_estimate_worse": false
+    },
+    "dynamicLagrangian:G2c": {
+      "paired_exact_p_two_sided": 0.9921875,
+      "rankable_at_5pct": false,
+      "tble_minus_equilibrium_interval_95": {
+        "high": 0.1961587549357498,
+        "low": -0.10709540951311723,
+        "median": -0.06216439092585743
+      },
+      "tble_minus_equilibrium_relative_rms": -0.06514215047121136,
+      "tble_point_estimate_worse": false
+    }
+  },
+  "models": [
+    "equilibrium",
+    "total_gradient_tble"
+  ],
+  "phase_bootstrap_intervals": {
+    "Smagorinsky:G1c:equilibrium": {
+      "high": 4.216065239802686,
+      "low": 0.6200801503660694,
+      "median": 1.315973523660817
+    },
+    "Smagorinsky:G1c:total_gradient_tble": {
+      "high": 3.711739298721683,
+      "low": 0.6583830316479949,
+      "median": 1.1972301029679704
+    },
+    "Smagorinsky:G2c:equilibrium": {
+      "high": 3.218424171051981,
+      "low": 0.46007072203789673,
+      "median": 1.0212586453956072
+    },
+    "Smagorinsky:G2c:total_gradient_tble": {
+      "high": 2.7627619824109666,
+      "low": 0.4663996429563004,
+      "median": 0.8974372437433403
+    },
+    "WALE:G0:equilibrium": {
+      "high": 0.5597707110685457,
+      "low": 0.1997267485358619,
+      "median": 0.228244788812052
+    },
+    "WALE:G0:total_gradient_tble": {
+      "high": 0.3510047094933311,
+      "low": 0.1386998946709665,
+      "median": 0.16160043496271975
+    },
+    "WALE:G1c:equilibrium": {
+      "high": 0.5456692050710288,
+      "low": 0.20580291018076918,
+      "median": 0.23634853827943544
+    },
+    "WALE:G1c:total_gradient_tble": {
+      "high": 0.6728217508219334,
+      "low": 0.14781150649697927,
+      "median": 0.1969171908274378
+    },
+    "WALE:G2c:equilibrium": {
+      "high": 0.6844142603671388,
+      "low": 0.21585306358968492,
+      "median": 0.2558800101830709
+    },
+    "WALE:G2c:total_gradient_tble": {
+      "high": 0.5353625680959413,
+      "low": 0.141189003631788,
+      "median": 0.17478009878516138
+    },
+    "dynamicLagrangian:G1c:equilibrium": {
+      "high": 0.4283172230875559,
+      "low": 0.19126150939693815,
+      "median": 0.22875813030751557
+    },
+    "dynamicLagrangian:G1c:total_gradient_tble": {
+      "high": 0.43318073955506636,
+      "low": 0.13585584400534811,
+      "median": 0.15900564794329725
+    },
+    "dynamicLagrangian:G2c:equilibrium": {
+      "high": 0.5226036472780261,
+      "low": 0.20669612991677666,
+      "median": 0.2509018577562964
+    },
+    "dynamicLagrangian:G2c:total_gradient_tble": {
+      "high": 0.6905715600259346,
+      "low": 0.13156741467276994,
+      "median": 0.18724774604895517
+    }
+  },
+  "producer_jobs": {
+    "Smagorinsky:G1c:equilibrium": "14889294",
+    "Smagorinsky:G1c:total_gradient_tble": "14889284",
+    "Smagorinsky:G2c:equilibrium": "14889278",
+    "Smagorinsky:G2c:total_gradient_tble": "14889274",
+    "dynamicLagrangian:G1c:equilibrium": "14889293",
+    "dynamicLagrangian:G1c:total_gradient_tble": "14889282",
+    "dynamicLagrangian:G2c:equilibrium": "14899162",
+    "dynamicLagrangian:G2c:total_gradient_tble": "14889268"
+  },
+  "reference_sensitivity": {
+    "A_xiao_linear4_deposited": {
+      "all_cases_verdict_invariant": false,
+      "label": "Xiao archive, deposited 4-point through-origin linear fit (WITHDRAWN as a scoring reference)",
+      "role": "superseded",
+      "rows": {
+        "Smagorinsky:G1c:equilibrium": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": false,
+            "A1_interval_classification_matches_wale": false,
+            "A1_point_estimate_same_side_as_wale": true,
+            "A2_change_below_half_threshold_margin": false,
+            "A2_ratio_within_class": false
+          },
+          "ratio_to_wale": 2.7010572738674816,
+          "relative_rms": 4.21555209348887,
+          "relative_rms_interval_95": {
+            "high": 5.740962336279708,
+            "low": 2.1430233905342497,
+            "median": 4.148693837254253
+          },
+          "verdict_invariant": false,
+          "verdict_side": "above",
+          "wale_relative_rms": 1.5607044449867862,
+          "wale_relative_rms_interval_95": {
+            "high": 1.7145622131683953,
+            "low": 0.8058993307018376,
+            "median": 1.5500220640559723
+          },
+          "wale_verdict_side": "straddles"
+        },
+        "Smagorinsky:G1c:total_gradient_tble": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": false,
+            "A1_interval_classification_matches_wale": false,
+            "A1_point_estimate_same_side_as_wale": true,
+            "A2_change_below_half_threshold_margin": false,
+            "A2_ratio_within_class": false
+          },
+          "ratio_to_wale": 2.296738349458017,
+          "relative_rms": 4.167434676526343,
+          "relative_rms_interval_95": {
+            "high": 5.102990299988394,
+            "low": 2.0001096518450896,
+            "median": 4.119523274755473
+          },
+          "verdict_invariant": false,
+          "verdict_side": "above",
+          "wale_relative_rms": 1.8145012807008563,
+          "wale_relative_rms_interval_95": {
+            "high": 2.00110191634875,
+            "low": 0.8995347302765541,
+            "median": 1.80115716438725
+          },
+          "wale_verdict_side": "straddles"
+        },
+        "Smagorinsky:G2c:equilibrium": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": false,
+            "A1_interval_classification_matches_wale": false,
+            "A1_point_estimate_same_side_as_wale": true,
+            "A2_change_below_half_threshold_margin": false,
+            "A2_ratio_within_class": false
+          },
+          "ratio_to_wale": 2.2304994310138424,
+          "relative_rms": 3.494999571510758,
+          "relative_rms_interval_95": {
+            "high": 4.40863958852538,
+            "low": 1.5903791443089206,
+            "median": 3.4471133789452626
+          },
+          "verdict_invariant": false,
+          "verdict_side": "above",
+          "wale_relative_rms": 1.5669134557555815,
+          "wale_relative_rms_interval_95": {
+            "high": 1.7278988993296367,
+            "low": 0.7758248385727555,
+            "median": 1.5555043811636284
+          },
+          "wale_verdict_side": "straddles"
+        },
+        "Smagorinsky:G2c:total_gradient_tble": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": false,
+            "A1_interval_classification_matches_wale": false,
+            "A1_point_estimate_same_side_as_wale": true,
+            "A2_change_below_half_threshold_margin": false,
+            "A2_ratio_within_class": false
+          },
+          "ratio_to_wale": 2.0106490054085455,
+          "relative_rms": 3.4203839352554883,
+          "relative_rms_interval_95": {
+            "high": 3.9557888091690976,
+            "low": 1.583858563683522,
+            "median": 3.3799806004798945
+          },
+          "verdict_invariant": false,
+          "verdict_side": "above",
+          "wale_relative_rms": 1.7011342735876955,
+          "wale_relative_rms_interval_95": {
+            "high": 1.879086620581812,
+            "low": 0.8884327370798686,
+            "median": 1.6901766531315272
+          },
+          "wale_verdict_side": "straddles"
+        },
+        "dynamicLagrangian:G1c:equilibrium": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": true,
+            "A1_point_estimate_same_side_as_wale": true,
+            "A2_change_below_half_threshold_margin": true,
+            "A2_ratio_within_class": true
+          },
+          "ratio_to_wale": 1.0207151434992991,
+          "relative_rms": 1.5930346615246813,
+          "relative_rms_interval_95": {
+            "high": 1.7543704149139812,
+            "low": 0.7642041508949202,
+            "median": 1.5812280810043766
+          },
+          "verdict_invariant": true,
+          "verdict_side": "straddles",
+          "wale_relative_rms": 1.5607044449867862,
+          "wale_relative_rms_interval_95": {
+            "high": 1.7145622131683953,
+            "low": 0.8058993307018376,
+            "median": 1.5500220640559723
+          },
+          "wale_verdict_side": "straddles"
+        },
+        "dynamicLagrangian:G1c:total_gradient_tble": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": true,
+            "A1_point_estimate_same_side_as_wale": true,
+            "A2_change_below_half_threshold_margin": true,
+            "A2_ratio_within_class": true
+          },
+          "ratio_to_wale": 1.0026196308903486,
+          "relative_rms": 1.819254604306357,
+          "relative_rms_interval_95": {
+            "high": 1.9955050627074549,
+            "low": 0.9531586890442004,
+            "median": 1.808441916610156
+          },
+          "verdict_invariant": true,
+          "verdict_side": "straddles",
+          "wale_relative_rms": 1.8145012807008563,
+          "wale_relative_rms_interval_95": {
+            "high": 2.00110191634875,
+            "low": 0.8995347302765541,
+            "median": 1.80115716438725
+          },
+          "wale_verdict_side": "straddles"
+        },
+        "dynamicLagrangian:G2c:equilibrium": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": true,
+            "A1_point_estimate_same_side_as_wale": true,
+            "A2_change_below_half_threshold_margin": true,
+            "A2_ratio_within_class": true
+          },
+          "ratio_to_wale": 0.9836184176121204,
+          "relative_rms": 1.5412449338854444,
+          "relative_rms_interval_95": {
+            "high": 1.7102880771899978,
+            "low": 0.7017211424698133,
+            "median": 1.5299101716024586
+          },
+          "verdict_invariant": true,
+          "verdict_side": "straddles",
+          "wale_relative_rms": 1.5669134557555815,
+          "wale_relative_rms_interval_95": {
+            "high": 1.7278988993296367,
+            "low": 0.7758248385727555,
+            "median": 1.5555043811636284
+          },
+          "wale_verdict_side": "straddles"
+        },
+        "dynamicLagrangian:G2c:total_gradient_tble": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": true,
+            "A1_point_estimate_same_side_as_wale": true,
+            "A2_change_below_half_threshold_margin": true,
+            "A2_ratio_within_class": true
+          },
+          "ratio_to_wale": 1.100776858305232,
+          "relative_rms": 1.8725692412352164,
+          "relative_rms_interval_95": {
+            "high": 2.0749433654512335,
+            "low": 0.9359356384985787,
+            "median": 1.8593977054663176
+          },
+          "verdict_invariant": true,
+          "verdict_side": "straddles",
+          "wale_relative_rms": 1.7011342735876955,
+          "wale_relative_rms_interval_95": {
+            "high": 1.879086620581812,
+            "low": 0.8884327370798686,
+            "median": 1.6901766531315272
+          },
+          "wale_verdict_side": "straddles"
+        }
+      },
+      "wale_verdict_side": {
+        "G1c:equilibrium": "straddles",
+        "G1c:total_gradient_tble": "straddles",
+        "G2c:equilibrium": "straddles",
+        "G2c:total_gradient_tble": "straddles"
+      }
+    },
+    "B_mglet_deposited": {
+      "all_cases_verdict_invariant": false,
+      "label": "Peller & Manhart MGLET DNS Re=5600, deposited bottom-wall tau_w (ERCOFTAC UFR3-30) [PRIMARY]",
+      "role": "primary",
+      "rows": {
+        "Smagorinsky:G1c:equilibrium": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": false,
+            "A1_point_estimate_same_side_as_wale": false,
+            "A2_change_below_half_threshold_margin": false,
+            "A2_ratio_within_class": false
+          },
+          "ratio_to_wale": 5.516212770254451,
+          "relative_rms": 1.2913934382094177,
+          "relative_rms_interval_95": {
+            "high": 4.216065239802686,
+            "low": 0.6200801503660694,
+            "median": 1.315973523660817
+          },
+          "verdict_invariant": false,
+          "verdict_side": "straddles",
+          "wale_relative_rms": 0.2341087068238393,
+          "wale_relative_rms_interval_95": {
+            "high": 0.5456692050710288,
+            "low": 0.20580291018076918,
+            "median": 0.23634853827943544
+          },
+          "wale_verdict_side": "below"
+        },
+        "Smagorinsky:G1c:total_gradient_tble": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": false,
+            "A1_point_estimate_same_side_as_wale": false,
+            "A2_change_below_half_threshold_margin": false,
+            "A2_ratio_within_class": false
+          },
+          "ratio_to_wale": 6.115216754946682,
+          "relative_rms": 1.1774797891913502,
+          "relative_rms_interval_95": {
+            "high": 3.711739298721683,
+            "low": 0.6583830316479949,
+            "median": 1.1972301029679704
+          },
+          "verdict_invariant": false,
+          "verdict_side": "straddles",
+          "wale_relative_rms": 0.1925491501570849,
+          "wale_relative_rms_interval_95": {
+            "high": 0.6728217508219334,
+            "low": 0.14781150649697927,
+            "median": 0.1969171908274378
+          },
+          "wale_verdict_side": "below"
+        },
+        "Smagorinsky:G2c:equilibrium": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": false,
+            "A1_point_estimate_same_side_as_wale": false,
+            "A2_change_below_half_threshold_margin": false,
+            "A2_ratio_within_class": false
+          },
+          "ratio_to_wale": 3.99466868897718,
+          "relative_rms": 1.0085969494355718,
+          "relative_rms_interval_95": {
+            "high": 3.218424171051981,
+            "low": 0.46007072203789673,
+            "median": 1.0212586453956072
+          },
+          "verdict_invariant": false,
+          "verdict_side": "straddles",
+          "wale_relative_rms": 0.2524857573842549,
+          "wale_relative_rms_interval_95": {
+            "high": 0.6844142603671388,
+            "low": 0.21585306358968492,
+            "median": 0.2558800101830709
+          },
+          "wale_verdict_side": "below"
+        },
+        "Smagorinsky:G2c:total_gradient_tble": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": false,
+            "A1_point_estimate_same_side_as_wale": true,
+            "A2_change_below_half_threshold_margin": false,
+            "A2_ratio_within_class": false
+          },
+          "ratio_to_wale": 5.142913864135918,
+          "relative_rms": 0.8848401463804046,
+          "relative_rms_interval_95": {
+            "high": 2.7627619824109666,
+            "low": 0.4663996429563004,
+            "median": 0.8974372437433403
+          },
+          "verdict_invariant": false,
+          "verdict_side": "straddles",
+          "wale_relative_rms": 0.1720503531180704,
+          "wale_relative_rms_interval_95": {
+            "high": 0.5353625680959413,
+            "low": 0.141189003631788,
+            "median": 0.17478009878516138
+          },
+          "wale_verdict_side": "below"
+        },
+        "dynamicLagrangian:G1c:equilibrium": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": true,
+            "A1_point_estimate_same_side_as_wale": true,
+            "A2_change_below_half_threshold_margin": true,
+            "A2_ratio_within_class": true
+          },
+          "ratio_to_wale": 0.9688335994934961,
+          "relative_rms": 0.22681238110490784,
+          "relative_rms_interval_95": {
+            "high": 0.4283172230875559,
+            "low": 0.19126150939693815,
+            "median": 0.22875813030751557
+          },
+          "verdict_invariant": true,
+          "verdict_side": "below",
+          "wale_relative_rms": 0.2341087068238393,
+          "wale_relative_rms_interval_95": {
+            "high": 0.5456692050710288,
+            "low": 0.20580291018076918,
+            "median": 0.23634853827943544
+          },
+          "wale_verdict_side": "below"
+        },
+        "dynamicLagrangian:G1c:total_gradient_tble": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": true,
+            "A1_point_estimate_same_side_as_wale": true,
+            "A2_change_below_half_threshold_margin": true,
+            "A2_ratio_within_class": true
+          },
+          "ratio_to_wale": 0.8165445008633797,
+          "relative_rms": 0.15722494970668485,
+          "relative_rms_interval_95": {
+            "high": 0.43318073955506636,
+            "low": 0.13585584400534811,
+            "median": 0.15900564794329725
+          },
+          "verdict_invariant": true,
+          "verdict_side": "below",
+          "wale_relative_rms": 0.1925491501570849,
+          "wale_relative_rms_interval_95": {
+            "high": 0.6728217508219334,
+            "low": 0.14781150649697927,
+            "median": 0.1969171908274378
+          },
+          "wale_verdict_side": "below"
+        },
+        "dynamicLagrangian:G2c:equilibrium": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": true,
+            "A1_point_estimate_same_side_as_wale": true,
+            "A2_change_below_half_threshold_margin": true,
+            "A2_ratio_within_class": true
+          },
+          "ratio_to_wale": 0.9816920683112548,
+          "relative_rms": 0.24786326538568285,
+          "relative_rms_interval_95": {
+            "high": 0.5226036472780261,
+            "low": 0.20669612991677666,
+            "median": 0.2509018577562964
+          },
+          "verdict_invariant": true,
+          "verdict_side": "below",
+          "wale_relative_rms": 0.2524857573842549,
+          "wale_relative_rms_interval_95": {
+            "high": 0.6844142603671388,
+            "low": 0.21585306358968492,
+            "median": 0.2558800101830709
+          },
+          "wale_verdict_side": "below"
+        },
+        "dynamicLagrangian:G2c:total_gradient_tble": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": true,
+            "A1_point_estimate_same_side_as_wale": true,
+            "A2_change_below_half_threshold_margin": true,
+            "A2_ratio_within_class": true
+          },
+          "ratio_to_wale": 1.06202115603377,
+          "relative_rms": 0.1827211149144715,
+          "relative_rms_interval_95": {
+            "high": 0.6905715600259346,
+            "low": 0.13156741467276994,
+            "median": 0.18724774604895517
+          },
+          "verdict_invariant": true,
+          "verdict_side": "below",
+          "wale_relative_rms": 0.1720503531180704,
+          "wale_relative_rms_interval_95": {
+            "high": 0.5353625680959413,
+            "low": 0.141189003631788,
+            "median": 0.17478009878516138
+          },
+          "wale_verdict_side": "below"
+        }
+      },
+      "wale_verdict_side": {
+        "G1c:equilibrium": "below",
+        "G1c:total_gradient_tble": "below",
+        "G2c:equilibrium": "below",
+        "G2c:total_gradient_tble": "below"
+      }
+    },
+    "C_xiao_cubic6_repaired": {
+      "all_cases_verdict_invariant": false,
+      "label": "Xiao archive, curvature-aware through-origin cubic on the first six fluid points [BRACKET]",
+      "role": "bracket",
+      "rows": {
+        "Smagorinsky:G1c:equilibrium": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": false,
+            "A1_interval_classification_matches_wale": false,
+            "A1_point_estimate_same_side_as_wale": false,
+            "A2_change_below_half_threshold_margin": false,
+            "A2_ratio_within_class": false
+          },
+          "ratio_to_wale": 4.447295106010552,
+          "relative_rms": 2.3331119079797977,
+          "relative_rms_interval_95": {
+            "high": 5.118463308386829,
+            "low": 1.1911594743806013,
+            "median": 2.27636612808536
+          },
+          "verdict_invariant": false,
+          "verdict_side": "above",
+          "wale_relative_rms": 0.524613692675033,
+          "wale_relative_rms_interval_95": {
+            "high": 0.7187582306589734,
+            "low": 0.25402667725508904,
+            "median": 0.5189546320227539
+          },
+          "wale_verdict_side": "below"
+        },
+        "Smagorinsky:G1c:total_gradient_tble": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": false,
+            "A1_interval_classification_matches_wale": false,
+            "A1_point_estimate_same_side_as_wale": false,
+            "A2_change_below_half_threshold_margin": false,
+            "A2_ratio_within_class": false
+          },
+          "ratio_to_wale": 3.5724749251148125,
+          "relative_rms": 2.2327684346001395,
+          "relative_rms_interval_95": {
+            "high": 4.525434761869653,
+            "low": 1.1827897024436647,
+            "median": 2.182908037691401
+          },
+          "verdict_invariant": false,
+          "verdict_side": "above",
+          "wale_relative_rms": 0.6249920521215087,
+          "wale_relative_rms_interval_95": {
+            "high": 0.7963208057229421,
+            "low": 0.32597805450023865,
+            "median": 0.6247064207765634
+          },
+          "wale_verdict_side": "below"
+        },
+        "Smagorinsky:G2c:equilibrium": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": false,
+            "A1_point_estimate_same_side_as_wale": false,
+            "A2_change_below_half_threshold_margin": false,
+            "A2_ratio_within_class": false
+          },
+          "ratio_to_wale": 3.4462217153111925,
+          "relative_rms": 1.8904299430199696,
+          "relative_rms_interval_95": {
+            "high": 3.9623682730700387,
+            "low": 0.91122136252044,
+            "median": 1.8394680792147602
+          },
+          "verdict_invariant": false,
+          "verdict_side": "straddles",
+          "wale_relative_rms": 0.5485514569828728,
+          "wale_relative_rms_interval_95": {
+            "high": 0.7956563742644445,
+            "low": 0.35442095720448996,
+            "median": 0.5460077097105158
+          },
+          "wale_verdict_side": "below"
+        },
+        "Smagorinsky:G2c:total_gradient_tble": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": false,
+            "A1_point_estimate_same_side_as_wale": false,
+            "A2_change_below_half_threshold_margin": false,
+            "A2_ratio_within_class": false
+          },
+          "ratio_to_wale": 3.1986361635366416,
+          "relative_rms": 1.7729987349634386,
+          "relative_rms_interval_95": {
+            "high": 3.419665241907974,
+            "low": 0.8482532100597688,
+            "median": 1.7321353015731833
+          },
+          "verdict_invariant": false,
+          "verdict_side": "straddles",
+          "wale_relative_rms": 0.5542983460185369,
+          "wale_relative_rms_interval_95": {
+            "high": 0.6705590501972629,
+            "low": 0.25800523120791224,
+            "median": 0.5514745915647226
+          },
+          "wale_verdict_side": "below"
+        },
+        "dynamicLagrangian:G1c:equilibrium": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": true,
+            "A1_point_estimate_same_side_as_wale": true,
+            "A2_change_below_half_threshold_margin": true,
+            "A2_ratio_within_class": true
+          },
+          "ratio_to_wale": 1.0484177880431933,
+          "relative_rms": 0.5500143272515297,
+          "relative_rms_interval_95": {
+            "high": 0.7462345551719646,
+            "low": 0.17996586084279398,
+            "median": 0.5420615945548997
+          },
+          "verdict_invariant": true,
+          "verdict_side": "below",
+          "wale_relative_rms": 0.524613692675033,
+          "wale_relative_rms_interval_95": {
+            "high": 0.7187582306589734,
+            "low": 0.25402667725508904,
+            "median": 0.5189546320227539
+          },
+          "wale_verdict_side": "below"
+        },
+        "dynamicLagrangian:G1c:total_gradient_tble": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": true,
+            "A1_point_estimate_same_side_as_wale": true,
+            "A2_change_below_half_threshold_margin": true,
+            "A2_ratio_within_class": true
+          },
+          "ratio_to_wale": 0.9858304668760108,
+          "relative_rms": 0.616136206536743,
+          "relative_rms_interval_95": {
+            "high": 0.720699584633602,
+            "low": 0.26237936032838866,
+            "median": 0.6117860704128613
+          },
+          "verdict_invariant": true,
+          "verdict_side": "below",
+          "wale_relative_rms": 0.6249920521215087,
+          "wale_relative_rms_interval_95": {
+            "high": 0.7963208057229421,
+            "low": 0.32597805450023865,
+            "median": 0.6247064207765634
+          },
+          "wale_verdict_side": "below"
+        },
+        "dynamicLagrangian:G2c:equilibrium": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": true,
+            "A1_point_estimate_same_side_as_wale": true,
+            "A2_change_below_half_threshold_margin": true,
+            "A2_ratio_within_class": true
+          },
+          "ratio_to_wale": 0.9920518084816758,
+          "relative_rms": 0.5441914649451172,
+          "relative_rms_interval_95": {
+            "high": 0.7734003420648408,
+            "low": 0.23833513310404197,
+            "median": 0.5357182310919921
+          },
+          "verdict_invariant": true,
+          "verdict_side": "below",
+          "wale_relative_rms": 0.5485514569828728,
+          "wale_relative_rms_interval_95": {
+            "high": 0.7956563742644445,
+            "low": 0.35442095720448996,
+            "median": 0.5460077097105158
+          },
+          "wale_verdict_side": "below"
+        },
+        "dynamicLagrangian:G2c:total_gradient_tble": {
+          "criterion": {
+            "A1_exact_test_conclusion_matches_wale": true,
+            "A1_interval_classification_matches_wale": true,
+            "A1_point_estimate_same_side_as_wale": true,
+            "A2_change_below_half_threshold_margin": true,
+            "A2_ratio_within_class": true
+          },
+          "ratio_to_wale": 1.2049277761291313,
+          "relative_rms": 0.6678894733801714,
+          "relative_rms_interval_95": {
+            "high": 0.8211091431987732,
+            "low": 0.3574223816401014,
+            "median": 0.6660475717814819
+          },
+          "verdict_invariant": true,
+          "verdict_side": "below",
+          "wale_relative_rms": 0.5542983460185369,
+          "wale_relative_rms_interval_95": {
+            "high": 0.6705590501972629,
+            "low": 0.25800523120791224,
+            "median": 0.5514745915647226
+          },
+          "wale_verdict_side": "below"
+        }
+      },
+      "wale_verdict_side": {
+        "G1c:equilibrium": "below",
+        "G1c:total_gradient_tble": "below",
+        "G2c:equilibrium": "below",
+        "G2c:total_gradient_tble": "below"
+      }
+    }
+  },
+  "row": "M4",
+  "row_text": "WM-SGS interaction untested: decisive coupled cases repeated with >=2 SGS models; verdict invariant across SGS",
+  "scope": "Xiao alpha=1 Re_H=5600 (crest-bulk u_b=1) periodic hill; coupled Foundation-10 WMLES; Agent B's corrected WALE matrix is the control; only constant/momentumTransport (plus the transported SGS fields and their scheme/solver entries) differs; same mesh, matching surface, schemes, dt/Co, averaging window 135-405 and post-processing.",
+  "sgs_descriptions": {
+    "Smagorinsky": "static Smagorinsky model, Ck = 0.094, Ce = 1.048 (Cs ~ 0.168), no near-wall damping",
+    "dynamicLagrangian": "Lagrangian-averaged dynamic Smagorinsky model (Meneveau, Lund & Cabot 1996); Cs^2 = flm/fmm transported along pathlines, theta = 1.5"
+  },
+  "sgs_models": [
+    "Smagorinsky",
+    "dynamicLagrangian",
+    "WALE"
+  ],
+  "sgs_power_check_first_cell_nut": {
+    "Smagorinsky:G1c:equilibrium": {
+      "first_cell_nut_over_nu_max": 33.376547148,
+      "first_cell_nut_over_nu_median": 5.737155907000005,
+      "median_ratio_to_wale": 107.51120707920968,
+      "note": "instantaneous t=405 SGS viscosity, area-weighted over the span, in the wall-adjacent cell that feeds the wall model",
+      "wale_first_cell_nut_over_nu_max": 0.34220938468444534,
+      "wale_first_cell_nut_over_nu_median": 0.05336332892972835
+    },
+    "Smagorinsky:G1c:total_gradient_tble": {
+      "first_cell_nut_over_nu_max": 31.791627196000007,
+      "first_cell_nut_over_nu_median": 5.006301232100009,
+      "median_ratio_to_wale": 111.76854857371852,
+      "note": "instantaneous t=405 SGS viscosity, area-weighted over the span, in the wall-adjacent cell that feeds the wall model",
+      "wale_first_cell_nut_over_nu_max": 0.16164428179591925,
+      "wale_first_cell_nut_over_nu_median": 0.04479168152387729
+    },
+    "Smagorinsky:G2c:equilibrium": {
+      "first_cell_nut_over_nu_max": 17.702360558750016,
+      "first_cell_nut_over_nu_median": 3.268606047043728,
+      "median_ratio_to_wale": 62.6041030812278,
+      "note": "instantaneous t=405 SGS viscosity, area-weighted over the span, in the wall-adjacent cell that feeds the wall model",
+      "wale_first_cell_nut_over_nu_max": 0.14194820353262022,
+      "wale_first_cell_nut_over_nu_median": 0.05221073198353733
+    },
+    "Smagorinsky:G2c:total_gradient_tble": {
+      "first_cell_nut_over_nu_max": 14.919428965000035,
+      "first_cell_nut_over_nu_median": 3.2934440172812476,
+      "median_ratio_to_wale": 71.57883155796306,
+      "note": "instantaneous t=405 SGS viscosity, area-weighted over the span, in the wall-adjacent cell that feeds the wall model",
+      "wale_first_cell_nut_over_nu_max": 0.125831069592374,
+      "wale_first_cell_nut_over_nu_median": 0.046011424685163865
+    },
+    "dynamicLagrangian:G1c:equilibrium": {
+      "first_cell_nut_over_nu_max": 0.4089952550264001,
+      "first_cell_nut_over_nu_median": 0.12914027552566368,
+      "median_ratio_to_wale": 2.4200191051746867,
+      "note": "instantaneous t=405 SGS viscosity, area-weighted over the span, in the wall-adjacent cell that feeds the wall model",
+      "wale_first_cell_nut_over_nu_max": 0.34220938468444534,
+      "wale_first_cell_nut_over_nu_median": 0.05336332892972835
+    },
+    "dynamicLagrangian:G1c:total_gradient_tble": {
+      "first_cell_nut_over_nu_max": 0.8157339044581997,
+      "first_cell_nut_over_nu_median": 0.120739306787751,
+      "median_ratio_to_wale": 2.695574327197071,
+      "note": "instantaneous t=405 SGS viscosity, area-weighted over the span, in the wall-adjacent cell that feeds the wall model",
+      "wale_first_cell_nut_over_nu_max": 0.16164428179591925,
+      "wale_first_cell_nut_over_nu_median": 0.04479168152387729
+    },
+    "dynamicLagrangian:G2c:equilibrium": {
+      "first_cell_nut_over_nu_max": 0.39504177502036686,
+      "first_cell_nut_over_nu_median": 0.11576209341095356,
+      "median_ratio_to_wale": 2.2172087808968994,
+      "note": "instantaneous t=405 SGS viscosity, area-weighted over the span, in the wall-adjacent cell that feeds the wall model",
+      "wale_first_cell_nut_over_nu_max": 0.14194820353262022,
+      "wale_first_cell_nut_over_nu_median": 0.05221073198353733
+    },
+    "dynamicLagrangian:G2c:total_gradient_tble": {
+      "first_cell_nut_over_nu_max": 0.8077675255300734,
+      "first_cell_nut_over_nu_median": 0.1435277648104536,
+      "median_ratio_to_wale": 3.1193940590310247,
+      "note": "instantaneous t=405 SGS viscosity, area-weighted over the span, in the wall-adjacent cell that feeds the wall model",
+      "wale_first_cell_nut_over_nu_max": 0.125831069592374,
+      "wale_first_cell_nut_over_nu_median": 0.046011424685163865
+    }
+  },
+  "source_hashes": {
+    "codes/analysis/rswm_common_surface_grid_l2.py": "74f8106d4156f0c49a5ad26ce9e21fc6aa0ba1d19e71c3726ea98eb5fc9b6573",
+    "codes/figures/node_generators/analyze_grid_results_l3.py": "06ee27eddff22afc28b56fabb6471e41d6486f28ea29a1123ace6ef38da0be0e",
+    "codes/openfoam/rswm_m4_apply_sgs.py": "f782812c41967d621a8409a2e72cbae35b86ef2661a3b48de13972e5c5fbe866",
+    "codes/results/periodic_hills_case_1p0_wall_profiles_corrected.npz": "d039cefb93ec1a8555555deed79041921bf8ce98cd1477479087a9804ca7ff85",
+    "codes/results/rswm_m4_sgs_re_campaign_final/CAMPAIGN_MANIFEST.json": "8ba9d4d66437e2002ebbae4341a45448c773628852b5c4122a4f1136f5d6dfc3",
+    "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/CAMPAIGN_MANIFEST.json": "7dbfe62445c915325a045d5221faea8be4678c9f76aed89278650c8cd337071a",
+    "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g0_equilibrium_92160_v2/MANIFEST.json": "3a7c8dded6e18bfbadfa150204ec8d776b76b02b01589b842fdf128fd365f4b0",
+    "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g0_tble_92160_v2/MANIFEST.json": "1259be099bae5cf162b6b4d465ea8e93a5497eb548c21227a6f4f0c2e21a6f96",
+    "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g1_equilibrium_307200_v2/MANIFEST.json": "91efbf2e8819467d2179787e489010622b901c4de7e9b2a678537baa3e9bdca8",
+    "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g1_tble_307200_v2/MANIFEST.json": "9f6d4ab6691914a3e2a102d8eb9c7748fa62d6f1e54957f26f00735ea5fa1749",
+    "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g2_equilibrium_819200_v2/MANIFEST.json": "9317fc3cc9a5b34308c0eb542190d2f41bb80205914ec9d04df92353ad614605",
+    "codes/results/rswm_xiao_highre_campaign_m13_final/re5600/rswm_m13_re5600_g2_tble_819200_v2/MANIFEST.json": "4eddd86704a2f80aa97eca3b47fab5e0b65d8e8b8b0a2a8a31ace11e439fa1e6",
+    "jobs/rswm_m4_sgs_re_wrapper.sh": "2a02a18d231b4788c15f2e3fa69d5708666a77fbd9bda87b623866d1ceeed40f",
+    "jobs/rswm_xiao_highre_production_wrapper.sh": "e431d9cd091f4deeb558f3b31a91bfedcbbcb3dd00fe0287abd28df03ee164fe"
+  },
+  "status": "M4_SGS_SENSITIVITY_VERDICT_NOT_INVARIANT",
+  "table": {
+    "Smagorinsky:G1c:equilibrium": {
+      "averaging_window_envelope": 0.037669224224423425,
+      "averaging_window_last_change_fraction": 0.006406221391281326,
+      "criterion": {
+        "A1_exact_test_conclusion_matches_wale": true,
+        "A1_interval_classification_matches_wale": false,
+        "A1_point_estimate_same_side_as_wale": false,
+        "A2_change_below_half_threshold_margin": false,
+        "A2_ratio_within_class": false
+      },
+      "grid": "G1c",
+      "model": "equilibrium",
+      "p_one_sided_failure": 0.28125,
+      "p_one_sided_failure_holm": 0.5625,
+      "p_one_sided_failure_holm_all_cases": 1.0,
+      "profile_u_rms_mean": 0.11457108432124334,
+      "r2": -0.696795202139928,
+      "ratio_to_wale": 5.516212770254451,
+      "reattachment_x_over_H": 3.406707360782197,
+      "relative_rms": 1.2913934382094177,
+      "relative_rms_interval_95": {
+        "high": 4.216065239802686,
+        "low": 0.6200801503660694,
+        "median": 1.315973523660817
+      },
+      "reversed_fraction": 0.308837890625,
+      "sgs": "Smagorinsky",
+      "sgs_minus_wale_interval_95": {
+        "high": 3.7544262404535,
+        "low": 0.39648667658985953,
+        "median": 1.0686591833991121
+      },
+      "sgs_minus_wale_paired_exact_p_two_sided": 0.0078125,
+      "sign_accuracy": 0.717529296875,
+      "threshold_margin_over_abs_sgs_change": 0.7243945461810039,
+      "verdict_invariant": false,
+      "verdict_side": "straddles",
+      "wale_p_one_sided_failure": 0.9921875,
+      "wale_profile_u_rms_mean": 0.038809914858007756,
+      "wale_r2": 0.9442368358507591,
+      "wale_reattachment_x_over_H": 4.398599773305699,
+      "wale_relative_rms": 0.2341087068238393,
+      "wale_relative_rms_interval_95": {
+        "high": 0.5456692050710288,
+        "low": 0.20580291018076918,
+        "median": 0.23634853827943544
+      },
+      "wale_reversed_fraction": 0.51171875,
+      "wale_verdict_side": "below"
+    },
+    "Smagorinsky:G1c:total_gradient_tble": {
+      "averaging_window_envelope": 0.024870828318164673,
+      "averaging_window_last_change_fraction": 0.009818262273143806,
+      "criterion": {
+        "A1_exact_test_conclusion_matches_wale": true,
+        "A1_interval_classification_matches_wale": false,
+        "A1_point_estimate_same_side_as_wale": false,
+        "A2_change_below_half_threshold_margin": false,
+        "A2_ratio_within_class": false
+      },
+      "grid": "G1c",
+      "model": "total_gradient_tble",
+      "p_one_sided_failure": 0.30078125,
+      "p_one_sided_failure_holm": 0.5625,
+      "p_one_sided_failure_holm_all_cases": 1.0,
+      "profile_u_rms_mean": 0.1129258935760683,
+      "r2": -0.4106497611459219,
+      "ratio_to_wale": 6.115216754946682,
+      "reattachment_x_over_H": 3.4449180555640497,
+      "relative_rms": 1.1774797891913502,
+      "relative_rms_interval_95": {
+        "high": 3.711739298721683,
+        "low": 0.6583830316479949,
+        "median": 1.1972301029679704
+      },
+      "reversed_fraction": 0.3095703125,
+      "sgs": "Smagorinsky",
+      "sgs_minus_wale_interval_95": {
+        "high": 3.1679964986926974,
+        "low": 0.4676152505873209,
+        "median": 0.9842488767729469
+      },
+      "sgs_minus_wale_paired_exact_p_two_sided": 0.0078125,
+      "sign_accuracy": 0.71826171875,
+      "threshold_margin_over_abs_sgs_change": 0.8198047840552803,
+      "verdict_invariant": false,
+      "verdict_side": "straddles",
+      "wale_p_one_sided_failure": 0.97265625,
+      "wale_profile_u_rms_mean": 0.032338869621258676,
+      "wale_r2": 0.962277932394055,
+      "wale_reattachment_x_over_H": 4.174895057851873,
+      "wale_relative_rms": 0.1925491501570849,
+      "wale_relative_rms_interval_95": {
+        "high": 0.6728217508219334,
+        "low": 0.14781150649697927,
+        "median": 0.1969171908274378
+      },
+      "wale_reversed_fraction": 0.49951171875,
+      "wale_verdict_side": "below"
+    },
+    "Smagorinsky:G2c:equilibrium": {
+      "averaging_window_envelope": 0.025101138915961108,
+      "averaging_window_last_change_fraction": 0.0024909502990325167,
+      "criterion": {
+        "A1_exact_test_conclusion_matches_wale": true,
+        "A1_interval_classification_matches_wale": false,
+        "A1_point_estimate_same_side_as_wale": false,
+        "A2_change_below_half_threshold_margin": false,
+        "A2_ratio_within_class": false
+      },
+      "grid": "G2c",
+      "model": "equilibrium",
+      "p_one_sided_failure": 0.453125,
+      "p_one_sided_failure_holm": 0.90625,
+      "p_one_sided_failure_holm_all_cases": 1.0,
+      "profile_u_rms_mean": 0.12203580691269847,
+      "r2": -0.035017224669613656,
+      "ratio_to_wale": 3.99466868897718,
+      "reattachment_x_over_H": 3.680178889926861,
+      "relative_rms": 1.0085969494355718,
+      "relative_rms_interval_95": {
+        "high": 3.218424171051981,
+        "low": 0.46007072203789673,
+        "median": 1.0212586453956072
+      },
+      "reversed_fraction": 0.332763671875,
+      "sgs": "Smagorinsky",
+      "sgs_minus_wale_interval_95": {
+        "high": 2.678611485715538,
+        "low": 0.2164528521157793,
+        "median": 0.7463003911835451
+      },
+      "sgs_minus_wale_paired_exact_p_two_sided": 0.0078125,
+      "sign_accuracy": 0.741455078125,
+      "threshold_margin_over_abs_sgs_change": 0.9886300460488511,
+      "verdict_invariant": false,
+      "verdict_side": "straddles",
+      "wale_p_one_sided_failure": 0.984375,
+      "wale_profile_u_rms_mean": 0.02884028041091525,
+      "wale_r2": 0.9351386406397463,
+      "wale_reattachment_x_over_H": 4.153274607697916,
+      "wale_relative_rms": 0.2524857573842549,
+      "wale_relative_rms_interval_95": {
+        "high": 0.6844142603671388,
+        "low": 0.21585306358968492,
+        "median": 0.2558800101830709
+      },
+      "wale_reversed_fraction": 0.4697265625,
+      "wale_verdict_side": "below"
+    },
+    "Smagorinsky:G2c:total_gradient_tble": {
+      "averaging_window_envelope": 0.03560913908563479,
+      "averaging_window_last_change_fraction": 0.0125344579596062,
+      "criterion": {
+        "A1_exact_test_conclusion_matches_wale": true,
+        "A1_interval_classification_matches_wale": false,
+        "A1_point_estimate_same_side_as_wale": true,
+        "A2_change_below_half_threshold_margin": false,
+        "A2_ratio_within_class": false
+      },
+      "grid": "G2c",
+      "model": "total_gradient_tble",
+      "p_one_sided_failure": 0.6171875,
+      "p_one_sided_failure_holm": 0.90625,
+      "p_one_sided_failure_holm_all_cases": 1.0,
+      "profile_u_rms_mean": 0.1033800880345394,
+      "r2": 0.20339704213478238,
+      "ratio_to_wale": 5.142913864135918,
+      "reattachment_x_over_H": 3.734441794076658,
+      "relative_rms": 0.8848401463804046,
+      "relative_rms_interval_95": {
+        "high": 2.7627619824109666,
+        "low": 0.4663996429563004,
+        "median": 0.8974372437433403
+      },
+      "reversed_fraction": 0.338623046875,
+      "sgs": "Smagorinsky",
+      "sgs_minus_wale_interval_95": {
+        "high": 2.3431269195504143,
+        "low": 0.3011568027866093,
+        "median": 0.7072808859014035
+      },
+      "sgs_minus_wale_paired_exact_p_two_sided": 0.0078125,
+      "sign_accuracy": 0.747314453125,
+      "threshold_margin_over_abs_sgs_change": 1.161562152977143,
+      "verdict_invariant": false,
+      "verdict_side": "straddles",
+      "wale_p_one_sided_failure": 0.98828125,
+      "wale_profile_u_rms_mean": 0.024063850550922822,
+      "wale_r2": 0.9698821883202405,
+      "wale_reattachment_x_over_H": 4.458385421024365,
+      "wale_relative_rms": 0.1720503531180704,
+      "wale_relative_rms_interval_95": {
+        "high": 0.5353625680959413,
+        "low": 0.141189003631788,
+        "median": 0.17478009878516138
+      },
+      "wale_reversed_fraction": 0.504638671875,
+      "wale_verdict_side": "below"
+    },
+    "dynamicLagrangian:G1c:equilibrium": {
+      "averaging_window_envelope": 0.0020440576961273105,
+      "averaging_window_last_change_fraction": 0.004854777096258236,
+      "criterion": {
+        "A1_exact_test_conclusion_matches_wale": true,
+        "A1_interval_classification_matches_wale": true,
+        "A1_point_estimate_same_side_as_wale": true,
+        "A2_change_below_half_threshold_margin": true,
+        "A2_ratio_within_class": true
+      },
+      "grid": "G1c",
+      "model": "equilibrium",
+      "p_one_sided_failure": 0.9921875,
+      "p_one_sided_failure_holm": 1.0,
+      "p_one_sided_failure_holm_all_cases": 1.0,
+      "profile_u_rms_mean": 0.04743994812119355,
+      "r2": 0.9476585448215855,
+      "ratio_to_wale": 0.9688335994934961,
+      "reattachment_x_over_H": 4.6245648621923205,
+      "relative_rms": 0.22681238110490784,
+      "relative_rms_interval_95": {
+        "high": 0.4283172230875559,
+        "low": 0.19126150939693815,
+        "median": 0.22875813030751557
+      },
+      "reversed_fraction": 0.516845703125,
+      "sgs": "dynamicLagrangian",
+      "sgs_minus_wale_interval_95": {
+        "high": 0.006484101132790732,
+        "low": -0.14591316295511864,
+        "median": -0.008260902292908878
+      },
+      "sgs_minus_wale_paired_exact_p_two_sided": 0.4921875,
+      "sign_accuracy": 0.919677734375,
+      "threshold_margin_over_abs_sgs_change": 104.9694493749005,
+      "verdict_invariant": true,
+      "verdict_side": "below",
+      "wale_p_one_sided_failure": 0.9921875,
+      "wale_profile_u_rms_mean": 0.038809914858007756,
+      "wale_r2": 0.9442368358507591,
+      "wale_reattachment_x_over_H": 4.398599773305699,
+      "wale_relative_rms": 0.2341087068238393,
+      "wale_relative_rms_interval_95": {
+        "high": 0.5456692050710288,
+        "low": 0.20580291018076918,
+        "median": 0.23634853827943544
+      },
+      "wale_reversed_fraction": 0.51171875,
+      "wale_verdict_side": "below"
+    },
+    "dynamicLagrangian:G1c:total_gradient_tble": {
+      "averaging_window_envelope": 0.0043318161516030795,
+      "averaging_window_last_change_fraction": 0.013749129641431847,
+      "criterion": {
+        "A1_exact_test_conclusion_matches_wale": true,
+        "A1_interval_classification_matches_wale": true,
+        "A1_point_estimate_same_side_as_wale": true,
+        "A2_change_below_half_threshold_margin": true,
+        "A2_ratio_within_class": true
+      },
+      "grid": "G1c",
+      "model": "total_gradient_tble",
+      "p_one_sided_failure": 0.9921875,
+      "p_one_sided_failure_holm": 1.0,
+      "p_one_sided_failure_holm_all_cases": 1.0,
+      "profile_u_rms_mean": 0.030793657625030994,
+      "r2": 0.9748490029805363,
+      "ratio_to_wale": 0.8165445008633797,
+      "reattachment_x_over_H": 4.607619697792884,
+      "relative_rms": 0.15722494970668485,
+      "relative_rms_interval_95": {
+        "high": 0.43318073955506636,
+        "low": 0.13585584400534811,
+        "median": 0.15900564794329725
+      },
+      "reversed_fraction": 0.538330078125,
+      "sgs": "dynamicLagrangian",
+      "sgs_minus_wale_interval_95": {
+        "high": -0.008955781848051517,
+        "low": -0.2569306400860054,
+        "median": -0.037767872133686
+      },
+      "sgs_minus_wale_paired_exact_p_two_sided": 0.0078125,
+      "sign_accuracy": 0.897216796875,
+      "threshold_margin_over_abs_sgs_change": 22.85829090389987,
+      "verdict_invariant": true,
+      "verdict_side": "below",
+      "wale_p_one_sided_failure": 0.97265625,
+      "wale_profile_u_rms_mean": 0.032338869621258676,
+      "wale_r2": 0.962277932394055,
+      "wale_reattachment_x_over_H": 4.174895057851873,
+      "wale_relative_rms": 0.1925491501570849,
+      "wale_relative_rms_interval_95": {
+        "high": 0.6728217508219334,
+        "low": 0.14781150649697927,
+        "median": 0.1969171908274378
+      },
+      "wale_reversed_fraction": 0.49951171875,
+      "wale_verdict_side": "below"
+    },
+    "dynamicLagrangian:G2c:equilibrium": {
+      "averaging_window_envelope": 0.004602177307070604,
+      "averaging_window_last_change_fraction": 0.004618227779902245,
+      "criterion": {
+        "A1_exact_test_conclusion_matches_wale": true,
+        "A1_interval_classification_matches_wale": true,
+        "A1_point_estimate_same_side_as_wale": true,
+        "A2_change_below_half_threshold_margin": true,
+        "A2_ratio_within_class": true
+      },
+      "grid": "G2c",
+      "model": "equilibrium",
+      "p_one_sided_failure": 0.9921875,
+      "p_one_sided_failure_holm": 1.0,
+      "p_one_sided_failure_holm_all_cases": 1.0,
+      "profile_u_rms_mean": 0.04978871008577375,
+      "r2": 0.9374918550586028,
+      "ratio_to_wale": 0.9816920683112548,
+      "reattachment_x_over_H": 4.460779258074363,
+      "relative_rms": 0.24786326538568285,
+      "relative_rms_interval_95": {
+        "high": 0.5226036472780261,
+        "low": 0.20669612991677666,
+        "median": 0.2509018577562964
+      },
+      "reversed_fraction": 0.496826171875,
+      "sgs": "dynamicLagrangian",
+      "sgs_minus_wale_interval_95": {
+        "high": 0.015567615711439449,
+        "low": -0.18041692527167677,
+        "median": -0.00655505553930201
+      },
+      "sgs_minus_wale_paired_exact_p_two_sided": 0.8515625,
+      "sign_accuracy": 0.905517578125,
+      "threshold_margin_over_abs_sgs_change": 161.71239297908235,
+      "verdict_invariant": true,
+      "verdict_side": "below",
+      "wale_p_one_sided_failure": 0.984375,
+      "wale_profile_u_rms_mean": 0.02884028041091525,
+      "wale_r2": 0.9351386406397463,
+      "wale_reattachment_x_over_H": 4.153274607697916,
+      "wale_relative_rms": 0.2524857573842549,
+      "wale_relative_rms_interval_95": {
+        "high": 0.6844142603671388,
+        "low": 0.21585306358968492,
+        "median": 0.2558800101830709
+      },
+      "wale_reversed_fraction": 0.4697265625,
+      "wale_verdict_side": "below"
+    },
+    "dynamicLagrangian:G2c:total_gradient_tble": {
+      "averaging_window_envelope": 0.002909228350675752,
+      "averaging_window_last_change_fraction": 0.015921686730280243,
+      "criterion": {
+        "A1_exact_test_conclusion_matches_wale": true,
+        "A1_interval_classification_matches_wale": true,
+        "A1_point_estimate_same_side_as_wale": true,
+        "A2_change_below_half_threshold_margin": true,
+        "A2_ratio_within_class": true
+      },
+      "grid": "G2c",
+      "model": "total_gradient_tble",
+      "p_one_sided_failure": 0.97265625,
+      "p_one_sided_failure_holm": 1.0,
+      "p_one_sided_failure_holm_all_cases": 1.0,
+      "profile_u_rms_mean": 0.02983337361616305,
+      "r2": 0.9660304534339846,
+      "ratio_to_wale": 1.06202115603377,
+      "reattachment_x_over_H": 4.289791227410876,
+      "relative_rms": 0.1827211149144715,
+      "relative_rms_interval_95": {
+        "high": 0.6905715600259346,
+        "low": 0.13156741467276994,
+        "median": 0.18724774604895517
+      },
+      "reversed_fraction": 0.4970703125,
+      "sgs": "dynamicLagrangian",
+      "sgs_minus_wale_interval_95": {
+        "high": 0.15903443217440968,
+        "low": -0.01578885824326309,
+        "median": 0.012567549272673395
+      },
+      "sgs_minus_wale_paired_exact_p_two_sided": 0.5546875,
+      "sign_accuracy": 0.8701171875,
+      "threshold_margin_over_abs_sgs_change": 77.590490977052,
+      "verdict_invariant": true,
+      "verdict_side": "below",
+      "wale_p_one_sided_failure": 0.98828125,
+      "wale_profile_u_rms_mean": 0.024063850550922822,
+      "wale_r2": 0.9698821883202405,
+      "wale_reattachment_x_over_H": 4.458385421024365,
+      "wale_relative_rms": 0.1720503531180704,
+      "wale_relative_rms_interval_95": {
+        "high": 0.5353625680959413,
+        "low": 0.141189003631788,
+        "median": 0.17478009878516138
+      },
+      "wale_reversed_fraction": 0.504638671875,
+      "wale_verdict_side": "below"
+    }
+  },
+  "temporal_sensitivity": {
+    "Smagorinsky:G1c:equilibrium": {
+      "records": [
+        {
+          "averaging_length": 180,
+          "checkpoint": "315",
+          "r2": -0.7972280647873182,
+          "reattachment_x_over_H": 3.399726233050363,
+          "relative_rms": 1.329062662433841
+        },
+        {
+          "averaging_length": 225,
+          "checkpoint": "360",
+          "r2": -0.7186049295004919,
+          "reattachment_x_over_H": 3.401151389550899,
+          "relative_rms": 1.2996663904778352
+        },
+        {
+          "averaging_length": 270,
+          "checkpoint": "405",
+          "r2": -0.696795202139928,
+          "reattachment_x_over_H": 3.406707360782197,
+          "relative_rms": 1.2913934382094177
+        }
+      ],
+      "relative_rms_envelope": 0.037669224224423425,
+      "relative_rms_last_change": -0.00827295226841751,
+      "relative_rms_last_change_fraction_of_terminal": 0.006406221391281326
+    },
+    "Smagorinsky:G1c:total_gradient_tble": {
+      "records": [
+        {
+          "averaging_length": 180,
+          "checkpoint": "315",
+          "r2": -0.4708708405477038,
+          "reattachment_x_over_H": 3.3950315794103045,
+          "relative_rms": 1.2023506175095149
+        },
+        {
+          "averaging_length": 225,
+          "checkpoint": "360",
+          "r2": -0.4384860040091616,
+          "reattachment_x_over_H": 3.4233797705136464,
+          "relative_rms": 1.189040594582957
+        },
+        {
+          "averaging_length": 270,
+          "checkpoint": "405",
+          "r2": -0.4106497611459219,
+          "reattachment_x_over_H": 3.4449180555640497,
+          "relative_rms": 1.1774797891913502
+        }
+      ],
+      "relative_rms_envelope": 0.024870828318164673,
+      "relative_rms_last_change": -0.011560805391606754,
+      "relative_rms_last_change_fraction_of_terminal": 0.009818262273143806
+    },
+    "Smagorinsky:G2c:equilibrium": {
+      "records": [
+        {
+          "averaging_length": 180,
+          "checkpoint": "315",
+          "r2": 0.015859045052463494,
+          "reattachment_x_over_H": 3.6130834742891302,
+          "relative_rms": 0.9834958105196107
+        },
+        {
+          "averaging_length": 225,
+          "checkpoint": "360",
+          "r2": -0.029867293848461873,
+          "reattachment_x_over_H": 3.604549891375285,
+          "relative_rms": 1.006084584562772
+        },
+        {
+          "averaging_length": 270,
+          "checkpoint": "405",
+          "r2": -0.035017224669613656,
+          "reattachment_x_over_H": 3.680178889926861,
+          "relative_rms": 1.0085969494355718
+        }
+      ],
+      "relative_rms_envelope": 0.025101138915961108,
+      "relative_rms_last_change": 0.0025123648727998216,
+      "relative_rms_last_change_fraction_of_terminal": 0.0024909502990325167
+    },
+    "Smagorinsky:G2c:total_gradient_tble": {
+      "records": [
+        {
+          "averaging_length": 180,
+          "checkpoint": "315",
+          "r2": 0.1379905902447076,
+          "reattachment_x_over_H": 3.5878775554244937,
+          "relative_rms": 0.9204492854660394
+        },
+        {
+          "averaging_length": 225,
+          "checkpoint": "360",
+          "r2": 0.183301913172236,
+          "reattachment_x_over_H": 3.6548436785447933,
+          "relative_rms": 0.8959311379961816
+        },
+        {
+          "averaging_length": 270,
+          "checkpoint": "405",
+          "r2": 0.20339704213478238,
+          "reattachment_x_over_H": 3.734441794076658,
+          "relative_rms": 0.8848401463804046
+        }
+      ],
+      "relative_rms_envelope": 0.03560913908563479,
+      "relative_rms_last_change": -0.01109099161577698,
+      "relative_rms_last_change_fraction_of_terminal": 0.0125344579596062
+    },
+    "dynamicLagrangian:G1c:equilibrium": {
+      "records": [
+        {
+          "averaging_length": 180,
+          "checkpoint": "315",
+          "r2": 0.9472224386748093,
+          "reattachment_x_over_H": 4.702614862533243,
+          "relative_rms": 0.22775531524809925
+        },
+        {
+          "averaging_length": 225,
+          "checkpoint": "360",
+          "r2": 0.948165523388692,
+          "reattachment_x_over_H": 4.706398161806372,
+          "relative_rms": 0.22571125755197194
+        },
+        {
+          "averaging_length": 270,
+          "checkpoint": "405",
+          "r2": 0.9476585448215855,
+          "reattachment_x_over_H": 4.6245648621923205,
+          "relative_rms": 0.22681238110490784
+        }
+      ],
+      "relative_rms_envelope": 0.0020440576961273105,
+      "relative_rms_last_change": 0.001101123552935901,
+      "relative_rms_last_change_fraction_of_terminal": 0.004854777096258236
+    },
+    "dynamicLagrangian:G1c:total_gradient_tble": {
+      "records": [
+        {
+          "averaging_length": 180,
+          "checkpoint": "315",
+          "r2": 0.9755385087269226,
+          "reattachment_x_over_H": 4.633272336519186,
+          "relative_rms": 0.15505483977146658
+        },
+        {
+          "averaging_length": 225,
+          "checkpoint": "360",
+          "r2": 0.9741526398348652,
+          "reattachment_x_over_H": 4.574561098109107,
+          "relative_rms": 0.15938665592306966
+        },
+        {
+          "averaging_length": 270,
+          "checkpoint": "405",
+          "r2": 0.9748490029805363,
+          "reattachment_x_over_H": 4.607619697792884,
+          "relative_rms": 0.15722494970668485
+        }
+      ],
+      "relative_rms_envelope": 0.0043318161516030795,
+      "relative_rms_last_change": -0.002161706216384812,
+      "relative_rms_last_change_fraction_of_terminal": 0.013749129641431847
+    },
+    "dynamicLagrangian:G2c:equilibrium": {
+      "records": [
+        {
+          "averaging_length": 180,
+          "checkpoint": "315",
+          "r2": 0.9357358180359234,
+          "reattachment_x_over_H": 4.388432018707799,
+          "relative_rms": 0.251320753674932
+        },
+        {
+          "averaging_length": 225,
+          "checkpoint": "360",
+          "r2": 0.9380678755860251,
+          "reattachment_x_over_H": 4.451550852353824,
+          "relative_rms": 0.2467185763678614
+        },
+        {
+          "averaging_length": 270,
+          "checkpoint": "405",
+          "r2": 0.9374918550586028,
+          "reattachment_x_over_H": 4.460779258074363,
+          "relative_rms": 0.24786326538568285
+        }
+      ],
+      "relative_rms_envelope": 0.004602177307070604,
+      "relative_rms_last_change": 0.001144689017821443,
+      "relative_rms_last_change_fraction_of_terminal": 0.004618227779902245
+    },
+    "dynamicLagrangian:G2c:total_gradient_tble": {
+      "records": [
+        {
+          "averaging_length": 180,
+          "checkpoint": "315",
+          "r2": 0.9664364915493291,
+          "reattachment_x_over_H": 4.35897806927076,
+          "relative_rms": 0.18162579891563208
+        },
+        {
+          "averaging_length": 225,
+          "checkpoint": "360",
+          "r2": 0.9671035471078375,
+          "reattachment_x_over_H": 4.338999004402467,
+          "relative_rms": 0.17981188656379574
+        },
+        {
+          "averaging_length": 270,
+          "checkpoint": "405",
+          "r2": 0.9660304534339846,
+          "reattachment_x_over_H": 4.289791227410876,
+          "relative_rms": 0.1827211149144715
+        }
+      ],
+      "relative_rms_envelope": 0.002909228350675752,
+      "relative_rms_last_change": 0.002909228350675752,
+      "relative_rms_last_change_fraction_of_terminal": 0.015921686730280243
+    }
+  },
+  "wale_reference_campaign_status": "TERMINAL_SIX_CASE_CAMPAIGN_OK",
+  "wale_reference_producer_jobs": {
+    "WALE:G0:equilibrium": "14889015",
+    "WALE:G0:total_gradient_tble": "14889013",
+    "WALE:G1c:equilibrium": "14889022",
+    "WALE:G1c:total_gradient_tble": "14889021",
+    "WALE:G2c:equilibrium": "14889026",
+    "WALE:G2c:total_gradient_tble": "14889025"
+  },
+  "wale_reference_root": "codes/results/rswm_xiao_highre_campaign_m13_final/re5600",
+  "wale_reference_table": {
+    "WALE:G0:equilibrium": {
+      "crest_bulk_velocity": 1.0234858041195614,
+      "p_one_sided_failure": 0.984375,
+      "producer_job_id": "14889015",
+      "profile_u_rms_mean": 0.0411614219838333,
+      "r2": 0.9481311991629616,
+      "reattachment_x_over_H": 4.411318455925764,
+      "relative_rms": 0.22578597695235889,
+      "relative_rms_interval_95": {
+        "high": 0.5597707110685457,
+        "low": 0.1997267485358619,
+        "median": 0.228244788812052
+      },
+      "reversed_fraction": 0.53662109375,
+      "superseded_deposit_relative_rms_volume_average_drive": 1.7178024851599052
+    },
+    "WALE:G0:total_gradient_tble": {
+      "crest_bulk_velocity": 0.9950112636329768,
+      "p_one_sided_failure": 1.0,
+      "producer_job_id": "14889013",
+      "profile_u_rms_mean": 0.03616922765127856,
+      "r2": 0.9738888966749571,
+      "reattachment_x_over_H": 4.757540134416286,
+      "relative_rms": 0.1601977725758809,
+      "relative_rms_interval_95": {
+        "high": 0.3510047094933311,
+        "low": 0.1386998946709665,
+        "median": 0.16160043496271975
+      },
+      "reversed_fraction": 0.583740234375,
+      "superseded_deposit_relative_rms_volume_average_drive": 1.8431857011522241
+    },
+    "WALE:G1c:equilibrium": {
+      "crest_bulk_velocity": 0.9609268176920095,
+      "p_one_sided_failure": 0.9921875,
+      "producer_job_id": "14889022",
+      "profile_u_rms_mean": 0.038809914858007756,
+      "r2": 0.9442368358507591,
+      "reattachment_x_over_H": 4.398599773305699,
+      "relative_rms": 0.2341087068238393,
+      "relative_rms_interval_95": {
+        "high": 0.5456692050710288,
+        "low": 0.20580291018076918,
+        "median": 0.23634853827943544
+      },
+      "reversed_fraction": 0.51171875,
+      "superseded_deposit_relative_rms_volume_average_drive": 1.5607045490436502
+    },
+    "WALE:G1c:total_gradient_tble": {
+      "crest_bulk_velocity": 0.9991449305891544,
+      "p_one_sided_failure": 0.97265625,
+      "producer_job_id": "14889021",
+      "profile_u_rms_mean": 0.032338869621258676,
+      "r2": 0.962277932394055,
+      "reattachment_x_over_H": 4.174895057851873,
+      "relative_rms": 0.1925491501570849,
+      "relative_rms_interval_95": {
+        "high": 0.6728217508219334,
+        "low": 0.14781150649697927,
+        "median": 0.1969171908274378
+      },
+      "reversed_fraction": 0.49951171875,
+      "superseded_deposit_relative_rms_volume_average_drive": 1.8145013004198065
+    },
+    "WALE:G2c:equilibrium": {
+      "crest_bulk_velocity": 1.0198821907035858,
+      "p_one_sided_failure": 0.984375,
+      "producer_job_id": "14889026",
+      "profile_u_rms_mean": 0.02884028041091525,
+      "r2": 0.9351386406397463,
+      "reattachment_x_over_H": 4.153274607697916,
+      "relative_rms": 0.2524857573842549,
+      "relative_rms_interval_95": {
+        "high": 0.6844142603671388,
+        "low": 0.21585306358968492,
+        "median": 0.2558800101830709
+      },
+      "reversed_fraction": 0.4697265625,
+      "superseded_deposit_relative_rms_volume_average_drive": 1.5669134570781087
+    },
+    "WALE:G2c:total_gradient_tble": {
+      "crest_bulk_velocity": 1.0003021446530342,
+      "p_one_sided_failure": 0.98828125,
+      "producer_job_id": "14889025",
+      "profile_u_rms_mean": 0.024063850550922822,
+      "r2": 0.9698821883202405,
+      "reattachment_x_over_H": 4.458385421024365,
+      "relative_rms": 0.1720503531180704,
+      "relative_rms_interval_95": {
+        "high": 0.5353625680959413,
+        "low": 0.141189003631788,
+        "median": 0.17478009878516138
+      },
+      "reversed_fraction": 0.504638671875,
+      "superseded_deposit_relative_rms_volume_average_drive": 1.7011341817795407
+    }
+  }
+}

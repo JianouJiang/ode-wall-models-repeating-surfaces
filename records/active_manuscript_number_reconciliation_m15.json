@@ -1,0 +1,234 @@
+{
+  "active_source_extraction": "nested iffalses and comments removed before audit",
+  "artifact_hashes": {
+    "codes/results/diagnostic_test_corrected.npz": "7a1cb8861005a9a1b6205b94868c8179bb46f7275f9ac419b9f6781c5fb80973",
+    "codes/results/dose_response_xiao.npz": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "codes/results/full_rans_thin_layer_audit.npz": "6eb9d13138bea9fac5e6dffa989dc722bfba7cc955f53a479d056313238f8fbf",
+    "codes/results/independent_phase_balance_r1_sta3.json": "26b0c22863df72a90a72f7255022d97f8f94954f468d88e7184a94005eba1b7c",
+    "codes/results/independent_phase_balance_r1_sta3.npz": "630cc985e510958f795c24ef9853c68a2a1eee096f5a849b8e10959e4668417f",
+    "codes/results/m13_highre_coupled_20260824.npz": "0bee088a3e81dc2fb7b02f8c07fe9c3fe26210d33365d09124ee602ae9212ebb",
+    "codes/results/m13_highre_coupled_20260824_summary.json": "38fd6adf59606db2cfe8eec97dae7350eec862ebe72507c106c6b709eed3a220",
+    "codes/results/rswm_grid_results_l3.npz": "960187df2ec98eaf6750e51fbe293b366fb8cc09a66daa7dc09a48797018d23a",
+    "codes/results/rswm_grid_results_l3_summary.json": "56f2c854230b68ff096f3276f7b4f65a8ba58ff2af206ade4ec866938e64070b",
+    "codes/results/signed_wall_error_metrics_m2.npz": "c12d04ac9872b4cc60ff92bfa4ded8f1a4a97fdde613b8f25ec2d2b5270f311d",
+    "codes/results/uncertainty_certificate_l1.npz": "bf111e123abd4017925c94f5d99e9c22abbb95d924cb5604d3ec84e9b9bbb315",
+    "manuscript/main.pdf": "80f0ea5436e67c971fb0fded008f9b049254b290655c3558a38fd888e1e3f2a7",
+    "manuscript/main.tex": "48f478d980085cb9e9cffd0c86e4b9698adb5546557e9ea7ce296ec03f767ead"
+  },
+  "banned_active_violations": [],
+  "claim_count": 25,
+  "claims": {
+    "canonical_hill_r2": {
+      "printed": "-1.757",
+      "source": "reference_rebase_headlines_l0_20260825.json:headlines.scores.pg_ode_mixing_length.B_mglet.r2",
+      "value": -1.7570171877613001
+    },
+    "canonical_hill_r2_bracket": {
+      "printed": "-6.96",
+      "source": "reference_rebase_headlines_l0_20260825.json:headlines.scores.pg_ode_mixing_length.C_repaired_cubic6.r2",
+      "value": -6.962994244231073
+    },
+    "canonical_hill_r2_superseded": {
+      "printed": "-47.7",
+      "source": "reference_rebase_headlines_l0_20260825.json:headlines.scores.pg_ode_mixing_length.A_withdrawn_linear4.r2 (withdrawn reference; printed only where the correction itself is described)",
+      "value": -47.68617253416459
+    },
+    "corrected_exact_stress_r2": {
+      "printed": "-36.8",
+      "source": "reference_rebase_headlines_l0_20260825.json:headlines.scores.pg_ode_exact_dns_stress.B_mglet.r2",
+      "value": -36.77000761955062
+    },
+    "coupled_finest_r2": {
+      "printed": [
+        "0.935",
+        "0.970"
+      ],
+      "source": "m13_highre_coupled_20260825_summary.json:campaigns[5600].metrics[G2c:*].r2",
+      "value": [
+        0.9351386406397463,
+        0.9698821883202405
+      ]
+    },
+    "coupled_finest_traction_errors": {
+      "printed": [
+        "0.252",
+        "0.172"
+      ],
+      "source": "m13_highre_coupled_20260825_summary.json:campaigns[5600].metrics[G2c:*].relative_rms",
+      "value": [
+        0.2524857573842549,
+        0.1720503531180704
+      ]
+    },
+    "coupled_holm_p": {
+      "printed": "1.000",
+      "source": "m13_highre_coupled_20260825_summary.json:campaigns[5600].failure_significance_tests[*].p_one_sided_holm_two_models",
+      "value": [
+        1.0,
+        1.0
+      ]
+    },
+    "coupled_model_difference_p": {
+      "printed": [
+        "-0.080",
+        "0.0625"
+      ],
+      "source": "m13_highre_coupled_20260825_summary.json:campaigns[5600].model_comparison.{finest_relative_rms_tble_minus_equilibrium,paired_exact_block_test.p_two_sided}",
+      "value": [
+        -0.08043540426618448,
+        0.0625
+      ]
+    },
+    "curved_bfs_r2": {
+      "printed": ".883",
+      "source": "signed_wall_error_metrics_m2.npz:r2_descriptive[curved_bfs_Re13700_DNS]",
+      "value": 0.8830969265193732
+    },
+    "exact_stress_worse_on_every_reference": {
+      "printed": "-95.9",
+      "source": "reference_rebase_headlines_l0_20260825.json:headlines.survives_reference_swap.exact_dns_stress_is_worse_than_mixing_length_on_every_reference",
+      "value": true
+    },
+    "independent_phase_closure": {
+      "printed": "4.273\\%",
+      "source": "independent_phase_balance_r1_sta3.json:primary_phase_closure_over_full_leg",
+      "value": 0.04272668249518504
+    },
+    "independent_phase_operator_envelope": {
+      "printed": "3.225--6.372",
+      "source": "independent_phase_balance_r1_sta3.json:phase_closure_operator_envelope",
+      "value": [
+        0.0322457950856644,
+        0.06371867039278582
+      ]
+    },
+    "independent_wavelength_closure": {
+      "printed": "3.704\\%",
+      "source": "independent_phase_balance_r1_sta3.json:primary_wavelength_closure_over_direct",
+      "value": 0.037037598799155746
+    },
+    "re10595_finest_r2": {
+      "printed": [
+        "0.862",
+        "0.966"
+      ],
+      "source": "m13_highre_coupled_20260825_summary.json:campaigns[10595].metrics[G2c:*].r2",
+      "value": [
+        0.8616282337914474,
+        0.9658895204918851
+      ]
+    },
+    "re10595_finest_reattachment": {
+      "printed": [
+        "4.078",
+        "4.031",
+        "4.511"
+      ],
+      "source": "m13_highre_coupled_20260825_summary.json:campaigns[10595].metrics[G2c:*].reattachment_x_over_H and truth.events",
+      "value": [
+        4.077750112208312,
+        4.03054470989635,
+        4.511223114612481
+      ]
+    },
+    "re10595_finest_traction_errors": {
+      "printed": [
+        "0.365",
+        "0.181"
+      ],
+      "source": "m13_highre_coupled_20260825_summary.json:campaigns[10595].metrics[G2c:*].relative_rms",
+      "value": [
+        0.36542786400555477,
+        0.18143531767296084
+      ]
+    },
+    "re19000_cancellation_medians": {
+      "printed": [
+        "0.738",
+        "0.985"
+      ],
+      "source": "m13_highre_coupled_20260825_summary.json:campaigns[19000].eps_c[G2c:*].eps_c_median_separated",
+      "value": [
+        0.7379111653220678,
+        0.9846300287433702
+      ]
+    },
+    "re19000_profile_mean_rms": {
+      "printed": [
+        "0.0555",
+        "0.0664"
+      ],
+      "source": "m13_highre_coupled_20260825_summary.json:campaigns[19000].profiles[G2c:*].rapp_19000.u_rms_mean",
+      "value": [
+        0.055548883377177574,
+        0.06636931256057395
+      ]
+    },
+    "re19000_reattachment": {
+      "printed": [
+        "3.853",
+        "3.978",
+        "3.827"
+      ],
+      "source": "m13_highre_coupled_20260825_summary.json:campaigns[19000].metrics[G2c:*].reattachment_x_over_H and experimental_reattachment",
+      "value": [
+        3.852910072841762,
+        3.9780679554452947,
+        3.827242139459334
+      ]
+    },
+    "thin_layer_reynolds_range": {
+      "printed": "0.263--0.484",
+      "source": "full_rans_thin_layer_audit.npz:reynolds_streamwise_fraction",
+      "value": [
+        0.2633676919811546,
+        0.48437950279237546
+      ]
+    },
+    "thin_layer_viscous_range": {
+      "printed": "0.304--0.483",
+      "source": "full_rans_thin_layer_audit.npz:viscous_streamwise_to_normal_ratio",
+      "value": [
+        0.3038134736662933,
+        0.483083848817734
+      ]
+    },
+    "three_term_hill_ratio": {
+      "printed": "0.735",
+      "source": "uncertainty_certificate_l1.npz:statistic_centre[periodic_hills_case_1p0,0]",
+      "value": 0.7348760760932258
+    },
+    "xiao_family_epsilon_range": {
+      "printed": "$0.094$--$0.545$",
+      "source": "reference_rebase_headlines_l0_20260825.json:ranking_r2_2.eps_range.repaired",
+      "value": [
+        0.09429303489783938,
+        0.5446411202370304
+      ]
+    },
+    "xiao_family_outer_scale_rho": {
+      "printed": "+0.65",
+      "source": "reference_rebase_headlines_l0_20260825.json:ranking_r2_2.ranking.repaired.per_candidate.L_y.rho.r2",
+      "value": 0.6539216880982754
+    },
+    "xiao_family_r2_range": {
+      "printed": "$-3.3$ to $-17.6$",
+      "source": "reference_rebase_headlines_l0_20260825.json:ranking_r2_2.every_member_fails.repaired_max_r2 with the corrected per-member sweep minimum",
+      "value": [
+        -17.58156146525824,
+        -3.346796042869867
+      ]
+    }
+  },
+  "missing_printed_tokens": [],
+  "schema": "active-manuscript-number-reconciliation-m15-v1",
+  "specific_m15_reconciliations": {
+    "auc": "deleted from active source and compiled PDF; no predictive AUC is claimed",
+    "curved_bfs": "0.883 rebuilt from the source-addressed physical-metric operator",
+    "d_type_rib": "the deposited 94,976-cell result is quarantined after its laminar-upper-half audit; no rib-performance number is active pending the registered replacement",
+    "exact_stress": "corrected common-protocol value is -482.977, printed as -483",
+    "k_type_rib": "unmatched RANS score deleted",
+    "periodic_hill": "-47.686 is canonical; wall-pinned -4.74e6 is quarantined"
+  },
+  "status": "PASS"
+}

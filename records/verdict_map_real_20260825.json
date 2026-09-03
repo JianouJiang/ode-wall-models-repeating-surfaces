@@ -1,0 +1,945 @@
+{
+ "schema": "verdict_map_real_v1",
+ "ledger_row": "M17 (real)",
+ "idea": "Class/verdict map rebuilt exclusively from deposited high-fidelity runs; every badge carries dataset provenance; unrun cells are explicitly UNTESTED (the old Figs 5-6 hard-coded 18 of 28 badges).",
+ "date": "20260825",
+ "generated": "2026-08-25T02:16:04",
+ "status": "M17_REAL_PARTIAL",
+ "verdict_rule": {
+  "bins": {
+   "FAIL": "R2 < 0",
+   "MARGINAL": "0 <= R2 < 0.5",
+   "TOLERATED": "R2 >= 0.5"
+  },
+  "unresolved": "verdict interval straddles a bin boundary",
+  "shared_with": "codes/analysis/epsilon_predictor_outoffamily.py"
+ },
+ "n_cells": 46,
+ "n_tested": 37,
+ "n_untested": 9,
+ "pending_cells": [
+  "cube::aligned",
+  "cube::sparse",
+  "hill_coupled::re19000",
+  "hill_coupled::re37000"
+ ],
+ "cells": [
+  {
+   "cell_id": "wavy::G0",
+   "family": "smooth wavy wall (Hudson) -- WRLES, own truth",
+   "case_label": "a=0.05*lambda, lambda=2*delta, grid G0",
+   "status": "TESTED",
+   "verdict": "TOLERATED",
+   "metric": {
+    "name": "a-priori standard_ml R2 at eta_m=0.1*delta",
+    "value": 0.6132134831265845,
+    "interval": [
+     0.6090775321200247,
+     0.6173494341331444
+    ],
+    "resolution_basis": "block-window replicates n=6, +/-2*SEM",
+    "eps_median": 0.24747407557429713
+   },
+   "provenance": {
+    "source": "codes/results/r1_sta2_wavy_wrles_20260824.json",
+    "sha256": "b15324444c238c377b2708d0a240d1e6eb076d916d403b959cfb370494497c62",
+    "case_id": "r1sta2_wavy_G0_v1",
+    "slurm_job_id": "14888703"
+   },
+   "evidence": "wall-resolved LES validated vs Hudson/Maass-Schumann",
+   "note": null
+  },
+  {
+   "cell_id": "wavy::G1",
+   "family": "smooth wavy wall (Hudson) -- WRLES, own truth",
+   "case_label": "a=0.05*lambda, lambda=2*delta, grid G1",
+   "status": "TESTED",
+   "verdict": "TOLERATED",
+   "metric": {
+    "name": "a-priori standard_ml R2 at eta_m=0.1*delta",
+    "value": 0.6155421640065566,
+    "interval": [
+     0.6063646512509997,
+     0.6247196767621135
+    ],
+    "resolution_basis": "block-window replicates n=6, +/-2*SEM",
+    "eps_median": 0.22946858858460184
+   },
+   "provenance": {
+    "source": "codes/results/r1_sta2_wavy_wrles_20260824.json",
+    "sha256": "b15324444c238c377b2708d0a240d1e6eb076d916d403b959cfb370494497c62",
+    "case_id": "r1sta2_wavy_G1_v1",
+    "slurm_job_id": "14899155"
+   },
+   "evidence": "wall-resolved LES validated vs Hudson/Maass-Schumann",
+   "note": null
+  },
+  {
+   "cell_id": "wavy::G2",
+   "family": "smooth wavy wall (Hudson) -- WRLES, own truth",
+   "case_label": "a=0.05*lambda, lambda=2*delta, grid G2",
+   "status": "TESTED",
+   "verdict": "TOLERATED",
+   "metric": {
+    "name": "a-priori standard_ml R2 at eta_m=0.1*delta",
+    "value": 0.5971764902480612,
+    "interval": [
+     0.5928025820366658,
+     0.6015503984594566
+    ],
+    "resolution_basis": "block-window replicates n=6, +/-2*SEM",
+    "eps_median": 0.2194323458459644
+   },
+   "provenance": {
+    "source": "codes/results/r1_sta2_wavy_wrles_20260824.json",
+    "sha256": "b15324444c238c377b2708d0a240d1e6eb076d916d403b959cfb370494497c62",
+    "case_id": "r1sta2_wavy_G2_v1",
+    "slurm_job_id": "14899157"
+   },
+   "evidence": "wall-resolved LES validated vs Hudson/Maass-Schumann",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph05-10071-2024",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph05-10071-2024",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -71.04158877001208,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.11635106495162105
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph05-10071-2024"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph05-10071-3036",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph05-10071-3036",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -42.45817541647885,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.17458052069970406
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph05-10071-3036"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph05-10071-4048",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph05-10071-4048",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -30.11197259812478,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.2190976277397588
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph05-10071-4048"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph05-4071-2024",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph05-4071-2024",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -76.57549542593937,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.15642584373351093
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph05-4071-2024"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph05-4071-3036",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph05-4071-3036",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -24.866688763539408,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.32235482454195885
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph05-4071-3036"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph05-4071-4048",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph05-4071-4048",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -18.25860799698215,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.40976622749443814
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph05-4071-4048"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph05-7071-2024",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph05-7071-2024",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -84.3115704538056,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.08394008859971455
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph05-7071-2024"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph05-7071-3036",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph05-7071-3036",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -57.580410859086854,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.17557412724462584
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph05-7071-3036"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph05-7071-4048",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph05-7071-4048",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -28.485094739428558,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.2452273977675407
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph05-7071-4048"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph075-80355-3036",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph075-80355-3036",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -29.09700678430664,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.09823786615124785
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph075-80355-3036"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph10-12-2024",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph10-12-2024",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -37.419383784283454,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.19185602989860162
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph10-12-2024"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph10-12-3036",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph10-12-3036",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -21.669754574857514,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.23881708988801287
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph10-12-3036"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph10-12-4048",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph10-12-4048",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -16.454407463774114,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.3180378250082239
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph10-12-4048"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph10-6-2024",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph10-6-2024",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -36.60714942467291,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.1067269257672858
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph10-6-2024"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph10-6-3036",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph10-6-3036",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -18.05490731079248,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.1821246734387889
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph10-6-3036"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph10-6-4048",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph10-6-4048",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -12.050467402287886,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.3080761447620112
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph10-6-4048"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph10-9-2024",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph10-9-2024",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -39.52102734702448,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.12089758557578573
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph10-9-2024"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph10-9-3036",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph10-9-3036",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -23.35171538489192,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.14909175910684377
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph10-9-3036"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph10-9-4048",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph10-9-4048",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -17.091160846798715,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.18640959580690375
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph10-9-4048"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph125-99645-3036",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph125-99645-3036",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -16.880709187258358,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.20490547244972762
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph125-99645-3036"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph15-10929-2024",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph15-10929-2024",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -29.76973735534289,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.1398127070557751
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph15-10929-2024"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph15-10929-3036",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph15-10929-3036",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -17.570337916160934,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.20699485888592198
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph15-10929-3036"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph15-10929-4048",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph15-10929-4048",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -11.111389667496887,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.25753352722001954
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph15-10929-4048"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph15-13929-2024",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph15-13929-2024",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -23.95258917933354,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.22780680433174819
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph15-13929-2024"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph15-13929-3036",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph15-13929-3036",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -14.76129466158141,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.34337618884885246
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph15-13929-3036"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph15-13929-4048",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph15-13929-4048",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -10.475665161757748,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.393012823427467
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph15-13929-4048"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph15-7929-2024",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph15-7929-2024",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -27.892345243867872,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.08525740450538043
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph15-7929-2024"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph15-7929-3036",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph15-7929-3036",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -16.556948067787324,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.11629781445722773
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph15-7929-3036"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_apriori::alph15-7929-4048",
+   "family": "smooth periodic hill -- Xiao DNS a-priori family",
+   "case_label": "alph15-7929-4048",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2 (Y_IDX=10)",
+    "value": -9.856236209522903,
+    "interval": null,
+    "resolution_basis": "point value; |R2|>1 margin (no archived interval)",
+    "eps_median": 0.14988818887770333
+   },
+   "provenance": {
+    "source": "codes/results/dose_response_xiao.npz",
+    "sha256": "389d7e94a7ede470ed3246376491797eb164e4a1affa087bfe634805c3e6424f",
+    "case_id": "alph15-7929-4048"
+   },
+   "evidence": "a-priori on Xiao et al. DNS reference fields (archived instrument)",
+   "note": null
+  },
+  {
+   "cell_id": "rib::dtype_p3",
+   "family": "sharp square rib -- matched WRLES pair",
+   "case_label": "d-type p/k=3 (pitch 0.6*delta)",
+   "status": "TESTED",
+   "verdict": "UNRESOLVED",
+   "metric": {
+    "name": "a-priori standard_ml R2, grid G1, window cum_140",
+    "value": -0.081410425218436,
+    "interval": [
+     -2.47806984621006,
+     0.604458304780249
+    ],
+    "resolution_basis": "station moving-block bootstrap 95% CI",
+    "eps_median": 0.4041566757140683
+   },
+   "provenance": {
+    "source": "codes/results/r2_4_m20_les_20260825.json",
+    "sha256": "f8780b78f3702213fbd4d715ec35e349a54ae4854e10c5eeb3a3c9f78ec51964",
+    "case_id": "r24_rib_dtype_p3_G1",
+    "deposit_manifest_sha256": "9f8b08a0b43f23d41b64062f83c1fd739e1707e1cc561ebd822a6b02e3b0d6a1"
+   },
+   "evidence": "wall-resolved LES (WALE), Leonardi-box geometry, matched numerics",
+   "note": null
+  },
+  {
+   "cell_id": "rib::ktype_p8",
+   "family": "sharp square rib -- matched WRLES pair",
+   "case_label": "k-type p/k=8 (pitch 1.6*delta)",
+   "status": "TESTED",
+   "verdict": "FAIL",
+   "metric": {
+    "name": "a-priori standard_ml R2, grid G1, window cum_140",
+    "value": -101.68624667149601,
+    "interval": [
+     -274.3363975985945,
+     -0.28964470541577086
+    ],
+    "resolution_basis": "station moving-block bootstrap 95% CI",
+    "eps_median": 0.16984877337184917
+   },
+   "provenance": {
+    "source": "codes/results/r2_4_m20_les_20260825.json",
+    "sha256": "f8780b78f3702213fbd4d715ec35e349a54ae4854e10c5eeb3a3c9f78ec51964",
+    "case_id": "r24_rib_ktype_p8_G1",
+    "deposit_manifest_sha256": "64a55514eb5ddca2ed896d1eb969db1aa7123550b5138de09d50c7f0d11f1a0f"
+   },
+   "evidence": "wall-resolved LES (WALE), Leonardi-box geometry, matched numerics",
+   "note": null
+  },
+  {
+   "cell_id": "cube::aligned",
+   "family": "cube canopy (3-D) -- WRLES",
+   "case_label": "aligned lambda_p=0.25",
+   "status": "UNTESTED",
+   "verdict": null,
+   "metric": null,
+   "provenance": null,
+   "evidence": null,
+   "note": "r24_cube_aligned_G1: run still landing (jobs 14899302/03/06/07)"
+  },
+  {
+   "cell_id": "cube::staggered",
+   "family": "cube canopy (3-D) -- WRLES",
+   "case_label": "staggered lambda_p=0.25",
+   "status": "TESTED",
+   "verdict": "UNRESOLVED",
+   "metric": {
+    "name": "a-priori standard_ml R2, grid G1, window cum_260",
+    "value": -0.01264745132882017,
+    "interval": [
+     -0.2544381837893531,
+     0.1794478358425061
+    ],
+    "resolution_basis": "station moving-block bootstrap 95% CI",
+    "eps_median": 0.5349728644118223
+   },
+   "provenance": {
+    "source": "codes/results/r2_4_m20_les_20260825.json",
+    "sha256": "f8780b78f3702213fbd4d715ec35e349a54ae4854e10c5eeb3a3c9f78ec51964",
+    "case_id": "r24_cube_staggered_G1",
+    "deposit_manifest_sha256": "f0619cb07493514b973504aeb5e19020fbdedf6855eb6596eafd99da8c3fa1a3"
+   },
+   "evidence": "wall-resolved LES (WALE), Leonardi-box geometry, matched numerics",
+   "note": null
+  },
+  {
+   "cell_id": "cube::sparse",
+   "family": "cube canopy (3-D) -- WRLES",
+   "case_label": "sparse lambda_p=0.0625",
+   "status": "UNTESTED",
+   "verdict": null,
+   "metric": null,
+   "provenance": null,
+   "evidence": null,
+   "note": "r24_cube_sparse_G1: run still landing (jobs 14899302/03/06/07)"
+  },
+  {
+   "cell_id": "hill_coupled::re5600",
+   "family": "coupled a-posteriori WMLES -- canonical hill Re ladder",
+   "case_label": "Re_H=5600, equilibrium ODE, G2c",
+   "status": "TESTED",
+   "verdict": "TOLERATED",
+   "metric": {
+    "name": "coupled wall-traction R2 vs registered reference, longest window",
+    "value": 0.9351395184915178,
+    "interval": [
+     0.9351334576828961,
+     0.9378345860879743
+    ],
+    "resolution_basis": "window replicates +/-2*SEM; relRMS bootstrap [0.216,0.691] TOLERATED_side",
+    "eps_c_median_separated": 1.233600148667061
+   },
+   "provenance": {
+    "source": "codes/results/m13_highre_coupled_20260825_summary.json",
+    "sha256": "2e95f3481ecf8f467109af56e391d2b5bb915b3f78021f0968ac976231946fac",
+    "case_id": "rswm_m13_re5600_g2_equilibrium_819200_v2",
+    "truth_reference": "Peller & Manhart MGLET DNS Re=5600 (ERCOFTAC UFR3-30 bottom wall)",
+    "truth_status": "VALID"
+   },
+   "evidence": "coupled WMLES, corrected crest-bulk drive, matched numerics; truth = Peller & Manhart MGLET DNS Re=5600 (ERCOFTAC UFR3-30 bottom wall)",
+   "note": null
+  },
+  {
+   "cell_id": "hill_coupled::re10595",
+   "family": "coupled a-posteriori WMLES -- canonical hill Re ladder",
+   "case_label": "Re_H=10595, equilibrium ODE, G2c",
+   "status": "TESTED",
+   "verdict": "TOLERATED",
+   "metric": {
+    "name": "coupled wall-traction R2 vs registered reference, longest window",
+    "value": 0.8616282337914474,
+    "interval": [
+     0.8608591169284713,
+     0.873637114567181
+    ],
+    "resolution_basis": "window replicates +/-2*SEM; relRMS bootstrap [0.265,0.586] TOLERATED_side",
+    "eps_c_median_separated": 0.9823303959641244
+   },
+   "provenance": {
+    "source": "codes/results/m13_highre_coupled_20260825_summary.json",
+    "sha256": "2e95f3481ecf8f467109af56e391d2b5bb915b3f78021f0968ac976231946fac",
+    "case_id": "rswm_m13_re10595_g2_equilibrium_819200_v2",
+    "truth_reference": "Krank, Kronbichler & Wall (2018) DNS Re=10595",
+    "truth_status": "VALID"
+   },
+   "evidence": "coupled WMLES, corrected crest-bulk drive, matched numerics; truth = Krank, Kronbichler & Wall (2018) DNS Re=10595",
+   "note": null
+  },
+  {
+   "cell_id": "hill_coupled::re19000",
+   "family": "coupled a-posteriori WMLES -- canonical hill Re ladder",
+   "case_label": "Re_H=19000, equilibrium ODE, G2c",
+   "status": "UNTESTED",
+   "verdict": null,
+   "metric": null,
+   "provenance": null,
+   "evidence": null,
+   "note": "bundle supplies event/profile truth, not the wall-traction reference"
+  },
+  {
+   "cell_id": "hill_coupled::re37000",
+   "family": "coupled a-posteriori WMLES -- canonical hill Re ladder",
+   "case_label": "Re_H=37000, equilibrium ODE, G2c",
+   "status": "UNTESTED",
+   "verdict": null,
+   "metric": null,
+   "provenance": null,
+   "evidence": null,
+   "note": "bundle supplies event/profile truth, not the wall-traction reference"
+  },
+  {
+   "cell_id": "legacy::rounded_rib_all",
+   "family": "old-map geometries with NO matched high-fidelity run",
+   "case_label": "rounded rib (entire old-map row)",
+   "status": "UNTESTED",
+   "verdict": null,
+   "metric": null,
+   "provenance": null,
+   "evidence": null,
+   "note": "old Fig 5 row 2: all four cells were never simulated"
+  },
+  {
+   "cell_id": "legacy::gaussian_bump",
+   "family": "old-map geometries with NO matched high-fidelity run",
+   "case_label": "Gaussian bump (non-repeating)",
+   "status": "UNTESTED",
+   "verdict": null,
+   "metric": null,
+   "provenance": null,
+   "evidence": null,
+   "note": "old Fig 5(d)/6(h): badge was hard-coded"
+  },
+  {
+   "cell_id": "legacy::bfs_matched",
+   "family": "old-map geometries with NO matched high-fidelity run",
+   "case_label": "backward-facing step at matched WRLES fidelity",
+   "status": "UNTESTED",
+   "verdict": null,
+   "metric": null,
+   "provenance": null,
+   "evidence": null,
+   "note": "old Fig 5(l) HOLD badge came from reference-data a-priori, not a matched run"
+  },
+  {
+   "cell_id": "legacy::convdiv",
+   "family": "old-map geometries with NO matched high-fidelity run",
+   "case_label": "converging-diverging channel",
+   "status": "UNTESTED",
+   "verdict": null,
+   "metric": null,
+   "provenance": null,
+   "evidence": null,
+   "note": "old Fig 6(k) HOLD badge was hard-coded"
+  },
+  {
+   "cell_id": "legacy::krank_hill",
+   "family": "old-map geometries with NO matched high-fidelity run",
+   "case_label": "Krank hill at matched WRLES fidelity",
+   "status": "UNTESTED",
+   "verdict": null,
+   "metric": null,
+   "provenance": null,
+   "evidence": null,
+   "note": "old Fig 5(c)/6(g) HOLD badges were hard-coded"
+  }
+ ],
+ "figure": {
+  "pdf": "work_progress/archer2_campaign_20260823/M17_real/fig_verdict_map_real.pdf",
+  "png": "work_progress/archer2_campaign_20260823/M17_real/fig_verdict_map_real.png",
+  "pdf_sha256": "4df7230e585986e97fe5486bb80b03b5b5cbd9be20ef09c73e7b1c7682ef8dbd",
+  "png_sha256": "04f4986ea38026a3f1210cd24866e8e44d3e22fa80a4f2b1e426acfbf7675eff"
+ },
+ "rerun_command": "python3 codes/figures/fig_verdict_map_real.py --date <YYYYMMDD>"
+}

@@ -1,0 +1,100 @@
+{
+  "title": "L3 results: smooth bracket is the transition evidence; the d/k sharp-rib divergence is a deep-cancellation COVERAGE effect (median depth degenerate, recirculation length irrelevant); provenance flagged; off-scale R^2 reported.",
+  "B_L3_1_smooth_bracket_vs_composite": {
+    "smooth_bracket_eps": [
+      0.2905668139028902,
+      0.5235969674494398
+    ],
+    "smooth_bracket_decades": 0.25575111122237854,
+    "smooth_bracket_factor": 1.8019847497946901,
+    "composite_sharp_gap_eps": 0.00024287095519859303,
+    "composite_sharp_gap_decades": 0.00020237635407155397,
+    "composite_gap_is_noise_level": true,
+    "headline": "LEAD with the smooth bracket (0.256 decades, factor 1.8); the composite median-eps separability between the SHARP ribs is 2.0e-4 decades = noise-level and is NOT the evidence -- it is DROPPED from the headline. The sharp ribs are separated instead by the deep-cancellation COVERAGE (B-L3-2), which is robust."
+  },
+  "B_L3_2_dk_coverage_discriminant": {
+    "rib_keys": [
+      "rib_rans_dtype",
+      "rib_les_dtype",
+      "rib_rans_ktype"
+    ],
+    "lambda_over_delta": [
+      0.4,
+      0.6,
+      1.6
+    ],
+    "eps_med": [
+      0.4316080697717367,
+      0.5210734345944655,
+      0.5213163055496641
+    ],
+    "frac_eps_lt0p1": [
+      0.2911392405063291,
+      0.125,
+      0.057971014492753624
+    ],
+    "f_recirc": [
+      0.8125,
+      0.3541666666666667,
+      0.8357142857142857
+    ],
+    "r2": [
+      -1.2865148282831504,
+      -0.9431719607410027,
+      0.5876131591962105
+    ],
+    "rho_lambda_r2": 1.0,
+    "rho_coverage_r2": -1.0,
+    "rho_eps_med_r2": 1.0,
+    "rho_recirc_r2": 0.5,
+    "eps_degeneracy_decades_les_vs_ktype": 0.00020237635407155397,
+    "coverage_ratio_les_over_ktype": 2.15625,
+    "auc_coverage_inframe": 0.9166666666666666,
+    "auc_eps_med_inframe": 1.0,
+    "two_level_reading": "POOLED, median depth eps_med is the TRANSITION variable across the class (in-framework AUC=1.00, vs 0.92 for coverage). It is NOT that coverage replaces depth -- depth saturates ONLY for the sharp ribs, where it is degenerate; THERE coverage is the severity organiser.",
+    "physical_because": "Pitch lambda/delta sets how much of the inter-rib gap can re-establish an attached boundary layer. Narrow (d-type, lambda/delta=0.6) -> the deep-cancellation region (eps<0.1) covers 12.5% of the pitch -> catastrophic. Wide (k-type, lambda/delta=1.6) -> only 5.8% -> tolerated. Median depth eps_med is DEGENERATE across the catastrophic LES d-type and the tolerated k-type rib (0.521 vs 0.521, 2.0e-04 decades = the B-L3-1 razor-thin gap); the COVERAGE frac[eps<0.1] separates them by a factor 2.2 and orders all three ribs with R^2 (rho=-1). The reversed-flow fraction f_recirc = {0.81, 0.35, 0.84} does NOT order R^2 (rho=0.5): failure is deep FORCE-CANCELLATION coverage, not separation extent. This is the same spatial-extent group alpha organises in the smooth Xiao family (L1 partial(alpha,frac|eps)=-0.43, p=0.018); pitch is its geometric organiser for the ribs."
+  },
+  "B_L3_3_provenance": {
+    "wavy_a10": {
+      "fidelity": "RANS",
+      "role": "RANS pilot (NOT a high-fidelity anchor; only smooth intermediate beyond the hills)"
+    },
+    "krank_pehill_Re10595": {
+      "fidelity": "DNS",
+      "role": "reference-validated"
+    },
+    "periodic_hills_1p0": {
+      "fidelity": "DNS",
+      "role": "reference-validated"
+    },
+    "conv_div_channel": {
+      "fidelity": "DNS",
+      "role": "reference-validated in-class wide-pitch control"
+    },
+    "rib_les_dtype": {
+      "fidelity": "LES",
+      "role": "wall-resolved LES (sharp transfer, high fidelity)"
+    },
+    "rib_rans_dtype": {
+      "fidelity": "RANS",
+      "role": "RANS confirm (closure-robust at two fidelities with the LES rib)"
+    },
+    "rib_rans_ktype": {
+      "fidelity": "RANS",
+      "role": "RANS k-type spacing point"
+    }
+  },
+  "B_L3_3_wavy_is_rans_pilot": true,
+  "B_L3_5_off_scale_R2": {
+    "clip": -2.2,
+    "off_scale_R2": {
+      "periodic_hills_1p0": -47.68617253416459
+    },
+    "periodic_hill_R2": -47.68617253416459,
+    "xiao_R2_range": [
+      -84.3115704538056,
+      -9.856236209522903
+    ]
+  },
+  "eps_hat_AUC_carried_from_L2": 0.6781609195402298
+}

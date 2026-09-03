@@ -1,0 +1,16 @@
+{
+  "case": "rib_les_dtype",
+  "time": "60.00073791",
+  "n_stations": 48,
+  "n_span": 28,
+  "standard_ml_r2": -1.5916483492058866,
+  "controlled_ml_r2": -1.5916485488917775,
+  "controlled_dns_r2": -6.995191833699336,
+  "controlled_dns_total_r2": -7.012607324445991,
+  "eps_median": 0.5162206573225407,
+  "frac_eps_lt0p1": 0.10416666666666667,
+  "f_res_band_median": 0.9864921544564913,
+  "f_res_pooled_median": 0.9891136148309135,
+  "closure_independent": true,
+  "converged": false
+}

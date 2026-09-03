@@ -1,0 +1,63 @@
+{
+  "test": "out-of-sample evaluation of the LOCKED cross-shape predictor",
+  "oos_family": "Xiao 2020 29-case periodic-hill DNS (Re_b=5600), amplitude x pitch",
+  "locked_thresholds_from": "champion corpus cross_geometry_collapse.npz (NOT this family)",
+  "COV_STAR": 0.3,
+  "R2_CATASTROPHE": 0.0,
+  "R2_TOLERATE": 0.88,
+  "n_oos": 29,
+  "all_29_measured_catastrophic": true,
+  "max_R2_in_family": -9.856236209522903,
+  "min_R2_in_family": -84.3115704538056,
+  "n_predicted_catastrophic": 16,
+  "recall_locked_gate": 0.5517241379310345,
+  "coverage_range": [
+    0.125,
+    0.5866477272727273
+  ],
+  "n_below_gate_COV_STAR": 13,
+  "within_family_orderings": {
+    "coverage_frac_eps_lt0p1": {
+      "rho_vs_R2": -0.6541871921182264,
+      "p": 0.00011845692005506545
+    },
+    "median_eps": {
+      "rho_vs_R2": 0.5413793103448274,
+      "p": 0.0024224396244706585
+    },
+    "amplitude_alpha": {
+      "rho_vs_R2": 0.6579248673982411,
+      "p": 0.00010493871645195296
+    },
+    "pitch_ellp_over_delta": {
+      "rho_vs_R2": -0.22315270935960585,
+      "p": 0.2445864354683125
+    },
+    "h_over_Lx": {
+      "rho_vs_R2": -0.2483943482158217,
+      "p": 0.19384777306490905
+    },
+    "Lsep_over_delta": {
+      "rho_vs_R2": -0.7536945812807879,
+      "p": 2.3580532196644835e-06
+    },
+    "f_rec": {
+      "rho_vs_R2": -0.35566502463054184,
+      "p": 0.058290234960212586
+    }
+  },
+  "rho_coverage_vs_Lsep_over_delta": {
+    "rho": 0.6467980295566501,
+    "p": 0.00014980784502312584
+  },
+  "best_severity_orderer": "Lsep_over_delta",
+  "controls_tolerated_coverage_max": 0.2,
+  "bfs_zero_frequency": {
+    "coverage": 0.043478260869565216,
+    "r2": 0.8886868765602569,
+    "measured": "tolerated"
+  },
+  "n_xiao_in_control_overlap": 4,
+  "interpretation": "All 29 brand-new O(delta)-pitch repeating hills MEASURE catastrophic (R2<0, max=-9.86) -> the binary failure thesis is confirmed 29/29 out of sample.  The LOCKED coverage gate (COV_STAR=0.30, frozen on a MIXED corpus) recovers 16/29 of them (recall=0.55): it under-fires at the mild end because within an ALL-failure family the across-class threshold is conservative.  Within the family, SEVERITY (how negative R2 is) is best ordered by L_sep/delta (rho=-0.75), the O(delta) separation length -- the physical realisation of 'pitch ~ O(delta)' -- and coverage tracks L_sep/delta (rho=0.65).  The single-feature controls (incl. BFS at the zero-frequency limit) tolerate up to coverage=0.200; it is REPEATING-class membership, not a single coverage number, that triggers domain-wide cancellation.",
+  "provenance": "reference-validated DNS (Xiao 2020 + champion corpus); read-only"
+}

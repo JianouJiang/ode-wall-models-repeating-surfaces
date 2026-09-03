@@ -1,0 +1,19 @@
+{
+  "time": "139.99984127",
+  "converged": true,
+  "les_R2": {
+    "A_ml_vandriest": -0.943,
+    "B_alg_cebeci": -1.747,
+    "C_alg_sa": -1.134,
+    "D_alg_reichardt": -1.886,
+    "E_dns_stress": -5.681
+  },
+  "exactdns_amp_ratio_rib": 3.678,
+  "rib_prefactor_med": 0.0149,
+  "hill_prefactor_med": 0.0623,
+  "PR1": true,
+  "PR2": true,
+  "PR3": true,
+  "PR4": true,
+  "fidelity": "OpenFOAM wall-resolved LES (WALE), NOT DNS"
+}
