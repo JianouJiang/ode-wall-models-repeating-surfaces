@@ -8,7 +8,7 @@ file*: the public periodic-hill velocity archive is sound.  What was withdrawn
 is a small set of DERIVED QUANTITIES inside it --- the wall traction and
 everything scaled by it --- because the four-point through-origin wall-gradient
 fit that produced them under-resolves the traction at the archive's wall
-spacing.  Three independent judge reads of the previous attempt found the same
+spacing.  Three independent reviews of the previous attempt found the same
 failure mode: prose was patched claim by claim while tables, captions and
 figures kept inheriting the withdrawn quantities through their producer
 scripts.  A headline scan cannot find that, because the defect is structural.

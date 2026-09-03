@@ -3,7 +3,7 @@ r"""
 rib_severity_l2.py  --  L2 (node_005) deliverable.
 ==================================================
 Discharge the FATAL L2 binds B-L2-2 / B-L2-3 / B-L2-4 from the L1 severity-law
-judge: place a real SHARP square-rib geometry on the closure-independent domain
+review: place a real SHARP square-rib geometry on the closure-independent domain
 severity law
 
       <relErr>  >=  beta * S ,     S = (1/L) int_{eps<eps*} (1/eps) dx
